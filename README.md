@@ -15,8 +15,7 @@ The Installation Is Easy,You Just Follow This Command
 ### xcursorgen
 
 ###### How To Build
-In The ['src'](https://github.com/KaizIqbal/Bibata_Cursor/tree/master/src) Directory you see all the Source File.It Also Contain Oe Directory Called ['svgs'](https://github.com/KaizIqbal/Bibata_Cursor/tree/master/src/Bibata/svgs)
-The Changes Is Done In svgs and config File what you want.
+In The ['src'](https://github.com/KaizIqbal/Bibata_Cursor/tree/master/src) Directory you see all the Source File.It Also Contain Oe Directory Called ['svgs'](https://github.com/KaizIqbal/Bibata_Cursor/tree/master/src/Bibata/svgs) That Contain All .svg File 
 
 
 ###### After Buil The Icons Using Following Commands
