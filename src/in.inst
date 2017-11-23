@@ -122,7 +122,7 @@ cd "$( dirname "${BASH_SOURCE[0]}" )" || exit
 if [ "$UID" -eq "$ROOT_UID" ]; then
   DEST_DIR="/usr/share/icons"
 else
-  DEST_DIR="$HOME/.local/share/icons"
+  DEST_DIR="$HOME/.icons"
 fi
 
 echo -e "\e[1m\n+---------------------------------------------+"

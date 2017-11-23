@@ -37,12 +37,12 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1366"
-     inkscape:window-height="695"
+     inkscape:window-height="701"
      id="namedview9"
      showgrid="true"
      inkscape:zoom="10.429825"
      inkscape:cx="2.8254317"
-     inkscape:cy="19.698594"
+     inkscape:cy="19.506836"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -59,9 +59,9 @@
      sodipodi:nodetypes="ccccc" />
   <g
      id="surface1"
-     style="fill:#ff0000">
+     style="fill:#ef5025;fill-opacity:1">
     <path
-       style="stroke:none;fill-rule:nonzero;fill:#ff0000;fill-opacity:1"
+       style="stroke:none;fill-rule:nonzero;fill:#ef5025;fill-opacity:1"
        d="M 16.125 13.5 C 15.070312 13.5 14.011719 13.902344 13.207031 14.707031 C 11.597656 16.320312 11.597656 18.929688 13.207031 20.542969 C 14.820312 22.152344 17.429688 22.152344 19.042969 20.542969 C 20.652344 18.929688 20.652344 16.320312 19.042969 14.707031 C 18.234375 13.902344 17.179688 13.5 16.125 13.5 Z M 16.125 14.738281 C 16.667969 14.738281 17.207031 14.890625 17.679688 15.195312 L 13.691406 19.183594 C 12.976562 18.0625 13.105469 16.5625 14.082031 15.582031 C 14.648438 15.019531 15.386719 14.738281 16.125 14.738281 Z M 18.554688 16.070312 C 19.273438 17.1875 19.144531 18.6875 18.167969 19.667969 C 17.1875 20.644531 15.6875 20.773438 14.566406 20.058594 Z M 18.554688 16.070312 "
        id="path7" />
   </g>

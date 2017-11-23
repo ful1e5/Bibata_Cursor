@@ -37,12 +37,12 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1366"
-     inkscape:window-height="695"
+     inkscape:window-height="701"
      id="namedview9"
      showgrid="false"
      inkscape:zoom="15"
-     inkscape:cx="-4.250388"
-     inkscape:cy="17.044587"
+     inkscape:cx="1.4812213"
+     inkscape:cy="13.97792"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -54,9 +54,10 @@
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="ccccc" />
   <g
-     id="surface1">
+     id="surface1"
+     style="stroke:#ffffff;fill:#7ebb41;fill-opacity:1">
     <path
-       style="stroke:none;fill-rule:evenodd;fill:#ff2a2a;fill-opacity:1"
+       style="stroke:#ffffff;fill-rule:evenodd;fill:#7ebb41;fill-opacity:1"
        d="M 16.976562 21.4375 L 20.414062 18.6875 C 21.105469 17.996094 21.101562 18 20.414062 17.3125 L 16.976562 14.5625 C 16.5 14.179688 16.5 14.320312 16.5 15.269531 C 16.492188 15.613281 16.480469 16 16.5 16.5 C 16.492188 16.5 16.507812 16.5 16.5 16.5 C 13.085938 16.5 11.476562 18.6875 11.5 21.457031 C 12.851562 20.0625 14.4375 19.457031 16.5 19.5 C 16.5 19.992188 16.492188 20.167969 16.5 20.5 C 16.5 21 16.5 21.777344 16.976562 21.4375 Z M 16.976562 21.4375 "
        id="path7" />
   </g>

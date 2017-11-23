@@ -35,12 +35,12 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1366"
-     inkscape:window-height="695"
+     inkscape:window-height="701"
      id="namedview246"
      showgrid="true"
      inkscape:zoom="14.75"
      inkscape:cx="10.185811"
-     inkscape:cy="10.828175"
+     inkscape:cy="10.692582"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -87,15 +87,15 @@
      id="path4288"
      d="m 19.745572,7.0243668 c 0,0 0.167107,-0.6204685 -1.002604,-1.79019 C 17.61452,4.105727 16.901019,4.2777385 16.901019,4.2777385 L 6.3604703,14.818633 4.7538244,19.223322 9.1554509,17.614058"
      inkscape:connector-curvature="0"
-     style="fill:#1a1a1a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
      sodipodi:nodetypes="cscccc" />
   <path
      id="path4292"
      d="M 5.4215173,17.243199 4.6788251,19.298335 6.7360605,18.557741 M 5.4215173,17.243199"
      inkscape:connector-curvature="0"
-     style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+     style="fill:#319fd9;fill-opacity:1;fill-rule:nonzero;stroke:none" />
   <rect
-     style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     style="opacity:1;fill:#319fd9;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="rect4304"
      width="0.75"
      height="4.5"

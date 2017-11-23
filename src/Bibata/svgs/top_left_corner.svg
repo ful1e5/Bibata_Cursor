@@ -38,11 +38,11 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1366"
-     inkscape:window-height="695"
+     inkscape:window-height="701"
      id="namedview9"
      showgrid="true"
      inkscape:zoom="20.85965"
-     inkscape:cx="-3.7159239"
+     inkscape:cx="12.803488"
      inkscape:cy="14.846288"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -54,7 +54,7 @@
   </sodipodi:namedview>
   <path
      sodipodi:nodetypes="cccc"
-     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.74999988;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+     style="fill:#319fd9;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.74999988;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
      d="m 10.124984,10.124984 1.606235,6.000037 c 0.90172,-2.07474 2.395063,-3.50655 4.393801,-4.389134 z"
      id="path21"
      inkscape:connector-curvature="0" />
@@ -62,6 +62,6 @@
      inkscape:connector-curvature="0"
      id="path5"
      d="m 5.6249998,5.6250003 0,11.2499987 1.5,0 0,-9.7499987 9.7499992,0 0,-1.5 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
      sodipodi:nodetypes="ccccccc" />
 </svg>

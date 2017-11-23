@@ -37,7 +37,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1366"
-     inkscape:window-height="695"
+     inkscape:window-height="701"
      id="namedview7"
      showgrid="false"
      inkscape:zoom="7.5"
@@ -49,9 +49,9 @@
      inkscape:current-layer="svg2" />
   <g
      id="surface1"
-     style="fill:#1a1a1a;stroke:#ffffff">
+     style="fill:#000000;stroke:#ffffff">
     <path
-       style="fill-rule:nonzero;fill:#1a1a1a;fill-opacity:1;stroke-width:1.999993;stroke-linecap:butt;stroke-linejoin:miter;stroke:#ffffff;stroke-opacity:1;stroke-miterlimit:4"
+       style="fill-rule:nonzero;fill:#000000;fill-opacity:1;stroke-width:1.999993;stroke-linecap:butt;stroke-linejoin:miter;stroke:#ffffff;stroke-opacity:1;stroke-miterlimit:4"
        d="M 29.53125 17.46875 C 27.96875 17.5625 26.625 19.083333 26.71875 20.65625 L 26.916667 23.4375 C 26.96875 24.145833 25.25 26.34375 25.104167 25.8125 L 24.489583 23.53125 C 24.270833 22.041667 22.791667 20.854167 21.302083 20.96875 C 19.65625 21.114583 18.333333 22.833333 18.614583 24.46875 L 19.729167 32.3125 C 19.739583 32.5625 19.666667 33.875 19.666667 33.875 L 18.291667 31.0625 C 16.28125 32.572917 13.364583 34.510417 14.708333 38.791667 C 16.302083 43.854167 19.520833 52 25.197917 52 C 29.197917 52 41.166667 52 41.166667 52 C 45.197917 52 45.9375 39.4375 47.354167 34.625 L 49.520833 27.25 C 50.052083 25.427083 48.291667 23.354167 46.395833 23.5 C 45.114583 23.572917 44.0625 23.875 43.770833 25.125 L 42.916667 26.6875 C 42.645833 27.1875 41.125 26.083333 41.166667 25.625 L 41.5 22.0625 C 41.614583 20.364583 40.635417 18.510417 38.9375 18.625 C 37.46875 18.708333 36.291667 18.8125 35.760417 20.53125 L 35.041667 23.375 C 34.864583 24.0625 32.895833 23.53125 32.854167 22.75 L 32.729167 20.34375 C 32.65625 18.75 31.125 17.364583 29.541667 17.46875 Z M 29.53125 17.46875 "
        transform="matrix(0.375,0,0,0.375,0,0)"
        id="path5" />

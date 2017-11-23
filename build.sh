@@ -47,9 +47,9 @@ echo -e "\033[0KGenerating simple cursor pixmaps... DONE"
 
 
 
-for i in 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
+for i in 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45
 do
-    echo -ne "\033[0KGenerating animated cursor pixmaps... $i / 31 \\r"
+    echo -ne "\033[0KGenerating animated cursor pixmaps... $i / 45 \\r"
 
     inkscape -w 32  -f $RAWSVGS_Bibata/progress-$i.svg -e "$DIR1X_Bibata/progress-$i.png" > /dev/null
     inkscape -w 64 -f $RAWSVGS_Bibata/progress-$i.svg -e "$DIR2X_Bibata/progress-$i.png" > /dev/null
@@ -113,9 +113,14 @@ echo -ne "Making Installer Executable...\\r"
 show_Msg() {
   echo -e "\033[1;34m$@\033[0m"
 }
+show_command() {
+  echo -e "\033[1;37m$@\033[0m"
+}
+
 echo -e "\033[0KMaking Installer Executable... DONE"
 
-show_Msg "For Installation Use Following Command:\n    ./Bibata_installer.sh"
+show_Msg "For Installation Use Following Command:\n\n"
+show_command "\t sudo ./Bibata_installer.sh\n"
 exit
 
 echo "COMPLETE!"

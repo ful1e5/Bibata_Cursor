@@ -15,7 +15,7 @@
    inkscape:version="0.92.2pre0 (973e216, 2017-07-25)"
    sodipodi:docname="wait-02.svg">
   <metadata
-     id="metadata13">
+     id="metadata11">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -27,7 +27,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs11" />
+     id="defs9" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -38,41 +38,45 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1366"
-     inkscape:window-height="695"
-     id="namedview9"
-     showgrid="false"
-     inkscape:zoom="7.5000002"
-     inkscape:cx="26.030446"
-     inkscape:cy="10.697296"
+     inkscape:window-height="701"
+     id="namedview7"
+     showgrid="true"
+     inkscape:zoom="7.625"
+     inkscape:cx="-3.0351065"
+     inkscape:cy="21.20939"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer5"
-     inkscape:measure-start="0,0"
-     inkscape:measure-end="0,0" />
+     inkscape:current-layer="layer2"
+     inkscape:showpageshadow="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10" />
+  </sodipodi:namedview>
   <g
      inkscape:groupmode="layer"
-     id="layer5"
-     inkscape:label="1">
+     id="layer2"
+     inkscape:label="1"
+     style="opacity:0.98">
     <path
        inkscape:connector-curvature="0"
-       id="path819"
-       d="M 19.963804,17.03999 A 9.2966783,9.2966783 0 0 1 7.523632,20.42587 l 4.576172,-7.926163 z"
-       style="opacity:1;fill:#19afcf;fill-opacity:0.8;stroke:none;stroke-width:1.42099464;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke" />
+       id="path3804"
+       d="M 9.832516,20.089159 12,12 3.910842,9.8325174 A 8.3750003,8.3750003 0 0 0 9.832516,20.089159 Z"
+       style="fill:#7ebb41;fill-opacity:1;stroke-width:0.75" />
     <path
-       style="opacity:1;fill:#6967cd;fill-opacity:0.8;stroke:none;stroke-width:1.42099464;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke"
-       d="M 3.3286512,10.149484 A 9.2966783,9.2966783 0 0 0 9.731003,21.340192 l 2.368801,-8.840485 z"
-       id="circle938"
-       inkscape:connector-curvature="0" />
-    <path
-       style="opacity:1;fill:#3be7af;fill-opacity:0.8;stroke:none;stroke-width:1.42099464;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke"
-       d="M 18.520734,18.920637 A 9.2966783,9.2966783 0 0 0 18.571488,6.0280224 L 12.099804,12.499707 Z"
-       id="path821"
+       style="fill:#329fd9;fill-opacity:0.94901961;stroke-width:0.75"
+       d="M 13.165507,3.706988 12,12 3.706988,10.834493 a 8.3750003,8.3750003 0 0 1 9.458519,-7.127505 z"
+       id="path3795"
        inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
-       id="path823"
-       d="M 3.019238,12.499707 A 9.2966783,9.2966783 0 0 1 12.099804,3.3473628 V 12.499707 Z"
-       style="opacity:1;fill:#ffb900;fill-opacity:0.8;stroke:none;stroke-width:1.42099464;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke" />
+       id="path3800"
+       d="M 16.646546,5.0327877 12,12 18.967212,16.646547 A 8.3750003,8.3750003 0 0 0 16.646546,5.0327877 Z"
+       style="fill:#ef5025;fill-opacity:1;stroke-width:0.75" />
+    <path
+       style="fill:#fdb713;fill-opacity:1;stroke-width:0.75"
+       d="M 9.094581,19.854362 12,12 19.854362,14.905417 A 8.3750003,8.3750003 0 0 1 9.094581,19.854362 Z"
+       id="path3802"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

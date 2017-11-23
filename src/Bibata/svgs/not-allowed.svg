@@ -37,26 +37,26 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1366"
-     inkscape:window-height="695"
+     inkscape:window-height="701"
      id="namedview9"
      showgrid="false"
-     inkscape:zoom="7.5"
-     inkscape:cx="0"
-     inkscape:cy="15.733333"
+     inkscape:zoom="15"
+     inkscape:cx="9.3336123"
+     inkscape:cy="12.92481"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <g
      id="surface1"
-     style="stroke:#ff0000">
+     style="stroke:#ef5025;stroke-opacity:1">
     <path
-       style="fill:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke:#ff0000;stroke-opacity:1;stroke-miterlimit:4"
+       style="fill:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke:#ef5025;stroke-opacity:1;stroke-miterlimit:4"
        d="M 51 32 C 51 42.489583 42.489583 51 32 51 C 21.510417 51 13 42.489583 13 32 C 13 21.510417 21.510417 13 32 13 C 42.489583 13 51 21.510417 51 32 Z M 51 32 "
        transform="matrix(0.375,0,0,0.375,0,0)"
        id="path5" />
     <path
-       style="stroke:#ff0000;fill-rule:nonzero;fill:#ff0000;fill-opacity:1"
+       style="stroke:#ef5025;fill-rule:nonzero;fill:#ef5025;fill-opacity:1;stroke-opacity:1"
        d="M 15.976562 6.429688 L 17.566406 8.023438 L 8.023438 17.570312 L 6.429688 15.976562 Z M 15.976562 6.429688 "
        id="path7" />
   </g>
