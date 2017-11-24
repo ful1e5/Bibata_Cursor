@@ -8,6 +8,11 @@ The Installation Is Easy,You Just Follow This Command
       $ cd Bibata_Cursor/
       $ sudo chmod +x Bibata_installer.sh
       $ sudo ./Bibata_installer.sh 
+If You get any error Like missing cursor,So You must Have To rebuild The cursor By Following Command 
+
+      $ sudo chmod +x $ ./build.sh 
+      $ ./build.sh 
+
 ![alt text](https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/all.png)
 # Build
 ## Build Dependancy
