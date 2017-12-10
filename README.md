@@ -22,7 +22,6 @@ If You get any error Like missing cursor,So You must Have To rebuild The cursor 
       $ sudo chmod +x $ ./build.sh
       $ ./build.sh
 
-![alt text](https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/all.png)
 # Build
 ## Build Dependancy
 ### Inkscape
