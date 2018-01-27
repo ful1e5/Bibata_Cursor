@@ -15,7 +15,7 @@ The Installation Is Easy,You Just Follow This Command
 
       $ git clone https://github.com/KaizIqbal/Bibata_Cursor.git
       $ cd Bibata_Cursor/
-      $ sudo chmod +x $ ./build.sh
+      $ sudo chmod +x build.sh
       $ ./build.sh
       $ sudo chmod +x ./Installer_Bibata.sh
       $ sudo ./Installer_Bibata.sh  
