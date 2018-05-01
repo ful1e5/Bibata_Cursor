@@ -1,15 +1,12 @@
 # Bibata_Cursor
 ###### Material Based Cursor
-![alt text](https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/wall.png)
-# Flavours
-Now Bibata Cursor Is Available In Two Theme Light & Dark.
 
-## Bibata Oil
-###### Dark Theme(Default)
- ![alt text](https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/Bibata_Oil_all.png)
- ## Bibata Ice
- ###### Light Theme
-  ![alt text](https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/Bibata_ice_all.png)
+![Bibata Wallpaper](https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/Bibata_wall.png)
+# Flavours
+Now Bibata Cursor Is Available In Three Color Light,Dark,and Amber .
+
+![Bibata Flavours](https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/All_Cursor.png)
+
 # Installation
 The Installation Is Easy,You Just Follow This Command
 

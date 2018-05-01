@@ -1,2 +1,4 @@
-24 4 4 x1/no-drop.png
-48 8 8 x2/no-drop.png
+24 6 2 24x24/no-drop.png
+28 7 2 28x28/no-drop.png
+32 8 3 32x32/no-drop.png
+48 12 4 48x48/no-drop.png

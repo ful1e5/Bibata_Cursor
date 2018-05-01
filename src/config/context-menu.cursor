@@ -1,2 +1,4 @@
-24 4 4 x1/context-menu.png
-48 8 8 x2/context-menu.png
+24 6 2 24x24/context-menu.png
+28 7 2 28x28/context-menu.png
+32 8 3 32x32/context-menu.png
+48 12 4 48x48/context-menu.png

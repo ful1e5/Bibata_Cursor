@@ -1,2 +1,4 @@
-24 5 4 x1/top_left_corner.png
-48 10 8 x2/top_left_corner.png
+24 4 4 24x24/top_left_corner.png
+28 4 5 28x28/top_left_corner.png
+32 5 5 32x32/top_left_corner.png
+48 8 8 48x48/top_left_corner.png

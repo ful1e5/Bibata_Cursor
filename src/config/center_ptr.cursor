@@ -1,2 +1,4 @@
-24 20 4 x1/center_ptr.png
-48 40 8 x2/center_ptr.png
+24 12 4 24x24/center_ptr.png
+28 14 4 28x28/center_ptr.png
+32 15 5 32x32/center_ptr.png
+48 24 8 48x48/center_ptr.png
