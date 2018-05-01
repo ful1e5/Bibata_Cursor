@@ -4,7 +4,7 @@
 ![Bibata Wallpaper](https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/Bibata_wall.png)
 # Flavours
 
-######Now Bibata Cursor Is Available In Three Color Light,Dark,and Amber.
+###### Now Bibata Cursor Is Available In Three Color Light,Dark,and Amber.
 
 ![Bibata Flavours](https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/All_Cursor.png)
 
