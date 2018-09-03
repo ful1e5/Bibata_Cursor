@@ -28,9 +28,9 @@ I'll release messages on my [Google+](https://plus.google.com/+KaizKhatri)
    * [Work in Progress](#work-in-progress)
    * [Gallary](#gallary)
    * [Bugs](#bugs)
-   * [License & Terms](#license-&-terms)
+   * [License & Terms](#license-and-terms)
    * [Getting help](#getting-help)
-   * [Contributions & Suggestions](#contributions-&-suggestions)
+   * [Contributions & Suggestions](#contributions-and-suggestions)
    * [Looking For Bibata Adapta](#looking-for-bibata-adapta)
 <!--te-->
 
@@ -162,7 +162,7 @@ packer -S bibata-cursor-theme
 Bugs should be reported [here](https://github.com/KaizIqbal/Bibata_Cursor/issues) on the Github issues page.
 
 
-## License & Terms
+## License and Terms
 
 ```Bibata Cursor SET``` Collection is available under the terms of the GPL-3.0 license See [`LICENSE`](https://github.com/KaizIqbal/Bibata_Cursor/blob/master/LICENSE) for details.
 
@@ -170,7 +170,7 @@ Bugs should be reported [here](https://github.com/KaizIqbal/Bibata_Cursor/issues
 
 You can create a issue, I will help you.
 
-## Contributions & Suggestions
+## Contributions and Suggestions
 
 Any suggestions for features and contributions to the continuing code development can be made via the issue tracker or code contributions via a ```Fork``` & ```Pull requests```.
 
