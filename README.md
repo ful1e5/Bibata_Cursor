@@ -7,7 +7,7 @@
 <p align="center"><img title="Bibata" src="https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/Bibata_Wall.png"></p>
 
 
-## How to get Project Message and Updates?
+## How to get Project Message and Updates
 
 I'll release messages on my [Google+](https://plus.google.com/+KaizKhatri)
 
@@ -15,17 +15,17 @@ I'll release messages on my [Google+](https://plus.google.com/+KaizKhatri)
 
 ## Table Of Contents
 <!--ts-->
-   * [How to get Project Message and Updates?](#how-to-get-project-message-and-updates?)
+   * [How to get Project Message and Updates](#how-to-get-project-message-and-updates)
    * [Table Of Contents](#table-of-contents)
    * [Donate](#donate)
       * [One-time donation](#one-time-donation)
-   * [What is Bibata?](#what-is-bibata?)
+   * [What is Bibata](#what-is-bibata)
    * [Dependencies](#dependencies)
       * [Build dependencies](#build-dependencies)
    * [Installation](#installation)
       * [Build From Source Code](#build-from-source-code)
       * [Package](#package)
-   * [Work in Progress](#work-in-progress!)
+   * [Work in Progress](#work-in-progress)
    * [Gallary](#gallary)
    * [Bugs](#bugs)
    * [License & Terms](#license-&-terms)
@@ -52,7 +52,7 @@ Currently I'm making lots of Linux Themes to Improve [Linux](https://en.wikipedi
 
 
 
-## What is Bibata?
+## What is Bibata
 
 |      Name      |     Description     |
 | :-----------:  | :------------------ |
@@ -72,7 +72,7 @@ Currently I'm making lots of Linux Themes to Improve [Linux](https://en.wikipedi
 
 ## Installation
 
-**Note :** Latest ```Stable``` & ```BETA``` releases can be downloaded from [Here]()
+**Note :** Latest ```Stable``` & ```BETA``` releases can be downloaded from [Here](https://github.com/KaizIqbal/Bibata_Cursor/releases)
 
 ### Build From Source Code
 
@@ -132,7 +132,7 @@ packer -S bibata-cursor-theme
 
 ```
 
-## Work in progress!
+## Work in progress
 
 | Completed Tasks | ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true)| In Progress Tasks |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-off.png?raw=true)|
 | :------------- |--- |:------------- |---|
