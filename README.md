@@ -184,7 +184,7 @@ You give suggestions on _slack_ @ [#bibata-cursor](https://kaizkhatri.slack.com/
 Bibata Adapta **</>** and maintained by @cscs you find it at [Gitlab](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors)
 
 <p align="center"></br>
-<a style="text-decoration: none;color:#009688;margin:0;padding:0 0 10px 0" href="https://github.com/KaizIqbal"><img style="border-radius: 50%;border:3px solid #00BCD4;width:20%;" title="Kaiz"  src="https://avatars2.githubusercontent.com/u/24286590?s=400&v=4" /></br>
+<a style="text-decoration: none;color:#009688;margin:0;padding:0 0 10px 0" href="https://github.com/KaizIqbal">
 <span style="font-size:15px">Your Boy</span></br>
 <span style="font-size:20px">Kaiz Khatri</span>
 <h1 align="center">.^.</h1>
