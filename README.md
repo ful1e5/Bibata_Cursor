@@ -179,7 +179,7 @@ OR
 You give suggestions on _slack_ @ [#bibata-cursor](https://kaizkhatri.slack.com/messages/CCK84QYQ4/)
 ###
 
-##Looking For Bibata Adapta
+## Looking For Bibata Adapta
 
 Bibata Adapta **</>** and maintained by @cscs you find it at [Gitlab](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors)
 
