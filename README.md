@@ -3,18 +3,28 @@
 
 ###### MATERIAL BASED CURSOR SET
 
+[![PRs](https://img.shields.io/badge/made for-linux-purple.svg)](https://shields.io/)
 [![HitCount](http://hits.dwyl.io/KaizIqbal/Bibata_Cursor.svg)](http://hits.dwyl.io/KaizIqbal/Bibata_Cursor)
-[![GPL-3.0 License][license-badge]][LICENSE]
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)]
-[![PRs Welcome][prs-badge]][prs]
-[![Donate][donate-badge]][donate]
-[![Code of Conduct][coc-badge]][coc]
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![GitHub contributors](https://img.shields.io/github/contributors/KaizIqbal/Bibata_Cursor.svg)](https://GitHub.com/KaizIqbal/Bibata_Cursor/graphs/contributors/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/KaizIqbal/Bibata_Cursor/graphs/commit-activity)
+[![PRs](https://img.shields.io/badge/PRs-Welcome-red.svg)](https://shields.io/)
+[![Donate](https://img.shields.io/badge/Donate-yes-yellow.svg)](https://shields.io/)
+[![Code Of Conduct](https://img.shields.io/badge/COC-yes-pink.svg)](https://shields.io/)
 
-[![Watch on GitHub][github-watch-badge]][github-watch]
-[![Star on GitHub][github-star-badge]][github-star]
-[![Fork on GitHub][github-fork-badge]][github-fork]
+![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)
+![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)
+
+[![GitHub forks](https://img.shields.io/github/forks/KaizIqbal/Bibata_Cursor.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/KaizIqbal/Bibata_Cursor/network)
+[![GitHub watchers](https://img.shields.io/github/watchers/KaizIqbal/Bibata_Cursor.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/KaizIqbal/Bibata_Cursor/watchers/)
+[![GitHub stars](https://img.shields.io/github/stars/KaizIqbal/Bibata_Cursor.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/KaizIqbal/Bibata_Cursor/stargazers/)
+[![GitHub followers](https://img.shields.io/github/followers/KaizIqbal.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/KaizIqbal?tab=followers)
+
+
 
 <p align="center"><img title="Bibata" src="https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/Bibata_Wall.png"></p>
+
+
 
 
 ## How to get Project Message and Updates
@@ -35,6 +45,8 @@ I'll release messages on my [Google+](https://plus.google.com/+KaizKhatri)
    * [Installation](#installation)
       * [Build From Source Code](#build-from-source-code)
       * [Package](#package)
+   * [Quick Fixes](#quick-fixes)
+      * [Inherits Problem](#inherits-problem)
    * [Work in Progress](#work-in-progress)
    * [Gallary](#gallary)
    * [Bugs](#bugs)
@@ -70,7 +82,6 @@ Currently I'm making lots of Linux Themes to Improve [Linux](https://en.wikipedi
 |   Bibata Oil   | Dark  Theme  |
 |   Bibata ice   | Light Theme  |
 |   Bibata Amber | Yellowish-Orange Theme |
-
 
 
 ## Dependencies
@@ -141,20 +152,32 @@ yaourt -S bibata-cursor-theme
 packer -S bibata-cursor-theme
 
 ```
+## Quick Fixes
+##### *Inherits* Problem
+issue [#8](https://github.com/KaizIqbal/Bibata_Cursor/issues/8)
 
+edit ```/usr/share/icons/default/index.theme``` and replace your cursor.
+
+     [Icon Theme]
+     Inherits=Adwaita
+
+edited to
+
+     [Icon Theme]
+     Inherits=Bibata_Ice                      #replace here
 ## Work in progress
 
 | Completed Tasks | ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true)| In Progress Tasks |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-off.png?raw=true)|
 | :------------- |--- |:------------- |---|
-| Add Bibata Cursor SET |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | Cursor Location Fixes |89%
-| Added GPL v3 Licences |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true)  | Documantaion |83%
-|Added Light Flavor|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | Debain Package |43%
-|Added Amber Flavor| ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | Ubuntu Repository |26%
-|Added CODE OF CONDUCT|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | **Bbata Extra**_(Add new Color)_  | 19%
-|Added To [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme/)|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | **Bibata MARVEL** | 3%
+| Add Bibata Cursor SET |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | Cursor Location Fixes |98%
+| Added GPL v3 Licences |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true)  | Documantaion |94%
+|Added Light Flavor|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | **Bbata Extra**_(Add new Color)_ |46%
+|Added Amber Flavor| ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) |Debain Package |43%
+|Added CODE OF CONDUCT|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | Ubuntu Repository  | 26%
+|Added To [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme/)|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | **Bibata Square** | 1%
 |Bibata Adapta | ![](https://upload.wikimedia.org/wikipedia/commons/7/78/Breezeicons-emotes-22-face-smile-grin.svg) | Code Migration to ```python``` | **...**
 || | Port to ```Window``` | **...**
-
+|| | **Bibata MARVEL** | **...**
 
 ## Gallary
 
