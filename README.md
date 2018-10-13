@@ -7,9 +7,9 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![GitHub contributors](https://img.shields.io/github/contributors/KaizIqbal/Bibata_Cursor.svg)](https://GitHub.com/KaizIqbal/Bibata_Cursor/graphs/contributors/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/KaizIqbal/Bibata_Cursor/graphs/commit-activity)
-[![PRs](https://img.shields.io/badge/PRs-Welcome-red.svg)](https://shields.io/)
-[![Donate](https://img.shields.io/badge/Donate-yes-yellow.svg)](https://shields.io/)
-[![Code Of Conduct](https://img.shields.io/badge/COC-yes-pink.svg)](https://shields.io/)
+[![PRs](https://img.shields.io/badge/PRs-Welcome-red.svg)]
+[![Donate](https://img.shields.io/badge/Donate-yes-yellow.svg)](https://www.paypal.me/kaizkhatri)
+[![Code Of Conduct](https://img.shields.io/badge/COC-yes-pink.svg)](https://github.com/KaizIqbal/Bibata_Cursor/blob/dev/CODE_OF_CONDUCT.md)
 
 ![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)
 ![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)
