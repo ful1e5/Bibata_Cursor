@@ -3,6 +3,16 @@
 
 ###### MATERIAL BASED CURSOR SET
 
+[![HitCount](http://hits.dwyl.io/KaizIqbal/Bibata_Cursor.svg)](http://hits.dwyl.io/KaizIqbal/Bibata_Cursor)
+[![GPL-3.0 License][license-badge]][LICENSE]
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)]
+[![PRs Welcome][prs-badge]][prs]
+[![Donate][donate-badge]][donate]
+[![Code of Conduct][coc-badge]][coc]
+
+[![Watch on GitHub][github-watch-badge]][github-watch]
+[![Star on GitHub][github-star-badge]][github-star]
+[![Fork on GitHub][github-fork-badge]][github-fork]
 
 <p align="center"><img title="Bibata" src="https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/Bibata_Wall.png"></p>
 
