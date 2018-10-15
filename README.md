@@ -53,6 +53,7 @@ I'll release messages on my [Google+](https://plus.google.com/+KaizKhatri)
    * [Getting help](#getting-help)
    * [Contributions & Suggestions](#contributions-and-suggestions)
    * [Looking For Bibata Adapta](#looking-for-bibata-adapta)
+   * [Contributors](#contributors)
 <!--te-->
 
 ## Donate
@@ -169,7 +170,7 @@ edited to
 | Completed Tasks | ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true)| In Progress Tasks |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-off.png?raw=true)|
 | :------------- |--- |:------------- |---|
 | Add Bibata Cursor SET |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | Cursor Location Fixes |98%
-| Added GPL v3 Licences |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true)  | Documantaion |94%
+| Added GPL v3 Licences |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true)  | Documantaion |96%
 |Added Light Flavor|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | **Bbata Extra**_(Add new Color)_ |46%
 |Added Amber Flavor| ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) |Debain Package |43%
 |Added CODE OF CONDUCT|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | Ubuntu Repository  | 26%
@@ -214,6 +215,14 @@ You give suggestions on _slack_ @ [#bibata-cursor](https://kaizkhatri.slack.com/
 ## Looking For Bibata Adapta
 
 Bibata Adapta **</>** and maintained by @cscs you find it at [Gitlab](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors)
+
+## Contributors
+Thanks goes to these wonderful people
+
+|                |                |                |                |                |
+| :------------- | :------------- | :------------- | :------------- | :------------- |
+| [<img src="https://avatars3.githubusercontent.com/u/6747270?s=400&v=4" width="100px;"/><br /><sub><b>mleyen</b></sub>](https://github.com/mleyen)      | [<img src="https://avatars2.githubusercontent.com/u/14180792?s=400&v=4" width="100px;"/><br /><sub><b>eti0</b></sub>](https://github.com/eti0)       | [<img src="https://avatars0.githubusercontent.com/u/6218030?s=400&v=4" width="100px;"/><br /><sub><b>mmetak</b></sub>](https://github.com/mmetak) | [<img src="https://avatars0.githubusercontent.com/u/11244308?s=400&v=4" width="100px;"/><br /><sub><b>alex285</b></sub>](https://github.com/alex285) | [<img src="https://avatars0.githubusercontent.com/u/20587163?s=400&v=4" width="100px;"/><br /><sub><b>commonsourcecs</b></sub>](https://github.com/commonsourcecs) |
+
 
 <p align="center"></br>
 <a style="text-decoration: none;color:#009688;margin:0;padding:0 0 10px 0" href="https://github.com/KaizIqbal">
