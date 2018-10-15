@@ -44,3 +44,10 @@ By contributing, you agree that your contributions will be licensed under its ``
 
 ## References
 This document was adapted from the open-source contribution guidelines for [Facebook's Draft](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
+
+## Contributors
+Thanks goes to these wonderful people
+
+|                |                |                |                |                |
+| :------------- | :------------- | :------------- | :------------- | :------------- |
+| [<img src="https://avatars3.githubusercontent.com/u/6747270?s=400&v=4" width="100px;"/><br /><sub><b>mleyen</b></sub>](https://github.com/mleyen)      | [<img src="https://avatars2.githubusercontent.com/u/14180792?s=400&v=4" width="100px;"/><br /><sub><b>eti0</b></sub>](https://github.com/eti0)       | [<img src="https://avatars0.githubusercontent.com/u/6218030?s=400&v=4" width="100px;"/><br /><sub><b>mmetak</b></sub>](https://github.com/mmetak) | [<img src="https://avatars0.githubusercontent.com/u/11244308?s=400&v=4" width="100px;"/><br /><sub><b>alex285</b></sub>](https://github.com/alex285) | [<img src="https://avatars0.githubusercontent.com/u/20587163?s=400&v=4" width="100px;"/><br /><sub><b>commonsourcecs</b></sub>](https://github.com/commonsourcecs) |
