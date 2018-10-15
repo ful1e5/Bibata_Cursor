@@ -28,7 +28,9 @@
 
 ## How to get Project Message and Updates
 
-I'll release messages on my [Google+](https://plus.google.com/+KaizKhatri)
+I'll release messages on
+ * [Google+](https://plus.google.com/+KaizKhatri)
+ * [Twitter](https://twitter.com/ful1e5_)
 
 
 
