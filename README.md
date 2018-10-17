@@ -92,6 +92,7 @@ Currently I'm making lots of Linux Themes to Improve [Linux](https://en.wikipedi
 
 * [Xcursorgen](https://github.com/freedesktop/xcursorgen)
 * [Inkscape](https://gitlab.com/inkscape/inkscape)
+* [gnome-themes-standard](https://launchpad.net/ubuntu/+source/gnome-themes-standard)
 
 ## Installation
 
