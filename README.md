@@ -62,7 +62,7 @@ I'll release messages on
 
 **Who Am I?**
 
-I'm a _ComputerScienceStudent_ , _GraphicsDesigner_ and _OpenSourceEnthusiast_ .I mostly do  _ComputerGraphics_ stuffs and love them 💕
+I'm a _ComputerScienceStudent_, _GraphicsDesigner_ and _OpenSourceEnthusiast_. I mostly do  _ComputerGraphics_ stuffs and love them 💕
 
 Currently I'm making lots of Linux Themes to Improve [Linux](https://en.wikipedia.org/wiki/Linux) Experience, if you enjoy my works please consider making a donation. My ultimate goal is to become a full-time open-source ninja.
 
