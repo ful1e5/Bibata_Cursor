@@ -1,7 +1,6 @@
 <a href="https://github.com/KaizIqbal/Bibata_Cursor">
 <p align="center"><img title="Bibata" src="https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/Bibata.png"></p>
 </a>
-
 [![HitCount](http://hits.dwyl.io/KaizIqbal/Bibata_Cursor.svg)](http://hits.dwyl.io/KaizIqbal/Bibata_Cursor)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![GitHub contributors](https://img.shields.io/github/contributors/KaizIqbal/Bibata_Cursor.svg)](https://GitHub.com/KaizIqbal/Bibata_Cursor/graphs/contributors/)
@@ -19,17 +18,17 @@
 [![GitHub followers](https://img.shields.io/github/followers/KaizIqbal.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/KaizIqbal?tab=followers)
 
 <br />
-## How to get Project Message and Updates
+
+<h2> How to get Project Message and Updates </h2>
 
 I'll release messages on
  * [Google+](https://plus.google.com/+KaizKhatri)
  * [Twitter](https://twitter.com/ful1e5_)
 
-
-
+</br>
 ## Table Of Contents
 <!--ts-->
-   * [How to get Project Message and Updates](#how-to-get-project-message-and-updates)
+   * [ How to get Project Message and Updates](#how-to-get-project-message-and-updates)
    * [Table Of Contents](#table-of-contents)
    * [Donate](#donate)
       * [One-time donation](#one-time-donation)
