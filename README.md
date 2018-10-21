@@ -19,16 +19,17 @@
 
 <br />
 
-<h2> How to get Project Message and Updates </h2>
+
+How to get Project Message and Updates
 
 I'll release messages on
  * [Google+](https://plus.google.com/+KaizKhatri)
  * [Twitter](https://twitter.com/ful1e5_)
 
-</br>
+
+
 ## Table Of Contents
 <!--ts-->
-   * [ How to get Project Message and Updates](#how-to-get-project-message-and-updates)
    * [Table Of Contents](#table-of-contents)
    * [Donate](#donate)
       * [One-time donation](#one-time-donation)
