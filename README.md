@@ -18,8 +18,6 @@
 [![GitHub followers](https://img.shields.io/github/followers/KaizIqbal.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/KaizIqbal?tab=followers)
 
 <br />
-
-
 How to get Project Message and Updates
 
 I'll release messages on
@@ -30,6 +28,7 @@ I'll release messages on
 
 ## Table Of Contents
 <!--ts-->
+
    * [Table Of Contents](#table-of-contents)
    * [Donate](#donate)
       * [One-time donation](#one-time-donation)
