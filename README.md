@@ -1,7 +1,6 @@
-<span>
-  <h1 style="font-style: Bold;color:#2CA7F8;">OFFICIAL BIBATA CURSOR SET</h1>
-
-###### MATERIAL BASED CURSOR SET
+<a href="https://github.com/KaizIqbal/Bibata_Cursor">
+<p align="center"><img title="Bibata" src="https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/Bibata.png"></p>
+</a>
 
 [![HitCount](http://hits.dwyl.io/KaizIqbal/Bibata_Cursor.svg)](http://hits.dwyl.io/KaizIqbal/Bibata_Cursor)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -9,7 +8,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/KaizIqbal/Bibata_Cursor/graphs/commit-activity)
 ![PRs](https://img.shields.io/badge/PRs-Welcome-red.svg)
 [![Donate](https://img.shields.io/badge/Donate-yes-yellow.svg)](https://www.paypal.me/kaizkhatri)
-[![Code Of Conduct](https://img.shields.io/badge/COC-yes-pink.svg)](https://github.com/KaizIqbal/Bibata_Cursor/blob/dev/CODE_OF_CONDUCT.md)
+[![Code Of Conduct](https://img.shields.io/badge/COC-yes-pink.svg)](https://github.com/KaizIqbal/Bibata_Cursor/blob/master/CODE_OF_CONDUCT.md)
 
 ![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)
 ![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)
@@ -49,12 +48,14 @@ I'll release messages on
    * [Quick Fixes](#quick-fixes)
       * [Inherits Problem](#inherits-problem)
    * [Work in Progress](#work-in-progress)
-   * [Gallary](#gallary)
+   * [Gallery](#gallery)
    * [Bugs](#bugs)
    * [License & Terms](#license-and-terms)
    * [Getting help](#getting-help)
    * [Contributions & Suggestions](#contributions-and-suggestions)
-   * [Looking For Bibata Adapta](#looking-for-bibata-adapta)
+   * [Looking For Another Bibata](#looking-for-another-bibata)
+      * [Bibata Extra](#bibata-extra)
+      * [Bibata Adapta](#bibata-adapta)
    * [Contributors](#contributors)
 <!--te-->
 
@@ -80,7 +81,7 @@ Currently I'm making lots of Linux Themes to Improve [Linux](https://en.wikipedi
 
 |      Name      |     Description     |
 | :-----------:  | :------------------ |
-|     Bibata     | Bibata is **OpenSource** ,Compact and Material Designed Cursor set.This project develop for improve ```Linux``` Experience and Feel _openness_ in ```OpenSoftwareWorld```.|
+|     Bibata     | Bibata is **OpenSource** ,Compact and Material Designed Cursor set.This project masterelop for improve ```Linux``` Experience and Feel _openness_ in ```OpenSoftwareWorld```.|
 |   Bibata Oil   | Dark  Theme  |
 |   Bibata ice   | Light Theme  |
 |   Bibata Amber | Yellowish-Orange Theme |
@@ -173,16 +174,16 @@ edited to
 | Completed Tasks | ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true)| In Progress Tasks |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-off.png?raw=true)|
 | :------------- |--- |:------------- |---|
 | Add Bibata Cursor SET |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | Cursor Location Fixes |98%
-| Added GPL v3 Licences |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true)  | Documantaion |96%
-|Added Light Flavor|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | **Bbata Extra**_(Add new Color)_ |46%
-|Added Amber Flavor| ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) |Debain Package |43%
-|Added CODE OF CONDUCT|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | Ubuntu Repository  | 26%
-|Added To [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme/)|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | **Bibata Square** | 1%
-|Bibata Adapta | ![](https://upload.wikimedia.org/wikipedia/commons/7/78/Breezeicons-emotes-22-face-smile-grin.svg) | Code Migration to ```python``` | **...**
-|| | Port to ```Window``` | **...**
-|| | **Bibata MARVEL** | **...**
+| Added GPL v3 Licences |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true)  | Documantaion |97%
+|Added Light Flavor|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | Debain Package  |43%
+|Added Amber Flavor| ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | Ubuntu Repository | 26%
+|Added CODE OF CONDUCT|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | **Bibata Square**  | 1%
+|Added To [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme/)|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) |Code Migration to ```python``` | **...**
+|Bibata Adapta | ![](https://upload.wikimedia.org/wikipedia/commons/7/78/Breezeicons-emotes-22-face-smile-grin.svg) |  Port to ```Window```  | **...**
+|Added [Bbata Extra](https://github.com/KaizIqbal/Bibata_Extra_Cursor/releases) | ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) |**Bibata MARVEL** | **...**
 
-## Gallary
+
+## Gallery
 
 <p align="center"><img title="Bibata Ice" src="https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/Bibata_Ice.png">
 </br><sub>Bibata Ice</sub></p>
@@ -208,14 +209,20 @@ You can create a issue, I will help you.
 
 ## Contributions and Suggestions
 
-Any suggestions for features and contributions to the continuing code development can be made via the issue tracker or code contributions via a ```Fork``` & ```Pull requests```.
+Any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a ```Fork``` & ```Pull requests```.
 
 OR
 
 You give suggestions on _slack_ @ [#bibata-cursor](https://kaizkhatri.slack.com/messages/CCK84QYQ4/)
 ###
 
-## Looking For Bibata Adapta
+## Looking For Another Bibata
+
+###### Bibata Extra
+
+Bibata Adapta **</>** and maintained by @KaizIqbal you find it at [GitHub](https://github.com/KaizIqbal/Bibata_Extra_Cursor)
+
+###### Bibata Adapta
 
 Bibata Adapta **</>** and maintained by @cscs you find it at [Gitlab](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors)
 
