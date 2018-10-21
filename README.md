@@ -18,13 +18,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/KaizIqbal/Bibata_Cursor.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/KaizIqbal/Bibata_Cursor/stargazers/)
 [![GitHub followers](https://img.shields.io/github/followers/KaizIqbal.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/KaizIqbal?tab=followers)
 
-
-
-<p align="center"><img title="Bibata" src="https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/Bibata_Wall.png"></p>
-
-
-
-
+<br />
 ## How to get Project Message and Updates
 
 I'll release messages on
