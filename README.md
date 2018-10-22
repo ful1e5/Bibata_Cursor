@@ -215,7 +215,7 @@ You give suggestions on _slack_ @ [#bibata-cursor](https://kaizkhatri.slack.com/
 
 ###### Bibata Extra
 
-Bibata Adapta **</>** and maintained by @KaizIqbal you find it at [GitHub](https://github.com/KaizIqbal/Bibata_Extra_Cursor)
+Bibata Extra **</>** and maintained by @KaizIqbal you find it at [GitHub](https://github.com/KaizIqbal/Bibata_Extra_Cursor)
 
 ###### Bibata Adapta
 
