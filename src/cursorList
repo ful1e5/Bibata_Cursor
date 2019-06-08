@@ -94,3 +94,7 @@ x-cursor default
 wayland-cursor default
 zoom-in default
 zoom-out default
+ne-resize size_bdiag
+sw-resize size_bdiag
+nw-resize size_fdiag
+se-resize size_fdiag
