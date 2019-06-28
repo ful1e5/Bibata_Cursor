@@ -174,7 +174,7 @@ edited to
 |Added Amber Flavor| ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | Ubuntu Repository | 26%
 |Added CODE OF CONDUCT|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | **Bibata Square**  | 1%
 |Added To [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme/)|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) |Code Migration to ```python``` | **...**
-|Bibata Adapta | ![](https://upload.wikimedia.org/wikipedia/commons/7/78/Breezeicons-emotes-22-face-smile-grin.svg) |  Port to ```Window```  | **...**
+|Bibata Adapta | ![](https://upload.wikimedia.org/wikipedia/commons/7/78/Breezeicons-emotes-22-face-smile-grin.svg) |  Port to ```Windows```  | ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true)
 |Added [Bbata Extra](https://github.com/KaizIqbal/Bibata_Extra_Cursor/releases) | ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) |**Bibata MARVEL** | **...**
 
 
@@ -224,9 +224,9 @@ Bibata Adapta **</>** and maintained by @cscs you find it at [Gitlab](https://gi
 ## Contributors
 Thanks goes to these wonderful people
 
-|                |                |                |                |                |
-| :------------- | :------------- | :------------- | :------------- | :------------- |
-| [<img src="https://avatars3.githubusercontent.com/u/6747270?s=400&v=4" width="100px;"/><br /><sub><b>mleyen</b></sub>](https://github.com/mleyen)      | [<img src="https://avatars2.githubusercontent.com/u/14180792?s=400&v=4" width="100px;"/><br /><sub><b>eti0</b></sub>](https://github.com/eti0)       | [<img src="https://avatars0.githubusercontent.com/u/6218030?s=400&v=4" width="100px;"/><br /><sub><b>mmetak</b></sub>](https://github.com/mmetak) | [<img src="https://avatars0.githubusercontent.com/u/11244308?s=400&v=4" width="100px;"/><br /><sub><b>alex285</b></sub>](https://github.com/alex285) | [<img src="https://avatars0.githubusercontent.com/u/20587163?s=400&v=4" width="100px;"/><br /><sub><b>commonsourcecs</b></sub>](https://github.com/commonsourcecs) |
+|                |                |                |                |                |                |       
+| :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
+| [<img src="https://avatars3.githubusercontent.com/u/6747270?s=400&v=4" width="100px;"/><br /><sub><b>mleyen</b></sub>](https://github.com/mleyen)      | [<img src="https://avatars2.githubusercontent.com/u/14180792?s=400&v=4" width="100px;"/><br /><sub><b>eti0</b></sub>](https://github.com/eti0)       | [<img src="https://avatars0.githubusercontent.com/u/6218030?s=400&v=4" width="100px;"/><br /><sub><b>mmetak</b></sub>](https://github.com/mmetak) | [<img src="https://avatars0.githubusercontent.com/u/11244308?s=400&v=4" width="100px;"/><br /><sub><b>alex285</b></sub>](https://github.com/alex285) | [<img src="https://avatars0.githubusercontent.com/u/20587163?s=400&v=4" width="100px;"/><br /><sub><b>commonsourcecs</b></sub>](https://github.com/commonsourcecs) | [<img src="https://avatars0.githubusercontent.com/u/43558271?s=40&v=4" height="100px" width="100px"/><br /><sub><b>SiicaSandwhich</b></sub>](https://github.com/Silicasandwhich) |
 
 
 <p align="center"></br>
