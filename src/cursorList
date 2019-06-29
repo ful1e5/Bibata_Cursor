@@ -29,6 +29,7 @@ color-picker crosshair
 context-menu default
 copy dnd-move
 cross crosshair
+tcross crosshair
 crossed_circle not-allowed
 dnd-copy copy
 dnd-none dnd-move
