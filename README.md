@@ -224,7 +224,7 @@ Bibata Adapta **</>** and maintained by @cscs you find it at [Gitlab](https://gi
 Thanks goes to these wonderful people
 
 |                |                |                |                |            |                |                   
-| :------------- | :------------- | :------------- | :------------- | :------------- | :------------- | 
+| :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | 
 | [<img src="https://avatars3.githubusercontent.com/u/6747270?s=400&v=4" width="100px;"/><br /><sub><b>mleyen</b><br /></sub>](https://github.com/mleyen) 👨‍💻| [<img src="https://avatars2.githubusercontent.com/u/14180792?s=400&v=4" width="100px;"/><br /><sub><b>eti0</b><br /></sub>](https://github.com/eti0) 👨‍💻| [<img src="https://avatars0.githubusercontent.com/u/6218030?s=400&v=4" width="100px;"/><br /><sub><b>mmetak<br /></b></sub>](https://github.com/mmetak) 👨‍💻| [<img src="https://avatars0.githubusercontent.com/u/11244308?s=400&v=4" width="100px;"/><br /><sub><b>alex285</b><br /></sub>](https://github.com/alex285)👨‍💻🐛 | [<img src="https://avatars0.githubusercontent.com/u/20587163?s=400&v=4" width="100px;"/><br /><sub><b>commonsourcecs</b><br /></sub>](https://github.com/commonsourcecs) 👨‍💻| [<img src="https://avatars0.githubusercontent.com/u/43558271?s=400&v=4" width="100px"/><br /><sub><b>SiicaSandwhich</b><br /></sub>](https://github.com/Silicasandwhich) 👨‍💻📦
 | [<img src="https://avatars0.githubusercontent.com/u/20869381?s=400&v=4" width="100px"/><br /><sub><b>muhAlantabli</b><br /></sub>](https://github.com/muhAlantabli) 📦
 
