@@ -23,7 +23,6 @@
 ## How to get Project Message and Updates
 
 I'll release messages on
- * [Google+](https://plus.google.com/+KaizKhatri)
  * [Twitter](https://twitter.com/ful1e5_)
 
 
@@ -40,9 +39,10 @@ I'll release messages on
    * [Installation](#installation)
       * [Build From Source Code](#build-from-source-code)
       * [Package](#package)
+         * [Archlinux](#archlinux)
+         * [Fedora](#fedora)
    * [Quick Fixes](#quick-fixes)
       * [Inherits Problem](#inherits-problem)
-   * [Work in Progress](#work-in-progress)
    * [Gallery](#gallery)
    * [Bugs](#bugs)
    * [License & Terms](#license-and-terms)
@@ -133,24 +133,36 @@ Currently I'm making lots of Linux Themes to Improve [Linux](https://en.wikipedi
      $rm -r ~/.icons/Bibata_*
      #Note : Your replace * with flavor Name to remove individual
      ```
-  ### Packages
+   ### Packages
+   **Package Note**: If you're having trouble with the packages please submit a request to the package maintainer before creating an issue.
+   ### Archlinux
+   Arch Linux users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme/) currently maintained by _@Shatur_.
+   Arch Linux users can install the theme collection from the AUR repository by using the yaourt or packer commands below.
 
-  Arch Linux users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme/) currently maintained by @Shatur.
+   **Yaourt commands:**
+   ```
+   yaourt -S bibata-cursor-theme
 
-  **AUR Note**: If you're having trouble with the AUR packages please submit a request to the current package maintainer which is currently maintained by _@shatur_ before creating an issue.
+   ```
+   **Packer commands:**
+   ```
+   packer -S bibata-cursor-theme
 
-  Arch Linux users can install the theme collection from the AUR repository by using the yaourt or packer commands below.
+   ```
+   ### Fedora
+   Fedora users can install from the [copr-repo](https://copr.fedorainfracloud.org/coprs/muhalantabli/copr-repo/) currently maintained by _@muhalantabli_.
 
-**Yaourt commands:**
-```
-yaourt -S bibata-cursor-theme
+   **enable the repo:**
+   ```
+   sudo dnf copr enable muhalantabli/copr-repo 
 
-```
-**Packer commands:**
-```
-packer -S bibata-cursor-theme
+   ```
+   **installation commands:**
+   ```
+   sudo dnf install bibata-cursor-theme
 
-```
+   ```
+
 ## Quick Fixes
 ##### *Inherits* Problem
 issue [#8](https://github.com/KaizIqbal/Bibata_Cursor/issues/8)
@@ -164,21 +176,6 @@ edited to
 
      [Icon Theme]
      Inherits=Bibata_Ice                      #replace here
-## Work in progress
-
-| Completed Tasks | ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true)| In Progress Tasks |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-off.png?raw=true)|
-| :------------- |--- |:------------- |---|
-| Add Bibata Cursor SET |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | Cursor Location Fixes |98%
-| Added GPL v3 Licences |![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true)  | Documantaion |97%
-|Added Light Flavor|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | Debain Package  |43%
-|Added Amber Flavor| ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | Ubuntu Repository | 26%
-|Added CODE OF CONDUCT|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) | **Bibata Square**  | 1%
-|Added To [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme/)|![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) |Code Migration to ```python``` | **...**
-|Bibata Adapta | ![](https://upload.wikimedia.org/wikipedia/commons/7/78/Breezeicons-emotes-22-face-smile-grin.svg)| **Bibata MARVEL** | **...** 
-Port to ```Windows```  | ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true)|
-|Added [Bbata Extra](https://github.com/KaizIqbal/Bibata_Extra_Cursor/releases) | ![](https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png?raw=true) |
-
-
 
 ## Gallery
 
@@ -226,9 +223,13 @@ Bibata Adapta **</>** and maintained by @cscs you find it at [Gitlab](https://gi
 ## Contributors
 Thanks goes to these wonderful people
 
-|                |                |                |                |                |                |       
-| :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
-| [<img src="https://avatars3.githubusercontent.com/u/6747270?s=400&v=4" width="100px;"/><br /><sub><b>mleyen</b></sub>](https://github.com/mleyen)      | [<img src="https://avatars2.githubusercontent.com/u/14180792?s=400&v=4" width="100px;"/><br /><sub><b>eti0</b></sub>](https://github.com/eti0)       | [<img src="https://avatars0.githubusercontent.com/u/6218030?s=400&v=4" width="100px;"/><br /><sub><b>mmetak</b></sub>](https://github.com/mmetak) | [<img src="https://avatars0.githubusercontent.com/u/11244308?s=400&v=4" width="100px;"/><br /><sub><b>alex285</b></sub>](https://github.com/alex285) | [<img src="https://avatars0.githubusercontent.com/u/20587163?s=400&v=4" width="100px;"/><br /><sub><b>commonsourcecs</b></sub>](https://github.com/commonsourcecs) | [<img src="https://avatars0.githubusercontent.com/u/43558271?s=400&v=4" width="100px"/><br /><sub><b>SiicaSandwhich</b></sub>](https://github.com/Silicasandwhich) |
+|                |                |                |                |            |                |                   
+| :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | 
+| [<img src="https://avatars3.githubusercontent.com/u/6747270?s=400&v=4" width="100px;"/><br /><sub><b>mleyen</b><br /></sub>](https://github.com/mleyen) 👨‍💻| [<img src="https://avatars2.githubusercontent.com/u/14180792?s=400&v=4" width="100px;"/><br /><sub><b>eti0</b><br /></sub>](https://github.com/eti0) 👨‍💻| [<img src="https://avatars0.githubusercontent.com/u/6218030?s=400&v=4" width="100px;"/><br /><sub><b>mmetak<br /></b></sub>](https://github.com/mmetak) 👨‍💻| [<img src="https://avatars0.githubusercontent.com/u/11244308?s=400&v=4" width="100px;"/><br /><sub><b>alex285</b><br /></sub>](https://github.com/alex285)👨‍💻🐛 | [<img src="https://avatars0.githubusercontent.com/u/20587163?s=400&v=4" width="100px;"/><br /><sub><b>commonsourcecs</b><br /></sub>](https://github.com/commonsourcecs) 👨‍💻| [<img src="https://avatars0.githubusercontent.com/u/43558271?s=400&v=4" width="100px"/><br /><sub><b>SiicaSandwhich</b><br /></sub>](https://github.com/Silicasandwhich) 👨‍💻📦
+| [<img src="https://avatars0.githubusercontent.com/u/20869381?s=400&v=4" width="100px"/><br /><sub><b>muhAlantabli</b><br /></sub>](https://github.com/muhAlantabli) 📦
+
+## 💰 Support 💰
+[Plings](https://www.pling.com/p/1197198/) by **pling**
 
 
 <p align="center"></br>
