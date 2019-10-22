@@ -220,6 +220,10 @@ Bibata Extra **</>** and maintained by @KaizIqbal you find it at [GitHub](https:
 
 Bibata Adapta **</>** and maintained by @cscs you find it at [Gitlab](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors)
 
+###### Bibata Translucent
+
+Bibata Translucent **</>** and maintained by @Silicasandwhich you find it at [GitHub](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent)
+
 ## Contributors
 Thanks goes to these wonderful people
 
