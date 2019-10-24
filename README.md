@@ -63,13 +63,7 @@ I'm a _ComputerScienceStudent_, _GraphicsDesigner_ and _OpenSourceEnthusiast_. I
 Currently I'm making lots of Linux Themes to Improve [Linux](https://en.wikipedia.org/wiki/Linux) Experience, if you enjoy my works please consider making a donation. My ultimate goal is to become a full-time open-source ninja.
 
 ### One-time donation
-
-<p align="center">
-<a  href="https://www.paypal.me/kaizkhatri"><img title="Become Kaiz's Paypal" width=47% src="https://www.paypalobjects.com/webstatic/mobile/hob/web/pp_here_flat.png"></a>
-</br>
-<sub>My PayPal Email : kaizmandhu at google's mail</sub>
-</p>
-
+Give ♥️ to keep me going...
 
 
 ## What is Bibata
