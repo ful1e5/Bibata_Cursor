@@ -222,7 +222,7 @@ Thanks goes to these wonderful people
 ## 💰 Support 💰
 [Plings](https://www.pling.com/p/1197198/) by **pling**
 
-### Become Sponsor
+## Become Sponsor
 Give ♥️ to become sponsor of **Bibata**   
 
 <p align="center"></br>
