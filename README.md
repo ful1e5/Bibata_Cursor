@@ -31,8 +31,6 @@ I'll release messages on
 <!--ts-->
    * [How to get Project Message and Updates](#how-to-get-project-message-and-updates)
    * [Table Of Contents](#table-of-contents)
-   * [Donate](#donate)
-      * [One-time donation](#one-time-donation)
    * [What is Bibata](#what-is-bibata)
    * [Dependencies](#dependencies)
       * [Build dependencies](#build-dependencies)
@@ -52,25 +50,14 @@ I'll release messages on
       * [Bibata Extra](#bibata-extra)
       * [Bibata Adapta](#bibata-adapta)
    * [Contributors](#contributors)
+   * [Become Sponsor](#become-sponsor)
 <!--te-->
-
-## Donate
 
 **Who Am I?**
 
 I'm a _ComputerScienceStudent_, _GraphicsDesigner_ and _OpenSourceEnthusiast_. I mostly do  _ComputerGraphics_ stuffs and love them 💕
 
 Currently I'm making lots of Linux Themes to Improve [Linux](https://en.wikipedia.org/wiki/Linux) Experience, if you enjoy my works please consider making a donation. My ultimate goal is to become a full-time open-source ninja.
-
-### One-time donation
-
-<p align="center">
-<a  href="https://www.paypal.me/kaizkhatri"><img title="Become Kaiz's Paypal" width=47% src="https://www.paypalobjects.com/webstatic/mobile/hob/web/pp_here_flat.png"></a>
-</br>
-<sub>My PayPal Email : kaizmandhu at google's mail</sub>
-</p>
-
-
 
 ## What is Bibata
 
@@ -235,6 +222,8 @@ Thanks goes to these wonderful people
 ## 💰 Support 💰
 [Plings](https://www.pling.com/p/1197198/) by **pling**
 
+## Become Sponsor
+Give ♥️ to become sponsor of **Bibata**   
 
 <p align="center"></br>
 <a style="text-decoration: none;color:#009688;margin:0;padding:0 0 10px 0" href="https://github.com/KaizIqbal">
