@@ -1,6 +1,8 @@
 #!/bin/sh
 
-THEME=Suru
+#get theme name from argument
+THEME=$1
+#current Directory path
 DIR="../"
 
 # $@ is for the caller to be able to supply arguments to anicursorgen (-s, in particular)
