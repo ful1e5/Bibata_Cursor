@@ -148,7 +148,7 @@ def make_cur(frames, args, animated=False):
         else:
             return 0
 
-    frames = sorted(frames, frame_size_cmp, reverse=True)
+    frames = sorted(frames, reverse=True)
 
     for frame in frames:
         width = frame[0]
@@ -246,7 +246,7 @@ def make_framesets(frames):
         else:
             return 0
 
-    framesets = sorted(framesets, frameset_size_cmp, reverse=True)
+    framesets = sorted(framesets, reverse=True)
 
     return framesets
 
@@ -345,7 +345,7 @@ def parse_config_from(inp, prefix):
     for line in inp.readlines():
         line = line.decode()
         words = shlex.split(line.rstrip('\n').rstrip('\r'))
-        print(words)
+        # print(words)
         if len(words) < 4:
             continue
 
