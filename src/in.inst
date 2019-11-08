@@ -21,9 +21,9 @@ continue() {
   show_question "\nDo you want to continue? (Y)es, (N)o : \n"
   read INPUT
   case $INPUT in
-    [Yy]* ) ;;
-    [Nn]* ) end;;
-    * ) show_error "\nSorry, try again."; continue;;
+   ( [Yy]* ) ;;
+   ( [Nn]* ) end;;
+   ( * ) show_error "\nSorry, try again."; continue;;
   esac
 }
 
@@ -31,9 +31,9 @@ replace() {
   show_question "\nFound an existing installation. Replace it? (Y)es, (N)o :\n" 
   read INPUT
   case $INPUT in
-    [Yy]* ) rm -rf "$@/Bibata*" 2>/dev/null;;
-    [Nn]* ) ;;
-    * ) show_error "\tSorry, try again."; replace $@;;
+    ( [Yy]* ) rm -rf "$@/Bibata*" 2>/dev/null;;
+    ( [Nn]* ) ;;
+    ( * ) show_error "\tSorry, try again."; replace $@;;
   esac
 }
 
@@ -114,9 +114,9 @@ main() {
   show_question "What you want to do: (I)nstall, (R)emove : \n"
   read INPUT
   case $INPUT in
-    [Ii]* ) install;;
-    [Rr]* ) remove;;
-    * ) show_error "\nSorry, try again."; main;;
+    ( [Ii]* ) install;;
+    ( [Rr]* ) remove;;
+    ( * ) show_error "\nSorry, try again."; main;;
   esac
 }
 

@@ -1,7 +1,5 @@
-
 [Icon Theme]
 Name=Bibata Oil
-Comment=Default Bibata Cursor
 Name[ar]=Bibata Oil 
 Name[bg]=Bibata Oil
 Name[ca]=Bibata Oil
@@ -54,3 +52,4 @@ Name[xh]=Bibata Oil
 Name[yi]=Bibata Oil
 Name[zh_CN]=Bibata Oil
 Name[zh_TW]=Bibata Oil
+Comment=Default Bibata Cursor
