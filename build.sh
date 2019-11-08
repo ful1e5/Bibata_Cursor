@@ -62,52 +62,52 @@ build(){
     cursor=$1
 
     #building cursor with python script
-    show_pre "\n$cursor : Generating bitmaps...\\r"
+    show_pre "\n"$cursor" : Generating bitmaps...\\r"
 
     # if cursors source folder & file doesn't exist
-    if [ ! "src/$cursor/source-cursors.svg" ]; 
+    if [ ! "src/"$cursor"/source-cursors.svg" ]; 
     then
-        error "\n$cursor : Source not found"
+        error "\n"$cursor" : Source not found"
         error "\nAborting..."
         exit 1
     else
         #-o for genrating hotspots
         #-a for genrating config files
-        python render-cursors.py ./src/$cursor/source-cursors.svg -o -a --name $cursor
+        python render-cursors.py ./src/"$cursor"/source-cursors.svg -o -a --name $cursor
         # $? =  is the exit status of the most recently-executed command; by convention, 0 means success and anything else indicates failure. 
         if [ $? -eq 0 ]
         then
-            show "$cursor : Generating bitmaps... DONE"
+            show ""$cursor" : Generating bitmaps... DONE"
         else
-            error "$cursor : Generating bitmaps... FAIL"
+            error ""$cursor" : Generating bitmaps... FAIL"
             error "\nAborting..."
             exit 1
         fi
 
-        show_pre "\n$cursor : Building X11 cursor...\\r"
+        show_pre "\n"$cursor" : Building X11 cursor...\\r"
         #execute x11-make.sh file with theme_name argument
         sh x11-make.sh "$cursor"
         #Copy .index files to out/$cursor
         cp src/"$cursor"/*.theme "$cursor"/out/X11/"$cursor"
         if [ $? -eq 0 ]
         then
-            show "$cursor : Building X11 cursor... DONE"
+            show ""$cursor" : Building X11 cursor... DONE"
             echo "OUT: $PWD/$cursor/out/X11"
         else
-            error "$cursor : Building X11 cursor... FAIL"
+            error ""$cursor" : Building X11 cursor... FAIL"
             error "\nAborting..."
             exit 1
         fi
 
-        show_pre "\n$cursor : Building Window cursor...\\r"
+        show_pre "\n"$cursor" : Building Window cursor...\\r"
         #execute x11-make.sh file with theme_name argument
         sh w32-make.sh "$cursor"
         if [ $? -eq 0 ]
         then
-            show "$cursor : Building Window cursor... DONE"
+            show ""$cursor" : Building Window cursor... DONE"
             echo "OUT: $PWD/$cursor/out/win"
         else
-            error "$cursor : Building Window cursor... FAIL"
+            error ""$cursor" : Building Window cursor... FAIL"
             error "\nAborting..."
             exit 1
         fi
@@ -146,7 +146,7 @@ show_pre "Installing PiP Requirements...\\r"
 
 if [ ! "requirements.txt" ]; 
     then
-        error "\n$cursor : requirements.txt not found"
+        error "\n"$cursor" : requirements.txt not found"
         error "\nAborting..."
         exit 1
 else
@@ -165,15 +165,19 @@ fi
 
 #choice for build cursor
 selection "Cursor to build (Default is 'ALL')?"
-cursors=("Bibata Oil" "Bibata Ice" "Bibata Amber" "test" "ALL"  exit )
+cursors=("Bibata_Oil" "Bibata_Ice" "Bibata_Amber" "test" "ALL"  exit )
 cursor=$(selectWithDefault "${cursors[@]}")
 
 # Process the selected item.
 case $cursor in
-  (''|'ALL') echo "ALL"; ;;
-  ('Bibata Oil') build "$cursor"; ;;
-  ('Bibata Ice') build "$cursor"; ;;
-  ('Bibata Amber') build "$cursor"; ;;
+  (''|'ALL') 
+    echo "ALL"; ;;
+    # build "Bibata Oil";
+    # build "Bibata Ice";
+    # build "Bibata Amber" ; ;;
+  ('Bibata_Oil') build "$cursor"; ;;
+  ('Bibata_Ice') build "$cursor"; ;;
+  ('Bibata_Amber') build "$cursor"; ;;
   ('test') build "$cursor"; ;;
 esac
 
