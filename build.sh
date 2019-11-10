@@ -71,6 +71,22 @@ build(){
         error "\nAborting..."
         exit 1
     else
+        #for removing old build bitmaps(Not Recommended)
+        # if [ "$cursor" ]; 
+        # then
+        #     show_pre "\nRemoving Old Build Files...\\r"
+        #     rm -r "$cursor"
+            
+        #     if [ $? -eq 0 ]
+        #     then
+        #         show "Removing Old Build Files... DONE"
+        #     else
+        #         error "Removing Old Build Files... FAIL"
+        #         error "\nAborting..."
+        #         exit 1
+        #     fi
+        # fi
+
         #-o for genrating hotspots
         #-a for genrating config files
         python render-cursors.py ./src/"$cursor"/source-cursors.svg -o -a --name $cursor
