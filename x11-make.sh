@@ -112,14 +112,14 @@ xcursorgen sb_left_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/sb_left_arrow
 xcursorgen sb_right_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/sb_right_arrow
 xcursorgen sb_up_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/sb_up_arrow
 xcursorgen sb_v_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/sb_v_double_arrow
-xcursorgen top_left_corner.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/se-resize
+xcursorgen bottom_right_corner.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/se-resize
 xcursorgen dnd-none.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size_all
 xcursorgen fd_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size_bdiag
 xcursorgen bd_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size_fdiag
 xcursorgen sb_h_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size_hor
 xcursorgen sb_v_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size_ver
 xcursorgen top_side.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/s-resize
-xcursorgen top_right_corner.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/sw-resize
+xcursorgen bottom_left_corner.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/sw-resize
 xcursorgen dotbox.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/target
 xcursorgen tcross.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/tcross
 xcursorgen xterm.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/text
@@ -132,8 +132,9 @@ xcursorgen ul_angle.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/ul_angle
 xcursorgen ur_angle.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/ur_angle
 xcursorgen sb_v_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/v_double_arrow
 xcursorgen vertical-text.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/vertical-text
+xcursorgen watch.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/wait
 xcursorgen watch.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/watch
-xcursorgen right_side.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/w-resize
+xcursorgen left_side.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/w-resize
 xcursorgen X_cursor.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/X_cursor
 xcursorgen xterm.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/xterm
 xcursorgen zoom-in.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/zoom-in
