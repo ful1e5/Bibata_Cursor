@@ -181,16 +181,17 @@ fi
 
 #choice for build cursor
 selection "Cursor to build (Default is 'ALL')?"
-cursors=("Bibata_Classic" "Bibata_Oil" "Bibata_Ice" "Bibata_Amber" "test" "ALL"  exit )
+cursors=("Bibata_Classic" "Bibata_Oil" "Bibata_Ice" "Bibata_Amber" "ALL"  exit )
 cursor=$(selectWithDefault "${cursors[@]}")
 
 # Process the selected item.
 case $cursor in
   (''|'ALL') 
     echo "ALL"; ;;
-    # build "Bibata Oil";
-    # build "Bibata Ice";
-    # build "Bibata Amber" ; ;;
+    # build "Bibata_Classic";
+    # build "Bibata_Oil";
+    # build "Bibata_Ice";
+    # build "Bibata_Amber" ; ;;
   ('Bibata_Classic') build "$cursor"; ;;
   ('Bibata_Oil') build "$cursor"; ;;
   ('Bibata_Ice') build "$cursor"; ;;
