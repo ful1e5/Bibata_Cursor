@@ -69,7 +69,7 @@ xcursorgen right_side.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/e-resize
 xcursorgen sb_h_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/ew-resize
 xcursorgen fd_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/fcf1c3c7cd4491d801f1e1c78f100000
 xcursorgen fd_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/fd_double_arrow
-xcursorgen grabbing.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/fleur
+xcursorgen all-scroll.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/fleur
 xcursorgen hand1.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/grab
 xcursorgen grabbing.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/grabbing
 xcursorgen hand2.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/hand
@@ -113,12 +113,12 @@ xcursorgen sb_right_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/sb_right_arr
 xcursorgen sb_up_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/sb_up_arrow
 xcursorgen sb_v_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/sb_v_double_arrow
 xcursorgen bottom_right_corner.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/se-resize
-xcursorgen dnd-none.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size_all
+xcursorgen all-scroll.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size_all
 xcursorgen fd_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size_bdiag
 xcursorgen bd_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size_fdiag
 xcursorgen sb_h_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size_hor
 xcursorgen sb_v_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size_ver
-xcursorgen top_side.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/s-resize
+xcursorgen bottom_side.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/s-resize
 xcursorgen bottom_left_corner.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/sw-resize
 xcursorgen dotbox.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/target
 xcursorgen tcross.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/tcross
