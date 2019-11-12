@@ -64,9 +64,10 @@ install() {
   echo -e "\nInstalling Bibata..."
   
   # Copying files
-  cp -rf Bibata_Oil $DEST_DIR
-  cp -rf Bibata_Ice $DEST_DIR
-  cp -rf Bibata_Amber $DEST_DIR
+  cp -rf $Bibata_Classic $DEST_DIR
+  cp -rf $Bibata_Oil $DEST_DIR
+  cp -rf $Bibata_Ice $DEST_DIR
+  cp -rf $Bibata_Amber $DEST_DIR
   chmod -R 755 $DEST_DIR/Bibata_*
 
 
@@ -80,7 +81,7 @@ remove() {
   # PREVIEW
 
   # Show installation directory
-  if [[ -d $DEST_DIR/Bibata_Oil || -d $DEST_DIR/Bibata_Ice ]]; then
+  if [[  -d $DEST_DIR/Bibata_Classic || -d $DEST_DIR/Bibata_Oil || -d $DEST_DIR/Bibata_Ice || -d $DEST_DIR/Bibata_Amber ]]; then
     echo -e "\nBibata Cursor Theme installed in:\n"
     show_dir "\t$DEST_DIR"
     if [ "$UID" -eq "$ROOT_UID" ]; then
@@ -102,6 +103,7 @@ remove() {
   echo -e "\nRemoving Bibata..."
 
   # Removing files
+  rm -rf $DEST_DIR/Bibata_Classic
   rm -rf $DEST_DIR/Bibata_Oil
   rm -rf $DEST_DIR/Bibata_Ice
   rm -rf $DEST_DIR/Bibata_Amber
@@ -122,6 +124,10 @@ main() {
 
 ROOT_UID=0
 DEST_DIR=
+Bibata_Classic=./Bibata_Classic/out/X11/Bibata_Classic 
+Bibata_Oil=./Bibata_Oil/out/X11/Bibata_Oil
+Bibata_Ice=./Bibata_Ice/out/X11/Bibata_Ice
+Bibata_Amber=./Bibata_Amber/out/X11/Bibata_Amber
 cd "$( dirname "${BASH_SOURCE[0]}" )" || exit
 
 # Destination directory

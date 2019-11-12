@@ -202,7 +202,7 @@ esac
 show_pre "Generating Installer...\\r"
 
 if [ "src/in.inst" ]; then
-	cp src/in.inst Bibata.sh
+	cp src/install install.sh
 fi
 
 if [ $? -eq 0 ]
@@ -216,15 +216,15 @@ fi
 
 show_pre "Making Installer Executable...\n"
 
-if [ "Bibata.sh" ]; then
-	sudo chmod +x Bibata.sh
+if [ "install.sh" ]; then
+	sudo chmod +x install.sh
 fi
 
 if [ $? -eq 0 ]
 then
     show "Making Installer Executable... DONE"
     show_Msg "For Installation Use Following Command:\n"
-    show_Msg "\t sudo ./Bibata.sh\n\t\tOR\n\t./Bibata.sh"
+    show_Msg "\t sudo ./install.sh\n\t\tOR\n\t./install.sh"
 else
     error "Making Installer Executable... FAIL"
     error "\nAborting..."
