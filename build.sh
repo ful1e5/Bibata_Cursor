@@ -187,11 +187,11 @@ cursor=$(selectWithDefault "${cursors[@]}")
 # Process the selected item.
 case $cursor in
   (''|'ALL') 
-    echo "ALL"; ;;
-    # build "Bibata_Classic";
-    # build "Bibata_Oil";
-    # build "Bibata_Ice";
-    # build "Bibata_Amber" ; ;;
+    # echo "ALL"; ;;
+    build "Bibata_Classic";
+    build "Bibata_Oil";
+    build "Bibata_Ice";
+    build "Bibata_Amber" ; ;;
   ('Bibata_Classic') build "$cursor"; ;;
   ('Bibata_Oil') build "$cursor"; ;;
   ('Bibata_Ice') build "$cursor"; ;;
