@@ -166,6 +166,8 @@ sudo pacman -S git python python-pip git inkscape xorg-xcursorgen
 
    ```
 
+More information about script is found in [src](./src/README.md) directory.
+
 ## Preview
 
 <p align="center"><img title="Bibata Classic" src="./image/Bibata_Classic.png">
