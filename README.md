@@ -43,7 +43,7 @@ Bibata is **OpenSource** ,Compact and Material Designed Cursor set.This project 
 
 ## Installation
 
-Latest `Stable` & `BETA` releases can be downloaded from [Here](https://github.com/KaizIqbal/Bibata_Cursor/releases)
+Latest `Stable` & `Development` releases can be downloaded from [Here](https://github.com/KaizIqbal/Bibata_Cursor/releases)
 
 ### Build dependencies
 
