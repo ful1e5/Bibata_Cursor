@@ -216,7 +216,7 @@ Check [CONTRIBUTING.md](./CONTRIBUTING.md),any suggestions for features and cont
 ## 💰 Support 💰
 
 <a href="https://www.pling.com/p/1197198/" target="_blank">
-<img src="https://www.pling.com/images_sys/store_pling/pling-logo.png" alt="Pling" width="-50%" style="box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;">
+<img src="https://www.pling.com/images_sys/store_pling/pling-logo.png" alt="Pling" width="150" height="81" style="box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;">
 </a>
 <br><br>
 <a href="https://www.buymeacoffee.com/Nt7Wg4V" target="_blank">
