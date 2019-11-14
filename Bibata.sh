@@ -59,7 +59,7 @@ setup_bibata() {
 	./install.sh
     cd ~
     rm -rf .Bibata
-	#echo
+	echo
 }
 
 main() {
@@ -75,7 +75,6 @@ main() {
     ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ 
 
 	EOF
-	printf "$RESET"
 
 	setup_color
 	setup_bibata_repo
