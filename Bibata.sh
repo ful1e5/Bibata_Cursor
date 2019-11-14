@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Default settings
-BIBATA=${BIBATA:-~/.Bibata}
+BIBATA=${BIBATA:-/tmp/Bibata}
 REPO=${REPO:-KaizIqbal/Bibata_Cursor}
 REMOTE=${REMOTE:-https://github.com/${REPO}.git}
 BRANCH=${BRANCH:-devlopment}
@@ -55,10 +55,9 @@ setup_bibata_repo() {
 }
 
 setup_bibata() {
-    cd ~/.Bibata/
+    cd /tmp/Bibata/
 	./install.sh
-    cd ~
-    rm -rf .Bibata
+    rm -rf /tmp/Bibata
 	echo
 }
 
@@ -80,8 +79,7 @@ main() {
 	setup_bibata_repo
 	setup_bibata
 
-	cd ~
-    rm -rf .Bibata
+    rm -rf /tmp/Bibata
 	printf "$RESET"
 }
 
