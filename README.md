@@ -18,7 +18,9 @@
 <img alt="GitHub issues" src="https://img.shields.io/github/issues/KaizIqbal/Bibata_Cursor">
 <img alt="Issues & PR" src="https://img.shields.io/badge/Issues & PR-welcome-green">
 <br>
-<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/KaizIqbal/Bibata_Cursor">
+<a href="https://github.com/KaizIqbal/Bibata_Cursor/releases" target="_blank">
+  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/KaizIqbal/Bibata_Cursor">
+</a>
 <a href="https://aur.archlinux.org/packages/bibata-cursor-theme" target="_blank">
   <img alt="AUR version" src="https://img.shields.io/aur/version/bibata-cursor-theme">
 </a>
@@ -29,7 +31,8 @@
 
 <p align="center">
   <a href="#bibata-?">Bibata</a> •
-  <a href="#installation">Install</a> •
+  <a href="#install">Install</a> •
+  <a href="#windows">Install to Windows</a> •
   <a href="#preview">Preview</a> •
   <a href="./CONTRIBUTING.md#Contributors" target="_blank">Contributors</a> •
   <a href="#credit">Credit</a> •
@@ -40,10 +43,6 @@
 ## Bibata ?
 
 Bibata is **OpenSource** ,Compact and Material Designed Cursor set.This project masterelop for improve `Cursor` Experience.
-
-## Installation
-
-Latest `Stable` & `Development` releases can be downloaded from [Here](https://github.com/KaizIqbal/Bibata_Cursor/releases)
 
 ### Build dependencies
 
@@ -73,34 +72,123 @@ sudo dnf install git python37 python3-pip git inkscape xcursorgen
 sudo pacman -S git python python-pip git inkscape xorg-xcursorgen
 ```
 
-**Note**: Snap/Flatpak packages raise issue in build(e.g. inkscape).
+**📝Note**: Snap/Flatpak packages raise issue in build(e.g. inkscape).
 
-### Build From Source Code
+## Install
+
+### Basic Installation
+
+Bibata cursor is installed by running one of the following commands in your terminal. You can install this via the command-line with either `curl` or `wget`.
+
+##### via curl
+
+```shell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/devlopment/Bibata.sh)"
+```
+
+##### via wget
+
+```shell
+sh -c "$(wget -O- https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/devlopment/Bibata.sh)"
+```
+
+Latest `Stable` & `Development` releases can be downloaded from [Here](https://github.com/KaizIqbal/Bibata_Cursor/releases)
+
+### Packages📦
+
+**📝Note**: If you're having trouble with the packages please submit a request to the package maintainer before creating an issue.
+
+#### Archlinux
+
+Arch Linux users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme/) currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m).
+Arch Linux users can install the theme collection from the AUR repository by using the yaourt or packer commands below.
+
+Yaourt commands:
+
+```
+yaourt -S bibata-cursor-theme
+
+```
+
+Packer commands:
+
+```
+packer -S bibata-cursor-theme
+
+```
+
+#### Fedora
+
+Fedora users can install from the [copr-repo](https://copr.fedorainfracloud.org/coprs/muhalantabli/copr-repo/) currently maintained by _@muhalantabli_.
+
+enable the repo:
+
+```
+sudo dnf copr enable muhalantabli/copr-repo
+
+```
+
+installation commands:
+
+```
+sudo dnf install bibata-cursor-theme
+
+```
+
+#### Manjaro linux
+
+Pamac commands:
+
+```
+pamac install bibata-cursor-theme
+
+```
+
+<!--
+From https://github.com/Silicasandwhich/Bibata_Cursor_Translucent#windows -->
+
+#### Windows
+
+1. Get the lastest stable/dev-version Windows release from the [releases tab](https://github.com/KaizIqbal/Bibata_Cursor/releases) on the github page.
+
+2. Open the settings app
+
+3. Go to Devices -> Mouse -> Additional Mouse Options
+
+4. Go to the pointers tab
+
+5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the Windows folder of your desired flavor
+
+6. Click "save as" and type in the desired name
+
+7. Click "apply" and "ok"
+
+### Manual Installation
 
 1. Make sure you have installed all [Build dependencies](#build-dependencies).
 
-2. **Build & Install**:
-   ```bash
+2. Build & Install:
+   ```shell
    git clone https://github.com/KaizIqbal/Bibata_Cursor.git
    cd Bibata_Cursor/
    chmod +x build.sh
    ./build.sh
    chmod +x ./install.sh
    ```
-   Install (As ROOT User)
-   ```bash
+   Install (available for all users)
+   ```shell
    sudo ./install.sh
    ```
-   Install (As Local User)
+   Install (available only for local eser)
    ```
    ./install.sh
    ```
-3. **Uninstall**:
+3. Uninstall:
 
    Using `Script` :
 
-   ```bash
-   #From ROOT
+   ```shell
+   #From All Users
    sudo ./install.sh
    #From Local User
    ./install.sh
@@ -108,62 +196,12 @@ sudo pacman -S git python python-pip git inkscape xorg-xcursorgen
 
    Without `Script` :
 
-   ```bash
-   #From ROOT
+   ```shell
+   #From All Users
    $sudo rm -r /usr/share/icons/Bibata_*
    #from Local User
    $rm -r ~/.icons/Bibata_*
    #Note : Your replace * with flavor Name to remove individual
-   ```
-
-   ### Packages
-
-   **Package Note**: If you're having trouble with the packages please submit a request to the package maintainer before creating an issue.
-
-   ### Archlinux
-
-   Arch Linux users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme/) currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m).
-   Arch Linux users can install the theme collection from the AUR repository by using the yaourt or packer commands below.
-
-   **Yaourt commands:**
-
-   ```
-   yaourt -S bibata-cursor-theme
-
-   ```
-
-   **Packer commands:**
-
-   ```
-   packer -S bibata-cursor-theme
-
-   ```
-
-   ### Manjaro linux
-
-   **Pamac commands:**
-
-   ```
-   pamac install bibata-cursor-theme
-
-   ```
-
-   ### Fedora
-
-   Fedora users can install from the [copr-repo](https://copr.fedorainfracloud.org/coprs/muhalantabli/copr-repo/) currently maintained by _@muhalantabli_.
-
-   **enable the repo:**
-
-   ```
-   sudo dnf copr enable muhalantabli/copr-repo
-
-   ```
-
-   **installation commands:**
-
-   ```
-   sudo dnf install bibata-cursor-theme
-
    ```
 
 More information about script is found in [src](./src/README.md) directory.
