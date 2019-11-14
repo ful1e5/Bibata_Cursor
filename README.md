@@ -36,7 +36,7 @@
   <a href="#preview">Preview</a> •
   <a href="./CONTRIBUTING.md#Contributors" target="_blank">Contributors</a> •
   <a href="#credit">Credit</a> •
-  <a href="#💰-support-💰">Support</a> •
+  <a href="#support">Support</a> •
   <a href="https://github.com/KaizIqbal/Bibata_Cursor/blob/master/LICENSE">License</a>
 </p>
 
@@ -251,7 +251,7 @@ Check [CONTRIBUTING.md](./CONTRIBUTING.md),any suggestions for features and cont
 - [Yaru](https://github.com/ubuntu/yaru)
 - Emojis are taken from [here](https://emojipedia.org/)
 
-## 💰 Support 💰
+## Support
 
 <a href="https://www.pling.com/p/1197198/" target="_blank">
 <img src="https://www.pling.com/images_sys/store_pling/pling-logo.png" alt="Pling" width="150" height="81" style="box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;">
