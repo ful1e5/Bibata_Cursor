@@ -32,7 +32,7 @@
 <p align="center">
   <a href="#bibata-?">Bibata</a> •
   <a href="#install">Install</a> •
-  <a href="#windows">Install to Windows</a> •
+  <a href="#windows">Windows</a> •
   <a href="#preview">Preview</a> •
   <a href="./CONTRIBUTING.md#Contributors" target="_blank">Contributors</a> •
   <a href="#credit">Credit</a> •
