@@ -261,10 +261,6 @@ Check [CONTRIBUTING.md](./CONTRIBUTING.md),any suggestions for features and cont
 <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
 </a>
 
-<a href="https://www.patreon.com/bePatron?u=13184396" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
-
-<script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-
 <p align="center">
   <h1 align="center">.^.</h1>
 </p>
