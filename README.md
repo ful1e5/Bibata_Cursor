@@ -10,7 +10,7 @@
 <img alt="Downloads" src="https://img.shields.io/github/downloads/KaizIqbal/Bibata_Cursor/total">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/KaizIqbal/Bibata_Cursor">
 <!-- <a href="#">
-  <img alt="Chat" src="https://img.shields.io/badge/chat-on slack-yellow">
+  <img alt="Chat" src="https://img.shields.io/badge/chat-on discord-purple">
 </a> -->
 <img alt="GitHub" src="https://img.shields.io/github/license/KaizIqbal/Bibata_Cursor">
 <br>
@@ -260,6 +260,10 @@ Check [CONTRIBUTING.md](./CONTRIBUTING.md),any suggestions for features and cont
 <a href="https://www.buymeacoffee.com/Nt7Wg4V" target="_blank">
 <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
 </a>
+
+<a href="https://www.patreon.com/bePatron?u=13184396" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
+
+<script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
 <p align="center">
   <h1 align="center">.^.</h1>
