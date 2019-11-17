@@ -1,7 +1,7 @@
 anytree==2.7.2
 appdirs==1.4.3
 # application-utility==1.2.1
-astroid==2.3.2
+# astroid==2.3.2
 attrs==19.3.0
 autopep8==1.4.4
 beautifulsoup4==4.8.0
