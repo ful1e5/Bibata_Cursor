@@ -6,7 +6,7 @@
 
 build:
 	@echo "Building Bibata..."
-	sh ./build.sh
+	./build.sh
 
 clean:
 	@echo "Cleaning Up..."
