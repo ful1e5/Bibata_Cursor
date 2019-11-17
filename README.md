@@ -57,19 +57,19 @@ Bibata is **OpenSource** ,Compact and Material Designed Cursor set.This project 
 ##### Debain/Ubuntu
 
 ```
-sudo apt install git python3 python3-pip git inkscape xcursorgen
+sudo apt install git python3 python3-pip inkscape xcursorgen
 ```
 
 ##### Fedora
 
 ```
-sudo dnf install git python37 python3-pip git inkscape xcursorgen
+sudo dnf install git python37 python3-pip inkscape xcursorgen
 ```
 
 ##### ArchLinux/Manjaro
 
 ```
-sudo pacman -S git python python-pip git inkscape xorg-xcursorgen
+sudo pacman -S git python python-pip inkscape xorg-xcursorgen
 ```
 
 **📝Note**: Snap/Flatpak packages raise issue in build(e.g. inkscape).
