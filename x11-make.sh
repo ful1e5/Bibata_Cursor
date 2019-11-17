@@ -39,7 +39,7 @@ xcursorgen bottom_right_corner.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/bottom_
 xcursorgen bottom_side.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/bottom_side
 xcursorgen bottom_tee.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/bottom_tee
 xcursorgen bd_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/c7088f0f3e6c8088236ef8e1e3e70000
-xcursorgen crosshair.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/cell
+xcursorgen plus.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/cell
 # xcursorgen center_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/center_ptr
 xcursorgen circle.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/circle
 xcursorgen sb_h_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/col-resize
@@ -139,6 +139,29 @@ xcursorgen X_cursor.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/X_cursor
 xcursorgen xterm.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/xterm
 xcursorgen zoom-in.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/zoom-in
 xcursorgen zoom-out.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/zoom-out
+
+# KDE Cursor Links
+# TODO: Some cursors are missing for KDE
+# color-picker ,draft ,wayland
+xcursorgen left_ptr_watch.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/00000000000000020006000e7e9ffc3f 
+xcursorgen link.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/a2a266d0498c3104214a47bd64ab0fc8 
+xcursorgen copy.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/b66166c04f8c3109214a4fbd64a50fc8 
+xcursorgen dnd-none.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/closedhand
+xcursorgen dnd-none.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/fcf21c00b30f7e3f83fe0dfd12e71cff
+xcursorgen circle.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/forbidden
+xcursorgen xterm.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/ibeam
+xcursorgen hand1.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/openhand
+xcursorgen hand2.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/pointing_hand
+xcursorgen left_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size-bdiag
+xcursorgen left_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size-fdiag
+xcursorgen left_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size-hor
+xcursorgen left_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size-ver
+xcursorgen sb_h_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/split_h
+xcursorgen sb_h_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/split_v
+xcursorgen sb_up_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/up-arrow
+xcursorgen left_ptr_help.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/whats_this
+xcursorgen X_cursor.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/x-cursor
+
 
 #if script generate error or success
 if [ $? -ne 0 ]
