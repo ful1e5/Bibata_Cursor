@@ -1,4 +1,6 @@
 FROM stackbrew/debian:jessie
+# Update Repository
+RUN apt-get update
 # Install Build dependencies
 RUN apt-get install -qy python3
 RUN apt-get install -qy python3-pip
