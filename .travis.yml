@@ -1,2 +1,7 @@
+# safelist
+branches:
+  only:
+    - master
+    - devlopment
 language: bash
 script: make
