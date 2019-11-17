@@ -2,6 +2,7 @@ branches:
   only:
     - master
     - devlopment
+language: minimal
 sudo: required
 services:
   - docker
