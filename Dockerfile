@@ -1,14 +1,11 @@
-FROM ubuntu
-
-# Update Software repository
-RUN apt-get update
+FROM stackbrew/debian:jessie
 # Install Build dependencies
-RUN apt-get install -y python3 python3-pip inkscape x11-apps && \
-    rm -rf /var/lib/apt/lists/*
+RUN apt-get install -qy python3
+RUN apt-get install -qy python3-pip
+RUN apt-get install -qy inkscape xcursorgen
 # Copy Project to Docker Container
 COPY . /Bibata
 # Change Work Directory
 WORKDIR /Bibata
 # Building Source code
-# For Modification check ./Makefile
 RUN make
