@@ -7,7 +7,7 @@
 build:
 
 	@echo "installing Requirements..."
-	pip3 install -r requirements.txt --user 
+	pip install -r requirements.txt  
 
 	@echo "Building Bibata Classic..."
 	python render-cursors.py ./src/Bibata_Classic/source-cursors.svg -o -a --name Bibata_Classic
