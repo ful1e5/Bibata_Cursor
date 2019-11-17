@@ -2,25 +2,9 @@ branches:
   only:
     - master
     - devlopment
-
+language: ruby
 sudo: required
-arch:
-  repos:
-    - archlinuxfr=http://repo.archlinux.fr/$arch
-  packages:
-    # pacman packages
-    - yaourt
-    - archiso
-    # dependencies
-    - inkscape
-    - python
-    - python-pip
-    - xorg-xcursorgen
-    - git
-  script:
-    - ./build-repo
-    - sudo ./build.sh -v
-
-script:
-  - "travis_wait 30 sleep 1800 &"
-  - curl -s https://raw.githubusercontent.com/fossasia/arch-travis/master/arch-travis.sh | bash
+services:
+  - docker
+before_install:
+  - docker pull archlinux
