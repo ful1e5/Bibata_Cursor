@@ -18,6 +18,7 @@
 <img alt="GitHub issues" src="https://img.shields.io/github/issues/KaizIqbal/Bibata_Cursor">
 <img alt="Issues & PR" src="https://img.shields.io/badge/Issues & PR-welcome-green">
 <br>
+<img alt="Travis CI" src="https://travis-ci.org/KaizIqbal/Bibata_Cursor.svg?branch=devlopment">
 <a href="https://github.com/KaizIqbal/Bibata_Cursor/releases" target="_blank">
   <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/KaizIqbal/Bibata_Cursor">
 </a>
