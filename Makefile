@@ -11,7 +11,9 @@ project_build:
 
 .PHONY := Bibata_Classic 
 Bibata_Classic:
-
+	@echo "installing Requirements..."
+	# pip3 freeze > requirements.txt
+	pip3 install -r requirements.txt 
 	@echo "Building Bibata Classic..."
 	python3 render-cursors.py ./src/Bibata_Classic/source-cursors.svg -o -a --name Bibata_Classic
 	sh x11-make.sh Bibata_Classic
@@ -20,7 +22,10 @@ Bibata_Classic:
 
 .PHONY := Bibata_Oil 
 Bibata_Oil:
-@echo "Building Bibata Oil..."
+	@echo "installing Requirements..."
+	# pip3 freeze > requirements.txt
+	pip3 install -r requirements.txt 
+	@echo "Building Bibata Oil..."
 	python3 render-cursors.py ./src/Bibata_Oil/source-cursors.svg -o -a --name Bibata_Oil
 	sh x11-make.sh Bibata_Oil
 	cp src/Bibata_Oil/*.theme Bibata_Oil/out/X11/Bibata_Oil
@@ -28,6 +33,9 @@ Bibata_Oil:
 
 .PHONY := Bibata_Ice 
 Bibata_Ice:
+	@echo "installing Requirements..."
+	# pip3 freeze > requirements.txt
+	pip3 install -r requirements.txt 
 	@echo "Building Bibata Ice..."
 	python3 render-cursors.py ./src/Bibata_Ice/source-cursors.svg -o -a --name Bibata_Ice
 	sh x11-make.sh Bibata_Ice
@@ -36,6 +44,9 @@ Bibata_Ice:
 
 .PHONY := Bibata_Amber 
 Bibata_Amber:
+	@echo "installing Requirements..."
+	# pip3 freeze > requirements.txt
+	pip3 install -r requirements.txt 
 	@echo "Building Bibata Amber..."
 	python3 render-cursors.py ./src/Bibata_Amber/source-cursors.svg -o -a --name Bibata_Amber
 	sh x11-make.sh Bibata_Amber
