@@ -10,4 +10,7 @@ COPY . /Bibata
 # Change Work Directory
 WORKDIR /Bibata
 # Building Source code
-RUN make -j 10
+RUN make Bibata_Classic -j 
+RUN make Bibata_Oil -j 
+RUN make Bibata_Ice -j 
+RUN make Bibata_Amber -j 
