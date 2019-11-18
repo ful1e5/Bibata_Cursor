@@ -9,8 +9,8 @@ RUN apt-get install -qy inkscape x11-apps
 COPY . /Bibata
 # Change Work Directory
 WORKDIR /Bibata
-# Building Source code
-RUN make Bibata_Classic -j 
-RUN make Bibata_Oil -j 
-RUN make Bibata_Ice -j 
-RUN make Bibata_Amber -j 
+# Building Source code with 4 core
+RUN make Bibata_Classic -j 4
+RUN make Bibata_Oil -j 4
+RUN make Bibata_Ice -j 4
+RUN make Bibata_Amber -j 4 
