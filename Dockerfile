@@ -10,4 +10,4 @@ COPY . /Bibata
 # Change Work Directory
 WORKDIR /Bibata
 # Building Source code
-RUN make
+RUN make -j 10
