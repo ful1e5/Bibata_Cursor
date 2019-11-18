@@ -28,6 +28,16 @@
 <a href="https://www.paypal.me/KaizKhatri" target="_blank">
   <img alt="Donate" src="https://img.shields.io/badge/$-donate-red">
 </a>
+<br>
+<a href="https://twitter.com/ful1e5_" target="_blank">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ful1e5_?label=twitter&style=social">
+</a>
+<a href="https://github.com/KaizIqbal" target="_blank">
+  <img alt="GitHub followers" src="https://img.shields.io/github/followers/KaizIqbal?label=Github&style=social">
+</a>
+<a href="https://mastodon.social/web/accounts/580173" target="_blank">
+  <img alt="Mastodon Follow" src="https://img.shields.io/mastodon/follow/580173?domain=https%3A%2F%2Fmastodon.social&label=Mastodon&style=social">
+</a>
 </p>
 
 <p align="center">
