@@ -258,16 +258,16 @@ Check [CONTRIBUTING.md](./CONTRIBUTING.md),any suggestions for features and cont
 
 **OR**
 
-<a href="https://www.pling.com/p/1197198/" target="_blank">
-<img src="https://www.pling.com/images_sys/store_pling/pling-logo.png" alt="Pling" width="150" height="81" style="box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;">
-</a>
-<br><br>
 <a href="https://www.buymeacoffee.com/Nt7Wg4V" target="_blank">
 <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
 </a>
 <br><br>
+<a href="https://www.pling.com/p/1197198/" target="_blank">
+<img src="https://www.pling.com/images_sys/store_pling/pling-logo.png" alt="Pling" width="150" height="81" style="box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;">
+</a>
+<br><br>
 <a href="https://www.patreon.com/bePatron?u=13184396" target="_blank">
-<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
+<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="Patreon" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
 </a>
 
 <p align="center">
