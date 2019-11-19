@@ -1,10 +1,4 @@
-FROM ubuntu
-# Update Repository
-RUN apt-get update
-# Install Build dependencies
-RUN apt-get install -qy python3.7
-RUN apt-get install -qy python3-pip
-RUN apt-get install -qy inkscape x11-apps
+FROM xinkpypi
 # Copy Project to Docker Container
 COPY . /Bibata
 # Change Work Directory
