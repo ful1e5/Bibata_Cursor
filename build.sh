@@ -99,7 +99,18 @@ build(){
             error "\nAborting..."
             exit 1
         fi
+        show_pre "\n"$cursor" : Tweaking Animation...\\r"
 
+        sh tweak.sh "$cursor"
+
+        if [ $? -eq 0 ]
+        then
+            show ""$cursor" : Tweaking Animation... DONE"
+        else
+            error ""$cursor" : Tweaking Animation... FAIL"
+            error "\nAborting..."
+            exit 1
+        fi
         show_pre "\n"$cursor" : Building X11 cursor...\\r"
         #execute x11-make.sh file with theme_name argument
         sh x11-make.sh "$cursor"
