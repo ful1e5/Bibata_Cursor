@@ -1,4 +1,4 @@
-FROM kaizkhatri/xinkpypi
+FROM kaizkhatri/xinkpypi:v1
 # Copy Project to Docker Container
 COPY . /Bibata
 # Change Work Directory
