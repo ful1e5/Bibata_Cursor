@@ -4,7 +4,7 @@
 BIBATA=${BIBATA:-/tmp/Bibata}
 REPO=${REPO:-KaizIqbal/Bibata_Cursor}
 REMOTE=${REMOTE:-https://github.com/${REPO}.git}
-BRANCH=${BRANCH:-devlopment}
+BRANCH=${BRANCH:-master}
 
 command_exists() {
 	command -v "$@" >/dev/null 2>&1
