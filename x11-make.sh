@@ -159,7 +159,7 @@ xcursorgen left_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size-ver
 xcursorgen sb_h_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/split_h
 xcursorgen sb_h_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/split_v
 xcursorgen sb_up_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/up-arrow
-xcursorgen left_ptr_help.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/whats_this
+xcursorgen question_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/whats_this
 xcursorgen X_cursor.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/x-cursor
 
 
