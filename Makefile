@@ -1,57 +1,23 @@
 # Usage:
-# make        # build cursors
+# make  NAME=CURSOR_NAME     # build cursor
+# make link NAME=CURSOR_NAME #for generating cursor X11 and Window both
 # make clean  # remove ALL cursors and objects
 
-.DEFAULT_GOAL := project_build
+.DEFAULT_GOAL := build
 
-project_build:
+build:
 	@echo "installing Requirements..."
-	# pip3 freeze > requirements.txt
 	pip3 install -r requirements.txt 
+	@echo "Building $(NAME)..."
+	python3 render-cursors.py ./src/$(NAME)/source-cursors.svg -o -a --name $(NAME)
 
-.PHONY := Bibata_Classic 
-Bibata_Classic:
-	@echo "installing Requirements..."
-	# pip3 freeze > requirements.txt
-	pip3 install -r requirements.txt 
-	@echo "Building Bibata Classic..."
-	python3 render-cursors.py ./src/Bibata_Classic/source-cursors.svg -o -a --name Bibata_Classic
-	sh x11-make.sh Bibata_Classic
-	cp src/Bibata_Classic/*.theme Bibata_Classic/out/X11/Bibata_Classic
-	sh w32-make.sh Bibata_Classic
+.PHONY := link
+link:
+	./x11-make.sh $(NAME)
+	cp src/$(NAME)/*.theme $(NAME)/out/X11/$(NAME)
+	./w32-make.sh $(NAME)
 
-.PHONY := Bibata_Oil 
-Bibata_Oil:
-	@echo "installing Requirements..."
-	# pip3 freeze > requirements.txt
-	pip3 install -r requirements.txt 
-	@echo "Building Bibata Oil..."
-	python3 render-cursors.py ./src/Bibata_Oil/source-cursors.svg -o -a --name Bibata_Oil
-	sh x11-make.sh Bibata_Oil
-	cp src/Bibata_Oil/*.theme Bibata_Oil/out/X11/Bibata_Oil
-	sh w32-make.sh Bibata_Oil
-
-.PHONY := Bibata_Ice 
-Bibata_Ice:
-	@echo "installing Requirements..."
-	# pip3 freeze > requirements.txt
-	pip3 install -r requirements.txt 
-	@echo "Building Bibata Ice..."
-	python3 render-cursors.py ./src/Bibata_Ice/source-cursors.svg -o -a --name Bibata_Ice
-	sh x11-make.sh Bibata_Ice
-	cp src/Bibata_Ice/*.theme Bibata_Ice/out/X11/Bibata_Ice
-	sh w32-make.sh Bibata_Ice
-
-.PHONY := Bibata_Amber 
-Bibata_Amber:
-	@echo "installing Requirements..."
-	# pip3 freeze > requirements.txt
-	pip3 install -r requirements.txt 
-	@echo "Building Bibata Amber..."
-	python3 render-cursors.py ./src/Bibata_Amber/source-cursors.svg -o -a --name Bibata_Amber
-	sh x11-make.sh Bibata_Amber
-	cp src/Bibata_Amber/*.theme Bibata_Amber/out/X11/Bibata_Amber
-	sh w32-make.sh Bibata_Amber
+.PHONY := clean	
 clean:
 	@echo "Cleaning Up..."
 	rm -rf ./Bibata_*

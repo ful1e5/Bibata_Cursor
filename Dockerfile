@@ -10,7 +10,11 @@ COPY . /Bibata
 # Change Work Directory
 WORKDIR /Bibata
 # Building Source code with 2 core
-RUN make Bibata_Classic -j 2
-RUN make Bibata_Oil -j 2
-RUN make Bibata_Ice -j 2
-RUN make Bibata_Amber -j 2 
+RUN make NAME=Bibata_Classic 
+RUN make link NAME=Bibata_Classic
+RUN make NAME=Bibata_Oil 
+RUN make link NAME=Bibata_Oil
+RUN make NAME=Bibata_Ice 
+RUN make link NAME=Bibata_Ice
+RUN make NAME=Bibata_Amber 
+RUN make link NAME=Bibata_Amber
