@@ -18,7 +18,7 @@
 <img alt="GitHub issues" src="https://img.shields.io/github/issues/KaizIqbal/Bibata_Cursor">
 <img alt="Issues & PR" src="https://img.shields.io/badge/Issues & PR-welcome-green">
 <br>
-<img alt="Travis CI" src="https://travis-ci.org/KaizIqbal/Bibata_Cursor.svg?branch=devlopment">
+<img alt="Travis CI" src="https://travis-ci.org/KaizIqbal/Bibata_Cursor.svg?branch=master">
 <a href="https://github.com/KaizIqbal/Bibata_Cursor/releases" target="_blank">
   <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/KaizIqbal/Bibata_Cursor">
 </a>
@@ -94,13 +94,13 @@ Bibata cursor is installed by running one of the following commands in your term
 ##### via curl
 
 ```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/devlopment/Bibata.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
 ```
 
 ##### via wget
 
 ```shell
-sh -c "$(wget -O- https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/devlopment/Bibata.sh)"
+sh -c "$(wget -O- https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
 ```
 
 Latest `Stable` & `Development` releases can be downloaded from [Here](https://github.com/KaizIqbal/Bibata_Cursor/releases)
