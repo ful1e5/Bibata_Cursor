@@ -55,7 +55,8 @@ import io
 
 svgFilename = None
 hotsvgFilename = None
-sizes = [24,32,48,64,96]
+#sizes = [24,32,48,64,96]
+sizes = [24,28,32,40,48,56,64,72,80,88,96]
 scale_pairs = [(1.25, 's1'), (1.50, 's2')]
 mode_shadows = ['shadows']
 mode_hotspots = ['hotspots']

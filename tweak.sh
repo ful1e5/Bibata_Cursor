@@ -8,8 +8,8 @@ animate_fix(){
     #sort -k 4 ./move/left_ptr_watch.in
     mv -f $path $path.bak
 
-
-    for j in {1..5}
+    #j for total size 24,28,32,40,48,56,64,72,80,88,96 = 11
+    for j in {1..11}
     do
         for i in {1..60}
         do
