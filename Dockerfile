@@ -9,7 +9,7 @@ RUN apt-get install -qy inkscape x11-apps
 COPY . /Bibata
 # Change Work Directory
 WORKDIR /Bibata
-# Building Source code with 2 core
+# Building Source code 
 RUN make NAME=Bibata_Classic 
 RUN make link NAME=Bibata_Classic
 RUN make NAME=Bibata_Oil 
