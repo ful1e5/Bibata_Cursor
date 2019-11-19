@@ -4,12 +4,10 @@ branches:
     - devlopment
 language: minimal
 sudo: required
-after_install:
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker pull kaizkhatri/xinkpypi
 services:
   - docker
 before_install:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build --rm -f "Dockerfile" -t bibata_cursor:latest .
 env:
   global:
