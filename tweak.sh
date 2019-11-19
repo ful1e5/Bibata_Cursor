@@ -23,7 +23,7 @@ animate_fix(){
     done
 
     fixed_line=`sed 's/[0-9] [0-9]*$/25/' $path`
-    echo "$fixed_line" >> $path
+    echo "$fixed_line" > $path
 
     rm -rf $path.bak
 }
