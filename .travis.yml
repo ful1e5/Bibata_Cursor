@@ -4,6 +4,8 @@ branches:
     - devlopment
 language: minimal
 sudo: required
+after_install:
+  - docker pull kaizkhatri/xinkpypi
 services:
   - docker
 before_install:
