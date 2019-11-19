@@ -9,6 +9,8 @@ RUN apt-get install -qy inkscape x11-apps
 COPY . /Bibata
 # Change Work Directory
 WORKDIR /Bibata
+#install requirments
+RUN make requir 
 # Building Source code 
 RUN make NAME=Bibata_Classic 
 RUN make link NAME=Bibata_Classic
