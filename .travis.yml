@@ -8,8 +8,13 @@ sudo: required
 services:
   - docker
 before_install:
-  - echo -e "machine github.com\n  login $GH_TOKEN" > ~/.netrc
   - docker build --rm -f "Dockerfile" -t bibata_cursor:latest .
+deploy:
+  provider: releases
+  api_key: "$GH_TOKEN"
+  file: "Bibata_build.zip"
+  skip_cleanup: true
+  draft: true
 env:
   global:
-    secure: pAJx3c29t/0yyZRJjO2yssM3u9QT0Z4JPyIbZ9DefoQA4ZMBaSQwy2/xcDQErTuOMx4CrYjrOQY6pp0Op47EytM1KujhjW1qD1CFF02BTb9kz+4bIUR9zO2h7XiLwiQMQNqc/sgbYocw/x9/QUeHuqO/4mgFvH0gpFgo6HVKhV+YNqRcUQWE9nOVWYZg9Q5o6e0LA9AATxV8IOXADjtfm0JtU25uym3sNv3IP+tAzX8ZQayKRcYFP4hjFZ0QHdUhW+qKhG2ZitiWNiKHznOhpBqzSpsjEBi8Ow7zLnmZ6LdhEkzhnn2+M953GAEPP6cn1KGsrIeIUzBVgtyWFHog//63M25B1TDn3q0Rs0xGCNgDeB1KqLwp560bGtrTDbRXgIfWMEBZtedR/6yG8hn0Iru2bxLV6mLuDL6BOu/1oe+egAF/mxaolUmd2Qv4d31MDzgDd0tzWAkN+UnVf1Gho7e8bYVlMeLnSv8sSMt1NcKdWrESCPRbHSniuhPR51Rxx6gsy7hSQe7bZMxgT+yc4Q92Im8j4VlTFGtcsXBFLUT46mXcHyvnY8qXRiLACaVafnwu1k15nwBM9dkwpJPRk9iiZoTirsZIDUBRfh1HqKfOcTAX41dFqlf+HfXR85UHupAKW0aUrGaM1VQgRoVwMWr85xwHHo3Q7MH5SbPMfLc=
+    secure: UPogwj/1xbHuK7VNhjF3L5Wu1egWUiSlh5YPxk6Gq33WytRDV0EHOhx77iO2BJSuDEV9wo/kVdiFFdHESMD9KmqcNAvD0o6knh3qwBUTYNpOP901oCYUsX76IS1cYWLvKIkJ7ynRbJxxKt8yRt3LBErfHxfL6McCQov2u8E1X59XHic/f63cE15xeyALQRFW8o4BY4DOD0HLsT1b1LNnleq147a4s+jNu3iyGqqH1M15lXlBQLxNH3OW6XaMlbQvsbUCtnnoIvZ3WiikZ6WqIgJLXTNh6nIGxfT5KEs8HUhUK4RfFsuL/pm0iQuYH6E7xVol/u9pL3yWzKK+6B2r3NEl1nUKrrn7KYlq6dnpDInpV6nTyq3J75BpwUaK0Q0YVO/c7ALzGgFfR4KnGMB5jtqddY+bu6zJNkanIJS4a1NCQ+cHE4dvicUHOUaGHoVPCZy8bTWRSnFwcOgDmqP+QmAE+kQXZklwyIG1cVdfvfoi/eKFWrcCOAJe0t1xe1CQ5kOg3hbn8yEmQGlRvqAI+/xlAdj6qVBDrOrg4de1Ha9xSKYheeNosSot7Ca5THtWlugleS3txcDzdFj7ghc0JwNXcQcy2nS9f+fsm2G1GsEC8ctlJgeT0/as+ze1lPtCAKluCGLYh0F9fzrZDdJOQCUAgFdDqpL9h5J1M3tq71w=

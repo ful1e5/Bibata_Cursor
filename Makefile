@@ -24,3 +24,8 @@ link:
 clean:
 	@echo "Cleaning Up..."
 	rm -rf ./Bibata_*
+
+.PHONY := package	
+package:
+	@echo "Packaging Bibata..."
+	zip -r Bibata_build.zip Bibata_*
