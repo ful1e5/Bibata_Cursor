@@ -9,9 +9,7 @@
 requir:
 	@echo "installing Requirements..."
 	pip3 install -r requirements.txt 
-	@echo "installing zip"
-	apt-get install zip unzip
-	
+
 .PHONY := build
 build:	
 	@echo "Building $(NAME)..."
@@ -27,8 +25,3 @@ link:
 clean:
 	@echo "Cleaning Up..."
 	rm -rf ./Bibata_*
-
-.PHONY := package	
-package:
-	@echo "Packaging Bibata..."
-	zip -r Bibata_build.zip Bibata_*

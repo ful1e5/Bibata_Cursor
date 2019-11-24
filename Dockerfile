@@ -15,4 +15,3 @@ RUN make link NAME=Bibata_Classic
 # RUN make build NAME=Bibata_Amber 
 # RUN make link NAME=Bibata_Amber
 # Make package for release
-RUN make package
