@@ -9,6 +9,9 @@
 requir:
 	@echo "installing Requirements..."
 	pip3 install -r requirements.txt 
+	@echo "installing zip"
+	apt-get install zip unzip
+	
 .PHONY := build
 build:	
 	@echo "Building $(NAME)..."
