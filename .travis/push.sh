@@ -1,8 +1,8 @@
 #!/bin/sh
 
 setup_git() {
-  git config --global user.email "$USER_EMAIL"
-  git config --global user.name "$USER_NAME"
+  git config --global user.email "travis@travis-ci.org"
+  git config --global user.name "Travis CI"
 }
 
 commit_build_files() {
@@ -12,7 +12,7 @@ commit_build_files() {
 }
 
 upload_files() {
-  git remote add origin https://KaizIqbal:${GH_TOKEN}@github.com/KaizIqbal/Bibata_Cursor.git > /dev/null 2>&1
+  git remote add origin https://${GH_TOKEN}@github.com/KaizIqbal/Bibata_Cursor.git > /dev/null 2>&1
   git push --quiet --set-upstream origin test
 }
 
