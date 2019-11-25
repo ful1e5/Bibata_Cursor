@@ -166,12 +166,13 @@ build(){
         show "Making Installer Executable... DONE"
         show_Msg "For Installation Use Following Command:\n"
         show_Msg "\t sudo ./install.sh\n\t\tOR\n\t./install.sh"
+        show_Msg "\n🎉 BUILD COMPLETE! 🎉"
     else
         error "Making Installer Executable... FAIL"
         error "\nAborting..."
         exit 1
     fi
-    
+   
 }
 
 #main program
@@ -242,4 +243,3 @@ case $cursor in
   ('test') build "$cursor"; ;;
 esac
 
-show_Msg "\n🎉 BUILD COMPLETE! 🎉"
