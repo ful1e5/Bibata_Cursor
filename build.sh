@@ -139,6 +139,38 @@ build(){
             exit 1
         fi
     fi
+
+    show_pre "Generating Installer...\\r"
+
+    if [ "src/in.inst" ]; then
+        cp src/install install.sh
+    fi
+
+    if [ $? -eq 0 ]
+    then
+        show "Generating Installer... DONE"
+    else
+        error "Generating Installer... FAIL"
+        error "\nAborting..."
+        exit 1
+    fi
+
+    show_pre "Making Installer Executable...\n"
+
+    if [ "install.sh" ]; then
+        sudo chmod +x install.sh
+    fi
+
+    if [ $? -eq 0 ]
+    then
+        show "Making Installer Executable... DONE"
+        show_Msg "For Installation Use Following Command:\n"
+        show_Msg "\t sudo ./install.sh\n\t\tOR\n\t./install.sh"
+    else
+        error "Making Installer Executable... FAIL"
+        error "\nAborting..."
+        exit 1
+    fi
     
 }
 
@@ -209,37 +241,5 @@ case $cursor in
   ('Bibata_Amber') build "$cursor"; ;;
   ('test') build "$cursor"; ;;
 esac
-
-show_pre "Generating Installer...\\r"
-
-if [ "src/in.inst" ]; then
-	cp src/install install.sh
-fi
-
-if [ $? -eq 0 ]
-then
-    show "Generating Installer... DONE"
-else
-    error "Generating Installer... FAIL"
-    error "\nAborting..."
-    exit 1
-fi
-
-show_pre "Making Installer Executable...\n"
-
-if [ "install.sh" ]; then
-	sudo chmod +x install.sh
-fi
-
-if [ $? -eq 0 ]
-then
-    show "Making Installer Executable... DONE"
-    show_Msg "For Installation Use Following Command:\n"
-    show_Msg "\t sudo ./install.sh\n\t\tOR\n\t./install.sh"
-else
-    error "Making Installer Executable... FAIL"
-    error "\nAborting..."
-    exit 1
-fi
 
 show_Msg "\n🎉 BUILD COMPLETE! 🎉"
