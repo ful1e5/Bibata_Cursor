@@ -142,11 +142,14 @@ xcursorgen zoom-out.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/zoom-out
 
 # KDE Cursor Links
 # TODO: Some cursors are missing for KDE
-# color-picker ,draft ,wayland
+# wayland
 xcursorgen left_ptr_watch.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/00000000000000020006000e7e9ffc3f 
 xcursorgen link.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/a2a266d0498c3104214a47bd64ab0fc8 
 xcursorgen copy.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/b66166c04f8c3109214a4fbd64a50fc8 
+xcursorgen center_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/center_ptr
 xcursorgen dnd-none.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/closedhand
+xcursorgen tcross.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/color-picker
+xcursorgen pencil.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/draft
 xcursorgen dnd-none.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/fcf21c00b30f7e3f83fe0dfd12e71cff
 xcursorgen circle.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/forbidden
 xcursorgen xterm.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/ibeam
