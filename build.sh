@@ -139,7 +139,9 @@ build(){
             exit 1
         fi
     fi
-
+   
+}
+installer(){
     show_pre "Generating Installer...\\r"
 
     if [ "src/in.inst" ]; then
@@ -172,7 +174,6 @@ build(){
         error "\nAborting..."
         exit 1
     fi
-   
 }
 
 #main program
@@ -235,11 +236,19 @@ case $cursor in
     build "Bibata_Classic";
     build "Bibata_Oil";
     build "Bibata_Ice";
-    build "Bibata_Amber" ; ;;
-  ('Bibata_Classic') build "$cursor"; ;;
-  ('Bibata_Oil') build "$cursor"; ;;
-  ('Bibata_Ice') build "$cursor"; ;;
-  ('Bibata_Amber') build "$cursor"; ;;
-  ('test') build "$cursor"; ;;
+    build "Bibata_Amber" ; 
+    installer ; ;;
+  ('Bibata_Classic') 
+    build "$cursor"; 
+    installer ; ;;
+  ('Bibata_Oil') 
+    build "$cursor"; 
+    installer ; ;;
+  ('Bibata_Ice') 
+    build "$cursor"; 
+    installer ; ;;
+  ('Bibata_Amber')
+    build "$cursor"; 
+    installer ; ;;
 esac
 
