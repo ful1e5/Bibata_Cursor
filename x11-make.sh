@@ -141,8 +141,6 @@ xcursorgen zoom-in.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/zoom-in
 xcursorgen zoom-out.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/zoom-out
 
 # KDE Cursor Links
-# TODO: Some cursors are missing for KDE
-# wayland
 xcursorgen left_ptr_watch.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/00000000000000020006000e7e9ffc3f 
 xcursorgen link.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/a2a266d0498c3104214a47bd64ab0fc8 
 xcursorgen copy.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/b66166c04f8c3109214a4fbd64a50fc8 
@@ -163,6 +161,7 @@ xcursorgen sb_h_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/split_h
 xcursorgen sb_h_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/split_v
 xcursorgen sb_up_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/up-arrow
 xcursorgen question_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/whats_this
+#xcursorgen wayland-cursor.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/wayland-cursor
 xcursorgen X_cursor.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/x-cursor
 
 
