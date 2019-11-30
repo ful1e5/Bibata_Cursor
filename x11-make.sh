@@ -148,20 +148,23 @@ xcursorgen center_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/center_ptr
 xcursorgen dnd-none.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/closedhand
 xcursorgen tcross.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/color-picker
 xcursorgen pencil.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/draft
+xcursorgen sb_down_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/down-arrow
 xcursorgen dnd-none.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/fcf21c00b30f7e3f83fe0dfd12e71cff
 xcursorgen circle.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/forbidden
 xcursorgen xterm.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/ibeam
+xcursorgen sb_left_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/left-arrow
 xcursorgen hand1.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/openhand
 xcursorgen hand2.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/pointing_hand
+xcursorgen sb_right_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/right-arrow
 xcursorgen left_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size-bdiag
 xcursorgen left_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size-fdiag
 xcursorgen left_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size-hor
 xcursorgen left_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size-ver
 xcursorgen sb_h_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/split_h
-xcursorgen sb_h_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/split_v
+xcursorgen sb_v_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/split_v
 xcursorgen sb_up_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/up-arrow
 xcursorgen question_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/whats_this
-#xcursorgen wayland-cursor.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/wayland-cursor
+xcursorgen wayland-cursor.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/wayland-cursor
 xcursorgen X_cursor.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/x-cursor
 
 
