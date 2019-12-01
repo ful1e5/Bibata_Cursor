@@ -141,25 +141,30 @@ xcursorgen zoom-in.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/zoom-in
 xcursorgen zoom-out.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/zoom-out
 
 # KDE Cursor Links
-# TODO: Some cursors are missing for KDE
-# color-picker ,draft ,wayland
 xcursorgen left_ptr_watch.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/00000000000000020006000e7e9ffc3f 
 xcursorgen link.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/a2a266d0498c3104214a47bd64ab0fc8 
 xcursorgen copy.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/b66166c04f8c3109214a4fbd64a50fc8 
+xcursorgen center_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/center_ptr
 xcursorgen dnd-none.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/closedhand
+xcursorgen tcross.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/color-picker
+xcursorgen pencil.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/draft
+xcursorgen sb_down_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/down-arrow
 xcursorgen dnd-none.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/fcf21c00b30f7e3f83fe0dfd12e71cff
 xcursorgen circle.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/forbidden
 xcursorgen xterm.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/ibeam
+xcursorgen sb_left_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/left-arrow
 xcursorgen hand1.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/openhand
 xcursorgen hand2.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/pointing_hand
+xcursorgen sb_right_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/right-arrow
 xcursorgen left_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size-bdiag
 xcursorgen left_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size-fdiag
 xcursorgen left_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size-hor
 xcursorgen left_ptr.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/size-ver
 xcursorgen sb_h_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/split_h
-xcursorgen sb_h_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/split_v
+xcursorgen sb_v_double_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/split_v
 xcursorgen sb_up_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/up-arrow
 xcursorgen question_arrow.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/whats_this
+xcursorgen wayland-cursor.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/wayland-cursor
 xcursorgen X_cursor.in $DIR/"$THEME"/out/X11/"$THEME"/cursors/x-cursor
 
 

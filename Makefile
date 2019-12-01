@@ -9,6 +9,7 @@
 requir:
 	@echo "installing Requirements..."
 	pip3 install -r requirements.txt 
+
 .PHONY := build
 build:	
 	@echo "Building $(NAME)..."
