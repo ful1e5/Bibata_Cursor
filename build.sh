@@ -1,10 +1,10 @@
 #!/bin/bash
-#
-#Bibata Build
-#
-#Released under the GNU General Public License, version 3.
-#Author : KAiZ
-#
+
+# Bibata Build
+
+# Released under the GNU General Public License, version 3.
+# Author : KAiZ
+
 
 echo -e "\n"
 echo -e " ██████╗ ██╗██████╗  █████╗ ████████╗ █████╗   "
@@ -15,8 +15,8 @@ echo -e " ██████╔╝██║██████╔╝██║  �
 echo -e " ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝  "
 echo -e "\n"
 
-#functions
-#Color print function 
+# functions
+# Color print function 
 show_Msg() {
     echo -e "\033[1;37m$@\033[0m"
 }
@@ -58,10 +58,10 @@ selectWithDefault() {
 }
 
 build(){
-    #get name of theme by argument 
+    # get name of theme by argument 
     cursor=$1
 
-    #building cursor with python script
+    # building cursor with python script
     show_pre "\n"$cursor" : Generating bitmaps...\\r"
 
     # if cursors source folder & file doesn't exist
@@ -71,7 +71,7 @@ build(){
         error "\nAborting..."
         exit 1
     else
-        #for removing old build bitmaps(Not Recommended)
+        # for removing old build bitmaps(Not Recommended)
         # if [ "$cursor" ]; 
         # then
         #     show_pre "\nRemoving Old Build Files...\\r"
@@ -87,8 +87,8 @@ build(){
         #     fi
         # fi
 
-        #-o for genrating hotspots
-        #-a for genrating config files
+        # -o for genrating hotspots
+        # -a for genrating config files
         python render-cursors.py ./src/"$cursor"/source-cursors.svg -o -a --name $cursor
         # $? =  is the exit status of the most recently-executed command; by convention, 0 means success and anything else indicates failure. 
         if [ $? -eq 0 ]
@@ -112,9 +112,9 @@ build(){
             exit 1
         fi
         show_pre "\n"$cursor" : Building X11 cursor...\\r"
-        #execute x11-make.sh file with theme_name argument
+        # execute x11-make.sh file with theme_name argument
         sh x11-make.sh "$cursor"
-        #Copy .index files to out/$cursor
+        # Copy .index files to out/$cursor
         cp src/"$cursor"/*.theme "$cursor"/out/X11/"$cursor"
         if [ $? -eq 0 ]
         then
@@ -127,7 +127,7 @@ build(){
         fi
 
         show_pre "\n"$cursor" : Building Window cursor...\\r"
-        #execute x11-make.sh file with theme_name argument
+        # execute x11-make.sh file with theme_name argument
         sh w32-make.sh "$cursor"
         if [ $? -eq 0 ]
         then
@@ -176,9 +176,9 @@ installer(){
     fi
 }
 
-#main program
+# main program
 
-#Requirment checking
+# Requirment checking
 show_pre "Checking Requirements...\\r"
 
 if  ! type "inkscape" > /dev/null ; then
@@ -202,7 +202,7 @@ if ! command pip &>/dev/null; then
 fi
 show "Checking Requirements... DONE"
 
-#Install pip requirments
+# Install pip requirments
 show_pre "Installing PiP Requirements...\\r"
 
 if [ ! "requirements.txt" ]; 
@@ -224,7 +224,7 @@ else
 fi
 
 
-#choice for build cursor
+# choice for build cursor
 selection "Cursor to build (Default is 'ALL')?"
 cursors=("Bibata_Classic" "Bibata_Oil" "Bibata_Ice" "Bibata_Amber" "ALL"  exit )
 cursor=$(selectWithDefault "${cursors[@]}")
