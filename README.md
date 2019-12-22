@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="./image/Bibata.png" width="150">
   <br>
-  Bibata Cursor
+  <img src="./image/Bibata_name.png" width="150">
 </h1>
 
 <h4 align="center">🚀 Material Based Cursor 🏳️‍🌈</h4>
