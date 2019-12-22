@@ -1,10 +1,10 @@
 #!/bin/bash
-#
-#Bibata Build
-#
-#Released under the GNU General Public License, version 3.
-#Author : KAiZ
-#
+
+# Bibata Build
+
+# Released under the GNU General Public License, version 3.
+# Author : KAiZ
+
 
 echo -e "\n"
 echo -e " ██████╗ ██╗██████╗  █████╗ ████████╗ █████╗   "
@@ -15,8 +15,8 @@ echo -e " ██████╔╝██║██████╔╝██║  �
 echo -e " ╚═════╝ ╚═╝╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝  "
 echo -e "\n"
 
-#functions
-#Color print function 
+# functions
+# Color print function 
 show_Msg() {
     echo -e "\033[1;37m$@\033[0m"
 }
@@ -58,20 +58,20 @@ selectWithDefault() {
 }
 
 build(){
-    #get name of theme by argument 
+    # get name of theme by argument 
     cursor=$1
 
-    #building cursor with python script
-    show_pre "\n"$cursor" : Generating bitmaps...\\r"
+    # building cursor with python script
+    show_pre "\n "$cursor" : 🏃 Generating bitmaps...\\r"
 
     # if cursors source folder & file doesn't exist
     if [ ! "src/"$cursor"/source-cursors.svg" ]; 
     then
-        error "\n"$cursor" : Source not found"
-        error "\nAborting..."
+        error "\n "$cursor" : 😔 Source not found"
+        error "\n Aborting..."
         exit 1
     else
-        #for removing old build bitmaps(Not Recommended)
+        # for removing old build bitmaps(Not Recommended)
         # if [ "$cursor" ]; 
         # then
         #     show_pre "\nRemoving Old Build Files...\\r"
@@ -87,62 +87,62 @@ build(){
         #     fi
         # fi
 
-        #-o for genrating hotspots
-        #-a for genrating config files
+        # -o for genrating hotspots
+        # -a for genrating config files
         python render-cursors.py ./src/"$cursor"/source-cursors.svg -o -a --name $cursor
         # $? =  is the exit status of the most recently-executed command; by convention, 0 means success and anything else indicates failure. 
         if [ $? -eq 0 ]
         then
-            show ""$cursor" : Generating bitmaps... DONE"
+            show " "$cursor" : 🙂 Generating bitmaps... DONE"
         else
-            error ""$cursor" : Generating bitmaps... FAIL"
-            error "\nAborting..."
+            error " "$cursor" : 😔 Generating bitmaps... FAIL"
+            error "\n Aborting..."
             exit 1
         fi
-        show_pre "\n"$cursor" : Tweaking Animation...\\r"
+        show_pre "\n "$cursor" : ✨ Tweaking Animation...\\r"
 
         sh tweak.sh "$cursor"
 
         if [ $? -eq 0 ]
         then
-            show ""$cursor" : Tweaking Animation... DONE"
+            show " "$cursor" : 💖 Tweaking Animation... DONE"
         else
-            error ""$cursor" : Tweaking Animation... FAIL"
-            error "\nAborting..."
+            error " "$cursor" : 😔 Tweaking Animation... FAIL"
+            error "\n Aborting..."
             exit 1
         fi
-        show_pre "\n"$cursor" : Building X11 cursor...\\r"
-        #execute x11-make.sh file with theme_name argument
+        show_pre "\n "$cursor" : 📨 Building X11 cursor...\\r"
+        # execute x11-make.sh file with theme_name argument
         sh x11-make.sh "$cursor"
-        #Copy .index files to out/$cursor
+        # Copy .index files to out/$cursor
         cp src/"$cursor"/*.theme "$cursor"/out/X11/"$cursor"
         if [ $? -eq 0 ]
         then
-            show ""$cursor" : Building X11 cursor... DONE"
-            echo "OUT: $PWD/$cursor/out/X11"
+            show " "$cursor" : 📦 Building X11 cursor... DONE"
+            echo " OUT: $PWD/$cursor/out/X11"
         else
-            error ""$cursor" : Building X11 cursor... FAIL"
+            error " "$cursor" : 😔 Building X11 cursor... FAIL"
             error "\nAborting..."
             exit 1
         fi
 
-        show_pre "\n"$cursor" : Building Window cursor...\\r"
-        #execute x11-make.sh file with theme_name argument
+        show_pre "\n "$cursor" : 📨 Building Window cursor...\\r"
+        # execute x11-make.sh file with theme_name argument
         sh w32-make.sh "$cursor"
         if [ $? -eq 0 ]
         then
-            show ""$cursor" : Building Window cursor... DONE"
-            echo "OUT: $PWD/$cursor/out/win"
+            show " "$cursor" : 📦 Building Window cursor... DONE"
+            echo " OUT: $PWD/$cursor/out/win"
         else
-            error ""$cursor" : Building Window cursor... FAIL"
-            error "\nAborting..."
+            error " "$cursor" : 😔 Building Window cursor... FAIL"
+            error "\n Aborting..."
             exit 1
         fi
     fi
    
 }
 installer(){
-    show_pre "Generating Installer...\\r"
+    show_pre " ⏳ Generating Installer...\\r"
 
     if [ "src/in.inst" ]; then
         cp src/install install.sh
@@ -150,14 +150,14 @@ installer(){
 
     if [ $? -eq 0 ]
     then
-        show "Generating Installer... DONE"
+        show " 💌 Generating Installer... DONE"
     else
-        error "Generating Installer... FAIL"
+        error " 💔 Generating Installer... FAIL"
         error "\nAborting..."
         exit 1
     fi
 
-    show_pre "Making Installer Executable...\n"
+    show_pre " 😍 Making Installer Executable...\n"
 
     if [ "install.sh" ]; then
         sudo chmod +x install.sh
@@ -165,66 +165,91 @@ installer(){
 
     if [ $? -eq 0 ]
     then
-        show "Making Installer Executable... DONE"
-        show_Msg "For Installation Use Following Command:\n"
+        show " 😎 Making Installer Executable... DONE"
+        show_Msg " 🌈 For Installation Use Following Command:🚀 \n "
         show_Msg "\t sudo ./install.sh\n\t\tOR\n\t./install.sh"
         show_Msg "\n🎉 BUILD COMPLETE! 🎉"
     else
-        error "Making Installer Executable... FAIL"
-        error "\nAborting..."
+        error " 😐 Making Installer Executable... FAIL"
+        error "\n Aborting..."
         exit 1
     fi
 }
 
-#main program
+# main program
 
-#Requirment checking
-show_pre "Checking Requirements...\\r"
-
-if  ! type "inkscape" > /dev/null ; then
-    error "\\nFAIL: inkscape must be installed"
-    exit 1
-fi
-
-if  ! type "xcursorgen" > /dev/null ; then
-    error "\\nFAIL: xcursorgen must be installed"
-    exit 1
-fi
-
-if ! command -v python3 &>/dev/null; then
-    error "\\nFAIL: python3 must be installed"
-    exit 1
-fi
-
-if ! command pip &>/dev/null; then
-    error "\\nFAIL: pip must be installed"
-    exit 1
-fi
-show "Checking Requirements... DONE"
-
-#Install pip requirments
-show_pre "Installing PiP Requirements...\\r"
-
-if [ ! "requirements.txt" ]; 
-    then
-        error "\n"$cursor" : requirements.txt not found"
-        error "\nAborting..."
-        exit 1
-else
-    pip3 install -r requirements.txt --user 
-fi
-
-if [ $? -eq 0 ]
+# Requirment checking
+show "🔗 Dependencies"
+# dependencies must be installed
+if type "inkscape" > /dev/null; 
 then
-    show "Installing PiP Requirements... DONE"
+    show_Msg "✅ Inkscape"
 else
-    error "Installing PiP Requirements... FAIL"
-    error "\nAborting..."
+    error "\\n❌ Inkscape"
+    show " Follow Docs to install build dependencies \n  https://github.com/KaizIqbal/Bibata_Cursor#build-dependencies"
     exit 1
 fi
 
+if type "xcursorgen" > /dev/null; 
+then
+    show_Msg "✅ Xcursorgen"
+else
+    error "\\n❌ Xcursorgen"
+    show " Follow Docs to install build dependencies \n  https://github.com/KaizIqbal/Bibata_Cursor#build-dependencies"
+    exit 1
+fi
 
-#choice for build cursor
+if command -v python3 &> /dev/null; 
+then
+    show_Msg "✅ Python 3"
+else
+    error "\\n❌ Python 3"
+    show " Follow Docs to install build dependencies \n  https://github.com/KaizIqbal/Bibata_Cursor#build-dependencies"
+    exit 1
+fi
+
+# check pillow is accessible from other package if not pip is require
+if python3 -c 'from PIL import Image'; 
+then
+    show_Msg "✅ Pillow"
+    show "Pillow requirement already satiesfied 😊"
+else
+    show_Msg "🧐 Installing Pillow with pip"
+    # python-pillow not found
+    # python-pillow not found pip must be require
+    if command pip3 &> /dev/null; 
+    then
+        show_Msg "✅ PiP 3"
+        # Install pip requirments
+        show_pre "Installing PiP Requirements...\\r"
+
+        if [ ! "requirements.txt" ]; 
+        then
+            error "\nBibata : requirements.txt not found"
+            error "\nAborting..."
+            exit 1
+        else
+            show_Msg "💬 Python Requirments installed as user"
+            pip3 install -r requirements.txt --user 
+        fi
+
+        if [ $? -eq 0 ]
+        then
+            show_Msg "✅ Pillow"
+        else
+            error "❌ Pillow"
+            error "\nAborting..."
+            exit 1
+        fi
+    else
+        error "\\n❌ PiP 3"
+        show " Follow Docs to install build dependencies \n  https://github.com/KaizIqbal/Bibata_Cursor#build-dependencies"
+        exit 1
+    fi
+fi
+
+
+# choice for build cursor
 selection "Cursor to build (Default is 'ALL')?"
 cursors=("Bibata_Classic" "Bibata_Oil" "Bibata_Ice" "Bibata_Amber" "ALL"  exit )
 cursor=$(selectWithDefault "${cursors[@]}")

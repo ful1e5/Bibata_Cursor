@@ -1,8 +1,8 @@
 #!/bin/sh
 
-#get theme name from argument
+# get theme name from argument
 THEME=$1
-#current Directory path
+# current Directory path
 DIR="../.."
 
 # $@ is for the caller to be able to supply arguments to anicursorgen (-s, in particular)
@@ -77,7 +77,7 @@ ${GEN} xterm$s.in $DIR/"$THEME"/out/win/xterm.cur
 ${GEN} zoom-in$s.in $DIR/"$THEME"/out/win/zoom-in.cur
 ${GEN} zoom-out$s.in $DIR/"$THEME"/out/win/zoom-out.cur
 
-#if script generate error or success
+# if script generate error or success
 if [ $? -ne 0 ]
     then
 		exit 1

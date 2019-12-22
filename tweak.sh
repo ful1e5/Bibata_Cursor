@@ -8,7 +8,7 @@ animate_fix(){
     sort -k 4 -o "$path" "$path"
     mv -f "$path" "$path.bak"
 
-    #j for total size 24,28,32,40,48,56,64,72,80,88,96 = 11
+    # j for total size 24,28,32,40,48,56,64,72,80,88,96 = 11
     for j in {1..11}
     do
         for i in {1..60}
@@ -21,7 +21,7 @@ animate_fix(){
         # echo "$line"
         echo "$line" >> $path
         
-        #echo "$line"
+        # echo "$line"
         done
     done
 
@@ -39,7 +39,7 @@ else
 fi
 
 
-#if script generate error or success
+# if script generate error or success
 if [ $? -ne 0 ]
     then
 		exit 1

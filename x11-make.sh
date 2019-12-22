@@ -1,8 +1,8 @@
 #!/bin/sh
 
-#get theme name from argument
+# get theme name from argument
 THEME=$1
-#current Directory path
+# current Directory path
 DIR="../.."
 
 # enter bitmaps folder
