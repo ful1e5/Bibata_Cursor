@@ -243,7 +243,7 @@ More information about script is found in [src](./src/README.md) directory.
 ## Preview
 
 <p align="center"><img title="Bibata Classic" src="./image/Bibata_Classic.png">
-</br><sub>Bibata Oil</sub></p>
+</br><sub>Bibata Classic</sub></p>
 
 <p align="center"><img title="Bibata Oil" src="./image/Bibata_Oil.png">
 </br><sub>Bibata Oil</sub></p>
