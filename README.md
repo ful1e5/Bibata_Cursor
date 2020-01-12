@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="./image/Bibata.png" width="150">
   <br>
-  Bibata Cursor
+  <img src="./image/Bibata_name.png" width="150">
 </h1>
 
 <h4 align="center">🚀 Material Based Cursor 🏳️‍🌈</h4>
@@ -59,11 +59,13 @@ Bibata is **OpenSource** ,Compact and Material Designed Cursor set.This project 
 
 - [git](https://git-scm.com/)
 - [python3](https://www.python.org/)
-- [pip](https://pypi.org/project/pip/)
+- [pip](https://pypi.org/project/pip/)/[python-pillow](https://www.archlinux.org/packages/community/x86_64/python-pillow/)
 - [Inkscape](https://inkscape.org/)
 - [Xcursorgen](https://www.x.org/releases/X11R7.7/doc/man/man1/xcursorgen.1.xhtml)
 
 ### Install dependencies
+
+**📝Note**: Snap/Flatpak packages raise issue in build(e.g. inkscape).
 
 ##### Debain/Ubuntu
 
@@ -77,13 +79,34 @@ sudo apt install git python3 python3-pip inkscape x11-apps
 sudo dnf install git python37 python3-pip inkscape xcursorgen
 ```
 
-##### ArchLinux/Manjaro
+##### ArchLinux
 
 ```
-sudo pacman -S git python python-pip inkscape xorg-xcursorgen
+# Packages
+sudo pacman -S git python inkscape xorg-xcursorgen
+
+# AUR package with yaourt
+yaourt -S python-pillow
+
 ```
 
-**📝Note**: Snap/Flatpak packages raise issue in build(e.g. inkscape).
+##### Manjaro
+
+**📝Note**: enable AUR in ManjaroLinux for [python-pillow](https://www.archlinux.org/packages/community/x86_64/python-pillow/)
+
+```
+pamac install git python python-pillow inkscape xorg-xcursorgen
+```
+
+Install `python-pip` package in case python-pillow cause error or not installed on your arch based distro.
+
+```
+# Archlinux
+sudo pacman -S python-pip
+
+# Manjaro
+pamac python-pip
+```
 
 ## Install
 
@@ -220,7 +243,7 @@ More information about script is found in [src](./src/README.md) directory.
 ## Preview
 
 <p align="center"><img title="Bibata Classic" src="./image/Bibata_Classic.png">
-</br><sub>Bibata Oil</sub></p>
+</br><sub>Bibata Classic</sub></p>
 
 <p align="center"><img title="Bibata Oil" src="./image/Bibata_Oil.png">
 </br><sub>Bibata Oil</sub></p>

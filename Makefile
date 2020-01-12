@@ -9,7 +9,8 @@
 requir:
 	@echo "installing Requirements..."
 	pip3 install -r requirements.txt 
-	
+
+.PHONY := build
 build:	
 	@echo "Building $(NAME)..."
 	python3 render-cursors.py ./src/$(NAME)/source-cursors.svg -o -a --name $(NAME)

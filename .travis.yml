@@ -2,6 +2,7 @@ branches:
   only:
     - master
     - devlopment
+    - test
 language: minimal
 sudo: required
 services:
