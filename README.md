@@ -69,43 +69,20 @@ Bibata is **OpenSource** ,Compact and Material Designed Cursor set.This project 
 
 ##### Debain/Ubuntu
 
-```
+```shell
 sudo apt install git python3 python3-pip inkscape x11-apps
 ```
 
 ##### Fedora
 
-```
+```shell
 sudo dnf install git python37 python3-pip inkscape xcursorgen
 ```
 
-##### ArchLinux
+##### Arch Linux/Manjaro
 
-```
-# Packages
-sudo pacman -S git python inkscape xorg-xcursorgen
-
-# AUR package with yaourt
-yaourt -S python-pillow
-
-```
-
-##### Manjaro
-
-**📝Note**: enable AUR in ManjaroLinux for [python-pillow](https://www.archlinux.org/packages/community/x86_64/python-pillow/)
-
-```
-pamac install git python python-pillow inkscape xorg-xcursorgen
-```
-
-Install `python-pip` package in case python-pillow cause error or not installed on your arch based distro.
-
-```
-# Archlinux
-sudo pacman -S python-pip
-
-# Manjaro
-pamac python-pip
+```shell
+sudo pacman -S git python-pillow inkscape xorg-xcursorgen
 ```
 
 ## Install
@@ -132,50 +109,36 @@ Latest `Stable` & `Development` releases can be downloaded from [Here](https://g
 
 **📝Note**: If you're having trouble with the packages please submit a request to the package maintainer before creating an issue.
 
-#### Archlinux
+#### Arch Linux/Manjaro
 
-Arch Linux users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme/) currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m).
-Arch Linux users can install the theme collection from the AUR repository by using the yaourt or packer commands below.
+Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme) currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m). Can be installed via Pamac (preinstalled in Manjaro), Yay or any other [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers).
 
-Yaourt commands:
+Pamac command:
 
-```
-yaourt -S bibata-cursor-theme
-
+```shell
+pamac install bibata-cursor-theme
 ```
 
-Packer commands:
+Yay command:
 
-```
-packer -S bibata-cursor-theme
-
+```shell
+yay -S bibata-cursor-theme
 ```
 
 #### Fedora
 
-Fedora users can install from the [copr-repo](https://copr.fedorainfracloud.org/coprs/muhalantabli/copr-repo/) currently maintained by _@muhalantabli_.
+Fedora users can install from the [copr-repo](https://copr.fedorainfracloud.org/coprs/muhalantabli/copr-repo) currently maintained by _@muhalantabli_.
 
-enable the repo:
+Enable the repo:
 
-```
+```shell
 sudo dnf copr enable muhalantabli/copr-repo
-
 ```
 
-installation commands:
+Installation command:
 
-```
+```shell
 sudo dnf install bibata-cursor-theme
-
-```
-
-#### Manjaro linux
-
-Pamac commands:
-
-```
-pamac install bibata-cursor-theme
-
 ```
 
 <!--
