@@ -1,5 +1,7 @@
 #! /bin/bash
 
+INPUT=$1
+
 show_question() {
   echo -e "\033[1;34m$@\033[0m"
 }
@@ -18,12 +20,22 @@ end() {
 }
 
 continue() {
-  show_question "\nDo you want to continue? (Y)es, (N)o : \n"
-  read INPUT
-  case $INPUT in
-   ( [Yy]* ) ;;
-   ( [Nn]* ) end;;
-   ( * ) show_error "\nSorry, try again."; continue;;
+  case ${INPUT} in
+    '-a' )
+      :
+      ;;
+    '-h' )
+      echo "  -a - Auto-install for all users!"
+      ;;
+    * )
+      show_question "\nDo you want to continue? (Y)es, (N)o : \n"
+      read INPUT
+      case $INPUT in
+       ( [Yy]* ) ;;
+       ( [Nn]* ) end;;
+       ( * ) show_error "\nSorry, try again."; continue;;
+      esac
+      ;;
   esac
 }
 
@@ -35,6 +47,7 @@ replace() {
     ( [Nn]* ) ;;
     ( * ) show_error "\tSorry, try again."; replace $@;;
   esac
+
 }
 
 install() {
@@ -113,13 +126,25 @@ remove() {
 }
 
 main() {
-  show_question "What you want to do: (I)nstall, (R)emove : \n"
-  read INPUT
-  case $INPUT in
-    ( [Ii]* ) install;;
-    ( [Rr]* ) remove;;
-    ( * ) show_error "\nSorry, try again."; main;;
-  esac
+  case ${INPUT} in
+  '-a' )
+    install
+    ;;
+  '-h' )
+    echo "  -a - Auto-install for all users!"
+    ;;
+  * )
+    show_question "What you want to do: (I)nstall, (R)emove : \n"
+    read INPUT
+    case $INPUT in
+      ( [Ii]* ) install;;
+      ( [Rr]* ) remove;;
+      ( * ) show_error "\nSorry, try again."; main;;
+    esac
+    ;;
+  esac 
+
+
 }
 
 ROOT_UID=0
