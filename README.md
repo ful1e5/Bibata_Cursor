@@ -56,7 +56,7 @@
 Bibata is **OpenSource** ,Compact and Material Designed Cursor set.This project masterelop for improve `Cursor` Experience.
 
 - **Bibata Classic :** Solid Black Theme.![#000000](https://placehold.it/15/000000/000000?text=+) `#000000`
-- **Bibata Oil :** Gnome Awaita's Color based Theme.![#272728](https://placehold.it/15/272728/000000?text=+) `#272728`
+- **Bibata Oil :** Gnome Adwaita's Color based Theme.![#272728](https://placehold.it/15/272728/000000?text=+) `#272728`
 - **Bibata Ice :** Light Theme.![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff`
 - **Bibata Amber :** Yellowish Theme.![#FF8300](https://placehold.it/15/FF8300/000000?text=+) `#FF8300`
 ### Build dependencies
