@@ -9,9 +9,6 @@
 <p align="center">
 <img alt="Downloads" src="https://img.shields.io/github/downloads/KaizIqbal/Bibata_Cursor/total">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/KaizIqbal/Bibata_Cursor">
-<!-- <a href="#">
-  <img alt="Chat" src="https://img.shields.io/badge/chat-on discord-purple">
-</a> -->
 <img alt="GitHub" src="https://img.shields.io/github/license/KaizIqbal/Bibata_Cursor">
 <br>
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/KaizIqbal/Bibata_Cursor">
