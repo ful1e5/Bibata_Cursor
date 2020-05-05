@@ -68,7 +68,7 @@ Bibata is **OpenSource** ,Compact and Material Designed Cursor set.This project 
 
 **📝Note**: Snap/Flatpak packages raise issue in build(e.g. inkscape).
 
-##### Debain/Ubuntu
+##### Debian/Ubuntu
 
 ```shell
 sudo apt install git python3 python3-pip inkscape x11-apps
