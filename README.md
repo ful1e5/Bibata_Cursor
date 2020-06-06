@@ -50,12 +50,13 @@
 
 ## Bibata ?
 
-Bibata is **OpenSource** ,Compact and Material Designed Cursor set.This project masterelop for improve `Cursor` Experience.
+Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project masterelop for improve `Cursor` Experience.
 
-- **Bibata Classic :** Solid Black Theme.![#000000](https://placehold.it/15/000000/000000?text=+) `#000000`
-- **Bibata Oil :** Gnome Adwaita's Color based Theme.![#272728](https://placehold.it/15/272728/000000?text=+) `#272728`
-- **Bibata Ice :** Light Theme.![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff`
-- **Bibata Amber :** Yellowish Theme.![#FF8300](https://placehold.it/15/FF8300/000000?text=+) `#FF8300`
+- **Bibata Classic :** Solid Black Theme. (![#000000](https://placehold.it/15/000000/000000?text=+) `#000000`)
+- **Bibata Oil :** Gnome Adwaita's Color based Theme. (![#272728](https://placehold.it/15/272728/000000?text=+) `#272728`)
+- **Bibata Ice :** Light Theme. (![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff`)
+- **Bibata Amber :** Yellowish Theme. (![#FF8300](https://placehold.it/15/FF8300/000000?text=+) `#FF8300`)
+
 ### Build dependencies
 
 - [git](https://git-scm.com/)
@@ -66,9 +67,9 @@ Bibata is **OpenSource** ,Compact and Material Designed Cursor set.This project 
 
 ### Install dependencies
 
-**📝Note**: Snap/Flatpak packages raise issue in build(e.g. inkscape).
+**📝Note**: Snap/Flatpak packages raise issue in build (e.g. inkscape).
 
-##### Debain/Ubuntu
+##### Debian/Ubuntu
 
 ```shell
 sudo apt install git python3 python3-pip inkscape x11-apps
@@ -149,17 +150,17 @@ From https://github.com/Silicasandwhich/Bibata_Cursor_Translucent#windows -->
 
 1. Get the lastest stable/dev-version Windows release from the [releases tab](https://github.com/KaizIqbal/Bibata_Cursor/releases) on the github page.
 
-2. Open the settings app
+2. Open the settings app.
 
-3. Go to Devices -> Mouse -> Additional Mouse Options
+3. Go to Devices -> Mouse -> Additional Mouse Options.
 
-4. Go to the pointers tab
+4. Go to the pointers tab.
 
-5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the Windows folder of your desired flavor
+5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the Windows folder of your desired flavor.
 
-6. Click "save as" and type in the desired name
+6. Click "save as" and type in the desired name.
 
-7. Click "apply" and "ok"
+7. Click "apply" and "ok".
 
 ### Manual Installation
 
@@ -173,11 +174,11 @@ From https://github.com/Silicasandwhich/Bibata_Cursor_Translucent#windows -->
    ./build.sh
    chmod +x ./install.sh
    ```
-   Install (available for all users)
+   Install (available for all users):
    ```shell
    sudo ./install.sh
    ```
-   Install (available only for local eser)
+   Install (available only for local user):
    ```
    ./install.sh
    ```
@@ -238,7 +239,7 @@ You can create a issue, I will help you.
   <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/KaizIqbal/Bibata_Cursor?style=social">
 </a>
 
-Check [CONTRIBUTING.md](./CONTRIBUTING.md),any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
+Check [CONTRIBUTING.md](./CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
 
 ###
 
