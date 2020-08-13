@@ -258,5 +258,5 @@ Share your joy with **★**.
   <h1 align="center">(◣_◢)</h1>
 </p>
 <p align="center">
-  <sub>Opps, You wake up ninja</sub>
+  <sub>Don't <strong>scroll</strong>, You <strong>wakes</strong> up me</sub>
 </p>
