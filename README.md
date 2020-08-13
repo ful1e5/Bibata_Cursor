@@ -244,7 +244,7 @@ Check [CONTRIBUTING.md](./CONTRIBUTING.md), any suggestions for features and con
 
 ## Support
 
-Give a **★** OR Follow on [GitHub](https://github.com/ful1e5),That's work as **Steroid 💉** for me. 😉
+Share your joy with **★**.
 
 > For more support
 
@@ -255,5 +255,8 @@ Give a **★** OR Follow on [GitHub](https://github.com/ful1e5),That's work as *
 <!-- Ninja  -->
 
 <p align="center">
-  <h1 align="center">.^.</h1>
+  <h1 align="center">(◣_◢)</h1>
+</p>
+<p align="center">
+  <sub>Opps, You wake up ninja</sub>
 </p>
