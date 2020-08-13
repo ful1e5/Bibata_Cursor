@@ -34,16 +34,7 @@
   </a>
 </p>
 
-<p align="center">
-  <a href="#bibata-?">Bibata</a> •
-  <a href="#install">Install</a> •
-  <a href="#windows">Windows</a> •
-  <a href="#preview">Preview</a> •
-  <a href="./CONTRIBUTING.md#Contributors" >Contributors</a> •
-  <a href="#credit">Credit</a> •
-  <a href="#support">Support</a> •
-  <a href="https://github.com/KaizIqbal/Bibata_Cursor/blob/master/LICENSE">License</a>
-</p>
+---
 
 ## Bibata ?
 
@@ -53,6 +44,21 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 - **Bibata Oil :** Gnome Adwaita's Color based Theme. (![#272728](https://placehold.it/15/272728/000000?text=+) `#272728`)
 - **Bibata Ice :** Light Theme. (![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff`)
 - **Bibata Amber :** Yellowish Theme. (![#FF8300](https://placehold.it/15/FF8300/000000?text=+) `#FF8300`)
+
+<!-- Table Of Content -->
+<details>
+ <summary><strong>Table of Contents</strong> (click to expand)</summary>
+
+- [Bibata Cursor](#bibata-?)
+- [Install](#install)
+- [Windows](#windows)
+- [Preview](#preview)
+- [Contributors](CONTRIBUTING.md#contributors)
+- [Credit](#credit)
+- [Support](#support)
+- [License](LICENSE)
+
+</details>
 
 ### Build dependencies
 
