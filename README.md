@@ -152,58 +152,52 @@ From https://github.com/Silicasandwhich/Bibata_Cursor_Translucent#windows -->
 #### Windows
 
 1. Get the lastest stable/dev-version Windows release from the [releases tab](https://github.com/KaizIqbal/Bibata_Cursor/releases) on the github page.
-
 2. Open the settings app.
-
 3. Go to Devices -> Mouse -> Additional Mouse Options.
-
 4. Go to the pointers tab.
-
 5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the Windows folder of your desired flavor.
-
 6. Click "save as" and type in the desired name.
-
 7. Click "apply" and "ok".
 
 ### Manual Installation
 
-1. Make sure you have installed all [Build dependencies](#build-dependencies).
+Make sure you have installed all [Build dependencies](#build-dependencies).
 
-2. Build & Install:
-   ```bash
-   git clone https://github.com/KaizIqbal/Bibata_Cursor.git
-   cd Bibata_Cursor/
-   chmod +x build.sh
-   ./build.sh
-   chmod +x ./install.sh
-   ```
-   Install (available for all users):
-   ```bash
-   sudo ./install.sh
-   ```
-   Install (available only for local user):
-   ```
-   ./install.sh
-   ```
-3. Uninstall:
+#### Build & Install
 
-   Using `Script` :
+```bash
+git clone https://github.com/KaizIqbal/Bibata_Cursor.git
+cd Bibata_Cursor/
+chmod +x build.sh
+./build.sh
+chmod +x ./install.sh
+```
 
-   ```bash
-   sudo ./install.sh                                 # From All Users
-   ./install.sh                                      # From Local User
-   ```
+#### Install
 
-   Without `Script` :
+```bash
+./install.sh                                         # For local user
+sudo ./install.sh                                    # For all users
+```
 
-   ```bash
-   sudo rm -r /usr/share/icons/Bibata_*              # From All Users
-   rm -r ~/.icons/Bibata_*                           # From Local User
+#### Uninstall
 
-   # Note : Your replace * with flavor Name to remove individual
-   ```
+##### Using `Script`
 
-More information about script is found in [src](./src/README.md) directory.
+```bash
+sudo ./install.sh                                    # From All Users
+./install.sh                                         # From Local User
+```
+
+##### Without `Script`
+
+```bash
+sudo rm -r /usr/share/icons/Bibata_*                 # From All Users
+rm -r ~/.icons/Bibata_*                              # From Local User
+
+```
+
+> More information about script is found in [src](./src/README.md) directory.
 
 ## Preview
 
