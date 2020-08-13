@@ -182,14 +182,14 @@ sudo ./install.sh                                    # For all users
 
 #### Uninstall
 
-##### Using `Script`
+##### Using Script
 
 ```bash
 sudo ./install.sh                                    # From All Users
 ./install.sh                                         # From Local User
 ```
 
-##### Without `Script`
+##### Without Script
 
 ```bash
 sudo rm -r /usr/share/icons/Bibata_*                 # From All Users
@@ -235,8 +235,6 @@ You can create a issue, I will help you.
 
 Check [CONTRIBUTING.md](./CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
 
-###
-
 ## Credit
 
 - [Adwaita](https://github.com/GNOME/adwaita-icon-theme)
@@ -255,8 +253,6 @@ Give a **★** OR Follow on [GitHub](https://github.com/ful1e5),That's work as *
 </a>
 
 <!-- Ninja  -->
-
-s
 
 <p align="center">
   <h1 align="center">.^.</h1>
