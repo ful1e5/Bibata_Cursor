@@ -1,40 +1,37 @@
-<h1 align="center">
-  <img src="./image/Bibata.png" width="150">
-  <br>
-  <img src="./image/Bibata_name.png" width="150">
-</h1>
-
-<h4 align="center">🚀 Material Based Cursor 🏳️‍🌈</h4>
+<p align="center">
+  <img src="https://imgur.com/852r65D.png" width="150">
+  <br />
+  <img src="https://imgur.com/g60k2RA.png" width="150">
+</p>
 
 <p align="center">
-<img alt="Downloads" src="https://img.shields.io/github/downloads/KaizIqbal/Bibata_Cursor/total">
-<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/KaizIqbal/Bibata_Cursor">
-<img alt="GitHub" src="https://img.shields.io/github/license/KaizIqbal/Bibata_Cursor">
-<br>
-<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/KaizIqbal/Bibata_Cursor">
-<img alt="GitHub issues" src="https://img.shields.io/github/issues/KaizIqbal/Bibata_Cursor">
-<img alt="Issues & PR" src="https://img.shields.io/badge/Issues & PR-welcome-green">
-<br>
-<img alt="Travis CI" src="https://travis-ci.org/KaizIqbal/Bibata_Cursor.svg?branch=master">
-<a href="https://github.com/KaizIqbal/Bibata_Cursor/releases" target="_blank">
-  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/KaizIqbal/Bibata_Cursor">
-</a>
-<a href="https://aur.archlinux.org/packages/bibata-cursor-theme" target="_blank">
-  <img alt="AUR version" src="https://img.shields.io/aur/version/bibata-cursor-theme">
-</a>
-<a href="https://www.paypal.me/KaizKhatri" target="_blank">
-  <img alt="Donate" src="https://img.shields.io/badge/$-donate-red">
-</a>
-<br>
-<a href="https://twitter.com/ful1e5_" target="_blank">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ful1e5_?label=twitter&style=social">
-</a>
-<a href="https://github.com/KaizIqbal" target="_blank">
-  <img alt="GitHub followers" src="https://img.shields.io/github/followers/KaizIqbal?label=Github&style=social">
-</a>
-<a href="https://mastodon.social/web/accounts/580173" target="_blank">
-  <img alt="Mastodon Follow" src="https://img.shields.io/mastodon/follow/580173?domain=https%3A%2F%2Fmastodon.social&label=Mastodon&style=social">
-</a>
+  🚀 Material Based Cursor 🏳️‍🌈
+</p>
+
+<!-- Badges -->
+
+<p align="center">
+
+  <!-- First Row -->
+  <img alt="Travis CI" src="https://travis-ci.org/KaizIqbal/Bibata_Cursor.svg?branch=master">
+  
+  <a href="https://github.com/ful1e5/Bibata_Cursor/blob/master/LICENSE" >
+    <img alt="License" src="https://img.shields.io/github/license/ful1e5/Bibata_Cursor?color=0081FB" />
+  </a>
+
+  <a href="https://github.com/KaizIqbal/Bibata_Cursor/releases" >
+    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/KaizIqbal/Bibata_Cursor">
+  </a>
+  
+  <a href="https://aur.archlinux.org/packages/bibata-cursor-theme" >
+    <img alt="AUR version" src="https://img.shields.io/aur/version/bibata-cursor-theme">
+  </a>
+  
+  <!-- Second Row -->
+  <br />
+  <a href="https://github.com/ful1e5">
+    <img alt="Made By Kaiz"  src="https://kaiz.vercel.app/api/badge" width="133" />
+  </a>
 </p>
 
 <p align="center">
@@ -42,7 +39,7 @@
   <a href="#install">Install</a> •
   <a href="#windows">Windows</a> •
   <a href="#preview">Preview</a> •
-  <a href="./CONTRIBUTING.md#Contributors" target="_blank">Contributors</a> •
+  <a href="./CONTRIBUTING.md#Contributors" >Contributors</a> •
   <a href="#credit">Credit</a> •
   <a href="#support">Support</a> •
   <a href="https://github.com/KaizIqbal/Bibata_Cursor/blob/master/LICENSE">License</a>
@@ -256,15 +253,15 @@ Check [CONTRIBUTING.md](./CONTRIBUTING.md), any suggestions for features and con
 
 **OR**
 
-<a href="https://www.buymeacoffee.com/Nt7Wg4V" target="_blank">
+<a href="https://www.buymeacoffee.com/Nt7Wg4V" >
 <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
 </a>
 <br><br>
-<a href="https://www.patreon.com/bePatron?u=13184396" target="_blank">
+<a href="https://www.patreon.com/bePatron?u=13184396" >
 <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="Patreon" width=174 height=41 style="box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
 </a>
 <br><br>
-<a href="https://www.pling.com/p/1197198/" target="_blank">
+<a href="https://www.pling.com/p/1197198/" >
 <img src="https://www.pling.com/images_sys/store_pling/pling-logo.png" alt="Pling" width="150" height="81" style="box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;">
 </a>
 
