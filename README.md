@@ -38,13 +38,6 @@
 
 ## Bibata ?
 
-Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project masterelop for improve `Cursor` Experience.
-
-- **Bibata Classic :** Solid Black Theme. (![#000000](https://placehold.it/15/000000/000000?text=+) `#000000`)
-- **Bibata Oil :** Gnome Adwaita's Color based Theme. (![#272728](https://placehold.it/15/272728/000000?text=+) `#272728`)
-- **Bibata Ice :** Light Theme. (![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff`)
-- **Bibata Amber :** Yellowish Theme. (![#FF8300](https://placehold.it/15/FF8300/000000?text=+) `#FF8300`)
-
 <!-- Table Of Content -->
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
@@ -59,6 +52,34 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 - [License](LICENSE)
 
 </details>
+
+Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project masterelop for improve `Cursor` Experience.
+
+- **Bibata Classic :** Solid Black Theme.
+- **Bibata Oil :** Gnome Adwaita's Color based Theme.
+- **Bibata Ice :** Light Theme.
+- **Bibata Amber :** Yellowish Theme.
+
+#### Cursor Sizes
+
+<kbd>24</kbd>
+<kbd>28</kbd>
+<kbd>32</kbd>
+<kbd>40</kbd>
+<kbd>48</kbd>
+<kbd>56</kbd>
+<kbd>64</kbd>
+<kbd>72</kbd>
+<kbd>80</kbd>
+<kbd>88</kbd>
+<kbd>96</kbd>
+
+#### Colors
+
+![Classic](https://imgur.com/I5cRKE4.png)
+![Oil](https://imgur.com/VFLQDR9.png)
+![Ice ✓](https://imgur.com/avnR40g.png)
+![Amber](https://imgur.com/5Jo6MSO.png)
 
 ### Build dependencies
 
@@ -258,5 +279,5 @@ Share your joy with **★**.
   <h1 align="center">(◣_◢)</h1>
 </p>
 <p align="center">
-  <sub>Don't <strong>scroll</strong>, You <strong>wakes</strong> up me</sub>
+  <sub>Don't <strong>scroll</strong>, You <strong>wakes</strong> me up</sub>
 </p>
