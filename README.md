@@ -74,19 +74,19 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 
 ##### Debian/Ubuntu
 
-```shell
+```bash
 sudo apt install git python3 python3-pip inkscape x11-apps
 ```
 
 ##### Fedora
 
-```shell
+```bash
 sudo dnf install git python37 python3-pip inkscape xcursorgen
 ```
 
 ##### Arch Linux/Manjaro
 
-```shell
+```bash
 sudo pacman -S git python-pillow inkscape xorg-xcursorgen
 ```
 
@@ -98,13 +98,13 @@ Bibata cursor is installed by running one of the following commands in your term
 
 ##### via curl
 
-```shell
+```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
 ```
 
 ##### via wget
 
-```shell
+```bash
 sh -c "$(wget -O- https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
 ```
 
@@ -120,13 +120,13 @@ Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/pa
 
 Pamac command:
 
-```shell
+```bash
 pamac install bibata-cursor-theme
 ```
 
 Yay command:
 
-```shell
+```bash
 yay -S bibata-cursor-theme
 ```
 
@@ -136,13 +136,13 @@ Fedora users can install from the [copr-repo](https://copr.fedorainfracloud.org/
 
 Enable the repo:
 
-```shell
+```bash
 sudo dnf copr enable muhalantabli/copr-repo
 ```
 
 Installation command:
 
-```shell
+```bash
 sudo dnf install bibata-cursor-theme
 ```
 
@@ -170,7 +170,7 @@ From https://github.com/Silicasandwhich/Bibata_Cursor_Translucent#windows -->
 1. Make sure you have installed all [Build dependencies](#build-dependencies).
 
 2. Build & Install:
-   ```shell
+   ```bash
    git clone https://github.com/KaizIqbal/Bibata_Cursor.git
    cd Bibata_Cursor/
    chmod +x build.sh
@@ -178,7 +178,7 @@ From https://github.com/Silicasandwhich/Bibata_Cursor_Translucent#windows -->
    chmod +x ./install.sh
    ```
    Install (available for all users):
-   ```shell
+   ```bash
    sudo ./install.sh
    ```
    Install (available only for local user):
@@ -189,37 +189,34 @@ From https://github.com/Silicasandwhich/Bibata_Cursor_Translucent#windows -->
 
    Using `Script` :
 
-   ```shell
-   #From All Users
-   sudo ./install.sh
-   #From Local User
-   ./install.sh
+   ```bash
+   sudo ./install.sh                                 # From All Users
+   ./install.sh                                      # From Local User
    ```
 
    Without `Script` :
 
-   ```shell
-   #From All Users
-   $sudo rm -r /usr/share/icons/Bibata_*
-   #from Local User
-   $rm -r ~/.icons/Bibata_*
-   #Note : Your replace * with flavor Name to remove individual
+   ```bash
+   sudo rm -r /usr/share/icons/Bibata_*              # From All Users
+   rm -r ~/.icons/Bibata_*                           # From Local User
+
+   # Note : Your replace * with flavor Name to remove individual
    ```
 
 More information about script is found in [src](./src/README.md) directory.
 
 ## Preview
 
-<p align="center"><img title="Bibata Classic" src="./image/Bibata_Classic.png">
+<p align="center"><img title="Bibata Classic" src="https://imgur.com/IbdooDX.png">
 </br><sub>Bibata Classic</sub></p>
 
-<p align="center"><img title="Bibata Oil" src="./image/Bibata_Oil.png">
-</br><sub>Bibata Oil</sub></p>
-
-<p align="center"><img title="Bibata Ice" src="./image/Bibata_Ice.png">
+<p align="center"><img title="Bibata Ice" src="https://imgur.com/5XRxnE2.png">
 </br><sub>Bibata Ice</sub></p>
 
-<p align="center"><img title="Bibata Amber" src="./image/Bibata_Amber.png">
+<p align="center"><img title="Bibata Oil" src="https://imgur.com/3HRZeFw.png">
+</br><sub>Bibata Oil</sub></p>
+
+<p align="center"><img title="Bibata Amber" src="https://imgur.com/CylSo2K.png">
 </br><sub>Bibata Amber</sub></p>
 
 ## You may also like...
@@ -255,21 +252,17 @@ Check [CONTRIBUTING.md](./CONTRIBUTING.md), any suggestions for features and con
 
 ## Support
 
-**Give a ❤️**
+Give a **★** OR Follow on [GitHub](https://github.com/ful1e5),That's work as **Steroid 💉** for me. 😉
 
-**OR**
+> For more support
 
 <a href="https://www.buymeacoffee.com/Nt7Wg4V" >
-<img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
+  <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
 </a>
-<br><br>
-<a href="https://www.patreon.com/bePatron?u=13184396" >
-<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="Patreon" width=174 height=41 style="box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
-</a>
-<br><br>
-<a href="https://www.pling.com/p/1197198/" >
-<img src="https://www.pling.com/images_sys/store_pling/pling-logo.png" alt="Pling" width="150" height="81" style="box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;">
-</a>
+
+<!-- Ninja  -->
+
+s
 
 <p align="center">
   <h1 align="center">.^.</h1>
