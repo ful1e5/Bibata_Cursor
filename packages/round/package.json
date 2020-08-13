@@ -1,0 +1,9 @@
+{
+  "name": "bibata_cursor_round",
+  "version": "1.0.0",
+  "description": "Rounded Corner Bibata 🏳️‍🌈",
+  "main": "index.js",
+  "author": "Kaiz Khatri",
+  "license": "GPL-3.0",
+  "private": true
+}

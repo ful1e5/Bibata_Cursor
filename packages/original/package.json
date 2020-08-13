@@ -1,0 +1,9 @@
+{
+  "name": "bibata_cursor_original",
+  "version": "1.0.0",
+  "description": "Original Bibata 🚀",
+  "main": "index.js",
+  "author": "Kaiz Khatri",
+  "license": "GPL-3.0",
+  "private": true
+}

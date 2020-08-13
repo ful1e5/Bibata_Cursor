@@ -1,0 +1,13 @@
+{
+  "name": "bibata_cursor",
+  "version": "1.0.0",
+  "description": "🚀 Material Based Cursor 🏳️‍🌈",
+  "repository": "git@github.com:ful1e5/Bibata_Cursor.git",
+  "workspaces": [
+    "packages/original",
+    "packages/round"
+  ],
+  "author": "Kaiz Khatri",
+  "license": "GPL-3.0",
+  "private": true
+}
