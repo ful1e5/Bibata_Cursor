@@ -1,52 +1,40 @@
-<h1 align="center">
-  <img src="./image/Bibata.png" width="150">
-  <br>
-  <img src="./image/Bibata_name.png" width="150">
-</h1>
-
-<h4 align="center">🚀 Material Based Cursor 🏳️‍🌈</h4>
-
 <p align="center">
-<img alt="Downloads" src="https://img.shields.io/github/downloads/KaizIqbal/Bibata_Cursor/total">
-<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/KaizIqbal/Bibata_Cursor">
-<img alt="GitHub" src="https://img.shields.io/github/license/KaizIqbal/Bibata_Cursor">
-<br>
-<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/KaizIqbal/Bibata_Cursor">
-<img alt="GitHub issues" src="https://img.shields.io/github/issues/KaizIqbal/Bibata_Cursor">
-<img alt="Issues & PR" src="https://img.shields.io/badge/Issues & PR-welcome-green">
-<br>
-<img alt="Travis CI" src="https://travis-ci.org/KaizIqbal/Bibata_Cursor.svg?branch=master">
-<a href="https://github.com/KaizIqbal/Bibata_Cursor/releases" target="_blank">
-  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/KaizIqbal/Bibata_Cursor">
-</a>
-<a href="https://aur.archlinux.org/packages/bibata-cursor-theme" target="_blank">
-  <img alt="AUR version" src="https://img.shields.io/aur/version/bibata-cursor-theme">
-</a>
-<a href="https://www.paypal.me/KaizKhatri" target="_blank">
-  <img alt="Donate" src="https://img.shields.io/badge/$-donate-red">
-</a>
-<br>
-<a href="https://twitter.com/ful1e5_" target="_blank">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ful1e5_?label=twitter&style=social">
-</a>
-<a href="https://github.com/KaizIqbal" target="_blank">
-  <img alt="GitHub followers" src="https://img.shields.io/github/followers/KaizIqbal?label=Github&style=social">
-</a>
-<a href="https://mastodon.social/web/accounts/580173" target="_blank">
-  <img alt="Mastodon Follow" src="https://img.shields.io/mastodon/follow/580173?domain=https%3A%2F%2Fmastodon.social&label=Mastodon&style=social">
-</a>
+  <img src="https://imgur.com/852r65D.png" width="150">
+  <br />
+  <img src="https://imgur.com/g60k2RA.png" width="150">
 </p>
 
 <p align="center">
-  <a href="#bibata-?">Bibata</a> •
-  <a href="#install">Install</a> •
-  <a href="#windows">Windows</a> •
-  <a href="#preview">Preview</a> •
-  <a href="./CONTRIBUTING.md#Contributors" target="_blank">Contributors</a> •
-  <a href="#credit">Credit</a> •
-  <a href="#support">Support</a> •
-  <a href="https://github.com/KaizIqbal/Bibata_Cursor/blob/master/LICENSE">License</a>
+  🚀 Material Based Cursor 🏳️‍🌈
 </p>
+
+<!-- Badges -->
+
+<p align="center">
+
+  <!-- First Row -->
+  <img alt="Travis CI" src="https://travis-ci.org/KaizIqbal/Bibata_Cursor.svg?branch=master">
+  
+  <a href="https://github.com/ful1e5/Bibata_Cursor/blob/master/LICENSE" >
+    <img alt="License" src="https://img.shields.io/github/license/ful1e5/Bibata_Cursor?color=0081FB" />
+  </a>
+
+  <a href="https://github.com/KaizIqbal/Bibata_Cursor/releases" >
+    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/KaizIqbal/Bibata_Cursor">
+  </a>
+  
+  <a href="https://aur.archlinux.org/packages/bibata-cursor-theme" >
+    <img alt="AUR version" src="https://img.shields.io/aur/version/bibata-cursor-theme">
+  </a>
+  
+  <!-- Second Row -->
+  <br />
+  <a href="https://github.com/ful1e5">
+    <img alt="Made By Kaiz"  src="https://kaiz.vercel.app/api/badge" width="133" />
+  </a>
+</p>
+
+---
 
 ## Bibata ?
 
@@ -56,6 +44,21 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 - **Bibata Oil :** Gnome Adwaita's Color based Theme. (![#272728](https://placehold.it/15/272728/000000?text=+) `#272728`)
 - **Bibata Ice :** Light Theme. (![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff`)
 - **Bibata Amber :** Yellowish Theme. (![#FF8300](https://placehold.it/15/FF8300/000000?text=+) `#FF8300`)
+
+<!-- Table Of Content -->
+<details>
+ <summary><strong>Table of Contents</strong> (click to expand)</summary>
+
+- [Bibata Cursor](#bibata-?)
+- [Install](#install)
+- [Windows](#windows)
+- [Preview](#preview)
+- [Contributors](CONTRIBUTING.md#contributors)
+- [Credit](#credit)
+- [Support](#support)
+- [License](LICENSE)
+
+</details>
 
 ### Build dependencies
 
@@ -71,19 +74,19 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 
 ##### Debian/Ubuntu
 
-```shell
+```bash
 sudo apt install git python3 python3-pip inkscape x11-apps
 ```
 
 ##### Fedora
 
-```shell
+```bash
 sudo dnf install git python37 python3-pip inkscape xcursorgen
 ```
 
 ##### Arch Linux/Manjaro
 
-```shell
+```bash
 sudo pacman -S git python-pillow inkscape xorg-xcursorgen
 ```
 
@@ -95,13 +98,13 @@ Bibata cursor is installed by running one of the following commands in your term
 
 ##### via curl
 
-```shell
+```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
 ```
 
 ##### via wget
 
-```shell
+```bash
 sh -c "$(wget -O- https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
 ```
 
@@ -117,13 +120,13 @@ Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/pa
 
 Pamac command:
 
-```shell
+```bash
 pamac install bibata-cursor-theme
 ```
 
 Yay command:
 
-```shell
+```bash
 yay -S bibata-cursor-theme
 ```
 
@@ -133,13 +136,13 @@ Fedora users can install from the [copr-repo](https://copr.fedorainfracloud.org/
 
 Enable the repo:
 
-```shell
+```bash
 sudo dnf copr enable muhalantabli/copr-repo
 ```
 
 Installation command:
 
-```shell
+```bash
 sudo dnf install bibata-cursor-theme
 ```
 
@@ -149,74 +152,65 @@ From https://github.com/Silicasandwhich/Bibata_Cursor_Translucent#windows -->
 #### Windows
 
 1. Get the lastest stable/dev-version Windows release from the [releases tab](https://github.com/KaizIqbal/Bibata_Cursor/releases) on the github page.
-
 2. Open the settings app.
-
 3. Go to Devices -> Mouse -> Additional Mouse Options.
-
 4. Go to the pointers tab.
-
 5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the Windows folder of your desired flavor.
-
 6. Click "save as" and type in the desired name.
-
 7. Click "apply" and "ok".
 
 ### Manual Installation
 
-1. Make sure you have installed all [Build dependencies](#build-dependencies).
+Make sure you have installed all [Build dependencies](#build-dependencies).
 
-2. Build & Install:
-   ```shell
-   git clone https://github.com/KaizIqbal/Bibata_Cursor.git
-   cd Bibata_Cursor/
-   chmod +x build.sh
-   ./build.sh
-   chmod +x ./install.sh
-   ```
-   Install (available for all users):
-   ```shell
-   sudo ./install.sh
-   ```
-   Install (available only for local user):
-   ```
-   ./install.sh
-   ```
-3. Uninstall:
+#### Build & Install
 
-   Using `Script` :
+```bash
+git clone https://github.com/KaizIqbal/Bibata_Cursor.git
+cd Bibata_Cursor/
+chmod +x build.sh
+./build.sh
+chmod +x ./install.sh
+```
 
-   ```shell
-   #From All Users
-   sudo ./install.sh
-   #From Local User
-   ./install.sh
-   ```
+#### Install
 
-   Without `Script` :
+```bash
+./install.sh                                         # For local user
+sudo ./install.sh                                    # For all users
+```
 
-   ```shell
-   #From All Users
-   $sudo rm -r /usr/share/icons/Bibata_*
-   #from Local User
-   $rm -r ~/.icons/Bibata_*
-   #Note : Your replace * with flavor Name to remove individual
-   ```
+#### Uninstall
 
-More information about script is found in [src](./src/README.md) directory.
+##### Using Script
+
+```bash
+sudo ./install.sh                                    # From All Users
+./install.sh                                         # From Local User
+```
+
+##### Without Script
+
+```bash
+sudo rm -r /usr/share/icons/Bibata_*                 # From All Users
+rm -r ~/.icons/Bibata_*                              # From Local User
+
+```
+
+> More information about script is found in [src](./src/README.md) directory.
 
 ## Preview
 
-<p align="center"><img title="Bibata Classic" src="./image/Bibata_Classic.png">
+<p align="center"><img title="Bibata Classic" src="https://imgur.com/IbdooDX.png">
 </br><sub>Bibata Classic</sub></p>
 
-<p align="center"><img title="Bibata Oil" src="./image/Bibata_Oil.png">
-</br><sub>Bibata Oil</sub></p>
-
-<p align="center"><img title="Bibata Ice" src="./image/Bibata_Ice.png">
+<p align="center"><img title="Bibata Ice" src="https://imgur.com/5XRxnE2.png">
 </br><sub>Bibata Ice</sub></p>
 
-<p align="center"><img title="Bibata Amber" src="./image/Bibata_Amber.png">
+<p align="center"><img title="Bibata Oil" src="https://imgur.com/3HRZeFw.png">
+</br><sub>Bibata Oil</sub></p>
+
+<p align="center"><img title="Bibata Amber" src="https://imgur.com/CylSo2K.png">
 </br><sub>Bibata Amber</sub></p>
 
 ## You may also like...
@@ -241,8 +235,6 @@ You can create a issue, I will help you.
 
 Check [CONTRIBUTING.md](./CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
 
-###
-
 ## Credit
 
 - [Adwaita](https://github.com/GNOME/adwaita-icon-theme)
@@ -252,22 +244,19 @@ Check [CONTRIBUTING.md](./CONTRIBUTING.md), any suggestions for features and con
 
 ## Support
 
-**Give a ❤️**
+Share your joy with **★**.
 
-**OR**
+> For more support
 
-<a href="https://www.buymeacoffee.com/Nt7Wg4V" target="_blank">
-<img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
+<a href="https://www.buymeacoffee.com/Nt7Wg4V" >
+  <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
 </a>
-<br><br>
-<a href="https://www.patreon.com/bePatron?u=13184396" target="_blank">
-<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="Patreon" width=174 height=41 style="box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
-</a>
-<br><br>
-<a href="https://www.pling.com/p/1197198/" target="_blank">
-<img src="https://www.pling.com/images_sys/store_pling/pling-logo.png" alt="Pling" width="150" height="81" style="box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;">
-</a>
+
+<!-- Ninja  -->
 
 <p align="center">
-  <h1 align="center">.^.</h1>
+  <h1 align="center">(◣_◢)</h1>
+</p>
+<p align="center">
+  <sub>Opps, You wake up ninja</sub>
 </p>
