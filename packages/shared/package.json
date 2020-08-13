@@ -1,0 +1,12 @@
+{
+  "name": "shared",
+  "version": "1.0.0",
+  "description": "Shared Components",
+  "main": "index.js",
+  "author": "Kaiz Khatri",
+  "license": "GPL-3.0",
+  "private": true,
+  "devDependencies": {
+    "@types/puppeteer": "^3.0.1"
+  }
+}
