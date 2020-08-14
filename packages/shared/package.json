@@ -2,11 +2,16 @@
   "name": "shared",
   "version": "1.0.0",
   "description": "Shared Components",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Kaiz Khatri",
   "license": "GPL-3.0",
   "private": true,
   "devDependencies": {
-    "@types/puppeteer": "^3.0.1"
+    "@types/puppeteer": "^3.0.1",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "puppeteer": "^5.2.1"
   }
 }
