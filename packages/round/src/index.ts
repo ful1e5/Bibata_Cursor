@@ -1,4 +1,4 @@
-import { sharedCode } from "shared";
+import * as renderConfig from "./config";
 
 console.log("Bibata Round");
-sharedCode();
+console.log(renderConfig);
