@@ -4,6 +4,7 @@
     "module": "commonjs",
     "lib": ["es2015", "dom"],
     "strict": true,
+    "typeRoots": ["./node_modules/@types"],
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
