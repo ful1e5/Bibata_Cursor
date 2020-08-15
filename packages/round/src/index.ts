@@ -5,6 +5,4 @@ import { renderCursors } from "shared";
 
 console.log("Bibata Round");
 
-(async () => {
-  renderCursors(config);
-})();
+renderCursors(config);
