@@ -6,13 +6,7 @@
     "sourceMap": true,
     "composite": true,
     "outDir": "dist",
-    "rootDir": "src",
-
-    /* Path aliases*/
-    "baseUrl": "src",
-    "paths": {
-      "@helpers/*": ["helpers/*"]
-    }
+    "rootDir": "src"
   },
-  "include": ["src", "src/helpers", "types.d.ts"]
+  "include": ["src"]
 }
