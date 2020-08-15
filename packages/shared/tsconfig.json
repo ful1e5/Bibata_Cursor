@@ -7,11 +7,12 @@
     "composite": true,
     "outDir": "dist",
     "rootDir": "src",
+
+    /* Path aliases*/
     "baseUrl": "src",
     "paths": {
-      "@helpers/*": ["helpers/*"],
-      "@config": ["config"]
+      "@helpers/*": ["helpers/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "src/helpers"]
 }
