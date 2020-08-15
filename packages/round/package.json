@@ -13,9 +13,13 @@
   "license": "GPL-3.0",
   "private": true,
   "devDependencies": {
+    "@types/rimraf": "^3.0.0",
     "nodemon": "^2.0.4",
     "ts-node": "^8.10.2",
     "tslint": "^6.1.3",
     "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
   }
 }
