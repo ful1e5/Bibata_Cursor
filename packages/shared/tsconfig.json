@@ -6,7 +6,11 @@
     "sourceMap": true,
     "composite": true,
     "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "src",
+    "baseUrl": "src",
+    "paths": {
+      "@helpers/*": ["helpers/*"]
+    }
   },
-  "include": ["src/**"]
+  "include": ["src"]
 }
