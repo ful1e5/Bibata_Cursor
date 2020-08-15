@@ -2,6 +2,7 @@ import path from "path";
 import fs from "fs";
 import { staticCursors, animatedCursors, animatedClip } from "./cursors.json";
 
+// --------------------------------------- Cursors Config
 // Source Directory
 const svgsDir = path.resolve(__dirname, "svg");
 
@@ -14,4 +15,12 @@ const staticSvgs = staticCursors.map((svg: string) =>
 const bitmapsDir = path.resolve(process.cwd(), "bitmaps");
 if (!fs.existsSync(bitmapsDir)) fs.mkdirSync(bitmapsDir);
 
-export { staticSvgs, animatedCursors, svgsDir, bitmapsDir, animatedClip };
+const renderConfig = {
+  staticSvgs,
+  animatedCursors,
+  svgsDir,
+  bitmapsDir,
+  animatedClip,
+};
+
+export { renderConfig };
