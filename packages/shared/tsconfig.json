@@ -14,5 +14,5 @@
       "@helpers/*": ["helpers/*"]
     }
   },
-  "include": ["src", "src/helpers"]
+  "include": ["src", "src/helpers", "types.d.ts"]
 }
