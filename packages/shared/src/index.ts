@@ -2,7 +2,29 @@ import fs from "fs";
 import path from "path";
 import puppeteer from "puppeteer";
 
-import { generateRenderTemplate } from "@helpers/htmlTemplate";
+import { generateRenderTemplate } from "./helpers/htmlTemplate";
+
+// --------------------------- Types
+type AnimatedCursors = {
+  readonly [name: string]: {
+    readonly frames: number;
+  };
+};
+
+type AnimatedClip = {
+  readonly x: number;
+  readonly y: number;
+  readonly width: number;
+  readonly height: number;
+};
+
+interface Config {
+  staticSvgs: Array<string>;
+  bitmapsDir: string;
+  svgsDir: string;
+  animatedCursors: AnimatedCursors;
+  animatedClip: AnimatedClip;
+}
 
 // --------------------------- Helpers
 const frameNumber = (number: number, length: number) => {
@@ -19,15 +41,15 @@ export const renderCursors = async ({
   bitmapsDir,
   svgsDir,
   animatedCursors,
-  animatedClip,
-}: RenderConfig) => {
+  animatedClip
+}: Config) => {
   const browser = await puppeteer.launch({
     ignoreDefaultArgs: [" --single-process ", "--no-sandbox"],
     executablePath:
       process.env.NODE_ENV == "development"
         ? "/usr/bin/google-chrome-stable"
         : "",
-    headless: true,
+    headless: true
   });
   try {
     console.log("📸 Rendering Static Cursors...");
@@ -93,7 +115,7 @@ export const renderCursors = async ({
         await svgElement.screenshot({
           omitBackground: true,
           path: out,
-          clip: animatedClip,
+          clip: animatedClip
         });
         // console.log(`${svg} frame ${frame}/${frames} rendered at ${out}`);
       }
