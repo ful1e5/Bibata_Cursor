@@ -1,7 +1,7 @@
 {
   "name": "shared",
   "version": "1.0.0",
-  "description": "Shared Components",
+  "description": "Render Code 📹",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Kaiz Khatri",
