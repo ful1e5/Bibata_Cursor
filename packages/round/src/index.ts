@@ -1,8 +1,7 @@
-import { config } from "./config";
-
+import { configs } from "./config";
 // from shared package
-import { renderCursors } from "shared";
+// import { renderCursors } from "shared";
 
 console.log("Bibata Round");
 
-renderCursors(config);
+console.log(configs);
