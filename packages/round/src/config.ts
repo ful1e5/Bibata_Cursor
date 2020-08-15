@@ -2,7 +2,17 @@ import path from "path";
 import fs from "fs";
 import { staticCursors, animatedCursors, animatedClip } from "./cursors.json";
 
-// --------------------------------------- Cursors Config
+// --------------------------------------- 🌈 Cursors Variants 🌈
+
+const colorSchemes = {
+  ice: {
+    base: "#ffffff",
+    outline: "#000000",
+  },
+};
+
+// --------------------------------------- 🔧 Cursors Config 🔧
+
 // Source Directory
 const svgsDir = path.resolve(__dirname, "svg");
 
@@ -23,4 +33,4 @@ const renderConfig = {
   animatedClip,
 };
 
-export { renderConfig };
+export { renderConfig, colorSchemes };
