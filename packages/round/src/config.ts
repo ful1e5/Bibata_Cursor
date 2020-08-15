@@ -4,17 +4,17 @@ import { staticCursors, animatedCursors, animatedClip } from "./cursors.json";
 
 // --------------------------------------- 🌈 Cursors Variants 🌈
 
-const colorSchemes = {
+export const colorSchemes = {
   ice: {
     base: "#ffffff",
-    outline: "#000000",
-  },
+    outline: "#000000"
+  }
 };
 
 // --------------------------------------- 🔧 Cursors Config 🔧
 
 // Source Directory
-const svgsDir = path.resolve(__dirname, "svg");
+const svgsDir = path.resolve("./src/svg");
 
 // Resolve Paths for svg
 const staticSvgs = staticCursors.map((svg: string) =>
@@ -25,12 +25,10 @@ const staticSvgs = staticCursors.map((svg: string) =>
 const bitmapsDir = path.resolve(process.cwd(), "bitmaps");
 if (!fs.existsSync(bitmapsDir)) fs.mkdirSync(bitmapsDir);
 
-const renderConfig = {
-  staticSvgs,
+export const config = {
   animatedCursors,
-  svgsDir,
-  bitmapsDir,
   animatedClip,
+  staticSvgs,
+  bitmapsDir,
+  svgsDir
 };
-
-export { renderConfig, colorSchemes };
