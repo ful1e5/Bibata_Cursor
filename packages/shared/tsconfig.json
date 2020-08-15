@@ -9,7 +9,8 @@
     "rootDir": "src",
     "baseUrl": "src",
     "paths": {
-      "@helpers/*": ["helpers/*"]
+      "@helpers/*": ["helpers/*"],
+      "@config": ["config"]
     }
   },
   "include": ["src"]
