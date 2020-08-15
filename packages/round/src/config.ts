@@ -28,11 +28,8 @@ for (let [schema] of Object.entries(colorSchemes)) {
 
   const schemaSvgsPath = path.resolve("./src/svg", schemaName);
 
-  if (fs.existsSync(schemaSvgsPath)) {
-    rimraf(schemaSvgsPath, function () {});
-  } else {
-    fs.mkdirSync(schemaSvgsPath);
-  }
+  if (fs.existsSync(schemaSvgsPath)) rimraf(schemaSvgsPath, function () {});
+  fs.mkdirSync(schemaSvgsPath);
 
   // Resolve Paths for svg
   const staticSvgs = staticCursors.map((svgFile: string) => {
@@ -44,7 +41,11 @@ for (let [schema] of Object.entries(colorSchemes)) {
       .readFileSync(path.resolve(rawSvgsDir, svgFile), "utf-8")
       .toString();
 
-    content = content.replace("black", base).replace("white", outline);
+    content = content
+      .replace("black", base)
+      .replace("white", outline)
+      .replace("#000000", base)
+      .replace("#ffffff", outline);
 
     // Writing new svg
     fs.writeFileSync(filePath, content, "utf-8");
