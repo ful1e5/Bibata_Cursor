@@ -15,6 +15,7 @@ export const colorSchemes = {
 
 // Source Directory
 const svgsDir = path.resolve("./src/svg");
+if (!fs.existsSync(svgsDir)) console.error("🚨🚨 Source files not Found 🚨🚨");
 
 // Resolve Paths for svg
 const staticSvgs = staticCursors.map((svg: string) =>
