@@ -1,4 +1,10 @@
-import { renderConfig } from "./config";
+import { config } from "./config";
+
+// from shared package
+import { renderCursors } from "shared";
 
 console.log("Bibata Round");
-console.log(renderConfig);
+
+(async () => {
+  renderCursors(config);
+})();
