@@ -13,11 +13,13 @@ const schemesPath = path.resolve("./src/svg");
 const colorSchemes: ColorSchema = {
   Ice: {
     base: "#FFFFFF",
-    outline: "#000000"
+    outline: "#000000",
+    watchBackground: "#000000"
   },
   Classic: {
     base: "#000000",
-    outline: "#FFFFFF"
+    outline: "#FFFFFF",
+    watchBackground: "#FFFFFF"
   }
 };
 
