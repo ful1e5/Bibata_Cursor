@@ -2,6 +2,7 @@ interface ColorSchema {
   [name: string]: {
     base: string;
     outline: string;
+    watchBackground: string;
   };
 }
 
@@ -19,10 +20,10 @@ type AnimatedClip = {
 };
 
 interface Config {
-  staticSvgs: Array<string> | undefined;
+  staticCursors: Array<string>;
   bitmapsDir: string;
   svgsDir: string;
-  animatedCursors: AnimatedCursors | undefined;
+  animatedCursors: AnimatedCursors;
   animatedClip: AnimatedClip;
 }
 
