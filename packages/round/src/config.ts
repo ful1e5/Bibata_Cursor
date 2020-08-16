@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-import { ColorSchema } from "../types";
+import { ColorSchema } from "./types";
 
 // Source Directory
 const rawSvgsDir = path.resolve("./src/svg/raw");
