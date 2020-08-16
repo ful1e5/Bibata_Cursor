@@ -3,14 +3,14 @@ import path from "path";
 import rimraf from "rimraf";
 
 import { staticCursors, animatedCursors, animatedClip } from "../cursors.json";
-import { ColorSchema } from "../types";
+import { ColorSchema, Config } from "../types";
 
 const generateConfigs = (
   colorSchemes: ColorSchema,
   dirPrefix: string,
   rawSvgsDir: string
 ) => {
-  const configs: any = [];
+  const configs: Array<Config> = [];
 
   for (let [schema] of Object.entries(colorSchemes)) {
     const { base, outline } = colorSchemes[schema];
@@ -52,7 +52,7 @@ const generateConfigs = (
       if (!fs.existsSync(bitmapsDir)) fs.mkdirSync(bitmapsDir);
 
       configs.push({
-        svgDir: schemaSvgsPath,
+        svgsDir: schemaSvgsPath,
         staticSvgs,
         bitmapsDir,
         animatedCursors,
