@@ -19,7 +19,7 @@ type AnimatedClip = {
 };
 
 interface Config {
-  staticSvgs: Array<string>;
+  staticCursors: Array<string>;
   bitmapsDir: string;
   svgsDir: string;
   animatedCursors: AnimatedCursors;
@@ -37,7 +37,7 @@ const frameNumber = (number: number, length: number) => {
 
 // --------------------------- Render Func
 export const renderCursors = async ({
-  staticSvgs,
+  staticCursors,
   bitmapsDir,
   svgsDir,
   animatedCursors,
@@ -45,17 +45,13 @@ export const renderCursors = async ({
 }: Config) => {
   const browser = await puppeteer.launch({
     ignoreDefaultArgs: [" --single-process ", "--no-sandbox"],
-    executablePath:
-      process.env.NODE_ENV == "development"
-        ? "/usr/bin/google-chrome-stable"
-        : "",
     headless: true
   });
   try {
     console.log("📸 Rendering Static Cursors...");
     // Rendering satic .svg files
-    for (let svg of staticSvgs) {
-      const buffer = fs.readFileSync(path.resolve(svgsDir, svg), "utf8");
+    for (let svg of staticCursors) {
+      const buffer = fs.readFileSync(path.resolve(svgsDir, svg), "utf-8");
       if (!buffer) throw new Error(`${svg} File Read error`);
 
       const data = buffer.toString();
@@ -85,7 +81,7 @@ export const renderCursors = async ({
 
     // Rendering animated .svg files
     for (let [svg, { frames }] of Object.entries(animatedCursors)) {
-      const buffer = fs.readFileSync(path.resolve(svgsDir, svg), "utf8");
+      const buffer = fs.readFileSync(path.resolve(svgsDir, svg), "utf-8");
       if (!buffer) throw new Error(`${svg} File Read error`);
 
       const data = buffer.toString();
@@ -125,7 +121,6 @@ export const renderCursors = async ({
   } catch (error) {
     console.error(error);
   } finally {
-    console.log(`\nBitmaps stored at ${bitmapsDir}\n\n🎉 Render Done.`);
     process.exit(0);
   }
 };
