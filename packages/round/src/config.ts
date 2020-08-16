@@ -1,8 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-import { generateConfigs } from "./helpers/schema";
-import { ColorSchemas } from "./types";
+import { ColorSchema } from "./types";
 
 // Source Directory
 const rawSvgsDir = path.resolve("./src/svg/raw");
@@ -10,8 +9,7 @@ const rawSvgsDir = path.resolve("./src/svg/raw");
 if (!fs.existsSync(rawSvgsDir)) console.error("🚨🚨 Raw files not Found 🚨🚨");
 
 // --------------------------------------- 🌈 Cursors Variants 🌈
-
-const colorSchemes: ColorSchemas = {
+const colorSchemes: ColorSchema = {
   Ice: {
     base: "#ffffff",
     outline: "#000000"
@@ -19,6 +17,5 @@ const colorSchemes: ColorSchemas = {
 };
 
 // --------------------------------------- 🔧 Render Configs 🔧
-const configs = generateConfigs(colorSchemes);
 
-export { rawSvgsDir, configs };
+export { rawSvgsDir, colorSchemes };
