@@ -2,14 +2,17 @@ import { generateConfigs } from "./helpers/schema";
 import { colorSchemes, rawSvgsDir } from "./config";
 
 // from shared package
-// import { renderCursors } from "shared";
+import { renderCursors } from "shared";
 
-// Svg generate dir prefix
-const prefix = "Bibata Round";
+(async () => {
+  // Svg generate dir prefix
+  const prefix = "Bibata Round";
+  const configs = generateConfigs(colorSchemes, prefix, rawSvgsDir);
 
-const configs = generateConfigs(colorSchemes, prefix, rawSvgsDir);
-
-for (let [config] of Object.entries(configs)) {
-  const { animatedCursors } = configs[config];
-  console.log(animatedCursors);
-}
+  for (let [schema, { bitmapsDir }] of Object.entries(configs)) {
+    console.log(`\nGenerating ${prefix} ${schema} bitmaps`);
+    await renderCursors(configs[schema]);
+    console.log(`\nBitmaps stored at ${bitmapsDir}`);
+  }
+  console.log("\n\n🎉 Render Done.");
+})();
