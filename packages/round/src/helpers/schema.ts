@@ -3,6 +3,7 @@ import path from "path";
 import rimraf from "rimraf";
 
 import { staticCursors, animatedCursors, animatedClip } from "../cursors.json";
+import { schemesPath } from "../config";
 import { ColorSchema, Config } from "../types";
 
 const generateConfigs = (
@@ -16,7 +17,7 @@ const generateConfigs = (
     const { base, outline } = colorSchemes[schema];
     const schemaName = `${dirPrefix} ${schema}`;
 
-    const schemaSvgsPath = path.resolve("./src/svg", schemaName);
+    const schemaSvgsPath = path.resolve(schemesPath, schemaName);
 
     try {
       if (fs.existsSync(schemaSvgsPath)) {
