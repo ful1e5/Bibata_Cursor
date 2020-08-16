@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import rimraf from "rimraf";
 
 import { staticCursors, animatedCursors, animatedClip } from "../cursors.json";
 import { schemesPath } from "../config";
@@ -15,16 +14,10 @@ const generateConfigs = (
 
   for (let [schema] of Object.entries(colorSchemes)) {
     const { base, outline, watchBackground } = colorSchemes[schema];
-    const schemaName = `${dirPrefix} ${schema}`;
+    const schemaName = `${dirPrefix}-${schema}`;
 
     const schemaSvgsPath = path.resolve(schemesPath, schemaName);
-
-    if (fs.existsSync(schemaSvgsPath)) {
-      rimraf(schemaSvgsPath, function () {});
-      fs.mkdirSync(schemaSvgsPath, { recursive: true });
-    } else {
-      fs.mkdirSync(schemaSvgsPath, { recursive: true });
-    }
+    fs.mkdirSync(schemaSvgsPath, { recursive: true });
 
     // Static .svg generation
     staticCursors.map((cursor: string) => {
@@ -59,12 +52,7 @@ const generateConfigs = (
     }
 
     const bitmapsDir = path.resolve(process.cwd(), "bitmaps", schemaName);
-    if (fs.existsSync(bitmapsDir)) {
-      rimraf(bitmapsDir, function () {});
-      fs.mkdirSync(bitmapsDir, { recursive: true });
-    } else {
-      fs.mkdirSync(bitmapsDir, { recursive: true });
-    }
+    fs.mkdirSync(bitmapsDir, { recursive: true });
 
     configs[schema] = {
       svgsDir: schemaSvgsPath,
