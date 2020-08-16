@@ -4,12 +4,12 @@ import path from "path";
 import { ColorSchema } from "./types";
 
 // Source Directory
-const rawSvgsDir = path.resolve("./src/svg/raw");
+const rawSvgsDir = path.resolve("src", "svg", "raw");
 
 if (!fs.existsSync(rawSvgsDir)) console.error("🚨🚨 Raw files not Found 🚨🚨");
 
 // --------------------------------------- 🌈 Cursors Variants 🌈
-const schemesPath = path.resolve("./src/svg");
+const schemesPath = path.resolve("src", "svg");
 const colorSchemes: ColorSchema = {
   Ice: {
     base: "#FFFFFF",
