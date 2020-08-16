@@ -4,14 +4,14 @@ import rimraf from "rimraf";
 
 import { staticCursors, animatedCursors, animatedClip } from "../cursors.json";
 import { schemesPath } from "../config";
-import { ColorSchema, Config } from "../types";
+import { ColorSchema, Configs } from "../types";
 
 const generateConfigs = (
   colorSchemes: ColorSchema,
   dirPrefix: string,
   rawSvgsDir: string
 ) => {
-  const configs: Array<Config> = [];
+  const configs: Configs = {};
 
   for (let [schema] of Object.entries(colorSchemes)) {
     const { base, outline } = colorSchemes[schema];
@@ -52,13 +52,13 @@ const generateConfigs = (
       );
       if (!fs.existsSync(bitmapsDir)) fs.mkdirSync(bitmapsDir);
 
-      configs.push({
+      configs[schema] = {
         svgsDir: schemaSvgsPath,
         staticSvgs,
         bitmapsDir,
         animatedCursors,
         animatedClip
-      });
+      };
     } catch (error) {
       console.error("An error occurred in .svg files generation.");
     }
