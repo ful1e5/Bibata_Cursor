@@ -14,54 +14,65 @@ const generateConfigs = (
   const configs: Configs = {};
 
   for (let [schema] of Object.entries(colorSchemes)) {
-    const { base, outline } = colorSchemes[schema];
+    const { base, outline, watchBackground } = colorSchemes[schema];
     const schemaName = `${dirPrefix} ${schema}`;
 
     const schemaSvgsPath = path.resolve(schemesPath, schemaName);
 
-    try {
-      if (fs.existsSync(schemaSvgsPath)) {
-        rimraf(schemaSvgsPath, function () {});
-      } else {
-        fs.mkdirSync(schemaSvgsPath);
-      }
-
-      // Static .svg generation
-      const staticSvgs = staticCursors.map((svgFile: string) => {
-        // Read file
-        const filePath = path.resolve(schemaSvgsPath, svgFile);
-
-        // Replacing colorSchema
-        let content = fs
-          .readFileSync(path.resolve(rawSvgsDir, svgFile), "utf-8")
-          .toString();
-
-        content = content.replace("#00FF00", base).replace("#0000FF", outline);
-
-        // Writing new svg
-        fs.writeFileSync(filePath, content, "utf-8");
-
-        return filePath;
-      });
-
-      // Out Directory
-      const bitmapsDir = path.resolve(
-        process.cwd(),
-        "bitmaps",
-        `Bibata_${schema}`
-      );
-      if (!fs.existsSync(bitmapsDir)) fs.mkdirSync(bitmapsDir);
-
-      configs[schema] = {
-        svgsDir: schemaSvgsPath,
-        staticSvgs,
-        bitmapsDir,
-        animatedCursors,
-        animatedClip
-      };
-    } catch (error) {
-      console.error("An error occurred in .svg files generation.");
+    if (fs.existsSync(schemaSvgsPath)) {
+      rimraf(schemaSvgsPath, function () {});
+      fs.mkdirSync(schemaSvgsPath, { recursive: true });
+    } else {
+      fs.mkdirSync(schemaSvgsPath, { recursive: true });
     }
+
+    // Static .svg generation
+    staticCursors.map((cursor: string) => {
+      // Read file
+      const cursorPath = path.resolve(schemaSvgsPath, cursor);
+
+      // Replacing colorSchema
+      let content = fs
+        .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
+        .toString();
+
+      content = content.replace("#00FF00", base).replace("#0000FF", outline);
+
+      // Writing new svg
+      fs.writeFileSync(cursorPath, content, "utf-8");
+    });
+
+    // Out Directory
+    for (let [cursor] of Object.entries(animatedCursors)) {
+      // Read file
+      const cursorPath = path.resolve(schemaSvgsPath, cursor);
+
+      // Replacing colorSchema
+      let content = fs
+        .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
+        .toString();
+
+      content = content.replace("#00FF00", watchBackground);
+
+      // Writing new svg
+      fs.writeFileSync(cursorPath, content, "utf-8");
+    }
+
+    const bitmapsDir = path.resolve(process.cwd(), "bitmaps", schemaName);
+    if (fs.existsSync(bitmapsDir)) {
+      rimraf(bitmapsDir, function () {});
+      fs.mkdirSync(bitmapsDir, { recursive: true });
+    } else {
+      fs.mkdirSync(bitmapsDir, { recursive: true });
+    }
+
+    configs[schema] = {
+      svgsDir: schemaSvgsPath,
+      bitmapsDir,
+      animatedCursors,
+      staticCursors,
+      animatedClip
+    };
   }
 
   return configs;
