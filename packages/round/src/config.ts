@@ -11,8 +11,12 @@ if (!fs.existsSync(rawSvgsDir)) console.error("🚨🚨 Raw files not Found 🚨
 // --------------------------------------- 🌈 Cursors Variants 🌈
 const colorSchemes: ColorSchema = {
   Ice: {
-    base: "#ffffff",
+    base: "#FFFFFF",
     outline: "#000000"
+  },
+  Classic: {
+    base: "#000000",
+    outline: "#FFFFFF"
   }
 };
 
