@@ -120,7 +120,5 @@ export const renderCursors = async ({
     }
   } catch (error) {
     console.error(error);
-  } finally {
-    process.exit(0);
   }
 };
