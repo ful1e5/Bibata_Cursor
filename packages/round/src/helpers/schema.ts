@@ -3,15 +3,18 @@ import path from "path";
 import rimraf from "rimraf";
 
 import { staticCursors, animatedCursors, animatedClip } from "../cursors.json";
-import { rawSvgsDir } from "../config";
-import { ColorSchemas } from "../types";
+import { ColorSchema } from "../types";
 
-const generateConfigs = (colorSchemes: ColorSchemas) => {
+const generateConfigs = (
+  colorSchemes: ColorSchema,
+  dirPrefix: string,
+  rawSvgsDir: string
+) => {
   const configs: any = [];
 
   for (let [schema] of Object.entries(colorSchemes)) {
     const { base, outline } = colorSchemes[schema];
-    const schemaName = `Bibata_${schema}`;
+    const schemaName = `${dirPrefix} ${schema}`;
 
     const schemaSvgsPath = path.resolve("./src/svg", schemaName);
 
@@ -32,11 +35,7 @@ const generateConfigs = (colorSchemes: ColorSchemas) => {
           .readFileSync(path.resolve(rawSvgsDir, svgFile), "utf-8")
           .toString();
 
-        content = content
-          .replace("black", base)
-          .replace("white", outline)
-          .replace("#000000", base)
-          .replace("#ffffff", outline);
+        content = content.replace("#00FF00", base).replace("#0000FF", outline);
 
         // Writing new svg
         fs.writeFileSync(filePath, content, "utf-8");
