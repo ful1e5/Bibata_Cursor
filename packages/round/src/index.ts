@@ -9,4 +9,7 @@ const prefix = "Bibata Round";
 
 const configs = generateConfigs(colorSchemes, prefix, rawSvgsDir);
 
-console.log(configs);
+for (let [config] of Object.entries(configs)) {
+  const { animatedCursors } = configs[config];
+  console.log(animatedCursors);
+}
