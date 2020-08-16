@@ -19,11 +19,15 @@ type AnimatedClip = {
 };
 
 interface Config {
-  staticSvgs: Array<string>;
+  staticSvgs: Array<string> | undefined;
   bitmapsDir: string;
   svgsDir: string;
-  animatedCursors: AnimatedCursors;
+  animatedCursors: AnimatedCursors | undefined;
   animatedClip: AnimatedClip;
 }
 
-export { ColorSchema, Config };
+interface Configs {
+  [name: string]: Config;
+}
+
+export { ColorSchema, Config, Configs };
