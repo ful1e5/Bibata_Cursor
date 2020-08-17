@@ -1,5 +1,5 @@
 import { generateConfigs } from "./helpers/schema";
-import { colorSchemes, rawSvgsDir } from "./config";
+import { colorSchemes, rawSvgsDir } from "./color";
 
 // from shared package
 import { renderCursors } from "shared";

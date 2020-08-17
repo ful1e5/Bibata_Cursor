@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 import { staticCursors, animatedCursors, animatedClip } from "../cursors.json";
-import { schemesPath } from "../config";
+import { schemesPath } from "../color";
 import { ColorSchema, Configs } from "../types";
 
 const generateConfigs = (
