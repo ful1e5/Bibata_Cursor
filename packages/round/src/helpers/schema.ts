@@ -55,19 +55,8 @@ const generateConfigs = (
       // onError => replace `schema` main colors
       try {
         if (!watch) throw new Error("");
-        const {
-          background: b,
-          color1: c1,
-          color2: c2,
-          color3: c3,
-          color4: c4
-        } = watch;
+        const { background: b } = watch;
         content = content.replace("#TODO", b); // Watch Background
-        content = content
-          .replace("#TODO", c1)
-          .replace("#TODO", c2)
-          .replace("#TODO", c3)
-          .replace("#TODO", c4);
       } catch (error) {}
 
       // Save Schema
