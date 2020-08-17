@@ -2,7 +2,19 @@ interface ColorSchema {
   [name: string]: {
     base: string;
     outline: string;
-    watchBackground: string;
+    watch?: {
+      background: string;
+      color1: string;
+      color2: string;
+      color3: string;
+      color4: string;
+    };
+    customize?: {
+      [name: string]: {
+        outline?: string;
+        base?: string;
+      };
+    };
   };
 }
 
