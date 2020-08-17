@@ -23,22 +23,25 @@ const watchColors = {
   color4: green // top-left shape color
 };
 
-// --------------------------------------- Schemes🌈
+// --------------------------------------- Custimized Corner Colors (Bibata Style) 🚀
 
+const customize = {
+  "top_right_corner.svg": { base: red },
+  "bottom_right_corner.svg": { base: yellow },
+  "bottom_left_corner.svg": { base: green },
+  "top_left_corner.svg": { base: blue }
+};
+
+// --------------------------------------- Schemes🌈
 const colorSchemes: ColorSchema = {
   Ice: {
     base: black,
     outline: white,
     watch: {
-      background: black,
+      background: white,
       ...watchColors
     },
-    customize: {
-      "top_right_corner.svg": { base: red },
-      "bottom_right_corner.svg": { base: yellow },
-      "bottom_left_corner.svg": { base: green },
-      "top_left_corner.svg": { base: blue }
-    }
+    customize
   },
   Classic: {
     base: black,
@@ -47,12 +50,7 @@ const colorSchemes: ColorSchema = {
       background: black,
       ...watchColors
     },
-    customize: {
-      "top_right_corner.svg": { base: red },
-      "bottom_right_corner.svg": { base: yellow },
-      "bottom_left_corner.svg": { base: green },
-      "top_left_corner.svg": { base: blue }
-    }
+    customize
   }
 };
 
