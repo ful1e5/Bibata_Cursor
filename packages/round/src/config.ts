@@ -20,7 +20,7 @@ const watchColors = {
   color1: red, // top-right shape color
   color2: yellow, // bottom-right shape color
   color3: green, // bottom-left shape color
-  color4: green // top-left shape color
+  color4: blue // top-left shape color
 };
 
 // --------------------------------------- Custimized Corner Colors (Bibata Style) 🚀
