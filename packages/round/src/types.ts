@@ -9,12 +9,6 @@ interface ColorSchema {
       color3: string;
       color4: string;
     };
-    customize?: {
-      [name: string]: {
-        outline?: string;
-        base?: string;
-      };
-    };
   };
 }
 

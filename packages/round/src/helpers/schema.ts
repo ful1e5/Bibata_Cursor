@@ -5,6 +5,8 @@ import { staticCursors, animatedCursors, animatedClip } from "../cursors.json";
 import { schemesPath } from "../color";
 import { ColorSchema, Configs } from "../types";
 
+// --------------------------------------- Generate Configs 🛠
+
 const generateConfigs = (
   colorSchemes: ColorSchema,
   dirPrefix: string,
@@ -18,7 +20,7 @@ const generateConfigs = (
   const configs: Configs = {};
 
   for (let [schema] of Object.entries(colorSchemes)) {
-    const { base, outline, watch, customize } = colorSchemes[schema];
+    const { base, outline, watch } = colorSchemes[schema];
     const schemaName = `${dirPrefix}-${schema}`;
 
     const schemaSvgsPath = path.resolve(schemesPath, schemaName);
@@ -30,16 +32,7 @@ const generateConfigs = (
         .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
         .toString();
 
-      // try => replace `customize` colors
-      // onError => replace `schema` main colors
-      try {
-        let { base: b, outline: o } = customize![cursor];
-        if (!b) b = base;
-        if (!o) o = outline;
-        content = content.replace("#00FF00", b).replace("#0000FF", o);
-      } catch (error) {
-        content = content.replace("#00FF00", base).replace("#0000FF", outline);
-      }
+      content = content.replace("#00FF00", base).replace("#0000FF", outline);
 
       // Save Schema
       const cursorPath = path.resolve(schemaSvgsPath, cursor);

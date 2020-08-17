@@ -2,7 +2,7 @@ import path from "path";
 
 import { ColorSchema } from "./types";
 
-// --------------------------------------- Paths
+// --------------------------------------- Paths 🔗
 
 const rawSvgsDir = path.resolve("src", "svg", "raw");
 const schemesPath = path.resolve("src", "svg");
@@ -23,15 +23,6 @@ const watchColors = {
   color4: blue // top-left shape color
 };
 
-// --------------------------------------- Custimized Corner Colors (Bibata Style) 🚀
-
-const customize = {
-  "top_right_corner.svg": { base: red },
-  "bottom_right_corner.svg": { base: yellow },
-  "bottom_left_corner.svg": { base: green },
-  "top_left_corner.svg": { base: blue }
-};
-
 // --------------------------------------- Schemes🌈
 const colorSchemes: ColorSchema = {
   Ice: {
@@ -40,8 +31,7 @@ const colorSchemes: ColorSchema = {
     watch: {
       background: white,
       ...watchColors
-    },
-    customize
+    }
   },
   Classic: {
     base: black,
@@ -49,8 +39,7 @@ const colorSchemes: ColorSchema = {
     watch: {
       background: black,
       ...watchColors
-    },
-    customize
+    }
   }
 };
 
