@@ -1,28 +1,45 @@
-import fs from "fs";
 import path from "path";
 
 import { ColorSchema } from "./types";
 
-// Source Directory
+// --------------------------------------- Paths
+
 const rawSvgsDir = path.resolve("src", "svg", "raw");
-
-if (!fs.existsSync(rawSvgsDir)) console.error("🚨🚨 Raw files not Found 🚨🚨");
-
-// --------------------------------------- 🌈 Cursors Variants 🌈
 const schemesPath = path.resolve("src", "svg");
+
+// --------------------------------------- Colors✨
+
+const black = "#000000";
+const white = "#FFFFFF";
+const red = "#F2704D";
+const yellow = "#FDC43F";
+const green = "#96C865";
+const blue = "#4FADDF";
+
+// --------------------------------------- Schemes🌈
+
 const colorSchemes: ColorSchema = {
   Ice: {
-    base: "#FFFFFF",
-    outline: "#000000",
-    watchBackground: "#000000"
+    base: black,
+    outline: white,
+    watch: {
+      background: black,
+      color1: red,
+      color2: yellow,
+      color3: green,
+      color4: blue
+    },
+    customize: {
+      "top_left_corner.svg": {},
+      "top_right_corner.svg": {},
+      "bottom_left_corner.svg": {},
+      "bottom_right_corner.svg": {}
+    }
   },
   Classic: {
-    base: "#000000",
-    outline: "#FFFFFF",
-    watchBackground: "#FFFFFF"
+    base: black,
+    outline: white
   }
 };
-
-// --------------------------------------- 🔧 Render Configs 🔧
 
 export { rawSvgsDir, schemesPath, colorSchemes };
