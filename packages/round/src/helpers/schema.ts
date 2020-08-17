@@ -69,7 +69,7 @@ const generateConfigs = (
           color3: c3,
           color4: c4
         } = watch;
-        content = content.replace("#TODO", b); //Inter watch circle
+        content = content.replace("#TODO", b); // Watch Background
         content = content
           .replace("#TODO", c1)
           .replace("#TODO", c2)
