@@ -16,6 +16,13 @@ const yellow = "#FDC43F";
 const green = "#96C865";
 const blue = "#4FADDF";
 
+const watchColors = {
+  color1: red, // top-right shape color
+  color2: yellow, // bottom-right shape color
+  color3: green, // bottom-left shape color
+  color4: green // top-left shape color
+};
+
 // --------------------------------------- Schemes🌈
 
 const colorSchemes: ColorSchema = {
@@ -24,21 +31,28 @@ const colorSchemes: ColorSchema = {
     outline: white,
     watch: {
       background: black,
-      color1: red,
-      color2: yellow,
-      color3: green,
-      color4: blue
+      ...watchColors
     },
     customize: {
-      "top_left_corner.svg": {},
-      "top_right_corner.svg": {},
-      "bottom_left_corner.svg": {},
-      "bottom_right_corner.svg": {}
+      "top_right_corner.svg": { base: red },
+      "bottom_right_corner.svg": { base: yellow },
+      "bottom_left_corner.svg": { base: green },
+      "top_left_corner.svg": { base: blue }
     }
   },
   Classic: {
     base: black,
-    outline: white
+    outline: white,
+    watch: {
+      background: black,
+      ...watchColors
+    },
+    customize: {
+      "top_right_corner.svg": { base: red },
+      "bottom_right_corner.svg": { base: yellow },
+      "bottom_left_corner.svg": { base: green },
+      "top_left_corner.svg": { base: blue }
+    }
   }
 };
 
