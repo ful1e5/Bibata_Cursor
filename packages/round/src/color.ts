@@ -2,6 +2,10 @@ import path from "path";
 
 import { ColorSchema } from "./types";
 
+// --------------------------------------- Bitmaps/out Path 🔗
+
+const bitmapsPath = path.resolve("../../bitmpaps");
+
 // --------------------------------------- Paths 🔗
 
 const rawSvgsDir = path.resolve("src", "svg", "raw");
@@ -31,4 +35,4 @@ const colorSchemes: ColorSchema = {
   }
 };
 
-export { rawSvgsDir, schemesPath, colorSchemes };
+export { rawSvgsDir, bitmapsPath, schemesPath, colorSchemes };

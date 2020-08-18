@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 import { staticCursors, animatedCursors, animatedClip } from "../cursors.json";
-import { schemesPath } from "../color";
+import { schemesPath, bitmapsPath } from "../color";
 import { ColorSchema, Configs } from "../types";
 
 // --------------------------------------- Generate Configs 🛠
@@ -65,7 +65,7 @@ const generateConfigs = (
     }
 
     // Creating Dir for store bitmaps
-    const bitmapsDir = path.resolve(process.cwd(), "bitmaps", schemaName);
+    const bitmapsDir = path.resolve(bitmapsPath, schemaName);
     fs.mkdirSync(bitmapsDir, { recursive: true });
 
     // push config to Object
