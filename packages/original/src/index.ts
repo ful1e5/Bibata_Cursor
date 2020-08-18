@@ -1,4 +1,3 @@
-import { sharedCode } from "shared";
+// import { renderCursors } from "shared";
 
-sharedCode();
 console.log("Bibata Original");
