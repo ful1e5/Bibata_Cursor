@@ -48,7 +48,6 @@ export const renderCursors = async ({
     headless: true
   });
   try {
-    console.log("📸 Rendering Static Cursors...");
     // Rendering satic .svg files
     for (let svg of staticCursors) {
       const buffer = fs.readFileSync(path.resolve(svgsDir, svg), "utf-8");
@@ -76,8 +75,6 @@ export const renderCursors = async ({
 
       await page.close();
     }
-
-    console.log("🎥 Rendering Animated Cursors...");
 
     // Rendering animated .svg files
     for (let [svg, { frames }] of Object.entries(animatedCursors)) {
