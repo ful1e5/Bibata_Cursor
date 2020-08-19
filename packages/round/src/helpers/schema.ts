@@ -1,8 +1,6 @@
 import fs from "fs";
 import path from "path";
 
-import { spinner } from "shared";
-
 import { staticCursors, animatedCursors, animatedClip } from "../cursors.json";
 import { schemesPath, bitmapsPath, rawSvgsDir } from "../color";
 import { ColorSchema, Configs } from "../types";
@@ -74,8 +72,6 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
       staticCursors,
       animatedClip
     };
-
-    spinner.succeed();
   }
 
   return configs;
