@@ -2,18 +2,14 @@ import fs from "fs";
 import path from "path";
 
 import { staticCursors, animatedCursors, animatedClip } from "../cursors.json";
-import { schemesPath, bitmapsPath } from "../color";
+import { schemesPath, bitmapsPath, rawSvgsDir } from "../color";
 import { ColorSchema, Configs } from "../types";
 
 // --------------------------------------- Generate Configs 🛠
 
-const generateConfigs = (
-  colorSchemes: ColorSchema,
-  dirPrefix: string,
-  rawSvgsDir: string
-) => {
+const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
   if (!fs.existsSync(rawSvgsDir)) {
-    console.error("🚨🚨 Raw files not Found 🚨🚨");
+    console.error(`🚨 .svg files not found in ${rawSvgsDir}`);
     process.exit(1);
   }
 
