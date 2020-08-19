@@ -1,22 +1,18 @@
 import { renderCursors } from "shared";
 
 import { generateConfigs } from "./helpers/schema";
-import { colorSchemes, rawSvgsDir } from "./color";
+import { colorSchemes } from "./color";
 
 (async () => {
   const prefix = "Bibata-Round";
-  const configs = generateConfigs(colorSchemes, prefix, rawSvgsDir);
+  const configs = generateConfigs(colorSchemes, prefix);
 
   try {
-    for (let [schema, { bitmapsDir }] of Object.entries(configs)) {
-      console.log(`\nGenerating ${prefix}-${schema} bitmaps..`);
-
+    for (let [schema] of Object.entries(configs)) {
       await renderCursors(configs[schema]);
-
-      console.log(`\nBitmaps stored at ${bitmapsDir}`);
     }
 
-    console.log("\n\n🎉 Render Done.");
+    console.log("\n🎉 Render Done.");
   } catch (error) {
     console.error(error);
   } finally {
