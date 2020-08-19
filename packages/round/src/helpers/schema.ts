@@ -1,6 +1,8 @@
 import fs from "fs";
 import path from "path";
 
+import { spinner } from "shared";
+
 import { staticCursors, animatedCursors, animatedClip } from "../cursors.json";
 import { schemesPath, bitmapsPath, rawSvgsDir } from "../color";
 import { ColorSchema, Configs } from "../types";
@@ -15,66 +17,76 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
 
   const configs: Configs = {};
 
-  for (let [schema] of Object.entries(colorSchemes)) {
-    const { base, outline, watch } = colorSchemes[schema];
-    const schemaName = `${dirPrefix}-${schema}`;
+  spinner.text = `Generating ${dirPrefix} Color schemes`;
+  spinner.start();
 
-    const schemaSvgsPath = path.resolve(schemesPath, schemaName);
-    fs.mkdirSync(schemaSvgsPath, { recursive: true });
+  try {
+    for (let [schema] of Object.entries(colorSchemes)) {
+      const schemaName = `${dirPrefix}-${schema}`;
 
-    staticCursors.map((cursor: string) => {
-      // Read file
-      let content = fs
-        .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
-        .toString();
+      const schemaSvgsPath = path.resolve(schemesPath, schemaName);
+      fs.mkdirSync(schemaSvgsPath, { recursive: true });
 
-      content = content.replace("#00FF00", base).replace("#0000FF", outline);
+      const { base, outline, watch } = colorSchemes[schema];
+      staticCursors.map((cursor: string) => {
+        // Read file
+        let content = fs
+          .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
+          .toString();
 
-      // Save Schema
-      const cursorPath = path.resolve(schemaSvgsPath, cursor);
-      fs.writeFileSync(cursorPath, content, "utf-8");
-    });
+        content = content.replace("#00FF00", base).replace("#0000FF", outline);
 
-    for (let [cursor] of Object.entries(animatedCursors)) {
-      // Read file
-      let content = fs
-        .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
-        .toString();
+        // Save Schema
+        const cursorPath = path.resolve(schemaSvgsPath, cursor);
+        fs.writeFileSync(cursorPath, content, "utf-8");
+      });
 
-      // Animated Cursors have two parts:
-      // 1) Cursor Color
-      // 2) Watch Color
+      for (let [cursor] of Object.entries(animatedCursors)) {
+        // Read file
+        let content = fs
+          .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
+          .toString();
 
-      content = content.replace("#00FF00", base).replace("#0000FF", outline);
+        // Animated Cursors have two parts:
+        // 1) Cursor Color
+        // 2) Watch Color
 
-      // try => replace `customize` colors
-      // onError => replace `schema` main colors
-      try {
-        if (!watch) throw new Error("");
-        const { background: b } = watch;
-        content = content.replace("#TODO", b); // Watch Background
-      } catch (error) {}
+        content = content.replace("#00FF00", base).replace("#0000FF", outline);
 
-      // Save Schema
-      const cursorPath = path.resolve(schemaSvgsPath, cursor);
-      fs.writeFileSync(cursorPath, content, "utf-8");
+        // try => replace `customize` colors
+        // onError => replace `schema` main colors
+        try {
+          if (!watch) throw new Error("");
+          const { background: b } = watch;
+          content = content.replace("#TODO", b); // Watch Background
+        } catch (error) {}
+
+        // Save Schema
+        const cursorPath = path.resolve(schemaSvgsPath, cursor);
+        fs.writeFileSync(cursorPath, content, "utf-8");
+      }
+
+      // Creating Dir for store bitmaps
+      const bitmapsDir = path.resolve(bitmapsPath, schemaName);
+      fs.mkdirSync(bitmapsDir, { recursive: true });
+
+      // push config to Object
+      configs[schema] = {
+        svgsDir: schemaSvgsPath,
+        bitmapsDir,
+        animatedCursors,
+        staticCursors,
+        animatedClip
+      };
+
+      spinner.succeed();
     }
 
-    // Creating Dir for store bitmaps
-    const bitmapsDir = path.resolve(bitmapsPath, schemaName);
-    fs.mkdirSync(bitmapsDir, { recursive: true });
-
-    // push config to Object
-    configs[schema] = {
-      svgsDir: schemaSvgsPath,
-      bitmapsDir,
-      animatedCursors,
-      staticCursors,
-      animatedClip
-    };
+    return configs;
+  } catch (error) {
+    spinner.fail();
+    process.exit(1);
   }
-
-  return configs;
 };
 
 export { generateConfigs };
