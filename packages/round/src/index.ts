@@ -1,5 +1,5 @@
 import chalk from "chalk";
-import { renderCursors, spinner } from "shared";
+import { renderCursors, spinner } from "common";
 
 import { generateConfigs } from "./helpers/schema";
 import { colorSchemes, bitmapsPath } from "./color";

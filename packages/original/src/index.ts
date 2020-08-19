@@ -1,3 +1,3 @@
-// import { renderCursors } from "shared";
+// import { renderCursors } from "common";
 
 console.log("Bibata Original");
