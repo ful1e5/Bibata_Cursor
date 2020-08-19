@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 animate_fix(){
     cursor=$1
