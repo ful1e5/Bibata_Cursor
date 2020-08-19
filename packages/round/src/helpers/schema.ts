@@ -17,76 +17,68 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
 
   const configs: Configs = {};
 
-  spinner.text = `Generating ${dirPrefix} Color schemes`;
-  spinner.start();
+  for (let [schema] of Object.entries(colorSchemes)) {
+    const schemaName = `${dirPrefix}-${schema}`;
 
-  try {
-    for (let [schema] of Object.entries(colorSchemes)) {
-      const schemaName = `${dirPrefix}-${schema}`;
+    const schemaSvgsPath = path.resolve(schemesPath, schemaName);
+    fs.mkdirSync(schemaSvgsPath, { recursive: true });
 
-      const schemaSvgsPath = path.resolve(schemesPath, schemaName);
-      fs.mkdirSync(schemaSvgsPath, { recursive: true });
+    const { base, outline, watch } = colorSchemes[schema];
+    staticCursors.map((cursor: string) => {
+      // Read file
+      let content = fs
+        .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
+        .toString();
 
-      const { base, outline, watch } = colorSchemes[schema];
-      staticCursors.map((cursor: string) => {
-        // Read file
-        let content = fs
-          .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
-          .toString();
+      content = content.replace("#00FF00", base).replace("#0000FF", outline);
 
-        content = content.replace("#00FF00", base).replace("#0000FF", outline);
+      // Save Schema
+      const cursorPath = path.resolve(schemaSvgsPath, cursor);
+      fs.writeFileSync(cursorPath, content, "utf-8");
+    });
 
-        // Save Schema
-        const cursorPath = path.resolve(schemaSvgsPath, cursor);
-        fs.writeFileSync(cursorPath, content, "utf-8");
-      });
+    for (let [cursor] of Object.entries(animatedCursors)) {
+      // Read file
+      let content = fs
+        .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
+        .toString();
 
-      for (let [cursor] of Object.entries(animatedCursors)) {
-        // Read file
-        let content = fs
-          .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
-          .toString();
+      // Animated Cursors have two parts:
+      // 1) Cursor Color
+      // 2) Watch Color
 
-        // Animated Cursors have two parts:
-        // 1) Cursor Color
-        // 2) Watch Color
+      content = content.replace("#00FF00", base).replace("#0000FF", outline);
 
-        content = content.replace("#00FF00", base).replace("#0000FF", outline);
+      // try => replace `customize` colors
+      // onError => replace `schema` main colors
+      try {
+        if (!watch) throw new Error("");
+        const { background: b } = watch;
+        content = content.replace("#TODO", b); // Watch Background
+      } catch (error) {}
 
-        // try => replace `customize` colors
-        // onError => replace `schema` main colors
-        try {
-          if (!watch) throw new Error("");
-          const { background: b } = watch;
-          content = content.replace("#TODO", b); // Watch Background
-        } catch (error) {}
-
-        // Save Schema
-        const cursorPath = path.resolve(schemaSvgsPath, cursor);
-        fs.writeFileSync(cursorPath, content, "utf-8");
-      }
-
-      // Creating Dir for store bitmaps
-      const bitmapsDir = path.resolve(bitmapsPath, schemaName);
-      fs.mkdirSync(bitmapsDir, { recursive: true });
-
-      // push config to Object
-      configs[schema] = {
-        svgsDir: schemaSvgsPath,
-        bitmapsDir,
-        animatedCursors,
-        staticCursors,
-        animatedClip
-      };
-
-      spinner.succeed();
+      // Save Schema
+      const cursorPath = path.resolve(schemaSvgsPath, cursor);
+      fs.writeFileSync(cursorPath, content, "utf-8");
     }
 
-    return configs;
-  } catch (error) {
-    spinner.fail();
-    process.exit(1);
+    // Creating Dir for store bitmaps
+    const bitmapsDir = path.resolve(bitmapsPath, schemaName);
+    fs.mkdirSync(bitmapsDir, { recursive: true });
+
+    // push config to Object
+    configs[schema] = {
+      svgsDir: schemaSvgsPath,
+      bitmapsDir,
+      animatedCursors,
+      staticCursors,
+      animatedClip
+    };
+
+    spinner.succeed();
   }
+
+  return configs;
 };
 
 export { generateConfigs };
