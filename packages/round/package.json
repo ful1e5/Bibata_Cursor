@@ -4,7 +4,7 @@
   "description": "Rounded Corner Bibata 🏳️‍🌈",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf ./src/svg/Bibata-* .../../bitmaps",
+    "clean": "rm -rf schemes bitmaps",
     "dev": "nodemon src/index.ts",
     "dev:debug": "nodemon --inspect src/index.ts",
     "build": "yarn clean && npx tsc --build",
