@@ -1,7 +1,7 @@
 {
-  "name": "shared",
+  "name": "common",
   "version": "1.0.0",
-  "description": "Render Code 📹",
+  "description": "Common code inside Bibata Project",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Kaiz Khatri",
