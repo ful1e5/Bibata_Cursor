@@ -7,6 +7,7 @@ import {
   bitmapsPath,
   baseKeyColor,
   outlineKeyColor,
+  watchKeyColor,
   rawSvgsDir
 } from "../color";
 import { ColorSchema, Configs } from "../types";
@@ -35,8 +36,8 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
         .toString();
 
       content = content
-        .replace(baseKeyColor, base)
-        .replace(outlineKeyColor, outline);
+        .replace(new RegExp(baseKeyColor, "g"), base)
+        .replace(new RegExp(outlineKeyColor), outline);
 
       // Save Schema
       const cursorPath = path.resolve(schemaSvgsPath, cursor);
@@ -54,15 +55,15 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
       // 2) Watch Color
 
       content = content
-        .replace(baseKeyColor, base)
-        .replace(outlineKeyColor, outline);
+        .replace(new RegExp(baseKeyColor, "g"), base)
+        .replace(new RegExp(outlineKeyColor, "g"), outline);
 
       // try => replace `customize` colors
       // onError => replace `schema` main colors
       try {
         if (!watch) throw new Error("");
         const { background: b } = watch;
-        content = content.replace("#TODO", b); // Watch Background
+        content = content.replace(new RegExp(watchKeyColor, "g"), b); // Watch Background
       } catch (error) {}
 
       // Save Schema
