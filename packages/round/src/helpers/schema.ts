@@ -2,7 +2,13 @@ import fs from "fs";
 import path from "path";
 
 import { staticCursors, animatedCursors, animatedClip } from "../cursors.json";
-import { schemesPath, bitmapsPath, rawSvgsDir } from "../color";
+import {
+  schemesPath,
+  bitmapsPath,
+  baseKeyColor,
+  outlineKeyColor,
+  rawSvgsDir
+} from "../color";
 import { ColorSchema, Configs } from "../types";
 
 // --------------------------------------- Generate Configs 🛠
@@ -28,7 +34,9 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
         .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
         .toString();
 
-      content = content.replace(/#00FF00/g, base).replace(/#0000FF/g, outline);
+      content = content
+        .replace(baseKeyColor, base)
+        .replace(outlineKeyColor, outline);
 
       // Save Schema
       const cursorPath = path.resolve(schemaSvgsPath, cursor);
@@ -45,7 +53,9 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
       // 1) Cursor Color
       // 2) Watch Color
 
-      content = content.replace(/#00FF00/g, base).replace(/#0000FF/g, outline);
+      content = content
+        .replace(baseKeyColor, base)
+        .replace(outlineKeyColor, outline);
 
       // try => replace `customize` colors
       // onError => replace `schema` main colors
