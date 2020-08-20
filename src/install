@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 
 show_question() {
   echo -e "\033[1;34m$@\033[0m"
