@@ -28,7 +28,7 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
         .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
         .toString();
 
-      content = content.replace("#00FF00", base).replace("#0000FF", outline);
+      content = content.replace(/#00FF00/g, base).replace(/#0000FF/g, outline);
 
       // Save Schema
       const cursorPath = path.resolve(schemaSvgsPath, cursor);
@@ -45,7 +45,7 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
       // 1) Cursor Color
       // 2) Watch Color
 
-      content = content.replace("#00FF00", base).replace("#0000FF", outline);
+      content = content.replace(/#00FF00/g, base).replace(/#0000FF/g, outline);
 
       // try => replace `customize` colors
       // onError => replace `schema` main colors
