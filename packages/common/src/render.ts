@@ -45,7 +45,6 @@ export const renderCursors = async ({
 }: Config) => {
   const browser = await puppeteer.launch({
     ignoreDefaultArgs: [" --single-process ", "--no-sandbox"],
-    timeout:10000,
     headless: true
   });
   try {
