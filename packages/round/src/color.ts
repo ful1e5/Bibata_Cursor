@@ -1,13 +1,13 @@
 import path from "path";
 import { ColorSchema } from "./types";
 
-// --------------------------------------- Bitmaps/out Path 🔗
-
-const bitmapsPath = path.resolve("bitmaps");
-
 // --------------------------------------- Paths 🔗
 
 const rawSvgsDir = path.resolve("svg");
+
+// --------------------------------------- out Path 🔗
+
+const bitmapsPath = path.resolve("bitmaps");
 const schemesPath = path.resolve("schemes");
 
 // --------------------------------------- Colors✨
