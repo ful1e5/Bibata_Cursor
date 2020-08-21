@@ -37,7 +37,7 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
 
       content = content
         .replace(new RegExp(baseKeyColor, "g"), base)
-        .replace(new RegExp(outlineKeyColor), outline);
+        .replace(new RegExp(outlineKeyColor, "g"), outline);
 
       // Save Schema
       const cursorPath = path.resolve(schemaSvgsPath, cursor);
