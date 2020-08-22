@@ -4,9 +4,7 @@
 </g>
 <path d="M43 34.3679C43 18.3085 50.4808 17.3995 62.2068 28.0048L127.935 85.5762C132.894 89.9603 133.798 101.636 127.935 104.06C122.071 106.484 102.841 102.476 87.8191 109.173C72.7973 115.869 63.4668 132.844 57.3905 135.553C51.3142 138.262 43.0966 128.045 43 121.493L43 34.3679Z" fill="#00FF00"/>
 <g filter="url(#filter1_d)">
-<g filter="url(#filter2_d)">
 <path d="M150 130C150 158.719 126.719 182 98 182C69.2812 182 46 158.719 46 130C46 101.281 69.2812 78 98 78C126.719 78 150 101.281 150 130Z" fill="#0000FF"/>
-</g>
 <path d="M142 130C142 154.301 122.301 174 98 174C73.6995 174 54 154.301 54 130C54 105.699 73.6995 86 98 86C122.301 86 142 105.699 142 130Z" fill="#5F3BE4"/>
 <path d="M98.5 105C103.049 105 106.75 108.595 106.75 113.014C106.75 117.433 103.049 121.029 98.5 121.029C93.9509 121.029 90.25 117.433 90.25 113.014C90.25 108.595 93.9509 105 98.5 105ZM109 156H88V151.629H92.5V129.771H88V125.4H104.5V151.629H109V156Z" fill="white"/>
 </g>
@@ -25,15 +23,6 @@
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="4"/>
 <feGaussianBlur stdDeviation="2"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-</filter>
-<filter id="filter2_d" x="41" y="77" width="114" height="114" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2.5"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
