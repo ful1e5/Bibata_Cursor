@@ -6,9 +6,9 @@ import { ColorSchema } from "./types";
 const rawSvgsDir = path.resolve("svg");
 
 // --------------------------------------- out Path 🔗
-
-const bitmapsPath = path.resolve("bitmaps");
 const schemesPath = path.resolve("schemes");
+const projectRoot = path.resolve("../../");
+const bitmapsPath = path.resolve(projectRoot, "bitmaps");
 
 // --------------------------------------- Colors✨
 
