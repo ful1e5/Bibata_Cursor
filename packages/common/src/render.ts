@@ -63,6 +63,8 @@ export const renderCursors = async ({
 
       // Render
       const page = await browser.newPage();
+      page.setDefaultNavigationTimeout(0);
+
       await page.setContent(template);
 
       await page.waitForSelector("#container");
@@ -86,6 +88,7 @@ export const renderCursors = async ({
       const template = generateRenderTemplate(data);
 
       const page = await browser.newPage();
+      page.setDefaultNavigationTimeout(0);
       await page.setContent(template);
 
       await page.waitForSelector("#container");
