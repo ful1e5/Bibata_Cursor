@@ -6,6 +6,9 @@
   "author": "Kaiz Khatri",
   "license": "GPL-3.0",
   "private": true,
+  "scripts": {
+    "render:bibata-round": "yarn workspace bibata-round render"
+  },
   "workspaces": [
     "packages/*"
   ]
