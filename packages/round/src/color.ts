@@ -17,6 +17,7 @@ const baseKeyColor = "#00FF00"; // green Key
 const outlineKeyColor = "#0000FF"; // blue Key
 
 const black = "#000000";
+const amber = "#FF8300";
 const white = "#FFFFFF";
 
 // --------------------------------------- Schemes🌈
@@ -28,6 +29,10 @@ const colorSchemes: ColorSchema = {
   },
   Classic: {
     base: black,
+    outline: white
+  },
+  Amber: {
+    base: amber,
     outline: white
   }
 };
