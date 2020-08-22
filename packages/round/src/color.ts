@@ -23,18 +23,12 @@ const white = "#FFFFFF";
 
 const colorSchemes: ColorSchema = {
   Ice: {
-    base: black,
-    outline: white,
-    watch: {
-      background: white
-    }
+    base: white,
+    outline: black
   },
   Classic: {
     base: black,
-    outline: white,
-    watch: {
-      background: black
-    }
+    outline: white
   }
 };
 
