@@ -64,7 +64,9 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
         if (!watch) throw new Error("");
         const { background: b } = watch;
         content = content.replace(new RegExp(watchKeyColor, "g"), b); // Watch Background
-      } catch (error) {}
+      } catch (error) {
+        content = content.replace(new RegExp(watchKeyColor, "g"), base); // on error=> replace as base
+      }
 
       // Save Schema
       const cursorPath = path.resolve(schemaSvgsPath, cursor);
