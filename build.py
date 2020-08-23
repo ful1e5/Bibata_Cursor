@@ -1,4 +1,5 @@
 import json
+
 from clickgen import build_cursor_theme
 
 from config import configs, sizes, delay, temp_folder
@@ -6,7 +7,6 @@ from helper import init_build, pack_it
 
 
 def build(config) -> None:
-    init_build()
 
     build_cursor_theme(
         config['name'],
@@ -21,10 +21,13 @@ def build(config) -> None:
 
 
 if __name__ == "__main__":
+    init_build()
+
     # read hotspots file
     with open('./hotspots.json', 'r') as hotspot_file:
         hotspots = json.loads(hotspot_file.read())
 
     # building themes
     for config in configs:
+        print('🌈 Building %s Theme ...' % config['name'])
         build(config)
