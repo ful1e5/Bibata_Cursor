@@ -9,7 +9,8 @@
   "scripts": {
     "clean": "rm -rf bitmaps",
     "render:bibata-round": "yarn workspace bibata-round render",
-    "render": "yarn render:bibata-round"
+    "render": "yarn render:bibata-round",
+    "build": "rm -rf themes && python build.py"
   },
   "workspaces": [
     "packages/*"
