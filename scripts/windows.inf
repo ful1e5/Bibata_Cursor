@@ -1,0 +1,55 @@
+; <inject_theme_name> By <inject_author_name>
+; Right click on the file "install.inf" and select "Install". Then apply <inject_theme_name> in Control Panel > Appearance and Personalization > Personalization > Change mouse pointers.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Installed files
+
+[Scheme.Cur]
+busy.ani
+working-in-background.ani
+normal-select.cur
+help-select.cur
+link-select.cur
+move.cur
+diagonal-resize-2.cur
+Install.inf
+vertical-resize.cur
+horizontal-resize.cur
+diagonal-resize-1.cur
+handwriting.cur
+precision-select.cur
+text-select.cur
+unavailable.cur
+alt-select.cur
+
+[Strings]
+CUR_DIR       = "Cursors\<inject_theme_name>"
+SCHEME_NAME   = "<inject_theme_name>"
+pointer       = "normal-select.cur"
+help          = "help-select.cur"
+work          = "working-in-background.ani"
+busy          = "busy.ani"
+text          = "text-select.cur"
+unavailiable  = "unavailable.cur"
+vert          = "vertical-resize.cur"
+horz          = "horizontal-resize.cur"
+dgn1          = "diagonal-resize-1.cur"
+dgn2          = "diagonal-resize-2.cur"
+move          = "move.cur"
+link          = "link-select.cur"
+cross         = "precision-select.cur"
+hand          = "handwriting.cur"
+alternate     = "alt-select.cur"
