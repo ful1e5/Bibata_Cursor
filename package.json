@@ -8,7 +8,8 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf bitmaps",
-    "render:bibata-round": "yarn workspace bibata-round render"
+    "render:bibata-round": "yarn workspace bibata-round render",
+    "render": "yarn render:bibata-round"
   },
   "workspaces": [
     "packages/*"
