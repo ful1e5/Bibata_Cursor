@@ -1,18 +1,50 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d)">
-<path d="M187 100.5C187 148.825 147.825 188 99.5 188C51.1751 188 12 148.825 12 100.5C12 52.1751 51.1751 13 99.5 13C147.825 13 187 52.1751 187 100.5Z" fill="#0000FF"/>
-</g>
-<path d="M174 100.5C174 141.645 140.645 175 99.5 175C58.3548 175 25 141.645 25 100.5C25 59.3548 58.3548 26 99.5 26C140.645 26 174 59.3548 174 100.5Z" fill="#FF0000"/>
-<path d="M130.568 120.584C130.17 120.584 129.774 120.604 129.386 120.657L124.87 106.455C126.625 105.659 128.207 104.569 129.557 103.246C132.499 100.362 134.32 96.3824 134.32 91.9952C134.32 83.2131 127.025 76.0676 118.058 76.0676C113.578 76.0676 109.515 77.8515 106.569 80.7332C103.621 83.6184 101.795 87.6013 101.795 91.9952C101.795 93.9538 102.16 95.8303 102.823 97.5644L94.8297 101.924C91.7997 97.2561 86.7514 93.9624 80.8965 93.2314V87.4437C83.7859 86.9559 86.3792 85.609 88.3857 83.6766C90.9909 81.1687 92.6094 77.6775 92.6094 73.8241C92.6094 66.2012 86.2783 60 78.4948 60C74.5606 60 70.9966 61.5854 68.4353 64.1374C65.9294 66.6339 64.3805 70.0544 64.3805 73.8241C64.3805 80.5393 69.2944 86.148 75.7845 87.3897V93.2544C71.493 93.8296 67.6422 95.7793 64.7146 98.6399C61.1858 102.084 59 106.849 59 112.104C59 122.596 67.7153 131.13 78.4252 131.13C83.7909 131.13 88.6556 128.989 92.1727 125.532C95.6809 122.089 97.851 117.338 97.851 112.104C97.851 110.148 97.5475 108.258 96.9843 106.48L105.347 101.917C108.329 105.574 112.918 107.922 118.058 107.922C118.696 107.922 119.327 107.874 119.949 107.825L124.55 122.291C123.848 122.718 123.195 123.216 122.605 123.779C120.469 125.816 119.138 128.661 119.138 131.805C119.138 137.978 124.267 143 130.569 143C133.779 143 136.684 141.697 138.763 139.605C140.768 137.588 142 134.834 142 131.805C142 125.63 136.872 120.608 130.569 120.608L130.568 120.584Z" fill="white"/>
-<defs>
-<filter id="filter0_d" x="7" y="12" width="185" height="185" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2.5"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-</filter>
-</defs>
+    <g filter="url(#filter0_d)">
+        <path
+            d="M187 100.5C187 148.825 147.825 188 99.5 188C51.1751 188 12 148.825 12 100.5C12 52.1751 51.1751 13 99.5 13C147.825 13 187 52.1751 187 100.5Z"
+            fill="#0000FF" />
+    </g>
+    <path
+        d="M174 100.5C174 141.645 140.645 175 99.5 175C58.3548 175 25 141.645 25 100.5C25 59.3548 58.3548 26 99.5 26C140.645 26 174 59.3548 174 100.5Z"
+        fill="#FF0000" />
+    <g transform="translate(100 100)">
+        <g transform="scale(1.3)">
+            <g transform="translate(-50 -50)">
+                <g transform="rotate(246.039 50 50)">
+                    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite"
+                        values="0 50 50;360 50 50" keyTimes="0;1" dur="0.7575757575757576s"></animateTransform>
+                    <path fill-opacity="0.8" fill="#f05125" d="M50 50L50 0A50 50 0 0 1 100 50Z"></path>
+                </g>
+                <g transform="rotate(274.52 50 50)">
+                    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite"
+                        values="0 50 50;360 50 50" keyTimes="0;1" dur="1.0101010101010102s"></animateTransform>
+                    <path fill-opacity="0.8" fill="#fdb813" d="M50 50L50 0A50 50 0 0 1 100 50Z"
+                        transform="rotate(90 50 50)"></path>
+                </g>
+                <g transform="rotate(303.015 50 50)">
+                    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite"
+                        values="0 50 50;360 50 50" keyTimes="0;1" dur="1.5151515151515151s"></animateTransform>
+                    <path fill-opacity="0.8" fill="#7fbb42" d="M50 50L50 0A50 50 0 0 1 100 50Z"
+                        transform="rotate(180 50 50)"></path>
+                </g>
+                <g transform="rotate(331.507 50 50)">
+                    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite"
+                        values="0 50 50;360 50 50" keyTimes="0;1" dur="3.0303030303030303s"></animateTransform>
+                    <path fill-opacity="0.8" fill="#32a0da" d="M50 50L50 0A50 50 0 0 1 100 50Z"
+                        transform="rotate(270 50 50)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+    <filter id="filter0_d" x="7" y="12" width="185" height="185" filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset dy="4" />
+        <feGaussianBlur stdDeviation="2.5" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+    </filter>
+    </defs>
 </svg>
