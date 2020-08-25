@@ -1,5 +1,5 @@
 import json
-
+import log
 from clickgen import build_cursor_theme
 
 from config import configs, sizes, delay, temp_folder
