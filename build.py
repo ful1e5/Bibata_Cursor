@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import json
 import log
 from clickgen import build_cursor_theme

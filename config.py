@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import os
 import tempfile
 import json
@@ -8,9 +10,9 @@ out_dir = "./themes"
 # Build Config
 delay = 35
 sizes = [24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96]
-configs = []
 
 # Configs For Each Theme in bitmaps directory
+configs = []
 for directory in os.listdir(bitmaps_dir):
     name = directory
     temp_folder = tempfile.mkdtemp()
