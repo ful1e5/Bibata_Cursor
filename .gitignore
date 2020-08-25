@@ -1,7 +1,11 @@
 ########## Custom
+# Out Dir
 schemes
 bitmaps
 themes
+
+# Logs Files
+build.log
 
 ########## Python
 
