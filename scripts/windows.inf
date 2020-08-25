@@ -16,22 +16,21 @@ HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,
 ; -- Installed files
 
 [Scheme.Cur]
-busy.ani
-working-in-background.ani
-normal-select.cur
-help-select.cur
-link-select.cur
-move.cur
-diagonal-resize-2.cur
-Install.inf
-vertical-resize.cur
-horizontal-resize.cur
-diagonal-resize-1.cur
-handwriting.cur
-precision-select.cur
-text-select.cur
-unavailable.cur
-alt-select.cur
+"Arrow.cur"
+"Help.cur"
+"AppStarting.ani"
+"Wait.ani"
+"Cross.cur"       
+"IBeam.cur"
+"Handwriting.cur"
+"NO.cur"
+"SizeNS.cur"
+"SizeWE.cur"
+"SizeNWSE.cur"
+"SizeNESW.cur"
+"SizeAll.cur"
+"UpArrow.cur"
+"Hand.cur"
 
 [Strings]
 CUR_DIR       = "Cursors\<inject_theme_name>"
