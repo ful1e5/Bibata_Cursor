@@ -5,7 +5,7 @@ import json
 import sys
 
 from os import path, listdir, rename, remove
-from config import name, bitmaps_dir, out_dir, window_install_inf, windows_cursors
+from config import name, bitmaps_dir, out_dir, window_install_inf_content, windows_cursors
 
 
 def window_bundle(win_out_dir: str) -> None:
@@ -23,7 +23,7 @@ def window_bundle(win_out_dir: str) -> None:
     # creating install.inf file
     install_inf_path = path.join(win_out_dir, "install.inf")
     with open(install_inf_path, "w") as file:
-        file.write(install_inf_path)
+        file.write(window_install_inf_content)
 
 
 def init_build() -> None:
