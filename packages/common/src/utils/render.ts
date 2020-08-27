@@ -2,31 +2,11 @@ import fs from "fs";
 import path from "path";
 import puppeteer from "puppeteer";
 
-import { generateRenderTemplate } from "./helpers/htmlTemplate";
-
-// --------------------------- Types
-type AnimatedCursors = {
-  readonly [name: string]: {
-    readonly frames: number;
-  };
-};
-
-type AnimatedClip = {
-  readonly x: number;
-  readonly y: number;
-  readonly width: number;
-  readonly height: number;
-};
-
-interface Config {
-  staticCursors: Array<string>;
-  bitmapsDir: string;
-  svgsDir: string;
-  animatedCursors: AnimatedCursors;
-  animatedClip: AnimatedClip;
-}
+import { generateRenderTemplate } from "./htmlTemplate";
+import { Config } from "../types";
 
 // --------------------------- Helpers
+
 const frameNumber = (number: number, length: number) => {
   var str = "" + number;
   while (str.length < length) {
