@@ -4,7 +4,7 @@ import { renderCursors, spinner } from "common";
 import { generateConfigs } from "./helpers/schema";
 import { colorSchemes, bitmapsPath } from "./color";
 
-(async () => {
+const main = async () => {
   const prefix = "Bibata-Round";
 
   const configs = generateConfigs(colorSchemes, prefix);
@@ -20,11 +20,13 @@ import { colorSchemes, bitmapsPath } from "./color";
 
       spinner.succeed();
     }
-    console.log(`🎉 Bitmaps stored at ${bitmapsPath}`);
+    console.log(`🎉 Bitmaps stored at ${chalk.greenBright(bitmapsPath)}`);
   } catch (error) {
     spinner.fail();
     console.error(error);
   } finally {
     process.exit(0);
   }
-})();
+};
+
+main();
