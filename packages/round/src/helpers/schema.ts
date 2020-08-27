@@ -10,7 +10,7 @@ import {
   watchKeyColor,
   rawSvgsDir
 } from "../color";
-import { ColorSchema, Configs } from "../types";
+import { ColorSchema, Config } from "../types";
 
 // --------------------------------------- Generate Configs 🛠
 
@@ -20,7 +20,7 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
     process.exit(1);
   }
 
-  const configs: Configs = {};
+  const configs: Record<string, Config> = {};
 
   for (let [schema] of Object.entries(colorSchemes)) {
     const schemaName = `${dirPrefix}-${schema}`;
