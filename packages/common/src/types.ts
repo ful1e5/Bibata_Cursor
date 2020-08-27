@@ -1,23 +1,15 @@
-// --------------------------- Types
-type AnimatedCursors = {
-  readonly [name: string]: {
-    readonly frames: number;
-  };
-};
+import { BoundingBox } from "puppeteer";
 
-type AnimatedClip = {
-  readonly x: number;
-  readonly y: number;
-  readonly width: number;
-  readonly height: number;
-};
+type AnimatedCursors = Record<string, { frames: number }>;
+
+type AnimatedClip = BoundingBox | undefined;
 
 interface Config {
-  staticCursors: Array<string>;
+  staticCursors: string[];
   bitmapsDir: string;
   svgsDir: string;
   animatedCursors: AnimatedCursors;
   animatedClip: AnimatedClip;
 }
 
-export { Config };
+export { Config, AnimatedCursors, AnimatedClip };
