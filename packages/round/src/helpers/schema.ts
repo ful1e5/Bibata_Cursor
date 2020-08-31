@@ -2,14 +2,8 @@ import fs from "fs";
 import path from "path";
 
 import { staticCursors, animatedCursors } from "../cursors.json";
-import {
-  schemesPath,
-  bitmapsPath,
-  baseKeyColor,
-  outlineKeyColor,
-  watchKeyColor,
-  rawSvgsDir
-} from "../color";
+import { baseKeyColor, outlineKeyColor, watchKeyColor } from "../color";
+import { rawSvgsDir, schemesPath, bitmapsPath } from "../paths";
 import { ColorSchema, Config } from "../types";
 
 // --------------------------------------- Generate Configs 🛠
