@@ -3,7 +3,7 @@ import path from "path";
 
 import { staticCursors, animatedCursors } from "../cursors.json";
 import { baseKeyColor, outlineKeyColor, watchKeyColor } from "../color";
-import { rawSvgsDir, schemesPath, bitmapsPath } from "../paths";
+import { rawSvgsDir, schemesPath, bitmapsPath } from "../config";
 import { ColorSchema, Config } from "../types";
 
 // --------------------------------------- Generate Configs 🛠

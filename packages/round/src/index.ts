@@ -3,7 +3,7 @@ import { renderCursors, spinner } from "common";
 
 import { generateConfigs } from "./utils/schema";
 import { colorSchemes } from "./color";
-import { bitmapsPath } from "./paths";
+import { bitmapsPath } from "./config";
 
 const main = async () => {
   const prefix = "Bibata-Round";
