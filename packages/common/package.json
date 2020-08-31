@@ -8,12 +8,18 @@
   "license": "GPL-3.0",
   "private": true,
   "devDependencies": {
+    "@types/chalk": "^2.2.0",
     "@types/ora": "^3.2.0",
+    "@types/pixelmatch": "^5.2.1",
+    "@types/pngjs": "^3.4.2",
     "@types/puppeteer": "^3.0.1",
     "typescript": "^3.9.7"
   },
   "dependencies": {
+    "chalk": "^4.1.0",
     "ora": "^5.0.0",
+    "pixelmatch": "^5.2.1",
+    "pngjs": "^5.0.0",
     "puppeteer": "^5.2.1"
   }
 }
