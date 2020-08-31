@@ -1,33 +1,16 @@
-import chalk from "chalk";
-import { renderCursors, spinner } from "common";
+// import { renderCursors, spinner } from "common";
 
 import { generateConfigs } from "./utils/schema";
-import { colorSchemes } from "./color";
-import { bitmapsPath } from "./config";
+import * as colorsConfig from "./color";
 
 const main = async () => {
-  const prefix = "Bibata-Round";
+  const themeName = "Bibata-Round";
 
-  const configs = generateConfigs(colorSchemes, prefix);
+  const configs = generateConfigs(colorsConfig.colorSchemes, themeName);
 
-  try {
-    for (let [schema] of Object.entries(configs)) {
-      spinner.text = `Generating ${chalk.magentaBright(
-        `${prefix}-${schema}`
-      )} bitmaps ...`;
-      spinner.start();
+  console.log(configs);
 
-      await renderCursors(configs[schema]);
-
-      spinner.succeed();
-    }
-    console.log(`🎉 Bitmaps stored at ${chalk.greenBright(bitmapsPath)}`);
-  } catch (error) {
-    spinner.fail();
-    console.error(error);
-  } finally {
-    process.exit(0);
-  }
+  process.exit(0);
 };
 
 main();
