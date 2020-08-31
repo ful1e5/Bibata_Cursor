@@ -1,5 +1,5 @@
 {
-  "name": "common",
+  "name": "bibata-core",
   "version": "1.0.0",
   "description": "Common code inside Bibata Project",
   "main": "dist/index.js",
