@@ -1,9 +1,14 @@
 import fs from "fs";
 import path from "path";
 
-import { staticCursors, animatedCursors } from "../cursors.json";
 import { baseKeyColor, outlineKeyColor, watchKeyColor } from "../color";
-import { rawSvgsDir, schemesPath, bitmapsPath } from "../config";
+import {
+  rawSvgsDir,
+  schemesPath,
+  bitmapsPath,
+  animatedCursors,
+  staticCursors
+} from "../config";
 import { ColorSchema, Config } from "../types";
 
 // --------------------------------------- Generate Configs 🛠
@@ -23,22 +28,21 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
     fs.mkdirSync(schemaSvgsPath, { recursive: true });
 
     const { base, outline, watch } = colorSchemes[schema];
-    staticCursors.map((cursor: string) => {
+
+    staticCursors.forEach((cursor: string) => {
       // Read file
-      let content = fs
-        .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
-        .toString();
+      let content = fs.readFileSync(cursor, "utf-8").toString();
 
       content = content
         .replace(new RegExp(baseKeyColor, "g"), base)
         .replace(new RegExp(outlineKeyColor, "g"), outline);
 
       // Save Schema
-      const cursorPath = path.resolve(schemaSvgsPath, cursor);
+      const cursorPath = path.resolve(schemaSvgsPath, "static", cursor);
       fs.writeFileSync(cursorPath, content, "utf-8");
     });
 
-    for (let [cursor] of Object.entries(animatedCursors)) {
+    animatedCursors.forEach((cursor: string) => {
       // Read file
       let content = fs
         .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
@@ -63,9 +67,9 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
       }
 
       // Save Schema
-      const cursorPath = path.resolve(schemaSvgsPath, cursor);
+      const cursorPath = path.resolve(schemaSvgsPath, "animated", cursor);
       fs.writeFileSync(cursorPath, content, "utf-8");
-    }
+    });
 
     // Creating Dir for store bitmaps
     const bitmapsDir = path.resolve(bitmapsPath, schemaName);
@@ -73,7 +77,6 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
 
     // push config to Object
     configs[schema] = {
-      svgsDir: schemaSvgsPath,
       bitmapsDir,
       animatedCursors,
       staticCursors
