@@ -8,8 +8,8 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf bitmaps",
-    "render:bibata-round": "yarn workspace bibata-round render",
-    "render": "yarn render:bibata-round",
+    "render:bibata-modern": "yarn workspace bibata-modern render",
+    "render": "yarn render:bibata-modern",
     "build": "rm -rf themes && python build.py",
     "py_install": "pip freeze >> requirements.txt"
   },
