@@ -4,4 +4,10 @@ interface Config {
   bitmapsDir: string;
 }
 
-export { Config };
+interface Frames {
+  [fileName: string]: {
+    buffer: Buffer;
+  };
+}
+
+export { Config, Frames };
