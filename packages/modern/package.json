@@ -1,7 +1,7 @@
 {
-  "name": "bibata-round",
+  "name": "bibata-modern",
   "version": "1.0.0",
-  "description": "Rounded Corner Bibata 🏳️‍🌈",
+  "description": "Rounded Corner Bibata Cursors 🏳️‍🌈",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf schemes",

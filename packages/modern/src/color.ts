@@ -1,19 +1,15 @@
-import { ColorSchema } from "./types";
-
-const watchKeyColor = "#FF0000";
-const baseKeyColor = "#00FF00";
-const outlineKeyColor = "#0000FF";
+import { ColorSchemes } from "bibata-core/src/types";
 
 // Common Colors
 const black = "#000000";
 const white = "#FFFFFF";
 
 // Schemes Colors
-// const amber = "#FF8300";
 // const adwaita = "#272728";
+// const amber = "#FF8300";
 // const breezeDark = "#4A4C49";
 
-const colorSchemes: ColorSchema = {
+const colorSchemes: ColorSchemes = {
   // Adwaita: {
   //   base: adwaita,
   //   outline: white
@@ -36,4 +32,4 @@ const colorSchemes: ColorSchema = {
   }
 };
 
-export { watchKeyColor, baseKeyColor, outlineKeyColor, colorSchemes };
+export { colorSchemes };
