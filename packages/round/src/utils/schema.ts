@@ -10,10 +10,11 @@ import {
   staticCursors
 } from "../config";
 import { ColorSchema, Config } from "../types";
+import { writeSchemaData } from "./writeSchema";
 
 // --------------------------------------- Generate Configs 🛠
 
-const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
+const generateConfigs = (colorSchemes: ColorSchema, themeName: string) => {
   if (!fs.existsSync(rawSvgsDir)) {
     console.error(`🚨 .svg files not found in ${rawSvgsDir}`);
     process.exit(1);
@@ -22,14 +23,14 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
   const configs: Record<string, Config> = {};
 
   for (let [schema] of Object.entries(colorSchemes)) {
-    const schemaName = `${dirPrefix}-${schema}`;
+    const schemaName = `${themeName}-${schema}`;
 
     const schemaSvgsPath = path.resolve(schemesPath, schemaName);
     fs.mkdirSync(schemaSvgsPath, { recursive: true });
 
     const { base, outline, watch } = colorSchemes[schema];
 
-    staticCursors.forEach((cursor: string) => {
+    const sCursors = staticCursors.map((cursor: string) => {
       // Read file
       let content = fs.readFileSync(cursor, "utf-8").toString();
 
@@ -38,11 +39,16 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
         .replace(new RegExp(outlineKeyColor, "g"), outline);
 
       // Save Schema
-      const cursorPath = path.resolve(schemaSvgsPath, "static", cursor);
-      fs.writeFileSync(cursorPath, content, "utf-8");
+      const cursorPath = path.resolve(
+        schemaSvgsPath,
+        "static",
+        path.basename(cursor)
+      );
+      writeSchemaData(cursorPath, content);
+      return cursorPath;
     });
 
-    animatedCursors.forEach((cursor: string) => {
+    const aCursors = animatedCursors.map((cursor: string) => {
       // Read file
       let content = fs
         .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
@@ -67,8 +73,14 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
       }
 
       // Save Schema
-      const cursorPath = path.resolve(schemaSvgsPath, "animated", cursor);
-      fs.writeFileSync(cursorPath, content, "utf-8");
+      const cursorPath = path.resolve(
+        schemaSvgsPath,
+        "animated",
+        path.basename(cursor)
+      );
+      writeSchemaData(cursorPath, content);
+
+      return cursorPath;
     });
 
     // Creating Dir for store bitmaps
@@ -78,8 +90,8 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
     // push config to Object
     configs[schema] = {
       bitmapsDir,
-      animatedCursors,
-      staticCursors
+      animatedCursors: aCursors,
+      staticCursors: sCursors
     };
   }
 
