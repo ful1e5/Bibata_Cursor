@@ -9,7 +9,6 @@ interface Config {
   bitmapsDir: string;
   svgsDir: string;
   animatedCursors: AnimatedCursors;
-  animatedClip: AnimatedClip;
 }
 
 export { Config, AnimatedCursors, AnimatedClip };

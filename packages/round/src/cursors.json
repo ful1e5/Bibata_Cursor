@@ -65,11 +65,5 @@
     "wait.svg": {
       "frames": 45
     }
-  },
-  "animatedClip": {
-    "x": 4,
-    "y": 4,
-    "width": 200,
-    "height": 200
   }
 }

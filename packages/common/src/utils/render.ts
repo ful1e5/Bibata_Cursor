@@ -20,8 +20,7 @@ export const renderCursors = async ({
   staticCursors,
   bitmapsDir,
   svgsDir,
-  animatedCursors,
-  animatedClip
+  animatedCursors
 }: Config) => {
   const browser = await puppeteer.launch({
     ignoreDefaultArgs: [" --single-process ", "--no-sandbox"],
@@ -92,8 +91,7 @@ export const renderCursors = async ({
         // Render
         await svgElement.screenshot({
           omitBackground: true,
-          path: out,
-          clip: animatedClip
+          path: out
         });
         // console.log(`${svg} frame ${frame}/${frames} rendered at ${out}`);
       }

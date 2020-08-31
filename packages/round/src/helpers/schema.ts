@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-import { staticCursors, animatedCursors, animatedClip } from "../cursors.json";
+import { staticCursors, animatedCursors } from "../cursors.json";
 import {
   schemesPath,
   bitmapsPath,
@@ -82,8 +82,7 @@ const generateConfigs = (colorSchemes: ColorSchema, dirPrefix: string) => {
       svgsDir: schemaSvgsPath,
       bitmapsDir,
       animatedCursors,
-      staticCursors,
-      animatedClip
+      staticCursors
     };
   }
 
