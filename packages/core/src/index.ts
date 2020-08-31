@@ -1,5 +1,6 @@
 // import { renderCursors } from "./render";
 import { generateConfigs, GenerateConfigsArgs } from "./schema";
+import { renderCursors } from "./render";
 
 const createBitmaps = async ({
   pathConfig,
@@ -7,7 +8,8 @@ const createBitmaps = async ({
   themeName
 }: GenerateConfigsArgs) => {
   const configs = generateConfigs({ pathConfig, colorSchemes, themeName });
-  console.log(configs);
+  await renderCursors(configs);
+
   process.exit(0);
 };
 
