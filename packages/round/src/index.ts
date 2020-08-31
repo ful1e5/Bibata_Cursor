@@ -1,8 +1,9 @@
 import chalk from "chalk";
 import { renderCursors, spinner } from "common";
 
-import { generateConfigs } from "./helpers/schema";
-import { colorSchemes, bitmapsPath } from "./color";
+import { generateConfigs } from "./utils/schema";
+import { colorSchemes } from "./color";
+import { bitmapsPath } from "./paths";
 
 const main = async () => {
   const prefix = "Bibata-Round";
