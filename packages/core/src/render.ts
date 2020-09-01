@@ -33,7 +33,7 @@ const renderCursors = async (configs: Record<string, Config>) => {
     // Render
     try {
       for (let svgPath of staticCursors) {
-        const buffer = fs.readFileSync(path.resolve(svgPath), "utf8");
+        const buffer = fs.readFileSync(svgPath, "utf8");
         if (!buffer) throw new Error(`${svgPath} File Read error`);
 
         // Generating HTML Template
