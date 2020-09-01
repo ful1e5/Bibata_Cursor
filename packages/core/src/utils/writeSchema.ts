@@ -1,12 +1,19 @@
-import { exists, mkdir, writeFile } from "fs";
+import { resolve } from "path";
+import { exists, mkdirSync, writeFileSync } from "fs";
 
-const writeSchemaData = (location: string, content: string) => {
-  exists(location, (exists) => {
+interface WriteSchemaData {
+  path: string;
+  content: string;
+  fileName: string;
+}
+
+const writeSchemaData = ({ path, content, fileName }: WriteSchemaData) => {
+  exists(path, (exists) => {
     if (!exists) {
-      mkdir(location, { recursive: true }, () => {});
+      mkdirSync(path, { recursive: true });
     }
   });
-  writeFile(location, content, "utf-8", () => {});
+  writeFileSync(resolve(path, fileName), content);
 };
 
 export { writeSchemaData };
