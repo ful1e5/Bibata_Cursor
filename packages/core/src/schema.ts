@@ -53,12 +53,12 @@ const generateConfigs = ({
         .replace(new RegExp(outlineKeyColor, "g"), outline);
 
       // Save Schema
-      const cursorPath = path.resolve(
-        schemaSvgsPath,
-        "static",
-        path.basename(cursor)
-      );
-      writeSchemaData(cursorPath, content);
+      const cursorPath = path.resolve(schemaSvgsPath, "static");
+      writeSchemaData({
+        path: cursorPath,
+        fileName: path.basename(cursor),
+        content
+      });
       return cursorPath;
     });
 
@@ -87,12 +87,12 @@ const generateConfigs = ({
       }
 
       // Save Schema
-      const cursorPath = path.resolve(
-        schemaSvgsPath,
-        "animated",
-        path.basename(cursor)
-      );
-      writeSchemaData(cursorPath, content);
+      const cursorPath = path.resolve(schemaSvgsPath, "animated");
+      writeSchemaData({
+        path: cursorPath,
+        fileName: path.basename(cursor),
+        content
+      });
 
       return cursorPath;
     });
@@ -102,7 +102,7 @@ const generateConfigs = ({
     fs.mkdirSync(bitmapsDir, { recursive: true });
 
     // push config to Object
-    configs[schema] = {
+    configs[schemaName] = {
       bitmapsDir,
       animatedCursors: aCursors,
       staticCursors: sCursors
