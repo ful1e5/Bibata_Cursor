@@ -77,8 +77,8 @@ const renderCursors = async (configs: Record<string, Config>) => {
         const frames: Frames = {};
         const firstKey = getKeyName(index, svgPath);
 
-        console.log("Rendering", path.basename(svgPath), "...");
-        console.log(firstKey);
+        // console.log("Rendering", path.basename(svgPath), "...");
+        // console.log(firstKey);
 
         // 1st Frame
         frames[firstKey] = {
@@ -96,7 +96,7 @@ const renderCursors = async (configs: Record<string, Config>) => {
             encoding: "binary"
           });
           const key = getKeyName(index, svgPath);
-          console.log(key);
+          // console.log(key);
           const diff = matchImages({
             img1Buff: frames[firstKey].buffer,
             img2Buff: newFrame
