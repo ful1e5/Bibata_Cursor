@@ -53,12 +53,14 @@ const generateConfigs = ({
         .replace(new RegExp(outlineKeyColor, "g"), outline);
 
       // Save Schema
+      cursor = path.basename(cursor);
       writeSchemaData({
         path: schemaSvgsPath,
-        fileName: path.basename(cursor),
+        fileName: cursor,
         content
       });
-      return schemaSvgsPath;
+
+      return path.resolve(schemaSvgsPath, cursor);
     });
 
     const aCursors = animatedCursors.map((cursor: string) => {
@@ -86,13 +88,14 @@ const generateConfigs = ({
       }
 
       // Save Schema
+      cursor = path.basename(cursor);
       writeSchemaData({
         path: schemaSvgsPath,
-        fileName: path.basename(cursor),
+        fileName: cursor,
         content
       });
 
-      return schemaSvgsPath;
+      return path.resolve(schemaSvgsPath, cursor);
     });
 
     // Creating Dir for store bitmaps
