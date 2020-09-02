@@ -1,3 +1,6 @@
-// import { renderCursors } from "common";
+import { createBitmaps } from "bibata-core";
+import * as pathConfig from "./config";
+import { colorSchemes } from "./color";
 
-console.log("Bibata Original");
+const themeName = "Bibata-Original";
+createBitmaps({ colorSchemes, pathConfig, themeName });
