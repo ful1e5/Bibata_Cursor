@@ -28,4 +28,10 @@ interface ColorSchemes {
   };
 }
 
-export { Config, Frames, ColorSchemes, PathConfig };
+interface PixelDiffRate {
+  [name: string]: {
+    rate: number;
+  };
+}
+
+export { Config, Frames, ColorSchemes, PathConfig, PixelDiffRate };
