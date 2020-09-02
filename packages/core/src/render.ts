@@ -130,7 +130,7 @@ const renderCursors = async (configs: Record<string, Config>) => {
       spinner.text = ` ${chalk.blueBright(
         schema
       )} Bitmaps stored at ${chalk.greenBright(
-        `./${path.relative("../../", bitmapsDir)}`
+        `${path.relative("../../../", bitmapsDir)}`
       )}`;
       spinner.succeed();
     } catch (error) {
