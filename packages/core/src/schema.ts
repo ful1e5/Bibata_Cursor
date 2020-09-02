@@ -1,4 +1,6 @@
 import fs from "fs";
+import ora from "ora";
+import chalk from "chalk";
 import path from "path";
 
 import { ColorSchemes, Config, PathConfig } from "./types";
@@ -39,75 +41,84 @@ const generateConfigs = ({
   for (let [schema] of Object.entries(colorSchemes)) {
     const schemaName = `${themeName}-${schema}`;
 
+    const spinner = ora();
+    spinner.text = ` Generating ${chalk.blueBright(schemaName)} Color Schema`;
+
     const schemaSvgsPath = path.resolve(schemesPath, schemaName);
     fs.mkdirSync(schemaSvgsPath, { recursive: true });
 
     const { base, outline, watch } = colorSchemes[schema];
 
-    const sCursors = staticCursors.map((cursor: string) => {
-      // Read file
-      let content = fs.readFileSync(cursor, "utf-8").toString();
+    try {
+      const sCursors = staticCursors.map((cursor: string) => {
+        // Read file
+        let content = fs.readFileSync(cursor, "utf-8").toString();
 
-      content = content
-        .replace(new RegExp(baseKeyColor, "g"), base)
-        .replace(new RegExp(outlineKeyColor, "g"), outline);
+        content = content
+          .replace(new RegExp(baseKeyColor, "g"), base)
+          .replace(new RegExp(outlineKeyColor, "g"), outline);
 
-      // Save Schema
-      cursor = path.basename(cursor);
-      writeSchemaData({
-        path: schemaSvgsPath,
-        fileName: cursor,
-        content
+        // Save Schema
+        cursor = path.basename(cursor);
+        writeSchemaData({
+          path: schemaSvgsPath,
+          fileName: cursor,
+          content
+        });
+
+        return path.resolve(schemaSvgsPath, cursor);
       });
 
-      return path.resolve(schemaSvgsPath, cursor);
-    });
+      const aCursors = animatedCursors.map((cursor: string) => {
+        // Read file
+        let content = fs
+          .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
+          .toString();
 
-    const aCursors = animatedCursors.map((cursor: string) => {
-      // Read file
-      let content = fs
-        .readFileSync(path.resolve(rawSvgsDir, cursor), "utf-8")
-        .toString();
+        // Animated Cursors have two parts:
+        // 1) Cursor Color
+        // 2) Watch Color
 
-      // Animated Cursors have two parts:
-      // 1) Cursor Color
-      // 2) Watch Color
+        content = content
+          .replace(new RegExp(baseKeyColor, "g"), base)
+          .replace(new RegExp(outlineKeyColor, "g"), outline);
 
-      content = content
-        .replace(new RegExp(baseKeyColor, "g"), base)
-        .replace(new RegExp(outlineKeyColor, "g"), outline);
+        // try => replace `customize` colors
+        // onError => replace `schema` main colors
+        try {
+          if (!watch) throw new Error("");
+          const { background: b } = watch;
+          content = content.replace(new RegExp(watchKeyColor, "g"), b); // Watch Background
+        } catch (error) {
+          content = content.replace(new RegExp(watchKeyColor, "g"), base); // on error=> replace as base
+        }
 
-      // try => replace `customize` colors
-      // onError => replace `schema` main colors
-      try {
-        if (!watch) throw new Error("");
-        const { background: b } = watch;
-        content = content.replace(new RegExp(watchKeyColor, "g"), b); // Watch Background
-      } catch (error) {
-        content = content.replace(new RegExp(watchKeyColor, "g"), base); // on error=> replace as base
-      }
+        // Save Schema
+        cursor = path.basename(cursor);
+        writeSchemaData({
+          path: schemaSvgsPath,
+          fileName: cursor,
+          content
+        });
 
-      // Save Schema
-      cursor = path.basename(cursor);
-      writeSchemaData({
-        path: schemaSvgsPath,
-        fileName: cursor,
-        content
+        return path.resolve(schemaSvgsPath, cursor);
       });
 
-      return path.resolve(schemaSvgsPath, cursor);
-    });
+      // Creating Dir for store bitmaps
+      const bitmapsDir = path.resolve(bitmapsPath, schemaName);
+      fs.mkdirSync(bitmapsDir, { recursive: true });
 
-    // Creating Dir for store bitmaps
-    const bitmapsDir = path.resolve(bitmapsPath, schemaName);
-    fs.mkdirSync(bitmapsDir, { recursive: true });
-
-    // push config to Object
-    configs[schemaName] = {
-      bitmapsDir,
-      animatedCursors: aCursors,
-      staticCursors: sCursors
-    };
+      // push config to Object
+      configs[schemaName] = {
+        bitmapsDir,
+        animatedCursors: aCursors,
+        staticCursors: sCursors
+      };
+      spinner.succeed();
+    } catch (error) {
+      console.log(error);
+      spinner.fail();
+    }
   }
 
   return configs;
