@@ -8,7 +8,16 @@ import { matchImages } from "./utils/matchImages";
 import { saveFrames } from "./utils/saveFrames";
 import { getKeyName } from "./utils/getKeyName";
 import { spinner } from "./utils/spinner";
-import { Config, Frames } from "./types";
+import { Config, Frames, PixelDiffRate } from "./types";
+
+const pixelDiffRate: PixelDiffRate = {
+  "left_ptr_watch.svg": {
+    rate: 100
+  },
+  "wait.svg": {
+    rate: 990
+  }
+};
 
 const renderCursors = async (configs: Record<string, Config>) => {
   const browser = await puppeteer.launch({
@@ -71,6 +80,7 @@ const renderCursors = async (configs: Record<string, Config>) => {
         const svgElement = await page.$("#container svg");
         if (!svgElement) throw new Error("svg element not found");
 
+        console.log(path.basename(svgPath));
         // Render Config
         let index = 1;
         let breakRendering = false;
@@ -102,7 +112,8 @@ const renderCursors = async (configs: Record<string, Config>) => {
             img2Buff: newFrame
           });
 
-          if (!(diff < 700)) {
+          const { rate } = pixelDiffRate[path.basename(svgPath)];
+          if (!(diff < rate)) {
             frames[key] = { buffer: newFrame };
           } else {
             breakRendering = true;
