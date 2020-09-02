@@ -25,7 +25,6 @@ const renderCursors = async (configs: Record<string, Config>) => {
     headless: true
   });
 
-  let outDir = "";
   for (let [
     schema,
     { bitmapsDir, staticCursors, animatedCursors }
@@ -37,7 +36,7 @@ const renderCursors = async (configs: Record<string, Config>) => {
 
     // Spinner
     const spinner = ora();
-    spinner.text = ` Preparing ${schema} Schema...`;
+    spinner.text = ` Preparing ${schema} Color Schema...`;
     spinner.start();
 
     // Render
@@ -62,8 +61,9 @@ const renderCursors = async (configs: Record<string, Config>) => {
         await page.waitForSelector("#container");
         const svgElement = await page.$("#container svg");
         if (!svgElement) throw new Error("svg element not found");
+
+        spinner.text = ` Bitmaping ${chalk.greenBright(bitmapName)}`;
         await svgElement.screenshot({ omitBackground: true, path: out });
-        spinner.text = `${chalk.greenBright(bitmapName)}`;
 
         await page.close();
       }
@@ -90,22 +90,24 @@ const renderCursors = async (configs: Record<string, Config>) => {
         const firstKey = getKeyName(index, svgPath);
 
         // 1st Frame
+        spinner.text = ` Bitmaping ${chalk.greenBright(firstKey)}`;
         frames[firstKey] = {
           buffer: await svgElement.screenshot({
             omitBackground: true,
             encoding: "binary"
           })
         };
-        spinner.text = ` ${chalk.greenBright(firstKey)}`;
 
         //  Pushing frames until it match to 1st frame
         index++;
         while (!breakRendering) {
+          const key = getKeyName(index, svgPath);
+          spinner.text = ` Bitmaping ${chalk.greenBright(key)}`;
+
           const newFrame = await svgElement.screenshot({
             omitBackground: true,
             encoding: "binary"
           });
-          const key = getKeyName(index, svgPath);
 
           const diff = matchImages({
             img1Buff: frames[firstKey].buffer,
@@ -115,7 +117,6 @@ const renderCursors = async (configs: Record<string, Config>) => {
           const { rate } = pixelDiffRate[path.basename(svgPath)];
           if (!(diff < rate)) {
             frames[key] = { buffer: newFrame };
-            spinner.text = ` ${chalk.greenBright(key)}`;
           } else {
             breakRendering = true;
           }
@@ -126,7 +127,11 @@ const renderCursors = async (configs: Record<string, Config>) => {
 
         await page.close();
       }
-      spinner.text = `${schema} Bitmaps`;
+      spinner.text = ` ${chalk.blueBright(
+        schema
+      )} Bitmaps stored at ${chalk.greenBright(
+        `./${path.relative("../../", bitmapsDir)}`
+      )}`;
       spinner.succeed();
     } catch (error) {
       console.error(error);
@@ -134,7 +139,6 @@ const renderCursors = async (configs: Record<string, Config>) => {
       process.exit(1);
     }
   }
-  console.log(` 🎉 Bitmaps stored at ${chalk.greenBright(outDir)}`);
 };
 
 export { renderCursors };
