@@ -5,7 +5,7 @@
   "execMap": {
     "ts": "node --require ts-node/register"
   },
-  "watch": ["src/"],
+  "watch": ["src/", "../core/src/"],
   "env": {
     "NODE_ENV": "development"
   },
