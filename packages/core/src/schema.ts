@@ -42,7 +42,9 @@ const generateConfigs = ({
     const schemaName = `${themeName}-${schema}`;
 
     const spinner = ora();
-    spinner.text = ` Generating ${chalk.blueBright(schemaName)} Color Schema`;
+    spinner.text = ` Generating ${chalk.blueBright(
+      schemaName
+    )} Color Schema ...`;
 
     const schemaSvgsPath = path.resolve(schemesPath, schemaName);
     fs.mkdirSync(schemaSvgsPath, { recursive: true });
@@ -114,6 +116,8 @@ const generateConfigs = ({
         animatedCursors: aCursors,
         staticCursors: sCursors
       };
+
+      spinner.text = ` Saving ${chalk.blueBright(schemaName)} Color Schema ...`;
       spinner.succeed();
     } catch (error) {
       console.log(error);
