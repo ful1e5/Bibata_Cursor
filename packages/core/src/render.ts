@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import ora from "ora";
 import chalk from "chalk";
 import puppeteer from "puppeteer";
 
@@ -7,7 +8,6 @@ import { generateRenderTemplate } from "./utils/htmlTemplate";
 import { matchImages } from "./utils/matchImages";
 import { saveFrames } from "./utils/saveFrames";
 import { getKeyName } from "./utils/getKeyName";
-import { spinner } from "./utils/spinner";
 import { Config, Frames, PixelDiffRate } from "./types";
 
 const pixelDiffRate: PixelDiffRate = {
@@ -36,11 +36,13 @@ const renderCursors = async (configs: Record<string, Config>) => {
     }
 
     // Spinner
-    spinner.text = `Generating ${chalk.magentaBright(schema)} bitmaps ...`;
+    const spinner = ora();
+    spinner.text = ` Preparing ${schema} Schema...`;
     spinner.start();
 
     // Render
     try {
+      spinner.color = "yellow";
       for (let svgPath of staticCursors) {
         const buffer = fs.readFileSync(svgPath, "utf8");
         if (!buffer) throw new Error(`${svgPath} File Read error`);
@@ -61,6 +63,7 @@ const renderCursors = async (configs: Record<string, Config>) => {
         const svgElement = await page.$("#container svg");
         if (!svgElement) throw new Error("svg element not found");
         await svgElement.screenshot({ omitBackground: true, path: out });
+        spinner.text = `${chalk.greenBright(bitmapName)}`;
 
         await page.close();
       }
@@ -80,15 +83,11 @@ const renderCursors = async (configs: Record<string, Config>) => {
         const svgElement = await page.$("#container svg");
         if (!svgElement) throw new Error("svg element not found");
 
-        console.log(path.basename(svgPath));
         // Render Config
         let index = 1;
         let breakRendering = false;
         const frames: Frames = {};
         const firstKey = getKeyName(index, svgPath);
-
-        // console.log("Rendering", path.basename(svgPath), "...");
-        // console.log(firstKey);
 
         // 1st Frame
         frames[firstKey] = {
@@ -97,6 +96,7 @@ const renderCursors = async (configs: Record<string, Config>) => {
             encoding: "binary"
           })
         };
+        spinner.text = ` ${chalk.greenBright(firstKey)}`;
 
         //  Pushing frames until it match to 1st frame
         index++;
@@ -106,7 +106,7 @@ const renderCursors = async (configs: Record<string, Config>) => {
             encoding: "binary"
           });
           const key = getKeyName(index, svgPath);
-          // console.log(key);
+
           const diff = matchImages({
             img1Buff: frames[firstKey].buffer,
             img2Buff: newFrame
@@ -115,6 +115,7 @@ const renderCursors = async (configs: Record<string, Config>) => {
           const { rate } = pixelDiffRate[path.basename(svgPath)];
           if (!(diff < rate)) {
             frames[key] = { buffer: newFrame };
+            spinner.text = ` ${chalk.greenBright(key)}`;
           } else {
             breakRendering = true;
           }
@@ -125,6 +126,7 @@ const renderCursors = async (configs: Record<string, Config>) => {
 
         await page.close();
       }
+      spinner.text = `${schema} Bitmaps`;
       spinner.succeed();
     } catch (error) {
       console.error(error);
@@ -132,7 +134,7 @@ const renderCursors = async (configs: Record<string, Config>) => {
       process.exit(1);
     }
   }
-  console.log(`🎉 Bitmaps stored at ${chalk.greenBright(outDir)}`);
+  console.log(` 🎉 Bitmaps stored at ${chalk.greenBright(outDir)}`);
 };
 
 export { renderCursors };
