@@ -1,5 +1,5 @@
 {
-  "references": [{ "path": "../common" }],
+  "references": [{ "path": "../core" }],
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "rootDir": "src",
