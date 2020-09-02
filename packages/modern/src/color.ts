@@ -16,7 +16,10 @@ const colorSchemes: ColorSchemes = {
   },
   Amber: {
     base: amber,
-    outline: white
+    outline: white,
+    watch: {
+      background: white
+    }
   },
   Breeze: {
     base: breezeDark,
