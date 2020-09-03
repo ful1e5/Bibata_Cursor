@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "rm -rf bitmaps",
     "render:bibata-modern": "yarn workspace bibata-modern render",
-    "render": "yarn render:bibata-modern",
+    "render:bibata-original": "yarn workspace bibata-original render",
     "build": "rm -rf themes && python build.py",
     "py_install": "pip freeze >> requirements.txt"
   },
