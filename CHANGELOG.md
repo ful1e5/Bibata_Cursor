@@ -7,9 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Changed
+
+- New project structure
+- Build process with `python` & [**clickgen**](https://github.com/ful1e5/clickgen)
+- Cursors Redesign => `all_scroll`, `pencil`, `wayland_cursor`, `xcursor`
+- Bitmaps Rendering with [**puppeteer**](https://github.com/puppeteer/puppeteer)
+- Build Docs
+
+### Added
+
+- Maintaining [CHANGELOG.md](./CHANGELOG.md)
+- [CURSORS.md](./CURSORS.md) for all cursors information
+- GitHub Actions added
+- New Build with **90x** fatster build.
+- Customizable Colors in **Bibata** Curosrs.
+- Windows Package with **Double Click** installation 😍
+- Old Bibata(Bibata Original)
+- Auto framing in animated cursors with [**pixelmatch**](https://github.com/mapbox/pixelmatch)
+
 ## [v0.4.2] - 12 January 2020
 
-### Chnaged
+### Changed
 
 - same names in Oil and Classic [Fixed again]
 
@@ -27,7 +46,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Missing KDE Cursors
 - Added custom animation-delay tweak script
 
-### Chnaged
+### Changed
 
 - Glitch fixed in watch cursor(loading state)
 - Bibata Amber Color changed to #FF8000
