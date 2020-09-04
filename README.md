@@ -77,7 +77,6 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 #### Colors
 
 ![Classic](https://imgur.com/I5cRKE4.png)
-![Oil](https://imgur.com/VFLQDR9.png)
 ![Ice ✓](https://imgur.com/avnR40g.png)
 ![Amber](https://imgur.com/5Jo6MSO.png)
 
