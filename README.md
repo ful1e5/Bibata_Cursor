@@ -29,6 +29,10 @@
   
   <!-- Second Row -->
   <br />
+  <a href="https://www.codefactor.io/repository/github/ful1e5/bibata_cursor">
+    <img src="https://www.codefactor.io/repository/github/ful1e5/bibata_cursor/badge" alt="CodeFactor" />
+  </a>
+  
   <a href="https://github.com/ful1e5">
     <img alt="Made By Kaiz"  src="https://kaiz.vercel.app/api/badge" width="133" />
   </a>
