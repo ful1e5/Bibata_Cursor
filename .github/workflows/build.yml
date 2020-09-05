@@ -71,20 +71,23 @@ jobs:
       - name: Generating `Bibata` Cursor Theme
         run: python build.py
 
+      - name: Compressing Artifacts
+        run: |
+          tar -cvzf logs.tar.gz build.log
+          tar -cvzf bitmaps.tar.gz bitmaps
+          tar -cvzf Bibata.tar.gz themes
+
       - name: Uploading `Bibata` Build Log artifact
         uses: actions/upload-artifact@v2
         with:
           name: logs
-          path: build.log
+          path: logs.tar.gz
 
       - name: Uploading `bitmaps` artifact
         uses: actions/upload-artifact@v2
         with:
           name: bitmaps
-          path: bitmaps/*
-
-      - name: Compressing Bibata Themes Directory
-        run: tar -cvzf Bibata.tar.gz themes
+          path: bitmaps.tar.gz
 
       - name: Uploading `Bibata` Theme artifact
         uses: actions/upload-artifact@v2
