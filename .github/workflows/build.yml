@@ -43,7 +43,8 @@ jobs:
         with:
           node-version: "12.x"
       - run: yarn install
-      - run: yarn render
+      - run: yarn render:bibata-modern
+      - run: yarn render:bibata-original
 
       - name: Set up Python
         uses: actions/setup-python@v2
