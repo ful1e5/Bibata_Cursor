@@ -56,7 +56,7 @@
   </a>
   
   
-  <!-- Third Row -->
+  <!-- Fourth Row -->
 
   <br />
   <a href="https://www.pling.com/p/1197198/#files-panel">
@@ -67,7 +67,7 @@
     <img alt="License" src="https://img.shields.io/badge/-Windows-blue?logo=windows" />
   </a>
 
-  <!-- Fourth Row -->
+  <!-- Fifth Row -->
 
   <br />
   <a href="https://github.com/ful1e5">
