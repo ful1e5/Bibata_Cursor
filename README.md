@@ -55,6 +55,8 @@
 
 </details>
 
+<!-- Bibata Info -->
+
 ## Bibata ?
 
 Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project masterelop for improve `Cursor` Experience.
@@ -84,9 +86,7 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 ![Classic](https://imgur.com/I5cRKE4.png)
 ![Ice ✓](https://imgur.com/avnR40g.png)
 
-### Quick Install
-
-Bibata cursor is installed by running one of the following commands in your terminal. You can install this via the command-line with either `curl` or `wget`.
+#### Quick install
 
 ##### via curl
 
@@ -99,6 +99,29 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/ma
 ```bash
 sh -c "$(wget -O- https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
 ```
+
+### Manual Install
+
+#### Linux/X11
+
+```bash
+# extract `Bibata.tar.gz`
+tar -xvf Bibata.tar.gz
+
+# For local users
+mv Bibata ~/.icons/
+
+# For all users
+sudo mv Bibata /usr/share/icons/
+```
+
+#### Windows
+
+1. unzip `Bibata_Windows.zip` file
+2. Open `Bibata_Windows/<Bibata_flavor>` in Explorer, and **right click** on `install.inf`.
+3. Click 'Install' from the context menu, and authorise the modifications to your system.
+4. Open _Control Panel_ > _Personalisation and Appearance_ > _Change mouse pointers_, and select **Bibata Cursors**.
+5. Click '**Apply**'.
 
 ### Build dependencies
 
