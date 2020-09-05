@@ -83,6 +83,11 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 - **Bibata Classic :** Solid Black Theme.
 - **Bibata Ice :** Light Theme.
 
+#### Bibata Styles
+
+- **Bibata Original :** Sharp edge Bibata Cursors
+- **Bibata Modern :** Round edge Bibata Cursors
+
 #### Cursor Sizes
 
 <kbd>24</kbd>
