@@ -36,8 +36,6 @@
 
 ---
 
-## Bibata ?
-
 <!-- Table Of Content -->
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
@@ -52,6 +50,8 @@
 - [License](LICENSE)
 
 </details>
+
+## Bibata ?
 
 Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project masterelop for improve `Cursor` Experience.
 
@@ -76,9 +76,9 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 
 #### Colors
 
+![Amber](https://imgur.com/5Jo6MSO.png)
 ![Classic](https://imgur.com/I5cRKE4.png)
 ![Ice ✓](https://imgur.com/avnR40g.png)
-![Amber](https://imgur.com/5Jo6MSO.png)
 
 ### Build dependencies
 
@@ -221,17 +221,14 @@ rm -r ~/.icons/Bibata_*                              # From Local User
 
 ## Preview
 
-<p align="center"><img title="Bibata Classic" src="https://imgur.com/IbdooDX.png">
+<p align="center"><img title="Bibata Amber" src="https://imgur.com/p60SQOq.png">
+</br><sub>Bibata Amber</sub></p>
+
+<p align="center"><img title="Bibata Classic" src="https://imgur.com/WaqGcUF.png">
 </br><sub>Bibata Classic</sub></p>
 
-<p align="center"><img title="Bibata Ice" src="https://imgur.com/5XRxnE2.png">
+<p align="center"><img title="Bibata Ice" src="https://imgur.com/ON1sd4H.png">
 </br><sub>Bibata Ice</sub></p>
-
-<p align="center"><img title="Bibata Oil" src="https://imgur.com/3HRZeFw.png">
-</br><sub>Bibata Oil</sub></p>
-
-<p align="center"><img title="Bibata Amber" src="https://imgur.com/CylSo2K.png">
-</br><sub>Bibata Amber</sub></p>
 
 ## You may also like...
 
