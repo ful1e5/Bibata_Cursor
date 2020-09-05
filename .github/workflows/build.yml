@@ -83,8 +83,11 @@ jobs:
           name: bitmaps
           path: bitmaps/*
 
+      - name: Compressing Bibata Themes Directory
+        run: tar -cvzf Bibata.tar.gz themes
+
       - name: Uploading `Bibata` Theme artifact
         uses: actions/upload-artifact@v2
         with:
           name: Bibata
-          path: themes
+          path: Bibata.tar.gz
