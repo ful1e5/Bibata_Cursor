@@ -110,6 +110,8 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 
 #### Quick install
 
+<!-- TODO: Quick Install Script-->
+
 ##### via curl
 
 ```bash
