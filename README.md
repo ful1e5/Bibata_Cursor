@@ -1,3 +1,5 @@
+<!-- Branding -->
+
 <p align="center">
   <img src="https://imgur.com/852r65D.png" width="150">
   <br />
@@ -41,6 +43,7 @@
 ---
 
 <!-- Table Of Content -->
+
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
@@ -55,16 +58,15 @@
 
 </details>
 
-<!-- Bibata Info -->
+<!-- Bibata intro -->
 
 ## Bibata ?
 
 Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project masterelop for improve `Cursor` Experience.
 
-- **Bibata Classic :** Solid Black Theme.
-- **Bibata Oil :** Gnome Adwaita's Color based Theme.
-- **Bibata Ice :** Light Theme.
 - **Bibata Amber :** Yellowish Theme.
+- **Bibata Classic :** Solid Black Theme.
+- **Bibata Ice :** Light Theme.
 
 #### Cursor Sizes
 
@@ -122,6 +124,28 @@ sudo mv Bibata_* /usr/share/icons/
 3. Click 'Install' from the context menu, and authorise the modifications to your system.
 4. Open _Control Panel_ > _Personalisation and Appearance_ > _Change mouse pointers_, and select **Bibata Cursors**.
 5. Click '**Apply**'.
+
+<!-- Preview -->
+
+## Preview
+
+<p align="center">
+  <img title="Bibata Amber" width="90%" src="https://imgur.com/p60SQOq.png">
+  </br>
+  <sub>Bibata Amber</sub>
+</p>
+
+<p align="center">
+  <img title="Bibata Classic" width="90%" src="https://imgur.com/WaqGcUF.png">
+  </br>
+  <sub>Bibata Classic</sub>
+</p>
+
+<p align="center">
+  <img title="Bibata Ice" width="90%" src="https://imgur.com/ON1sd4H.png">
+  </br>
+  <sub>Bibata Ice</sub>
+</p>
 
 ### Build dependencies
 
@@ -245,17 +269,6 @@ rm -r ~/.icons/Bibata_*                              # From Local User
 ```
 
 > More information about script is found in [src](./src/README.md) directory.
-
-## Preview
-
-<p align="center"><img title="Bibata Amber" src="https://imgur.com/p60SQOq.png">
-</br><sub>Bibata Amber</sub></p>
-
-<p align="center"><img title="Bibata Classic" src="https://imgur.com/WaqGcUF.png">
-</br><sub>Bibata Classic</sub></p>
-
-<p align="center"><img title="Bibata Ice" src="https://imgur.com/ON1sd4H.png">
-</br><sub>Bibata Ice</sub></p>
 
 ## You may also like...
 
