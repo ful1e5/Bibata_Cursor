@@ -48,10 +48,23 @@
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
 - [Bibata Cursor](#bibata-?)
-- [Install](#install)
-- [Windows](#windows)
-- [Preview](#preview)
-- [Contributors](CONTRIBUTING.md#contributors)
+  - [Cursor Sizes](#cursor-sizes)
+  - [Colors](#colors)
+  - [Quick Install For Linux](#quick-install)
+  - [Manual Install](#manual-install)
+    - [Linux Install](#linux/x11)
+    - [Windows Install](#windows)
+  - [Cursors Preview](#preview)
+- [Dependencies](#dependencies)
+  - [Runtime Dependencies](#runtime-dependencies)
+  - [Build Dependencies](#build-dependencies)
+- [Build From Scrach](#build-from-scratch)
+  - [⚡ Auto Build (using GitHub Actions)](#⚡-auto-build-using-gitHub-actions)
+  - [Manual build](#manual-build)
+    - [Setup Python Environment](#setup-python-environment)
+    - [Compile Theme](#compile-from-source)
+  - [Install Build Theme](#install-build-theme)
+- [Contributors](./CONTRIBUTING.md#contributors)
 - [Credit](#credit)
 - [Support](#support)
 - [License](LICENSE)
@@ -261,8 +274,6 @@ deactivate
 #### Compile From Source
 
 > Make sure your [python environment](#setup-python-environment) setup and `virtualenv` is **active**.
-
-##### Using yarn
 
 ```bash
 yarn install                                         # Install all Node Packages
