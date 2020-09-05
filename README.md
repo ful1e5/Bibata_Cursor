@@ -51,6 +51,8 @@
   - [Cursor Sizes](#cursor-sizes)
   - [Colors](#colors)
   - [Quick Install For Linux](#quick-install)
+  - [ArchLinux/Manjaro Package](#arch-linux/manjaro)
+  - [Fedora Package](#fedora)
   - [Manual Install](#manual-install)
     - [Linux Install](#linux/x11)
     - [Windows Install](#windows)
@@ -64,10 +66,10 @@
     - [Setup Python Environment](#setup-python-environment)
     - [Compile Theme](#compile-from-source)
   - [Install Build Theme](#install-build-theme)
+- [Bugs](#bugs)
+- [Getting Help](#getting-help)
 - [Contributors](./CONTRIBUTING.md#contributors)
-- [Credit](#credit)
-- [Support](#support)
-- [License](LICENSE)
+- [Support ✨](#support)
 
 </details>
 
@@ -279,7 +281,7 @@ deactivate
 yarn install                                         # Install all Node Packages
 yarn py_install                                      # Install all PyPi Packages
 yarn render                                          # Render all Bibata Bitmaps
-yarn build                                           # Build Bibata_Cursor package
+yarn build                                           # Build all Windows & Linux packages
 ```
 
 After build `bitmaps` and `themes` directory are generated at project **root**.
