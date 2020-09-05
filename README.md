@@ -238,6 +238,39 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 
 - [clickgen](https://pypi.org/project/clickgen/)
 
+## Build From Scratch
+
+### ⚡ Auto Build (using GitHub Actions)
+
+GitHub Actions is automatically runs on every `push`(on **master** and **dev** branches) and `pull request`(on **master** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/Bibata_Cursor/tree/master/.github/workflows) directory.
+
+### Manual Build
+
+#### Setup python environment
+
+```bash
+python3 -m pip install --upgrade pip                 # Update pip to latest
+python3 -m pip3 install virtualenv                   # Install python virtual environment
+virtualenv venv                                      # Create new virtualenv named `venv`
+source venv/bin/activate                             # Activate virtualenv
+
+# For Deactivate virtualenv
+deactivate
+```
+
+#### Compile From Source
+
+> Make sure your [python environment](#setup-python-environment) setup and `virtualenv` is **active**.
+
+##### Using yarn
+
+```bash
+yarn install                                         # Install all Node Packages
+yarn py_install                                      # Install all PyPi Packages
+yarn render                                          # Render all Bibata Bitmaps
+yarn build                                           # Build Bibata_Cursor package
+```
+
 <!-- Other Intersting projects -->
 
 ## You may also like...
