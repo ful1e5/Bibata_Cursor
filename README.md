@@ -102,6 +102,42 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/ma
 sh -c "$(wget -O- https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
 ```
 
+### Packages 📦
+
+> **📝Note**: If you're having trouble with the packages please submit a request to the package maintainer before creating an issue.
+
+#### Arch Linux/Manjaro
+
+Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme) currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m). Can be installed via Pamac (preinstalled in Manjaro), Yay or any other [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers).
+
+Pamac command:
+
+```bash
+pamac install bibata-cursor-theme
+```
+
+Yay command:
+
+```bash
+yay -S bibata-cursor-theme
+```
+
+#### Fedora
+
+Fedora users can install from the [copr-repo](https://copr.fedorainfracloud.org/coprs/muhalantabli/copr-repo) currently maintained by _@muhalantabli_.
+
+Enable the repo:
+
+```bash
+sudo dnf copr enable muhalantabli/copr-repo
+```
+
+Installation command:
+
+```bash
+sudo dnf install bibata-cursor-theme
+```
+
 ### Manual Install
 
 #### Linux/X11
@@ -147,128 +183,62 @@ sudo mv Bibata_* /usr/share/icons/
   <sub>Bibata Ice</sub>
 </p>
 
-### Build dependencies
+<!-- Build Dependencies -->
 
-- [git](https://git-scm.com/)
-- [python3](https://www.python.org/)
-- [pip](https://pypi.org/project/pip/)/[python-pillow](https://www.archlinux.org/packages/community/x86_64/python-pillow/)
-- [Inkscape](https://inkscape.org/)
-- [Xcursorgen](https://www.x.org/releases/X11R7.7/doc/man/man1/xcursorgen.1.xhtml)
+# Dependencies
 
-### Install dependencies
+## Runtime Dependencies
 
-**📝Note**: Snap/Flatpak packages raise issue in build (e.g. inkscape).
+- libxcursor-dev
+- libx11-dev
+- libpng-dev (<=1.6)
 
-##### Debian/Ubuntu
+#### Install Runtime Dependencies
 
-```bash
-sudo apt install git python3 python3-pip inkscape x11-apps
-```
-
-##### Fedora
+##### macOS
 
 ```bash
-sudo dnf install git python37 python3-pip inkscape xcursorgen
+brew cask install xquartz libpng
 ```
 
-##### Arch Linux/Manjaro
+##### Debain/ubuntu
 
 ```bash
-sudo pacman -S git python-pillow inkscape xorg-xcursorgen
+sudo apt install libx11-dev libxcursor-dev libpng-dev
 ```
 
-## Install
-
-Latest `Stable` & `Development` releases can be downloaded from [Here](https://github.com/KaizIqbal/Bibata_Cursor/releases)
-
-### Packages📦
-
-**📝Note**: If you're having trouble with the packages please submit a request to the package maintainer before creating an issue.
-
-#### Arch Linux/Manjaro
-
-Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme) currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m). Can be installed via Pamac (preinstalled in Manjaro), Yay or any other [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers).
-
-Pamac command:
+##### ArchLinux/Manjaro
 
 ```bash
-pamac install bibata-cursor-theme
+sudo pacman -S libx11 libxcursor libpng
 ```
 
-Yay command:
+##### Fedora/Fedora Silverblue/CentOS/RHEL
 
 ```bash
-yay -S bibata-cursor-theme
+sudo dnf install libx11-devel libxcursor-devel libpng-devel
 ```
 
-#### Fedora
+## Build Dependencies
 
-Fedora users can install from the [copr-repo](https://copr.fedorainfracloud.org/coprs/muhalantabli/copr-repo) currently maintained by _@muhalantabli_.
+- [nodejs](https://nodejs.org/en/) (<=12.x.x)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/)
+- [python3](https://www.python.org/downloads/)
+- [pip3](https://pip.pypa.io/en/stable/installing/)
 
-Enable the repo:
+### Node Packages
 
-```bash
-sudo dnf copr enable muhalantabli/copr-repo
-```
+- [puppeteer](https://www.npmjs.com/package/puppeteer)
+- [pngjs](https://www.npmjs.com/package/pngjs)
+- [pixelmatch](https://www.npmjs.com/package/pixelmatch)
+- [ora](https://www.npmjs.com/package/ora)
+- [chalk](https://www.npmjs.com/package/chalk)
 
-Installation command:
+### PyPi Packages
 
-```bash
-sudo dnf install bibata-cursor-theme
-```
+- [clickgen](https://pypi.org/project/clickgen/)
 
-<!--
-From https://github.com/Silicasandwhich/Bibata_Cursor_Translucent#windows -->
-
-#### Windows
-
-1. Get the lastest stable/dev-version Windows release from the [releases tab](https://github.com/KaizIqbal/Bibata_Cursor/releases) on the github page.
-2. Open the settings app.
-3. Go to Devices -> Mouse -> Additional Mouse Options.
-4. Go to the pointers tab.
-5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the Windows folder of your desired flavor.
-6. Click "save as" and type in the desired name.
-7. Click "apply" and "ok".
-
-### Manual Installation
-
-Make sure you have installed all [Build dependencies](#build-dependencies).
-
-#### Build & Install
-
-```bash
-git clone https://github.com/KaizIqbal/Bibata_Cursor.git
-cd Bibata_Cursor/
-chmod +x build.sh
-./build.sh
-chmod +x ./install.sh
-```
-
-#### Install
-
-```bash
-./install.sh                                         # For local user
-sudo ./install.sh                                    # For all users
-```
-
-#### Uninstall
-
-##### Using Script
-
-```bash
-sudo ./install.sh                                    # From All Users
-./install.sh                                         # From Local User
-```
-
-##### Without Script
-
-```bash
-sudo rm -r /usr/share/icons/Bibata_*                 # From All Users
-rm -r ~/.icons/Bibata_*                              # From Local User
-
-```
-
-> More information about script is found in [src](./src/README.md) directory.
+<!-- Other Intersting projects -->
 
 ## You may also like...
 
@@ -276,21 +246,25 @@ rm -r ~/.icons/Bibata_*                              # From Local User
 - [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
 - [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
 
-## Bugs
+<!-- Bug Report -->
 
-Bugs should be reported [here](https://github.com/KaizIqbal/Bibata_Cursor/issues) on the Github issues page.
+# Bugs
 
-## Getting help
+Bugs 🐛 should be reported [here](https://github.com/ful1e5/apple_cursor/issues) on the Github issues page.
 
-You can create a issue, I will help you.
+<!-- Help -->
 
-## Contributions and Suggestions
+# Getting Help
 
-<a href="https://github.com/KaizIqbal/Bibata_Cursor/graphs/contributors">
-  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/KaizIqbal/Bibata_Cursor?style=social">
-</a>
+You can create a **issue**, I will help you. 🙂
 
-Check [CONTRIBUTING.md](./CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
+<!-- Contributions and Suggestion -->
+
+# Contributing
+
+Check [CONTRIBUTING.md](CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
+
+<!-- This project isn't possible without these 👇🏻-->
 
 ## Credit
 
@@ -298,6 +272,8 @@ Check [CONTRIBUTING.md](./CONTRIBUTING.md), any suggestions for features and con
 - [Dmz](https://github.com/GalliumOS/dmz-cursor-theme)
 - [Yaru](https://github.com/ubuntu/yaru)
 - Emojis are taken from [here](https://emojipedia.org/)
+
+<!-- Support -->
 
 ## Support
 
