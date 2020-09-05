@@ -84,6 +84,22 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 ![Classic](https://imgur.com/I5cRKE4.png)
 ![Ice ✓](https://imgur.com/avnR40g.png)
 
+### Quick Install
+
+Bibata cursor is installed by running one of the following commands in your terminal. You can install this via the command-line with either `curl` or `wget`.
+
+##### via curl
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
+```
+
+##### via wget
+
+```bash
+sh -c "$(wget -O- https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
+```
+
 ### Build dependencies
 
 - [git](https://git-scm.com/)
@@ -115,22 +131,6 @@ sudo pacman -S git python-pillow inkscape xorg-xcursorgen
 ```
 
 ## Install
-
-### Basic Installation
-
-Bibata cursor is installed by running one of the following commands in your terminal. You can install this via the command-line with either `curl` or `wget`.
-
-##### via curl
-
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
-```
-
-##### via wget
-
-```bash
-sh -c "$(wget -O- https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
-```
 
 Latest `Stable` & `Development` releases can be downloaded from [Here](https://github.com/KaizIqbal/Bibata_Cursor/releases)
 
