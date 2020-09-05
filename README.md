@@ -160,6 +160,8 @@ sudo dnf install bibata-cursor-theme
 
 ### Manual Install
 
+Latest `Stable` & `Development` releases can be downloaded from [Here](https://github.com/ful1e5/Bibata_Cursor/releases)
+
 #### Linux/X11
 
 ```bash
