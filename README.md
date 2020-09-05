@@ -109,10 +109,10 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/mast
 tar -xvf Bibata.tar.gz
 
 # For local users
-mv Bibata ~/.icons/
+mv Bibata_* ~/.icons/
 
 # For all users
-sudo mv Bibata /usr/share/icons/
+sudo mv Bibata_* /usr/share/icons/
 ```
 
 #### Windows
