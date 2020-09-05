@@ -15,8 +15,34 @@
 <p align="center">
 
   <!-- First Row -->
-  <img alt="Travis CI" src="https://travis-ci.org/KaizIqbal/Bibata_Cursor.svg?branch=master">
+
+  <a href="https://github.com/ful1e5/Bibata_Cursor/actions?query=workflow%3Abuild">
+    <img alt="GitHub Action Build" src="https://github.com/ful1e5/Bibata_Cursor/workflows/build/badge.svg" width="102" />
+  </a>
   
+  <a href="https://www.codefactor.io/repository/github/ful1e5/bibata_cursor">
+    <img src="https://www.codefactor.io/repository/github/ful1e5/bibata_cursor/badge" alt="CodeFactor" />
+  </a>
+
+  <!-- Second Row -->
+
+  </br >
+  <a href="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html">
+    <img alt="npm type definitions" src="https://img.shields.io/npm/types/typescript">
+  </a>
+
+  <a href="https://github.com/puppeteer/puppeteer/">
+    <img alt="Puppeteer version" src="https://img.shields.io/github/package-json/dependency-version/ful1e5/apple_cursor/puppeteer">
+  </a>
+
+  <a href="https://github.com/ful1e5/clickgen">
+    <img alt="Clickgen" src="https://img.shields.io/badge/theme%20builder-clickgen-FD0542" />
+  </a>
+  
+  
+  <!-- Third Row -->
+
+  </br >
   <a href="https://github.com/ful1e5/Bibata_Cursor/blob/master/LICENSE" >
     <img alt="License" src="https://img.shields.io/github/license/ful1e5/Bibata_Cursor?color=0081FB" />
   </a>
@@ -29,15 +55,25 @@
     <img alt="AUR version" src="https://img.shields.io/aur/version/bibata-cursor-theme">
   </a>
   
-  <!-- Second Row -->
-  <br />
-  <a href="https://www.codefactor.io/repository/github/ful1e5/bibata_cursor">
-    <img src="https://www.codefactor.io/repository/github/ful1e5/bibata_cursor/badge" alt="CodeFactor" />
-  </a>
   
+  <!-- Third Row -->
+
+  <br />
+  <a href="https://www.pling.com/p/1197198/#files-panel">
+    <img alt="License" src="https://img.shields.io/badge/-Linux-grey?logo=linux" />
+  </a>
+
+  <a href="https://www.pling.com/p/1197198/#files-panel">
+    <img alt="License" src="https://img.shields.io/badge/-Windows-blue?logo=windows" />
+  </a>
+
+  <!-- Fourth Row -->
+
+  <br />
   <a href="https://github.com/ful1e5">
     <img alt="Made By Kaiz"  src="https://kaiz.vercel.app/api/badge" width="133" />
   </a>
+
 </p>
 
 ---
