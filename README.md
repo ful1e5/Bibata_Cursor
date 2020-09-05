@@ -271,6 +271,30 @@ yarn render                                          # Render all Bibata Bitmaps
 yarn build                                           # Build Bibata_Cursor package
 ```
 
+After build `bitmaps` and `themes` directory are generated at project **root**.
+
+### Install Build Theme
+
+All builded cursor themes are available inside `themes` directory.
+
+#### Linux
+
+```bash
+cd ./themes
+
+# installing Theme to local user(recommend)
+rm -rf ~/.icons/Bibata_* && cp -r Bibata_* ~/.icons/
+```
+
+#### Windows
+
+1. Open the `settings` app.
+2. **Goto** `Devices` -> `Mouse` -> `Additional Mouse Options`.
+3. **Goto** the `pointers` tab.
+4. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `./themes/<Bibata_flavor>` folder.
+5. Click "**save as**" and type in the desired name.
+6. Click "**apply**" and "**ok**".
+
 <!-- Other Intersting projects -->
 
 ## You may also like...
