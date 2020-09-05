@@ -282,11 +282,33 @@ deactivate
 
 > Make sure your [python environment](#setup-python-environment) setup and `virtualenv` is **active**.
 
+#### Install Node/PyPi Packages
+
 ```bash
 yarn install                                         # Install all Node Packages
 yarn py_install                                      # Install all PyPi Packages
-yarn render                                          # Render all Bibata Bitmaps
-yarn build                                           # Build all Windows & Linux packages
+```
+
+#### Build Bibata
+
+```bash
+yarn render:bibata-modern                            # Render Bibata Modern Bitmaps
+yarn render:bibata-original                          # Render Bibata Original Bitmaps
+yarn build                                           # Build Windows & Linux packages
+```
+
+#### Build Bibata Modern Only
+
+```bash
+yarn render:bibata-modern                            # Render Bibata Modern Bitmaps
+yarn build                                           # Build Windows & Linux packages
+```
+
+#### Build Bibata Original Only
+
+```bash
+yarn render:bibata-original                          # Render Bibata Original Bitmaps
+yarn build                                           # Build Windows & Linux packages
 ```
 
 After build `bitmaps` and `themes` directory are generated at project **root**.
