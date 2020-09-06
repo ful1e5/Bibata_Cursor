@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Maintaining [CHANGELOG.md](./CHANGELOG.md)
 - [CURSORS.md](./CURSORS.md) for all cursors information
+- [PLING.bbcode](./PLING.bbcode) for pling.com Product page docs
 - [GitHub Actions](https://github.com/ful1e5/Bibata_Cursor/actions) added
 - New Build with **10x** fatster rendering.
 - Customizable Colors in **Bibata** Cursors.
