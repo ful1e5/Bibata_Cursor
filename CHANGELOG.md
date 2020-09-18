@@ -9,7 +9,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- New project structure
 - Build process with `python` & [**clickgen**](https://github.com/ful1e5/clickgen)
 - Cursors Redesign => `all_scroll`, `pencil`, `wayland_cursor`, `xcursor` and all `pointer symbols`(with Bigger Symbols) cursors
 - `Bibata Oil` is **end of life**
@@ -18,14 +17,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Bibata Original (Old Bibata)
+- Windows Package with **Double Click** installation 😍
 - Maintaining [CHANGELOG.md](./CHANGELOG.md)
 - [CURSORS.md](./CURSORS.md) for all cursors information
 - [PLING.bbcode](./PLING.bbcode) for pling.com Product page docs
 - [GitHub Actions](https://github.com/ful1e5/Bibata_Cursor/actions) added
 - New Build with **10x** fatster rendering.
 - Customizable Colors in **Bibata** Cursors.
-- Windows Package with **Double Click** installation 😍
-- Old Bibata(Bibata Original)
 - Auto framing in animated cursors with [**pixelmatch**](https://github.com/mapbox/pixelmatch)
 
 ## [v0.4.2] - 12 January 2020
