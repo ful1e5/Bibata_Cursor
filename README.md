@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://imgur.com/B5PjTsr.png" width="150">
   <br />
-  <img src="https://imgur.com/g60k2RA.png" width="150">
+  <img src="https://imgur.com/ittvsw7.png" width="130">
 </p>
 
 <p align="center">
@@ -83,29 +83,34 @@
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
-- [Bibata Cursor](#bibata-?)
-  - [Cursor Sizes](#cursor-sizes)
-  - [Colors](#colors)
-  - [Quick Install For Linux](#quick-install)
-  - [ArchLinux/Manjaro Package](#arch-linux/manjaro)
-  - [Fedora Package](#fedora)
-  - [Manual Install](#manual-install)
-    - [Linux Install](#linux/x11)
-    - [Windows Install](#windows)
-  - [Cursors Preview](#preview)
 - [Dependencies](#dependencies)
   - [Runtime Dependencies](#runtime-dependencies)
+      - [Install Runtime Dependencies](#install-runtime-dependencies)
+        - [macOS](#macos)
+        - [Debain/ubuntu](#debainubuntu)
+        - [ArchLinux/Manjaro](#archlinuxmanjaro)
+        - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
   - [Build Dependencies](#build-dependencies)
-- [Build From Scrach](#build-from-scratch)
-  - [⚡ Auto Build (using GitHub Actions)](#⚡-auto-build-using-gitHub-actions)
-  - [Manual build](#manual-build)
-    - [Setup Python Environment](#setup-python-environment)
-    - [Compile Theme](#compile-from-source)
-  - [Install Build Theme](#install-build-theme)
+    - [Node Packages](#node-packages)
+    - [PyPi Packages](#pypi-packages)
+  - [Build From Scratch](#build-from-scratch)
+    - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
+    - [Manual Build](#manual-build)
+      - [Setup python environment](#setup-python-environment)
+      - [Compile From Source](#compile-from-source)
+      - [Install Node/PyPi Packages](#install-nodepypi-packages)
+      - [Build Bibata](#build-bibata)
+      - [Build Bibata Modern Only](#build-bibata-modern-only)
+      - [Build Bibata Original Only](#build-bibata-original-only)
+    - [Install Build Theme](#install-build-theme)
+      - [Linux](#linux)
+      - [Windows](#windows-1)
+  - [You may also like...](#you-may-also-like)
 - [Bugs](#bugs)
 - [Getting Help](#getting-help)
-- [Contributors](./CONTRIBUTING.md#contributors)
-- [Support ✨](#support)
+- [Contributing](#contributing)
+  - [Credit](#credit)
+  - [Support](#support)
 
 </details>
 
