@@ -59,3 +59,7 @@
 |        <img src="./packages/modern/src/svg/static/xterm.svg" width="20%"/>        |        <img src="./packages/original/src/svg/static/xterm.svg" width="20%"/>        |        xterm.svg        |             `None`              |     `IBeam.cur`     |
 |       <img src="./packages/modern/src/svg/static/zoom_in.svg" width="20%"/>       |       <img src="./packages/original/src/svg/static/zoom_in.svg" width="20%"/>       |       zoom_in.svg       |             `None`              |                     |
 |      <img src="./packages/modern/src/svg/static/zoom_out.svg" width="20%"/>       |      <img src="./packages/original/src/svg/static/zoom_out.svg" width="20%"/>       |      zoom_out.svg       |             `None`              |                     |
+
+## Figma File
+
+[![Figma File](https://imgur.com/15fNroH.png)](https://www.figma.com/file/Y9RKZLXhSvaxpUzsKGJkp6/Bibata-Cursor?node-id=0%3A1)
