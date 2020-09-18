@@ -85,11 +85,11 @@
 
 - [Dependencies](#dependencies)
   - [Runtime Dependencies](#runtime-dependencies)
-      - [Install Runtime Dependencies](#install-runtime-dependencies)
-        - [macOS](#macos)
-        - [Debain/ubuntu](#debainubuntu)
-        - [ArchLinux/Manjaro](#archlinuxmanjaro)
-        - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+    - [Install Runtime Dependencies](#install-runtime-dependencies)
+      - [macOS](#macos)
+      - [Debain/ubuntu](#debainubuntu)
+      - [ArchLinux/Manjaro](#archlinuxmanjaro)
+      - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
   - [Build Dependencies](#build-dependencies)
     - [Node Packages](#node-packages)
     - [PyPi Packages](#pypi-packages)
@@ -99,9 +99,9 @@
       - [Setup python environment](#setup-python-environment)
       - [Compile From Source](#compile-from-source)
       - [Install Node/PyPi Packages](#install-nodepypi-packages)
-      - [Build Bibata](#build-bibata)
-      - [Build Bibata Modern Only](#build-bibata-modern-only)
-      - [Build Bibata Original Only](#build-bibata-original-only)
+      - [Build `Bibata`](#build-bibata)
+      - [Build `Bibata Modern` Only](#build-bibata-modern-only)
+      - [Build `Bibata Original` Only](#build-bibata-original-only)
     - [Install Build Theme](#install-build-theme)
       - [Linux](#linux)
       - [Windows](#windows-1)
@@ -307,7 +307,7 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 
 ### ⚡ Auto Build (using GitHub Actions)
 
-GitHub Actions is automatically runs on every `push`(on **master** and **dev** branches) and `pull request`(on **master** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/Bibata_Cursor/tree/master/.github/workflows) directory.
+GitHub Actions is automatically runs on every `push`(on **master** & **dev** branch) and `pull request`(on **master** branch), You found theme resources in `artifact` section of **build**. GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/Bibata_Cursor/tree/master/.github/workflows) directory.
 
 ### Manual Build
 
@@ -334,7 +334,7 @@ yarn install                                         # Install all Node Packages
 yarn py_install                                      # Install all PyPi Packages
 ```
 
-#### Build Bibata
+#### Build `Bibata`
 
 ```bash
 yarn render:bibata-modern                            # Render Bibata Modern Bitmaps
@@ -342,14 +342,14 @@ yarn render:bibata-original                          # Render Bibata Original Bi
 yarn build                                           # Build Windows & Linux packages
 ```
 
-#### Build Bibata Modern Only
+#### Build `Bibata Modern` Only
 
 ```bash
 yarn render:bibata-modern                            # Render Bibata Modern Bitmaps
 yarn build                                           # Build Windows & Linux packages
 ```
 
-#### Build Bibata Original Only
+#### Build `Bibata Original` Only
 
 ```bash
 yarn render:bibata-original                          # Render Bibata Original Bitmaps
