@@ -162,6 +162,11 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 
 ## Quick install
 
+<p align="center">
+  <img title="Quick install Bibata" width="90%" src="https://imgur.com/VxSgrWw.png">
+  </br>
+</p>
+
 ## Packages 📦
 
 > **📝Note**: If you're having trouble with the packages please submit a request to the package maintainer before creating an issue.
