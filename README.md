@@ -83,13 +83,25 @@
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
+- [Bibata ?](#bibata-)
+  - [Bibata Styles](#bibata-styles)
+  - [Cursor Sizes](#cursor-sizes)
+  - [Colors](#colors)
+  - [Quick install](#quick-install)
+  - [Packages 📦](#packages-)
+    - [Arch Linux/Manjaro](#arch-linuxmanjaro)
+    - [Fedora](#fedora)
+  - [Manual Install](#manual-install)
+      - [Linux/X11](#linuxx11)
+      - [Windows](#windows)
+  - [Preview](#preview)
 - [Dependencies](#dependencies)
   - [Runtime Dependencies](#runtime-dependencies)
-    - [Install Runtime Dependencies](#install-runtime-dependencies)
-      - [macOS](#macos)
-      - [Debain/ubuntu](#debainubuntu)
-      - [ArchLinux/Manjaro](#archlinuxmanjaro)
-      - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+      - [Install Runtime Dependencies](#install-runtime-dependencies)
+        - [macOS](#macos)
+        - [Debain/ubuntu](#debainubuntu)
+        - [ArchLinux/Manjaro](#archlinuxmanjaro)
+        - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
   - [Build Dependencies](#build-dependencies)
     - [Node Packages](#node-packages)
     - [PyPi Packages](#pypi-packages)
@@ -105,18 +117,17 @@
     - [Install Build Theme](#install-build-theme)
       - [Linux](#linux)
       - [Windows](#windows-1)
-  - [You may also like...](#you-may-also-like)
+- [You may also like...](#you-may-also-like)
 - [Bugs](#bugs)
 - [Getting Help](#getting-help)
 - [Contributing](#contributing)
-  - [Credit](#credit)
-  - [Support](#support)
-
+- [Credit](#credit)
+- [Support](#support)
 </details>
 
 <!-- Bibata intro -->
 
-## Bibata ?
+# Bibata ?
 
 Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project masterelop for improve `Cursor` Experience.
 
@@ -124,12 +135,12 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 - **Bibata Classic :** Solid Black Theme.
 - **Bibata Ice :** Light Theme.
 
-#### Bibata Styles
+## Bibata Styles
 
 - **Bibata Original :** Sharp edge Bibata Cursors
 - **Bibata Modern :** Round edge Bibata Cursors
 
-#### Cursor Sizes
+## Cursor Sizes
 
 <kbd>24</kbd>
 <kbd>28</kbd>
@@ -143,33 +154,19 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 <kbd>88</kbd>
 <kbd>96</kbd>
 
-#### Colors
+## Colors
 
 ![Amber](https://imgur.com/5Jo6MSO.png)
 ![Classic](https://imgur.com/I5cRKE4.png)
 ![Ice ✓](https://imgur.com/avnR40g.png)
 
-#### Quick install
+## Quick install
 
-<!-- TODO: Quick Install Script-->
-
-##### via curl
-
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
-```
-
-##### via wget
-
-```bash
-sh -c "$(wget -O- https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
-```
-
-### Packages 📦
+## Packages 📦
 
 > **📝Note**: If you're having trouble with the packages please submit a request to the package maintainer before creating an issue.
 
-#### Arch Linux/Manjaro
+### Arch Linux/Manjaro
 
 Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme) currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m). Can be installed via Pamac (preinstalled in Manjaro), Yay or any other [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers).
 
@@ -185,7 +182,7 @@ Yay command:
 yay -S bibata-cursor-theme
 ```
 
-#### Fedora
+### Fedora
 
 Fedora users can install from the [copr-repo](https://copr.fedorainfracloud.org/coprs/muhalantabli/copr-repo) currently maintained by _@muhalantabli_.
 
@@ -201,7 +198,7 @@ Installation command:
 sudo dnf install bibata-cursor-theme
 ```
 
-### Manual Install
+## Manual Install
 
 Latest `Stable` & `Development` releases can be downloaded from [Here](https://github.com/ful1e5/Bibata_Cursor/releases)
 
@@ -382,7 +379,7 @@ rm -rf ~/.icons/Bibata_* && cp -r Bibata_* ~/.icons/
 
 <!-- Other Intersting projects -->
 
-## You may also like...
+# You may also like...
 
 - [**Bibata Extra**](https://github.com/KaizIqbal/Bibata_Extra_Cursor) - More Bibata!
 - [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
@@ -408,7 +405,7 @@ Check [CONTRIBUTING.md](CONTRIBUTING.md), any suggestions for features and contr
 
 <!-- This project isn't possible without these 👇🏻-->
 
-## Credit
+# Credit
 
 - [Adwaita](https://github.com/GNOME/adwaita-icon-theme)
 - [Dmz](https://github.com/GalliumOS/dmz-cursor-theme)
@@ -417,7 +414,7 @@ Check [CONTRIBUTING.md](CONTRIBUTING.md), any suggestions for features and contr
 
 <!-- Support -->
 
-## Support
+# Support
 
 Share your joy with **★**.
 
