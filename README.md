@@ -163,8 +163,9 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 ## Quick install
 
 <p align="center">
-  <img title="Quick install Bibata" width="90%" src="https://imgur.com/VxSgrWw.png">
-  </br>
+  <a href="https://www.gnome-look.org/p/1197198/" >
+    <img title="Bibata Pling Store" width="80%" src="https://imgur.com/VxSgrWw.png">
+  </a>
 </p>
 
 ## Packages 📦
