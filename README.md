@@ -163,7 +163,7 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 ## Quick install
 
 <p align="center">
-  <a href="https://www.gnome-look.org/p/1197198/" >
+  <a href="https://www.pling.com/p/1197198/" >
     <img title="Bibata Pling Store" width="40%" src="https://imgur.com/VxSgrWw.png">
   </a>
 </p>
