@@ -1,4 +1,6 @@
 ########## Custom
+packages/core/src/schema.ts
+
 # Out Dir
 schemes
 bitmaps
