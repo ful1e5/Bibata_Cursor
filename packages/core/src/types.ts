@@ -34,4 +34,8 @@ interface PixelDiffRate {
   };
 }
 
-export { Config, Frames, ColorSchemes, PathConfig, PixelDiffRate };
+interface KeyColors {
+  [name: string]: string;
+}
+
+export { Config, Frames, ColorSchemes, PathConfig, PixelDiffRate, KeyColors };
