@@ -1,14 +1,18 @@
 import fs from "fs";
 import path from "path";
 
-export class Cursors {
+export class CursorSvgParser {
   constructor(private svgDir: string) {
     if (!fs.existsSync(this.svgDir)) {
       throw new Error(`🚨 .svg files not found in ${this.svgDir}`);
     }
   }
 
-  getStaticCursors(): string[] | null {
+  /**
+   * Return all static cursors absolute paths.
+   * Looking inside <svgDir>/static directory.
+   */
+  public getStaticCursors(): string[] {
     const cursorDir = path.resolve(this.svgDir, "static");
 
     if (!fs.existsSync(cursorDir)) {
@@ -20,13 +24,17 @@ export class Cursors {
       .map((f) => path.resolve(cursorDir, f));
 
     if (staticCursors.length == 0) {
-      return null;
+      console.warn("Static Cursors directory is empty");
     }
 
     return staticCursors;
   }
 
-  getAnimatedCursors(): string[] | null {
+  /**
+   * Return all animated cursors absolute paths.
+   * Looking inside <svgDir>/animated directory.
+   */
+  public getAnimatedCursors(): string[] {
     const cursorDir = path.resolve(this.svgDir, "animated");
 
     if (!fs.existsSync(cursorDir)) {
@@ -38,7 +46,7 @@ export class Cursors {
       .map((f) => path.resolve(cursorDir, f));
 
     if (animatedCursors.length == 0) {
-      return null;
+      console.warn("Animated Cursors directory is empty");
     }
 
     return animatedCursors;
