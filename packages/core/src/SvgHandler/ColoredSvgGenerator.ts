@@ -3,6 +3,8 @@ import path from "path";
 import SvgDirectoryParser from "./SvgDirectoryParser";
 import { Colors } from "../types";
 
+export type Inputs = { svgDir: string; colors: Colors };
+
 interface Cursors {
   [cursorName: string]: {
     content: string;
@@ -17,11 +19,13 @@ export const keyColors: Colors = {
   outline: "#0000FF"
 };
 
-export class ColoredSvgGenerator {
+export default class ColoredSvgGenerator {
   private staticCursors: string[];
   private animatedCursors: string[];
 
   /**
+   *
+   * Generate custom color cursor's `.svg`.
    *
    * @param svgDir directory where animated & static cursors located.
    *
@@ -31,8 +35,8 @@ export class ColoredSvgGenerator {
    *
    * @param colors `Colors` for static cursors.
    */
-  constructor(private svgDir: string, private colors: Colors) {
-    const svgParser = new SvgDirectoryParser(this.svgDir);
+  constructor(private inputs: Inputs) {
+    const svgParser = new SvgDirectoryParser(this.inputs.svgDir);
     this.animatedCursors = svgParser.getAnimatedCursors();
     this.staticCursors = svgParser.getStaticCursors();
   }
@@ -49,8 +53,11 @@ export class ColoredSvgGenerator {
       let content = fs.readFileSync(cursor, "utf-8").toString();
 
       content = content
-        .replace(new RegExp(keyColors.base, "g"), this.colors.base)
-        .replace(new RegExp(keyColors.outline, "g"), this.colors.outline);
+        .replace(new RegExp(keyColors.base, "g"), this.inputs.colors.base)
+        .replace(
+          new RegExp(keyColors.outline, "g"),
+          this.inputs.colors.outline
+        );
 
       cursors[`${path.basename(cursor)}`] = { content };
     });
@@ -70,16 +77,19 @@ export class ColoredSvgGenerator {
       let content = fs.readFileSync(cursor, "utf-8").toString();
 
       content = content
-        .replace(new RegExp(keyColors.base, "g"), this.colors.base)
-        .replace(new RegExp(keyColors.outline, "g"), this.colors.outline);
+        .replace(new RegExp(keyColors.base, "g"), this.inputs.colors.base)
+        .replace(
+          new RegExp(keyColors.outline, "g"),
+          this.inputs.colors.outline
+        );
 
       try {
         // === trying to replace `watch` color ===
 
-        if (!this.colors.watch?.background) {
+        if (!this.inputs.colors.watch?.background) {
           throw new Error("");
         }
-        const { background: b } = this.colors.watch;
+        const { background: b } = this.inputs.colors.watch;
         content = content.replace(
           new RegExp(keyColors.watch!.background, "g"),
           b
@@ -89,7 +99,7 @@ export class ColoredSvgGenerator {
 
         content = content.replace(
           new RegExp(keyColors.watch!.background, "g"),
-          this.colors.base
+          this.inputs.colors.base
         );
       }
 
