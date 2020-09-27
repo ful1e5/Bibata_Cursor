@@ -2,6 +2,12 @@ import fs from "fs";
 import path from "path";
 
 export default class SvgDirectoryParser {
+  /**
+   *
+   * Parse the `.svg` files directory.
+   *
+   * @param svgDir is relative/absolute path, Where source `.svg` files are stored.
+   */
   constructor(private svgDir: string) {
     if (!fs.existsSync(this.svgDir)) {
       throw new Error(`🚨 .svg files not found in ${this.svgDir}`);
@@ -9,6 +15,7 @@ export default class SvgDirectoryParser {
   }
 
   /**
+   *
    * Return all static cursors absolute paths from `svgDir/static` directory.
    */
   public getStaticCursors(): string[] {
@@ -30,8 +37,9 @@ export default class SvgDirectoryParser {
   }
 
   /**
-   * Return all animated cursors absolute paths.
-   * Looking inside <svgDir>/animated directory.
+   *
+   *
+   * Return all animated cursors absolute paths from `svgDir/animated` directory.
    */
   public getAnimatedCursors(): string[] {
     const cursorDir = path.resolve(this.svgDir, "animated");
