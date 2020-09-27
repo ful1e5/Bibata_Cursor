@@ -1,5 +1,5 @@
 import { resolve } from "path";
-import { exists, mkdirSync, writeFileSync } from "fs";
+import { access, mkdirSync, writeFileSync } from "fs";
 
 interface WriteSchemaData {
   path: string;
@@ -8,8 +8,8 @@ interface WriteSchemaData {
 }
 
 const writeSchemaData = ({ path, content, fileName }: WriteSchemaData) => {
-  exists(path, (exists) => {
-    if (!exists) {
+  access(path, (isAccessible) => {
+    if (!isAccessible) {
       mkdirSync(path, { recursive: true });
     }
   });
