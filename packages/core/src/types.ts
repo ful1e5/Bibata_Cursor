@@ -27,7 +27,7 @@ type Colors = {
 };
 
 interface ThemeColors {
-  [name: string]: Colors;
+  [themeName: string]: Colors;
 }
 
 interface PixelDiffRate {
@@ -35,4 +35,5 @@ interface PixelDiffRate {
     rate: number;
   };
 }
+
 export { Config, Frames, Colors, ThemeColors, PathConfig, PixelDiffRate };
