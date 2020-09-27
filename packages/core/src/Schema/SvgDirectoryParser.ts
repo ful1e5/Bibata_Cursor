@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-export class CursorSvgParser {
+export default class SvgDirectoryParser {
   constructor(private svgDir: string) {
     if (!fs.existsSync(this.svgDir)) {
       throw new Error(`🚨 .svg files not found in ${this.svgDir}`);
@@ -9,8 +9,7 @@ export class CursorSvgParser {
   }
 
   /**
-   * Return all static cursors absolute paths.
-   * Looking inside <svgDir>/static directory.
+   * Return all static cursors absolute paths from `svgDir/static` directory.
    */
   public getStaticCursors(): string[] {
     const cursorDir = path.resolve(this.svgDir, "static");
