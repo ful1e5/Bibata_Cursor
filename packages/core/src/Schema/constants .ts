@@ -7,9 +7,9 @@ export const outPaths = {
 };
 
 export const keyColors: Colors = {
-  base: "#00FF00",
-  outline: "#0000FF",
   watch: {
     background: "#FF0000"
-  }
+  },
+  base: "#00FF00",
+  outline: "#0000FF"
 };
