@@ -18,14 +18,16 @@ interface Frames {
   };
 }
 
-interface ColorSchemes {
-  [name: string]: {
-    base: string;
-    outline: string;
-    watch?: {
-      background: string;
-    };
+type Colors = {
+  base: string;
+  outline: string;
+  watch?: {
+    background: string;
   };
+};
+
+interface ThemeColors {
+  [name: string]: Colors;
 }
 
 interface PixelDiffRate {
@@ -33,9 +35,4 @@ interface PixelDiffRate {
     rate: number;
   };
 }
-
-interface KeyColors {
-  [name: string]: string;
-}
-
-export { Config, Frames, ColorSchemes, PathConfig, PixelDiffRate, KeyColors };
+export { Config, Frames, Colors, ThemeColors, PathConfig, PixelDiffRate };
