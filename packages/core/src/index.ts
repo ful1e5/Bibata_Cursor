@@ -1,16 +1,11 @@
-// import { renderCursors } from "./render";
-import { generateConfigs, GenerateConfigsArgs } from "./schema";
-import { renderCursors } from "./render";
+import { ThemeColors } from "./types";
 
-const createBitmaps = async ({
-  pathConfig,
-  colorSchemes,
-  themeName
-}: GenerateConfigsArgs) => {
-  const configs = generateConfigs({ pathConfig, colorSchemes, themeName });
-  await renderCursors(configs);
-
-  process.exit(0);
+const createBitmaps = async (config: {
+  themeColors: ThemeColors;
+  themeName: string;
+  bitmapsDir: string;
+}) => {
+  console.log(config);
 };
 
 export { createBitmaps };
