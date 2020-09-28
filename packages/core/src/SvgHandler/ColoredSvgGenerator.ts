@@ -44,7 +44,6 @@ export default class ColoredSvgGenerator {
   /**
    *
    * Generate `static` cursors .svg file according to `Theme Colors`.
-   *
    */
   public getColoredStaticCursors(): Cursors {
     const cursors: Cursors = {};
@@ -68,7 +67,6 @@ export default class ColoredSvgGenerator {
   /**
    *
    * Generate `animated` cursors .svg file according to `Theme Colors`.
-   *
    */
   public getColoredAnimatedCursors(): Cursors {
     const cursors: Cursors = {};

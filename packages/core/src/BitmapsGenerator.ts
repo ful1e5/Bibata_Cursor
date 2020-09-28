@@ -43,7 +43,9 @@ export class BitmapsGenerator {
   /**
    *
    * @param inputs `BitmapsGenerator` Class's object arguments.
+   *
    * @param themeName name of the bitmaps directory.
+   *
    * @param bitmapsDir `absolute` or `relative` path, Where cursors `.png` files generated.
    */
   constructor(

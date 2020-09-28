@@ -38,7 +38,6 @@ export default class SvgDirectoryParser {
 
   /**
    *
-   *
    * Return all animated cursors absolute paths from `svgDir/animated` directory.
    */
   public getAnimatedCursors(): string[] {
