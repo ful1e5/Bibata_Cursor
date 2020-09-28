@@ -1,11 +1,11 @@
-import { ColorSchemes } from "bibata-core/src/types";
+import { ThemeColors } from "bibata-core/src/types";
 
 // Common Colors
 const black = "#000000";
 const white = "#FFFFFF";
 const amber = "#FF8300";
 
-const colorSchemes: ColorSchemes = {
+const themeColors: ThemeColors = {
   Amber: {
     base: amber,
     outline: white,
@@ -23,4 +23,4 @@ const colorSchemes: ColorSchemes = {
   }
 };
 
-export { colorSchemes };
+export { themeColors };

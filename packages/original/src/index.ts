@@ -1,6 +1,14 @@
 import { createBitmaps } from "bibata-core";
-import * as pathConfig from "./config";
-import { colorSchemes } from "./color";
+import { themeColors } from "./colors";
 
-const themeName = "Bibata-Original";
-createBitmaps({ colorSchemes, pathConfig, themeName });
+import { resolve } from "path";
+
+const projectRoot = resolve("../../");
+const args = {
+  themeName: "Bibata-Modern",
+  svgDir: resolve("./src/svg"),
+  bitmapsDir: resolve(projectRoot, "bitmaps"),
+  themeColors
+};
+
+createBitmaps(args);
