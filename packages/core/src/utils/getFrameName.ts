@@ -1,5 +1,3 @@
-import path from "path";
-
 export const frameNumber = (index: number, endIndex: number) => {
   let result = "" + index;
   while (result.length < endIndex) {
@@ -8,7 +6,7 @@ export const frameNumber = (index: number, endIndex: number) => {
   return result;
 };
 
-export const getKeyName = (index: number, fileName: string) => {
+export const getFrameName = (index: number, fileName: string) => {
   const frame = frameNumber(index, 3);
-  return `${path.basename(fileName, ".svg")}-${frame}.png`;
+  return `${fileName}-${frame}.png`;
 };
