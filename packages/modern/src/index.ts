@@ -1,5 +1,5 @@
 import { createBitmaps } from "bibata-core";
-import { themeColors } from "./color";
+import { themeColors } from "./colors";
 
 import { resolve } from "path";
 
