@@ -5,7 +5,7 @@ import { Colors } from "../types";
 
 export type Inputs = { svgDir: string; colors: Colors };
 
-interface Cursors {
+export interface Cursors {
   [cursorName: string]: {
     content: string;
   };
@@ -46,7 +46,7 @@ export default class ColoredSvgGenerator {
    * Generate `static` cursors .svg file according to `Theme Colors`.
    *
    */
-  protected getSchemeStaticCursors(): Cursors {
+  public getColoredStaticCursors(): Cursors {
     const cursors: Cursors = {};
 
     this.staticCursors.map((cursor: string) => {
@@ -59,7 +59,7 @@ export default class ColoredSvgGenerator {
           this.inputs.colors.outline
         );
 
-      cursors[`${path.basename(cursor)}`] = { content };
+      cursors[`${path.basename(cursor, ".svg")}`] = { content };
     });
 
     return cursors;
@@ -70,7 +70,7 @@ export default class ColoredSvgGenerator {
    * Generate `animated` cursors .svg file according to `Theme Colors`.
    *
    */
-  protected getSchemeAnimatedCursors(): Cursors {
+  public getColoredAnimatedCursors(): Cursors {
     const cursors: Cursors = {};
 
     this.animatedCursors.map((cursor: string) => {
@@ -103,7 +103,7 @@ export default class ColoredSvgGenerator {
         );
       }
 
-      cursors[`${path.basename(cursor)}`] = { content };
+      cursors[`${path.basename(cursor, ".svg")}`] = { content };
     });
 
     return cursors;
