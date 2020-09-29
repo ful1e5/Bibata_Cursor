@@ -17,11 +17,8 @@ export class BitmapsGenerator {
   private readonly animatedCurs: Cursors;
 
   /**
-   *
    * @param source `BitmapsGenerator` Class's object arguments.
-   *
    * @param themeName name of the bitmaps directory.
-   *
    * @param bitmapsDir `absolute` or `relative` path, Where cursors `.png` files generated.
    */
   constructor(
@@ -38,7 +35,6 @@ export class BitmapsGenerator {
   }
 
   /**
-   *
    * Create directory if it doesn't exists.
    *
    * @param dirPath directory `absolute` or `relative` path.
@@ -54,7 +50,6 @@ export class BitmapsGenerator {
   /**
    *
    * @param browser `puppeteer` browser instance.
-   *
    * @param content `.svg` file code.
    */
   private async getSvgElement(
@@ -74,7 +69,6 @@ export class BitmapsGenerator {
   }
 
   /**
-   *
    * Close all pages of `Puppeteer.Browser`.
    *
    * @param browser `puppeteer` browser instance.
@@ -85,11 +79,9 @@ export class BitmapsGenerator {
   }
 
   /**
-   *
    * Generate `static` cursors bitmaps.
    *
    * @param browser `puppeteer` browser instance.
-   *
    * @param spinner `Ora` instance.
    */
   private async renderStaticCurs(browser: Browser, spinner: Ora) {
@@ -111,11 +103,20 @@ export class BitmapsGenerator {
   }
 
   /**
+   * Save animated cursors frames.
+   * @param frames Record of `binary` Buffer.
+   */
+  private saveFrames(frames: Frames) {
+    for (let [cursor, { buffer }] of Object.entries(frames)) {
+      const out_path = path.resolve(this.bitmapsDir, `${cursor}.png`);
+      fs.writeFileSync(out_path, buffer, { encoding: "binary" });
+    }
+  }
+  /**
    *
    * Generate `animated` cursors bitmaps.
    *
    * @param browser `puppeteer` browser instance.
-   *
    * @param spinner `Ora` instance.
    */
   private async renderAnimatedCurs(browser: Browser, spinner: Ora) {
@@ -150,6 +151,7 @@ export class BitmapsGenerator {
           omitBackground: true,
           encoding: "binary"
         });
+
         const matched = matchImages({
           img1Buff: frames[firstFrame].buffer,
           img2Buff: newFrame
@@ -163,6 +165,8 @@ export class BitmapsGenerator {
           index++;
         }
       }
+
+      this.saveFrames(frames);
     }
 
     await this.closeAllPages(browser);
