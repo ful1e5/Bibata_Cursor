@@ -4,10 +4,9 @@
   "description": "Sharp Corner Bibata Cursors 🏳️‍🌈",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf schemes",
     "dev": "nodemon src/index.ts",
     "dev:debug": "nodemon --inspect src/index.ts",
-    "build": "yarn clean && npx tsc --build",
+    "build": "npx tsc --build",
     "render": "yarn build && node dist/index.js"
   },
   "author": "Kaiz Khatri",
