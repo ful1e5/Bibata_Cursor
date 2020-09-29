@@ -20,7 +20,6 @@ export const matchImages = ({
     threshold: 0.25
   });
 
-  console.log(value);
   if (value <= 400) return true;
   return false;
 };
