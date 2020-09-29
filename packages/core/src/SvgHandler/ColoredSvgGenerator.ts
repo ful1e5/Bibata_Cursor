@@ -24,15 +24,11 @@ export default class ColoredSvgGenerator {
   private animatedCurs: string[];
 
   /**
-   *
    * Generate custom color cursor's `.svg`.
-   *
    * @param svgDir directory where animated & static cursors located.
-   *
    * `svgDir` must contain sub-directory `static` and `animated`.
    *
    * Example: `svgs/static`, `svgs/animated`
-   *
    * @param colors `Colors` for static cursors.
    */
   constructor(private readonly themeConfig: ThemeConfig) {
@@ -42,7 +38,6 @@ export default class ColoredSvgGenerator {
   }
 
   /**
-   *
    * Generate `static` cursors .svg file according to `Theme Colors`.
    */
   public getStaticCursors(): Cursors {
@@ -65,7 +60,6 @@ export default class ColoredSvgGenerator {
   }
 
   /**
-   *
    * Generate `animated` cursors .svg file according to `Theme Colors`.
    */
   public getAnimatedCursors(): Cursors {

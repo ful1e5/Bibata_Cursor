@@ -1,6 +1,9 @@
 import { BitmapsGenerator } from "./BitmapsGenerator";
 import { ThemeColors } from "./types";
 
+/**
+ * Create cursors `bitmaps` from `svg` & `ThemeColors`.
+ */
 const createBitmaps = async (config: {
   themeColors: ThemeColors;
   svgDir: string;

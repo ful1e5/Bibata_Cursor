@@ -36,8 +36,7 @@ export class BitmapsGenerator {
 
   /**
    * Create directory if it doesn't exists.
-   *
-   * @param dirPath directory `absolute` or `relative` path.
+   * @argument dirPath directory `absolute` or `relative` path.
    */
   private createDir(dirPath: string) {
     dirPath = path.resolve(dirPath);
@@ -48,9 +47,8 @@ export class BitmapsGenerator {
   }
 
   /**
-   *
-   * @param browser `puppeteer` browser instance.
-   * @param content `.svg` file code.
+   * @argument browser `puppeteer` browser instance.
+   * @argument content `.svg` file code.
    */
   private async getSvgElement(
     browser: Browser,
@@ -70,8 +68,7 @@ export class BitmapsGenerator {
 
   /**
    * Close all pages of `Puppeteer.Browser`.
-   *
-   * @param browser `puppeteer` browser instance.
+   * @argument browser `puppeteer` browser instance.
    */
   private async closeAllPages(browser: Browser) {
     const pages = await browser.pages();
@@ -80,9 +77,8 @@ export class BitmapsGenerator {
 
   /**
    * Generate `static` cursors bitmaps.
-   *
-   * @param browser `puppeteer` browser instance.
-   * @param spinner `Ora` instance.
+   * @argument browser `puppeteer` browser instance.
+   * @argument spinner `Ora` instance.
    */
   private async renderStaticCurs(browser: Browser, spinner: Ora) {
     for (let [cursor] of Object.entries(this.staticCurs)) {
@@ -104,7 +100,7 @@ export class BitmapsGenerator {
 
   /**
    * Save animated cursors frames.
-   * @param frames Record of `binary` Buffer.
+   * @argument frames Record of `binary` Buffer.
    */
   private saveFrames(frames: Frames) {
     for (let [cursor, { buffer }] of Object.entries(frames)) {
@@ -113,11 +109,9 @@ export class BitmapsGenerator {
     }
   }
   /**
-   *
    * Generate `animated` cursors bitmaps.
-   *
-   * @param browser `puppeteer` browser instance.
-   * @param spinner `Ora` instance.
+   * @argument browser `puppeteer` browser instance.
+   * @argument spinner `Ora` instance.
    */
   private async renderAnimatedCurs(browser: Browser, spinner: Ora) {
     for (let [cursor] of Object.entries(this.animatedCurs)) {
@@ -173,7 +167,6 @@ export class BitmapsGenerator {
   }
 
   /**
-   *
    * Generate cursors `bitmaps`.
    */
   public async generate() {
