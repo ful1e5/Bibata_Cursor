@@ -84,7 +84,7 @@ export class BitmapsGenerator {
 
   /**
    *
-   * Close all pages of `Puppeteer`.
+   * Close all pages of `Puppeteer.Browser`.
    *
    * @param browser `puppeteer` browser instance.
    */
