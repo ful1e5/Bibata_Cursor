@@ -5,7 +5,7 @@ import ora, { Ora } from "ora";
 import puppeteer, { Browser, ElementHandle } from "puppeteer";
 import ColoredSvgGenerator, {
   Cursors,
-  Inputs
+  ThemeConfig
 } from "./SvgHandler/ColoredSvgGenerator";
 import { Frames, PixelDiffRate } from "./types";
 import { getFrameName } from "./utils/getFrameName";
@@ -22,9 +22,33 @@ const pixelDiffRate: PixelDiffRate = {
 };
 
 export class BitmapsGenerator {
-  private static: Cursors;
-  private animated: Cursors;
+  private readonly staticCurs: Cursors;
+  private readonly animatedCurs: Cursors;
   private spinner: Ora;
+
+  /**
+   *
+   * @param source `BitmapsGenerator` Class's object arguments.
+   *
+   * @param themeName name of the bitmaps directory.
+   *
+   * @param bitmapsDir `absolute` or `relative` path, Where cursors `.png` files generated.
+   */
+  constructor(
+    private readonly source: ThemeConfig,
+    private readonly themeName: string,
+    private readonly bitmapsDir: string
+  ) {
+    this.createDir(this.bitmapsDir);
+
+    this.spinner = ora();
+    this.spinner.text = ` Preparing ${this.themeName} cursor theme colors...`;
+    this.spinner.start();
+
+    const themeSvgs = new ColoredSvgGenerator(this.source);
+    this.staticCurs = themeSvgs.getAnimatedCursors();
+    this.animatedCurs = themeSvgs.getAnimatedCursors();
+  }
 
   /**
    *
@@ -38,30 +62,6 @@ export class BitmapsGenerator {
     if (!fs.existsSync(dirPath)) {
       fs.mkdirSync(dirPath);
     }
-  }
-
-  /**
-   *
-   * @param inputs `BitmapsGenerator` Class's object arguments.
-   *
-   * @param themeName name of the bitmaps directory.
-   *
-   * @param bitmapsDir `absolute` or `relative` path, Where cursors `.png` files generated.
-   */
-  constructor(
-    private inputs: Inputs,
-    private themeName: string,
-    private bitmapsDir: string
-  ) {
-    this.createDir(this.bitmapsDir);
-
-    this.spinner = ora();
-    this.spinner.text = ` Preparing ${this.themeName} Color Schema...`;
-    this.spinner.start();
-
-    const svgs = new ColoredSvgGenerator(this.inputs);
-    this.static = svgs.getColoredAnimatedCursors();
-    this.animated = svgs.getColoredAnimatedCursors();
   }
 
   /**
@@ -103,10 +103,10 @@ export class BitmapsGenerator {
    *
    * @param browser `puppeteer` browser instance.
    */
-  private async generateStaticCursors(browser: Browser) {
-    for (let [cursor] of Object.entries(this.static)) {
+  private async renderStaticCurs(browser: Browser) {
+    for (let [cursor] of Object.entries(this.staticCurs)) {
       // Generating HTML Template
-      const { content } = this.static[`${cursor}`];
+      const { content } = this.staticCurs[`${cursor}`];
 
       // Configs
       const file = `${cursor}.png`;
@@ -114,7 +114,7 @@ export class BitmapsGenerator {
       const svgElement = await this.getSvgElement(browser, content);
 
       // Render
-      this.spinner.text = ` Bitmaping ${chalk.greenBright(file)}`;
+      this.spinner.text = ` Rendering ${chalk.greenBright(file)}`;
       await svgElement.screenshot({ omitBackground: true, path: out });
     }
 
@@ -127,10 +127,10 @@ export class BitmapsGenerator {
    *
    * @param browser `puppeteer` browser instance.
    */
-  private async generateAnimatedCursors(browser: Browser) {
-    for (let [cursor] of Object.entries(this.animated)) {
+  private async renderAnimatedCurs(browser: Browser) {
+    for (let [cursor] of Object.entries(this.animatedCurs)) {
       // Generating HTML Template
-      const { content } = this.static[`${cursor}`];
+      const { content } = this.staticCurs[`${cursor}`];
       const svgElement = this.getSvgElement(browser, content);
 
       // Config
@@ -140,7 +140,7 @@ export class BitmapsGenerator {
       const firstFrame = getFrameName(index, cursor);
 
       // 1st Frame
-      this.spinner.text = ` Bitmaping ${chalk.greenBright(firstFrame)}`;
+      this.spinner.text = ` Rendering ${chalk.greenBright(firstFrame)}`;
       frames[firstFrame] = {
         buffer: await (await svgElement).screenshot({
           omitBackground: true,
@@ -152,7 +152,7 @@ export class BitmapsGenerator {
       index++;
       while (!breakRendering) {
         const key = getFrameName(index, cursor);
-        this.spinner.text = ` Bitmaping ${chalk.greenBright(key)}`;
+        this.spinner.text = ` Rendering ${chalk.greenBright(key)}`;
 
         const newFrame = await (await svgElement).screenshot({
           omitBackground: true,
@@ -188,8 +188,8 @@ export class BitmapsGenerator {
     try {
       this.spinner.color = "yellow";
 
-      await this.generateStaticCursors(browser);
-      await this.generateAnimatedCursors(browser);
+      await this.renderStaticCurs(browser);
+      await this.renderAnimatedCurs(browser);
 
       this.spinner.text = ` ${chalk.blueBright(
         this.themeName

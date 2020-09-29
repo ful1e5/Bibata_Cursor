@@ -3,7 +3,7 @@ import path from "path";
 import SvgDirectoryParser from "./SvgDirectoryParser";
 import { Colors } from "../types";
 
-export type Inputs = { svgDir: string; colors: Colors };
+export type ThemeConfig = { svgDir: string; colors: Colors };
 
 export interface Cursors {
   [cursorName: string]: {
@@ -20,8 +20,8 @@ export const keyColors: Colors = {
 };
 
 export default class ColoredSvgGenerator {
-  private staticCursors: string[];
-  private animatedCursors: string[];
+  private staticCurs: string[];
+  private animatedCurs: string[];
 
   /**
    *
@@ -35,27 +35,27 @@ export default class ColoredSvgGenerator {
    *
    * @param colors `Colors` for static cursors.
    */
-  constructor(private inputs: Inputs) {
-    const svgParser = new SvgDirectoryParser(this.inputs.svgDir);
-    this.animatedCursors = svgParser.getAnimatedCursors();
-    this.staticCursors = svgParser.getStaticCursors();
+  constructor(private readonly themeConfig: ThemeConfig) {
+    const svgParser = new SvgDirectoryParser(this.themeConfig.svgDir);
+    this.animatedCurs = svgParser.getAnimatedCursors();
+    this.staticCurs = svgParser.getStaticCursors();
   }
 
   /**
    *
    * Generate `static` cursors .svg file according to `Theme Colors`.
    */
-  public getColoredStaticCursors(): Cursors {
+  public getStaticCursors(): Cursors {
     const cursors: Cursors = {};
 
-    this.staticCursors.map((cursor: string) => {
+    this.staticCurs.map((cursor: string) => {
       let content = fs.readFileSync(cursor, "utf-8").toString();
 
       content = content
-        .replace(new RegExp(keyColors.base, "g"), this.inputs.colors.base)
+        .replace(new RegExp(keyColors.base, "g"), this.themeConfig.colors.base)
         .replace(
           new RegExp(keyColors.outline, "g"),
-          this.inputs.colors.outline
+          this.themeConfig.colors.outline
         );
 
       cursors[`${path.basename(cursor, ".svg")}`] = { content };
@@ -68,26 +68,26 @@ export default class ColoredSvgGenerator {
    *
    * Generate `animated` cursors .svg file according to `Theme Colors`.
    */
-  public getColoredAnimatedCursors(): Cursors {
+  public getAnimatedCursors(): Cursors {
     const cursors: Cursors = {};
 
-    this.animatedCursors.map((cursor: string) => {
+    this.animatedCurs.map((cursor: string) => {
       let content = fs.readFileSync(cursor, "utf-8").toString();
 
       content = content
-        .replace(new RegExp(keyColors.base, "g"), this.inputs.colors.base)
+        .replace(new RegExp(keyColors.base, "g"), this.themeConfig.colors.base)
         .replace(
           new RegExp(keyColors.outline, "g"),
-          this.inputs.colors.outline
+          this.themeConfig.colors.outline
         );
 
       try {
         // === trying to replace `watch` color ===
 
-        if (!this.inputs.colors.watch?.background) {
+        if (!this.themeConfig.colors.watch?.background) {
           throw new Error("");
         }
-        const { background: b } = this.inputs.colors.watch;
+        const { background: b } = this.themeConfig.colors.watch;
         content = content.replace(
           new RegExp(keyColors.watch!.background, "g"),
           b
@@ -97,7 +97,7 @@ export default class ColoredSvgGenerator {
 
         content = content.replace(
           new RegExp(keyColors.watch!.background, "g"),
-          this.inputs.colors.base
+          this.themeConfig.colors.base
         );
       }
 
