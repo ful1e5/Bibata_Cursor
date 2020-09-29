@@ -7,19 +7,10 @@ import ColoredSvgGenerator, {
   Cursors,
   ThemeConfig
 } from "./SvgHandler/ColoredSvgGenerator";
-import { Frames, PixelDiffRate } from "./types";
+import { Frames } from "./types";
 import { getFrameName } from "./utils/getFrameName";
 import { generateRenderTemplate } from "./utils/htmlTemplate";
 import { matchImages } from "./utils/matchImages";
-
-const pixelDiffRate: PixelDiffRate = {
-  left_ptr_watch: {
-    rate: 100
-  },
-  wait: {
-    rate: 990
-  }
-};
 
 export class BitmapsGenerator {
   private readonly staticCurs: Cursors;
@@ -159,19 +150,18 @@ export class BitmapsGenerator {
           omitBackground: true,
           encoding: "binary"
         });
-
-        const diff = matchImages({
+        const matched = matchImages({
           img1Buff: frames[firstFrame].buffer,
           img2Buff: newFrame
         });
 
-        const { rate } = pixelDiffRate[cursor];
-        if (!(diff < rate)) {
-          frames[key] = { buffer: newFrame };
-        } else {
+        if (matched) {
           breakRendering = true;
+        } else {
+          frames[key] = { buffer: newFrame };
+          setTimeout(() => {}, 1);
+          index++;
         }
-        index++;
       }
     }
 
