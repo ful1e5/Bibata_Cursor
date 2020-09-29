@@ -130,8 +130,9 @@ export class BitmapsGenerator {
   private async renderAnimatedCurs(browser: Browser, spinner: Ora) {
     for (let [cursor] of Object.entries(this.animatedCurs)) {
       // Generating HTML Template
-      const { content } = this.staticCurs[cursor];
-      const svgElement = this.getSvgElement(browser, content);
+      const { content } = this.animatedCurs[cursor];
+
+      const svgElement = await this.getSvgElement(browser, content);
 
       // Config
       let index = 1;
@@ -142,7 +143,7 @@ export class BitmapsGenerator {
       // 1st Frame
       spinner.text = ` Rendering ${chalk.greenBright(firstFrame)}`;
       frames[firstFrame] = {
-        buffer: await (await svgElement).screenshot({
+        buffer: await svgElement.screenshot({
           omitBackground: true,
           encoding: "binary"
         })
@@ -154,7 +155,7 @@ export class BitmapsGenerator {
         const key = getFrameName(index, cursor);
         spinner.text = ` Rendering ${chalk.greenBright(key)}`;
 
-        const newFrame = await (await svgElement).screenshot({
+        const newFrame = await svgElement.screenshot({
           omitBackground: true,
           encoding: "binary"
         });
@@ -203,6 +204,7 @@ export class BitmapsGenerator {
       spinner.succeed();
     } catch (error) {
       console.error(error);
+      process.exit(1);
       spinner.fail();
     }
   }
