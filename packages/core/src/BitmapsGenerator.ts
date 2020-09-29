@@ -116,7 +116,7 @@ export class BitmapsGenerator {
       await svgElement.screenshot({ omitBackground: true, path: out });
     }
 
-    this.closeAllPages(browser);
+    await this.closeAllPages(browser);
   }
 
   /**
@@ -173,6 +173,8 @@ export class BitmapsGenerator {
         index++;
       }
     }
+
+    await this.closeAllPages(browser);
   }
 
   /**
