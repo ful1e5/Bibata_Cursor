@@ -1,6 +1,5 @@
 import { createBitmaps } from "bibata-core";
 import { themeColors } from "./colors";
-
 import { resolve } from "path";
 
 const projectRoot = resolve("../../");
