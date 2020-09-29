@@ -6,9 +6,10 @@ const createBitmaps = async (config: {
   svgDir: string;
   themeName: string;
   bitmapsDir: string;
-}) => {
+}): Promise<boolean> => {
   for (let [variant] of Object.entries(config.themeColors)) {
     const colors = config.themeColors[variant];
+    const themeName = `${config.themeName}-${variant}`;
     const source = {
       svgDir: config.svgDir,
       colors
@@ -16,12 +17,13 @@ const createBitmaps = async (config: {
 
     const themeBitmaps = new BitmapsGenerator(
       source,
-      config.themeName,
+      themeName,
       config.bitmapsDir
     );
 
-    themeBitmaps.generate();
+    await themeBitmaps.generate();
   }
+  return true;
 };
 
 export { createBitmaps };
