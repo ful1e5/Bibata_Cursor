@@ -24,7 +24,6 @@ const pixelDiffRate: PixelDiffRate = {
 export class BitmapsGenerator {
   private readonly staticCurs: Cursors;
   private readonly animatedCurs: Cursors;
-  private spinner: Ora;
 
   /**
    *
@@ -37,16 +36,13 @@ export class BitmapsGenerator {
   constructor(
     private readonly source: ThemeConfig,
     private readonly themeName: string,
-    private readonly bitmapsDir: string
+    private bitmapsDir: string
   ) {
+    this.bitmapsDir = path.resolve(bitmapsDir, themeName);
     this.createDir(this.bitmapsDir);
 
-    this.spinner = ora();
-    this.spinner.text = ` Preparing ${this.themeName} cursor theme colors...`;
-    this.spinner.start();
-
     const themeSvgs = new ColoredSvgGenerator(this.source);
-    this.staticCurs = themeSvgs.getAnimatedCursors();
+    this.staticCurs = themeSvgs.getStaticCursors();
     this.animatedCurs = themeSvgs.getAnimatedCursors();
   }
 
@@ -60,7 +56,7 @@ export class BitmapsGenerator {
     dirPath = path.resolve(dirPath);
 
     if (!fs.existsSync(dirPath)) {
-      fs.mkdirSync(dirPath);
+      fs.mkdirSync(dirPath, { recursive: true });
     }
   }
 
@@ -102,11 +98,13 @@ export class BitmapsGenerator {
    * Generate `static` cursors bitmaps.
    *
    * @param browser `puppeteer` browser instance.
+   *
+   * @param spinner `Ora` instance.
    */
-  private async renderStaticCurs(browser: Browser) {
+  private async renderStaticCurs(browser: Browser, spinner: Ora) {
     for (let [cursor] of Object.entries(this.staticCurs)) {
       // Generating HTML Template
-      const { content } = this.staticCurs[`${cursor}`];
+      const { content } = this.staticCurs[cursor];
 
       // Configs
       const file = `${cursor}.png`;
@@ -114,7 +112,7 @@ export class BitmapsGenerator {
       const svgElement = await this.getSvgElement(browser, content);
 
       // Render
-      this.spinner.text = ` Rendering ${chalk.greenBright(file)}`;
+      spinner.text = ` Rendering ${chalk.greenBright(cursor)}`;
       await svgElement.screenshot({ omitBackground: true, path: out });
     }
 
@@ -126,11 +124,13 @@ export class BitmapsGenerator {
    * Generate `animated` cursors bitmaps.
    *
    * @param browser `puppeteer` browser instance.
+   *
+   * @param spinner `Ora` instance.
    */
-  private async renderAnimatedCurs(browser: Browser) {
+  private async renderAnimatedCurs(browser: Browser, spinner: Ora) {
     for (let [cursor] of Object.entries(this.animatedCurs)) {
       // Generating HTML Template
-      const { content } = this.staticCurs[`${cursor}`];
+      const { content } = this.staticCurs[cursor];
       const svgElement = this.getSvgElement(browser, content);
 
       // Config
@@ -140,7 +140,7 @@ export class BitmapsGenerator {
       const firstFrame = getFrameName(index, cursor);
 
       // 1st Frame
-      this.spinner.text = ` Rendering ${chalk.greenBright(firstFrame)}`;
+      spinner.text = ` Rendering ${chalk.greenBright(firstFrame)}`;
       frames[firstFrame] = {
         buffer: await (await svgElement).screenshot({
           omitBackground: true,
@@ -152,7 +152,7 @@ export class BitmapsGenerator {
       index++;
       while (!breakRendering) {
         const key = getFrameName(index, cursor);
-        this.spinner.text = ` Rendering ${chalk.greenBright(key)}`;
+        spinner.text = ` Rendering ${chalk.greenBright(key)}`;
 
         const newFrame = await (await svgElement).screenshot({
           omitBackground: true,
@@ -180,25 +180,28 @@ export class BitmapsGenerator {
    * Generate cursors `bitmaps`.
    */
   public async generate() {
+    const spinner = ora();
+    spinner.text = ` Preparing ${this.themeName} .svg files...`;
+    spinner.start();
+
     const browser = await puppeteer.launch({
       ignoreDefaultArgs: [" --single-process ", "--no-sandbox"],
       headless: true
     });
 
     try {
-      this.spinner.color = "yellow";
+      spinner.color = "yellow";
+      await this.renderStaticCurs(browser, spinner);
+      await this.renderAnimatedCurs(browser, spinner);
 
-      await this.renderStaticCurs(browser);
-      await this.renderAnimatedCurs(browser);
-
-      this.spinner.text = ` ${chalk.blueBright(
+      spinner.text = ` ${chalk.blueBright(
         this.themeName
       )} bitmaps stored at ${chalk.greenBright(`${this.bitmapsDir}`)}`;
 
-      this.spinner.succeed();
+      spinner.succeed();
     } catch (error) {
       console.error(error);
-      this.spinner.fail();
+      spinner.fail();
     }
   }
 }
