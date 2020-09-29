@@ -1,3 +1,4 @@
+import { BitmapsGenerator } from "./BitmapsGenerator";
 import { ThemeColors } from "./types";
 
 const createBitmaps = async (config: {
@@ -6,8 +7,21 @@ const createBitmaps = async (config: {
   themeName: string;
   bitmapsDir: string;
 }) => {
-  // TODO:
-  console.log(config);
+  for (let [variant] of Object.entries(config.themeColors)) {
+    const colors = config.themeColors[variant];
+    const source = {
+      svgDir: config.svgDir,
+      colors
+    };
+
+    const themeBitmaps = new BitmapsGenerator(
+      source,
+      config.themeName,
+      config.bitmapsDir
+    );
+
+    themeBitmaps.generate();
+  }
 };
 
 export { createBitmaps };
