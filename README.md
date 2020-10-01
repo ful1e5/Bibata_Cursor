@@ -43,7 +43,7 @@
   <!-- Third Row -->
 
   </br >
-  <a href="https://github.com/ful1e5/Bibata_Cursor/blob/master/LICENSE" >
+  <a href="https://github.com/ful1e5/Bibata_Cursor/blob/main/LICENSE" >
     <img alt="License" src="https://img.shields.io/github/license/ful1e5/Bibata_Cursor?color=0081FB" />
   </a>
 
@@ -92,16 +92,16 @@
     - [Arch Linux/Manjaro](#arch-linuxmanjaro)
     - [Fedora](#fedora)
   - [Manual Install](#manual-install)
-      - [Linux/X11](#linuxx11)
-      - [Windows](#windows)
+    - [Linux/X11](#linuxx11)
+    - [Windows](#windows)
   - [Preview](#preview)
 - [Dependencies](#dependencies)
   - [Runtime Dependencies](#runtime-dependencies)
-      - [Install Runtime Dependencies](#install-runtime-dependencies)
-        - [macOS](#macos)
-        - [Debain/ubuntu](#debainubuntu)
-        - [ArchLinux/Manjaro](#archlinuxmanjaro)
-        - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+    - [Install Runtime Dependencies](#install-runtime-dependencies)
+      - [macOS](#macos)
+      - [Debain/ubuntu](#debainubuntu)
+      - [ArchLinux/Manjaro](#archlinuxmanjaro)
+      - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
   - [Build Dependencies](#build-dependencies)
     - [Node Packages](#node-packages)
     - [PyPi Packages](#pypi-packages)
@@ -310,7 +310,7 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 
 ### ⚡ Auto Build (using GitHub Actions)
 
-GitHub Actions is automatically runs on every `push`(on **master** & **dev** branch) and `pull request`(on **master** branch), You found theme resources in `artifact` section of **build**. GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/Bibata_Cursor/tree/master/.github/workflows) directory.
+GitHub Actions is automatically runs on every `push`(on **main** & **dev** branch) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **build**. GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/Bibata_Cursor/tree/main/.github/workflows) directory.
 
 ### Manual Build
 
