@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- `main` as **default** branch
 - Build process with `python` & [**clickgen**](https://github.com/ful1e5/clickgen)
 - Cursors Redesign => `all_scroll`, `pencil`, `wayland_cursor`, `xcursor` and all `pointer symbols`(with Bigger Symbols) cursors
 - `Bibata Oil` is **end of life**
@@ -23,7 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [CURSORS.md](./CURSORS.md) for all cursors information
 - [PLING.bbcode](./PLING.bbcode) for pling.com Product page docs
 - [GitHub Actions](https://github.com/ful1e5/Bibata_Cursor/actions) added
-- New Build with **10x** fatster rendering.
+- New Build with **10x** faster rendering.
 - Customizable Colors in **Bibata** Cursors.
 - Auto framing in animated cursors with [**pixelmatch**](https://github.com/mapbox/pixelmatch)
 
@@ -51,7 +52,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Glitch fixed in watch cursor(loading state)
 - Bibata Amber Color changed to #FF8000
-- Bibata Oil is inspired on adwaita gtk theme color #272728
+- Bibata Oil is inspired on **adwaita gtk** theme color #272728
 
 ## [v0.4.2.alpha.1] - 13 November 2019
 
