@@ -87,21 +87,21 @@
   - [Bibata Styles](#bibata-styles)
   - [Cursor Sizes](#cursor-sizes)
   - [Colors](#colors)
+  - [Preview](#preview)
   - [Quick install](#quick-install)
   - [Packages 📦](#packages-)
     - [Arch Linux/Manjaro](#arch-linuxmanjaro)
     - [Fedora](#fedora)
   - [Manual Install](#manual-install)
-    - [Linux/X11](#linuxx11)
-    - [Windows](#windows)
-  - [Preview](#preview)
+      - [Linux/X11](#linuxx11)
+      - [Windows](#windows)
 - [Dependencies](#dependencies)
   - [Runtime Dependencies](#runtime-dependencies)
-    - [Install Runtime Dependencies](#install-runtime-dependencies)
-      - [macOS](#macos)
-      - [Debain/ubuntu](#debainubuntu)
-      - [ArchLinux/Manjaro](#archlinuxmanjaro)
-      - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+      - [Install Runtime Dependencies](#install-runtime-dependencies)
+        - [macOS](#macos)
+        - [Debain/ubuntu](#debainubuntu)
+        - [ArchLinux/Manjaro](#archlinuxmanjaro)
+        - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
   - [Build Dependencies](#build-dependencies)
     - [Node Packages](#node-packages)
     - [PyPi Packages](#pypi-packages)
@@ -159,6 +159,28 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 ![Amber](https://imgur.com/5Jo6MSO.png)
 ![Classic](https://imgur.com/I5cRKE4.png)
 ![Ice ✓](https://imgur.com/avnR40g.png)
+
+<!-- Preview -->
+
+## Preview
+
+<p align="center">
+  <img title="Bibata Amber" width="90%" src="https://imgur.com/p60SQOq.png">
+  </br>
+  <sub>Bibata Amber</sub>
+</p>
+
+<p align="center">
+  <img title="Bibata Classic" width="90%" src="https://imgur.com/WaqGcUF.png">
+  </br>
+  <sub>Bibata Classic</sub>
+</p>
+
+<p align="center">
+  <img title="Bibata Ice" width="90%" src="https://imgur.com/ON1sd4H.png">
+  </br>
+  <sub>Bibata Ice</sub>
+</p>
 
 ## Quick install
 
@@ -225,31 +247,9 @@ sudo mv Bibata_* /usr/share/icons/
 
 1. unzip `Bibata_Windows.zip` file
 2. Open `Bibata_Windows/<Bibata_flavor>` in Explorer, and **right click** on `install.inf`.
-3. Click 'Install' from the context menu, and authorise the modifications to your system.
-4. Open _Control Panel_ > _Personalisation and Appearance_ > _Change mouse pointers_, and select **Bibata Cursors**.
+3. Click 'Install' from the context menu, and authorize the modifications to your system.
+4. Open _Control Panel_ > _Personalization and Appearance_ > _Change mouse pointers_, and select **Bibata Cursors**.
 5. Click '**Apply**'.
-
-<!-- Preview -->
-
-## Preview
-
-<p align="center">
-  <img title="Bibata Amber" width="90%" src="https://imgur.com/p60SQOq.png">
-  </br>
-  <sub>Bibata Amber</sub>
-</p>
-
-<p align="center">
-  <img title="Bibata Classic" width="90%" src="https://imgur.com/WaqGcUF.png">
-  </br>
-  <sub>Bibata Classic</sub>
-</p>
-
-<p align="center">
-  <img title="Bibata Ice" width="90%" src="https://imgur.com/ON1sd4H.png">
-  </br>
-  <sub>Bibata Ice</sub>
-</p>
 
 <!-- Build Dependencies -->
 
@@ -383,7 +383,7 @@ rm -rf ~/.icons/Bibata_* && cp -r Bibata_* ~/.icons/
 5. Click "**save as**" and type in the desired name.
 6. Click "**apply**" and "**ok**".
 
-<!-- Other Intersting projects -->
+<!-- Other Interesting projects -->
 
 # You may also like...
 
