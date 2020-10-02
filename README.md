@@ -1,7 +1,7 @@
 <!-- Branding -->
 
 <p align="center">
-  <img src="https://imgur.com/RnCSRwB.png" width="34%">
+  <img src="https://imgur.com/RnCSRwB.png" width="75%">
 </p>
 
 <p align="center">
