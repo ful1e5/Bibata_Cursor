@@ -1,13 +1,11 @@
 <!-- Branding -->
 
 <p align="center">
-  <img src="https://imgur.com/B5PjTsr.png" width="150">
-  <br />
-  <img src="https://imgur.com/ittvsw7.png" width="130">
+  <img src="https://imgur.com/RnCSRwB.png" >
 </p>
 
 <p align="center">
-  🚀 Material Based Cursor 🏳️‍🌈
+  <b>Material Based Cursors</b> 🚀
 </p>
 
 <!-- Badges -->
