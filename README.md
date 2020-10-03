@@ -434,5 +434,5 @@ Share your joy with **★**.
   <h1 align="center">(◣_◢)</h1>
 </p>
 <p align="center">
-  <sub>Don't <strong>scroll</strong>, You <strong>wakes</strong> me up</sub>
+  <sub>Stop <strong>scrolling</strong>, It's <strong>hurt</strong> me</sub>
 </p>
