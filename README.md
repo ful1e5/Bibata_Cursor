@@ -1,11 +1,11 @@
+<!-- Branding -->
+
 <p align="center">
-  <img src="https://imgur.com/852r65D.png" width="150">
-  <br />
-  <img src="https://imgur.com/g60k2RA.png" width="150">
+  <img src="https://imgur.com/cfkawDi.png" width="40%">
 </p>
 
 <p align="center">
-  🚀 Material Based Cursor 🏳️‍🌈
+  <b>Material Based Cursors</b> 🚀
 </p>
 
 <!-- Badges -->
@@ -13,9 +13,35 @@
 <p align="center">
 
   <!-- First Row -->
-  <img alt="Travis CI" src="https://travis-ci.org/KaizIqbal/Bibata_Cursor.svg?branch=master">
+
+  <a href="https://github.com/ful1e5/Bibata_Cursor/actions?query=workflow%3Abuild">
+    <img alt="GitHub Action Build" src="https://github.com/ful1e5/Bibata_Cursor/workflows/build/badge.svg" width="102" />
+  </a>
   
-  <a href="https://github.com/ful1e5/Bibata_Cursor/blob/master/LICENSE" >
+  <a href="https://www.codefactor.io/repository/github/ful1e5/bibata_cursor">
+    <img src="https://www.codefactor.io/repository/github/ful1e5/bibata_cursor/badge" alt="CodeFactor" />
+  </a>
+
+  <!-- Second Row -->
+
+  </br >
+  <a href="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html">
+    <img alt="npm type definitions" src="https://img.shields.io/npm/types/typescript">
+  </a>
+
+  <a href="https://github.com/puppeteer/puppeteer/">
+    <img alt="Puppeteer version" src="https://img.shields.io/github/package-json/dependency-version/ful1e5/apple_cursor/puppeteer">
+  </a>
+
+  <a href="https://github.com/ful1e5/clickgen">
+    <img alt="Clickgen" src="https://img.shields.io/badge/theme%20builder-clickgen-FD0542" />
+  </a>
+  
+  
+  <!-- Third Row -->
+
+  </br >
+  <a href="https://github.com/ful1e5/Bibata_Cursor/blob/main/LICENSE" >
     <img alt="License" src="https://img.shields.io/github/license/ful1e5/Bibata_Cursor?color=0081FB" />
   </a>
 
@@ -27,40 +53,92 @@
     <img alt="AUR version" src="https://img.shields.io/aur/version/bibata-cursor-theme">
   </a>
   
-  <!-- Second Row -->
+  
+  <!-- Fourth Row -->
+
+  <br />
+  <a href="https://www.pling.com/p/1197198/#files-panel">
+    <img alt="License" src="https://img.shields.io/badge/-Linux-grey?logo=linux" />
+  </a>
+
+  <a href="https://www.pling.com/p/1197198/#files-panel">
+    <img alt="License" src="https://img.shields.io/badge/-Windows-blue?logo=windows" />
+  </a>
+
+  <!-- Fifth Row -->
+
   <br />
   <a href="https://github.com/ful1e5">
     <img alt="Made By Kaiz"  src="https://kaiz.vercel.app/api/badge" width="133" />
   </a>
+
 </p>
 
 ---
 
-## Bibata ?
-
 <!-- Table Of Content -->
+
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
-- [Bibata Cursor](#bibata-?)
-- [Install](#install)
-- [Windows](#windows)
-- [Preview](#preview)
-- [Contributors](CONTRIBUTING.md#contributors)
+- [Bibata ?](#bibata-)
+  - [Bibata Styles](#bibata-styles)
+  - [Cursor Sizes](#cursor-sizes)
+  - [Colors](#colors)
+  - [Preview](#preview)
+  - [Quick install](#quick-install)
+  - [Packages 📦](#packages-)
+    - [Arch Linux/Manjaro](#arch-linuxmanjaro)
+    - [Fedora](#fedora)
+  - [Manual Install](#manual-install)
+      - [Linux/X11](#linuxx11)
+      - [Windows](#windows)
+- [Dependencies](#dependencies)
+  - [Runtime Dependencies](#runtime-dependencies)
+      - [Install Runtime Dependencies](#install-runtime-dependencies)
+        - [macOS](#macos)
+        - [Debain/ubuntu](#debainubuntu)
+        - [ArchLinux/Manjaro](#archlinuxmanjaro)
+        - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+  - [Build Dependencies](#build-dependencies)
+    - [Node Packages](#node-packages)
+    - [PyPi Packages](#pypi-packages)
+  - [Build From Scratch](#build-from-scratch)
+    - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
+    - [Manual Build](#manual-build)
+      - [Setup python environment](#setup-python-environment)
+      - [Compile From Source](#compile-from-source)
+      - [Install Node/PyPi Packages](#install-nodepypi-packages)
+      - [Build `Bibata`](#build-bibata)
+      - [Build `Bibata Modern` Only](#build-bibata-modern-only)
+      - [Build `Bibata Original` Only](#build-bibata-original-only)
+    - [Install Build Theme](#install-build-theme)
+      - [Linux](#linux)
+      - [Windows](#windows-1)
+- [You may also like...](#you-may-also-like)
+- [Bugs](#bugs)
+- [Getting Help](#getting-help)
+- [Contributing](#contributing)
 - [Credit](#credit)
 - [Support](#support)
-- [License](LICENSE)
-
 </details>
+
+<!-- Bibata intro -->
+
+# Bibata ?
 
 Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project masterelop for improve `Cursor` Experience.
 
-- **Bibata Classic :** Solid Black Theme.
-- **Bibata Oil :** Gnome Adwaita's Color based Theme.
-- **Bibata Ice :** Light Theme.
 - **Bibata Amber :** Yellowish Theme.
+- **Bibata Classic :** Solid Black Theme.
+- **Bibata Ice :** Light Theme.
 
-#### Cursor Sizes
+## Bibata Styles
+
+- **Bibata Original :** Sharp edge Bibata Cursors
+- **Bibata Modern :** Round edge Bibata Cursors
+
+## Cursor Sizes
 
 <kbd>24</kbd>
 <kbd>28</kbd>
@@ -74,68 +152,47 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 <kbd>88</kbd>
 <kbd>96</kbd>
 
-#### Colors
+## Colors
 
-![Classic](https://imgur.com/I5cRKE4.png)
-![Oil](https://imgur.com/VFLQDR9.png)
-![Ice ✓](https://imgur.com/avnR40g.png)
 ![Amber](https://imgur.com/5Jo6MSO.png)
+![Classic](https://imgur.com/I5cRKE4.png)
+![Ice ✓](https://imgur.com/avnR40g.png)
 
-### Build dependencies
+<!-- Preview -->
 
-- [git](https://git-scm.com/)
-- [python3](https://www.python.org/)
-- [pip](https://pypi.org/project/pip/)/[python-pillow](https://www.archlinux.org/packages/community/x86_64/python-pillow/)
-- [Inkscape](https://inkscape.org/)
-- [Xcursorgen](https://www.x.org/releases/X11R7.7/doc/man/man1/xcursorgen.1.xhtml)
+## Preview
 
-### Install dependencies
+<p align="center">
+  <img title="Bibata Amber" width="90%" src="https://imgur.com/p60SQOq.png">
+  </br>
+  <sub>Bibata Amber</sub>
+</p>
 
-**📝Note**: Snap/Flatpak packages raise issue in build (e.g. inkscape).
+<p align="center">
+  <img title="Bibata Classic" width="90%" src="https://imgur.com/WaqGcUF.png">
+  </br>
+  <sub>Bibata Classic</sub>
+</p>
 
-##### Debian/Ubuntu
+<p align="center">
+  <img title="Bibata Ice" width="90%" src="https://imgur.com/ON1sd4H.png">
+  </br>
+  <sub>Bibata Ice</sub>
+</p>
 
-```bash
-sudo apt install git python3 python3-pip inkscape x11-apps
-```
+## Quick install
 
-##### Fedora
+<p align="center">
+  <a href="https://www.pling.com/p/1197198/" >
+    <img title="Bibata Pling Store" width="40%" src="https://imgur.com/VxSgrWw.png">
+  </a>
+</p>
 
-```bash
-sudo dnf install git python37 python3-pip inkscape xcursorgen
-```
+## Packages 📦
 
-##### Arch Linux/Manjaro
+> **📝Note**: If you're having trouble with the packages please submit a request to the package maintainer before creating an issue.
 
-```bash
-sudo pacman -S git python-pillow inkscape xorg-xcursorgen
-```
-
-## Install
-
-### Basic Installation
-
-Bibata cursor is installed by running one of the following commands in your terminal. You can install this via the command-line with either `curl` or `wget`.
-
-##### via curl
-
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
-```
-
-##### via wget
-
-```bash
-sh -c "$(wget -O- https://raw.githubusercontent.com/KaizIqbal/Bibata_Cursor/master/Bibata.sh)"
-```
-
-Latest `Stable` & `Development` releases can be downloaded from [Here](https://github.com/KaizIqbal/Bibata_Cursor/releases)
-
-### Packages📦
-
-**📝Note**: If you're having trouble with the packages please submit a request to the package maintainer before creating an issue.
-
-#### Arch Linux/Manjaro
+### Arch Linux/Manjaro
 
 Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme) currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m). Can be installed via Pamac (preinstalled in Manjaro), Yay or any other [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers).
 
@@ -151,7 +208,7 @@ Yay command:
 yay -S bibata-cursor-theme
 ```
 
-#### Fedora
+### Fedora
 
 Fedora users can install from the [copr-repo](https://copr.fedorainfracloud.org/coprs/muhalantabli/copr-repo) currently maintained by _@muhalantabli_.
 
@@ -167,103 +224,201 @@ Installation command:
 sudo dnf install bibata-cursor-theme
 ```
 
-<!--
-From https://github.com/Silicasandwhich/Bibata_Cursor_Translucent#windows -->
+## Manual Install
+
+Latest `Stable` & `Development` releases can be downloaded from [Here](https://github.com/ful1e5/Bibata_Cursor/releases)
+
+#### Linux/X11
+
+```bash
+# extract `Bibata.tar.gz`
+tar -xvf Bibata.tar.gz
+
+# For local users
+mv Bibata_* ~/.icons/
+
+# For all users
+sudo mv Bibata_* /usr/share/icons/
+```
 
 #### Windows
 
-1. Get the lastest stable/dev-version Windows release from the [releases tab](https://github.com/KaizIqbal/Bibata_Cursor/releases) on the github page.
-2. Open the settings app.
-3. Go to Devices -> Mouse -> Additional Mouse Options.
-4. Go to the pointers tab.
-5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the Windows folder of your desired flavor.
-6. Click "save as" and type in the desired name.
-7. Click "apply" and "ok".
+1. unzip `Bibata_Windows.zip` file
+2. Open `Bibata_Windows/<Bibata_flavor>` in Explorer, and **right click** on `install.inf`.
+3. Click 'Install' from the context menu, and authorize the modifications to your system.
+4. Open _Control Panel_ > _Personalization and Appearance_ > _Change mouse pointers_, and select **Bibata Cursors**.
+5. Click '**Apply**'.
 
-### Manual Installation
+<!-- Build Dependencies -->
 
-Make sure you have installed all [Build dependencies](#build-dependencies).
+# Dependencies
 
-#### Build & Install
+## Runtime Dependencies
 
-```bash
-git clone https://github.com/KaizIqbal/Bibata_Cursor.git
-cd Bibata_Cursor/
-chmod +x build.sh
-./build.sh
-chmod +x ./install.sh
-```
+- libxcursor-dev
+- libx11-dev
+- libpng-dev (<=1.6)
 
-#### Install
+#### Install Runtime Dependencies
+
+##### macOS
 
 ```bash
-./install.sh                                         # For local user
-sudo ./install.sh                                    # For all users
+brew cask install xquartz libpng
 ```
 
-#### Uninstall
-
-##### Using Script
+##### Debain/ubuntu
 
 ```bash
-sudo ./install.sh                                    # From All Users
-./install.sh                                         # From Local User
+sudo apt install libx11-dev libxcursor-dev libpng-dev
 ```
 
-##### Without Script
+##### ArchLinux/Manjaro
 
 ```bash
-sudo rm -r /usr/share/icons/Bibata_*                 # From All Users
-rm -r ~/.icons/Bibata_*                              # From Local User
-
+sudo pacman -S libx11 libxcursor libpng
 ```
 
-> More information about script is found in [src](./src/README.md) directory.
+##### Fedora/Fedora Silverblue/CentOS/RHEL
 
-## Preview
+```bash
+sudo dnf install libx11-devel libxcursor-devel libpng-devel
+```
 
-<p align="center"><img title="Bibata Classic" src="https://imgur.com/IbdooDX.png">
-</br><sub>Bibata Classic</sub></p>
+## Build Dependencies
 
-<p align="center"><img title="Bibata Ice" src="https://imgur.com/5XRxnE2.png">
-</br><sub>Bibata Ice</sub></p>
+- [nodejs](https://nodejs.org/en/) (<=12.x.x)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/)
+- [python3](https://www.python.org/downloads/)
+- [pip3](https://pip.pypa.io/en/stable/installing/)
 
-<p align="center"><img title="Bibata Oil" src="https://imgur.com/3HRZeFw.png">
-</br><sub>Bibata Oil</sub></p>
+### Node Packages
 
-<p align="center"><img title="Bibata Amber" src="https://imgur.com/CylSo2K.png">
-</br><sub>Bibata Amber</sub></p>
+- [puppeteer](https://www.npmjs.com/package/puppeteer)
+- [pngjs](https://www.npmjs.com/package/pngjs)
+- [pixelmatch](https://www.npmjs.com/package/pixelmatch)
+- [ora](https://www.npmjs.com/package/ora)
+- [chalk](https://www.npmjs.com/package/chalk)
 
-## You may also like...
+### PyPi Packages
+
+- [clickgen](https://pypi.org/project/clickgen/)
+
+## Build From Scratch
+
+### ⚡ Auto Build (using GitHub Actions)
+
+GitHub Actions is automatically runs on every `push`(on **main** & **dev** branch) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **build**. GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/Bibata_Cursor/tree/main/.github/workflows) directory.
+
+### Manual Build
+
+#### Setup python environment
+
+```bash
+python3 -m pip install --upgrade pip                 # Update pip to latest
+python3 -m pip3 install virtualenv                   # Install python virtual environment
+virtualenv venv                                      # Create new virtualenv named `venv`
+source venv/bin/activate                             # Activate virtualenv
+
+# For Deactivate virtualenv
+deactivate
+```
+
+#### Compile From Source
+
+> Make sure your [python environment](#setup-python-environment) setup and `virtualenv` is **active**.
+
+#### Install Node/PyPi Packages
+
+```bash
+yarn install                                         # Install all Node Packages
+yarn py_install                                      # Install all PyPi Packages
+```
+
+#### Build `Bibata`
+
+```bash
+yarn render:bibata-modern                            # Render Bibata Modern Bitmaps
+yarn render:bibata-original                          # Render Bibata Original Bitmaps
+yarn build                                           # Build Windows & Linux packages
+```
+
+#### Build `Bibata Modern` Only
+
+```bash
+yarn render:bibata-modern                            # Render Bibata Modern Bitmaps
+yarn build                                           # Build Windows & Linux packages
+```
+
+#### Build `Bibata Original` Only
+
+```bash
+yarn render:bibata-original                          # Render Bibata Original Bitmaps
+yarn build                                           # Build Windows & Linux packages
+```
+
+After build `bitmaps` and `themes` directory are generated at project **root**.
+
+### Install Build Theme
+
+All builded cursor themes are available inside `themes` directory.
+
+#### Linux
+
+```bash
+cd ./themes
+
+# installing Theme to local user(recommend)
+rm -rf ~/.icons/Bibata_* && cp -r Bibata_* ~/.icons/
+```
+
+#### Windows
+
+1. Open the `settings` app.
+2. **Goto** `Devices` -> `Mouse` -> `Additional Mouse Options`.
+3. **Goto** the `pointers` tab.
+4. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `./themes/<Bibata_flavor>` folder.
+5. Click "**save as**" and type in the desired name.
+6. Click "**apply**" and "**ok**".
+
+<!-- Other Interesting projects -->
+
+# You may also like...
 
 - [**Bibata Extra**](https://github.com/KaizIqbal/Bibata_Extra_Cursor) - More Bibata!
 - [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
 - [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
 
-## Bugs
+<!-- Bug Report -->
 
-Bugs should be reported [here](https://github.com/KaizIqbal/Bibata_Cursor/issues) on the Github issues page.
+# Bugs
 
-## Getting help
+Bugs 🐛 should be reported [here](https://github.com/ful1e5/apple_cursor/issues) on the Github issues page.
 
-You can create a issue, I will help you.
+<!-- Help -->
 
-## Contributions and Suggestions
+# Getting Help
 
-<a href="https://github.com/KaizIqbal/Bibata_Cursor/graphs/contributors">
-  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/KaizIqbal/Bibata_Cursor?style=social">
-</a>
+You can create a **issue**, I will help you. 🙂
 
-Check [CONTRIBUTING.md](./CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
+<!-- Contributions and Suggestion -->
 
-## Credit
+# Contributing
+
+Check [CONTRIBUTING.md](CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
+
+<!-- This project isn't possible without these 👇🏻-->
+
+# Credit
 
 - [Adwaita](https://github.com/GNOME/adwaita-icon-theme)
 - [Dmz](https://github.com/GalliumOS/dmz-cursor-theme)
 - [Yaru](https://github.com/ubuntu/yaru)
 - Emojis are taken from [here](https://emojipedia.org/)
 
-## Support
+<!-- Support -->
+
+# Support
 
 Share your joy with **★**.
 
