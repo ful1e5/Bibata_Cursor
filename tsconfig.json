@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": ["es2015", "dom"],
+    "strict": true,
+    "typeRoots": ["./node_modules/@types"],
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "resolveJsonModule": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true
+  }
+}

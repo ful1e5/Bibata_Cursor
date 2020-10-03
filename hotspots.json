@@ -1,0 +1,99 @@
+{
+  "all_scroll": { "xhot": 100, "yhot": 100 },
+  "dotbox": { "xhot": 100, "yhot": 100 },
+  "move": { "xhot": 100, "yhot": 100 },
+  "plus": { "xhot": 100, "yhot": 100 },
+  "vertical_text": { "xhot": 100, "yhot": 100 },
+  "wait": { "xhot": 100, "yhot": 100 },
+  "wayland_cursor": { "xhot": 100, "yhot": 100 },
+  "x_cursor": { "xhot": 100, "yhot": 100 },
+  "xterm": { "xhot": 100, "yhot": 100 },
+
+  "bd_double_arrow": { "xhot": 98, "yhot": 100 },
+  "fd_double_arrow": { "xhot": 98, "yhot": 100 },
+
+  "bottom_left_corner": { "xhot": 31, "yhot": 172 },
+  "bottom_right_corner": { "xhot": 170, "yhot": 172 },
+
+  "bottom_side": { "xhot": 100, "yhot": 164 },
+  "bottom_tee": { "xhot": 100, "yhot": 164 },
+
+  "center_ptr": { "xhot": 98, "yhot": 131 },
+
+  "circle": { "xhot": 48, "yhot": 25 },
+  "context_menu": { "xhot": 48, "yhot": 25 },
+  "copy": { "xhot": 48, "yhot": 25 },
+  "link": { "xhot": 48, "yhot": 25 },
+  "pointer_move": { "xhot": 48, "yhot": 25 },
+
+  "cross": { "xhot": 98, "yhot": 96 },
+
+  "crossed_circle": { "xhot": 100, "yhot": 100 },
+
+  "crosshair": { "xhot": 99, "yhot": 99 },
+
+  "dnd_ask": { "xhot": 86, "yhot": 79 },
+  "dnd_copy": { "xhot": 86, "yhot": 79 },
+  "dnd_link": { "xhot": 86, "yhot": 79 },
+  "dnd_move": { "xhot": 86, "yhot": 79 },
+  "dnd_no_drop": { "xhot": 86, "yhot": 79 },
+
+  "dnd_none": { "xhot": 99, "yhot": 98 },
+
+  "grabbing": { "xhot": 106, "yhot": 79 },
+
+  "hand1": { "xhot": 113, "yhot": 95 },
+
+  "hand2": { "xhot": 88, "yhot": 32 },
+
+  "left_ptr_watch": { "xhot": 50, "yhot": 28 },
+
+  "left_ptr": { "xhot": 53, "yhot": 36 },
+
+  "left_side": { "xhot": 35, "yhot": 100 },
+
+  "left_tee": { "xhot": 165, "yhot": 95 },
+
+  "ll_angle": { "xhot": 34, "yhot": 165 },
+
+  "lr_angle": { "xhot": 167, "yhot": 164 },
+
+  "pencil": { "xhot": 37, "yhot": 161 },
+
+  "question_arrow": { "xhot": 102, "yhot": 102 },
+
+  "right_ptr": { "xhot": 150, "yhot": 29 },
+
+  "right_side": { "xhot": 163, "yhot": 98 },
+
+  "right_tee": { "xhot": 30, "yhot": 96 },
+
+  "sb_down_arrow": { "xhot": 100, "yhot": 126 },
+
+  "sb_h_double_arrow": { "xhot": 100, "yhot": 100 },
+  "sb_v_double_arrow": { "xhot": 100, "yhot": 100 },
+
+  "sb_left_arrow": { "xhot": 86, "yhot": 100 },
+
+  "sb_right_arrow": { "xhot": 113, "yhot": 100 },
+
+  "sb_up_arrow": { "xhot": 99, "yhot": 86 },
+
+  "tcross": { "xhot": 98, "yhot": 100 },
+
+  "top_left_corner": { "xhot": 29, "yhot": 27 },
+
+  "top_right_corner": { "xhot": 170, "yhot": 28 },
+
+  "top_side": { "xhot": 98, "yhot": 34 },
+
+  "top_tee": { "xhot": 98, "yhot": 29 },
+
+  "ul_angle": { "xhot": 34, "yhot": 35 },
+
+  "ur_angle": { "xhot": 164, "yhot": 34 },
+
+  "zoom_in": { "xhot": 90, "yhot": 89 },
+
+  "zoom_out": { "xhot": 93, "yhot": 90 }
+}
