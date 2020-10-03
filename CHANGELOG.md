@@ -91,7 +91,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release 🎊
 
-[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/main...v1.0.0
+[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.0...main
 [v1.0.0]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.2...v1.0.0
 [v0.4.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.2.beta.1...v0.4.2
 [v0.4.2.beta.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.2.alpha.2...v0.4.2.beta.1
