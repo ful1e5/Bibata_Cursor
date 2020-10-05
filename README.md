@@ -91,15 +91,15 @@
     - [Arch Linux/Manjaro](#arch-linuxmanjaro)
     - [Fedora](#fedora)
   - [Manual Install](#manual-install)
-      - [Linux/X11](#linuxx11)
-      - [Windows](#windows)
+    - [Linux/X11](#linuxx11)
+    - [Windows](#windows)
 - [Dependencies](#dependencies)
   - [Runtime Dependencies](#runtime-dependencies)
-      - [Install Runtime Dependencies](#install-runtime-dependencies)
-        - [macOS](#macos)
-        - [Debain/ubuntu](#debainubuntu)
-        - [ArchLinux/Manjaro](#archlinuxmanjaro)
-        - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+    - [Install Runtime Dependencies](#install-runtime-dependencies)
+      - [macOS](#macos)
+      - [Debain/ubuntu](#debainubuntu)
+      - [ArchLinux/Manjaro](#archlinuxmanjaro)
+      - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
   - [Build Dependencies](#build-dependencies)
     - [Node Packages](#node-packages)
     - [PyPi Packages](#pypi-packages)
@@ -235,10 +235,10 @@ Latest `Stable` & `Development` releases can be downloaded from [Here](https://g
 tar -xvf Bibata.tar.gz
 
 # For local users
-mv Bibata_* ~/.icons/
+mv Bibata-* ~/.icons/
 
 # For all users
-sudo mv Bibata_* /usr/share/icons/
+sudo mv Bibata-* /usr/share/icons/
 ```
 
 #### Windows
@@ -369,7 +369,7 @@ All builded cursor themes are available inside `themes` directory.
 cd ./themes
 
 # installing Theme to local user(recommend)
-rm -rf ~/.icons/Bibata_* && cp -r Bibata_* ~/.icons/
+rm -rf ~/.icons/Bibata-* && cp -r Bibata-* ~/.icons/
 ```
 
 #### Windows
