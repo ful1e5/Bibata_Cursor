@@ -1,2 +1,2 @@
-clickgen==1.1.5
+clickgen==1.1.7
 Pillow==7.2.0
