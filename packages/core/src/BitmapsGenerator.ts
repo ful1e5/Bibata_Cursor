@@ -174,8 +174,10 @@ export class BitmapsGenerator {
     spinner.text = ` Preparing ${this.themeName} .svg files...`;
     spinner.start();
 
+    // About browser args => https://chromium.googlesource.com/chromium/src/+/master/docs/linux/suid_sandbox_development.md#disabling-the-sandbox
+    // Issue => https://github.com/ful1e5/Bibata_Cursor/issues/75#issuecomment-703236554
     const browser = await puppeteer.launch({
-      ignoreDefaultArgs: [" --single-process ", "--no-sandbox"],
+      ignoreDefaultArgs: ["--no-sandbox", "--disable-setuid-sandbox"],
       headless: true
     });
 
