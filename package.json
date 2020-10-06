@@ -1,7 +1,7 @@
 {
   "name": "bibata-cursor",
-  "version": "1.0.0",
-  "description": "🚀 Material Based Cursor Theme 🏳️‍🌈",
+  "version": "1.0.1",
+  "description": "Material Based Cursors 🚀",
   "main": "index.js",
   "author": "Kaiz Khatri",
   "license": "GPL-3.0",
@@ -11,7 +11,8 @@
     "render:bibata-modern": "yarn workspace bibata-modern render",
     "render:bibata-original": "yarn workspace bibata-original render",
     "build": "rm -rf themes && python build.py",
-    "py_install": "pip freeze >> requirements.txt"
+    "py_install": "pip install -r requirements.txt",
+    "py_freeze": "pip freeze >> requirements.txt"
   },
   "workspaces": [
     "packages/*"

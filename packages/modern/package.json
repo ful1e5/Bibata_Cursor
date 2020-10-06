@@ -1,7 +1,7 @@
 {
   "name": "bibata-modern",
-  "version": "1.0.0",
-  "description": "Rounded Corner Bibata Cursors 🏳️‍🌈",
+  "version": "1.0.1",
+  "description": "Rounded edges bibata cursors 🏳️‍🌈",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",

@@ -1,7 +1,7 @@
 {
   "name": "bibata-core",
-  "version": "1.0.0",
-  "description": "Common code inside Bibata Project",
+  "version": "1.0.1",
+  "description": "Bibata core package",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Kaiz Khatri",
