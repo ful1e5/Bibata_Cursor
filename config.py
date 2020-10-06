@@ -9,7 +9,7 @@ out_dir = "./themes"
 
 # Build Config
 delay = 35
-sizes = [24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96]
+sizes = [22, 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96]
 
 # Configs For Each Theme in bitmaps directory
 configs = []

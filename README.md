@@ -91,15 +91,15 @@
     - [Arch Linux/Manjaro](#arch-linuxmanjaro)
     - [Fedora](#fedora)
   - [Manual Install](#manual-install)
-    - [Linux/X11](#linuxx11)
-    - [Windows](#windows)
+      - [Linux/X11](#linuxx11)
+      - [Windows](#windows)
 - [Dependencies](#dependencies)
   - [Runtime Dependencies](#runtime-dependencies)
-    - [Install Runtime Dependencies](#install-runtime-dependencies)
-      - [macOS](#macos)
-      - [Debain/ubuntu](#debainubuntu)
-      - [ArchLinux/Manjaro](#archlinuxmanjaro)
-      - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+      - [Install Runtime Dependencies](#install-runtime-dependencies)
+        - [macOS](#macos)
+        - [Debain/ubuntu](#debainubuntu)
+        - [ArchLinux/Manjaro](#archlinuxmanjaro)
+        - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
   - [Build Dependencies](#build-dependencies)
     - [Node Packages](#node-packages)
     - [PyPi Packages](#pypi-packages)
@@ -140,6 +140,7 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 
 ## Cursor Sizes
 
+<kbd>22</kbd>
 <kbd>24</kbd>
 <kbd>28</kbd>
 <kbd>32</kbd>
