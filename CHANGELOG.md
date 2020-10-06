@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **yarn** scripts updated
 - **yarn-packages** description updated
 - **Installation** docs updated in [README.md](./README.md) & [PLING.bbcode](./PLING.bbcode)
+- remove additional comments in **[PULL_REQUEST_TEMPLATE.md](./.github/PULL_REQUEST_TEMPLATE.md)**
 
 ## [v1.0.0] - 3 Oct 2020
 
