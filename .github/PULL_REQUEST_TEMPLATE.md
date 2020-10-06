@@ -18,7 +18,9 @@ merge of your pull request!
 
 <!-- if this is a feature change -->
 
-## What steps did you take to test this? This is required before I can merge, make sure to test the flow you've updated.
+## What steps did you take to test this?
+
+<!-- This is required before I can merge, make sure to test the flow you've updated. -->
 
 1. Step A
 2. Step B
@@ -31,11 +33,9 @@ merge of your pull request!
 <!-- to check an item, place an "x" in the box like so: "- [x] Documentation" -->
 
 - [ ] Documentation
-- [ ] Testing <!-- We can only merge the PR if this is checked -->
+- [ ] Testing
 - [ ] Ready to be merged
-      <!-- In your opinion, is this ready to be merged as soon as it's reviewed? -->
 - [ ] Added myself to contributors table
-      <!-- this is optional, see the contributing guidelines for instructions -->
 
 <!-- feel free to add additional comments -->
 <!-- Thank you for contributing! -->
