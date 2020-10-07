@@ -48,15 +48,18 @@ def pack_it(config) -> None:
     """
         Create Crisp 📦 Packages for Windows & X11 Cursor Theme.
     """
+    try:
+        x11_out_dir = path.join(out_dir, config['x11_out'])
+        win_out_dir = path.join(out_dir, config['win_out'])
 
-    x11_out_dir = path.join(out_dir, config['x11_out'])
-    win_out_dir = path.join(out_dir, config['win_out'])
+        # Rename directory
+        shutil.move(path.join(config['temp_folder'],
+                              config['name'], "x11"), x11_out_dir)
 
-    # Rename directory
-    shutil.move(path.join(config['temp_folder'],
-                          config['name'], "x11"), x11_out_dir)
-    shutil.move(path.join(config['temp_folder'],
-                          config['name'], "win"), win_out_dir)
+        shutil.move(path.join(config['temp_folder'],
+                              config['name'], "win"), win_out_dir)
 
-    # create install.inf file in Windows Theme
-    window_bundle(win_out_dir)
+        # create install.inf file in Windows Theme
+        window_bundle(win_out_dir)
+    except:
+        pass
