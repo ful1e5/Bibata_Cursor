@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Build only **x11** cursors by passing `--x11` flag in `build.py`
 - #76 Wrong implementation resize cursors **[closed]**
 - #74 `Pillow` pip requirements checking in installation of **clickgen**
 - Bump up **clickgen** version to **1.1.7**
