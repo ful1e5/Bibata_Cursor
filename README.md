@@ -195,18 +195,20 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 
 ### Arch Linux/Manjaro
 
-Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme) currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m). Can be installed via Pamac (preinstalled in Manjaro), Yay or any other [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers).
+Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme) currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m) & [_@yochananmarqos_](https://aur.archlinux.org/packages/?K=yochananmarqos&SeB=m). Can be installed via Pamac (preinstalled in Manjaro), Yay or any other [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers).
 
 Pamac command:
 
 ```bash
-pamac install bibata-cursor-theme
+pamac build bibata-cursor-theme
+pamac build bibata-cursor-theme-bin                  # pre-built binary
 ```
 
 Yay command:
 
 ```bash
 yay -S bibata-cursor-theme
+yay -S bibata-cursor-theme-bin                       # pre-built binary
 ```
 
 ### Fedora
