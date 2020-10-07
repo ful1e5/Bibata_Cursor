@@ -343,21 +343,30 @@ yarn py_install                                      # Install all PyPi Packages
 ```bash
 yarn render:bibata-modern                            # Render Bibata Modern Bitmaps
 yarn render:bibata-original                          # Render Bibata Original Bitmaps
-yarn build                                           # Build Windows & Linux packages
+
+# Build cursors packages
+yarn build                                           # Build Windows & X11 packages
+yarn build:x11                                       # Build only X11 packages
 ```
 
 #### Build `Bibata Modern` Only
 
 ```bash
 yarn render:bibata-modern                            # Render Bibata Modern Bitmaps
-yarn build                                           # Build Windows & Linux packages
+
+# Build cursors packages
+yarn build                                           # Build Windows & X11 cursors
+yarn build:x11                                       # Build only X11 cursors
 ```
 
 #### Build `Bibata Original` Only
 
 ```bash
 yarn render:bibata-original                          # Render Bibata Original Bitmaps
-yarn build                                           # Build Windows & Linux packages
+
+# Build cursors packages
+yarn build                                           # Build Windows & Linux cursors
+yarn build:x11                                       # Build only X11 cursors
 ```
 
 After build `bitmaps` and `themes` directory are generated at project **root**.
