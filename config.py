@@ -27,6 +27,7 @@ for directory in os.listdir(bitmaps_dir):
 with open("./package.json") as f:
     data = json.loads(f.read())
     author = data["author"]
+    version = data["version"]
 
 # Windows Cursors Config
 windows_cursors = {

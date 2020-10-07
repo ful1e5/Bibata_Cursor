@@ -5,7 +5,7 @@ import json
 import sys
 
 from os import path, listdir, rename, remove
-from config import name, bitmaps_dir, out_dir, window_install_inf_content, windows_cursors
+from config import name, version, bitmaps_dir, out_dir, window_install_inf_content, windows_cursors
 
 
 def window_bundle(win_out_dir: str) -> None:
@@ -31,10 +31,7 @@ def init_build() -> None:
         Print build version.
         Remove previously built packages && Check Bitmaps.
     """
-    with open("./package.json", "r") as package_file:
-        data = json.loads(package_file.read())
-        version = data['version']
-        print("⚡ Bibata Builder Version %s" % version)
+    print("⚡ Bibata Builder Version %s" % version)
 
     # cleanup old packages
     if path.exists(out_dir):
