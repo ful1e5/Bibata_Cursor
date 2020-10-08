@@ -2,6 +2,6 @@
 # -*- coding: utf-8 -*-
 
 from .cursor import CursorBuilder
-from .provider import ConfigsProvider
+from .config import ConfigProvider
 
 __version__: str = "1.0.1"

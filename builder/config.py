@@ -6,21 +6,22 @@ import log
 import sys
 import json
 import builder
+import tempfile
 from os import path, listdir
 import shutil
 
 
-class ConfigsProvider():
+class ConfigProvider():
     """
         Configure `Bibata` building process.
     """
 
     # Build Config
-    __delay = 35
-    __sizes = [22, 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96]
+    delay = 35
+    sizes = [22, 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96]
 
     # Windows Cursors Config
-    __windows_cursors = {
+    windows_cursors = {
         "left_ptr_watch.ani": "AppStarting.ani",
         "left_ptr.cur": "Arrow.cur",
         "crosshair.cur": "Cross.cur",
@@ -52,8 +53,9 @@ class ConfigsProvider():
 
         os.mkdir(out_dir)
 
-        self.__bitmaps_dir: str = bitmaps_dir
-        self.__out_dir: str = out_dir
+        self.bitmaps_dir: str = bitmaps_dir
+        self.temp_out_dir: str = tempfile.mkdtemp()
+        self.out_dir: str = out_dir
 
         # read hotspots file
         with open(path.join(builder.__path__[0], "hotspots.json")) as hotspot_file:
