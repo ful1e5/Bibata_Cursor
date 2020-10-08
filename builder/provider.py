@@ -2,25 +2,56 @@
 # -*- coding: utf-8 -*-
 
 import os
+import sys
 import builder
-from os import path
+from os import path, listdir
 import shutil
 
 
-class ConfigProvider(object):
+class ConfigProvider():
     """
-    Configure `Bibata` building process.
+        Configure `Bibata` building process.
     """
+
+    # Build Config
+    __delay = 35
+    __sizes = [22, 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96]
+
+    # Windows Cursors Config
+    __windows_cursors = {
+        "left_ptr_watch.ani": "AppStarting.ani",
+        "left_ptr.cur": "Arrow.cur",
+        "crosshair.cur": "Cross.cur",
+        "hand2.cur": "Hand.cur",
+        "pencil.cur": "Handwriting.cur",
+        "dnd-ask.cur": "Help.cur",
+        "xterm.cur": "IBeam.cur",
+        "circle.cur": "NO.cur",
+        "all-scroll.cur": "SizeAll.cur",
+        "bd_double_arrow.cur": "SizeNESW.cur",
+        "sb_v_double_arrow.cur": "SizeNS.cur",
+        "fd_double_arrow.cur": "SizeNWSE.cur",
+        "sb_h_double_arrow.cur": "SizeWE.cur",
+        "sb_up_arrow.cur": "UpArrow.cur",
+        "wait.ani": "Wait.ani",
+    }
 
     def __init__(self, bitmaps_dir: str, out_dir: str) -> None:
 
-        self._bitmaps_dir: str = bitmaps_dir
-        self._out_dir: str = out_dir
-
-        if (path.isdir(out_dir)):
+        # cleanup old packages
+        if path.exists(out_dir):
             shutil.rmtree(out_dir)
 
+        # Checking Bitmaps directory
+        if not path.exists(bitmaps_dir):
+            print(
+                "⚠ BITMAPS NOT FOUND.\n\n`yarn install && yarn render` to Generates Bitmaps")
+            sys.exit(1)
+
         os.mkdir(out_dir)
+
+        self.__bitmaps_dir: str = bitmaps_dir
+        self.__out_dir: str = out_dir
 
     def get_windows_script(self, theme_name: str, author: str) -> str:
 
