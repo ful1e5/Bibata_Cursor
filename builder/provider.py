@@ -2,13 +2,15 @@
 # -*- coding: utf-8 -*-
 
 import os
+import log
 import sys
+import json
 import builder
 from os import path, listdir
 import shutil
 
 
-class ConfigProvider():
+class ConfigsProvider():
     """
         Configure `Bibata` building process.
     """
@@ -52,6 +54,10 @@ class ConfigProvider():
 
         self.__bitmaps_dir: str = bitmaps_dir
         self.__out_dir: str = out_dir
+
+        # read hotspots file
+        with open(path.join(builder.__path__[0], "hotspots.json")) as hotspot_file:
+            self.hotspots = json.loads(hotspot_file.read())
 
     def get_windows_script(self, theme_name: str, author: str) -> str:
 

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import builder
-from .provider import ConfigProvider
+from .provider import ConfigsProvider
 
 
 class CursorBuilder():
@@ -10,7 +10,7 @@ class CursorBuilder():
     docstring
     """
 
-    def __init__(self, config: ConfigProvider):
+    def __init__(self, configs: ConfigsProvider):
 
         print("⚡ Bibata Builder Version %s" % builder.__version__)
-        self.__config = config
+        self.__configs = configs

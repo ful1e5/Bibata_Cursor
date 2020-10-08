@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from .provider import ConfigProvider
+from .provider import ConfigsProvider
 
 
 class Packager():
@@ -9,5 +9,5 @@ class Packager():
         Create Crisp 📦 Packages for Windows & X11 Cursor Theme.
     """
 
-    def __init__(self, config: ConfigProvider):
-        self.__config = config
+    def __init__(self, configs: ConfigsProvider):
+        self.__configs = configs
