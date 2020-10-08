@@ -21,37 +21,45 @@ class CursorBuilder():
         self.__windows_out = name + "-" + "Windows"
         self.__temp_out_dir = tempfile.mkdtemp()
 
-    def __window_bundle(self, win_out_dir: str):
+    def __window_bundle(self, win_theme_dir: str):
         # Remove & Rename cursors
         # If Key found => Rename else Remove
-        for cursor in listdir(win_out_dir):
-            old_path = path.join(win_out_dir, cursor)
+        for cursor in listdir(win_theme_dir):
+            old_path = path.join(win_theme_dir, cursor)
 
             try:
                 new_path = path.join(
-                    win_out_dir, self.__config.windows_cursors[cursor])
+                    win_theme_dir, self.__config.windows_cursors[cursor])
                 rename(old_path, new_path)
             except KeyError:
                 remove(old_path)
 
         # creating install.inf file
-        install_inf_path = path.join(win_out_dir, "install.inf")
+        install_inf_path = path.join(win_theme_dir, "install.inf")
+        content = self.__config.get_windows_script(
+            theme_name=self.__name, author="Kaiz Khatri")
+
         with open(install_inf_path, "w") as file:
-            file.write(self.__config.get_windows_script(
-                theme_name=self.__name, author="Kaiz Khatri"))
+            file.write(content)
 
     def __pack_win(self):
         win_out_dir = path.join(self.__config.out_dir, self.__windows_out)
-        shutil.move(path.join(self.__temp_out_dir,
-                              self.__name, "win"), win_out_dir)
+        cur_dir = path.join(self.__temp_out_dir, self.__name, "win")
+
+        src = path.abspath(cur_dir)
+        dest = path.abspath(win_out_dir)
+        shutil.move(src, dest)
 
         # create install.inf file in Windows Theme
-        self.__window_bundle(win_out_dir)
+        self.__window_bundle(win_theme_dir=dest)
 
     def __pack_x11(self):
         x11_out_dir = path.join(self.__config.out_dir, self.__x11_out)
-        shutil.move(path.join(self.__temp_out_dir,
-                              self.__name, "x11"), x11_out_dir)
+        cur_dir = path.join(self.__temp_out_dir, self.__name, "x11")
+
+        src = path.abspath(cur_dir)
+        dest = path.abspath(x11_out_dir)
+        shutil.move(src, dest)
 
     def build_x11_cursors(self):
         print('🌈 Building %s Theme ...' % self.__name)
