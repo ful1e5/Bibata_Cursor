@@ -21,11 +21,13 @@ with open(path.join(__path__[0], "hotspots.json")) as hotspot_file:
 
 class ConfigProvider():
     """
-        Configure `Bibata` building process.
+        Configure `Bibata` building process 🔧.
     """
 
     def __init__(self, bitmaps_dir: str, out_dir: str) -> None:
-
+        """
+        docsstring
+        """
         # cleanup old packages
         if path.exists(out_dir):
             shutil.rmtree(out_dir)
@@ -43,6 +45,9 @@ class ConfigProvider():
         self.out_dir: str = out_dir
 
     def get_windows_script(self, theme_name: str) -> str:
+        """
+        docsstring
+        """
         with open(path.join(__path__[0], "windows.inf")) as f:
             data = f.read()
             inf_content = data.replace(

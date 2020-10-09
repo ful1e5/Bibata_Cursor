@@ -28,7 +28,7 @@ windows_cursors = {
 
 class Bundler():
     """
-    docstring
+        Create crisp package for Bibata Windows & X11 packages 📦.
     """
 
     def __init__(self, name: str, config: ConfigProvider) -> None:
