@@ -4,5 +4,10 @@
 import logging
 import os
 
-logging.basicConfig(filename='%s/build.log' % os.getcwd(), filemode='w',
-                    format='%(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
+
+def save_logs_to_file() -> None:
+    """
+     Save `clickgen` logs to `build.log` in current working directory
+    """
+    logging.basicConfig(filename='%s/build.log' % os.getcwd(), filemode='w',
+                        format='%(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
