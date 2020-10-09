@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from .cursor import CursorBuilder
-from .config import ConfigProvider
+from .log import save_logs_to_file
+save_logs_to_file()
 
 __version__: str = "1.0.1"
+__author__: str = "Kaiz Khatri"
