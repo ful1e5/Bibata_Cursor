@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import os
 import sys
 import json
 import shutil
 import tempfile
-from os import path
+from os import path, mkdir
 
 from . import __path__, __author__
 
@@ -32,7 +31,7 @@ class ConfigProvider():
         if path.exists(out_dir):
             shutil.rmtree(out_dir)
 
-        os.mkdir(out_dir)
+        mkdir(out_dir)
 
         # Checking Bitmaps directory
         if not path.exists(bitmaps_dir):
@@ -40,9 +39,9 @@ class ConfigProvider():
                 "⚠ BITMAPS NOT FOUND.\n\n`yarn install && yarn render` to Generates Bitmaps")
             sys.exit(1)
 
-        self.bitmaps_dir: str = bitmaps_dir
+        self.bitmaps_dir: str = path.abspath(bitmaps_dir)
         self.temp_out_dir: str = tempfile.mkdtemp()
-        self.out_dir: str = out_dir
+        self.out_dir: str = path.abspath(out_dir)
 
     def get_windows_script(self, theme_name: str) -> str:
         """

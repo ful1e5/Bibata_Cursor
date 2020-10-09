@@ -1,16 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from builder import __version__
+from builder import __name__, __version__, __author__, __info__, __email__, __url__
 from setuptools import setup, find_namespace_packages
 
 setup(
-    name="builder",
+    name=__name__,
     version=__version__,
-    description="Bibata theme builder 📦",
-    url="https://github.com/ful1e5/Bibata_Cursor/",
-    author="Kaiz Khatri",
-    author_email="kaizmandhu@gmail.com",
+    description=__info__,
+    url=__url__,
+    author=__author__,
+    author_email=__email__,
     install_requires=["Pillow>=7.2.0", "clickgen>=1.1.7"],
     packages=find_namespace_packages(include=['builder']),
     classifiers=[
