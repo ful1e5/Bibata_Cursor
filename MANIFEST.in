@@ -1,2 +1,2 @@
-recursive-include builder/windows.inf
-recursive-include builder/hotspots.json
+include builder/windows.inf
+include builder/hotspots.json
