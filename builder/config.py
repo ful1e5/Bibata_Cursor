@@ -4,7 +4,6 @@
 import sys
 import json
 import shutil
-import tempfile
 from os import path, mkdir
 
 from . import __path__, __author__
@@ -40,7 +39,6 @@ class ConfigProvider():
             sys.exit(1)
 
         self.bitmaps_dir: str = path.abspath(bitmaps_dir)
-        self.temp_out_dir: str = tempfile.mkdtemp()
         self.out_dir: str = path.abspath(out_dir)
 
     def get_windows_script(self, theme_name: str) -> str:
