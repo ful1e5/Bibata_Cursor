@@ -7,12 +7,14 @@
   "license": "GPL-3.0",
   "private": true,
   "scripts": {
-    "clean": "rm -rf bitmaps",
+    "clean": "rm -rf bitmaps themes",
     "render:bibata-modern": "yarn workspace bibata-modern render",
     "render:bibata-original": "yarn workspace bibata-original render",
     "build": "rm -rf themes && python build.py",
     "build:x11": "rm -rf themes && python build.py --x11",
-    "py_install": "pip install -r requirements.txt",
+    "build:win": "rm -rf themes && python build.py --win",
+    "py_builder_install":"python setup.py install",
+    "py_install": "pip install -r requirements.txt && yarn py_builder_install",
     "py_freeze": "pip freeze >> requirements.txt"
   },
   "workspaces": [

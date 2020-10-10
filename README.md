@@ -335,7 +335,7 @@ deactivate
 
 ```bash
 yarn install                                         # Install all Node Packages
-yarn py_install                                      # Install all PyPi Packages
+yarn py_install                                      # Install all PyPi & builder Packages
 ```
 
 #### Build `Bibata`
@@ -346,7 +346,10 @@ yarn render:bibata-original                          # Render Bibata Original Bi
 
 # Build cursors packages
 yarn build                                           # Build Windows & X11 packages
+# OR
 yarn build:x11                                       # Build only X11 packages
+# OR
+yarn build:win                                       # Build only Windows cursors
 ```
 
 #### Build `Bibata Modern` Only
@@ -356,7 +359,10 @@ yarn render:bibata-modern                            # Render Bibata Modern Bitm
 
 # Build cursors packages
 yarn build                                           # Build Windows & X11 cursors
+# OR
 yarn build:x11                                       # Build only X11 cursors
+# OR
+yarn build:win                                       # Build only Windows cursors
 ```
 
 #### Build `Bibata Original` Only
@@ -366,7 +372,10 @@ yarn render:bibata-original                          # Render Bibata Original Bi
 
 # Build cursors packages
 yarn build                                           # Build Windows & Linux cursors
+# OR
 yarn build:x11                                       # Build only X11 cursors
+# OR
+yarn build:win                                       # Build only Windows cursors
 ```
 
 After build `bitmaps` and `themes` directory are generated at project **root**.
