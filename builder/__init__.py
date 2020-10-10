@@ -4,7 +4,7 @@
 from .log import save_logs_to_file
 save_logs_to_file()
 
-__name__: str = "builder"
+__pkg_name__: str = "builder"
 __version__: str = "1.0.1"
 __author__: str = "Kaiz Khatri"
 __info__: str = "⚡ Bibata Builder - v%s" % __version__

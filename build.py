@@ -30,7 +30,7 @@ def main() -> None:
     parser = get_args_parser()
     try:
         args = parser.parse_args()
-    except:
+    except Exception:
         sys.exit(0)
 
     bitmaps_dir = "./bitmaps"

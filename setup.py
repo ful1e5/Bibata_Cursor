@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from builder import __name__, __version__, __author__, __info__, __email__, __url__
+from builder import __pkg_name__, __version__, __author__, __info__, __email__, __url__
 from setuptools import setup, find_namespace_packages
 
 setup(
-    name=__name__,
+    name=__pkg_name__,
     version=__version__,
     description=__info__,
     url=__url__,
