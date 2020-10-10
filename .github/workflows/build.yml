@@ -8,13 +8,6 @@ on:
       - LICENSE
     branches: [main, dev]
 
-  pull_request:
-    paths-ignore:
-      - "**.md"
-      - "**.bbcode"
-      - LICENSE
-    branches: [main]
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -67,12 +60,11 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install --upgrade setuptools
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          python setup.py install
         continue-on-error: false
 
       - name: Generating `Bibata` Cursor Theme
-        run: |
-          python setup.py install
-          python build.py
+        run: python build.py
 
       - name: Compressing Artifacts
         run: |
