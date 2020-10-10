@@ -31,23 +31,20 @@ class Bundler():
         Create crisp package for Bibata Windows & X11 packages 📦.
     """
 
-    def __init__(self, name: str, config: ConfigProvider) -> None:
+    def __init__(self, theme_name: str, config: ConfigProvider) -> None:
         """
         docsstring
         """
-        self.__temp_dir = config.temp_out_dir
-        self.__x11 = path.join(config.out_dir, name)
-        self.__win = path.join(config.out_dir, name + "-Windows")
-
-        self.__cur_win_dir = path.join(config.temp_out_dir, name, "win")
-        self.__cur_x11_dir = path.join(config.temp_out_dir, name, "x11")
-        self.__content = config.get_windows_script(name)
+        self.__name = theme_name
+        self.__x11_dest = path.join(config.out_dir, theme_name)
+        self.__win_dest = path.join(config.out_dir, theme_name + "-Windows")
+        self.__content = config.get_windows_script(theme_name)
 
     def __save_win_install_script(self) -> None:
         """
         docstring
         """
-        file_path = path.join(self.__win, "install.inf")
+        file_path = path.join(self.__win_dest, "install.inf")
         with open(file_path, "w") as file:
             file.write(self.__content)
 
@@ -57,43 +54,39 @@ class Bundler():
         """
         # Remove & Rename cursors
         # If Key found => Rename else Remove
-        for cursor in listdir(self.__win):
-            old_path = path.join(self.__win, cursor)
+        for cursor in listdir(self.__win_dest):
+            old_path = path.join(self.__win_dest, cursor)
 
             try:
-                new_path = path.join(self.__win, windows_cursors[cursor])
+                new_path = path.join(self.__win_dest, windows_cursors[cursor])
                 rename(old_path, new_path)
             except KeyError:
                 remove(old_path)
 
         self.__save_win_install_script()
 
-    def __clean_temp(self) -> None:
+    def win_bundle(self, tempdir) -> None:
         """
         docstring
         """
-        shutil.rmtree(self.__temp_dir)
-
-    def win_bundle(self) -> None:
-        """
-        docstring
-        """
-        shutil.copytree(self.__cur_win_dir, self.__win)
+        src = path.join(tempdir, self.__name, "win")
+        shutil.copytree(src, self.__win_dest)
         self.__clean_win_bundle()
-        self.__clean_temp()
 
-    def x11_bundle(self) -> None:
+    def x11_bundle(self, tempdir) -> None:
         """
         docstring
         """
-        shutil.copytree(self.__cur_x11_dir, self.__x11)
-        self.__clean_temp()
+        src = path.join(tempdir, self.__name, "x11")
+        shutil.copytree(src, self.__x11_dest, symlinks=True)
 
-    def bundle(self) -> None:
+    def bundle(self, tempdir) -> None:
         """
         docstring
         """
-        shutil.copytree(self.__cur_win_dir, self.__win)
+        x11_src = path.join(tempdir, self.__name, "x11")
+        shutil.copytree(x11_src, self.__x11_dest, symlinks=True)
+
+        win_src = path.join(tempdir, self.__name, "win")
+        shutil.copytree(win_src, self.__win_dest)
         self.__clean_win_bundle()
-        shutil.copytree(self.__cur_x11_dir, self.__x11)
-        self.__clean_temp()
