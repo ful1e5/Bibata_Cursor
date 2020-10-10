@@ -13,7 +13,7 @@
     "build": "rm -rf themes && python build.py",
     "build:x11": "rm -rf themes && python build.py --x11",
     "build:win": "rm -rf themes && python build.py --win",
-    "py_builder_install":"python setup.py install",
+    "py_builder_install": "python setup.py install",
     "py_install": "pip install -r requirements.txt && yarn py_builder_install",
     "py_freeze": "pip freeze >> requirements.txt"
   },
