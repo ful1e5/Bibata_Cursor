@@ -1,0 +1,93 @@
+
+name: build
+
+on:
+
+  pull_request:
+    paths-ignore:
+      - "**.md"
+      - "**.bbcode"
+      - LICENSE
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install build dependencies (apt)
+        run: |
+          sudo apt install libx11-dev libxcursor-dev libpng-dev
+        continue-on-error: false
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - uses: actions/cache@v2
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - run: yarn install
+      - run: yarn render:bibata-modern
+      - run: yarn render:bibata-original
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v2
+        with:
+          # This path is specific to Ubuntu
+          path: ~/.cache/pip
+          # Look to see if there is a cache hit for the corresponding requirements file
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+            ${{ runner.os }}-
+
+      - name: Install pip dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade setuptools
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          python setup.py install
+        continue-on-error: false
+
+      - name: Generating `Bibata` Cursor Theme
+        run: python build.py
+
+      - name: Compressing Artifacts
+        run: |
+          tar -cvzf logs.tar.gz build.log
+          tar -cvzf bitmaps.tar.gz bitmaps
+          tar -cvzf Bibata.tar.gz themes
+
+      - name: Uploading `Bibata` Build Log artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: logs
+          path: logs.tar.gz
+
+      - name: Uploading `bitmaps` artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: bitmaps
+          path: bitmaps.tar.gz
+
+      - name: Uploading `Bibata` Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Bibata
+          path: Bibata.tar.gz
