@@ -10,11 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v1.0.1] - 8 Oct 2020
 
 ### Added
-
+- **[builder](./builder/)** python package
 - Build only **x11** cursors by passing `--x11` flag in `build.py`
-- #76 Wrong implementation resize cursors **[closed]**
-- #74 `Pillow` pip requirements checking in installation of **clickgen**
-- Bump up **clickgen** version to **1.1.7**
+- Build only **win** cursors by passing `--win` flag in `build.py`
+- Bump up **clickgen** version to **1.1.7** (KDE cursors fix patch)
 - `22px` size added (suggestion by **@gotroot** from pling.com)
 
 ### Changed
@@ -24,6 +23,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **yarn-packages** description updated
 - **Installation** docs updated in [README.md](./README.md) & [PLING.bbcode](./PLING.bbcode)
 - remove additional comments in **[PULL_REQUEST_TEMPLATE.md](./.github/PULL_REQUEST_TEMPLATE.md)**
+
+<!-- ### Issues fix -->
+<!-- - #76 Wrong implementation resize cursors **[closed]** -->
+<!-- - #74 `Pillow` pip requirements checking in installation of **clickgen** -->
 
 ## [v1.0.0] - 3 Oct 2020
 
