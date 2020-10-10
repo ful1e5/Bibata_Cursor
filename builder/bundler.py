@@ -31,14 +31,15 @@ class Bundler():
         Create crisp package for Bibata Windows & X11 packages 📦.
     """
 
-    def __init__(self, theme_name: str, config: ConfigProvider) -> None:
+    def __init__(self, config: ConfigProvider) -> None:
         """
         docsstring
         """
-        self.__name = theme_name
-        self.__x11_dest = path.join(config.out_dir, theme_name)
-        self.__win_dest = path.join(config.out_dir, theme_name + "-Windows")
-        self.__content = config.get_windows_script(theme_name)
+        self.__name = config.name
+        self.__tmpdir = config.tmpdir
+        self.__x11_dest = path.join(config.out_dir, self.__name)
+        self.__win_dest = path.join(config.out_dir, self.__name + "-Windows")
+        self.__content = config.get_windows_script()
 
     def __save_win_install_script(self) -> None:
         """
@@ -65,28 +66,28 @@ class Bundler():
 
         self.__save_win_install_script()
 
-    def win_bundle(self, tempdir) -> None:
+    def win_bundle(self) -> None:
         """
         docstring
         """
-        src = path.join(tempdir, self.__name, "win")
+        src = path.join(self.__tmpdir, self.__name, "win")
         shutil.copytree(src, self.__win_dest)
         self.__clean_win_bundle()
 
-    def x11_bundle(self, tempdir) -> None:
+    def x11_bundle(self) -> None:
         """
         docstring
         """
-        src = path.join(tempdir, self.__name, "x11")
+        src = path.join(self.__tmpdir, self.__name, "x11")
         shutil.copytree(src, self.__x11_dest, symlinks=True)
 
-    def bundle(self, tempdir) -> None:
+    def bundle(self) -> None:
         """
         docstring
         """
-        x11_src = path.join(tempdir, self.__name, "x11")
+        x11_src = path.join(self.__tmpdir, self.__name, "x11")
         shutil.copytree(x11_src, self.__x11_dest, symlinks=True)
 
-        win_src = path.join(tempdir, self.__name, "win")
+        win_src = path.join(self.__tmpdir, self.__name, "win")
         shutil.copytree(win_src, self.__win_dest)
         self.__clean_win_bundle()

@@ -5,6 +5,7 @@ import sys
 import json
 import shutil
 from os import path, mkdir
+import tempfile
 
 from . import __path__, __author__
 
@@ -22,7 +23,7 @@ class ConfigProvider():
         Configure `Bibata` building process 🔧.
     """
 
-    def __init__(self, bitmaps_dir: str, out_dir: str) -> None:
+    def __init__(self, name: str, bitmaps_dir: str, out_dir: str) -> None:
         """
         docsstring
         """
@@ -38,16 +39,18 @@ class ConfigProvider():
                 "⚠ BITMAPS NOT FOUND.\n\n`yarn install && yarn render` to Generates Bitmaps")
             sys.exit(1)
 
+        self.name: str = name
         self.bitmaps_dir: str = path.abspath(bitmaps_dir)
+        self.tmpdir: str = tempfile.mkdtemp()
         self.out_dir: str = path.abspath(out_dir)
 
-    def get_windows_script(self, theme_name: str) -> str:
+    def get_windows_script(self) -> str:
         """
         docsstring
         """
         with open(path.join(__path__[0], "windows.inf")) as f:
             data = f.read()
             inf_content = data.replace(
-                "<inject_theme_name>", theme_name+" Cursors").replace("<inject_author_name>", __author__)
+                "<inject_theme_name>", self.name+" Cursors").replace("<inject_author_name>", __author__)
 
         return inf_content
