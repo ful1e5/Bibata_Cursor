@@ -319,7 +319,7 @@ GitHub Actions is automatically runs on every `push`(on **main** & **dev** branc
 
 ```bash
 python3 -m pip install --upgrade pip                 # Update pip to latest
-python3 -m pip3 install virtualenv                   # Install python virtual environment
+python3 -m pip install virtualenv                    # Install python virtual environment
 virtualenv venv                                      # Create new virtualenv named `venv`
 source venv/bin/activate                             # Activate virtualenv
 
@@ -329,13 +329,13 @@ deactivate
 
 #### Compile From Source
 
-> Make sure your [python environment](#setup-python-environment) setup and `virtualenv` is **active**.
+> Make sure your [python environment](#setup-python-environment)setup and `virtualenv` is **active**.
 
 #### Install Node/PyPi Packages
 
 ```bash
 yarn install                                         # Install all Node Packages
-yarn py_install                                      # Install all PyPi & builder Packages
+yarn py_install                                      # Install all PyPi Packages with Bibata builder
 ```
 
 #### Build `Bibata`
