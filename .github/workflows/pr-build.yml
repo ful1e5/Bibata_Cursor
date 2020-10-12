@@ -1,12 +1,14 @@
+
 name: build
 
 on:
-  push:
+
+  pull_request:
     paths-ignore:
       - "**.md"
       - "**.bbcode"
       - LICENSE
-    branches: [main, dev]
+    branches: [main]
 
 jobs:
   build:

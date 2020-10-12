@@ -1,35 +1,61 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-import json
-import log
-from clickgen import build_cursor_theme
+import sys
+import argparse
+from argparse import ArgumentParser
+from os import path, listdir
 
-from config import configs, sizes, delay, temp_folder
-from helper import init_build, pack_it
+from builder import __info__
+from builder.config import ConfigProvider
+from builder.cursor import CursorBuilder
 
 
-def build(config) -> None:
+def get_args_parser() -> ArgumentParser:
+    """Parse command line arguments"""
+    parser = argparse.ArgumentParser(description=__info__)
 
-    build_cursor_theme(
-        config['name'],
-        image_dir=config['bitmaps_dir'],
-        cursor_sizes=sizes,
-        out_path=config['temp_folder'],
-        hotspots=hotspots,
-        archive=False,
-        delay=delay)
+    parser.add_argument("-x", "--x11", action="store_true", default=False,
+                        help=("Bundle X11 cursors using bitmaps"
+                              " (default: %(default)s)"))
 
-    pack_it(config)
+    parser.add_argument("-w", "--windows", action="store_true", default=False,
+                        help=("Bundle Windows cursors using bitmaps"
+                              " (default: %(default)s)"))
+
+    return parser
+
+
+def main() -> None:
+    parser = get_args_parser()
+    try:
+        args = parser.parse_args()
+    except Exception:
+        sys.exit(0)
+
+    bitmaps_dir = "./bitmaps"
+    out_dir = "./themes"
+
+    # print builder information
+    print(__info__)
+
+    bitmaps_dirs = listdir(bitmaps_dir)
+    configs: list[ConfigProvider] = []
+    builders: list[CursorBuilder] = []
+
+    for index, name in enumerate(bitmaps_dirs):
+        theme_bitmaps_dir = path.join(bitmaps_dir, name)
+        configs.append(ConfigProvider(name, theme_bitmaps_dir, out_dir))
+        builders.append(CursorBuilder(configs[index]))
+
+    for builder in builders:
+        if (args.x11 == args.windows):
+            builder.build_cursors()
+        elif(args.x11):
+            builder.build_x11_cursors()
+        elif(args.windows):
+            builder.build_win_cursors()
 
 
 if __name__ == "__main__":
-    init_build()
-
-    # read hotspots file
-    with open('./hotspots.json', 'r') as hotspot_file:
-        hotspots = json.loads(hotspot_file.read())
-
-    # building themes
-    for config in configs:
-        print('🌈 Building %s Theme ...' % config['name'])
-        build(config)
+    main()

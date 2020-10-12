@@ -1,7 +1,7 @@
 {
   "name": "bibata-original",
-  "version": "1.0.0",
-  "description": "Sharp Corner Bibata Cursors 🏳️‍🌈",
+  "version": "1.0.1",
+  "description": "Sharp edges bibata cursors 🏳️‍🌈",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",

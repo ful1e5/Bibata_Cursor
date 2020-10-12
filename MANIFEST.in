@@ -1,0 +1,2 @@
+include builder/windows.inf
+include builder/hotspots.json

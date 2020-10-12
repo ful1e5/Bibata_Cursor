@@ -2,6 +2,7 @@
 # Out Dir
 bitmaps
 themes
+test.py
 
 # Logs Files
 build.log

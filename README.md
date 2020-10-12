@@ -91,15 +91,15 @@
     - [Arch Linux/Manjaro](#arch-linuxmanjaro)
     - [Fedora](#fedora)
   - [Manual Install](#manual-install)
-    - [Linux/X11](#linuxx11)
-    - [Windows](#windows)
+      - [Linux/X11](#linuxx11)
+      - [Windows](#windows)
 - [Dependencies](#dependencies)
   - [Runtime Dependencies](#runtime-dependencies)
-    - [Install Runtime Dependencies](#install-runtime-dependencies)
-      - [macOS](#macos)
-      - [Debain/ubuntu](#debainubuntu)
-      - [ArchLinux/Manjaro](#archlinuxmanjaro)
-      - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+      - [Install Runtime Dependencies](#install-runtime-dependencies)
+        - [macOS](#macos)
+        - [Debain/ubuntu](#debainubuntu)
+        - [ArchLinux/Manjaro](#archlinuxmanjaro)
+        - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
   - [Build Dependencies](#build-dependencies)
     - [Node Packages](#node-packages)
     - [PyPi Packages](#pypi-packages)
@@ -140,6 +140,7 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 
 ## Cursor Sizes
 
+<kbd>22</kbd>
 <kbd>24</kbd>
 <kbd>28</kbd>
 <kbd>32</kbd>
@@ -194,18 +195,20 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 
 ### Arch Linux/Manjaro
 
-Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme) currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m). Can be installed via Pamac (preinstalled in Manjaro), Yay or any other [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers).
+Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme) currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m) & [_@yochananmarqos_](https://aur.archlinux.org/packages/?K=yochananmarqos&SeB=m). Can be installed via Pamac (preinstalled in Manjaro), Yay or any other [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers).
 
 Pamac command:
 
 ```bash
-pamac install bibata-cursor-theme
+pamac build bibata-cursor-theme
+pamac build bibata-cursor-theme-bin                  # pre-built binary
 ```
 
 Yay command:
 
 ```bash
 yay -S bibata-cursor-theme
+yay -S bibata-cursor-theme-bin                       # pre-built binary
 ```
 
 ### Fedora
@@ -316,7 +319,7 @@ GitHub Actions is automatically runs on every `push`(on **main** & **dev** branc
 
 ```bash
 python3 -m pip install --upgrade pip                 # Update pip to latest
-python3 -m pip3 install virtualenv                   # Install python virtual environment
+python3 -m pip install virtualenv                    # Install python virtual environment
 virtualenv venv                                      # Create new virtualenv named `venv`
 source venv/bin/activate                             # Activate virtualenv
 
@@ -326,13 +329,13 @@ deactivate
 
 #### Compile From Source
 
-> Make sure your [python environment](#setup-python-environment) setup and `virtualenv` is **active**.
+> Make sure your [python environment](#setup-python-environment)setup and `virtualenv` is **active**.
 
 #### Install Node/PyPi Packages
 
 ```bash
 yarn install                                         # Install all Node Packages
-yarn py_install                                      # Install all PyPi Packages
+yarn py_install                                      # Install all PyPi Packages with Bibata builder
 ```
 
 #### Build `Bibata`
@@ -340,21 +343,39 @@ yarn py_install                                      # Install all PyPi Packages
 ```bash
 yarn render:bibata-modern                            # Render Bibata Modern Bitmaps
 yarn render:bibata-original                          # Render Bibata Original Bitmaps
-yarn build                                           # Build Windows & Linux packages
+
+# Build cursors packages
+yarn build                                           # Build Windows & X11 packages
+# OR
+yarn build:x11                                       # Build only X11 packages
+# OR
+yarn build:win                                       # Build only Windows cursors
 ```
 
 #### Build `Bibata Modern` Only
 
 ```bash
 yarn render:bibata-modern                            # Render Bibata Modern Bitmaps
-yarn build                                           # Build Windows & Linux packages
+
+# Build cursors packages
+yarn build                                           # Build Windows & X11 cursors
+# OR
+yarn build:x11                                       # Build only X11 cursors
+# OR
+yarn build:win                                       # Build only Windows cursors
 ```
 
 #### Build `Bibata Original` Only
 
 ```bash
 yarn render:bibata-original                          # Render Bibata Original Bitmaps
-yarn build                                           # Build Windows & Linux packages
+
+# Build cursors packages
+yarn build                                           # Build Windows & Linux cursors
+# OR
+yarn build:x11                                       # Build only X11 cursors
+# OR
+yarn build:win                                       # Build only Windows cursors
 ```
 
 After build `bitmaps` and `themes` directory are generated at project **root**.
