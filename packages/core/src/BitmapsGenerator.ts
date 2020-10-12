@@ -104,7 +104,7 @@ export class BitmapsGenerator {
    */
   private saveFrames(frames: Frames) {
     for (let [cursor, { buffer }] of Object.entries(frames)) {
-      const out_path = path.resolve(this.bitmapsDir, `${cursor}.png`);
+      const out_path = path.resolve(this.bitmapsDir, cursor);
       fs.writeFileSync(out_path, buffer, { encoding: "binary" });
     }
   }
