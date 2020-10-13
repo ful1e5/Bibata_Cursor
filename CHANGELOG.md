@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+- Skip **already rendered** Bitmaps in `bibata-core`
+
 ## [v1.0.1] - 8 Oct 2020
 
 ### Added
