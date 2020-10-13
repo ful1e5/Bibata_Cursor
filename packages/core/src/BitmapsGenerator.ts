@@ -15,6 +15,7 @@ import { matchImages } from "./utils/matchImages";
 export class BitmapsGenerator {
   private readonly staticCurs: Cursors;
   private readonly animatedCurs: Cursors;
+  private infoFilePath = path.resolve(this.bitmapsDir, ".info");
 
   /**
    * @param source `BitmapsGenerator` Class's object arguments.
@@ -44,6 +45,10 @@ export class BitmapsGenerator {
     if (!fs.existsSync(dirPath)) {
       fs.mkdirSync(dirPath, { recursive: true });
     }
+  }
+
+  private writeRenderInfo() {
+    fs.writeFileSync(this.infoFilePath, "", { encoding: "utf-8" });
   }
 
   /**
@@ -174,27 +179,34 @@ export class BitmapsGenerator {
     spinner.text = ` Preparing ${this.themeName} .svg files...`;
     spinner.start();
 
-    // About browser args => https://chromium.googlesource.com/chromium/src/+/master/docs/linux/suid_sandbox_development.md#disabling-the-sandbox
-    // Issue => https://github.com/ful1e5/Bibata_Cursor/issues/75#issuecomment-703236554
-    const browser = await puppeteer.launch({
-      ignoreDefaultArgs: [" --single-process ", "--no-sandbox"],
-      headless: true
-    });
+    if (fs.existsSync(this.infoFilePath)) {
+      spinner.color = "white";
+      spinner.succeed(`Skipping ${this.themeName} (Already rendered)`);
+    } else {
+      // About browser args => https://chromium.googlesource.com/chromium/src/+/master/docs/linux/suid_sandbox_development.md#disabling-the-sandbox
+      // Issue => https://github.com/ful1e5/Bibata_Cursor/issues/75#issuecomment-703236554
+      const browser = await puppeteer.launch({
+        ignoreDefaultArgs: [" --single-process ", "--no-sandbox"],
+        headless: true
+      });
 
-    try {
-      spinner.color = "yellow";
-      await this.renderStaticCurs(browser, spinner);
-      await this.renderAnimatedCurs(browser, spinner);
+      try {
+        spinner.color = "yellow";
+        await this.renderStaticCurs(browser, spinner);
+        await this.renderAnimatedCurs(browser, spinner);
 
-      spinner.text = ` ${chalk.blueBright(
-        this.themeName
-      )} bitmaps stored at ${chalk.greenBright(`${this.bitmapsDir}`)}`;
+        spinner.text = ` ${chalk.blueBright(
+          this.themeName
+        )} bitmaps stored at ${chalk.greenBright(`${this.bitmapsDir}`)}`;
 
-      spinner.succeed();
-    } catch (error) {
-      console.error(error);
-      process.exit(1);
-      spinner.fail();
+        spinner.color = "white";
+        this.writeRenderInfo();
+        spinner.succeed();
+      } catch (error) {
+        console.error(error);
+        spinner.fail();
+        process.exit(1);
+      }
     }
   }
 }
