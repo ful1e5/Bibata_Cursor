@@ -177,7 +177,7 @@ export class BitmapsGenerator {
     // About browser args => https://chromium.googlesource.com/chromium/src/+/master/docs/linux/suid_sandbox_development.md#disabling-the-sandbox
     // Issue => https://github.com/ful1e5/Bibata_Cursor/issues/75#issuecomment-703236554
     const browser = await puppeteer.launch({
-      ignoreDefaultArgs: ["--no-sandbox", "--disable-setuid-sandbox"],
+      ignoreDefaultArgs: [" --single-process ", "--no-sandbox"],
       headless: true
     });
 
