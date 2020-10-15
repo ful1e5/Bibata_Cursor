@@ -8,11 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [unreleased]
 
 ### Added
+
 - Skip **already rendered** Bitmaps in `bibata-core`
+
+### Changed
+
+- Windows Resize cursors wrong implementation fixed **#76** [Reopen]
 
 ## [v1.0.1] - 8 Oct 2020
 
 ### Added
+
 - **[builder](./builder/)** python package
 - Build only **x11** cursors by passing `--x11` flag in `build.py`
 - Build only **win** cursors by passing `--win` flag in `build.py`
