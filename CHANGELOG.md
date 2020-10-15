@@ -10,11 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Skip **already rendered** Bitmaps in `bibata-core`
-- Cursors `builder` docs
+- **pkg_info.py** inside `builder` module
+- `builder` module docs
 
 ### Changed
 
 - Windows Resize cursors wrong implementation fixed **#76** [Reopen]
+- Package information provider module changed to `builder/pkg_info.py`
 
 ## [v1.0.1] - 8 Oct 2020
 
