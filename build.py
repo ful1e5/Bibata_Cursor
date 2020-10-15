@@ -27,6 +27,7 @@ def get_args_parser() -> ArgumentParser:
 
 
 def build() -> None:
+    """ Build Bibata cursor """
     parser = get_args_parser()
     try:
         args = parser.parse_args()

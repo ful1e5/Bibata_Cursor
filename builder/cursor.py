@@ -12,18 +12,13 @@ class CursorBuilder():
     """
 
     def __init__(self, config: ConfigProvider) -> None:
-        """
-        docstring
-        """
         self.__name = config.name
         self.__bitmaps_dir = config.bitmaps_dir
         self.__bundler = Bundler(config)
         self.__tmpdir = config.tmpdir
 
     def build_x11_cursors(self) -> None:
-        """
-        docstring
-        """
+        """ Build `x11` platform cursors. """
         print('🌈 Building %s Theme ...' % self.__name)
         build_x11_cursor_theme(
             name=self.__name,
@@ -38,9 +33,7 @@ class CursorBuilder():
         self.__bundler.x11_bundle()
 
     def build_win_cursors(self) -> None:
-        """
-        docstring
-        """
+        """ Build `Windows` platform cursors. """
         print('🌈 Building %s Theme ...' % self.__name)
         build_win_cursor_theme(
             name=self.__name,
@@ -55,9 +48,7 @@ class CursorBuilder():
         self.__bundler.win_bundle()
 
     def build_cursors(self) -> None:
-        """
-        docstring
-        """
+        """ Build `x11` & `Windows` platform cursors. """
         print('🌈 Building %s Theme ...' % self.__name)
         build_cursor_theme(
             name=self.__name,

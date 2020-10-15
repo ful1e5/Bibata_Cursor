@@ -24,9 +24,6 @@ class ConfigProvider():
     """
 
     def __init__(self, name: str, bitmaps_dir: str, out_dir: str) -> None:
-        """
-        docsstring
-        """
         # cleanup old packages
         if path.exists(out_dir):
             shutil.rmtree(out_dir)
@@ -45,9 +42,7 @@ class ConfigProvider():
         self.out_dir: str = path.abspath(out_dir)
 
     def get_windows_script(self) -> str:
-        """
-        docsstring
-        """
+        """ Get `install.inf` content for this cursor theme. """
         with open(path.join(__path__[0], "windows.inf")) as f:
             data = f.read()
             inf_content = data.replace(
