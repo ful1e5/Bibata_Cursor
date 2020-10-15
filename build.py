@@ -16,17 +16,17 @@ def get_args_parser() -> ArgumentParser:
     parser = argparse.ArgumentParser(description=__info__)
 
     parser.add_argument("-x", "--x11", action="store_true", default=False,
-                        help=("Bundle X11 cursors using bitmaps"
+                        help=("Bundle X11 cursors from bitmaps"
                               " (default: %(default)s)"))
 
     parser.add_argument("-w", "--windows", action="store_true", default=False,
-                        help=("Bundle Windows cursors using bitmaps"
+                        help=("Bundle Windows cursors from bitmaps"
                               " (default: %(default)s)"))
 
     return parser
 
 
-def main() -> None:
+def build() -> None:
     parser = get_args_parser()
     try:
         args = parser.parse_args()
@@ -58,4 +58,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    build()
