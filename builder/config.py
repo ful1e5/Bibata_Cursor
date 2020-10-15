@@ -7,7 +7,8 @@ import shutil
 from os import path, mkdir
 import tempfile
 
-from . import __path__, __author__
+from builder import __path__
+from builder.pkg_info import info
 
 # Build Config
 delay = 35
@@ -18,9 +19,9 @@ with open(path.join(__path__[0], "hotspots.json")) as hotspot_file:
     hotspots = json.loads(hotspot_file.read())
 
 
-class ConfigProvider():
+class ConfigProvider:
     """
-        Configure `Bibata` building process 🔧.
+    Configure `Bibata` building process 🔧.
     """
 
     def __init__(self, name: str, bitmaps_dir: str, out_dir: str) -> None:
@@ -33,7 +34,8 @@ class ConfigProvider():
         # Checking Bitmaps directory
         if not path.exists(bitmaps_dir):
             print(
-                "⚠ BITMAPS NOT FOUND.\n\n`yarn install && yarn render` to Generates Bitmaps")
+                "⚠ BITMAPS NOT FOUND.\n\n`yarn install && yarn render` to Generates Bitmaps"
+            )
             sys.exit(1)
 
         self.name: str = name
@@ -46,6 +48,7 @@ class ConfigProvider():
         with open(path.join(__path__[0], "windows.inf")) as f:
             data = f.read()
             inf_content = data.replace(
-                "<inject_theme_name>", self.name+" Cursors").replace("<inject_author_name>", __author__)
+                "<inject_theme_name>", self.name + " Cursors"
+            ).replace("<inject_author_name>", info["author"])
 
         return inf_content
