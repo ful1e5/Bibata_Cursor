@@ -6,9 +6,9 @@ from .config import ConfigProvider, hotspots, sizes, delay
 from clickgen import build_x11_cursor_theme, build_cursor_theme, build_win_cursor_theme
 
 
-class CursorBuilder():
+class CursorBuilder:
     """
-        Build Bibata Windows & X11 cursors 🚀.
+    Build Bibata Windows & X11 cursors 🚀.
     """
 
     def __init__(self, config: ConfigProvider) -> None:
@@ -19,7 +19,7 @@ class CursorBuilder():
 
     def build_x11_cursors(self) -> None:
         """ Build `x11` platform cursors. """
-        print('🌈 Building %s Theme ...' % self.__name)
+        print("🌈 Building %s Theme ..." % self.__name)
         build_x11_cursor_theme(
             name=self.__name,
             image_dir=self.__bitmaps_dir,
@@ -27,14 +27,14 @@ class CursorBuilder():
             hotspots=hotspots,
             out_path=self.__tmpdir,
             archive=False,
-            delay=delay
+            delay=delay,
         )
 
         self.__bundler.x11_bundle()
 
     def build_win_cursors(self) -> None:
         """ Build `Windows` platform cursors. """
-        print('🌈 Building %s Theme ...' % self.__name)
+        print("🌈 Building %s Theme ..." % self.__name)
         build_win_cursor_theme(
             name=self.__name,
             image_dir=self.__bitmaps_dir,
@@ -42,14 +42,14 @@ class CursorBuilder():
             hotspots=hotspots,
             out_path=self.__tmpdir,
             archive=False,
-            delay=delay
+            delay=delay,
         )
 
         self.__bundler.win_bundle()
 
     def build_cursors(self) -> None:
         """ Build `x11` & `Windows` platform cursors. """
-        print('🌈 Building %s Theme ...' % self.__name)
+        print("🌈 Building %s Theme ..." % self.__name)
         build_cursor_theme(
             name=self.__name,
             image_dir=self.__bitmaps_dir,
@@ -57,7 +57,7 @@ class CursorBuilder():
             hotspots=hotspots,
             out_path=self.__tmpdir,
             archive=False,
-            delay=delay
+            delay=delay,
         )
 
         self.__bundler.bundle()

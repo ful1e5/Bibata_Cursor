@@ -7,8 +7,8 @@ import shutil
 from os import path, mkdir
 import tempfile
 
-from builder import __path__
-from builder.pkg_info import info
+from . import __path__
+from .pkg_info import info
 
 # Build Config
 delay = 35
