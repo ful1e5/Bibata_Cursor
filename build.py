@@ -47,7 +47,7 @@ def build() -> None:
     out_dir = "./themes"
 
     # print builder information
-    print(info["version"])
+    print(info["description"])
 
     bitmaps_dirs = listdir(bitmaps_dir)
     configs: List[ConfigProvider] = []
