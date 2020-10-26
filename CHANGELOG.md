@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Windows Resize cursors wrong implementation fixed **#76** [Reopen]
+- **Rich Black** color in `watch: background` (Bibata Amber) **#78**
 - PyPi Requirements provided inside `setup.py`
 - locked clickgen to **1.1.7**
 - Package information provider module changed to `builder/pkg_info.py`
