@@ -7,9 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v1.0.2] - 28 Oct 2020
+
 ### Added
 
-- Separate **GitHib Action** workflow for **pull-request**  
+- Separate **GitHib Action** workflow for **pull-request**
 - **pkg_info.py** inside `builder` module
 - `builder` module docs
 
@@ -127,7 +129,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release 🎊
 
-[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.1...main
+[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.2...main
+[v1.0.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.1...v1.0.2
 [v1.0.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.0...v1.0.1
 [v1.0.0]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.2...v1.0.0
 [v0.4.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.2.beta.1...v0.4.2
