@@ -7,6 +7,9 @@ test.py
 # Logs Files
 build.log
 
+# Extra
+.vscode
+
 ########## Python
 
 # Byte-compiled / optimized / DLL files

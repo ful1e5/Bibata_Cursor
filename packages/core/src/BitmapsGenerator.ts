@@ -190,11 +190,12 @@ export class BitmapsGenerator {
         this.themeName
       )} bitmaps stored at ${chalk.greenBright(`${this.bitmapsDir}`)}`;
 
+      spinner.color = "white";
       spinner.succeed();
     } catch (error) {
       console.error(error);
-      process.exit(1);
       spinner.fail();
+      process.exit(1);
     }
   }
 }

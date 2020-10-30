@@ -4,13 +4,14 @@ import { ThemeColors } from "bibata-core/src/types";
 const black = "#000000";
 const white = "#FFFFFF";
 const amber = "#FF8300";
+const richBlack = "#001524";
 
 const themeColors: ThemeColors = {
   Amber: {
     base: amber,
     outline: white,
     watch: {
-      background: white
+      background: richBlack
     }
   },
   Classic: {
