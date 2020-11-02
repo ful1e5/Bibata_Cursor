@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Files download reference change to [pling.com](https://www.pling.com/p/1197198/) in `PLING.bbcode`
+- Scripts in `package.json`
 
 ## [v1.0.2] - 30 Oct 2020
 
