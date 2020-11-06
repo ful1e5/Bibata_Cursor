@@ -10,12 +10,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Case insensitive `colors key` replace in **bibata-core**
+- **Alternate.cur** added in Windows package
 
 ### Changed
 
 - Files download reference change to [pling.com](https://www.pling.com/p/1197198/) in `PLING.bbcode`
 - Scripts in `package.json`
-- fixed #82 improvement to X-cursor (feature request) 
+- Change reference of **Alternate.cur** to `right_ptr`
+- fixed #82 improvement to X-cursor (feature request)
 - fixed #81 Corner resize cursors are not coloured (bug)
 
 ## [v1.0.2] - 30 Oct 2020
