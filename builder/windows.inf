@@ -29,7 +29,7 @@ HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,
 "SizeNWSE.cur"
 "SizeNESW.cur"
 "SizeAll.cur"
-"UpArrow.cur"
+"Alternate.cur"
 "Hand.cur"
 
 [Strings]
@@ -48,5 +48,5 @@ horz		  = "SizeWE.cur"
 dgn1		  = "SizeNWSE.cur"
 dgn2		  = "SizeNESW.cur"
 move		  = "SizeAll.cur"
-alternate	  = "UpArrow.cur"
+alternate	  = "Alternate.cur"
 link		  = "Hand.cur"
