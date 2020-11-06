@@ -47,9 +47,9 @@ export default class ColoredSvgGenerator {
       let content = fs.readFileSync(cursor, "utf-8").toString();
 
       content = content
-        .replace(new RegExp(keyColors.base, "g"), this.themeConfig.colors.base)
+        .replace(new RegExp(keyColors.base, "ig"), this.themeConfig.colors.base)
         .replace(
-          new RegExp(keyColors.outline, "g"),
+          new RegExp(keyColors.outline, "ig"),
           this.themeConfig.colors.outline
         );
 
@@ -69,9 +69,9 @@ export default class ColoredSvgGenerator {
       let content = fs.readFileSync(cursor, "utf-8").toString();
 
       content = content
-        .replace(new RegExp(keyColors.base, "g"), this.themeConfig.colors.base)
+        .replace(new RegExp(keyColors.base, "ig"), this.themeConfig.colors.base)
         .replace(
-          new RegExp(keyColors.outline, "g"),
+          new RegExp(keyColors.outline, "ig"),
           this.themeConfig.colors.outline
         );
 
@@ -83,14 +83,14 @@ export default class ColoredSvgGenerator {
         }
         const { background: b } = this.themeConfig.colors.watch;
         content = content.replace(
-          new RegExp(keyColors.watch!.background, "g"),
+          new RegExp(keyColors.watch!.background, "ig"),
           b
         ); // Watch Background
       } catch (error) {
         // === on error => replace `watch` color as `base` ===
 
         content = content.replace(
-          new RegExp(keyColors.watch!.background, "g"),
+          new RegExp(keyColors.watch!.background, "ig"),
           this.themeConfig.colors.base
         );
       }
