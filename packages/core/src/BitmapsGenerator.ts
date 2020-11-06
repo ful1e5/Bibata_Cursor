@@ -15,6 +15,7 @@ import { matchImages } from "./utils/matchImages";
 export class BitmapsGenerator {
   private readonly staticCurs: Cursors;
   private readonly animatedCurs: Cursors;
+  private readonly minimumFrames: number = 30;
 
   /**
    * @param source `BitmapsGenerator` Class's object arguments.
@@ -151,11 +152,10 @@ export class BitmapsGenerator {
           img2Buff: newFrame
         });
 
-        if (matched) {
+        if (matched && index > this.minimumFrames) {
           breakRendering = true;
         } else {
           frames[key] = { buffer: newFrame };
-          setTimeout(() => {}, 1);
           index++;
         }
       }

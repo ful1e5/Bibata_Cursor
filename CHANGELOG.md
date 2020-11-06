@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Case insensitive `colors key` replace in **bibata-core**
 - **Alternate.cur** added in Windows package
+- `minimumFrames` frames handler added for animated cursors in **bibata-core**
 
 ### Changed
 
