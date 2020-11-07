@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import shutil
-from os import path, listdir, rename, remove
-from .config import ConfigProvider
+from os import listdir, path, remove, rename
 
+from .config import ConfigProvider
 
 # Windows Cursors Config
 windows_cursors = {
