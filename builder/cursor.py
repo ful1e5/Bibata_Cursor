@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from clickgen import build_cursor_theme, build_win_cursor_theme, build_x11_cursor_theme
+
 from .bundler import Bundler
-from .config import ConfigProvider, hotspots, sizes, delay
-from clickgen import build_x11_cursor_theme, build_cursor_theme, build_win_cursor_theme
+from .config import ConfigProvider, delay, hotspots, sizes
 
 
 class CursorBuilder:

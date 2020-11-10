@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import shutil
-from os import path, listdir, rename, remove
-from .config import ConfigProvider
+from os import listdir, path, remove, rename
 
+from .config import ConfigProvider
 
 # Windows Cursors Config
 windows_cursors = {
@@ -21,7 +21,7 @@ windows_cursors = {
     "sb_v_double_arrow.cur": "SizeNS.cur",
     "fd_double_arrow.cur": "SizeNESW.cur",
     "sb_h_double_arrow.cur": "SizeWE.cur",
-    "sb_up_arrow.cur": "UpArrow.cur",
+    "right_ptr.cur": "Alternate.cur",
     "wait.ani": "Wait.ani",
 }
 

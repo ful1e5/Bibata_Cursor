@@ -5,7 +5,7 @@ interface Frames {
 }
 
 /**
- * Hex Colors in string Formate.
+ * Hex Colors in string Format.
  *
  * `Example: `"#FFFFFF"
  */

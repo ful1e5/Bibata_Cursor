@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sys
 import json
 import shutil
-from os import path, mkdir
+import sys
 import tempfile
+from os import mkdir, path
 
 from . import __path__
 from .pkg_info import info

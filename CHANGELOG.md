@@ -7,10 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v1.0.3] - 7 Nov 2020
+
+### Added
+
+- Case insensitive `colors key` replace in **bibata-core**
+- **Alternate.cur** added in Windows package
+- `minimumFrames` frames handler added for animated cursors in **bibata-core**
+
 ### Changed
 
 - Files download reference change to [pling.com](https://www.pling.com/p/1197198/) in `PLING.bbcode`
 - Scripts in `package.json`
+- Change reference of **Alternate.cur** to `right_ptr`
+- fixed #82 improvement to X-cursor (feature request)
+- fixed #81 Corner resize cursors are not coloured (bug)
 
 ## [v1.0.2] - 30 Oct 2020
 
@@ -134,7 +145,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release 🎊
 
-[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.2...main
+[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.3...main
+[v1.0.3]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.2...v1.0.3
 [v1.0.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.1...v1.0.2
 [v1.0.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.0...v1.0.1
 [v1.0.0]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.2...v1.0.0
