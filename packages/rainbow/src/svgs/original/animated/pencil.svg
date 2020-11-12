@@ -9,7 +9,10 @@
     </g>
     <path
         d="M114.079 59.7673L36 137.843V165H63.1579L141.237 86.9241L114.079 59.7673ZM159.378 41.6266C151.876 34.1245 139.723 34.1245 132.22 41.6266L124.263 49.5835L151.421 76.7403L159.378 68.7834C166.874 61.2881 166.874 49.1286 159.378 41.6266Z"
-        fill="#00FF00" />
+        fill="#00FF00">
+        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="3s"
+            repeatCount="indefinite" />
+    </path>
     <defs>
         <filter id="filter0_d" x="23" y="27" width="155" height="155" filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">

@@ -9,7 +9,10 @@
     </g>
     <path fill-rule="evenodd" clip-rule="evenodd"
         d="M20.5 164.5C20.5 167.261 22.7386 169.5 25.5 169.5H172C174.761 169.5 177 167.261 177 164.5C177 161.739 174.761 159.5 172 159.5H103.75V29.5C103.75 26.7386 101.511 24.5 98.75 24.5C95.9886 24.5 93.75 26.7386 93.75 29.5V159.5H25.5C22.7386 159.5 20.5 161.739 20.5 164.5Z"
-        fill="#00FF00" />
+        fill="#00FF00">
+        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="3s"
+            repeatCount="indefinite" />
+    </path>
     <defs>
         <filter id="filter0_d" x="8" y="16" width="181.5" height="170" filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">

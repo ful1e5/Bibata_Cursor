@@ -6,10 +6,16 @@
     </g>
     <path fill-rule="evenodd" clip-rule="evenodd"
         d="M100 17.5C104.142 17.5 107.5 20.8579 107.5 25V81.25C107.5 85.3921 104.142 88.75 100 88.75C95.8579 88.75 92.5 85.3921 92.5 81.25V25C92.5 20.8579 95.8579 17.5 100 17.5ZM100 111.25C104.142 111.25 107.5 114.608 107.5 118.75V175C107.5 179.142 104.142 182.5 100 182.5C95.8579 182.5 92.5 179.142 92.5 175V118.75C92.5 114.608 95.8579 111.25 100 111.25Z"
-        fill="#00FF00" />
+        fill="#00FF00">
+        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="3s"
+            repeatCount="indefinite" />
+    </path>
     <path fill-rule="evenodd" clip-rule="evenodd"
         d="M17.5 100C17.5 95.8579 20.8579 92.5 25 92.5H81.25C85.3921 92.5 88.75 95.8579 88.75 100C88.75 104.142 85.3921 107.5 81.25 107.5H25C20.8579 107.5 17.5 104.142 17.5 100ZM111.25 100C111.25 95.8579 114.608 92.5 118.75 92.5H175C179.142 92.5 182.5 95.8579 182.5 100C182.5 104.142 179.142 107.5 175 107.5H118.75C114.608 107.5 111.25 104.142 111.25 100Z"
-        fill="#00FF00" />
+        fill="#00FF00">
+        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="3s"
+            repeatCount="indefinite" />
+    </path>
     <defs>
         <filter id="filter0_d" x="5" y="9" width="190" height="190" filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">

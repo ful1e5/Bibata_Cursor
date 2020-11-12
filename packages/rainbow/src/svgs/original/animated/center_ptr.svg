@@ -3,7 +3,10 @@
         <path fill-rule="evenodd" clip-rule="evenodd"
             d="M99.5095 4.23022L26.8604 180.997L99.8695 152.01L174.293 180.588L99.5095 4.23022Z" fill="#0000FF" />
     </g>
-    <path d="M99.5119 30.8147L153.906 159.161L99.6207 138.315L46.6577 159.34L99.5119 30.8147Z" fill="#00FF00" />
+    <path d="M99.5119 30.8147L153.906 159.161L99.6207 138.315L46.6577 159.34L99.5119 30.8147Z" fill="#00FF00">
+        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="3s"
+            repeatCount="indefinite" />
+    </path>
     <defs>
         <filter id="filter0_d" x="21.8604" y="3.23022" width="157.432" height="186.767" filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">

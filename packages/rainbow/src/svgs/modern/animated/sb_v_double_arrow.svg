@@ -7,7 +7,10 @@
         </g>
         <path
             d="M90.3334 72.4707L72.0001 72.4523L99.5001 22L127 72.49L108.667 72.4717L108.667 127.53L127 127.512L99.5001 178L72.0001 127.548L90.3334 127.529V72.4707Z"
-            fill="#00FF00" />
+            fill="#00FF00">
+            <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="3s"
+                repeatCount="indefinite" />
+        </path>
     </g>
     <defs>
         <filter id="filter0_d" x="54.3777" y="5.32611" width="90.2553" height="197.351" filterUnits="userSpaceOnUse"

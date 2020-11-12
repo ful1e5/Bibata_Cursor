@@ -6,8 +6,14 @@
             d="M111 174H117V168V117H168H174V111V89V83H168H117V32V26H111H89H83V32V83H32H26V89V111V117H32H83V168V174H89H111Z"
             stroke="#0000FF" stroke-width="12" />
     </g>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M111 168H89V32H111V168Z" fill="#00FF00" />
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M32 89H168V111H32V89Z" fill="#00FF00" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M111 168H89V32H111V168Z" fill="#00FF00">
+        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="3s"
+            repeatCount="indefinite" />
+    </path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M32 89H168V111H32V89Z" fill="#00FF00">
+        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="3s"
+            repeatCount="indefinite" />
+    </path>
     <defs>
         <filter id="filter0_d" x="15" y="19" width="170" height="170" filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
