@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd ./static
+cd ./animated
 
 # remove files
 rm -rf dnd_none.svg all_scroll.svg
