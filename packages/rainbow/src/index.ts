@@ -6,7 +6,7 @@ const main = async () => {
   const projectRoot = resolve("../../");
   const args = {
     themeName: "Bibata-Modern",
-    svgDir: resolve("./src/svg"),
+    svgDir: resolve("./src/svgs/modern"),
     bitmapsDir: resolve(projectRoot, "bitmaps"),
     themeColors
   };
