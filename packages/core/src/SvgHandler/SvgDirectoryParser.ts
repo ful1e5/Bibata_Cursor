@@ -20,7 +20,8 @@ export default class SvgDirectoryParser {
     const cursorDir = path.resolve(this.svgDir, "static");
 
     if (!fs.existsSync(cursorDir)) {
-      throw new Error("🚨 Static Cursors directory not found");
+      console.log("Considering as semi-animated theme");
+      this.semiAnimated = true;
     }
 
     const staticCursors = fs
@@ -28,12 +29,8 @@ export default class SvgDirectoryParser {
       .map((f) => path.resolve(cursorDir, f));
 
     if (staticCursors.length == 0) {
-      console.warn("Static Cursors directory is empty");
-
-      console.log("Considering as semi-animated theme");
-      this.semiAnimated = true;
+      throw new Error("🚨 Static Cursors directory is empty");
     }
-
     return staticCursors;
   }
 
@@ -53,10 +50,8 @@ export default class SvgDirectoryParser {
 
     if (animatedCursors.length == 0 && this.semiAnimated) {
       throw new Error(
-        `🚨 Can't parse svg directory ${this.svgDir} as semi-animated cursors`
+        `🚨 Can't parse svg directory ${this.svgDir} as semi-animated theme`
       );
-    } else {
-      console.warn("Animated Cursors directory is empty");
     }
 
     return animatedCursors;
