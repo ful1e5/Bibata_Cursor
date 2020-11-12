@@ -1,7 +1,7 @@
 {
   "name": "bibata-rainbow",
   "version": "1.0.0",
-  "description": "Semi animated bibata cursors with rainbow colors",
+  "description": "'semi-animated' bibata cursors with rainbow colors",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",
