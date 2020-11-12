@@ -20,18 +20,19 @@ export default class SvgDirectoryParser {
     const cursorDir = path.resolve(this.svgDir, "static");
 
     if (!fs.existsSync(cursorDir)) {
-      console.log("Considering as semi-animated theme");
+      console.log(`Considering ${cursorDir} as semi-animated theme`);
       this.semiAnimated = true;
-    }
+      return [];
+    } else {
+      const staticCursors = fs
+        .readdirSync(cursorDir)
+        .map((f) => path.resolve(cursorDir, f));
 
-    const staticCursors = fs
-      .readdirSync(cursorDir)
-      .map((f) => path.resolve(cursorDir, f));
-
-    if (staticCursors.length == 0) {
-      throw new Error("🚨 Static Cursors directory is empty");
+      if (staticCursors.length == 0) {
+        throw new Error("🚨 Static Cursors directory is empty");
+      }
+      return staticCursors;
     }
-    return staticCursors;
   }
 
   /**
