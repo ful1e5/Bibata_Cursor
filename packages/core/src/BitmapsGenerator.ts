@@ -12,6 +12,8 @@ import { getFrameName } from "./utils/getFrameName";
 import { generateRenderTemplate } from "./utils/htmlTemplate";
 import { matchImages } from "./utils/matchImages";
 
+const normalAnimatedCursors: string[] = ["left_ptr_watch", "wait"];
+
 export class BitmapsGenerator {
   private readonly staticCurs: Cursors;
   private readonly animatedCurs: Cursors;
@@ -138,6 +140,8 @@ export class BitmapsGenerator {
 
       //  Pushing frames until it match to 1st frame
       index++;
+
+      // Minimum frames no. = 5
       while (!breakRendering) {
         const key = getFrameName(index, cursor);
         spinner.text = ` Rendering ${chalk.greenBright(key)}`;
@@ -152,7 +156,9 @@ export class BitmapsGenerator {
           img2Buff: newFrame
         });
 
-        if (matched && index > this.minimumFrames) {
+        if (matched && !normalAnimatedCursors.includes(cursor) && index > 5) {
+          breakRendering = true;
+        } else if (matched && index > this.minimumFrames) {
           breakRendering = true;
         } else {
           frames[key] = { buffer: newFrame };
