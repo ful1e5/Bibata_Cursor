@@ -6,6 +6,7 @@ export default class SvgDirectoryParser {
    * Parse the `.svg` files directory.
    * @param svgDir is relative/absolute path, Where source `.svg` files are stored.
    */
+  semiAnimated: boolean = false;
   constructor(private svgDir: string) {
     if (!fs.existsSync(this.svgDir)) {
       throw new Error(`🚨 .svg files not found in ${this.svgDir}`);
@@ -28,6 +29,9 @@ export default class SvgDirectoryParser {
 
     if (staticCursors.length == 0) {
       console.warn("Static Cursors directory is empty");
+
+      console.log("Considering as semi-animated theme");
+      this.semiAnimated = true;
     }
 
     return staticCursors;
@@ -47,7 +51,11 @@ export default class SvgDirectoryParser {
       .readdirSync(cursorDir)
       .map((f) => path.resolve(cursorDir, f));
 
-    if (animatedCursors.length == 0) {
+    if (animatedCursors.length == 0 && this.semiAnimated) {
+      throw new Error(
+        `🚨 Can't parse svg directory ${this.svgDir} as semi-animated cursors`
+      );
+    } else {
       console.warn("Animated Cursors directory is empty");
     }
 
