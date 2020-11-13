@@ -7,7 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
-## [v1.0.3] - 10 Nov 2020
+### Added
+
+- **Bibata Rainbow** (semi-animated) cursors.
+- **semi-animated** cursors `.svg` parsing support in `bibata-core`
+
+### Changed
+
+- **Bibata** workflow file names changed to `bibata-ci.yml` & `bibata-pr.yml`
+- Optimize **BitmapsGenerator** browser.
+
+## [Bibata v1.0.3] - 10 Nov 2020
 
 ### Added
 
@@ -23,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - fixed #82 improvement to X-cursor (feature request)
 - fixed #81 Corner resize cursors are not coloured (bug)
 
-## [v1.0.2] - 30 Oct 2020
+## [Bibata v1.0.2] - 30 Oct 2020
 
 ### Added
 
@@ -39,7 +49,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - locked clickgen to **1.1.7**
 - Package information provider module changed to `builder/pkg_info.py`
 
-## [v1.0.1] - 8 Oct 2020
+## [Bibata v1.0.1] - 8 Oct 2020
 
 ### Added
 
@@ -56,12 +66,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **yarn-packages** description updated
 - **Installation** docs updated in [README.md](./README.md) & [PLING.bbcode](./PLING.bbcode)
 - remove additional comments in **[PULL_REQUEST_TEMPLATE.md](https://github.com/ful1e5/Bibata_Cursor/commit/085221352038a199aae99f828d64b2ae91ace493)**
+- #76 Wrong implementation resize cursors **[closed]**
+- #74 `Pillow` pip requirements checking in installation of **clickgen**
 
-<!-- ### Issues fix -->
-<!-- - #76 Wrong implementation resize cursors **[closed]** -->
-<!-- - #74 `Pillow` pip requirements checking in installation of **clickgen** -->
-
-## [v1.0.0] - 3 Oct 2020
+## [Bibata v1.0.0] - 3 Oct 2020
 
 ### Changed
 
@@ -85,19 +93,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Customizable Colors in **Bibata** Cursors.
 - Auto framing in animated cursors with [**pixelmatch**](https://github.com/mapbox/pixelmatch)
 
-## [v0.4.2] - 12 January 2020
+## [Bibata v0.4.2] - 12 January 2020
 
 ### Changed
 
 - same names in Oil and Classic [Fixed again]
 
-## [v0.4.2.beta.1] - 22 December 2019
+## [Bibata v0.4.2.beta.1] - 22 December 2019
 
 ### Changed
 
 - Bibata Logo resigned
 
-## [v0.4.2.alpha.2] - 1 December 2019
+## [Bibata v0.4.2.alpha.2] - 1 December 2019
 
 ### Added
 
@@ -111,7 +119,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Bibata Amber Color changed to #FF8000
 - Bibata Oil is inspired on **adwaita gtk** theme color #272728
 
-## [v0.4.2.alpha.1] - 13 November 2019
+## [Bibata v0.4.2.alpha.1] - 13 November 2019
 
 ### Added
 
@@ -126,34 +134,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cursor's corner-shape changed
 - Hot-spots changed
 
-## [v.0.4.1] - 3 September 2018
+## [Bibata v.0.4.1] - 3 September 2018
 
 ### Changed
 
 - Locations Fixed
 - AUR added in README.md
 
-## [v0.3.1] - 16 March 2018
+## [Bibata v0.3.1] - 16 March 2018
 
 ### Changed
 
 - Redesign Crosshair
 
-## [v0.3] - 3 February 2018
+## [Bibata v0.3] - 3 February 2018
 
 ### Added
 
 - Initial release 🎊
 
 [unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.3...main
-[v1.0.3]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.2...v1.0.3
-[v1.0.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.1...v1.0.2
-[v1.0.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.0...v1.0.1
-[v1.0.0]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.2...v1.0.0
-[v0.4.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.2.beta.1...v0.4.2
-[v0.4.2.beta.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.2.alpha.2...v0.4.2.beta.1
-[v0.4.2.alpha.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.2.alpha.1...v0.4.2.alpha.2
-[v0.4.2.alpha.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.1...v0.4.2.alpha.1
-[v.0.4.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.3.1...v0.4.1
-[v0.3.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.3...v0.3.1
-[v0.3]: https://github.com/ful1e5/Bibata_Cursor/tree/v0.3
+[bibata v1.0.3]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.2...v1.0.3
+[bibata v1.0.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.1...v1.0.2
+[bibata v1.0.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.0...v1.0.1
+[bibata v1.0.0]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.2...v1.0.0
+[bibata v0.4.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.2.beta.1...v0.4.2
+[bibata v0.4.2.beta.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.2.alpha.2...v0.4.2.beta.1
+[bibata v0.4.2.alpha.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.2.alpha.1...v0.4.2.alpha.2
+[bibata v0.4.2.alpha.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.1...v0.4.2.alpha.1
+[bibata v.0.4.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.3.1...v0.4.1
+[bibata v0.3.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.3...v0.3.1
+[bibata v0.3]: https://github.com/ful1e5/Bibata_Cursor/tree/v0.3
