@@ -4,15 +4,23 @@ import { resolve } from "path";
 
 const main = async () => {
   const projectRoot = resolve("../../");
-  const args = {
+  const modernArgs = {
     themeName: "Bibata-Modern",
     svgDir: resolve("./src/svgs/modern"),
     bitmapsDir: resolve(projectRoot, "bitmaps"),
     themeColors
   };
 
+  const originalArgs = {
+    themeName: "Bibata-Original",
+    svgDir: resolve("./src/svgs/original"),
+    bitmapsDir: resolve(projectRoot, "bitmaps"),
+    themeColors
+  };
+
   try {
-    await createBitmaps(args);
+    await createBitmaps(modernArgs);
+    await createBitmaps(originalArgs);
     process.exit(0);
   } catch (error) {
     console.error(error);
