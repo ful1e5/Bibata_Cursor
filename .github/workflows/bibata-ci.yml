@@ -5,6 +5,7 @@ on:
     paths-ignore:
       - "**.md"
       - "**.bbcode"
+      - "packages/rainbow"
       - LICENSE
     branches: [main, dev]
 
