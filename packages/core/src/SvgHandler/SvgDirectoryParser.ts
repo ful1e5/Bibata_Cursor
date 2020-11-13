@@ -1,3 +1,4 @@
+import chalk from "chalk";
 import fs from "fs";
 import path from "path";
 
@@ -20,7 +21,9 @@ export default class SvgDirectoryParser {
     const cursorDir = path.resolve(this.svgDir, "static");
 
     if (!fs.existsSync(cursorDir)) {
-      console.log(`Considering ${cursorDir} as semi-animated theme`);
+      console.log(
+        `Considering ${chalk.greenBright(cursorDir)} as semi-animated theme`
+      );
       this.semiAnimated = true;
       return [];
     } else {
