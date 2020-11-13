@@ -10,7 +10,7 @@
     <path fill-rule="evenodd" clip-rule="evenodd"
         d="M166.25 175.25C169.011 175.25 171.25 173.011 171.25 170.25V23.75C171.25 20.9886 169.011 18.75 166.25 18.75C163.489 18.75 161.25 20.9886 161.25 23.75V92H31.25C28.4886 92 26.25 94.2386 26.25 97C26.25 99.7614 28.4886 102 31.25 102H161.25V170.25C161.25 173.011 163.489 175.25 166.25 175.25Z"
         fill="#00FF00">
-        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="3s"
+        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="1.5s"
             repeatCount="indefinite" />
     </path>
     <defs>

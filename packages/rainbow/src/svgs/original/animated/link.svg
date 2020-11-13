@@ -6,7 +6,7 @@
                 fill="#0000FF" />
         </g>
         <path d="M52 19V119L86 103L123 89.0961L52 19Z" fill="#00FF00">
-            <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="3s"
+            <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="1.5s"
                 repeatCount="indefinite" />
         </path>
         <g filter="url(#filter1_d)">

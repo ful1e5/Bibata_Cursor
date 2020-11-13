@@ -7,11 +7,11 @@
             stroke="#0000FF" stroke-width="12" />
     </g>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M111 168H89V32H111V168Z" fill="#00FF00">
-        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="3s"
+        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="1.5s"
             repeatCount="indefinite" />
     </path>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M32 89H168V111H32V89Z" fill="#00FF00">
-        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="3s"
+        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="1.5s"
             repeatCount="indefinite" />
     </path>
     <defs>
