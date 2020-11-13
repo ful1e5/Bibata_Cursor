@@ -96,9 +96,8 @@ export class BitmapsGenerator {
       // Render
       spinner.text = ` Rendering ${chalk.greenBright(cursor)}`;
       await svgElement.screenshot({ omitBackground: true, path: out });
+      await this.closeAllPages(browser);
     }
-
-    await this.closeAllPages(browser);
   }
 
   /**
@@ -141,7 +140,7 @@ export class BitmapsGenerator {
       //  Pushing frames until it match to 1st frame
       index++;
 
-      // Minimum frames no. = 5
+      // Minimum frames no. = 15
       while (!breakRendering) {
         const key = getFrameName(index, cursor);
         spinner.text = ` Rendering ${chalk.greenBright(key)}`;
@@ -156,7 +155,7 @@ export class BitmapsGenerator {
           img2Buff: newFrame
         });
 
-        if (matched && !normalAnimatedCursors.includes(cursor) && index > 5) {
+        if (matched && !normalAnimatedCursors.includes(cursor) && index > 15) {
           breakRendering = true;
         } else if (matched && index > this.minimumFrames) {
           breakRendering = true;
@@ -167,9 +166,8 @@ export class BitmapsGenerator {
       }
 
       this.saveFrames(frames);
+      await this.closeAllPages(browser);
     }
-
-    await this.closeAllPages(browser);
   }
 
   /**
