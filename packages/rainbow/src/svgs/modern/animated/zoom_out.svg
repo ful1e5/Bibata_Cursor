@@ -13,7 +13,11 @@
         <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="1.5s"
             repeatCount="indefinite" />
     </path>
-    <path d="M67 91L118 91" stroke="#00FF00" stroke-width="10" stroke-linecap="round" />
+    <path d="M67 91L118 91" stroke="#00FF00" stroke-width="10" stroke-linecap="round">
+
+        <animate attributeName="stroke" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="1.5s"
+            repeatCount="indefinite" />
+    </path>
     <defs>
         <filter id="filter0_d" x="19" y="22" width="162.5" height="163.5" filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
