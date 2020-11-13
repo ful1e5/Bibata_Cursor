@@ -22,7 +22,7 @@ export default class SvgDirectoryParser {
 
     if (!fs.existsSync(cursorDir)) {
       console.log(
-        `Considering ${chalk.greenBright(cursorDir)} as semi-animated theme`
+        `${chalk.greenBright(this.svgDir)} contains semi-animated .svg files`
       );
       this.semiAnimated = true;
       return [];
