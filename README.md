@@ -85,6 +85,7 @@
   - [Bibata Styles](#bibata-styles)
   - [Cursor Sizes](#cursor-sizes)
   - [Colors](#colors)
+  - [Preview](#preview)
   - [Quick install](#quick-install)
   - [Packages 📦](#packages-)
     - [Arch Linux/Manjaro](#arch-linuxmanjaro)
@@ -132,34 +133,6 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 - **Bibata Classic :** Solid Black Theme.
 - **Bibata Ice :** Light Theme.
 - **Bibata Rainbow :** 'semi-animated' bibata cursors with rainbow colors. #55
-
-<!-- Preview -->
-
-<details>
-  <summary>
-    <strong>Preview</strong> 
-    (click to expand)
-  </summary>
-
-  <p align="center">
-    <img title="Bibata Amber" width="90%" src="https://imgur.com/p60SQOq.png">
-    </br>
-    <sub>Bibata Amber</sub>
-  </p>
-
-  <p align="center">
-    <img title="Bibata Classic" width="90%" src="https://imgur.com/WaqGcUF.png">
-    </br>
-    <sub>Bibata Classic</sub>
-  </p>
-
-  <p align="center">
-    <img title="Bibata Ice" width="90%" src="https://imgur.com/ON1sd4H.png">
-    </br>
-    <sub>Bibata Ice</sub>
-  </p>
-</details>
-
 ## Bibata Styles
 
 - **Bibata Original :** Sharp edge Bibata Cursors
@@ -185,6 +158,29 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 ![Amber](https://imgur.com/5Jo6MSO.png)
 ![Classic](https://imgur.com/I5cRKE4.png)
 ![Ice ✓](https://imgur.com/avnR40g.png)
+
+
+<!-- Preview -->
+
+## Preview
+
+<p align="center">
+  <img title="Bibata Amber" width="90%" src="https://imgur.com/p60SQOq.png">
+  </br>
+  <sub>Bibata Amber</sub>
+</p>
+
+<p align="center">
+  <img title="Bibata Classic" width="90%" src="https://imgur.com/WaqGcUF.png">
+  </br>
+  <sub>Bibata Classic</sub>
+</p>
+
+<p align="center">
+  <img title="Bibata Ice" width="90%" src="https://imgur.com/ON1sd4H.png">
+  </br>
+  <sub>Bibata Ice</sub>
+</p>
 
 ## Quick install
 
