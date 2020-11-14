@@ -1,4 +1,4 @@
-name: br-build
+name: bibata-rainbow-ci
 
 on:
   push:
