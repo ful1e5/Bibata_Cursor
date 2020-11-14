@@ -65,7 +65,7 @@ jobs:
         continue-on-error: false
 
       - name: Generating `Bibata Rainbow` Cursor Theme
-        run: python build.py
+        run: python build.py -x
 
       - name: Compressing Artifacts
         run: |
