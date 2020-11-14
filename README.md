@@ -119,6 +119,14 @@
 - [Support](#support)
 </details>
 
+<!-- Sub Projects -->
+
+<details>
+ <summary><strong>Sub Projects</strong> (click to expand)</summary>
+
+- [Bibata Rainbow](./packages/rainbow)
+
+</details>
 <!-- Bibata intro -->
 
 # Bibata ?
