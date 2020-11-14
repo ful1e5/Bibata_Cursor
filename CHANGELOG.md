@@ -10,10 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - **Bibata Rainbow** (semi-animated) cursors.
+- **Bibata Rainbow** workflow file added `bibata-rainbow-ci.yml`
 - **semi-animated** cursors `.svg` parsing support in `bibata-core`
 
 ### Changed
 
+- `build` workflow changed to `bibata-ci`
 - **Bibata** workflow file names changed to `bibata-ci.yml` & `bibata-pr.yml`
 - Optimize **BitmapsGenerator** browser.
 
