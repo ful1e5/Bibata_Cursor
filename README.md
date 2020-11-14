@@ -14,8 +14,8 @@
 
   <!-- First Row -->
 
-  <a href="https://github.com/ful1e5/Bibata_Cursor/actions?query=workflow%3Abuild">
-    <img alt="GitHub Action Build" src="https://github.com/ful1e5/Bibata_Cursor/workflows/build/badge.svg" width="102" />
+  <a href="https://github.com/ful1e5/Bibata_Cursor/actions?query=workflow%3Abibata-ci">
+    <img alt="GitHub Action Build" src="https://github.com/ful1e5/Bibata_Cursor/workflows/bibata-ci/badge.svg" width="102" />
   </a>
   
   <a href="https://www.codefactor.io/repository/github/ful1e5/bibata_cursor">
