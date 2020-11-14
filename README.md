@@ -15,7 +15,7 @@
   <!-- First Row -->
 
   <a href="https://github.com/ful1e5/Bibata_Cursor/actions?query=workflow%3Abibata-ci">
-    <img alt="GitHub Action Build" src="https://github.com/ful1e5/Bibata_Cursor/workflows/bibata-ci/badge.svg" width="102" />
+    <img alt="GitHub Action Build" src="https://github.com/ful1e5/Bibata_Cursor/workflows/bibata-ci/badge.svg"/>
   </a>
   
   <a href="https://www.codefactor.io/repository/github/ful1e5/bibata_cursor">
@@ -27,10 +27,6 @@
   </br >
   <a href="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html">
     <img alt="npm type definitions" src="https://img.shields.io/npm/types/typescript">
-  </a>
-
-  <a href="https://github.com/puppeteer/puppeteer/">
-    <img alt="Puppeteer version" src="https://img.shields.io/github/package-json/dependency-version/ful1e5/Bibata_Cursor/puppeteer">
   </a>
 
   <a href="https://github.com/ful1e5/clickgen">
@@ -132,7 +128,7 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 - **Bibata Amber :** Yellowish Theme.
 - **Bibata Classic :** Solid Black Theme.
 - **Bibata Ice :** Light Theme.
-- **Bibata Rainbow :** 'semi-animated' bibata cursors with rainbow colors. #55
+
 ## Bibata Styles
 
 - **Bibata Original :** Sharp edge Bibata Cursors
@@ -158,7 +154,6 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 ![Amber](https://imgur.com/5Jo6MSO.png)
 ![Classic](https://imgur.com/I5cRKE4.png)
 ![Ice ✓](https://imgur.com/avnR40g.png)
-
 
 <!-- Preview -->
 
