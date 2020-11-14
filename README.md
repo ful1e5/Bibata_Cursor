@@ -30,7 +30,7 @@
   </a>
 
   <a href="https://github.com/puppeteer/puppeteer/">
-    <img alt="Puppeteer version" src="https://img.shields.io/github/package-json/dependency-version/ful1e5/apple_cursor/puppeteer">
+    <img alt="Puppeteer version" src="https://img.shields.io/github/package-json/dependency-version/ful1e5/Bibata_Cursor/puppeteer">
   </a>
 
   <a href="https://github.com/ful1e5/clickgen">
@@ -45,8 +45,8 @@
     <img alt="License" src="https://img.shields.io/github/license/ful1e5/Bibata_Cursor?color=0081FB" />
   </a>
 
-  <a href="https://github.com/KaizIqbal/Bibata_Cursor/releases" >
-    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/KaizIqbal/Bibata_Cursor">
+  <a href="https://github.com/ful1e5/Bibata_Cursor/releases" >
+    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/ful1e5/Bibata_Cursor">
   </a>
   
   <a href="https://aur.archlinux.org/packages/bibata-cursor-theme" >
@@ -407,7 +407,7 @@ rm -rf ~/.icons/Bibata-* && cp -r Bibata-* ~/.icons/
 
 # You may also like...
 
-- [**Bibata Extra**](https://github.com/KaizIqbal/Bibata_Extra_Cursor) - More Bibata!
+- [**Bibata Extra**](https://github.com/ful1e5/Bibata_Extra_Cursor) - More Bibata!
 - [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
 - [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
 
@@ -415,7 +415,7 @@ rm -rf ~/.icons/Bibata-* && cp -r Bibata-* ~/.icons/
 
 # Bugs
 
-Bugs 🐛 should be reported [here](https://github.com/ful1e5/apple_cursor/issues) on the Github issues page.
+Bugs 🐛 should be reported [here](https://github.com/ful1e5/Bibata_Cursor/issues) on the Github issues page.
 
 <!-- Help -->
 
