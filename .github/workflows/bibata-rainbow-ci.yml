@@ -8,7 +8,6 @@ on:
   pull_request:
     paths:
       - "packages/rainbow/**"
-      - LICENSE
     branches: [main]
 
 jobs:
