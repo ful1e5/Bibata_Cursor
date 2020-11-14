@@ -52,3 +52,77 @@
 </p>
 
 ---
+
+## Cursor Sizes
+
+<kbd>22</kbd>
+<kbd>24</kbd>
+<kbd>28</kbd>
+<kbd>32</kbd>
+<kbd>40</kbd>
+<kbd>48</kbd>
+<kbd>56</kbd>
+<kbd>64</kbd>
+<kbd>72</kbd>
+<kbd>80</kbd>
+<kbd>88</kbd>
+<kbd>96</kbd>
+
+## Manual Install
+
+Latest `Stable` & `Development` releases can be downloaded from [Here](https://github.com/ful1e5/Bibata_Cursor/releases)
+
+#### Linux/X11
+
+```bash
+# extract `Bibata-Rainbow.tar.gz`
+tar -xvf Bibata-Rainbow.tar.gz
+
+# For local users
+mv Bibata-Rainbow-* ~/.icons/
+
+# For all users
+sudo mv Bibata-Rainbow-* /usr/share/icons/
+```
+
+<!--
+#### Windows
+
+1. unzip `Bibata-Rainbow_Windows.zip` file
+2. Open `Bibata-Rainbow_Windows/<Bibata_flavor>` in Explorer, and **right click** on `install.inf`.
+3. Click 'Install' from the context menu, and authorize the modifications to your system.
+4. Open _Control Panel_ > _Personalization and Appearance_ > _Change mouse pointers_, and select **Bibata Cursors**.
+5. Click '**Apply**'. -->
+
+
+## Build From Scratch
+
+**[dependencies](../../README.md#dependencies)** same as **bibata**.
+
+### ⚡ Auto Build (using GitHub Actions)
+
+GitHub Actions is automatically runs on every `push`(on **main** & **dev** branch) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **bibata-rainbow-ci**. GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/Bibata_Cursor/tree/main/.github/workflows) directory.
+
+### Manual Build
+
+> Make sure your [python environment](../../README.md#setup-python-environment)setup and `virtualenv` is **active**.
+
+#### Install Node/PyPi Packages
+
+```bash
+yarn install                                         # Install all Node Packages
+yarn py_install                                      # Install all PyPi Packages with Bibata builder
+```
+
+#### Build `Bibata-Rainbow`
+
+```bash
+yarn render:bibata                            # Render Bibata-Rainbow Bitmaps
+
+# Build cursors packages
+yarn build                                           # Build Windows & X11 packages
+# OR
+yarn build:x11                                       # Build only X11 packages
+# OR
+yarn build:win                                       # Build only Windows cursors
+```
