@@ -123,6 +123,7 @@ GitHub Actions is automatically runs on every `push`(on **main** & **dev** branc
 ### Manual Build
 
 > Make sure your [python environment](../../README.md#setup-python-environment) setup and `virtualenv` is **active**.
+> Run these 👇 commands in **root** of project.
 
 #### Install Node/PyPi Packages
 
@@ -142,4 +143,18 @@ yarn build                                           # Build Windows & X11 packa
 yarn build:x11                                       # Build only X11 packages
 # OR
 yarn build:win                                       # Build only Windows cursors
+```
+After build `bitmaps` and `themes` directory are generated at project **root**.
+
+### Install Build Theme
+
+All builded cursor themes are available inside `themes` directory.
+
+#### Linux
+
+```bash
+cd ./themes
+
+# installing Theme to local user(recommend)
+rm -rf ~/.icons/Bibata-* && cp -r Bibata-* ~/.icons/
 ```
