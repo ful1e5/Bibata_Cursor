@@ -333,7 +333,7 @@ deactivate
 
 #### Compile From Source
 
-> Make sure your [python environment](#setup-python-environment)setup and `virtualenv` is **active**.
+> Make sure your [python environment](#setup-python-environment) setup and `virtualenv` is **active**.
 
 #### Install Node/PyPi Packages
 
