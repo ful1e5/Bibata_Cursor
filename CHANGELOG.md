@@ -5,13 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+# Tags
+
+- Normal tagging for **Bibata** (v1.0.0)
+- Tag with `br` postfix in **Bibata Rainbow** (v1.0.0.br)
+
 ## [unreleased]
 
 ### Added
 
-- **Bibata Rainbow** (semi-animated) cursors.
+- **Bibata Rainbow** (semi-animated) cursors. **#55**
 - **Bibata Rainbow** workflow file added `bibata-rainbow-ci.yml`
 - **semi-animated** cursors `.svg` parsing support in `bibata-core`
+- `PLING.bbcode` for Bibata Rainbow
+- Tagging guid in [CHANGELOG.md](./CHANGELOG.md#tags)
+- Bibata Rainbow's **branding** assets in `packages/rainbow/src/svgs/branding`
 
 ### Changed
 
