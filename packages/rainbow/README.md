@@ -68,6 +68,14 @@
 <kbd>88</kbd>
 <kbd>96</kbd>
 
+## Preview 
+
+<p align="center">
+  <img alt="Bibata Rainbow" src="./src/svgs/branding/preview.svg" width="90%">
+  </br>
+  <sub>Bibata Rainbow</sub>
+</p>
+
 ## Manual Install
 
 Latest `Stable` & `Development` releases can be downloaded from [Here](https://github.com/ful1e5/Bibata_Cursor/releases)
