@@ -42,7 +42,7 @@
     <img alt="License" src="https://img.shields.io/badge/-Windows-blue?logo=windows" />
   </a> -->
 
-  <!-- Fifth Row -->
+  <!-- Third Row -->
 
   <br />
   <a href="https://github.com/ful1e5">
@@ -105,7 +105,7 @@ GitHub Actions is automatically runs on every `push`(on **main** & **dev** branc
 
 ### Manual Build
 
-> Make sure your [python environment](../../README.md#setup-python-environment)setup and `virtualenv` is **active**.
+> Make sure your [python environment](../../README.md#setup-python-environment) setup and `virtualenv` is **active**.
 
 #### Install Node/PyPi Packages
 
@@ -117,7 +117,7 @@ yarn py_install                                      # Install all PyPi Packages
 #### Build `Bibata-Rainbow`
 
 ```bash
-yarn render:bibata                            # Render Bibata-Rainbow Bitmaps
+yarn render:bibata-rainbow                           # Render Bibata-Rainbow Bitmaps
 
 # Build cursors packages
 yarn build                                           # Build Windows & X11 packages

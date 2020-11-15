@@ -7,7 +7,7 @@
         <g filter="url(#filter2_d)">
             <path
                 d="M325.543 162.605C329.477 161.424 333.722 161.899 337.345 163.918C337.436 163.97 337.525 164.019 337.615 164.072C381.203 189.509 485.636 280.646 512.639 371.614C523.831 409.312 525.86 428.317 528.228 462.389C543.817 473.961 553.27 474.797 562.649 498.302C574.442 527.859 581.515 551.004 581.515 551.004L514.498 545.901L507.462 583.553L388.775 619.832L357.267 593.226L309.665 632.822C309.665 632.822 303.256 609.483 296.673 583.466C289.49 555.076 298.341 548.364 306.759 527.081C290.761 498.297 282.242 481.275 271.253 444.266C244.201 353.137 293.661 215.79 316.249 170.497C318.153 166.671 325.538 162.607 325.538 162.607L325.543 162.605Z"
-                stroke="#0c0c0c" stroke-width="36" stroke-linecap="round" stroke-linejoin="round">
+                stroke="#010101" stroke-width="36" stroke-linecap="round" stroke-linejoin="round">
                 <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="2s"
                     repeatCount="indefinite" />
             </path>
@@ -42,15 +42,15 @@
         </filter>
         <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
             gradientTransform="translate(682.464 969.496) rotate(-94.4946) scale(1053.97 1060.99)">
-            <stop offset="0.272745" stop-color="#BCBCBC" />
-            <stop offset="0.566179" stop-color="#CDCDCD" />
-            <stop offset="0.95607" stop-color="#DDDDDD" />
+            <stop offset="0.272745" stop-color="#444444" />
+            <stop offset="0.566179" stop-color="#333333" />
+            <stop offset="0.95607" stop-color="#222222" />
         </radialGradient>
         <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
             gradientTransform="translate(682.464 969.371) rotate(-94.4946) scale(1053.97 1060.99)">
-            <stop offset="0.272745" stop-color="#BCBCBC" />
-            <stop offset="0.566179" stop-color="#CDCDCD" />
-            <stop offset="0.95607" stop-color="#DDDDDD" />
+            <stop offset="0.272745" stop-color="#444444" />
+            <stop offset="0.566179" stop-color="#333333" />
+            <stop offset="0.95607" stop-color="#222222" />
         </radialGradient>
     </defs>
 </svg>
