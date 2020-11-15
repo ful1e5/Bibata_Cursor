@@ -53,6 +53,15 @@
 
 ---
 
+
+## Quick install
+
+<p align="center">
+  <a href="https://www.pling.com/p/1445634/" >
+    <img title="Bibata Rainbow Pling Store" width="40%" src="https://imgur.com/VxSgrWw.png">
+  </a>
+</p>
+
 ## Cursor Sizes
 
 <kbd>22</kbd>
