@@ -93,25 +93,15 @@ Latest `Stable` & `Development` releases can be downloaded from [Here](https://g
 
 ```bash
 # extract `Bibata-Rainbow.tar.gz`
-tar -xvf Bibata-Rainbow.tar.gz
+tar -xvf Bibata-Modern-Rainbow.tar.gz
+tar -xvf Bibata-Original-Rainbow.tar.gz
 
 # For local users
-mv Bibata-Rainbow-* ~/.icons/
+mv Bibata-*-Rainbow ~/.icons/
 
 # For all users
-sudo mv Bibata-Rainbow-* /usr/share/icons/
+sudo mv Bibata-*-Rainbow /usr/share/icons/
 ```
-
-<!--
-#### Windows
-
-1. unzip `Bibata-Rainbow_Windows.zip` file
-2. Open `Bibata-Rainbow_Windows/<Bibata_flavor>` in Explorer, and **right click** on `install.inf`.
-3. Click 'Install' from the context menu, and authorize the modifications to your system.
-4. Open _Control Panel_ > _Personalization and Appearance_ > _Change mouse pointers_, and select **Bibata Cursors**.
-5. Click '**Apply**'. -->
-
-
 ## Build From Scratch
 
 **[dependencies](../../README.md#dependencies)** same as **bibata**.
@@ -156,5 +146,5 @@ All builded cursor themes are available inside `themes` directory.
 cd ./themes
 
 # installing Theme to local user(recommend)
-rm -rf ~/.icons/Bibata-* && cp -r Bibata-* ~/.icons/
+rm -rf ~/.icons/Bibata-*-Rainbow && cp -r Bibata-*-Rainbow ~/.icons/
 ```
