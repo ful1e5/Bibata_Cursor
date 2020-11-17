@@ -1,0 +1,28 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d)">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M20.5 29.5C20.5 26.7386 22.7386 24.5 25.5 24.5H172C174.761 24.5 177 26.7386 177 29.5C177 32.2614 174.761 34.5 172 34.5H103.75V164.5C103.75 167.261 101.511 169.5 98.75 169.5C95.9886 169.5 93.75 167.261 93.75 164.5V34.5H25.5C22.7386 34.5 20.5 32.2614 20.5 29.5Z"
+            fill="#0000FF" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M20.5 29.5C20.5 26.7386 22.7386 24.5 25.5 24.5H172C174.761 24.5 177 26.7386 177 29.5C177 32.2614 174.761 34.5 172 34.5H103.75V164.5C103.75 167.261 101.511 169.5 98.75 169.5C95.9886 169.5 93.75 167.261 93.75 164.5V34.5H25.5C22.7386 34.5 20.5 32.2614 20.5 29.5Z"
+            stroke="#0000FF" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M20.5 29.5C20.5 26.7386 22.7386 24.5 25.5 24.5H172C174.761 24.5 177 26.7386 177 29.5C177 32.2614 174.761 34.5 172 34.5H103.75V164.5C103.75 167.261 101.511 169.5 98.75 169.5C95.9886 169.5 93.75 167.261 93.75 164.5V34.5H25.5C22.7386 34.5 20.5 32.2614 20.5 29.5Z"
+        fill="#00FF00">
+        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="1.5s"
+            repeatCount="indefinite" />
+    </path>
+    <defs>
+        <filter id="filter0_d" x="8" y="16" width="181.5" height="170" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="4" />
+            <feGaussianBlur stdDeviation="2.5" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+    </defs>
+</svg>

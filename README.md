@@ -14,8 +14,8 @@
 
   <!-- First Row -->
 
-  <a href="https://github.com/ful1e5/Bibata_Cursor/actions?query=workflow%3Abuild">
-    <img alt="GitHub Action Build" src="https://github.com/ful1e5/Bibata_Cursor/workflows/build/badge.svg" width="102" />
+  <a href="https://github.com/ful1e5/Bibata_Cursor/actions?query=workflow%3Abibata-ci">
+    <img alt="GitHub Action Build" src="https://github.com/ful1e5/Bibata_Cursor/workflows/bibata-ci/badge.svg"/>
   </a>
   
   <a href="https://www.codefactor.io/repository/github/ful1e5/bibata_cursor">
@@ -27,10 +27,6 @@
   </br >
   <a href="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html">
     <img alt="npm type definitions" src="https://img.shields.io/npm/types/typescript">
-  </a>
-
-  <a href="https://github.com/puppeteer/puppeteer/">
-    <img alt="Puppeteer version" src="https://img.shields.io/github/package-json/dependency-version/ful1e5/apple_cursor/puppeteer">
   </a>
 
   <a href="https://github.com/ful1e5/clickgen">
@@ -45,8 +41,8 @@
     <img alt="License" src="https://img.shields.io/github/license/ful1e5/Bibata_Cursor?color=0081FB" />
   </a>
 
-  <a href="https://github.com/KaizIqbal/Bibata_Cursor/releases" >
-    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/KaizIqbal/Bibata_Cursor">
+  <a href="https://github.com/ful1e5/Bibata_Cursor/releases" >
+    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/ful1e5/Bibata_Cursor">
   </a>
   
   <a href="https://aur.archlinux.org/packages/bibata-cursor-theme" >
@@ -123,6 +119,14 @@
 - [Support](#support)
 </details>
 
+<!-- Sub Projects -->
+
+<details>
+ <summary><strong>Sub Projects</strong> (click to expand)</summary>
+
+- [Bibata Rainbow](./packages/rainbow)
+
+</details>
 <!-- Bibata intro -->
 
 # Bibata ?
@@ -311,7 +315,7 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 
 ### ⚡ Auto Build (using GitHub Actions)
 
-GitHub Actions is automatically runs on every `push`(on **main** & **dev** branch) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **build**. GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/Bibata_Cursor/tree/main/.github/workflows) directory.
+GitHub Actions is automatically runs on every `push`(on **main** & **dev** branch) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **bibata-ci**. GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/Bibata_Cursor/tree/main/.github/workflows) directory.
 
 ### Manual Build
 
@@ -329,7 +333,7 @@ deactivate
 
 #### Compile From Source
 
-> Make sure your [python environment](#setup-python-environment)setup and `virtualenv` is **active**.
+> Make sure your [python environment](#setup-python-environment) setup and `virtualenv` is **active**.
 
 #### Install Node/PyPi Packages
 
@@ -406,7 +410,7 @@ rm -rf ~/.icons/Bibata-* && cp -r Bibata-* ~/.icons/
 
 # You may also like...
 
-- [**Bibata Extra**](https://github.com/KaizIqbal/Bibata_Extra_Cursor) - More Bibata!
+- [**Bibata Extra**](https://github.com/ful1e5/Bibata_Extra_Cursor) - More Bibata!
 - [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
 - [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
 
@@ -414,7 +418,7 @@ rm -rf ~/.icons/Bibata-* && cp -r Bibata-* ~/.icons/
 
 # Bugs
 
-Bugs 🐛 should be reported [here](https://github.com/ful1e5/apple_cursor/issues) on the Github issues page.
+Bugs 🐛 should be reported [here](https://github.com/ful1e5/Bibata_Cursor/issues) on the Github issues page.
 
 <!-- Help -->
 

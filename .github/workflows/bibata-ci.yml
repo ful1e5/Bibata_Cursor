@@ -1,10 +1,11 @@
-name: build
+name: bibata-ci
 
 on:
   push:
     paths-ignore:
       - "**.md"
       - "**.bbcode"
+      - "packages/rainbow/**"
       - LICENSE
     branches: [main, dev]
 

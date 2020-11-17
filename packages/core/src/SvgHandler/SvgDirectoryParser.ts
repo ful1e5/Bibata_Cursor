@@ -1,3 +1,4 @@
+import chalk from "chalk";
 import fs from "fs";
 import path from "path";
 
@@ -6,6 +7,7 @@ export default class SvgDirectoryParser {
    * Parse the `.svg` files directory.
    * @param svgDir is relative/absolute path, Where source `.svg` files are stored.
    */
+  semiAnimated: boolean = false;
   constructor(private svgDir: string) {
     if (!fs.existsSync(this.svgDir)) {
       throw new Error(`🚨 .svg files not found in ${this.svgDir}`);
@@ -19,18 +21,21 @@ export default class SvgDirectoryParser {
     const cursorDir = path.resolve(this.svgDir, "static");
 
     if (!fs.existsSync(cursorDir)) {
-      throw new Error("🚨 Static Cursors directory not found");
+      console.log(
+        `${chalk.greenBright(this.svgDir)} contains semi-animated .svg files`
+      );
+      this.semiAnimated = true;
+      return [];
+    } else {
+      const staticCursors = fs
+        .readdirSync(cursorDir)
+        .map((f) => path.resolve(cursorDir, f));
+
+      if (staticCursors.length == 0) {
+        throw new Error("🚨 Static Cursors directory is empty");
+      }
+      return staticCursors;
     }
-
-    const staticCursors = fs
-      .readdirSync(cursorDir)
-      .map((f) => path.resolve(cursorDir, f));
-
-    if (staticCursors.length == 0) {
-      console.warn("Static Cursors directory is empty");
-    }
-
-    return staticCursors;
   }
 
   /**
@@ -47,8 +52,10 @@ export default class SvgDirectoryParser {
       .readdirSync(cursorDir)
       .map((f) => path.resolve(cursorDir, f));
 
-    if (animatedCursors.length == 0) {
-      console.warn("Animated Cursors directory is empty");
+    if (animatedCursors.length == 0 && this.semiAnimated) {
+      throw new Error(
+        `🚨 Can't parse svg directory ${this.svgDir} as semi-animated theme`
+      );
     }
 
     return animatedCursors;

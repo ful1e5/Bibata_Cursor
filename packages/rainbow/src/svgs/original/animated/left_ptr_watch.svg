@@ -1,0 +1,76 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0)">
+        <g filter="url(#filter0_d)">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M43 0C43 0 96.5 47.5 127 83.5C134.249 92.0558 142.076 102.226 143.5 107C149.268 126.332 106.307 90.1269 84.3664 98.1216C63.929 105.569 56.2002 157.078 46 138.5C43.2878 133.56 43 123 43 123V0Z"
+                fill="#0000FF" />
+        </g>
+        <path d="M51 19V119L85 103L122 89.0961L51 19Z" fill="#00FF00">
+            <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="1.5s"
+                repeatCount="indefinite" />
+        </path>
+        <g filter="url(#filter1_d)">
+            <path
+                d="M150 130C150 158.719 126.719 182 98 182C69.2812 182 46 158.719 46 130C46 101.281 69.2812 78 98 78C126.719 78 150 101.281 150 130Z"
+                fill="#0000FF" />
+            <path
+                d="M142 130C142 154.301 122.301 174 98 174C73.6995 174 54 154.301 54 130C54 105.699 73.6995 86 98 86C122.301 86 142 105.699 142 130Z"
+                fill="#FF0000" />
+
+            <g transform="translate(98  130)">
+                <g transform="scale(0.74)">
+                    <g transform="translate(-50 -50)">
+                        <g transform="rotate(246.039 50 50)">
+                            <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite"
+                                values="0 50 50;360 50 50" keyTimes="0;1" dur="0.7575757575757576s"></animateTransform>
+                            <path fill-opacity="0.8" fill="#f05125" d="M50 50L50 0A50 50 0 0 1 100 50Z"></path>
+                        </g>
+                        <g transform="rotate(274.52 50 50)">
+                            <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite"
+                                values="0 50 50;360 50 50" keyTimes="0;1" dur="1.0101010101010102s"></animateTransform>
+                            <path fill-opacity="0.8" fill="#fdb813" d="M50 50L50 0A50 50 0 0 1 100 50Z"
+                                transform="rotate(90 50 50)"></path>
+                        </g>
+                        <g transform="rotate(303.015 50 50)">
+                            <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite"
+                                values="0 50 50;360 50 50" keyTimes="0;1" dur="1.5151515151515151s"></animateTransform>
+                            <path fill-opacity="0.8" fill="#7fbb42" d="M50 50L50 0A50 50 0 0 1 100 50Z"
+                                transform="rotate(180 50 50)"></path>
+                        </g>
+                        <g transform="rotate(331.507 50 50)">
+                            <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite"
+                                values="0 50 50;360 50 50" keyTimes="0;1" dur="3.0303030303030303s"></animateTransform>
+                            <path fill-opacity="0.8" fill="#32a0da" d="M50 50L50 0A50 50 0 0 1 100 50Z"
+                                transform="rotate(270 50 50)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <filter id="filter0_d" x="38" y="-1" width="111.027" height="152.515" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="4" />
+            <feGaussianBlur stdDeviation="2.5" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+        <filter id="filter1_d" x="42" y="78" width="112" height="112" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="4" />
+            <feGaussianBlur stdDeviation="2" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+        <clipPath id="clip0">
+            <rect width="200" height="200" fill="white" />
+        </clipPath>
+    </defs>
+</svg>

@@ -1,0 +1,31 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d)">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M85 25C85 16.7157 91.7157 10 100 10C108.284 10 115 16.7157 115 25V81.25C115 82.7841 114.77 84.2644 114.342 85.6582C115.736 85.2303 117.216 85 118.75 85H175C183.284 85 190 91.7157 190 100C190 108.284 183.284 115 175 115H118.75C117.216 115 115.736 114.77 114.342 114.342C114.77 115.736 115 117.216 115 118.75V175C115 183.284 108.284 190 100 190C91.7157 190 85 183.284 85 175V118.75C85 117.216 85.2303 115.736 85.6582 114.342C84.2644 114.77 82.7841 115 81.25 115H25C16.7157 115 10 108.284 10 100C10 91.7157 16.7157 85 25 85H81.25C82.7841 85 84.2644 85.2303 85.6582 85.6582C85.2303 84.2644 85 82.7841 85 81.25V25Z"
+            fill="#0000FF" />
+    </g>
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M100 17.5C104.142 17.5 107.5 20.8579 107.5 25V81.25C107.5 85.3921 104.142 88.75 100 88.75C95.8579 88.75 92.5 85.3921 92.5 81.25V25C92.5 20.8579 95.8579 17.5 100 17.5ZM100 111.25C104.142 111.25 107.5 114.608 107.5 118.75V175C107.5 179.142 104.142 182.5 100 182.5C95.8579 182.5 92.5 179.142 92.5 175V118.75C92.5 114.608 95.8579 111.25 100 111.25Z"
+        fill="#00FF00">
+        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="1.5s"
+            repeatCount="indefinite" />
+    </path>
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M17.5 100C17.5 95.8579 20.8579 92.5 25 92.5H81.25C85.3921 92.5 88.75 95.8579 88.75 100C88.75 104.142 85.3921 107.5 81.25 107.5H25C20.8579 107.5 17.5 104.142 17.5 100ZM111.25 100C111.25 95.8579 114.608 92.5 118.75 92.5H175C179.142 92.5 182.5 95.8579 182.5 100C182.5 104.142 179.142 107.5 175 107.5H118.75C114.608 107.5 111.25 104.142 111.25 100Z"
+        fill="#00FF00">
+        <animate attributeName="fill" values="#F8CA01;#F47F02;#F65054;#884FF9;#2590F9;#0FC584;#F8CA01" dur="1.5s"
+            repeatCount="indefinite" />
+    </path>
+    <defs>
+        <filter id="filter0_d" x="5" y="9" width="190" height="190" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="4" />
+            <feGaussianBlur stdDeviation="2.5" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+    </defs>
+</svg>

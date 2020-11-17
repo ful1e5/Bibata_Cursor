@@ -10,6 +10,7 @@
     "clean": "rm -rf bitmaps themes",
     "render:bibata-modern": "yarn workspace bibata-modern render",
     "render:bibata-original": "yarn workspace bibata-original render",
+    "render:bibata-rainbow": "yarn workspace bibata-rainbow render",
     "build": "rm -rf themes && python build.py",
     "build:x11": "rm -rf themes && python build.py --x11",
     "build:win": "rm -rf themes && python build.py --win",

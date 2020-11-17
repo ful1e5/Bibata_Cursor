@@ -1,0 +1,61 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_f)">
+        <rect x="37" y="35.6887" width="725" height="720.501" rx="250" fill="url(#paint0_radial)" />
+    </g>
+    <g filter="url(#filter1_d)">
+        <rect x="37" y="35.5643" width="725" height="720.501" rx="250" fill="url(#paint1_radial)" />
+        <g filter="url(#filter2_d)">
+            <path
+                d="M325.543 162.605C329.477 161.424 333.722 161.899 337.345 163.918C337.436 163.97 337.525 164.019 337.615 164.072C381.203 189.509 485.636 280.646 512.639 371.614C523.831 409.312 525.86 428.317 528.228 462.389C543.817 473.961 553.27 474.797 562.649 498.302C574.442 527.859 581.515 551.004 581.515 551.004L514.498 545.901L507.462 583.553L388.775 619.832L357.267 593.226L309.665 632.822C309.665 632.822 303.256 609.483 296.673 583.466C289.49 555.076 298.341 548.364 306.759 527.081C290.761 498.297 282.242 481.275 271.253 444.266C244.201 353.137 293.661 215.79 316.249 170.497C318.153 166.671 325.538 162.607 325.538 162.607L325.543 162.605Z"
+                stroke="url(#paint2_linear)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+    </g>
+    <defs>
+        <filter id="filter0_f" x="12" y="10.6887" width="775" height="770.501" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="12.5" result="effect1_foregroundBlur" />
+        </filter>
+        <filter id="filter1_d" x="33" y="35.5643" width="733" height="728.501" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="4" />
+            <feGaussianBlur stdDeviation="2" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+        <filter id="filter2_d" x="245.373" y="143.968" width="384.142" height="526.854" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dx="23" dy="13" />
+            <feGaussianBlur stdDeviation="3.5" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+        <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(682.464 969.496) rotate(-94.4946) scale(1053.97 1060.99)">
+            <stop offset="0.272745" stop-color="#030303" />
+            <stop offset="0.566179" stop-color="#111111" />
+            <stop offset="0.95607" stop-color="#222222" />
+        </radialGradient>
+        <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(682.464 969.371) rotate(-94.4946) scale(1053.97 1060.99)">
+            <stop offset="0.272745" stop-color="#030303" />
+            <stop offset="0.566179" stop-color="#111111" />
+            <stop offset="0.95607" stop-color="#222222" />
+        </radialGradient>
+        <linearGradient id="paint2_linear" x1="482.5" y1="633" x2="264.242" y2="113.142" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F8CA01" />
+            <stop offset="0.213542" stop-color="#F47F02" />
+            <stop offset="0.411458" stop-color="#F65054" />
+            <stop offset="0.604167" stop-color="#884FF9" />
+            <stop offset="0.807292" stop-color="#2590F9" />
+            <stop offset="1" stop-color="#0FC584" />
+        </linearGradient>
+    </defs>
+</svg>

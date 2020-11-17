@@ -1,13 +1,13 @@
-
-name: build
+name: bibata-rainbow-ci
 
 on:
-
+  push:
+    paths:
+      - "packages/rainbow/**"
+    branches: [main, dev]
   pull_request:
-    paths-ignore:
-      - "**.md"
-      - "**.bbcode"
-      - LICENSE
+    paths:
+      - "packages/rainbow/**"
     branches: [main]
 
 jobs:
@@ -38,8 +38,7 @@ jobs:
         with:
           node-version: "12.x"
       - run: yarn install
-      - run: yarn render:bibata-modern
-      - run: yarn render:bibata-original
+      - run: yarn render:bibata-rainbow
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -65,8 +64,8 @@ jobs:
           python setup.py install
         continue-on-error: false
 
-      - name: Generating `Bibata` Cursor Theme
-        run: python build.py
+      - name: Generating `Bibata Rainbow` Cursor Theme
+        run: python build.py -x
 
       - name: Compressing Artifacts
         run: |
@@ -74,7 +73,7 @@ jobs:
           tar -cvzf bitmaps.tar.gz bitmaps
           tar -cvzf Bibata.tar.gz themes
 
-      - name: Uploading `Bibata` Build Log artifact
+      - name: Uploading `Bibata Rainbow` Build Log artifact
         uses: actions/upload-artifact@v2
         with:
           name: logs
@@ -86,7 +85,7 @@ jobs:
           name: bitmaps
           path: bitmaps.tar.gz
 
-      - name: Uploading `Bibata` Theme artifact
+      - name: Uploading `Bibata Rainbow` Theme artifact
         uses: actions/upload-artifact@v2
         with:
           name: Bibata
