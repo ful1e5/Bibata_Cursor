@@ -30,6 +30,10 @@
 
   <br />
 
+  <a href="https://aur.archlinux.org/packages/bibata-rainbow-cursor-theme" >
+    <img alt="AUR version" src="https://img.shields.io/aur/version/bibata-rainbow-cursor-theme">
+  </a>
+
   <a href="https://github.com/ful1e5/clickgen">
     <img alt="Clickgen" src="https://img.shields.io/badge/theme%20builder-clickgen-FD0542" />
   </a>
@@ -84,6 +88,26 @@
   </br>
   <sub>Bibata Rainbow</sub>
 </p>
+
+## Packages 📦
+
+> **📝Note**: If you're having trouble with the packages please submit a request to the package maintainer before creating an issue.
+
+### Arch Linux/Manjaro
+
+Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/packages/bibata-rainbow-cursor-theme) currently maintained by [_@yochananmarqos_](https://aur.archlinux.org/packages/?K=yochananmarqos&SeB=m). Can be installed via Pamac (preinstalled in Manjaro), Yay or any other [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers).
+
+Pamac command:
+
+```bash
+pamac build bibata-rainbow-cursor-theme
+```
+
+Yay command:
+
+```bash
+yay -S bibata-rainbow-cursor-theme
+```
 
 ## Manual Install
 
