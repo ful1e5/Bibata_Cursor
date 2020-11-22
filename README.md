@@ -86,6 +86,8 @@
   - [Packages 📦](#packages-)
     - [Arch Linux/Manjaro](#arch-linuxmanjaro)
     - [Fedora](#fedora)
+      - [copr-repo by @peterwu (recommended)](#copr-repo-by-peterwu-recommended)
+      - [copr-repo by @muhalantabli](#copr-repo-by-muhalantabli)
   - [Manual Install](#manual-install)
       - [Linux/X11](#linuxx11)
       - [Windows](#windows)
@@ -217,15 +219,28 @@ yay -S bibata-cursor-theme-bin                       # pre-built binary
 
 ### Fedora
 
-Fedora users can install from the [copr-repo](https://copr.fedorainfracloud.org/coprs/muhalantabli/copr-repo) currently maintained by _@muhalantabli_.
+#### copr-repo by @peterwu (recommended)
 
-Enable the repo:
+**Enable the repo:**
+```bash
+sudo dnf copr enable peterwu/rendezvous
+```
+
+**Installation command:**
+
+```bash
+sudo dnf install bibata-cursor-themes
+```
+
+#### copr-repo by @muhalantabli
+
+**Enable the repo:**
 
 ```bash
 sudo dnf copr enable muhalantabli/copr-repo
 ```
 
-Installation command:
+**Installation command:**
 
 ```bash
 sudo dnf install bibata-cursor-theme
