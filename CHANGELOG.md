@@ -13,7 +13,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [unreleased]
 
 ### Added
+
 - new **[copr](https://copr.fedorainfracloud.org/coprs/peterwu/rendezvous/package/bibata-cursor-themes/)** package by @peterwu
+
+### Changed
+
+- Fix dnf runtime requirements packages ful1e5/apple_cursor#34
 
 ## [Bibata Rainbow v1.0.0] - 17 Nov 2020
 

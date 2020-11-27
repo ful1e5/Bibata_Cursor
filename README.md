@@ -304,7 +304,7 @@ sudo pacman -S libx11 libxcursor libpng
 ##### Fedora/Fedora Silverblue/CentOS/RHEL
 
 ```bash
-sudo dnf install libx11-devel libxcursor-devel libpng-devel
+sudo dnf install libX11-devel libXcursor-devel libpng-devel
 ```
 
 ## Build Dependencies
