@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - new **[copr](https://copr.fedorainfracloud.org/coprs/peterwu/rendezvous/package/bibata-cursor-themes/)** package by @peterwu
+- `.svg` files separated to `<root>/svg`
 
 ### Changed
 
