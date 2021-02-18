@@ -1,22 +1,8 @@
-import { createBitmaps } from "bibata-core";
-import { themeColors } from "./colors";
-import { resolve } from "path";
+import { main } from "bibata-core";
 
-const main = async () => {
-  const projectRoot = resolve("../../");
-  const args = {
-    themeName: "Bibata-Original",
-    svgDir: resolve("./src/svg"),
-    bitmapsDir: resolve(projectRoot, "bitmaps"),
-    themeColors
-  };
-
-  try {
-    await createBitmaps(args);
-    process.exit(0);
-  } catch (error) {
-    console.error(error);
-  }
+const hmm = async () => {
+	main();
+	console.log("Bibata Original");
 };
 
-main();
+hmm();
