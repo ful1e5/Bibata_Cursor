@@ -1,8 +1,5 @@
-import { main } from "bibata-core";
-
-const hmm = async () => {
-	main();
-	console.log("Bibata modern");
+const main = async () => {
+	console.log("Bibata Modern");
 };
 
-hmm();
+main();
