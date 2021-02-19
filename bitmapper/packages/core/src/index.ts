@@ -1,3 +1,4 @@
+import { BitmapsGenerator } from "./BitmapsGenerator";
 import * as SVGHandler from "./SVGHandler";
 
-export { SVGHandler };
+export { BitmapsGenerator, SVGHandler };
