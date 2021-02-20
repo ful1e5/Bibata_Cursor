@@ -24,16 +24,25 @@ const main = async () => {
 	const png = new BitmapsGenerator(bitmapsDir);
 	const browser = await png.getBrowser();
 
-	SVG.getStatic().forEach(async (svg) => {
+	for (const svg of SVG.getStatic()) {
 		const key = `${path.basename(svg, ".svg")}.png`;
-		console.log("Saving", key, "...");
-		const out = path.resolve(bitmapsDir, key);
 
 		let content = fs.readFileSync(svg, "utf-8");
 		content = SVGHandler.colorSvg(content, color);
 
-		await png.generate(browser, content, out);
-	});
+		await png.generateStatic(browser, content, key);
+	}
+
+	for (const svg of SVG.getAnimated()) {
+		const key = `${path.basename(svg, ".svg")}.png`;
+
+		let content = fs.readFileSync(svg, "utf-8");
+		content = SVGHandler.colorSvg(content, color);
+
+		await png.generateAnimated(browser, content, key);
+	}
+
+	await browser.close();
 };
 
 main();
