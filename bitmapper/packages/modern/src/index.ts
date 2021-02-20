@@ -1,5 +1,4 @@
 import path from "path";
-import fs from "fs";
 
 import { BitmapsGenerator, SVGHandler } from "bibata-core";
 import { Colors } from "bibata-core/src/types";
@@ -24,21 +23,13 @@ const main = async () => {
 	const png = new BitmapsGenerator(bitmapsDir);
 	const browser = await png.getBrowser();
 
-	for (const svg of SVG.getStatic()) {
-		const key = `${path.basename(svg, ".svg")}.png`;
-
-		let content = fs.readFileSync(svg, "utf-8");
+	for (let { key, content } of SVG.getStatic()) {
 		content = SVGHandler.colorSvg(content, color);
-
 		await png.generateStatic(browser, content, key);
 	}
 
-	for (const svg of SVG.getAnimated()) {
-		const key = `${path.basename(svg, ".svg")}.png`;
-
-		let content = fs.readFileSync(svg, "utf-8");
+	for (let { key, content } of SVG.getAnimated()) {
 		content = SVGHandler.colorSvg(content, color);
-
 		await png.generateAnimated(browser, content, key);
 	}
 

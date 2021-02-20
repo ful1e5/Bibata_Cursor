@@ -65,7 +65,7 @@ class BitmapsGenerator {
 		const page = await browser.newPage();
 		const svg = await this.getSvgElement(page, content);
 
-		const out = path.resolve(this.bitmapsDir, key);
+		const out = path.resolve(this.bitmapsDir, `${key}.png`);
 
 		console.log("Saving", key, "...");
 		await svg.screenshot({ omitBackground: true, path: out });
