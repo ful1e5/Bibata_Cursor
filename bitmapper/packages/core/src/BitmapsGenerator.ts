@@ -1,7 +1,9 @@
 import fs from "fs";
 import path from "path";
 
-import * as puppeteer from "puppeteer";
+import puppeteer, { Browser } from "puppeteer";
+
+import { toHTML } from "./util/toHTML";
 
 class BitmapsGenerator {
 	/**
@@ -9,25 +11,9 @@ class BitmapsGenerator {
 	 * @param themeName Give name, So all bitmaps files are organized in one directory.
 	 * @param bitmapsDir `absolute` or `relative` path, Where `.png` files will store.
 	 */
-	constructor(
-		private bitmapsDir: string,
-		private readonly themeName: string
-	) {
-		this.bitmapsDir = path.resolve(bitmapsDir, themeName);
+	constructor(private bitmapsDir: string) {
+		this.bitmapsDir = path.resolve(bitmapsDir);
 		this.createDir(this.bitmapsDir);
-
-		// TODO
-		console.log(this.themeName);
-	}
-
-	/**
-	 * Prepare headless browser.
-	 */
-	async initialize() {}
-
-	static async create(bitmapsDir: string, themeName: string) {
-		const newObject = new BitmapsGenerator(bitmapsDir, themeName);
-		await newObject.initialize();
 	}
 
 	/**
@@ -40,33 +26,68 @@ class BitmapsGenerator {
 		}
 	}
 
-	protected async staticPng(page: puppeteer.Page) {
-		// TODO
-		console.log("Static");
-		await page.close();
-	}
+	// 	private async screenshot(
+	// 		element: ElementHandle<Element>
+	// 	): Promise<string | void | Buffer> {
+	// 		return element.screenshot({
+	// 			omitBackground: true,
+	// 			encoding: "binary",
+	// 		});
+	// 	}
 
-	protected async animatedPng(page: puppeteer.Page) {
-		// TODO
-		console.log("animated");
-		await page.close();
-	}
+	// 	private async stopAnimation(page: Page) {
+	// 		// @ts-ignore
+	// 		await page._client.send("Animation.setPlaybackRate", {
+	// 			playbackRate: 0,
+	// 		});
+	// 	}
+	//
+	// 	private async resumeAnimation(page: Page, playbackRate: number = 0.1) {
+	// 		// @ts-ignore
+	// 		await page._client.send("Animation.setPlaybackRate", {
+	// 			playbackRate,
+	// 		});
+	// 	}
+	//
+	// 	private async saveFrameImage(key: string, frame: Buffer) {
+	// 		const out_path = path.resolve(outDir, key);
+	// 		fs.writeFileSync(out_path, frame, { encoding: "binary" });
+	// 	}
 
-	public async getBrowser() {
+	/**
+	 * Prepare headless browser.
+	 */
+	public async getBrowser(): Promise<Browser> {
 		return await puppeteer.launch({
 			ignoreDefaultArgs: [" --single-process ", "--no-sandbox"],
 			headless: true,
 		});
 	}
-	public async toPng(
-		browser: puppeteer.Browser,
+	public async generate(
+		browser: Browser,
 		content: string,
+		out: string,
 		animated: boolean = false
 	) {
-		const page = await browser.newPage();
-		await page.setContent(content);
+		if (!content) {
+			throw new Error(`${content} File Read error`);
+		}
 
-		animated ? this.animatedPng(page) : this.staticPng(page);
+		const page = await browser.newPage();
+		const html = toHTML(content);
+		await page.setContent(html);
+
+		const svg = await page.$("#container svg");
+
+		if (!svg) {
+			throw new Error("svg element not found!");
+		}
+
+		if (animated) {
+			console.log("animated");
+		} else {
+			await svg.screenshot({ omitBackground: true, path: out });
+		}
 	}
 }
 export { BitmapsGenerator };
