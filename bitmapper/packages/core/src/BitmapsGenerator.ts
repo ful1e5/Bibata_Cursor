@@ -67,7 +67,6 @@ class BitmapsGenerator {
 
 		const out = path.resolve(this.bitmapsDir, `${key}.png`);
 
-		console.log("Saving", key, "...");
 		await svg.screenshot({ omitBackground: true, path: out });
 		await page.close();
 	}
@@ -149,7 +148,6 @@ class BitmapsGenerator {
 			const number = frameNumber(index, options.framePadding);
 			const frame = `${key}-${number}.png`;
 
-			console.log("Saving", frame, "...");
 			this.saveFrameImage(frame, img);
 
 			prevImg = img;
