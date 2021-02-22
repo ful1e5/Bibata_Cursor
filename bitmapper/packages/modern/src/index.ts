@@ -1,39 +1,33 @@
 import path from "path";
 
 import { BitmapsGenerator, SVGHandler } from "bibata-core";
-import { Colors } from "bibata-core/src/types";
+import { config } from "./config";
 
 const root = path.resolve(__dirname, "../../../../");
 const svgDir = path.resolve(root, "svg", "modern");
 
-const themeName = "Bibata-Modern";
-const bitmapsDir = path.resolve(root, "bitmaps", themeName);
-
-const color: Colors = {
-	base: "#000000",
-	outline: "#FFFFFF",
-	watch: {
-		background: "#FFFFFF",
-	},
-};
-
 const main = async () => {
-	const SVG = new SVGHandler.SvgDirectoryParser(svgDir);
+	for (const { themeName, color } of config) {
+		console.log("Preparing bitmaps of", themeName, "...");
 
-	const png = new BitmapsGenerator(bitmapsDir);
-	const browser = await png.getBrowser();
+		const bitmapsDir = path.resolve(root, "bitmaps", themeName);
+		const svg = new SVGHandler.SvgDirectoryParser(svgDir);
 
-	for (let { key, content } of SVG.getStatic()) {
-		content = SVGHandler.colorSvg(content, color);
-		await png.generateStatic(browser, content, key);
+		const png = new BitmapsGenerator(bitmapsDir);
+		const browser = await png.getBrowser();
+
+		for (let { key, content } of svg.getStatic()) {
+			content = SVGHandler.colorSvg(content, color);
+			await png.generateStatic(browser, content, key);
+		}
+
+		for (let { key, content } of svg.getAnimated()) {
+			content = SVGHandler.colorSvg(content, color);
+			await png.generateAnimated(browser, content, key);
+		}
+
+		await browser.close();
 	}
-
-	for (let { key, content } of SVG.getAnimated()) {
-		content = SVGHandler.colorSvg(content, color);
-		await png.generateAnimated(browser, content, key);
-	}
-
-	await browser.close();
 };
 
 main();
