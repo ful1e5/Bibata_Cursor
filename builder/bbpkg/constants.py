@@ -18,7 +18,6 @@ X_CURSORS_CFG: Dict[str, Dict[str, int]] = {
     ##########
     # Static #
     ##########
-    "all-scroll.png": {"xhot": 100, "yhot": 100},
     "bd_double_arrow.png": {"xhot": 98, "yhot": 100},
     "bottom_left_corner.png": {"xhot": 31, "yhot": 172},
     "bottom_right_corner.png": {"xhot": 170, "yhot": 172},
@@ -36,7 +35,6 @@ X_CURSORS_CFG: Dict[str, Dict[str, int]] = {
     "dnd-copy.png": {"xhot": 86, "yhot": 79},
     "dnd-link.png": {"xhot": 86, "yhot": 79},
     "dnd-move.png": {"xhot": 86, "yhot": 79},
-    "dnd-none.png": {"xhot": 99, "yhot": 98},
     "dotbox.png": {"xhot": 100, "yhot": 100},
     "fd_double_arrow.png": {"xhot": 98, "yhot": 100},
     "grabbing.png": {"xhot": 106, "yhot": 79},
