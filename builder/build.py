@@ -107,6 +107,9 @@ comments = {
 
 for theme in bitmaps_dir.iterdir():
     name: str = theme.stem
+
+    print(f"=> Building {name}")
+
     x_out_dir = Path(args.out_dir) / name
     win_out_dir = Path(args.out_dir) / f"{name}-Windows"
 
