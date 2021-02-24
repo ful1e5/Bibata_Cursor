@@ -55,6 +55,7 @@ def get_config(bitmaps_dir, **kwargs) -> Dict[str, Any]:
         x_sizes.append(to_tuple(size))
 
     png_provider = PNGProvider(bitmaps_dir)
+
     config: Dict[str, Any] = {}
 
     for key, item in X_CURSORS_CFG.items():
@@ -63,12 +64,13 @@ def get_config(bitmaps_dir, **kwargs) -> Dict[str, Any]:
         hotspot: Tuple[int, int] = (x_hot, y_hot)
 
         delay: int = int(item.get("delay", X_DELAY))
-        png = png_provider.get(key)
-        if not png:
+        pngs = png_provider.get(key)
+
+        if not pngs:
             raise FileNotFoundError(f"{key} not found in {bitmaps_dir}")
 
         data = {
-            "png": png,
+            "png": pngs,
             "x_sizes": x_sizes,
             "hotspot": hotspot,
             "delay": delay,

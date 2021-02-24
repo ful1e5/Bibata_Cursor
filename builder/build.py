@@ -94,7 +94,7 @@ parser.add_argument(
 # Preparing build
 args = parser.parse_args()
 
-bitmaps_dir = Path(args.png_dir)
+bitmaps_dir = Path(args.png_dir).absolute()
 
 comments = {
     "Bibata-Modern-Classic": "Dark & Rounded-edge Bibata",
@@ -106,20 +106,19 @@ comments = {
 }
 
 for theme in bitmaps_dir.iterdir():
-    name: str = theme.stem
-
-    print(f"=> Building {name}")
+    name = theme.name
 
     x_out_dir = Path(args.out_dir) / name
     win_out_dir = Path(args.out_dir) / f"{name}-Windows"
 
     config = get_config(
-        theme,
+        theme.absolute(),
         x_sizes=args.xsizes,
         win_canvas_size=args.win_canvas_size,
         win_size=args.win_size,
     )
-    info = Info(name=name, comment=comments[name])
+
+    info = Info(name=name, comment=comments.get(name, f"{name} Cursors"))
 
     if args.platform == "unix":
         xbuild(config, x_out_dir, info)
