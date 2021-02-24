@@ -95,7 +95,7 @@ parser.add_argument(
 args = parser.parse_args()
 
 bitmaps_dir = Path(args.png_dir).absolute()
-
+name = bitmaps_dir.stem
 comments = {
     "Bibata-Modern-Classic": "Dark & Rounded-edge Bibata",
     "Bibata-Original-Classic": "Dark & Sharp-edge Bibata",
@@ -105,24 +105,22 @@ comments = {
     "Bibata-Original-Ice": "Light & Sharp-edge Bibata",
 }
 
-for theme in bitmaps_dir.iterdir():
-    name = theme.name
 
-    x_out_dir = Path(args.out_dir) / name
-    win_out_dir = Path(args.out_dir) / f"{name}-Windows"
+x_out_dir = Path(args.out_dir) / name
+win_out_dir = Path(args.out_dir) / f"{name}-Windows"
 
-    config = get_config(
-        theme.absolute(),
-        x_sizes=args.xsizes,
-        win_canvas_size=args.win_canvas_size,
-        win_size=args.win_size,
-    )
+config = get_config(
+    bitmaps_dir,
+    x_sizes=args.xsizes,
+    win_canvas_size=args.win_canvas_size,
+    win_size=args.win_size,
+)
 
-    info = Info(name=name, comment=comments.get(name, f"{name} Cursors"))
+info = Info(name=name, comment=comments.get(name, f"{name} Cursors"))
 
-    if args.platform == "unix":
-        xbuild(config, x_out_dir, info)
-    elif args.platform == "windows":
-        wbuild(config, win_out_dir, info)
-    else:
-        build(config, x_out_dir, win_out_dir, info)
+if args.platform == "unix":
+    xbuild(config, x_out_dir, info)
+elif args.platform == "windows":
+    wbuild(config, win_out_dir, info)
+else:
+    build(config, x_out_dir, win_out_dir, info)
