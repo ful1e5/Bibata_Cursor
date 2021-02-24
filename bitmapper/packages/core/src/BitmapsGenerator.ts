@@ -117,7 +117,7 @@ class BitmapsGenerator {
 			playbackRate: 0.3,
 			diff: 0,
 			frameLimit: 300,
-			framePadding: 3,
+			framePadding: 4,
 		}
 	) {
 		const page = await browser.newPage();
