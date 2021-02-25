@@ -71,6 +71,14 @@ def add_missing_xcursor(directory) -> None:
             "src": "fd_double_arrow",
             "links": ["fcf1c3c7cd4491d801f1e1c78f100000", "nesw-resize", "size_bdiag"],
         },
+        {
+            "src": "grabbing",
+            "links": [
+                "closedhand",
+                "dnd-none",
+                "fcf21c00b30f7e3f83fe0dfd12e71cff",
+            ],
+        },
         {"src": "hand1", "links": ["grab", "openhand"]},
         {
             "src": "hand2",
@@ -105,9 +113,7 @@ def add_missing_xcursor(directory) -> None:
             "links": [
                 "4498f0e0c1937ffe01fd06f973665830",
                 "9081237383d90e509aa00f00170e968f",
-                "fcf21c00b30f7e3f83fe0dfd12e71cff",
-                "closedhand",
-                "dnd-none",
+                "all-scroll",
                 "fleur",
                 "size_all",
             ],
