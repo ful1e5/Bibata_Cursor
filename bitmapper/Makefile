@@ -10,12 +10,12 @@ node_modules:
 	@mkdir -p $@
 
 install: node_modules package.json 
-	@yarn install 
+	@yarn install
 
-render_bibata_modern:
+render_modern:
 	@yarn render:bibata-modern
 
-render_bibata_original:
+render_original:
 	@yarn render:bibata-original
 
-render: render_bibata_modern render_bibata_original
+render: render_modern render_original
