@@ -34,6 +34,14 @@ render_modern: bitmapper svg
 build: bitmaps
 	@cd builder && make setup build
 
+build_unix: bitmaps
+	@rm -rf themes
+	@cd builder && make setup build_unix
+
+build_windows: bitmaps
+	@rm -rf themes
+	@cd builder && make setup build_windows
+
 build_modern: bitmaps
 	@cd builder && make setup build_modern
 
@@ -47,30 +55,30 @@ build_original: bitmaps
 .ONESHELL:
 SHELL:=/bin/bash
 
-src = "./themes/Bibata-*-*"
+src = ./themes/Bibata-*
 local := ~/.icons
-local_dest := $(local)/$(theme)
+local_dest := $(local)/Bibata-*
 
 root := /usr/share/icons
-root_dest := $(root)/$(theme)
+root_dest := $(root)/Bibata-*
 
-install: $(src)
+install: themes
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Installing '$(theme)' cursors inside $(local)/..."
+		@echo "> Installing 'Bibata' cursors inside $(local)/..."
 		@mkdir -p $(local)
-		@cp -r $(src) $(local_dest) && echo "> Installed!"
+		@cp -r $(src) $(local)/ && echo "> Installed!"
 	@else
-		@echo "> Installing '$(theme)' cursors inside $(root)/..."
+		@echo "> Installing 'Bibata' cursors inside $(root)/..."
 		@mkdir -p $(root)
-		@sudo cp -r $(src) $(root_dest) && echo "> Installed!"
+		@sudo cp -r $(src) $(root)/ && echo "> Installed!"
 	@fi
 
 uninstall:
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Removing '$(local_dest)'..."
+		@echo "> Removing 'Bibata' cursors from '$(local)'..."
 		@rm -rf $(local_dest)
 	@else
-		@echo "> Removing '$(root_dest)'..."
+		@echo "> Removing 'Bibata' cursors from '$(root)'..."
 		@sudo rm -rf $(root_dest)
 	@fi
 
