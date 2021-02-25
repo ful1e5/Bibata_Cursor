@@ -109,6 +109,8 @@ comments = {
 x_out_dir = Path(args.out_dir) / name
 win_out_dir = Path(args.out_dir) / f"{name}-Windows"
 
+print(f"=> Creating {name}")
+
 config = get_config(
     bitmaps_dir,
     x_sizes=args.xsizes,

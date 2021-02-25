@@ -5,7 +5,7 @@ themes
 test.py
 
 # Logs Files
-build.log
+builder/files.txt
 
 # Extra
 .vscode

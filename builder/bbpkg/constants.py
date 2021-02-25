@@ -5,7 +5,7 @@ from typing import Dict
 
 # Info
 AUTHOR = "Kaiz Khatri"
-URL = "https://github.com/ful1e5/Google_Cursor"
+URL = "https://github.com/ful1e5/Bibata_Cursor"
 
 # XCursor
 X_DELAY: int = 10
@@ -85,18 +85,18 @@ WIN_CURSORS_CFG: Dict[str, Dict[str, str]] = {
     ##########
     # Static #
     ##########
-    "right_ptr.png": {"to": "Alternate", "position": "top_right"},
+    "right_ptr.png": {"to": "Alternate", "position": "top_left"},
     "cross.png": {"to": "Cross"},
     "left_ptr.png": {"to": "Default", "position": "top_left"},
-    "bottom_right_corner.png": {"to": "Diagonal_1"},
-    "bottom_left_corner.png": {"to": "Diagonal_2"},
+    "bd_double_arrow.png": {"to": "Diagonal_1"},
+    "fd_double_arrow.png": {"to": "Diagonal_2"},
     "pencil.png": {"to": "Handwriting"},
     "question_arrow.png": {"to": "Help", "position.png": "top_left"},
     "sb_h_double_arrow.png": {"to": "Horizontal"},
     "xterm.png": {"to": "IBeam", "position": "top_left"},
     "hand2.png": {"to": "Link", "position": "top_left"},
     "hand1.png": {"to": "Move"},
-    "dnd_no_drop.png": {"to": "Unavailiable", "position": "top_left"},
+    "circle.png": {"to": "Unavailiable", "position": "top_left"},
     "sb_v_double_arrow.png": {"to": "Vertical"},
     ############
     # Animated #
