@@ -7,7 +7,6 @@
 	"license": "GPL-3.0",
 	"private": true,
 	"scripts": {
-		"clean": "rm -rf bitmaps themes",
 		"render:bibata-modern": "yarn workspace bibata-modern render",
 		"render:bibata-original": "yarn workspace bibata-original render",
 		"render:bibata-rainbow": "yarn workspace bibata-rainbow render"

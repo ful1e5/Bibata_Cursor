@@ -4,7 +4,7 @@ import { BitmapsGenerator, SVGHandler } from "bibata-core";
 import { config } from "./config";
 
 const root = path.resolve(__dirname, "../../../../");
-const svgDir = path.resolve(root, "svg", "modern");
+const svgDir = path.resolve(root, "svg", "original");
 
 const main = async () => {
 	for (const { themeName, color } of config) {
