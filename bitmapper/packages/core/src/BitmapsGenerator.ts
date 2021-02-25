@@ -33,7 +33,7 @@ class BitmapsGenerator {
 	 */
 	public async getBrowser(): Promise<Browser> {
 		return await puppeteer.launch({
-			ignoreDefaultArgs: [" --single-process ", "--no-sandbox"],
+			ignoreDefaultArgs: ["--no-sandbox"],
 			headless: true,
 		});
 	}

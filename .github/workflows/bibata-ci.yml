@@ -62,6 +62,9 @@ jobs:
             - name: Generating `Bibata-Modern` Cursor Theme
               run: make modern
 
+            - name: Compressing `Bibata-Modern` Cursor Theme
+              run: tar -cvzf Bibata-Modern.tar.gz themes/*
+
             - name: Uploading `Bibata-Modern` Bitmaps artifact
               uses: actions/upload-artifact@v2
               with:
@@ -72,10 +75,13 @@ jobs:
               uses: actions/upload-artifact@v2
               with:
                   name: Bibata-Modern
-                  path: themes/*
+                  path: Bibata-Modern.tar.gz
 
             - name: Generating `Bibata-Original` Cursor Theme
               run: make original
+
+            - name: Compressing `Bibata-Original` Cursor Theme
+              run: tar -cvzf Bibata-Original.tar.gz themes/*
 
             - name: Uploading `Bibata-Original` Bitmaps artifact
               uses: actions/upload-artifact@v2
@@ -87,4 +93,4 @@ jobs:
               uses: actions/upload-artifact@v2
               with:
                   name: Bibata-Original
-                  path: themes/*
+                  path: Bibata-Original.tar.gz
