@@ -6,9 +6,10 @@ from typing import Any, Dict, NamedTuple
 
 from clickgen.builders import WindowsCursor, XCursor
 from clickgen.core import CursorAlias
-from clickgen.packagers import WindowsPackager, XPackager
+from clickgen.packagers import WindowsPackager
 
 from bbpkg.constants import AUTHOR, URL
+from bbpkg.packager import XPackager
 from bbpkg.symlinks import add_missing_xcursor
 
 
@@ -38,7 +39,7 @@ def xbuild(config: Dict[str, Dict[str, Any]], x_out_dir: Path, info: Info) -> No
 
         with CursorAlias.from_bitmap(png, hotspot) as alias:
             x_cfg = alias.create(x_sizes, delay)
-            print(f" -> Building '{x_cfg.stem}' XCursor...")
+            print(f"Building '{x_cfg.stem}' XCursor...")
             XCursor.create(x_cfg, x_out_dir)
 
     add_missing_xcursor(x_out_dir / "cursors")
@@ -77,7 +78,7 @@ def wbuild(config: Dict[str, Dict[str, Any]], win_out_dir: Path, info: Info) -> 
                 win_cfg = alias.reproduce(
                     win_size, canvas_size, position, delay=win_delay
                 ).rename(win_key)
-                print(f" -> Building '{win_cfg.stem}' Windows Cursor...")
+                print(f"Building '{win_cfg.stem}' Windows Cursor...")
                 WindowsCursor.create(win_cfg, win_out_dir)
 
     WindowsPackager(win_out_dir, info.name, info.comment, AUTHOR, URL)
@@ -112,7 +113,7 @@ def build(
         win_cfg = alias.reproduce(
             win_size, canvas_size, position, delay=win_delay
         ).rename(win_key)
-        print(f" -> Building '{win_cfg.stem}' Windows Cursor...")
+        print(f"Building '{win_cfg.stem}' Windows Cursor...")
         WindowsCursor.create(win_cfg, win_out_dir)
 
     for _, item in config.items():
@@ -123,7 +124,7 @@ def build(
 
         with CursorAlias.from_bitmap(png, hotspot) as alias:
             x_cfg = alias.create(x_sizes, delay)
-            print(f" -> Building '{x_cfg.stem}' XCursor...")
+            print(f"Building '{x_cfg.stem}' XCursor...")
             XCursor.create(x_cfg, x_out_dir)
 
             if item.get("win_key"):

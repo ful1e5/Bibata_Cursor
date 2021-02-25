@@ -109,7 +109,7 @@ comments = {
 x_out_dir = Path(args.out_dir) / name
 win_out_dir = Path(args.out_dir) / f"{name}-Windows"
 
-print(f"=> Creating {name}")
+print(f"Getting '{name}' bitmaps ready for build...")
 
 config = get_config(
     bitmaps_dir,
