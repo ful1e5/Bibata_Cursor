@@ -72,77 +72,27 @@
 
 ---
 
-<!-- Table Of Content -->
-
-<details>
- <summary><strong>Table of Contents</strong> (click to expand)</summary>
-
-- [Bibata ?](#bibata-)
-  - [Bibata Styles](#bibata-styles)
-  - [Cursor Sizes](#cursor-sizes)
-  - [Colors](#colors)
-  - [Preview](#preview)
-  - [Quick install](#quick-install)
-  - [Packages 📦](#packages-)
-    - [Arch Linux/Manjaro](#arch-linuxmanjaro)
-    - [Fedora](#fedora)
-      - [copr-repo by @peterwu (recommended)](#copr-repo-by-peterwu-recommended)
-      - [copr-repo by @muhalantabli](#copr-repo-by-muhalantabli)
-  - [Manual Install](#manual-install)
-      - [Linux/X11](#linuxx11)
-      - [Windows](#windows)
-- [Dependencies](#dependencies)
-  - [Runtime Dependencies](#runtime-dependencies)
-      - [Install Runtime Dependencies](#install-runtime-dependencies)
-        - [macOS](#macos)
-        - [Debain/ubuntu](#debainubuntu)
-        - [ArchLinux/Manjaro](#archlinuxmanjaro)
-        - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
-  - [Build Dependencies](#build-dependencies)
-    - [Node Packages](#node-packages)
-    - [PyPi Packages](#pypi-packages)
-  - [Build From Scratch](#build-from-scratch)
-    - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
-    - [Manual Build](#manual-build)
-      - [Setup python environment](#setup-python-environment)
-      - [Compile From Source](#compile-from-source)
-      - [Install Node/PyPi Packages](#install-nodepypi-packages)
-      - [Build `Bibata`](#build-bibata)
-      - [Build `Bibata Modern` Only](#build-bibata-modern-only)
-      - [Build `Bibata Original` Only](#build-bibata-original-only)
-    - [Install Build Theme](#install-build-theme)
-      - [Linux](#linux)
-      - [Windows](#windows-1)
-- [You may also like...](#you-may-also-like)
-- [Bugs](#bugs)
-- [Getting Help](#getting-help)
-- [Contributing](#contributing)
-- [Credit](#credit)
-- [Support](#support)
-</details>
-
 <!-- Sub Projects -->
 
 <details>
  <summary><strong>Sub Projects</strong> (click to expand)</summary>
 
-- [Bibata Rainbow](./packages/rainbow)
+-   [Bibata Rainbow](./bitmapper/packages/rainbow)
 
 </details>
-<!-- Bibata intro -->
 
 # Bibata ?
 
 Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project masterelop for improve `Cursor` Experience.
 
-- **Bibata Amber :** Yellowish Theme.
-- **Bibata Classic :** Solid Black Theme.
-- **Bibata Ice :** Light Theme.
+-   **Bibata Amber :** Yellowish Theme.
+-   **Bibata Classic :** Solid Black Theme.
+-   **Bibata Ice :** Light Theme.
 
 ## Bibata Styles
 
-- **Bibata Original :** Sharp edge Bibata Cursors
-- **Bibata Modern :** Round edge Bibata Cursors
+-   **Bibata Original :** Sharp edge Bibata Cursors
+-   **Bibata Modern :** Round edge Bibata Cursors
 
 ## Cursor Sizes
 
@@ -169,20 +119,22 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
 
 ## Preview
 
+> Check Figma file [here](https://www.figma.com/file/Y9RKZLXhSvaxpUzsKGJkp6/Bibata-Cursor?node-id=0%3A1)
+
 <p align="center">
-  <img title="Bibata Amber" width="90%" src="https://imgur.com/p60SQOq.png">
+  <img title="Bibata Amber" width="90%" src="https://i.imgur.com/2DEYWDC.png">
   </br>
   <sub>Bibata Amber</sub>
 </p>
 
 <p align="center">
-  <img title="Bibata Classic" width="90%" src="https://imgur.com/WaqGcUF.png">
+  <img title="Bibata Classic" width="90%" src="https://i.imgur.com/C8mMQ3j.png">
   </br>
   <sub>Bibata Classic</sub>
 </p>
 
 <p align="center">
-  <img title="Bibata Ice" width="90%" src="https://imgur.com/ON1sd4H.png">
+  <img title="Bibata Ice" width="90%" src="https://i.imgur.com/ovzTw6u.png">
   </br>
   <sub>Bibata Ice</sub>
 </p>
@@ -222,6 +174,7 @@ yay -S bibata-cursor-theme-bin                       # pre-built binary
 #### copr-repo by @peterwu (recommended)
 
 **Enable the repo:**
+
 ```bash
 sudo dnf copr enable peterwu/rendezvous
 ```
@@ -265,8 +218,8 @@ sudo mv Bibata-* /usr/share/icons/
 
 #### Windows
 
-1. unzip `Bibata_Windows.zip` file
-2. Open `Bibata_Windows/<Bibata_flavor>` in Explorer, and **right click** on `install.inf`.
+1. unzip `.zip` file
+2. Open unziped directory in Explorer, and **right click** on `install.inf`.
 3. Click 'Install' from the context menu, and authorize the modifications to your system.
 4. Open _Control Panel_ > _Personalization and Appearance_ > _Change mouse pointers_, and select **Bibata Cursors**.
 5. Click '**Apply**'.
@@ -275,18 +228,19 @@ sudo mv Bibata-* /usr/share/icons/
 
 # Dependencies
 
-## Runtime Dependencies
+## External Libraries
 
-- libxcursor-dev
-- libx11-dev
-- libpng-dev (<=1.6)
+-   libxcursor-dev
+-   libx11-dev
+-   libpng-dev (<=1.6)
 
-#### Install Runtime Dependencies
+#### Install External Libraries
 
 ##### macOS
 
 ```bash
-brew cask install xquartz libpng
+brew install --cask xquartz
+brew install libpng
 ```
 
 ##### Debain/ubuntu
@@ -304,27 +258,27 @@ sudo pacman -S libx11 libxcursor libpng
 ##### Fedora/Fedora Silverblue/CentOS/RHEL
 
 ```bash
-sudo dnf install libx11-devel libxcursor-devel libpng-devel
+sudo dnf install libX11-devel libXcursor-devel libpng-devel
 ```
 
 ## Build Dependencies
 
-- [nodejs](https://nodejs.org/en/) (<=12.x.x)
-- [yarn](https://classic.yarnpkg.com/en/docs/install/)
-- [python3](https://www.python.org/downloads/)
-- [pip3](https://pip.pypa.io/en/stable/installing/)
+-   [gcc](https://gcc.gnu.org/install/)
+-   [make](https://www.gnu.org/software/make/)
+-   [nodejs](https://nodejs.org/en/) (<=12.x.x)
+-   [yarn](https://classic.yarnpkg.com/en/docs/install/)
+-   [python](https://www.python.org/downloads/) (<=3.8)
+-   [pip3](https://pip.pypa.io/en/stable/installing/)
 
 ### Node Packages
 
-- [puppeteer](https://www.npmjs.com/package/puppeteer)
-- [pngjs](https://www.npmjs.com/package/pngjs)
-- [pixelmatch](https://www.npmjs.com/package/pixelmatch)
-- [ora](https://www.npmjs.com/package/ora)
-- [chalk](https://www.npmjs.com/package/chalk)
+-   [puppeteer](https://www.npmjs.com/package/puppeteer)
+-   [pngjs](https://www.npmjs.com/package/pngjs)
+-   [pixelmatch](https://www.npmjs.com/package/pixelmatch)
 
 ### PyPi Packages
 
-- [clickgen](https://pypi.org/project/clickgen/)
+-   [clickgen](https://pypi.org/project/clickgen/s)
 
 ## Build From Scratch
 
@@ -334,100 +288,54 @@ GitHub Actions is automatically runs on every `push`(on **main** & **dev** branc
 
 ### Manual Build
 
-#### Setup python environment
+> Check **[Makefile](./Makefile)** for more targets.
 
 ```bash
-python3 -m pip install --upgrade pip                 # Update pip to latest
-python3 -m pip install virtualenv                    # Install python virtual environment
-virtualenv venv                                      # Create new virtualenv named `venv`
-source venv/bin/activate                             # Activate virtualenv
-
-# For Deactivate virtualenv
-deactivate
+make
 ```
 
-#### Compile From Source
-
-> Make sure your [python environment](#setup-python-environment) setup and `virtualenv` is **active**.
-
-#### Install Node/PyPi Packages
+#### Build Only `XCursor` theme
 
 ```bash
-yarn install                                         # Install all Node Packages
-yarn py_install                                      # Install all PyPi Packages with Bibata builder
+make unix
 ```
 
-#### Build `Bibata`
+#### Customize `XCursor` size
 
 ```bash
-yarn render:bibata-modern                            # Render Bibata Modern Bitmaps
-yarn render:bibata-original                          # Render Bibata Original Bitmaps
-
-# Build cursors packages
-yarn build                                           # Build Windows & X11 packages
-# OR
-yarn build:x11                                       # Build only X11 packages
-# OR
-yarn build:win                                       # Build only Windows cursors
+make unix X_SIZES=22            # Only built '22px' pixel-size.
+make unix X_SIZES=22 24 32      # Multiple sizes are provided with  ' '(Space)
 ```
 
-#### Build `Bibata Modern` Only
+#### Install `XCursor` theme
 
 ```bash
-yarn render:bibata-modern                            # Render Bibata Modern Bitmaps
-
-# Build cursors packages
-yarn build                                           # Build Windows & X11 cursors
-# OR
-yarn build:x11                                       # Build only X11 cursors
-# OR
-yarn build:win                                       # Build only Windows cursors
+make install            # install as user
+  # OR
+sudo make install       # install as root
 ```
 
-#### Build `Bibata Original` Only
+#### Build Only `Windows` theme
 
 ```bash
-yarn render:bibata-original                          # Render Bibata Original Bitmaps
-
-# Build cursors packages
-yarn build                                           # Build Windows & Linux cursors
-# OR
-yarn build:x11                                       # Build only X11 cursors
-# OR
-yarn build:win                                       # Build only Windows cursors
+make windows
 ```
 
-After build `bitmaps` and `themes` directory are generated at project **root**.
-
-### Install Build Theme
-
-All builded cursor themes are available inside `themes` directory.
-
-#### Linux
+#### Customize `Windows Cursor` size
 
 ```bash
-cd ./themes
-
-# installing Theme to local user(recommend)
-rm -rf ~/.icons/Bibata-* && cp -r Bibata-* ~/.icons/
+make windows WIN_SIZE=96            # Supports only one pixel-size
 ```
 
-#### Windows
-
-1. Open the `settings` app.
-2. **Goto** `Devices` -> `Mouse` -> `Additional Mouse Options`.
-3. **Goto** the `pointers` tab.
-4. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `./themes/<Bibata_flavor>` folder.
-5. Click "**save as**" and type in the desired name.
-6. Click "**apply**" and "**ok**".
+> Windows installations steps are same as [these](#windows).
 
 <!-- Other Interesting projects -->
 
 # You may also like...
 
-- [**Bibata Extra**](https://github.com/ful1e5/Bibata_Extra_Cursor) - More Bibata!
-- [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
-- [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
+-   [**Bibata Extra**](https://github.com/ful1e5/Bibata_Extra_Cursor) - More Bibata!
+-   [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
+-   [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
 
 <!-- Bug Report -->
 
@@ -451,18 +359,15 @@ Check [CONTRIBUTING.md](CONTRIBUTING.md), any suggestions for features and contr
 
 # Credit
 
-- [Adwaita](https://github.com/GNOME/adwaita-icon-theme)
-- [Dmz](https://github.com/GalliumOS/dmz-cursor-theme)
-- [Yaru](https://github.com/ubuntu/yaru)
-- Emojis are taken from [here](https://emojipedia.org/)
+-   [Adwaita](https://github.com/GNOME/adwaita-icon-theme)
+-   [Dmz](https://github.com/GalliumOS/dmz-cursor-theme)
+-   [Yaru](https://github.com/ubuntu/yaru)
+-   Emojis are taken from [here](https://emojipedia.org/)
+-   Wedge loading from [loading.io](https://loading.io/spinner/wedges/-pie-wedge-pizza-circle-round-rotate) with **Microsoft** colors
 
 <!-- Support -->
 
 # Support
-
-Share your joy with **★**.
-
-> For more support
 
 <a href="https://www.buymeacoffee.com/Nt7Wg4V" >
   <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >

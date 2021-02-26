@@ -1,0 +1,51 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d)">
+        <path
+            d="M187 100.5C187 148.825 147.825 188 99.5 188C51.1751 188 12 148.825 12 100.5C12 52.1751 51.1751 13 99.5 13C147.825 13 187 52.1751 187 100.5Z"
+            fill="#0000FF" />
+    </g>
+    <path
+        d="M174 100.5C174 141.645 140.645 175 99.5 175C58.3548 175 25 141.645 25 100.5C25 59.3548 58.3548 26 99.5 26C140.645 26 174 59.3548 174 100.5Z"
+        fill="#FF0000" />
+    <g transform="translate(100 100)">
+        <g transform="scale(1.3)">
+            <g transform="translate(-50 -50)">
+                <g transform="rotate(0 50 50)">
+                    <animateTransform attributeName="transform" type="rotate" repeatCount="4"
+                        values="0 50 50;360 50 50" keyTimes="0;1" dur="0.7575757575757576s"></animateTransform>
+                    <path fill-opacity="0.8" fill="#f05125" d="M50 50L50 0A50 50 0 0 1 100 50Z"></path>
+                </g>
+                <g transform="rotate(0 50 50)">
+                    <animateTransform attributeName="transform" type="rotate" repeatCount="3"
+                        values="0 50 50;360 50 50" keyTimes="0;1" dur="1.0101010101010102s"></animateTransform>
+                    <path fill-opacity="0.8" fill="#fdb813" d="M50 50L50 0A50 50 0 0 1 100 50Z"
+                        transform="rotate(90 50 50)"></path>
+                </g>
+                <g transform="rotate(0 50 50)">
+                    <animateTransform attributeName="transform" type="rotate" repeatCount="2"
+                        values="0 50 50;360 50 50" keyTimes="0;1" dur="1.5151515151515151s"></animateTransform>
+                    <path fill-opacity="0.8" fill="#7fbb42" d="M50 50L50 0A50 50 0 0 1 100 50Z"
+                        transform="rotate(180 50 50)"></path>
+                </g>
+                <g transform="rotate(0 50 50)">
+                    <animateTransform attributeName="transform" type="rotate" repeatCount="1"
+                        values="0 50 50;360 50 50" keyTimes="0;1" dur="3.0303030303030303s"></animateTransform>
+                    <path fill-opacity="0.8" fill="#32a0da" d="M50 50L50 0A50 50 0 0 1 100 50Z"
+                        transform="rotate(270 50 50)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <filter id="filter0_d" x="7" y="12" width="185" height="185" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="4" />
+            <feGaussianBlur stdDeviation="2.5" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+    </defs>
+</svg>
