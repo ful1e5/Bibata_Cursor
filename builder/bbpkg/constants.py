@@ -8,7 +8,7 @@ AUTHOR = "Kaiz Khatri"
 URL = "https://github.com/ful1e5/Bibata_Cursor"
 
 # XCursor
-X_DELAY: int = 10
+X_DELAY: int = 13
 
 
 # Windows Cursor
