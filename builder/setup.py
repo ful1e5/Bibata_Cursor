@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name="bbpkg",
-    version="1.0.4",
+    version="1.1.0",
     description="Generate 'Bibata' cursor theme from PNGs file",
     url="https://github.com/ful1e5/Bibata_Cursor",
     packages=["bbpkg"],
