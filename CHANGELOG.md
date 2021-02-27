@@ -8,7 +8,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # Tags
 
 -   Normal tagging for **Bibata** (v1.0.0)
--   Tag with `br` postfix in **Bibata Rainbow** (v1.0.0.br)
 
 ## [Bibata v1.1.0] - 26 Feb 2021
 
@@ -38,23 +37,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   Fix grabbing cursors symlinks #87
 -   Fix Cursors not available for Login Window in Linux Mint 20 #88
 -   Dirty pixel in `move` cursor fixed #94
-
-## [Bibata Rainbow v1.0.0] - 17 Nov 2020
-
-### Added
-
--   **Bibata Rainbow** (semi-animated) cursors. **#55**
--   **Bibata Rainbow** workflow file added `bibata-rainbow-ci.yml`
--   **semi-animated** cursors `.svg` parsing support in `bibata-core`
--   `PLING.bbcode` for Bibata Rainbow
--   Tagging guid in [CHANGELOG.md](./CHANGELOG.md#tags)
--   Bibata Rainbow's **branding** assets in `packages/rainbow/src/svgs/branding`
-
-### Changed
-
--   `build` workflow changed to `bibata-ci`
--   **Bibata** workflow file names changed to `bibata-ci.yml` & `bibata-pr.yml`
--   Optimize **BitmapsGenerator** browser.
 
 ## [Bibata v1.0.3] - 10 Nov 2020
 
@@ -194,7 +176,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.1.0...main
 [bibata v1.1.0]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.3...v1.1.0
-[bibata rainbow v1.0.0]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.3...v1.0.0.br
 [bibata v1.0.3]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.2...v1.0.3
 [bibata v1.0.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.1...v1.0.2
 [bibata v1.0.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.0...v1.0.1
