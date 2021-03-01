@@ -16,7 +16,7 @@ def to_tuple(x: X) -> Tuple[X, X]:
 
 
 def get_config(bitmaps_dir, **kwargs) -> Dict[str, Any]:
-    """Return configuration of `GoogleDot` pointers.
+    """Return configuration of `Bibata` pointers.
 
     ```
     Args:
