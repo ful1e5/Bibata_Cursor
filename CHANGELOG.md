@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - puppeteer `svg` element timeout fixed
 - optional options typing in `BitmapGenerator.ts`
 - Format `svg` files
+- Remove old username of author with Contributors table
 
 ## [Bibata v1.1.0] - 26 Feb 2021
 
