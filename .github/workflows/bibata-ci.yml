@@ -5,14 +5,12 @@ on:
         paths-ignore:
             - "**.md"
             - "**.bbcode"
-            - "bitmapper/packages/rainbow/**"
             - LICENSE
         branches: [main, dev]
     pull_request:
         paths-ignore:
             - "**.md"
             - "**.bbcode"
-            - "bitmapper/packages/rainbow/**"
             - LICENSE
         branches: [main]
 

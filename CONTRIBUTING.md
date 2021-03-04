@@ -25,7 +25,7 @@ Pull requests are the best way to propose changes to the codebase (we use [Githu
 
 In short, when you submit code changes, your submissions are understood to be under the same [GPL - 3.0 License](https://www.gnu.org/licenses/gpl-3.0.en.html) that covers the project. Feel free to contact the maintainers if that's a concern.
 
-## Report bugs using Github's [issues](https://github.com/KaizIqbal/Bibata_Cursor/issues)
+## Report bugs using Github's [issues](https://github.com/ful1e5/Bibata_Cursor/issues)
 
 I use GitHub issues to track public bugs. Report a bug by opening a new issue, it's that easy!
 
@@ -35,8 +35,8 @@ I use GitHub issues to track public bugs. Report a bug by opening a new issue, i
 
 - A quick summary and/or background
 - Steps to reproduce
-  - Be specific!
-  - Give sample code if you can.
+- Be specific!
+- Give sample code if you can.
 - What you expected would happen
 - What actually happens
 - Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
@@ -50,12 +50,3 @@ By contributing, you agree that your contributions will be licensed under its `G
 ## References
 
 This document was adapted from the open-source contribution guidelines for [Facebook's Draft](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
-
-## Contributors
-
-Thanks goes to these wonderful people
-
-|                                                                                                                                                                        |                                                                                                                                                         |                                                                                                                                                            |                                                                                                                                                                |                                                                                                                                                                             |                                                                                                                                                                               |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|       [<img src="https://avatars3.githubusercontent.com/u/6747270?s=400&v=4" width="100px;"/><br /><sub><b>mleyen</b><br /></sub>](https://github.com/mleyen) 👨‍💻       | [<img src="https://avatars2.githubusercontent.com/u/14180792?s=400&v=4" width="100px;"/><br /><sub><b>eti0</b><br /></sub>](https://github.com/eti0) 👨‍💻 | [<img src="https://avatars0.githubusercontent.com/u/6218030?s=400&v=4" width="100px;"/><br /><sub><b>mmetak<br /></b></sub>](https://github.com/mmetak) 👨‍💻 | [<img src="https://avatars0.githubusercontent.com/u/11244308?s=400&v=4" width="100px;"/><br /><sub><b>alex285</b><br /></sub>](https://github.com/alex285)👨‍💻🐛 | [<img src="https://avatars0.githubusercontent.com/u/20587163?s=400&v=4" width="100px;"/><br /><sub><b>commonsourcecs</b><br /></sub>](https://github.com/commonsourcecs) 👨‍💻 | [<img src="https://avatars0.githubusercontent.com/u/43558271?s=400&v=4" width="100px"/><br /><sub><b>SiicaSandwhich</b><br /></sub>](https://github.com/Silicasandwhich) 👨‍💻📦 |
-| [<img src="https://avatars0.githubusercontent.com/u/20869381?s=400&v=4" width="100px"/><br /><sub><b>muhAlantabli</b><br /></sub>](https://github.com/muhAlantabli) 📦 |   [<img src="https://avatars3.githubusercontent.com/u/29931919" width="100px"/><br /><sub><b>luizoti</b><br /></sub>](https://github.com/luizoti) 👨‍💻    |
