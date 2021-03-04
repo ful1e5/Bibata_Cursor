@@ -72,27 +72,18 @@
 
 ---
 
-<!-- Sub Projects -->
-
-<details>
- <summary><strong>Sub Projects</strong> (click to expand)</summary>
-
--   [Bibata Rainbow](./bitmapper/packages/rainbow)
-
-</details>
-
 # Bibata ?
 
 Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project masterelop for improve `Cursor` Experience.
 
--   **Bibata Amber :** Yellowish Theme.
--   **Bibata Classic :** Solid Black Theme.
--   **Bibata Ice :** Light Theme.
+- **Bibata Amber :** Yellowish Theme.
+- **Bibata Classic :** Solid Black Theme.
+- **Bibata Ice :** Light Theme.
 
 ## Bibata Styles
 
--   **Bibata Original :** Sharp edge Bibata Cursors
--   **Bibata Modern :** Round edge Bibata Cursors
+- **Bibata Original :** Sharp edge Bibata Cursors
+- **Bibata Modern :** Round edge Bibata Cursors
 
 ## Cursor Sizes
 
@@ -230,9 +221,9 @@ sudo mv Bibata-* /usr/share/icons/
 
 ## External Libraries
 
--   libxcursor-dev
--   libx11-dev
--   libpng-dev (<=1.6)
+- libxcursor-dev
+- libx11-dev
+- libpng-dev (<=1.6)
 
 #### Install External Libraries
 
@@ -263,22 +254,22 @@ sudo dnf install libX11-devel libXcursor-devel libpng-devel
 
 ## Build Dependencies
 
--   [gcc](https://gcc.gnu.org/install/)
--   [make](https://www.gnu.org/software/make/)
--   [nodejs](https://nodejs.org/en/) (<=12.x.x)
--   [yarn](https://classic.yarnpkg.com/en/docs/install/)
--   [python](https://www.python.org/downloads/) (<=3.8)
--   [pip3](https://pip.pypa.io/en/stable/installing/)
+- [gcc](https://gcc.gnu.org/install/)
+- [make](https://www.gnu.org/software/make/)
+- [nodejs](https://nodejs.org/en/) (<=12.x.x)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/)
+- [python](https://www.python.org/downloads/) (<=3.8)
+- [pip3](https://pip.pypa.io/en/stable/installing/)
 
 ### Node Packages
 
--   [puppeteer](https://www.npmjs.com/package/puppeteer)
--   [pngjs](https://www.npmjs.com/package/pngjs)
--   [pixelmatch](https://www.npmjs.com/package/pixelmatch)
+- [puppeteer](https://www.npmjs.com/package/puppeteer)
+- [pngjs](https://www.npmjs.com/package/pngjs)
+- [pixelmatch](https://www.npmjs.com/package/pixelmatch)
 
 ### PyPi Packages
 
--   [clickgen](https://pypi.org/project/clickgen/s)
+- [clickgen](https://pypi.org/project/clickgen/s)
 
 ## Build From Scratch
 
@@ -333,9 +324,10 @@ make windows WIN_SIZE=96            # Supports only one pixel-size
 
 # You may also like...
 
--   [**Bibata Extra**](https://github.com/ful1e5/Bibata_Extra_Cursor) - More Bibata!
--   [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
--   [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
+- [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
+- [**Bibata Extra**](https://github.com/ful1e5/Bibata_Extra_Cursor) - More Bibata!
+- [**Bibata Rainbow**](https://github.com/ful1e5/Bibata_Cursor_Rainbow) - 'Semi-Animated' Bibata cursors with rainbow colors
+- [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
 
 <!-- Bug Report -->
 
@@ -359,11 +351,11 @@ Check [CONTRIBUTING.md](CONTRIBUTING.md), any suggestions for features and contr
 
 # Credit
 
--   [Adwaita](https://github.com/GNOME/adwaita-icon-theme)
--   [Dmz](https://github.com/GalliumOS/dmz-cursor-theme)
--   [Yaru](https://github.com/ubuntu/yaru)
--   Emojis are taken from [here](https://emojipedia.org/)
--   Wedge loading from [loading.io](https://loading.io/spinner/wedges/-pie-wedge-pizza-circle-round-rotate) with **Microsoft** colors
+- [Adwaita](https://github.com/GNOME/adwaita-icon-theme)
+- [Dmz](https://github.com/GalliumOS/dmz-cursor-theme)
+- [Yaru](https://github.com/ubuntu/yaru)
+- Emojis are taken from [here](https://emojipedia.org/)
+- Wedge loading from [loading.io](https://loading.io/spinner/wedges/-pie-wedge-pizza-circle-round-rotate) with **Microsoft** colors
 
 <!-- Support -->
 
