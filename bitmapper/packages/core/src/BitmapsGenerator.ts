@@ -153,3 +153,4 @@ class BitmapsGenerator {
 	}
 }
 export { BitmapsGenerator };
+export { BitmapsGenerator };
