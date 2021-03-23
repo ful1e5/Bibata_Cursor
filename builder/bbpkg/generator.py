@@ -6,10 +6,9 @@ from typing import Any, Dict, NamedTuple
 
 from clickgen.builders import WindowsCursor, XCursor
 from clickgen.core import CursorAlias
-from clickgen.packagers import WindowsPackager
+from clickgen.packagers import WindowsPackager, XPackager
 
 from bbpkg.constants import AUTHOR, URL
-from bbpkg.packager import XPackager
 from bbpkg.symlinks import add_missing_xcursor
 
 
