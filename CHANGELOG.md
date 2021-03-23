@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- use `clickgen.packagers` for packaging **X11/UNIX** cursors
+- typing supports from `clickgen` (v1.1.9)
+- Set clickgen version to v1.1.9 inside `builder/setup.py`
+- `Pillow` version locked at **8.1.1** by clickgen **v1.1.9**
+
 ### Changed
 
 - Bibata Rainbow packages move to [own](https://github.com/ful1e5/Bibata_Cursor_Rainbow) repo
