@@ -10,7 +10,6 @@ URL = "https://github.com/ful1e5/Bibata_Cursor"
 # XCursor
 X_DELAY: int = 13
 
-
 # Windows Cursor
 WIN_DELAY = 1
 

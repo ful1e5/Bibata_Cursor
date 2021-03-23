@@ -2,14 +2,17 @@
 # -*- coding: utf-8 -*-
 
 import os
+from pathlib import Path
+from typing import Union
 
 from clickgen.util import chdir
 
 
-def add_missing_xcursor(directory) -> None:
+def add_missing_xcursor(directory: Union[str, Path]) -> None:
     """Add missing `XCursor` to the Unix cursor package.
 
-    :directory: (Path|str) directory where XCursors are available.
+    :param directory: directory where XCursors are available.
+    :type directory: Union[str, Path]
     """
 
     symlinks = [
