@@ -115,7 +115,7 @@ class BitmapsGenerator {
       {
         playbackRate: 0.1,
         diff: 0,
-        frameLimit: 300,
+        frameLimit: 500,
         framePadding: 4,
       },
       options
