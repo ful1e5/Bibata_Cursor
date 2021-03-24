@@ -7,11 +7,11 @@ import { Colors } from "../types";
  * watch.background="#FF0000" (Red)
  * */
 const defaultKeyColors: Colors = {
-	base: "#00FF00",
-	outline: "#0000FF",
-	watch: {
-		background: "#FF0000",
-	},
+  base: "#00FF00",
+  outline: "#0000FF",
+  watch: {
+    background: "#FF0000",
+  },
 };
 
 /**
@@ -22,31 +22,31 @@ const defaultKeyColors: Colors = {
  * @returns {string} SVG code with colors.
  */
 const colorSvg = (
-	content: string,
-	colors: Colors,
-	keys: Colors = defaultKeyColors
+  content: string,
+  colors: Colors,
+  keys: Colors = defaultKeyColors
 ): string => {
-	content = content
-		.replace(new RegExp(keys.base, "ig"), colors.base)
-		.replace(new RegExp(keys.outline, "ig"), colors.outline);
+  content = content
+    .replace(new RegExp(keys.base, "ig"), colors.base)
+    .replace(new RegExp(keys.outline, "ig"), colors.outline);
 
-	try {
-		// === trying to replace `watch` color ===
+  try {
+    // === trying to replace `watch` color ===
 
-		if (!colors.watch?.background) {
-			throw new Error("");
-		}
-		const { background: b } = colors.watch;
-		content = content.replace(new RegExp(keys.watch!.background, "ig"), b); // Watch Background
-	} catch (error) {
-		// === on error => replace `watch` color as `base` ===
+    if (!colors.watch?.background) {
+      throw new Error("");
+    }
+    const { background: b } = colors.watch;
+    content = content.replace(new RegExp(keys.watch!.background, "ig"), b); // Watch Background
+  } catch (error) {
+    // === on error => replace `watch` color as `base` ===
 
-		content = content.replace(
-			new RegExp(keys.watch!.background, "ig"),
-			colors.base
-		);
-	}
-	return content;
+    content = content.replace(
+      new RegExp(keys.watch!.background, "ig"),
+      colors.base
+    );
+  }
+  return content;
 };
 
 export { colorSvg };

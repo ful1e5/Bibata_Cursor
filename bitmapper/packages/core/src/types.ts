@@ -10,11 +10,11 @@ type HexColor = string;
  * @default background is `base` color.
  */
 type Colors = {
-	base: HexColor;
-	outline: HexColor;
-	watch?: {
-		background: HexColor;
-	};
+  base: HexColor;
+  outline: HexColor;
+  watch?: {
+    background: HexColor;
+  };
 };
 
 export { Colors };

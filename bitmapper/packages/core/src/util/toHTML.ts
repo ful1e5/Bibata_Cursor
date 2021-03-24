@@ -16,4 +16,4 @@ export const template = `
 `;
 
 export const toHTML = (svgData: string): string =>
-	template.replace("<svginjection>", svgData);
+        template.replace("<svginjection>", svgData);
