@@ -12,6 +12,8 @@ from clickgen.packagers import WindowsPackager, XPackager
 
 
 class Info(NamedTuple):
+    """Important cursor package's information field"""
+
     name: str
     comment: str
 
