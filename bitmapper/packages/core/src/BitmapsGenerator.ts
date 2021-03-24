@@ -157,5 +157,5 @@ class BitmapsGenerator {
     await page.close();
   }
 }
-export { BitmapsGenerator };
+
 export { BitmapsGenerator };
