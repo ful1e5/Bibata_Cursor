@@ -22,7 +22,7 @@ clean:
 	@fi
 
 setup: setup.py
-	@python3 setup.py install --record files.txt
+	@python3 setup.py install --user --record files.txt
 
 
 build: build_modern build_original
