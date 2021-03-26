@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [Bibata v1.1.1] - 26 Mar 2021
+
 ### Added
 
 - use `clickgen.packagers` for packaging **X11/UNIX** cursors
@@ -18,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Clean builder cache on every `make` commands
 - Bibata builder `bbpkg` install as system level
 - Removed python3 virtual environment from `builder/Makefile`
 - **clean** target fixed in `builder/Makefile`
@@ -25,7 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - puppeteer `svg` element timeout fixed
 - optional options typing in `BitmapGenerator.ts`
 - Format `svg` files
-- Remove old username of author with Contributors table
+- Remove old username of an author with Contributors table
 
 ## [Bibata v1.1.0] - 26 Feb 2021
 
@@ -192,7 +195,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release 🎊
 
-[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.1.0...main
+[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.1.1...main
+[bibata v1.1.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.1.0...v1.1.1
 [bibata v1.1.0]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.3...v1.1.0
 [bibata v1.0.3]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.2...v1.0.3
 [bibata v1.0.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.1...v1.0.2
