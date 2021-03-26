@@ -7,13 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [Bibata v1.1.1] - 26 Mar 2021
+
+### Added
+
+- use `clickgen.packagers` for packaging **X11/UNIX** cursors
+- typing supports from `clickgen` (v1.1.9)
+- Set clickgen version to v1.1.9 inside `builder/setup.py`
+- `Pillow` version locked at **8.1.1** by clickgen **v1.1.9**
+- **2 Space** format in `bitmapper`
+- Sphinx based docsstring in `builder/bbpkg`
+
 ### Changed
 
+- Clean builder cache on every `make` commands
+- Bibata builder `bbpkg` install as system level
+- Removed python3 virtual environment from `builder/Makefile`
+- **clean** target fixed in `builder/Makefile`
 - Bibata Rainbow packages move to [own](https://github.com/ful1e5/Bibata_Cursor_Rainbow) repo
 - puppeteer `svg` element timeout fixed
 - optional options typing in `BitmapGenerator.ts`
 - Format `svg` files
-- Remove old username of author with Contributors table
+- Remove old username of an author with Contributors table
 
 ## [Bibata v1.1.0] - 26 Feb 2021
 
@@ -180,7 +195,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release 🎊
 
-[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.1.0...main
+[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.1.1...main
+[bibata v1.1.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.1.0...v1.1.1
 [bibata v1.1.0]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.3...v1.1.0
 [bibata v1.0.3]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.2...v1.0.3
 [bibata v1.0.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.1...v1.0.2
@@ -192,4 +208,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [bibata v0.4.2.alpha.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.4.1...v0.4.2.alpha.1
 [bibata v.0.4.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.3.1...v0.4.1
 [bibata v0.3.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v0.3...v0.3.1
+[bibata v0.3]: https://github.com/ful1e5/Bibata_Cursor/tree/v0.3
 [bibata v0.3]: https://github.com/ful1e5/Bibata_Cursor/tree/v0.3
