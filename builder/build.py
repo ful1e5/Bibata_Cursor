@@ -94,7 +94,8 @@ parser.add_argument(
 # Preparing build
 args = parser.parse_args()
 
-bitmaps_dir = Path(args.png_dir).absolute()
+bitmaps_dir = Path(args.png_dir)
+
 name = bitmaps_dir.stem
 comments = {
     "Bibata-Modern-Classic": "Dark & Rounded-edge Bibata",
@@ -104,21 +105,26 @@ comments = {
     "Bibata-Modern-Ice": "Light & Rounded-edge Bibata",
     "Bibata-Original-Ice": "Light & Sharp-edge Bibata",
 }
+info = Info(name=name, comment=comments.get(name, f"{name} Cursors"))
 
 
 x_out_dir = Path(args.out_dir) / name
 win_out_dir = Path(args.out_dir) / f"{name}-Windows"
 
-print(f"Getting '{name}' bitmaps ready for build...")
+# Windows Canvas & Cursor sizes
+win_size: int = args.win_size
+win_canvas_size: int = args.win_canvas_size
+if win_canvas_size < win_size:
+    win_canvas_size = win_size
 
+
+print(f"Getting '{name}' bitmaps ready for build...")
 config = get_config(
     bitmaps_dir,
     x_sizes=args.xsizes,
-    win_canvas_size=args.win_canvas_size,
-    win_size=args.win_size,
+    win_canvas_size=win_canvas_size,
+    win_size=win_size,
 )
-
-info = Info(name=name, comment=comments.get(name, f"{name} Cursors"))
 
 if args.platform == "unix":
     xbuild(config, x_out_dir, info)
