@@ -32,7 +32,7 @@ class BitmapsGenerator {
    * Prepare headless browser.
    */
   public async getBrowser(): Promise<Browser> {
-    return await puppeteer.launch({
+    return puppeteer.launch({
       ignoreDefaultArgs: ["--no-sandbox"],
       headless: true,
     });
