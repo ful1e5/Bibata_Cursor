@@ -82,12 +82,6 @@ def get_config(bitmaps_dir: Union[str, Path], **kwargs) -> Dict[str, Any]:
             canvas_size = win_data.get("canvas_size", w_canvas_size)
             win_size = win_data.get("size", w_size)
 
-            # Because provided cursor size is bigger than cursor's canvas.
-            # Also, "position" settings will not effect on cursor because the
-            # cursor's canvas and cursor sizes are equals.
-            if (win_size[0] > canvas_size[0]) | (win_size[1] > canvas_size[1]):
-                canvas_size = win_size
-
             config[key] = {
                 **data,
                 "win_key": win_key,

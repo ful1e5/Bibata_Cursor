@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+### Changed
+
+- `Makefile` build commands re-arrange with groups
+- Dynamic determine **Windows canvas size** on **Windows cursor size** inside build.py`
+
 ## [Bibata v1.1.1] - 26 Mar 2021
 
 ### Added
