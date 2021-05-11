@@ -269,7 +269,7 @@ sudo dnf install libX11-devel libXcursor-devel libpng-devel
 
 ### PyPi Packages
 
-- [clickgen](https://pypi.org/project/clickgen/s)
+- [clickgen](https://pypi.org/project/clickgen)
 
 ## Build From Scratch
 
