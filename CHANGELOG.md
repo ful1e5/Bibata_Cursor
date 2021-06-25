@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Support button inside PLING.bbcode product page
+
 ### Changed
 
 - `Makefile` build commands re-arrange with groups
