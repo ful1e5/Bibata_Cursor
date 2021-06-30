@@ -1,16 +1,9 @@
-########## Custom
-# Out Dir
+# --------------------------------------------- Custom
 bitmaps
 themes
-test.py
+bin
 
-# Logs Files
-builder/files.txt
-
-# Extra
-.vscode
-
-########## Python
+# --------------------------------------------- Python
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -143,7 +136,7 @@ dmypy.json
 .pyre/
 
 
-######### Node
+# --------------------------------------------- Nodejs
 
 # Logs
 logs

@@ -4,8 +4,8 @@
 import argparse
 from pathlib import Path
 
-from bbpkg.configure import get_config
-from bbpkg.generator import Info, xbuild, wbuild, build
+from src.configure import get_config
+from src.generator import Info, xbuild, wbuild, build
 
 
 parser = argparse.ArgumentParser(
