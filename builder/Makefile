@@ -1,4 +1,4 @@
-all: clean setup build
+all: setup build
 
 bitmaps_dir = "../bitmaps"
 
