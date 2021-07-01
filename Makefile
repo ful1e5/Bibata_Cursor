@@ -10,7 +10,7 @@ render: bitmapper svg
 	@cd bitmapper && make install render_modern render_original
 
 build: bitmaps
-	@cd builder && make setup build clean
+	@cd builder && make setup build
 
 
 # Specific platform build
@@ -27,7 +27,7 @@ render_modern: bitmapper svg
 	@cd bitmapper && make install render_modern
 
 build_modern: bitmaps
-	@cd builder && make setup build_modern clean
+	@cd builder && make setup build_modern
 
 
 # Bibata Original
@@ -37,7 +37,7 @@ render_original: bitmapper svg
 	@cd bitmapper && make install render_original
 
 build_original: bitmaps
-	@cd builder && make setup build_original clean
+	@cd builder && make setup build_original
 
 
 # Installation
