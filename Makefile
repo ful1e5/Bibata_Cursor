@@ -82,7 +82,7 @@ prepare: bitmaps themes
 	@cd bitmaps && zip -r $(BIN_DIR)/bitmaps.zip * && cd ..
 	@cd themes
 	#
-	# Bibata-Original
+	# Bibata-Modern
 	#
 	@$(foreach theme,$(THEMES), tar -czvf $(BIN_DIR)/Bibata-Modern-$(theme).tar.gz Bibata-Modern-$(theme);)
 	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/Bibata-Modern-$(theme)-Windows.zip Bibata-Modern-$(theme)-Windows;)
