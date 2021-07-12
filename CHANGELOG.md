@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [Bibata v1.1.2] - 12 Jul 2021
+
 ### Added
 
 - Support button inside `PLING.bbcode` product page
