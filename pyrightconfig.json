@@ -1,0 +1,12 @@
+{
+  "include": ["builder"],
+  "exclude": ["**/node_modules", "**/__pycache__"],
+
+  "reportMissingImports": true,
+  "reportMissingTypeStubs": false,
+
+  "pythonVersion": "3.9",
+  "pythonPlatform": "Linux",
+
+  "executionEnvironments": [{ "root": "builder" }]
+}

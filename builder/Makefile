@@ -1,4 +1,4 @@
-all: clean setup build
+all: setup build
 
 bitmaps_dir = "../bitmaps"
 
@@ -12,18 +12,8 @@ X_SIZES ?= 22 24 28 32 40 48 56 64 72 80 88 96
 WIN_CANVAS_SIZE ?= 32
 WIN_SIZE ?= 24
 
-clean:
-	@rm -rf bbpkg.egg-info build dist
-	@find -iname "*.pyc" -delete
-	# Removing setup.py package files if installed
-	@if [ -f "files.txt" ]; then
-		@xargs rm -rf < files.txt
-		@rm -rf files.txt
-	@fi
-
-setup: setup.py
-	@python3 setup.py install --user --record files.txt
-
+setup:
+	@python3 -m pip install clickgen --user
 
 build: build_modern build_original
 
