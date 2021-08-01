@@ -17,7 +17,7 @@
   <a href="https://github.com/ful1e5/Bibata_Cursor/actions?query=workflow%3Abibata-ci">
     <img alt="GitHub Action Build" src="https://github.com/ful1e5/Bibata_Cursor/workflows/bibata-ci/badge.svg"/>
   </a>
-  
+
   <a href="https://www.codefactor.io/repository/github/ful1e5/bibata_cursor">
     <img src="https://www.codefactor.io/repository/github/ful1e5/bibata_cursor/badge" alt="CodeFactor" />
   </a>
@@ -32,8 +32,7 @@
   <a href="https://github.com/ful1e5/clickgen">
     <img alt="Clickgen" src="https://img.shields.io/badge/theme%20builder-clickgen-FD0542" />
   </a>
-  
-  
+
   <!-- Third Row -->
 
   </br >
@@ -44,12 +43,11 @@
   <a href="https://github.com/ful1e5/Bibata_Cursor/releases" >
     <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/ful1e5/Bibata_Cursor">
   </a>
-  
+
   <a href="https://aur.archlinux.org/packages/bibata-cursor-theme" >
     <img alt="AUR version" src="https://img.shields.io/aur/version/bibata-cursor-theme">
   </a>
-  
-  
+
   <!-- Fourth Row -->
 
   <br />
@@ -327,6 +325,7 @@ make windows WIN_SIZE=96            # Supports only one pixel-size
 - [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
 - [**Bibata Extra**](https://github.com/ful1e5/Bibata_Extra_Cursor) - More Bibata!
 - [**Bibata Rainbow**](https://github.com/ful1e5/Bibata_Cursor_Rainbow) - 'Semi-Animated' Bibata cursors with rainbow colors
+- [**Bibata Zebra**](https://github.com/ful1e5/Bibata-Zebra-Cursor) - Bibata cursor with a semi-animated strip
 - [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
 
 <!-- Bug Report -->
