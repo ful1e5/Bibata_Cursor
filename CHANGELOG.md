@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- Bibata Zebra link added inside README.md
+
 ## [Bibata v1.1.2] - 12 Jul 2021
 
 ### Added
