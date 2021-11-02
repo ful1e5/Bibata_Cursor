@@ -326,6 +326,7 @@ make windows WIN_SIZE=96            # Supports only one pixel-size
 - [**Bibata Extra**](https://github.com/ful1e5/Bibata_Extra_Cursor) - More Bibata!
 - [**Bibata Rainbow**](https://github.com/ful1e5/Bibata_Cursor_Rainbow) - 'Semi-Animated' Bibata cursors with rainbow colors
 - [**Bibata Zebra**](https://github.com/ful1e5/Bibata-Zebra-Cursor) - Bibata cursor with a semi-animated strip
+- [**Bibata Bee**](https://github.com/ful1e5/Bibata-Bee-Cursor) - 'Semi-Animated' Bibata cursors with bee stripes
 - [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
 
 <!-- Bug Report -->
