@@ -42,40 +42,45 @@ build_original: bitmaps
 
 # Installation
 .ONESHELL:
-SHELL:=/bin/bash
+SHELL := /bin/bash
+THEME_PREFIX = Bibata
 
-src = ./themes/Bibata-*
+src = ./themes/$(THEME_PREFIX)-*
 local := ~/.icons
-local_dest := $(local)/Bibata-*
+local_dest := $(local)/$(THEME_PREFIX)-*
 
 root := /usr/share/icons
-root_dest := $(root)/Bibata-*
+root_dest := $(root)/$(THEME_PREFIX)-*
 
 install: themes
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Installing 'Bibata' cursors inside $(local)/..."
+		@echo "> Installing '$(THEME_PREFIX)' cursors inside $(local)/..."
 		@mkdir -p $(local)
 		@cp -r $(src) $(local)/ && echo "> Installed!"
 	@else
-		@echo "> Installing 'Bibata' cursors inside $(root)/..."
+		@echo "> Installing '$(THEME_PREFIX)' cursors inside $(root)/..."
 		@mkdir -p $(root)
 		@sudo cp -r $(src) $(root)/ && echo "> Installed!"
 	@fi
 
 uninstall:
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Removing 'Bibata' cursors from '$(local)'..."
+		@echo "> Removing '$(THEME_PREFIX)' cursors from '$(local)'..."
 		@rm -rf $(local_dest)
 	@else
-		@echo "> Removing 'Bibata' cursors from '$(root)'..."
+		@echo "> Removing '$(THEME_PREFIX)' cursors from '$(root)'..."
 		@sudo rm -rf $(root_dest)
 	@fi
 
 reinstall: uninstall install
 
+
 # generates binaries
 THEMES = Amber Classic Ice
 BIN_DIR = ../bin
+
+modern = $(THEME_PREFIX)-Modern
+original = $(THEME_PREFIX)-Original
 prepare: bitmaps themes
 	# Bitmaps
 	@rm -rf bin && mkdir bin
@@ -84,17 +89,17 @@ prepare: bitmaps themes
 	#
 	# Bibata-Modern
 	#
-	@$(foreach theme,$(THEMES), tar -czvf $(BIN_DIR)/Bibata-Modern-$(theme).tar.gz Bibata-Modern-$(theme);)
-	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/Bibata-Modern-$(theme)-Windows.zip Bibata-Modern-$(theme)-Windows;)
-	@tar -czvf $(BIN_DIR)/Bibata-Modern.tar.gz Bibata-Modern-Amber Bibata-Modern-Classic Bibata-Modern-Ice
-	@zip -r $(BIN_DIR)/Bibata-Modern-Windows.zip Bibata-Modern-Amber-Windows Bibata-Modern-Classic-Windows Bibata-Modern-Ice-Windows
+	@$(foreach theme,$(THEMES), tar -czvf $(BIN_DIR)/$(modern)-$(theme).tar.gz $(modern)-$(theme);)
+	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/$(modern)-$(theme)-Windows.zip $(modern)-$(theme)-Windows;)
+	@tar -czvf $(BIN_DIR)/$(modern).tar.gz $(modern)-Amber $(modern)-Classic $(modern)-Ice
+	@zip -r $(BIN_DIR)/$(modern)-Windows.zip $(modern)-Amber-Windows $(modern)-Classic-Windows $(modern)-Ice-Windows
 	#
 	# Bibata-Original
 	#
-	@$(foreach theme,$(THEMES), tar -czvf $(BIN_DIR)/Bibata-Original-$(theme).tar.gz Bibata-Original-$(theme);)
-	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/Bibata-Original-$(theme)-Windows.zip Bibata-Original-$(theme)-Windows;)
-	@tar -czvf $(BIN_DIR)/Bibata-Original.tar.gz Bibata-Original-Amber Bibata-Original-Classic Bibata-Original-Ice
-	@zip -r $(BIN_DIR)/Bibata-Original-Windows.zip Bibata-Original-Amber-Windows Bibata-Original-Classic-Windows Bibata-Original-Ice-Windows
+	@$(foreach theme,$(THEMES), tar -czvf $(BIN_DIR)/$(original)-$(theme).tar.gz $(original)-$(theme);)
+	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/$(original)-$(theme)-Windows.zip $(original)-$(theme)-Windows;)
+	@tar -czvf $(BIN_DIR)/$(original).tar.gz $(original)-Amber $(original)-Classic $(original)-Ice
+	@zip -r $(BIN_DIR)/$(original)-Windows.zip $(original)-Amber-Windows $(original)-Classic-Windows $(original)-Ice-Windows
 	#
 	# Bibata.tar.gz
 	#

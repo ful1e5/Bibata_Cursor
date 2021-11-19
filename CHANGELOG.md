@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Bibata Zebra](https://github.com/ful1e5/Bibata-Zebra-Cursor) link added inside README.md
 - [Bibata Bee](https://github.com/ful1e5/Bibata-Bee-Cursor) link added inside README.md
 
+### Changed
+
+- used `THEME_PREFIX` variable in make commands
+
 ## [Bibata v1.1.2] - 12 Jul 2021
 
 ### Added
