@@ -357,14 +357,6 @@ Check [CONTRIBUTING.md](CONTRIBUTING.md), any suggestions for features and contr
 - Emojis are taken from [here](https://emojipedia.org/)
 - Wedge loading from [loading.io](https://loading.io/spinner/wedges/-pie-wedge-pizza-circle-round-rotate) with **Microsoft** colors
 
-<!-- Support -->
-
-# Support
-
-<a href="https://www.buymeacoffee.com/Nt7Wg4V" >
-  <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
-</a>
-
 <!-- Ninja  -->
 
 <p align="center">
