@@ -136,9 +136,9 @@ Bibata is **OpenSource**, Compact and Material Designed Cursor set. This project
   </a>
 </p>
 
-## Packages 📦
+## Packages
 
-> **📝Note**: If you're having trouble with the packages please submit a request to the package maintainer before creating an issue.
+> **Note**: If you're having trouble with the packages please submit a request to the package maintainer before creating an issue.
 
 ### Arch Linux/Manjaro
 
@@ -271,7 +271,7 @@ sudo dnf install libX11-devel libXcursor-devel libpng-devel
 
 ## Build From Scratch
 
-### ⚡ Auto Build (using GitHub Actions)
+### Auto Build (using GitHub Actions)
 
 GitHub Actions is automatically runs on every `push`(on **main** & **dev** branch) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **bibata-ci**. GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/Bibata_Cursor/tree/main/.github/workflows) directory.
 
@@ -333,7 +333,7 @@ make windows WIN_SIZE=96            # Supports only one pixel-size
 
 # Bugs
 
-Bugs 🐛 should be reported [here](https://github.com/ful1e5/Bibata_Cursor/issues) on the Github issues page.
+Bugs should be reported [here](https://github.com/ful1e5/Bibata_Cursor/issues) on the Github issues page.
 
 <!-- Help -->
 
