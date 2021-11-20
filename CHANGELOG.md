@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - used `THEME_PREFIX` variable in make commands
 - support creator button updated
 - emojis removed from README.md
+- Github Action renamed to `build`
 
 ## [Bibata v1.1.2] - 12 Jul 2021
 
