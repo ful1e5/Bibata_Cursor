@@ -8,7 +8,7 @@ const svgDir = path.resolve(root, "svg", "modern");
 
 const main = async () => {
   for (const { themeName, color } of config) {
-    console.log("=>", themeName);
+    console.log("Generating bitmaps for", themeName);
 
     const bitmapsDir = path.resolve(root, "bitmaps", themeName);
     const svg = new SVGHandler.SvgDirectoryParser(svgDir);
@@ -17,14 +17,14 @@ const main = async () => {
     const browser = await png.getBrowser();
 
     for (let { key, content } of svg.getStatic()) {
-      console.log(" -> Saving", key, "...");
+      console.log(" ==> Saving", key, "...");
 
       content = SVGHandler.colorSvg(content, color);
       await png.generateStatic(browser, content, key);
     }
 
     for (let { key, content } of svg.getAnimated()) {
-      console.log(" -> Saving", key, "...");
+      console.log(" ==> Saving", key, "...");
 
       content = SVGHandler.colorSvg(content, color);
       await png.generateAnimated(browser, content, key);

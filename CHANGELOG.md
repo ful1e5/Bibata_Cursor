@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - support creator button updated
 - emojis removed from README.md
 - Github Action renamed to `build`
+- prettier `bitmapping` logs
 
 ## [Bibata v1.1.2] - 12 Jul 2021
 
