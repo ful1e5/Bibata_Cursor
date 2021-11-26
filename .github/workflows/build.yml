@@ -59,6 +59,7 @@ jobs:
 
       - name: Generating `Bibata-Modern` Cursor Theme
         run: make modern
+        continue-on-error: false
 
       - name: Compressing `Bibata-Modern` Cursor Theme
         run: tar -cvzf Bibata-Modern.tar.gz themes/*
@@ -77,6 +78,7 @@ jobs:
 
       - name: Generating `Bibata-Original` Cursor Theme
         run: make original
+        continue-on-error: false
 
       - name: Compressing `Bibata-Original` Cursor Theme
         run: tar -cvzf Bibata-Original.tar.gz themes/*

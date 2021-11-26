@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - tidy docs inside `README.md`
 - make commands are more readable inside `builder/Makefile`
 - symlink common cursor svg files using `svg/link.py`
+- ci updated for symlink script
 
 ### Changed
 
