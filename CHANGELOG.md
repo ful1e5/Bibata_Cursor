@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Bibata Bee](https://github.com/ful1e5/Bibata-Bee-Cursor) link added inside README.md
 - tidy docs inside `README.md`
 - make commands are more readable inside `builder/Makefile`
+- symlink common cursor svg files using `svg/link.py`
+- ci updated for symlink script
 
 ### Changed
 
@@ -21,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - emojis removed from README.md
 - Github Action renamed to `build`
 - prettier `bitmapping` logs
+- `svg/link.py` file added inside pyright config
 
 ## [Bibata v1.1.2] - 12 Jul 2021
 
