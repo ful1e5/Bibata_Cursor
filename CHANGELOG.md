@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - emojis removed from README.md
 - Github Action renamed to `build`
 - prettier `bitmapping` logs
+- `svg/link.py` file added inside pyright config
 
 ## [Bibata v1.1.2] - 12 Jul 2021
 
