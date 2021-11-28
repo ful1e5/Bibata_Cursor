@@ -57,6 +57,10 @@ jobs:
         with:
           python-version: "3.8"
 
+      - name: Generating `Bibata-Modern` symlinks
+        run: cd svg && python link.py && cd ..
+        continue-on-error: false
+
       - name: Generating `Bibata-Modern` Cursor Theme
         run: make modern
         continue-on-error: false
