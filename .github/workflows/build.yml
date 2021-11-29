@@ -61,40 +61,90 @@ jobs:
         run: cd svg && python link.py && cd ..
         continue-on-error: false
 
-      - name: Generating `Bibata-Modern` Cursor Theme
-        run: make modern
+      - name: Generating `Bibata` Cursor Themes
+        run: make
         continue-on-error: false
 
-      - name: Compressing `Bibata-Modern` Cursor Theme
-        run: tar -cvzf Bibata-Modern.tar.gz themes/*
+      - name: Compressing `Bibata-Modern` Unix Themes
+        run: |
+          tar -cvzf Bibata-Modern-Amber.tar.gz themes/Bibata-Modern-Amber
+          tar -cvzf Bibata-Modern-Classic.tar.gz themes/Bibata-Modern-Classic
+          tar -cvzf Bibata-Modern-Ice.tar.gz themes/Bibata-Modern-Ice
 
-      - name: Uploading `Bibata-Modern` Bitmaps artifact
+      - name: Uploading `Bibata-Modern-Amber` Unix Theme artifact
         uses: actions/upload-artifact@v2
         with:
-          name: Bibata-Modern-Bitmaps
-          path: bitmaps/*
+          name: Bibata-Modern-Amber
+          path: Bibata-Modern-Amber.tar.gz
 
-      - name: Uploading `Bibata-Modern` Theme artifact
+      - name: Uploading `Bibata-Modern-Amber-Windows` Unix Theme artifact
         uses: actions/upload-artifact@v2
         with:
-          name: Bibata-Modern
-          path: Bibata-Modern.tar.gz
+          name: Bibata-Modern-Amber-Windows
+          path: themes/Bibata-Modern-Amber-Windows/*
 
-      - name: Generating `Bibata-Original` Cursor Theme
-        run: make original
-        continue-on-error: false
-
-      - name: Compressing `Bibata-Original` Cursor Theme
-        run: tar -cvzf Bibata-Original.tar.gz themes/*
-
-      - name: Uploading `Bibata-Original` Bitmaps artifact
+      - name: Uploading `Bibata-Modern-Classic` Unix Theme artifact
         uses: actions/upload-artifact@v2
         with:
-          name: Bibata-Original-Bitmaps
-          path: bitmaps/*
+          name: Bibata-Modern-Classic
+          path: Bibata-Modern-Classic.tar.gz
 
-      - name: Uploading `Bibata-Original` Theme artifact
+      - name: Uploading `Bibata-Modern-Classic-Windows` Unix Theme artifact
         uses: actions/upload-artifact@v2
         with:
-          name: Bibata-Original
-          path: Bibata-Original.tar.gz
+          name: Bibata-Modern-Classic-Windows
+          path: themes/Bibata-Modern-Classic-Windows/*
+
+      - name: Uploading `Bibata-Modern-Ice` Unix Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Bibata-Modern-Ice
+          path: Bibata-Modern-Ice.tar.gz
+
+      - name: Uploading `Bibata-Modern-Ice-Windows` Unix Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Bibata-Modern-Ice-Windows
+          path: themes/Bibata-Modern-Ice-Windows/*
+
+      - name: Compressing `Bibata-Original` Unix Themes
+        run: |
+          tar -cvzf Bibata-Original-Amber.tar.gz themes/Bibata-Original-Amber
+          tar -cvzf Bibata-Original-Classic.tar.gz themes/Bibata-Original-Classic
+          tar -cvzf Bibata-Original-Ice.tar.gz themes/Bibata-Original-Ice
+
+      - name: Uploading `Bibata-Original-Amber` Unix Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Bibata-Original-Amber
+          path: Bibata-Original-Amber.tar.gz
+
+      - name: Uploading `Bibata-Original-Amber-Windows` Unix Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Bibata-Original-Amber-Windows
+          path: themes/Bibata-Original-Amber-Windows/*
+
+      - name: Uploading `Bibata-Original-Classic` Unix Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Bibata-Original-Classic
+          path: Bibata-Original-Classic.tar.gz
+
+      - name: Uploading `Bibata-Original-Classic-Windows` Unix Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Bibata-Original-Classic-Windows
+          path: themes/Bibata-Original-Classic-Windows/*
+
+      - name: Uploading `Bibata-Original-Ice` Unix Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Bibata-Original-Ice
+          path: Bibata-Original-Ice.tar.gz
+
+      - name: Uploading `Bibata-Original-Ice-Windows` Unix Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Bibata-Original-Ice-Windows
+          path: themes/Bibata-Original-Ice-Windows/*
