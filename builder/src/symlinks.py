@@ -92,7 +92,14 @@ def add_missing_xcursor(directory: Union[str, Path]) -> None:
                 "pointing_hand",
             ],
         },
-        {"src": "left_ptr", "links": ["arrow", "default"]},
+        {
+            "src": "left_ptr",
+            "links": [
+                "arrow",
+                "default",
+                "top_left_arrow",
+            ],
+        },
         {
             "src": "left_ptr_watch",
             "links": [
