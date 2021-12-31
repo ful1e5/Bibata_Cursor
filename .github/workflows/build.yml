@@ -6,12 +6,14 @@ on:
       - "**.md"
       - "**.bbcode"
       - LICENSE
+      - .github/FUNDING.yml
     branches: [main, dev]
   pull_request:
     paths-ignore:
       - "**.md"
       - "**.bbcode"
       - LICENSE
+      - .github/FUNDING.yml
     branches: [main]
 
 jobs:

@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - symlink common cursor svg files using `svg/link.py`
 - ci updated for symlink script
 - distributed artifacts inside `build` GitHub actions
+- Add cursor top_left_arrow cursor ful1e5/BreezeX_Cursor#10 ful1e5/BreezeX_Cursor#11
 
 ### Changed
 
