@@ -3,14 +3,13 @@ import path from "path";
 
 import puppeteer, { Browser, ElementHandle, Page } from "puppeteer";
 
-import { frameNumber } from "./util/frameNumber";
-import { matchImages } from "./util/matchImages";
-import { toHTML } from "./util/toHTML";
+import { frameNumber } from "#root/utils/frameNumber";
+import { matchImages } from "#root/utils/matchImages";
+import { toHTML } from "#root/utils/toHTML";
 
 class BitmapsGenerator {
   /**
    * Generate Png files from svg code.
-   * @param themeName Give name, So all bitmaps files are organized in one directory.
    * @param bitmapsDir `absolute` or `relative` path, Where `.png` files will store.
    */
   constructor(private bitmapsDir: string) {

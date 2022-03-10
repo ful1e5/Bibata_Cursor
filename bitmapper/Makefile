@@ -1,4 +1,4 @@
-all: install render
+all: install build render
 
 .PHONY: all
 
@@ -9,8 +9,11 @@ clean:
 node_modules:
 	@mkdir -p $@
 
-install: node_modules package.json 
+install: node_modules package.json
 	@yarn install
+
+build:
+	@yarn build
 
 render_modern:
 	@yarn render:bibata-modern

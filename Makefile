@@ -7,7 +7,7 @@ clean:
 	@rm -rf bitmaps themes
 
 render: bitmapper svg
-	@cd bitmapper && make install render_modern render_original
+	@cd bitmapper && make
 
 build: bitmaps
 	@cd builder && make setup build
@@ -24,7 +24,7 @@ windows: clean render bitmaps
 modern: clean render_modern build_modern
 
 render_modern: bitmapper svg
-	@cd bitmapper && make install render_modern
+	@cd bitmapper && make install build render_modern
 
 build_modern: bitmaps
 	@cd builder && make setup build_modern
@@ -34,7 +34,7 @@ build_modern: bitmaps
 original:clean render_original build_original
 
 render_original: bitmapper svg
-	@cd bitmapper && make install render_original
+	@cd bitmapper && make install build render_original
 
 build_original: bitmaps
 	@cd builder && make setup build_original
