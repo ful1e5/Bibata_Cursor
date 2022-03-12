@@ -7,37 +7,37 @@ clean:
 	@rm -rf bitmaps themes
 
 render: bitmapper svg
-	@cd bitmapper && make
+	@make -C bitmapper
 
 build: bitmaps
-	@cd builder && make setup build
+	@make -C builder setup build
 
 
 # Specific platform build
 unix: clean render bitmaps
-	@cd builder && make setup build_unix
+	@make -C builder setup build_unix
 
 windows: clean render bitmaps
-	@cd builder && make setup build_windows
+	@make -C builder setup build_windows
 
 # Bibata Modern
 modern: clean render_modern build_modern
 
 render_modern: bitmapper svg
-	@cd bitmapper && make install build render_modern
+	@make -C bitmapper install build render_modern
 
 build_modern: bitmaps
-	@cd builder && make setup build_modern
+	@make -C builder setup build_modern
 
 
 # Bibata Original
 original:clean render_original build_original
 
 render_original: bitmapper svg
-	@cd bitmapper && make install build render_original
+	@make -C bitmapper install build render_original
 
 build_original: bitmaps
-	@cd builder && make setup build_original
+	@make -C builder setup build_original
 
 
 # Installation
