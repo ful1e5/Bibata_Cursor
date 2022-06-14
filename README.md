@@ -1,21 +1,21 @@
 # Bibata Cursor
 
 [![build](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml/badge.svg)](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml)
-[![CodeFactor](https://www.codefactor.io/repository/github/ful1e5/bibata_cursor/badge)](https://www.codefactor.io/repository/github/ful1e5/bibata_cursor)
-[![Twitter](https://img.shields.io/badge/twitter-ful1e5-blue)](https://twitter.com/ful1e5)
+[![Twitter](https://img.shields.io/badge/Notifications-twitter-blue)](https://twitter.com/ful1e5)
 
-Bibata is **OpenSource**, compact, and material designed cursor set. This project masterelop for improve `Cursor` experience.
+Bibata is **OpenSource**, compact, and material designed cursor set. This project masterelop for
+improve `Cursor` experience.
 
-- **Bibata Amber :** Yellowish Theme.
-- **Bibata Classic :** Solid Black Theme.
-- **Bibata Ice :** Light Theme.
+**Cursors Themes:**
 
-## Bibata Styles
+- **Bibata Original Amber :** Sharp edges yellowish theme.
+- **Bibata Modern Amber :** Rounded edges yellowish theme.
+- **Bibata Original Classic :** Sharp edges black theme.
+- **Bibata Modern Classic :** Rounded edges black theme.
+- **Bibata Original Ice :** Sharp edges white theme.
+- **Bibata Modern Ice :** Rounded edges white theme.
 
-- **Bibata Original :** Sharp edge Bibata Cursors
-- **Bibata Modern :** Round edge Bibata Cursors
-
-## Cursor Sizes
+**Cursor Sizes:**
 
 <kbd>22</kbd>
 <kbd>24</kbd>
@@ -30,97 +30,66 @@ Bibata is **OpenSource**, compact, and material designed cursor set. This projec
 <kbd>88</kbd>
 <kbd>96</kbd>
 
-## Colors
+**Colors:**
 
 ![Amber](https://imgur.com/5Jo6MSO.png)
 ![Classic](https://imgur.com/I5cRKE4.png)
-![Ice ✓](https://imgur.com/avnR40g.png)
+![Ice](https://imgur.com/avnR40g.png)
 
-## Quick install
+**Support with $1 or more on GitHub Sponsors.**
 
-<p align="center">
-  <a href="https://www.pling.com/p/1197198/" >
-    <img title="Bibata Pling Store" width="40%" src="https://imgur.com/VxSgrWw.png">
-  </a>
-</p>
+## Quick install (Recommended)
+
+Download pre-built binaries on [pling store](https://www.pling.com/p/1197198/)
 
 ## Preview
 
 > Check Figma file [here](https://www.figma.com/file/Y9RKZLXhSvaxpUzsKGJkp6/Bibata-Cursor?node-id=0%3A1)
 
-<p align="center">
-  <img title="Bibata Amber" width="90%" src="https://i.imgur.com/2DEYWDC.png">
-  </br>
-  <sub>Bibata Amber</sub>
-</p>
-
-<p align="center">
-  <img title="Bibata Classic" width="90%" src="https://i.imgur.com/C8mMQ3j.png">
-  </br>
-  <sub>Bibata Classic</sub>
-</p>
-
-<p align="center">
-  <img title="Bibata Ice" width="90%" src="https://i.imgur.com/ovzTw6u.png">
-  </br>
-  <sub>Bibata Ice</sub>
-</p>
+![Bibata Amber](https://i.imgur.com/2DEYWDC.png)
+![Bibata Classic](https://i.imgur.com/C8mMQ3j.png)
+![Bibata Ice](https://i.imgur.com/ovzTw6u.png)
 
 ## Packages
 
-> **Note**: If you're having trouble with the packages please submit a request to the package maintainer before creating an issue.
+> **Note**: If you're having trouble with the packages please submit a request to the package maintainer
+> before creating an issue.
 
 ### Arch Linux/Manjaro
 
-Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme) currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m) & [_@yochananmarqos_](https://aur.archlinux.org/packages/?K=yochananmarqos&SeB=m). Can be installed via Pamac (preinstalled in Manjaro), Yay or any other [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers).
-
-Pamac command:
-
-```bash
-pamac build bibata-cursor-theme
-pamac build bibata-cursor-theme-bin                  # pre-built binary
-```
-
-Yay command:
+Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme)
+currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m) &
+[_@yochananmarqos_](https://aur.archlinux.org/packages/?K=yochananmarqos&SeB=m).
+Can be installed via Pamac (preinstalled in Manjaro), Yay or any other
+[AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers).
 
 ```bash
 yay -S bibata-cursor-theme
-yay -S bibata-cursor-theme-bin                       # pre-built binary
 ```
+
+Alternatively, Bibata binaries can be also installed using the PKGBUILD `bibata-theme-bin`,
+available on the AUR.
 
 ### Fedora
 
 #### copr-repo by @peterwu (recommended)
 
-**Enable the repo:**
-
 ```bash
 sudo dnf copr enable peterwu/rendezvous
-```
-
-**Installation command:**
-
-```bash
 sudo dnf install bibata-cursor-themes
 ```
 
 #### copr-repo by @muhalantabli
 
-**Enable the repo:**
-
 ```bash
 sudo dnf copr enable muhalantabli/copr-repo
-```
-
-**Installation command:**
-
-```bash
 sudo dnf install bibata-cursor-theme
 ```
 
 ## Manual Install
 
-Latest `Stable` & `Development` releases can be downloaded from [Here](https://github.com/ful1e5/Bibata_Cursor/releases)
+Latest `Stable` & `Development` releases can be downloaded from
+[Release Page](https://github.com/ful1e5/Bibata_Cursor/releases).
 
 #### Linux/X11
 
@@ -140,7 +109,8 @@ sudo mv Bibata-* /usr/share/icons/
 1. unzip `.zip` file
 2. Open unziped directory in Explorer, and **right click** on `install.inf`.
 3. Click 'Install' from the context menu, and authorize the modifications to your system.
-4. Open _Control Panel_ > _Personalization and Appearance_ > _Change mouse pointers_, and select **Bibata Cursors**.
+4. Open _Control Panel_ > _Personalization and Appearance_ > _Change mouse pointers_,
+   and select **Bibata Cursors**.
 5. Click '**Apply**'.
 
 ### Uninstall
@@ -159,13 +129,15 @@ sudo rm /usr/share/icons/Bibata-*
 
 1. Go to **Registry Editor** by typing the same in the _start search box_.
 2. Expand `HKEY_CURRENT_USER` folder and expand `Control Panel` folder.
-3. Go to `Cursors` folder and click on `Schemes` folder - all the available custom cursors that are installed will be listed here.
-4. **Right Click** on the name of cursor file you want to uninstall; for eg.: _Bibata Cursors_ and click `Delete`.
+3. Go to `Cursors` folder and click on `Schemes` folder - all the available custom cursors that are
+   installed will be listed here.
+4. **Right Click** on the name of cursor file you want to uninstall; for eg.: _Bibata Cursors_ and
+   click `Delete`.
 5. Click '**yes**' when prompted.
 
-# Dependencies
+## Dependencies
 
-## External Libraries
+### External Libraries
 
 - libxcursor-dev
 - libx11-dev
@@ -221,11 +193,13 @@ sudo dnf install libX11-devel libXcursor-devel libpng-devel
 
 ### Auto Build (using GitHub Actions)
 
-GitHub Actions is automatically runs on every `push`(on **main** & **dev** branch) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **bibata-ci**. GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/Bibata_Cursor/tree/main/.github/workflows) directory.
+GitHub Actions is automatically runs on every `push`(on **main** & **dev** branch) and `pull request`
+(on **main** branch), You found theme resources in `artifact` section of **bibata-ci**.
+GitHub **Actions** available inside [.github/workflows](./.github/workflows) directory.
 
 ### Manual Build
 
-> Check **[Makefile](./Makefile)** for more targets.
+Check **[Makefile](./Makefile)** for more targets.
 
 ```bash
 make
@@ -266,7 +240,7 @@ make windows WIN_SIZE=96            # Supports only one pixel-size
 
 > Windows installations steps are same as [these](#windows).
 
-# You may also like...
+## You may also like...
 
 - [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
 - [**Bibata Extra**](https://github.com/ful1e5/Bibata_Extra_Cursor) - More Bibata!
@@ -275,22 +249,9 @@ make windows WIN_SIZE=96            # Supports only one pixel-size
 - [**Bibata Bee**](https://github.com/ful1e5/Bibata-Bee-Cursor) - 'Semi-Animated' Bibata cursors with bee stripes
 - [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
 
-# Bugs
+## Credit
 
-Bugs should be reported [here](https://github.com/ful1e5/Bibata_Cursor/issues) on the Github issues page.
-
-# Getting Help
-
-You can create a **issue**, I will help you. 🙂
-
-# Contributing
-
-Check [CONTRIBUTING.md](CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
-
-# Credit
-
-- [Adwaita](https://github.com/GNOME/adwaita-icon-theme)
-- [Dmz](https://github.com/GalliumOS/dmz-cursor-theme)
-- [Yaru](https://github.com/ubuntu/yaru)
-- Emojis are taken from [here](https://emojipedia.org/)
-- Wedge loading from [loading.io](https://loading.io/spinner/wedges/-pie-wedge-pizza-circle-round-rotate) with **Microsoft** colors
+[Loading Animation](https://loading.io/spinner/wedges/-pie-wedge-pizza-circle-round-rotate) ·
+[Adwaita](https://github.com/GNOME/adwaita-icon-theme) ·
+[Dmz](https://github.com/GalliumOS/dmz-cursor-theme) ·
+[Yaru](https://github.com/ubuntu/yaru)

@@ -8,9 +8,7 @@ from clickgen.util import PNGProvider
 
 from .constants import WIN_CURSORS_CFG, WIN_DELAY, X_CURSORS_CFG, X_DELAY
 
-
 X = TypeVar("X")
-
 
 def to_tuple(x: X) -> Tuple[X, X]:
     return (x, x)
