@@ -1,21 +1,52 @@
 # Bibata Cursor
 
-[![build](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml/badge.svg)](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml)
-[![Twitter](https://img.shields.io/badge/Notifications-twitter-blue)](https://twitter.com/ful1e5)
+[![ci](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/ci.yml/badge.svg)](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/ci.yml)
+[![twitter](https://img.shields.io/badge/Notification-twitter-blue)](https://twitter.com/ful1e5)
+
+**TLDR; This cursor set is the masterpiece of all cursors available on the internet.**
 
 Bibata is **OpenSource**, compact, and material designed cursor set. This project masterelop for
-improve `Cursor` experience.
+improve cursor experience.
 
-**Cursors Themes:**
+Bibata is one of the most popular cursors set in the Linux community so far and is now available
+for freely with multiple colors and size options for Windows as well. The aim of this project is to
+provide the best personalized cursors to users.
 
-- **Bibata Original Amber :** Sharp edges yellowish theme.
-- **Bibata Modern Amber :** Rounded edges yellowish theme.
-- **Bibata Original Classic :** Sharp edges black theme.
-- **Bibata Modern Classic :** Rounded edges black theme.
-- **Bibata Original Ice :** Sharp edges white theme.
-- **Bibata Modern Ice :** Rounded edges white theme.
+#### Future!?
 
-**Cursor Sizes:**
+Until now Bibata was funded by [pling.com](https://www.pling.com) but since the
+[pling-factor](https://www.pling.com/terms/payout) on the website has decreased and monthly payments
+are <100$ it is now dependent on community funding and sponsorships. If you want to help us build
+future cursors or if you use Bibata as the default cursor theme, consider becoming a partner.
+
+Your support will also be beneficial for my upcoming projects like:
+
+- [cursrs](https://github.com/ful1e5/cursrs) - Superior cursors platform. A open source web app
+  where you can customize customize and download cursors.
+
+Visit the [GitHub Sponsor](https://github.com/sponsors/ful1e5) page to become a partner.
+DM me on [Twitter](https://twitter.com/ful1e5) if your company would like to support this project,
+I will gladly look into it and post your logo in the README.
+
+#### Sponsors
+
+I appreciate all these wonderful people who patronize and sponsoring my work.
+Your support will help me actively maintain Bibata and other open source projects.
+
+<!-- Add your name or avatar here with the Pull Request in case I missed it. -->
+
+_Be you first._
+
+#### Variants:
+
+- **Bibata Original Amber:** Yellowish and rounded edge bibata cursors.
+- **Bibata Modern Amber:** Yellowish and sharp edge bibata cursors.
+- **Bibata Original Classic:** Black and sharp edge bibata cursors.
+- **Bibata Modern Classic:** Black and rounded edge bibata cursors.
+- **Bibata Original Ice:** White and sharp edge bibata cursors.
+- **Bibata Modern Ice:** White and rounded edge bibata cursors
+
+#### Xcursor Sizes:
 
 <kbd>22</kbd>
 <kbd>24</kbd>
@@ -30,29 +61,32 @@ improve `Cursor` experience.
 <kbd>88</kbd>
 <kbd>96</kbd>
 
-**Colors:**
+#### Windows Cursor Size:
 
-![Amber](https://imgur.com/5Jo6MSO.png)
-![Classic](https://imgur.com/I5cRKE4.png)
-![Ice](https://imgur.com/avnR40g.png)
+- <kbd>16x16</kbd> - Small
+- <kbd>24x24</kbd> - Regular
+- <kbd>32x32</kbd> - Large
+- <kbd>48x48</kbd> - Extra Large
 
-**Support with $1 or more on GitHub Sponsors.**
+#### Gallery
 
-## Quick install (Recommended)
-
-Download pre-built binaries on [pling store](https://www.pling.com/p/1197198/)
-
-## Preview
-
-> Check Figma file [here](https://www.figma.com/file/Y9RKZLXhSvaxpUzsKGJkp6/Bibata-Cursor?node-id=0%3A1)
+> **Note**
+> All svg files are found in [svg](./svg) directory or you can also use
+> [Figma](https://www.figma.com/file/Y9RKZLXhSvaxpUzsKGJkp6/Bibata-Cursor?node-id=0%3A1).
 
 ![Bibata Amber](https://i.imgur.com/2DEYWDC.png)
 ![Bibata Classic](https://i.imgur.com/C8mMQ3j.png)
 ![Bibata Ice](https://i.imgur.com/ovzTw6u.png)
 
+## Binaries
+
+You can download latest `stable` & `development` releases from
+[Release Page](https://github.com/ful1e5/Bibata_Cursor/releases).
+
 ## Packages
 
-> **Note**: If you're having trouble with the packages please submit a request to the package maintainer
+> **Note**
+> If you're having trouble with the packages please submit a request to the package maintainer
 > before creating an issue.
 
 ### Arch Linux/Manjaro
@@ -60,11 +94,11 @@ Download pre-built binaries on [pling store](https://www.pling.com/p/1197198/)
 Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme)
 currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m) &
 [_@yochananmarqos_](https://aur.archlinux.org/packages/?K=yochananmarqos&SeB=m).
-Can be installed via Pamac (preinstalled in Manjaro), Yay or any other
+Can be installed via Pamac (preinstalled in Manjaro), Paru or any other
 [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers).
 
 ```bash
-yay -S bibata-cursor-theme
+paru -S bibata-cursor-theme
 ```
 
 Alternatively, Bibata binaries can be also installed using the PKGBUILD `bibata-theme-bin`,
@@ -86,46 +120,41 @@ sudo dnf copr enable muhalantabli/copr-repo
 sudo dnf install bibata-cursor-theme
 ```
 
-## Manual Install
-
-Latest `Stable` & `Development` releases can be downloaded from
-[Release Page](https://github.com/ful1e5/Bibata_Cursor/releases).
+## Installing Bibata Cursor
 
 #### Linux/X11
 
+**Installation:**
+
 ```bash
-# extract `Bibata.tar.gz`
-tar -xvf Bibata.tar.gz
+tar -xvf Bibata.tar.gz                # extract `Bibata.tar.gz`
+mv Bibata-* ~/.icons/                 # Install to local users
+sudo mv Bibata-* /usr/share/icons/    # Install to all users
+```
 
-# For local users
-mv Bibata-* ~/.icons/
+**Uninstallation:**
 
-# For all users
-sudo mv Bibata-* /usr/share/icons/
+```bash
+rm ~/.icons/Bibata-*                  # Remove from local users
+sudo rm /usr/share/icons/Bibata-*     # Remove from all users
 ```
 
 #### Windows
 
-1. unzip `.zip` file
+**Installation:**
+
+1. Unzip `.zip` file
 2. Open unziped directory in Explorer, and **right click** on `install.inf`.
 3. Click 'Install' from the context menu, and authorize the modifications to your system.
-4. Open _Control Panel_ > _Personalization and Appearance_ > _Change mouse pointers_,
+4. Open Control Panel > Personalization and Appearance > Change mouse pointers,
    and select **Bibata Cursors**.
 5. Click '**Apply**'.
 
-### Uninstall
+**Uninstallation:**
 
-#### Linux/X11
+Run the `uninstall.bat` script packed with the `.zip` archive
 
-```bash
-# From local users
-rm ~/.icons/Bibata-*
-
-# From all users
-sudo rm /usr/share/icons/Bibata-*
-```
-
-#### Windows
+**OR** follow these steps:
 
 1. Go to **Registry Editor** by typing the same in the _start search box_.
 2. Expand `HKEY_CURRENT_USER` folder and expand `Control Panel` folder.
@@ -135,110 +164,91 @@ sudo rm /usr/share/icons/Bibata-*
    click `Delete`.
 5. Click '**yes**' when prompted.
 
-## Dependencies
+## Build From Source
 
-### External Libraries
+### Build prerequisites
 
-- libxcursor-dev
-- libx11-dev
-- libpng-dev (<=1.6)
+- Python version 3.7 or higher
+- [clickgen](https://github.com/ful1e5/clickgen) >= 2.0.0 Python package (`pip install clickgen`)
+- [yarn](https://github.com/yarnpkg/yarn)
 
-#### Install External Libraries
+### Quick start
 
-##### macOS
+1. Install [build prerequisites](#build-prerequisites) on your system
+2. `git clone https://github.com/ful1e5/Bibata_Cursor`
+3. `cd Bibata_Cursor && yarn build`
+4. See [Installing Bibata Cursor](#installing-bibata-cursor).
 
-```bash
-brew install --cask xquartz
-brew install libpng
-```
+### Building
 
-##### Debain/ubuntu
+First make sure you installed the [build prerequisites](#build-prerequisites).
+Now that you have the dependencies, you can try build individual themes from bitmaps and
+customize sizes, target platform, and etc. with the `ctgen` CLI (packed with `clickgen`).
 
-```bash
-sudo apt install libx11-dev libxcursor-dev libpng-dev
-```
+**Notes :**
 
-##### ArchLinux/Manjaro
+- Bibata build configuration and cursor hotspot settings are bundled in the `build.toml` file.
+- Check out the scripts section in [package.json](./package.json) to see how we created the cursor theme,
+  excluding the render scripts. They are useful for converting `.svg` files to `.png`
+  that are already generated in the **bitmaps directory** and **managed by the maintainer**.
+- **Yarn is optional**. For building XCursor and Windows Cursor or resizing it you don't need that.
+  If you want to develop/modify Bibata's colors, and bitmaps, or generate a png file from a svg, you can use
+  yarn because bitmapper is written in TypeScript.
+- Since Bibata variants are designed similarly, they share the same hotspot settings so a single configuration
+  file `build.toml` is responsible for building all variants. Due to this, you will have to change the following
+  options in `ctgen` to build the appropriate variant:
+  - **-d**: bitmaps directory
+  - **-n**: The name you want to give to the generated theme.
+  - **-c**: Theme comment.
+  - See `ctgen --help` for all available options.
 
-```bash
-sudo pacman -S libx11 libxcursor libpng
-```
+##### Default Build Commands or `yarn build`
 
-##### Fedora/Fedora Silverblue/CentOS/RHEL
-
-```bash
-sudo dnf install libX11-devel libXcursor-devel libpng-devel
-```
-
-## Build Dependencies
-
-- [gcc](https://gcc.gnu.org/install/)
-- [make](https://www.gnu.org/software/make/)
-- [nodejs](https://nodejs.org/en/) (<=12.x.x)
-- [yarn](https://classic.yarnpkg.com/en/docs/install/)
-- [python](https://www.python.org/downloads/) (<=3.8)
-- [pip3](https://pip.pypa.io/en/stable/installing/)
-
-### Node Packages
-
-- [puppeteer](https://www.npmjs.com/package/puppeteer)
-- [pngjs](https://www.npmjs.com/package/pngjs)
-- [pixelmatch](https://www.npmjs.com/package/pixelmatch)
-
-### PyPi Packages
-
-- [clickgen](https://pypi.org/project/clickgen)
-
-## Build From Scratch
-
-### Auto Build (using GitHub Actions)
-
-GitHub Actions is automatically runs on every `push`(on **main** & **dev** branch) and `pull request`
-(on **main** branch), You found theme resources in `artifact` section of **bibata-ci**.
-GitHub **Actions** available inside [.github/workflows](./.github/workflows) directory.
-
-### Manual Build
-
-Check **[Makefile](./Makefile)** for more targets.
+Here are the default commands we used to build the Bibata's variants and packed them into `yarn build`:
 
 ```bash
-make
+ctgen build.toml -n 'Bibata-Modern-Amber' -c 'Yellowish and rounded edge bibata cursors.' -d 'bitmaps/Bibata-Modern-Amber'
+ctgen build.toml -n 'Bibata-Modern-Classic' -c 'Black and rounded edge Bibata cursors.' -d 'bitmaps/Bibata-Modern-Classic'
+ctgen build.toml -n 'Bibata-Modern-Ice' -c 'White and rounded edge Bibata cursors.' -d 'bitmaps/Bibata-Modern-Ice'
+
+ctgen build.toml -n 'Bibata-Original-Amber' -c 'Yellowish and sharp edge Bibata cursors.' -d 'bitmaps/Bibata-Original-Amber'
+ctgen build.toml -n 'Bibata-Original-Classic' -c 'Black and sharp edge Bibata cursors.' -d 'bitmaps/Bibata-Original-Classic'
+ctgen build.toml -n 'Bibata-Original-Ice' -c 'White and sharp edge Bibata cursors.' -d 'bitmaps/Bibata-Original-Ice'
 ```
 
-#### Build Only `XCursor` theme
+Afterwards, the themes can be found in the `themes/` directory.
+
+##### Customize Windows Cursor size
+
+To build Windows cursor with size `16`:
+
+> **Warning**
+> Windows cursor supports only one size, if multiple sizes are given in `-s` the first size will
+> be considered in build.
 
 ```bash
-make unix
+ctgen build.toml -s 16 -p windows -d 'bitmaps/Bibata-Modern-Ice' -n 'Bibata Modern Ice' -c 'White and rounded egde bibata cusors with size 16'
 ```
 
-#### Customize `XCursor` size
+You can also customize output directory with `-o` option:
 
 ```bash
-make unix X_SIZES=22            # Only built '22px' pixel-size.
-make unix X_SIZES=22 24 32      # Multiple sizes are provided with  ' '(Space)
+ctgen build.toml -s 16 -p windows -d 'bitmaps/Bibata-Modern-Ice' -o 'out/' -n 'Bibata Modern Ice' -c 'White and rounded egde Bibata cursors with size 16'
 ```
 
-#### Install `XCursor` theme
+##### Customize XCursor size
+
+To build XCursor with size `16`:
 
 ```bash
-make install            # install as user
-  # OR
-sudo make install       # install as root
+ctgen build.toml -s 16 -p x11 -d 'bitmaps/Bibata-Modern-Ice' -n 'Bibata Modern Ice' -c 'White and rounded egde Bibata cursors with size 16'
 ```
 
-#### Build Only `Windows` theme
+You can also assign multiple sizes to `ctgen` for XCursors build:
 
 ```bash
-make windows
+ctgen build.toml -s 16 24 32 -p x11 -d 'bitmaps/Bibata-Modern-Ice' -n 'Bibata Modern Ice' -c 'White and rounded egde Bibata cursors with size 16'
 ```
-
-#### Customize `Windows Cursor` size
-
-```bash
-make windows WIN_SIZE=96            # Supports only one pixel-size
-```
-
-> Windows installations steps are same as [these](#windows).
 
 ## You may also like...
 
@@ -251,7 +261,7 @@ make windows WIN_SIZE=96            # Supports only one pixel-size
 
 ## Credit
 
-[Loading Animation](https://loading.io/spinner/wedges/-pie-wedge-pizza-circle-round-rotate) ·
+[Wedge Loading Animation](https://loading.io/spinner/wedges/-pie-wedge-pizza-circle-round-rotate) ·
 [Adwaita](https://github.com/GNOME/adwaita-icon-theme) ·
 [Dmz](https://github.com/GalliumOS/dmz-cursor-theme) ·
 [Yaru](https://github.com/ubuntu/yaru)

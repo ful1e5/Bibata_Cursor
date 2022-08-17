@@ -1,9 +1,6 @@
 # --------------------------------------------- Custom
-bitmaps
 themes
-bin
 
-# --------------------------------------------- Python
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -135,8 +132,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-
-# --------------------------------------------- Nodejs
 
 # Logs
 logs

@@ -9,30 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- [Bibata Zebra](https://github.com/ful1e5/Bibata-Zebra-Cursor) link added inside README.md
-- [Bibata Bee](https://github.com/ful1e5/Bibata-Bee-Cursor) link added inside README.md
 - tidy docs inside `README.md`
-- make commands are more readable inside `builder/Makefile`
-- symlink common cursor svg files using `svg/link.py`
-- ci updated for symlink script
-- distributed artifacts inside `build` GitHub actions
+- symlink common cursor svg files using `svg/link.py` (for developers)
 - Add cursor top_left_arrow cursor ful1e5/BreezeX_Cursor#10 ful1e5/BreezeX_Cursor#11
 - Uninstall docs ful1e5/apple_cursor#79 ful1e5/apple_cursor#80
 - feat: CLI for bitmapper #104
-- chore: use -C flag for sub Makefile
 
 ### Changed
 
-- used `THEME_PREFIX` variable in make commands
-- support creator button updated
-- emojis removed from README.md
-- Github Action renamed to `build`
 - prettier `bitmapping` logs
-- `svg/link.py` file added inside pyright config
-- Fix `None` value warning in `builder/symlinks.py`
 - README.md: removed nonsense and included theme names with description. (fixed #113)
 
-## [Bibata v1.1.2] - 12 Jul 2021
+## [Bibata v1.1.2] - 12 July 2021
 
 ### Added
 
@@ -50,7 +38,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `Makefile` build commands re-arrange with groups
 - Dynamic determine **Windows canvas size** on **Windows cursor size** inside build.py`
 
-## [Bibata v1.1.1] - 26 Mar 2021
+## [Bibata v1.1.1] - 26 March 2021
 
 ### Added
 
@@ -73,11 +61,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Format `svg` files
 - Remove old username of an author with Contributors table
 
-## [Bibata v1.1.0] - 26 Feb 2021
+## [Bibata v1.1.0] - 26 February 2021
 
 ### Added
 
-- new **[copr](https://copr.fedorainfracloud.org/coprs/peterwu/rendezvous/package/bibata-cursor-themes/)** package by @peterwu
+- new **[copr](https://copr.fedorainfracloud.org/coprs/peterwu/rendezvous/package/bibata-cursor-themes/)**
+  package by @peterwu
 - `.svg` files separated to `<root>/svg`
 - Customizable Windows & UNIX cursors #91
 - Easy build system with `Make` supports
@@ -102,7 +91,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix Cursors not available for Login Window in Linux Mint 20 #88
 - Dirty pixel in `move` cursor fixed #94
 
-## [Bibata v1.0.3] - 10 Nov 2020
+## [Bibata v1.0.3] - 10 November 2020
 
 ### Added
 
@@ -118,7 +107,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - fixed #82 improvement to X-cursor (feature request)
 - fixed #81 Corner resize cursors are not coloured (bug)
 
-## [Bibata v1.0.2] - 30 Oct 2020
+## [Bibata v1.0.2] - 30 October 2020
 
 ### Added
 
@@ -134,7 +123,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - locked clickgen to **1.1.7**
 - Package information provider module changed to `builder/pkg_info.py`
 
-## [Bibata v1.0.1] - 8 Oct 2020
+## [Bibata v1.0.1] - 08 October 2020
 
 ### Added
 
@@ -154,7 +143,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - #76 Wrong implementation resize cursors **[closed]**
 - #74 `Pillow` pip requirements checking in installation of **clickgen**
 
-## [Bibata v1.0.0] - 3 Oct 2020
+## [Bibata v1.0.0] - 03 October 2020
 
 ### Changed
 
@@ -190,7 +179,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Bibata Logo resigned
 
-## [Bibata v0.4.2.alpha.2] - 1 December 2019
+## [Bibata v0.4.2.alpha.2] - 01 December 2019
 
 ### Added
 
@@ -219,7 +208,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cursor's corner-shape changed
 - Hot-spots changed
 
-## [Bibata v.0.4.1] - 3 September 2018
+## [Bibata v.0.4.1] - 03 September 2018
 
 ### Changed
 
@@ -232,7 +221,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Redesign Crosshair
 
-## [Bibata v0.3] - 3 February 2018
+## [Bibata v0.3] - 03 February 2018
 
 ### Added
 

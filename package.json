@@ -1,0 +1,49 @@
+{
+  "name": "bibata-bitmapper",
+  "description": "A bitmapper CLI for Bibata cursor.",
+  "author": "Kaiz Khatri",
+  "version": "1.1.2",
+  "private": false,
+  "license": "GPL-3.0",
+  "main": "dist/cli.js",
+  "bin": {
+    "bibata-bitmapper": "dist/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:ful1e5/Bibata_Cursor.git"
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "render:bibata-modern": "yarn compile && node dist/cli.js modern",
+    "render:bibata-original": "yarn compile && node dist/cli.js original",
+    "render": "yarn render:bibata-modern && yarn render:bibata-original",
+    "build:bibata-modern-amber": "ctgen build.toml -n 'Bibata-Modern-Amber' -c 'Yellowish and rounded edge Bibata cursors.' -d 'bitmaps/Bibata-Modern-Amber'",
+    "build:bibata-modern-classic": "ctgen build.toml -n 'Bibata-Modern-Classic' -c 'Black and rounded edge Bibata cursors.' -d 'bitmaps/Bibata-Modern-Classic'",
+    "build:bibata-modern-ice": "ctgen build.toml -n 'Bibata-Modern-Ice' -c 'White and rounded edge Bibata cursors.' -d 'bitmaps/Bibata-Modern-Ice'",
+    "build:bibata-original-amber": "ctgen build.toml -n 'Bibata-Original-Amber' -c 'Yellowish and sharp edge Bibata cursors.' -d 'bitmaps/Bibata-Original-Amber'",
+    "build:bibata-original-classic": "ctgen build.toml -n 'Bibata-Original-Classic' -c 'Black and sharp edge Bibata cursors.' -d 'bitmaps/Bibata-Original-Classic'",
+    "build:bibata-original-ice": "ctgen build.toml -n 'Bibata-Original-Ice' -c 'White and sharp edge bibata cursors.' -d 'bitmaps/Bibata-Original-Ice'",
+    "build:bibata-modern": "yarn build:bibata-modern-amber && yarn build:bibata-modern-classic && yarn build:bibata-modern-ice",
+    "build:bibata-original": "yarn build:bibata-original-amber && yarn build:bibata-original-classic && yarn build:bibata-original-ice",
+    "build": "yarn build:bibata-modern && yarn build:bibata-original"
+  },
+  "dependencies": {
+    "commander": "^9.0.0",
+    "module-alias": "^2.2.2",
+    "pixelmatch": "^5.2.1",
+    "pngjs": "^6.0.0",
+    "puppeteer": "^13.4.1"
+  },
+  "devDependencies": {
+    "@types/module-alias": "^2.0.1",
+    "@types/pixelmatch": "^5.2.4",
+    "@types/pngjs": "^6.0.1",
+    "@types/puppeteer": "^5.4.5",
+    "ts-node": "^10.6.0",
+    "typescript": "^4.6.2"
+  },
+  "_moduleAliases": {
+    "#root": "dist/"
+  }
+}
