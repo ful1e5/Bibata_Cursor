@@ -2,10 +2,9 @@
 require("module-alias/register");
 import path from "path";
 
-import { Argument, Command, Option } from "commander";
+import { Command, Option } from "commander";
 
 import { builder } from "#root/modules";
-import * as commands from "#root/commands";
 
 import { exitWithError } from "#root/utils/exitWithError";
 
@@ -20,22 +19,11 @@ interface ProgramOptions {
 
 const cliApp = async () => {
   const program = new Command();
-  let style: string = "";
 
   program
     .name("bibata-bitmapper")
-    .version("1.1.2")
+    .version("2.0.0")
     .usage("[OPTIONS]...")
-
-    .addArgument(
-      new Argument(
-        "<style>",
-        "Generate bitmaps for builtin Bibata style."
-      ).choices(["modern", "original"])
-    )
-    .action((s) => {
-      style = s;
-    })
 
     .addOption(
       new Option(
@@ -44,7 +32,10 @@ const cliApp = async () => {
       )
     )
     .addOption(
-      new Option("-o, --out <path>", "Specifies the output directory.")
+      new Option(
+        "-o, --out <path>",
+        "Specifies the output directory. (default './bitmaps')"
+      )
     )
     .addOption(
       new Option(
@@ -81,61 +72,47 @@ const cliApp = async () => {
   program.parse(process.argv);
   const options: ProgramOptions = program.opts();
 
-  switch (style) {
-    case "modern": {
-      await commands.modern.execute();
-      break;
-    }
-
-    case "original": {
-      await commands.original.execute();
-      break;
-    }
-
-    default: {
-      if (!options.dir) {
-        exitWithError(" error: option '-d, --dir <path>' missing");
-      }
-      if (!options.out) {
-        exitWithError(" error: option '-o, --out <path>' missing");
-      }
-      if (!options.themeName) {
-        exitWithError(" error: option '-n, --themeName <string>' missing");
-      }
-      if (!options.baseColor) {
-        exitWithError(" error: option '-bc, --baseColor <hex>' missing");
-      }
-      if (!options.outlineColor) {
-        exitWithError(" error: option '-oc, --outlineColor <hex>' missing");
-      }
-
-      const colors = {
-        base: options.baseColor,
-        outline: options.outlineColor,
-        watch: {
-          background: options.watchBackgroundColor ?? options.baseColor,
-        },
-      };
-      const bitmapsDir = path.resolve(options.out, options.themeName);
-
-      // Logging arguments
-      console.log("---");
-      console.log(`SVG directory: '${options.dir}'`);
-      console.log(`Output directory: '${bitmapsDir}'`);
-      console.log(`Base color: '${colors.base}'`);
-      console.log(`Outline color: '${colors.outline}'`);
-      console.log(`Watch Background color: '${colors.watch.background}'`);
-      console.log("---\n");
-
-      builder.buildBitmaps({
-        dir: options.dir,
-        out: options.out,
-        themeName: options.themeName,
-        colors: colors,
-      });
-      break;
-    }
+  if (!options.dir) {
+    exitWithError(" error: option '-d, --dir <path>' missing");
   }
+  if (!options.out) {
+    console.log(" info: setting output directory to './bitmaps'");
+    options.out = path.resolve("./bitmaps");
+  }
+  if (!options.themeName) {
+    exitWithError(" error: option '-n, --themeName <string>' missing");
+  }
+  if (!options.baseColor) {
+    exitWithError(" error: option '-bc, --baseColor <hex>' missing");
+  }
+  if (!options.outlineColor) {
+    exitWithError(" error: option '-oc, --outlineColor <hex>' missing");
+  }
+
+  const colors = {
+    base: options.baseColor,
+    outline: options.outlineColor,
+    watch: {
+      background: options.watchBackgroundColor ?? options.baseColor,
+    },
+  };
+  const bitmapsDir = path.resolve(options.out, options.themeName);
+
+  // Logging arguments
+  console.log("---");
+  console.log(`SVG directory: '${options.dir}'`);
+  console.log(`Output directory: '${bitmapsDir}'`);
+  console.log(`Base color: '${colors.base}'`);
+  console.log(`Outline color: '${colors.outline}'`);
+  console.log(`Watch Background color: '${colors.watch.background}'`);
+  console.log("---\n");
+
+  builder.buildBitmaps({
+    dir: options.dir,
+    out: options.out,
+    themeName: options.themeName,
+    colors: colors,
+  });
 };
 
 cliApp();

@@ -1,43 +1,26 @@
 # Bibata Cursor
 
-[![ci](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/ci.yml/badge.svg)](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/ci.yml)
-[![twitter](https://img.shields.io/badge/Notification-twitter-blue)](https://twitter.com/ful1e5)
+[![build](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml/badge.svg)](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml)
 
-**TLDR; This cursor set is the masterpiece of all cursors available on the internet.**
+TLDR; This cursor set is the masterpiece of cursors available on the internet,
+Hand designed by [Kaiz Khatri](https://twitter.com/ful1e5).
 
-Bibata is **OpenSource**, compact, and material designed cursor set. This project masterelop for
+Bibata is open source, compact, and material designed cursor set. This project masterelop for
 improve cursor experience.
 
 Bibata is one of the most popular cursors set in the Linux community so far and is now available
 for freely with multiple colors and size options for Windows as well. The aim of this project is to
-provide the best personalized cursors to users.
+provide the personalized cursors to users.
 
-#### Future!?
+![Bibata Amber](https://i.imgur.com/2DEYWDC.png)
+![Bibata Classic](https://i.imgur.com/C8mMQ3j.png)
+![Bibata Ice](https://i.imgur.com/ovzTw6u.png)
 
-Until now Bibata was funded by [pling.com](https://www.pling.com) but since the
-[pling-factor](https://www.pling.com/terms/payout) on the website has decreased and monthly payments
-are <100$ it is now dependent on community funding and sponsorships. If you want to help us build
-future cursors or if you use Bibata as the default cursor theme, consider becoming a partner.
+> **Note**
+> All cursor's `.svg` files are found in [svg](./svg) directory or you can also find them on
+> [Figma](https://www.figma.com/file/Y9RKZLXhSvaxpUzsKGJkp6/Bibata-Cursor?node-id=0%3A1).
 
-Your support will also be beneficial for my upcoming projects like:
-
-- [cursrs](https://github.com/ful1e5/cursrs) - Superior cursors platform. A open source web app
-  where you can customize customize and download cursors.
-
-Visit the [GitHub Sponsor](https://github.com/sponsors/ful1e5) page to become a partner.
-DM me on [Twitter](https://twitter.com/ful1e5) if your company would like to support this project,
-I will gladly look into it and post your logo in the README.
-
-#### Sponsors
-
-I appreciate all these wonderful people who patronize and sponsoring my work.
-Your support will help me actively maintain Bibata and other open source projects.
-
-<!-- Add your name or avatar here with the Pull Request in case I missed it. -->
-
-_Be you first._
-
-#### Variants:
+## Variants:
 
 - **Bibata Original Amber:** Yellowish and rounded edge bibata cursors.
 - **Bibata Modern Amber:** Yellowish and sharp edge bibata cursors.
@@ -46,7 +29,9 @@ _Be you first._
 - **Bibata Original Ice:** White and sharp edge bibata cursors.
 - **Bibata Modern Ice:** White and rounded edge bibata cursors
 
-#### Xcursor Sizes:
+## Cursor Sizes
+
+### Xcursor Sizes:
 
 <kbd>22</kbd>
 <kbd>24</kbd>
@@ -61,35 +46,47 @@ _Be you first._
 <kbd>88</kbd>
 <kbd>96</kbd>
 
-#### Windows Cursor Size:
+### Windows Cursor Size:
 
 - <kbd>16x16</kbd> - Small
 - <kbd>24x24</kbd> - Regular
 - <kbd>32x32</kbd> - Large
 - <kbd>48x48</kbd> - Extra Large
 
-#### Gallery
+## Colors:
 
-> **Note**
-> All svg files are found in [svg](./svg) directory or you can also use
-> [Figma](https://www.figma.com/file/Y9RKZLXhSvaxpUzsKGJkp6/Bibata-Cursor?node-id=0%3A1).
+### Bibata Amber
 
-![Bibata Amber](https://i.imgur.com/2DEYWDC.png)
-![Bibata Classic](https://i.imgur.com/C8mMQ3j.png)
-![Bibata Ice](https://i.imgur.com/ovzTw6u.png)
+- Base Color - `#FF8300` (Amber)
+- Outline Color - `#FFFFFF` (White)
+- Watch Background Color - `#001524` (Rich Black)
 
-## Binaries
+### Bibata Classic
+
+- Base Color - `#000000` (Black)
+- Outline Color - `#FFFFFF` (White)
+- Watch Background Color - `#000000` (Black)
+
+### Bibata Ice
+
+- Base Color - `#FFFFFF` (White)
+- Outline Color - `#000000` (Black)
+- Watch Background Color - `#FFFFFF` (White)
+
+## How to get it
+
+### Easiest Way
 
 You can download latest `stable` & `development` releases from
 [Release Page](https://github.com/ful1e5/Bibata_Cursor/releases).
 
-## Packages
+### Packages
 
 > **Note**
 > If you're having trouble with the packages please submit a request to the package maintainer
 > before creating an issue.
 
-### Arch Linux/Manjaro
+#### Arch Linux/Manjaro
 
 Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/packages/bibata-cursor-theme)
 currently maintained by [_@Shatur_](https://aur.archlinux.org/packages/?K=Shatur&SeB=m) &
@@ -104,16 +101,16 @@ paru -S bibata-cursor-theme
 Alternatively, Bibata binaries can be also installed using the PKGBUILD `bibata-theme-bin`,
 available on the AUR.
 
-### Fedora
+#### Fedora
 
-#### copr-repo by @peterwu (recommended)
+##### copr-repo by @peterwu (recommended)
 
 ```bash
 sudo dnf copr enable peterwu/rendezvous
 sudo dnf install bibata-cursor-themes
 ```
 
-#### copr-repo by @muhalantabli
+##### copr-repo by @muhalantabli
 
 ```bash
 sudo dnf copr enable muhalantabli/copr-repo
@@ -166,10 +163,26 @@ Run the `uninstall.bat` script packed with the `.zip` archive
 
 ## Build From Source
 
+#### Notes
+
+- Bibata build configuration and cursor hotspot settings are bundled in the `build.toml` file.
+- Check out the scripts section in [package.json](./package.json) to see how we build the cursor theme,
+  excluding the render scripts. They are useful for converting `.svg` files to `.png` files.
+- yarn is optional, For building XCursors and Windows cursors from `.png` files or resizing them
+  you don't need that. If you want to develop/modify Bibata's colors, and bitmaps, or generate a png
+  file from a svg, Then you can use yarn because bitmapper is written in TypeScript.
+- Since Bibata Modern and Bibata Original are designed similarly, they share the same hotspot settings so a
+  single configuration file `build.toml` is responsible for building all variants. Due to this, you will have
+  to change the following options in `ctgen` to build the appropriate variant:
+  - **-d**: bitmaps directory
+  - **-n**: The name you want to give to the generated theme.
+  - **-c**: Theme comment.
+  - See `ctgen --help` for all available options.
+
 ### Build prerequisites
 
 - Python version 3.7 or higher
-- [clickgen](https://github.com/ful1e5/clickgen) >= 2.0.0 Python package (`pip install clickgen`)
+- [clickgen](https://github.com/ful1e5/clickgen)>=2.1.1 (`pip install clickgen`)
 - [yarn](https://github.com/yarnpkg/yarn)
 
 ### Quick start
@@ -181,59 +194,52 @@ Run the `uninstall.bat` script packed with the `.zip` archive
 
 ### Building
 
+> **Note**
+> Bitmaps are already generated in the `bitmaps` directory and **managed by the maintainer**
+> (do not edit them directly).
+
 First make sure you installed the [build prerequisites](#build-prerequisites).
 Now that you have the dependencies, you can try build individual themes from bitmaps and
 customize sizes, target platform, and etc. with the `ctgen` CLI (packed with `clickgen`).
 
-**Notes :**
-
-- Bibata build configuration and cursor hotspot settings are bundled in the `build.toml` file.
-- Check out the scripts section in [package.json](./package.json) to see how we created the cursor theme,
-  excluding the render scripts. They are useful for converting `.svg` files to `.png`
-  that are already generated in the **bitmaps directory** and **managed by the maintainer**.
-- **Yarn is optional**. For building XCursor and Windows Cursor or resizing it you don't need that.
-  If you want to develop/modify Bibata's colors, and bitmaps, or generate a png file from a svg, you can use
-  yarn because bitmapper is written in TypeScript.
-- Since Bibata variants are designed similarly, they share the same hotspot settings so a single configuration
-  file `build.toml` is responsible for building all variants. Due to this, you will have to change the following
-  options in `ctgen` to build the appropriate variant:
-  - **-d**: bitmaps directory
-  - **-n**: The name you want to give to the generated theme.
-  - **-c**: Theme comment.
-  - See `ctgen --help` for all available options.
-
-##### Default Build Commands or `yarn build`
+#### `yarn build` aberration
 
 Here are the default commands we used to build the Bibata's variants and packed them into `yarn build`:
 
 ```bash
-ctgen build.toml -n 'Bibata-Modern-Amber' -c 'Yellowish and rounded edge bibata cursors.' -d 'bitmaps/Bibata-Modern-Amber'
-ctgen build.toml -n 'Bibata-Modern-Classic' -c 'Black and rounded edge Bibata cursors.' -d 'bitmaps/Bibata-Modern-Classic'
-ctgen build.toml -n 'Bibata-Modern-Ice' -c 'White and rounded edge Bibata cursors.' -d 'bitmaps/Bibata-Modern-Ice'
+ctgen build.toml -d 'bitmaps/Bibata-Modern-Amber' -n 'Bibata-Modern-Amber' -c 'Yellowish and rounded edge bibata cursors.'
+ctgen build.toml -d 'bitmaps/Bibata-Modern-Classic' -n 'Bibata-Modern-Classic' -c 'Black and rounded edge Bibata cursors.'
+ctgen build.toml -d 'bitmaps/Bibata-Modern-Ice' -n 'Bibata-Modern-Ice' -c 'White and rounded edge Bibata cursors.'
 
-ctgen build.toml -n 'Bibata-Original-Amber' -c 'Yellowish and sharp edge Bibata cursors.' -d 'bitmaps/Bibata-Original-Amber'
-ctgen build.toml -n 'Bibata-Original-Classic' -c 'Black and sharp edge Bibata cursors.' -d 'bitmaps/Bibata-Original-Classic'
-ctgen build.toml -n 'Bibata-Original-Ice' -c 'White and sharp edge Bibata cursors.' -d 'bitmaps/Bibata-Original-Ice'
+ctgen build.toml -d 'bitmaps/Bibata-Original-Amber' -n 'Bibata-Original-Amber' -c 'Yellowish and sharp edge Bibata cursors.'
+ctgen build.toml -d 'bitmaps/Bibata-Original-Classic' -n 'Bibata-Original-Classic' -c 'Black and sharp edge Bibata cursors.'
+ctgen build.toml -d 'bitmaps/Bibata-Original-Ice' -n 'Bibata-Original-Ice' -c 'White and sharp edge Bibata cursors.'
 ```
 
-Afterwards, the themes can be found in the `themes/` directory.
+Afterwards, the themes can be found in the `themes` directory.
+
+#### Customize Sizes
+
+> **Note**
+> You can change the cursor size up to 200 because pngs are rendered with 200x200.
+> If the cursor is resized by more than rendered png size, the final cursor will be blurred.
 
 ##### Customize Windows Cursor size
 
 To build Windows cursor with size `16`:
 
 > **Warning**
-> Windows cursor supports only one size, if multiple sizes are given in `-s` the first size will
+> Windows cursor supports only one size, if multiple sizes are given with `-s` the first size will
 > be considered in build.
 
 ```bash
-ctgen build.toml -s 16 -p windows -d 'bitmaps/Bibata-Modern-Ice' -n 'Bibata Modern Ice' -c 'White and rounded egde bibata cusors with size 16'
+ctgen build.toml -s 16 -p windows -d 'bitmaps/Bibata-Modern-Ice' -n 'Bibata-Modern-Ice' -c 'White and rounded egde bibata cusors with size 16'
 ```
 
 You can also customize output directory with `-o` option:
 
 ```bash
-ctgen build.toml -s 16 -p windows -d 'bitmaps/Bibata-Modern-Ice' -o 'out/' -n 'Bibata Modern Ice' -c 'White and rounded egde Bibata cursors with size 16'
+ctgen build.toml -s 16 -p windows -d 'bitmaps/Bibata-Modern-Ice' -o 'out' -n 'Bibata-Modern-Ice' -c 'White and rounded egde Bibata cursors with size 16'
 ```
 
 ##### Customize XCursor size
@@ -241,14 +247,108 @@ ctgen build.toml -s 16 -p windows -d 'bitmaps/Bibata-Modern-Ice' -o 'out/' -n 'B
 To build XCursor with size `16`:
 
 ```bash
-ctgen build.toml -s 16 -p x11 -d 'bitmaps/Bibata-Modern-Ice' -n 'Bibata Modern Ice' -c 'White and rounded egde Bibata cursors with size 16'
+ctgen build.toml -s 16 -p x11 -d 'bitmaps/Bibata-Modern-Ice' -n 'Bibata-Modern-Ice' -c 'White and rounded egde Bibata cursors with size 16'
 ```
 
 You can also assign multiple sizes to `ctgen` for XCursors build:
 
 ```bash
-ctgen build.toml -s 16 24 32 -p x11 -d 'bitmaps/Bibata-Modern-Ice' -n 'Bibata Modern Ice' -c 'White and rounded egde Bibata cursors with size 16'
+ctgen build.toml -s 16 24 32 -p x11 -d 'bitmaps/Bibata-Modern-Ice' -n 'Bibata-Modern-Ice' -c 'Custom white and rounded egde Bibata cursors'
 ```
+
+#### Customize Colors
+
+To customize bibata's color you have to compile the bibata-bitmapper with `yarn compile` command.
+After compiling bibata-bitmapper form source code you can customize the colors via `cli.js` node script,
+Which you will find in the `dist` directory.
+
+##### `cli.js` Help
+
+```
+Usage: bibata-bitmapper [OPTIONS]...
+
+Options:
+  -V, --version                      output the version number
+  -d, --dir <path>                   Specifies the directory for placement of SVG files.
+  -o, --out <path>                   Specifies the output directory. (default './bitmaps')
+  -n, --themeName <string>           Specifies the name of output directory.
+  -bc, --baseColor <hex>             Specifies the Hexadecimal color for inner part of cursor.
+  -oc, --outlineColor <hex>          Specifies the Hexadecimal color for cursor's ouline.
+  -wc, --watchBackgroundColor <hex>  Specifies the Hexadecimal color for animation background.
+  -h, --help                         display help for command
+```
+
+##### `yarn render` aberration
+
+Here are the default commands we used for generating the Bibata's bitmaps and packed them into `yarn render`:
+
+```bash
+node dist/cli.js -d 'svg/modern' -n 'Bibata-Modern-Amber' -bc '#FF8300' -oc '#FFFFFF' -wc '#001524'
+node dist/cli.js -d 'svg/modern' -n 'Bibata-Modern-Classic' -bc '#000000' -oc '#FFFFFF'
+node dist/cli.js -d 'svg/modern' -n 'Bibata-Modern-Ice' -bc '#FFFFFF' -oc '#000000'
+node dist/cli.js -d 'svg/original' -n 'Bibata-Original-Amber' -bc '#FF8300' -oc '#FFFFFF' -wc '#001524'
+node dist/cli.js -d 'svg/original' -n 'Bibata-Original-Classic' -bc '#000000' -oc '#FFFFFF'
+node dist/cli.js -d 'svg/original' -n 'Bibata-Original-Ice' -bc '#FFFFFF' -oc '#000000'
+```
+
+#### Examples
+
+Lets generate modern Bibata with green base color and black outline:
+
+```bash
+node dist/cli.js -d 'svg/modern' -n 'Bibata-Hacker' -bc '#00FE00' -oc '#000000' -wc '#001524'
+```
+
+After rendering custom color you have to build cursor through `ctgen`:
+
+```bash
+ctgen build.toml -d 'bitmaps/Bibata-Hacker' -n 'Bibata-Hacker' -c 'Green and black Bibata cursors.'
+```
+
+Afterwards, Generated theme can be found in the `themes` directory.
+
+###### Bibata Gruvbox
+
+```bash
+node dist/cli.js -d 'svg/original' -n 'Bibata-Gruvbox' -bc '#282828' -oc '#EBDBB2' -wc '#000000'
+ctgen build.toml -d 'bitmaps/Bibata-Gruvbox' -n 'Bibata-Gruvbox' -c 'Groovy Bibata cursors.'
+```
+
+###### Bibata Solarized Dark
+
+```bash
+node dist/cli.js -d 'svg/original' -n 'Bibata-Solarized-Dark' -bc '#002b36' -oc '#839496' -wc '#000000'
+ctgen build.toml -d 'bitmaps/Bibata-Solarized-Dark' -n 'Bibata-Solarized-Dark' -c 'Solarized Dark Bibata cursors.'
+```
+
+###### Bibata Solarized Light
+
+```bash
+node dist/cli.js -d 'svg/original' -n 'Bibata-Solarized-Light' -bc '#839496' -oc '#002b36'
+ctgen build.toml -d 'bitmaps/Bibata-Solarized-Light' -n 'Bibata-Solarized-Light' -c 'Solarized Light Bibata cursors.'
+```
+
+###### Bibata Dracula
+
+```bash
+node dist/cli.js -d 'svg/original' -n 'Bibata-Dracula' -bc '#282a36' -oc '#f8f8f2'
+ctgen build.toml -d 'bitmaps/Bibata-Dracula' -n 'Bibata-Dracula' -c 'Dracula Bibata cursors.'
+```
+
+## Consider Sponsoring my work
+
+Until now my cursors projects were funded by [pling.com](https://www.pling.com) but since the
+[pling-factor](https://www.pling.com/terms/payout) on the website has decreased and monthly payments
+are <500$, It is now dependent on community funding and sponsorships. If you want to help me to maintain
+Bibata and my other open source projects actively, consider sponsoring my work on [GitHub Sponsor](https://github.com/sponsors/ful1e5)
+or DM me on [Twitter](https://twitter.com/ful1e5) if your company would like to support this project,
+I will gladly look into it and post your avatar in the README.
+
+I appreciate all the wonderful people who patronize and sponsoring my work.
+
+<!-- Add your name or avatar here with the Pull Request in case I missed it. -->
+
+_Be you first._
 
 ## You may also like...
 
