@@ -417,8 +417,8 @@ x11_name = 'ur_angle'
 
 [cursors.vertical-text]
 png = 'vertical-text.png'
-x_hotspot = 100
-y_hotspot = 100
+x_hotspot = 7
+y_hotspot = 144
 x11_name = 'vertical-text'
 
 [cursors.wait]
@@ -442,8 +442,8 @@ x11_symlinks = ["pirate", "x-cursor"]
 
 [cursors.xterm]
 png = 'xterm.png'
-x_hotspot = 100
-y_hotspot = 100
+x_hotspot = 56
+y_hotspot = 7
 win_name = 'IBeam'
 x11_name = 'xterm'
 x11_symlinks = ["ibeam", "text"]
