@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- feat: Resize-arrow cursors got redesign
 - tidy docs inside `README.md`
 - symlink common cursor svg files using `svg/link.py` (for developers)
 - Add cursor top_left_arrow cursor ful1e5/BreezeX_Cursor#10 ful1e5/BreezeX_Cursor#11
