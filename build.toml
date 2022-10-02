@@ -20,7 +20,7 @@ win_delay = 1
 
 [cursors.bd_double_arrow]
 png = 'bd_double_arrow.png'
-x_hotspot = 99
+x_hotspot = 100
 y_hotspot = 100
 win_name = 'Diagonal_1'
 x11_name = 'bd_double_arrow'
@@ -102,7 +102,7 @@ x11_symlinks = ["03b6e0fcb3499374a867c041f52298f0", "not-allowed"]
 [cursors.crosshair]
 png = 'crosshair.png'
 x_hotspot = 100
-y_hotspot = 101
+y_hotspot = 100
 x11_name = 'crosshair'
 
 [cursors.dnd_no_drop]
@@ -146,8 +146,8 @@ x11_symlinks = ["dot_box_mask", "draped_box", "icon", "target"]
 
 [cursors.fd_double_arrow]
 png = 'fd_double_arrow.png'
-x_hotspot = 99
-y_hotspot = 99
+x_hotspot = 100
+y_hotspot = 100
 win_name = 'Diagonal_2'
 x11_name = 'fd_double_arrow'
 x11_symlinks = ["fcf1c3c7cd4491d801f1e1c78f100000", "nesw-resize", "size_bdiag"]
@@ -252,8 +252,8 @@ x11_symlinks = [
 
 [cursors.pencil]
 png = 'pencil.png'
-x_hotspot = 28
-y_hotspot = 172
+x_hotspot = 31
+y_hotspot = 169
 win_name = 'Handwriting'
 x11_name = 'pencil'
 x11_symlinks = ['draft']
@@ -309,13 +309,13 @@ x11_name = 'right_tee'
 [cursors.sb_down_arrow]
 png = 'sb_down_arrow.png'
 x_hotspot = 100
-y_hotspot = 178
+y_hotspot = 181
 x11_name = 'sb_down_arrow'
 x11_symlinks = ['down-arrow']
 
 [cursors.sb_h_double_arrow]
 png = 'sb_h_double_arrow.png'
-x_hotspot = 99
+x_hotspot = 100
 y_hotspot = 100
 win_name = 'Horizontal'
 x11_name = 'sb_h_double_arrow'
@@ -332,28 +332,28 @@ x11_symlinks = [
 
 [cursors.sb_left_arrow]
 png = 'sb_left_arrow.png'
-x_hotspot = 20
+x_hotspot = 19
 y_hotspot = 100
 x11_name = 'sb_left_arrow'
 x11_symlinks = ['left-arrow']
 
 [cursors.sb_right_arrow]
 png = 'sb_right_arrow.png'
-x_hotspot = 178
+x_hotspot = 181
 y_hotspot = 100
 x11_name = 'sb_right_arrow'
 x11_symlinks = ['right-arrow']
 
 [cursors.sb_up_arrow]
 png = 'sb_up_arrow.png'
-x_hotspot = 99
-y_hotspot = 21
+x_hotspot = 100
+y_hotspot = 19
 x11_name = 'sb_up_arrow'
 x11_symlinks = ['up-arrow']
 
 [cursors.sb_v_double_arrow]
 png = 'sb_v_double_arrow.png'
-x_hotspot = 99
+x_hotspot = 100
 y_hotspot = 100
 win_name = 'Vertical'
 x11_name = 'sb_v_double_arrow'
@@ -417,8 +417,8 @@ x11_name = 'ur_angle'
 
 [cursors.vertical-text]
 png = 'vertical-text.png'
-x_hotspot = 7
-y_hotspot = 144
+x_hotspot = 99
+y_hotspot = 100
 x11_name = 'vertical-text'
 
 [cursors.wait]
@@ -442,8 +442,8 @@ x11_symlinks = ["pirate", "x-cursor"]
 
 [cursors.xterm]
 png = 'xterm.png'
-x_hotspot = 56
-y_hotspot = 7
+x_hotspot = 84
+y_hotspot = 100
 win_name = 'IBeam'
 x11_name = 'xterm'
 x11_symlinks = ["ibeam", "text"]
