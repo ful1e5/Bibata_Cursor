@@ -1,7 +1,7 @@
 {
   "name": "bibata-bitmapper",
   "description": "This package generate '.png' file from '.svg'",
-  "author": "Kaiz Khatri",
+  "author": "Abdulkaiz Khatri",
   "version": "2.0.0",
   "private": false,
   "license": "GPL-3.0",

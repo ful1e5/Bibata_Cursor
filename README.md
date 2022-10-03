@@ -3,7 +3,7 @@
 [![build](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml/badge.svg)](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml)
 
 TLDR; This cursor set is the masterpiece of cursors available on the internet,
-Hand designed by [Kaiz Khatri](https://twitter.com/ful1e5).
+Hand designed by [Abdulkaiz Khatri](https://twitter.com/ful1e5).
 
 Bibata is open source, compact, and material designed cursor set. This project masterelop for
 improve cursor experience.
@@ -337,7 +337,7 @@ ctgen build.toml -d 'bitmaps/Bibata-Dracula' -n 'Bibata-Dracula' -c 'Dracula Bib
 
 ## Consider Sponsoring my work
 
-Until now my cursors projects were funded by [pling.com](https://www.pling.com) but since the
+Until 2021 my cursors projects were well funded by [pling.com](https://www.pling.com) but since the
 [pling-factor](https://www.pling.com/terms/payout) on the website has decreased and monthly payments
 are <500$, It is now dependent on community funding and sponsorships. If you want to help me to maintain
 Bibata and my other open source projects actively, consider sponsoring my work on [GitHub Sponsor](https://github.com/sponsors/ful1e5)

@@ -1,0 +1,24 @@
+Bibata is one of the most popular cursors set in the Linux community so far and is now available for freely with multiple colors and size options for Windows as well. The aim of this project is to provide the personalized cursors to users.
+
+Check [url=https://github.com/ful1e5/Bibata_Cursor]README.md[/url] for installation, uninstallation, personalize cursor sizes or colors.
+
+[b]Notice:[/b]
+Until 2021 my cursors projects were well funded by 'pling.com' but since the 'pling-factor' on the website has decreased and monthly payments are <500$, It is now dependent on community funding and sponsorships. If you want to help me to maintain Bibata and my other open source projects actively, consider sponsoring my work on [url=https://github.com/sponsors/ful1e5]GitHub Sponsors[/url] or DM me on [url=https://twitter.com/ful1e5]Twitter[/url] if your company would like to support this project, I will gladly look into it and post your avatar in the README.
+
+I appreciate all the wonderful people who patronize and sponsoring my work.
+
+[b]Bibata Styles:[/b]
+- Bibata Modern: Round Edges Bibata Cursors
+- Bibata Original: Sharp Edges Bibata Cursors
+
+[b]XCursor Sizes:[/b]
+22x22, 24x24, 28x28, 32x32, 40x40, 48x48, 56x56, 64x64, 72x72, 80x80, 88x88, 96x96
+
+[b]Windows Cursor Size:[/b]
+- 16x16 - Small
+- 24x24 - Regular
+- 32x32 - Large
+- 48x48 - Extra Large
+
+[b]License & Terms:[/b]
+'Bibata_Cursor' is available under the terms of the 'GPL-3.0' license.

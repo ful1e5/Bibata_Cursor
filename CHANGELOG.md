@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+-
+
+### Changed
+
+-
+
+## [Bibata v2.0.0] - 03 October 2022
+
+### Added
+
 - feat: Resize-arrow cursors got redesign
 - tidy docs inside `README.md`
 - symlink common cursor svg files using `svg/link.py` (for developers)
@@ -231,7 +241,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release 🎊
 
-[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.1.1...main
+[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.0...main
+[bibata v2.0.0]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.1.2...v2.0.0
+[bibata v1.1.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.1.1...v1.1.2
 [bibata v1.1.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.1.0...v1.1.1
 [bibata v1.1.0]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.3...v1.1.0
 [bibata v1.0.3]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.0.2...v1.0.3
