@@ -22,8 +22,8 @@ provide the personalized cursors to users.
 
 ## Variants:
 
-- **Bibata Original Amber:** Yellowish and rounded edge bibata cursors.
-- **Bibata Modern Amber:** Yellowish and sharp edge bibata cursors.
+- **Bibata Original Amber:** Yellowish and sharp edge bibata cursors.
+- **Bibata Modern Amber:** Yellowish and rounded edge bibata cursors.
 - **Bibata Original Classic:** Black and sharp edge bibata cursors.
 - **Bibata Modern Classic:** Black and rounded edge bibata cursors.
 - **Bibata Original Ice:** White and sharp edge bibata cursors.
