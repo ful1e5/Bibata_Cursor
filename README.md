@@ -182,7 +182,7 @@ Run the `uninstall.bat` script packed with the `.zip` archive
 ### Build prerequisites
 
 - Python version 3.7 or higher
-- [clickgen](https://github.com/ful1e5/clickgen)>=2.1.1 (`pip install clickgen`)
+- [clickgen](https://github.com/ful1e5/clickgen)>=2.1.2 (`pip install clickgen`)
 - [yarn](https://github.com/yarnpkg/yarn)
 
 ### Quick start

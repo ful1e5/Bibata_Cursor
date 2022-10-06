@@ -11,7 +11,7 @@ names["Bibata-Original-Classic"]="Black and sharp edge Bibata cursors."
 names["Bibata-Original-Ice"]="White and sharp edge Bibata cursors."
 
 # Cleanup old builds
-rm -rf themes
+rm -rf themes bin
 
 # Building Bibata XCursor binaries
 for key in "${!names[@]}";
@@ -37,17 +37,27 @@ done
 
 # Compressing Binaries
 mkdir -p bin
+cd themes
 
 for key in "${!names[@]}";
 do
-    tar -czvf "bin/${key}.tar.gz" "themes/${key}" &
+    tar -czvf "../bin/${key}.tar.gz" "${key}" &
     PID=$!
     wait $PID
 done
 
+tar -czvf "../bin/Bibata.tar.gz"  --exclude="*-Windows" . &
+PID=$!
+wait $PID
+
+
 for key in "${!names[@]}";
 do
-    zip -rv "bin/${key}-Windows.zip" "themes/${key}-Small-Windows" "themes/${key}-Regular-Windows" "themes/${key}-Large-Windows" "themes/${key}-Extra-Large-Windows" &
+    zip -rv "../bin/${key}-Windows.zip" "${key}-Small-Windows" "${key}-Regular-Windows" "${key}-Large-Windows" "${key}-Extra-Large-Windows" &
     PID=$!
     wait $PID
 done
+
+cd ..
+
+echo "$x_bin"
