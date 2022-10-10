@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [Bibata v2.0.2] - 10 October 2022
+
 ### Changed
 
 - refactor: bitmapper moved to individual project [cbmp](https://github.com/ful1e5/cbmp)
@@ -245,7 +247,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release 🎊
 
-[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.1...main
+[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.2...main
+[bibata v2.0.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.1...v2.0.2
 [bibata v2.0.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.0...v2.0.1
 [bibata v2.0.0]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.1.2...v2.0.0
 [bibata v1.1.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v1.1.1...v1.1.2
