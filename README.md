@@ -12,6 +12,25 @@ Bibata is one of the most popular cursors set in the Linux community so far and 
 for freely with multiple colors and size options for Windows as well. The aim of this project is to
 provide the personalized cursors to users.
 
+## Bibata needs your Input
+
+Until 2021 my cursors projects were well funded by [pling.com](https://www.pling.com) but since the
+[pling-factor](https://www.pling.com/terms/payout) on the website has decreased and monthly payments
+are <500$, It is now dependent on community funding and sponsorships. If you want to help me to maintain
+Bibata and my other open source projects actively, consider sponsoring my work on [GitHub Sponsor](https://github.com/sponsors/ful1e5)
+or DM me on [Twitter](https://twitter.com/ful1e5) if your company would like to support my projects,
+I will gladly look into it and post your avatar in the project's README.
+
+I appreciate all the wonderful people who patronize and sponsoring my work.
+
+## Sponsors
+
+<!-- Add your name or avatar here with the Pull Request in case I missed it. -->
+
+N/A
+
+---
+
 ![Bibata Amber](https://i.imgur.com/2DEYWDC.png)
 ![Bibata Classic](https://i.imgur.com/C8mMQ3j.png)
 ![Bibata Ice](https://i.imgur.com/ovzTw6u.png)
@@ -258,37 +277,21 @@ ctgen build.toml -s 16 24 32 -p x11 -d 'bitmaps/Bibata-Modern-Ice' -n 'Bibata-Mo
 
 #### Customize Colors
 
-To customize bibata's color you have to compile the bibata-bitmapper with `yarn compile` command.
-After compiling bibata-bitmapper form source code you can customize the colors via `cli.js` node script,
-Which you will find in the `dist` directory.
-
-##### `cli.js` Help
-
-```
-Usage: bibata-bitmapper [OPTIONS]...
-
-Options:
-  -V, --version                      output the version number
-  -d, --dir <path>                   Specifies the directory for placement of SVG files.
-  -o, --out <path>                   Specifies the output directory. (default './bitmaps')
-  -n, --themeName <string>           Specifies the name of output directory.
-  -bc, --baseColor <hex>             Specifies the Hexadecimal color for inner part of cursor.
-  -oc, --outlineColor <hex>          Specifies the Hexadecimal color for cursor's ouline.
-  -wc, --watchBackgroundColor <hex>  Specifies the Hexadecimal color for animation background.
-  -h, --help                         display help for command
-```
+To customize bibata's color you have to install node dependencies with `yarn install` command.
+After installing dependencies you can customize the colors via `npx cbmp` Node CLI App which packed with
+[cbmp](https://github.com/ful1e5/cbmp) node package.
 
 ##### `yarn render` aberration
 
 Here are the default commands we used for generating the Bibata's bitmaps and packed them into `yarn render`:
 
 ```bash
-node dist/cli.js -d 'svg/modern' -n 'Bibata-Modern-Amber' -bc '#FF8300' -oc '#FFFFFF' -wc '#001524'
-node dist/cli.js -d 'svg/modern' -n 'Bibata-Modern-Classic' -bc '#000000' -oc '#FFFFFF'
-node dist/cli.js -d 'svg/modern' -n 'Bibata-Modern-Ice' -bc '#FFFFFF' -oc '#000000'
-node dist/cli.js -d 'svg/original' -n 'Bibata-Original-Amber' -bc '#FF8300' -oc '#FFFFFF' -wc '#001524'
-node dist/cli.js -d 'svg/original' -n 'Bibata-Original-Classic' -bc '#000000' -oc '#FFFFFF'
-node dist/cli.js -d 'svg/original' -n 'Bibata-Original-Ice' -bc '#FFFFFF' -oc '#000000'
+npx cbmp -d 'svg/modern' -n 'Bibata-Modern-Amber' -bc '#FF8300' -oc '#FFFFFF' -wc '#001524'
+npx cbmp -d 'svg/modern' -n 'Bibata-Modern-Classic' -bc '#000000' -oc '#FFFFFF'
+npx cbmp -d 'svg/modern' -n 'Bibata-Modern-Ice' -bc '#FFFFFF' -oc '#000000'
+npx cbmp -d 'svg/original' -n 'Bibata-Original-Amber' -bc '#FF8300' -oc '#FFFFFF' -wc '#001524'
+npx cbmp -d 'svg/original' -n 'Bibata-Original-Classic' -bc '#000000' -oc '#FFFFFF'
+npx cbmp -d 'svg/original' -n 'Bibata-Original-Ice' -bc '#FFFFFF' -oc '#000000'
 ```
 
 #### Examples
@@ -296,7 +299,7 @@ node dist/cli.js -d 'svg/original' -n 'Bibata-Original-Ice' -bc '#FFFFFF' -oc '#
 Lets generate modern Bibata with green base color and black outline:
 
 ```bash
-node dist/cli.js -d 'svg/modern' -n 'Bibata-Hacker' -bc '#00FE00' -oc '#000000' -wc '#001524'
+npx cbmp -d 'svg/modern' -n 'Bibata-Hacker' -bc '#00FE00' -oc '#000000' -wc '#001524'
 ```
 
 After rendering custom color you have to build cursor through `ctgen`:
@@ -310,45 +313,30 @@ Afterwards, Generated theme can be found in the `themes` directory.
 ###### Bibata Gruvbox
 
 ```bash
-node dist/cli.js -d 'svg/original' -n 'Bibata-Gruvbox' -bc '#282828' -oc '#EBDBB2' -wc '#000000'
+npx cbmp -d 'svg/original' -n 'Bibata-Gruvbox' -bc '#282828' -oc '#EBDBB2' -wc '#000000'
 ctgen build.toml -d 'bitmaps/Bibata-Gruvbox' -n 'Bibata-Gruvbox' -c 'Groovy Bibata cursors.'
 ```
 
 ###### Bibata Solarized Dark
 
 ```bash
-node dist/cli.js -d 'svg/original' -n 'Bibata-Solarized-Dark' -bc '#002b36' -oc '#839496' -wc '#000000'
+npx cbmp -d 'svg/original' -n 'Bibata-Solarized-Dark' -bc '#002b36' -oc '#839496' -wc '#000000'
 ctgen build.toml -d 'bitmaps/Bibata-Solarized-Dark' -n 'Bibata-Solarized-Dark' -c 'Solarized Dark Bibata cursors.'
 ```
 
 ###### Bibata Solarized Light
 
 ```bash
-node dist/cli.js -d 'svg/original' -n 'Bibata-Solarized-Light' -bc '#839496' -oc '#002b36'
+npx cbmp -d 'svg/original' -n 'Bibata-Solarized-Light' -bc '#839496' -oc '#002b36'
 ctgen build.toml -d 'bitmaps/Bibata-Solarized-Light' -n 'Bibata-Solarized-Light' -c 'Solarized Light Bibata cursors.'
 ```
 
 ###### Bibata Dracula
 
 ```bash
-node dist/cli.js -d 'svg/original' -n 'Bibata-Dracula' -bc '#282a36' -oc '#f8f8f2'
+npx cbmp -d 'svg/original' -n 'Bibata-Dracula' -bc '#282a36' -oc '#f8f8f2'
 ctgen build.toml -d 'bitmaps/Bibata-Dracula' -n 'Bibata-Dracula' -c 'Dracula Bibata cursors.'
 ```
-
-## Consider Sponsoring my work
-
-Until 2021 my cursors projects were well funded by [pling.com](https://www.pling.com) but since the
-[pling-factor](https://www.pling.com/terms/payout) on the website has decreased and monthly payments
-are <500$, It is now dependent on community funding and sponsorships. If you want to help me to maintain
-Bibata and my other open source projects actively, consider sponsoring my work on [GitHub Sponsor](https://github.com/sponsors/ful1e5)
-or DM me on [Twitter](https://twitter.com/ful1e5) if your company would like to support this project,
-I will gladly look into it and post your avatar in the README.
-
-I appreciate all the wonderful people who patronize and sponsoring my work.
-
-<!-- Add your name or avatar here with the Pull Request in case I missed it. -->
-
-_Be you first._
 
 ## You may also like...
 

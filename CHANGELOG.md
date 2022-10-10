@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Changed
+
+- refactor: bitmapper moved to individual project [cbmp](https://github.com/ful1e5/cbmp)
+
 ## [Bibata v2.0.1] - 03 October 2022
 
 ### Changed
