@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - refactor: bitmapper moved to individual project [cbmp](https://github.com/ful1e5/cbmp)
+- Fix blurry Windows Cursors in Small versions #119 #116
+- Fix custom outline and base color #104
 
 ## [Bibata v2.0.1] - 03 October 2022
 
