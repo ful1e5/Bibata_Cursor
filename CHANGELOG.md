@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Changed
+
+- chore: Removed default hotspots assignments from `build.toml`
+
 ## [Bibata v2.0.2] - 10 October 2022
 
 ### Changed

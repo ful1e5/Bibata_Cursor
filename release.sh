@@ -1,7 +1,6 @@
 #!/bin/bash
 # A script for preparing binaries for version release of Bibata Cursors, by Abdulkaiz Khatri
 
-
 declare -A names
 names["Bibata-Modern-Amber"]="Yellowish and rounded edge Bibata cursors."
 names["Bibata-Modern-Classic"]="Black and rounded edge Bibata cursors."
@@ -59,5 +58,3 @@ do
 done
 
 cd ..
-
-echo "$x_bin"
