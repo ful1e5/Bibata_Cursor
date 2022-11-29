@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - chore: Removed default hotspots assignments from `build.toml`
 - chore: Symlink `dnd-move` with `grabbing` cursor
+- chore: Simplify svg code
 
 ## [Bibata v2.0.2] - 10 October 2022
 
