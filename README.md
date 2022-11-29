@@ -25,9 +25,13 @@ I appreciate all the wonderful people who patronize and sponsoring my work.
 
 ## Sponsors
 
-<!-- Add your name or avatar here with the Pull Request in case I missed it. -->
+<!-- Add your avatar here with the Pull Request in case I missed it. -->
 
-N/A
+| ![GitHub] | ![LinuxMint] |
+| --------- | ------------ |
+
+[github]: https://avatars.githubusercontent.com/u/9919?s=40
+[linuxmint]: https://avatars.githubusercontent.com/u/107184?s=40
 
 ---
 
