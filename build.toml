@@ -125,12 +125,6 @@ y_hotspot = 61
 x11_name = 'dnd-link'
 x11_symlinks = ['alias']
 
-[cursors.dnd-move]
-png = 'dnd-move.png'
-x_hotspot = 89
-y_hotspot = 61
-x11_name = 'dnd-move'
-
 [cursors.dotbox]
 png = 'dotbox.png'
 x_hotspot = 97
@@ -149,7 +143,12 @@ png = 'grabbing.png'
 x_hotspot = 106
 y_hotspot = 59
 x11_name = 'grabbing'
-x11_symlinks = ["closedhand", "dnd-none", "fcf21c00b30f7e3f83fe0dfd12e71cff"]
+x11_symlinks = [
+  "closedhand",
+  "dnd-move",
+  "dnd-none",
+  "fcf21c00b30f7e3f83fe0dfd12e71cff"
+]
 
 [cursors.hand1]
 png = 'hand1.png'
