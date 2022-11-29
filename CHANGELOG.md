@@ -7,12 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- Use green for copy
+- Simplify move emblem
+- Simplify link emblem
+- Use orange for dnd-ask
+
 ### Changed
 
 - chore: Removed default hotspots assignments from `build.toml`
-- fix: Use green for copy
-- fix: Simplify move emblem
-- fix: Simplify link emblem
 - chore: Symlink `dnd-move` with `grabbing` cursor
 
 ## [Bibata v2.0.2] - 10 October 2022
