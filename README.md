@@ -27,6 +27,12 @@ I appreciate all the wonderful people who patronize and sponsoring my work.
 
 <!-- Add your avatar here with the Pull Request in case I missed it. -->
 
+### Monthly Sponsors
+
+N/A
+
+### One-time Sponsors
+
 | ![GitHub] | ![LinuxMint] |
 | --------- | ------------ |
 
@@ -35,9 +41,9 @@ I appreciate all the wonderful people who patronize and sponsoring my work.
 
 ---
 
-![Bibata Amber](https://i.imgur.com/2DEYWDC.png)
-![Bibata Classic](https://i.imgur.com/C8mMQ3j.png)
-![Bibata Ice](https://i.imgur.com/ovzTw6u.png)
+![Bibata Amber](https://imgur.com/MWe8MYK.png)
+![Bibata Classic](https://imgur.com/JfQHy62.png)
+![Bibata Ice](https://imgur.com/zZv7Y6L.png)
 
 > **Note**
 > All cursor's `.svg` files are found in [svg](./svg) directory or you can also find them on
@@ -345,10 +351,6 @@ ctgen build.toml -d 'bitmaps/Bibata-Dracula' -n 'Bibata-Dracula' -c 'Dracula Bib
 ## You may also like...
 
 - [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
-- [**Bibata Extra**](https://github.com/ful1e5/Bibata_Extra_Cursor) - More Bibata!
-- [**Bibata Rainbow**](https://github.com/ful1e5/Bibata_Cursor_Rainbow) - 'Semi-Animated' Bibata cursors with rainbow colors
-- [**Bibata Zebra**](https://github.com/ful1e5/Bibata-Zebra-Cursor) - Bibata cursor with a semi-animated strip
-- [**Bibata Bee**](https://github.com/ful1e5/Bibata-Bee-Cursor) - 'Semi-Animated' Bibata cursors with bee stripes
 - [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
 
 ## Credit
