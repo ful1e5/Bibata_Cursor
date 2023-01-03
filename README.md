@@ -2,26 +2,32 @@
 
 [![build](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml/badge.svg)](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml)
 
-TLDR; This cursor set is the masterpiece of cursors available on the internet,
-Hand designed by [Abdulkaiz Khatri](https://twitter.com/ful1e5).
+TLDR; This cursor set is a masterpiece of cursors available on the internet,
+hand-designed by [Abdulkaiz Khatri](https://twitter.com/ful1e5).
 
-Bibata is open source, compact, and material designed cursor set. This project masterelop for
-improve cursor experience.
+Bibata is an open source, compact, and material designed cursor set that aims
+to improve the cursor experience for users. It is one of the most popular cursor sets
+in the Linux community and is now available for free on Windows as well, with multiple color
+and size options. Its goal is to offer personalized cursors to users.
 
-Bibata is one of the most popular cursors set in the Linux community so far and is now available
-for freely with multiple colors and size options for Windows as well. The aim of this project is to
-provide the personalized cursors to users.
+## What does "Bibata" mean?
 
-## Bibata needs your Input
+The sweetest word I ever spoke was "BI-Buh," which, coincidentally, is also the word for peanuts.
+To make it more pronounceable and not sound like a baby's words, I added the suffix "Ta."
+And with that, my journey in the world of open source began.
 
-Until 2021 my cursors projects were well funded by [pling.com](https://www.pling.com) but since the
-[pling-factor](https://www.pling.com/terms/payout) on the website has decreased and monthly payments
-are <500$, It is now dependent on community funding and sponsorships. If you want to help me to maintain
-Bibata and my other open source projects actively, consider sponsoring my work on [GitHub Sponsor](https://github.com/sponsors/ful1e5)
-or DM me on [Twitter](https://twitter.com/ful1e5) if your company would like to support my projects,
-I will gladly look into it and post your avatar in the project's README.
+## Join the Community as a Sponsor
 
-I appreciate all the wonderful people who patronize and sponsoring my work.
+Until 2021, my cursor projects were funded through [pling.com](https://www.pling.com).
+However, the funding has since decreased and the projects are now dependent on community
+support and sponsorships to continue. If you would like to help me maintain Bibata and my
+other open source projects, you can consider sponsoring my work on
+[GitHub Sponsor](https://github.com/sponsors/ful1e5) or contacting me on
+[Twitter](https://twitter.com/ful1e5) if your company is interested in supporting my projects.
+I would be happy to discuss it and include your avatar in the project's README.
+
+I am grateful to all the kind individuals and companies that support and sponsor my work,
+which enables me to continue working on open source projects full-time. Thank you.
 
 ## Sponsors
 
@@ -352,6 +358,17 @@ ctgen build.toml -d 'bitmaps/Bibata-Dracula' -n 'Bibata-Dracula' -c 'Dracula Bib
 
 - [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
 - [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
+
+Write markdown as i wrote and fix grammer and link sentence and make it informative with tilte according to sentences:
+
+## Testing Cursor
+
+There are several websites that allow you to test your cursor states by hovering over buttons. This can be very useful when developing or verifying the behavior of a cursor. The following websites cover many of the most commonly used cursors, although they may not include all available options.
+
+- [Cursor-Test](https://vibhorjaiswal.github.io/Cursor-Test/)
+- [Mozilla CSS Cursor](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
+
+For a blueprint for creating XCursors, you may also want to refer to [Cursor-demo](https://wiki.tcl-lang.org/page/Cursor+demo).
 
 ## Credit
 

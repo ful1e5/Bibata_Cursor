@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- docs: Added list of websites for testing cursor states in README (fixed #123)
+
 ## [Bibata v2.0.3] - 06 December 2022
 
 ### Added
