@@ -34,22 +34,6 @@ I would be happy to discuss it and include your avatar in the project's README.
 I am grateful to all the kind individuals and companies that support and sponsor my work,
 which enables me to continue working on open source projects full-time. Thank you.
 
-## Sponsors
-
-<!-- Add your avatar here with the Pull Request in case I missed it. -->
-
-### Monthly Sponsors
-
-N/A
-
-### One-time Sponsors
-
-| ![GitHub] | ![LinuxMint] |
-| --------- | ------------ |
-
-[github]: https://avatars.githubusercontent.com/u/9919?s=40
-[linuxmint]: https://avatars.githubusercontent.com/u/107184?s=40
-
 ---
 
 ![Bibata Amber](https://imgur.com/MWe8MYK.png)
