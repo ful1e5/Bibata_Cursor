@@ -40,12 +40,12 @@ cd themes
 
 for key in "${!names[@]}";
 do
-    tar -czvf "../bin/${key}.tar.gz" "${key}" &
+    tar -cJvf "../bin/${key}.tar.xz" "${key}" &
     PID=$!
     wait $PID
 done
 
-tar -czvf "../bin/Bibata.tar.gz"  --exclude="*-Windows" . &
+tar -cJvf "../bin/Bibata.tar.xz"  --exclude="*-Windows" . &
 PID=$!
 wait $PID
 
