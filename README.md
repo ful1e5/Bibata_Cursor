@@ -122,8 +122,8 @@ Can be installed via Pamac (preinstalled in Manjaro), Paru or any other
 paru -S bibata-cursor-theme
 ```
 
-Alternatively, Bibata binaries can be also installed using the PKGBUILD `bibata-theme-bin`,
-available on the AUR.
+Alternatively, Bibata binaries can be also installed using the [PKGBUILD `bibata-cursor-theme-bin`,
+available on the AUR](https://aur.archlinux.org/packages/bibata-cursor-theme-bin).
 
 #### Fedora
 
