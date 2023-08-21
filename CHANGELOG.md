@@ -7,9 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
-### Added
+### What's New?
 
 - docs: Added list of websites for testing cursor states in README (fixed #123)
+- ci: Added build support with `python 3.11`
+
+### Changed
+
+- Use 'xz' for better compression in `release` script #140
+- correct AUR Package in `README.md` #142
 
 ## [Bibata v2.0.3] - 06 December 2022
 
