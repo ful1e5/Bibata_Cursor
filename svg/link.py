@@ -1,7 +1,20 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+import contextlib
 import os
-from glob import glob
+from pathlib import Path
+
+
+@contextlib.contextmanager
+def cwd(dir):
+    curdir = os.getcwd()
+    try:
+        os.chdir(dir)
+        yield
+    finally:
+        os.chdir(curdir)
+
 
 ignore_files = [
     # animated
@@ -18,22 +31,22 @@ ignore_files = [
 ]
 
 
-def link_svg_dir(src_dir, dst_dir) -> None:
-    for src_path in glob(f"{src_dir}/*"):
-        file_name = os.path.basename(src_path)
-        if file_name not in ignore_files:
-            dst = os.path.join(dst_dir, file_name)
-            if os.path.exists(dst):
-                print(f"Removing old symlink of '{file_name}'")
-                os.remove(dst)
-            print(f"Creating symlink of '{file_name}'")
-            os.symlink(
-                os.path.relpath(src_path, f"{dst_dir}/"),
-                dst,
-            )
+def link_missing_svgs(src_dir, dst_dir) -> None:
+    dst = Path(dst_dir)
+    for file in Path(src_dir).glob("*"):
+        if file.name not in ignore_files:
+            link = dst / file.name
+            if os.path.exists(link):
+                os.remove(link)
+
+            print(f"Creating symlink for {link.name}")
+            with cwd(dst):
+                os.symlink(
+                    os.path.relpath(file, dst),
+                    link.name,
+                )
         else:
-            print(f"Ignoring file '{file_name}'")
+            print(f"Ignoring {file.name}")
 
 
-link_svg_dir("original/static", "modern/static")
-link_svg_dir("original/animated", "modern/animated")
+link_missing_svgs("original", "modern")
