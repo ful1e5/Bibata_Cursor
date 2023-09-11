@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "cbmp": "ful1e5/cbmp"
+    "cbmp": "^1.0.0"
   },
   "scripts": {
     "render:bibata-modern-amber": "npx cbmp -d 'svg/modern' -n 'Bibata-Modern-Amber' -bc '#FF8300' -oc '#FFFFFF' -wc '#001524'",
