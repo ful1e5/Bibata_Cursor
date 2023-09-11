@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### :warning: Breaking Changes
+
+- `bitmaps` directory remove from git repository and render with `yarn render`
+
 ### What's New?
 
 - Using [cbmp v1.0.0](https://github.com/ful1e5/cbmp/tree/v1.0.0) for rendering cursor bitmaps.

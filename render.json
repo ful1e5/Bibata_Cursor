@@ -1,7 +1,7 @@
 {
   "Bibata-Modern-Amber": {
     "dir": "svg/modern",
-    "out": "dist/Bibata-Modern-Amber",
+    "out": "bitmaps/Bibata-Modern-Amber",
     "fps": 0.5,
     "colors": [
       { "match": "#00FF00", "replace": "#FF8300" },
@@ -12,7 +12,7 @@
 
   "Bibata-Modern-Classic": {
     "dir": "svg/modern",
-    "out": "dist/Bibata-Modern-Classic",
+    "out": "bitmaps/Bibata-Modern-Classic",
     "fps": 0.5,
     "colors": [
       { "match": "#00FF00", "replace": "#000000" },
@@ -23,7 +23,7 @@
 
   "Bibata-Modern-Ice": {
     "dir": "svg/modern",
-    "out": "dist/Bibata-Modern-Ice",
+    "out": "bitmaps/Bibata-Modern-Ice",
     "fps": 0.5,
     "colors": [
       { "match": "#00FF00", "replace": "#FFFFFF" },
@@ -34,7 +34,7 @@
 
   "Bibata-Original-Amber": {
     "dir": "svg/original",
-    "out": "dist/Bibata-Original-Amber",
+    "out": "bitmaps/Bibata-Original-Amber",
     "fps": 0.5,
     "colors": [
       { "match": "#00FF00", "replace": "#FF8300" },
@@ -45,7 +45,7 @@
 
   "Bibata-Original-Classic": {
     "dir": "svg/original",
-    "out": "dist/Bibata-Original-Classic",
+    "out": "bitmaps/Bibata-Original-Classic",
     "fps": 0.5,
     "colors": [
       { "match": "#00FF00", "replace": "#000000" },
@@ -56,7 +56,7 @@
 
   "Bibata-Original-Ice": {
     "dir": "svg/original",
-    "out": "dist/Bibata-Original-Ice",
+    "out": "bitmaps/Bibata-Original-Ice",
     "fps": 0.5,
     "colors": [
       { "match": "#00FF00", "replace": "#FFFFFF" },
