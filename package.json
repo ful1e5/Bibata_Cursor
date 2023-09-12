@@ -4,14 +4,6 @@
   },
   "scripts": {
     "render": "npx cbmp render.json",
-    "build:bibata-modern-amber": "ctgen build.toml -d 'bitmaps/Bibata-Modern-Amber' -n 'Bibata-Modern-Amber' -c 'Yellowish and rounded edge Bibata cursors.'",
-    "build:bibata-modern-classic": "ctgen build.toml -d 'bitmaps/Bibata-Modern-Classic' -n 'Bibata-Modern-Classic' -c 'Black and rounded edge Bibata cursors.'",
-    "build:bibata-modern-ice": "ctgen build.toml -d 'bitmaps/Bibata-Modern-Ice' -n 'Bibata-Modern-Ice' -c 'White and rounded edge Bibata cursors.'",
-    "build:bibata-modern": "yarn build:bibata-modern-amber && yarn build:bibata-modern-classic && yarn build:bibata-modern-ice",
-    "build:bibata-original-amber": "ctgen build.toml -d 'bitmaps/Bibata-Original-Amber' -n 'Bibata-Original-Amber' -c 'Yellowish and sharp edge Bibata cursors.'",
-    "build:bibata-original-classic": "ctgen build.toml -d 'bitmaps/Bibata-Original-Classic' -n 'Bibata-Original-Classic' -c 'Black and sharp edge Bibata cursors.' ",
-    "build:bibata-original-ice": "ctgen build.toml -d 'bitmaps/Bibata-Original-Ice' -n 'Bibata-Original-Ice' -c 'White and sharp edge bibata cursors.'",
-    "build:bibata-original": "yarn build:bibata-original-amber && yarn build:bibata-original-classic && yarn build:bibata-original-ice",
-    "build": "yarn build:bibata-modern && yarn build:bibata-original"
+    "build": "yarn render && bash build.sh"
   }
 }
