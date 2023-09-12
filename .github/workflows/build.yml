@@ -30,7 +30,9 @@ jobs:
           node-version: 16
 
       - name: Installing Node Dependencies
-        run: yarn install --frozen-lockfile
+        run: |
+          rm -rf node_modules yarn.lock
+          yarn install --frozen-lockfile
         continue-on-error: false
 
       - name: Print cbmp version

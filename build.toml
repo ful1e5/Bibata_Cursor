@@ -58,22 +58,22 @@ x11_name = 'center_ptr'
 
 [cursors.circle]
 png = 'circle.png'
-x_hotspot = 43
-y_hotspot = 14
+x_hotspot = 42
+y_hotspot = 15
 win_name = 'Unavailiable'
 x11_name = 'circle'
 x11_symlinks = ['forbidden']
 
 [cursors.context-menu]
 png = 'context-menu.png'
-x_hotspot = 43
-y_hotspot = 14
+x_hotspot = 42
+y_hotspot = 15
 x11_name = 'context-menu'
 
 [cursors.copy]
 png = 'copy.png'
-x_hotspot = 43
-y_hotspot = 14
+x_hotspot = 42
+y_hotspot = 15
 x11_name = 'copy'
 x11_symlinks = [
   "1081e37283d90000800003c07f3ef6bf",
@@ -180,8 +180,8 @@ x11_symlinks = ["arrow", "default", "top_left_arrow"]
 
 [cursors.left_ptr_watch]
 png = 'left_ptr_watch-*.png'
-x_hotspot = 44
-y_hotspot = 14
+x_hotspot = 42
+y_hotspot = 15
 win_name = 'Work'
 x11_name = 'left_ptr_watch'
 x11_symlinks = [
@@ -206,8 +206,8 @@ x11_name = 'left_tee'
 
 [cursors.link]
 png = 'link.png'
-x_hotspot = 43
-y_hotspot = 14
+x_hotspot = 42
+y_hotspot = 15
 x11_name = 'link'
 x11_symlinks = [
   "3085a0e285430894940527032f8b26df",
@@ -255,8 +255,8 @@ x11_symlinks = ['cell']
 
 [cursors.pointer-move]
 png = 'pointer-move.png'
-x_hotspot = 43
-y_hotspot = 14
+x_hotspot = 42
+y_hotspot = 15
 x11_name = 'pointer-move'
 
 [cursors.question_arrow]
