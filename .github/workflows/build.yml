@@ -33,7 +33,7 @@ jobs:
         run: yarn install --frozen-lockfile
         continue-on-error: false
 
-      - name: Print CBMP Version
+      - name: Print cbmp version
         run: npx cbmp --version
 
       - name: Rendering Bitmaps
@@ -48,10 +48,6 @@ jobs:
       - name: Installing pip dependencies
         run: python -m pip install --upgrade pip clickgen
         continue-on-error: false
-
-      # https://github.com/returntocorp/semgrep/issues/4794
-      - name: Fixing 'attr' module error
-        run: pip install --force-reinstall --upgrade attrs
 
       - name: Print Clickgen Version
         run: |
