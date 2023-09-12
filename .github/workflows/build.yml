@@ -31,9 +31,16 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
-      - run: |
-          yarn install --frozen-lockfile
-          yarn render
+
+      - name: Installing npm dependencies
+        run: yarn install
+        continue-on-error: false
+
+      - name: Print CBMP Version
+        run: npx cbmp --version
+
+      - name: Rendering Bitmaps
+        run: yarn render
         continue-on-error: false
 
       - name: Set up Python ${{ matrix.python-version }}
@@ -49,7 +56,7 @@ jobs:
       - name: Fixing 'attr' module error
         run: pip install --force-reinstall --upgrade attrs
 
-      - name: Clickgen(Cursor Builder) Version
+      - name: Print Clickgen Version
         run: |
           clickgen --version
           ctgen --version
