@@ -16,10 +16,9 @@ on:
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
+    runs-on: "ubuntu-latest"
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
         python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
         node-version: [16, 17, 18, 19, 20]
 
@@ -30,10 +29,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
 
       - name: Installing npm dependencies
-        run: yarn install --frozen-lockfile
+        run: |
+          rm -rf node_modules yarn.lock
+          yarn install --frozen-lockfile
         continue-on-error: false
 
       - name: Print CBMP Version
