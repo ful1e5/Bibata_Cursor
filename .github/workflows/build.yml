@@ -33,7 +33,7 @@ jobs:
           cache: "yarn"
 
       - name: Installing npm dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile
         continue-on-error: false
 
       - name: Print CBMP Version
