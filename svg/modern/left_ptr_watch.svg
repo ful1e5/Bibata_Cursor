@@ -1,14 +1,12 @@
 <?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
-  <g filter="url(#filter0_d)">
-    <path d="M35.0009 121.929L35 121.866V35.0656C35 30.5634 35.4941 26.2374 36.9588 22.5856C38.4976 18.7491 41.482 14.9001 46.5424 13.5038C51.1615 12.2293 55.5209 13.5892 58.7164 15.1797C62.0231 16.8254 65.3089 19.3182 68.4883 22.2243L133.059 79.4939L133.089 79.5205C137.869 83.7999 139.834 90.4283 139.991 95.7184C140.133 100.54 138.713 109.139 130.632 112.523C127.449 113.855 123.562 114.01 120.953 114.074C119.434 114.112 117.794 114.113 116.183 114.114L116.143 114.114C114.484 114.116 112.808 114.117 111.076 114.15C103.993 114.283 97.0871 114.955 91.4127 117.517C85.7762 120.061 80.8047 124.776 76.0424 130.035C75.1857 130.981 74.2053 132.095 73.2184 133.216C71.8633 134.756 70.4942 136.311 69.4098 137.472C67.5723 139.44 64.7955 142.29 61.4966 143.779C57.2016 145.718 52.9555 145.076 49.774 143.731C46.6878 142.426 44.1291 140.304 42.1807 138.186C38.5166 134.202 35.0901 128.058 35.0009 121.929Z" fill="#0000FF"/>
-  </g>
-  <path d="M43 34.3679C43 18.3085 50.4808 17.3995 62.2068 28.0048L127.935 85.5762C132.894 89.9603 133.798 101.636 127.935 104.06C122.071 106.484 102.841 102.476 87.8191 109.173C72.7973 115.869 63.4668 132.844 57.3905 135.553C51.3142 138.262 43.0966 128.045 43 121.493L43 34.3679Z" fill="#00FF00"/>
-  <g filter="url(#filter1_d)">
-    <path d="M150 130C150 158.719 126.719 182 98 182C69.2812 182 46 158.719 46 130C46 101.281 69.2812 78 98 78C126.719 78 150 101.281 150 130Z" fill="#0000FF"/>
-    <path d="M142 130C142 154.301 122.301 174 98 174C73.6995 174 54 154.301 54 130C54 105.699 73.6995 86 98 86C122.301 86 142 105.699 142 130Z" fill="#FF0000"/>
-    <g transform="translate(98  130)">
-      <g transform="scale(0.74)">
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M42.8799 160.73L42.8799 49.111C42.8799 43.1848 43.5332 37.2848 45.5984 32.1998C47.7874 26.8101 52.1022 21.2746 59.4503 19.2723C66.1083 17.458 72.2948 19.414 76.6598 21.5595C81.1909 23.7866 85.6239 27.1216 89.8375 30.9239L173.915 104.568L173.938 104.588C180.739 110.6 183.448 119.794 183.665 127.025C183.861 133.575 181.914 145.882 170.171 150.737C165.644 152.608 160.228 152.797 156.879 152.879C154.879 152.927 152.724 152.929 150.636 152.93L150.571 152.931C148.409 152.932 146.244 152.934 144.009 152.976C134.83 153.147 126.169 154.012 119.16 157.136C112.222 160.229 105.989 166.021 99.8257 172.742C98.7649 173.899 97.5065 175.31 96.2238 176.749C94.4277 178.763 92.5839 180.831 91.1683 182.328C88.7918 184.842 84.9209 188.804 80.2119 190.903C74.0047 193.67 67.9104 192.736 63.4181 190.86C59.0642 189.041 55.5008 186.108 52.8241 183.234C47.8436 177.886 43.0088 169.479 42.8814 160.829L42.8799 160.73Z" fill="#0000FF"/>
+  <path d="M56.3201 49.1109C56.32 28.5549 65.8955 27.3914 80.9048 40.9661L165.036 114.658C171.384 120.269 172.541 135.214 165.036 138.316C157.532 141.419 132.916 136.29 113.688 144.861C94.4606 153.432 82.5176 175.161 74.7399 178.628C66.9623 182.095 56.4437 169.018 56.3201 160.631L56.3201 49.1109Z" fill="#00FF00"/>
+  <g filter="url(#filter0_d_2653_9)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M196.48 171.52C196.48 210.047 165.247 241.28 126.72 241.28C88.1926 241.28 56.96 210.047 56.96 171.52C56.96 132.993 88.1926 101.76 126.72 101.76C165.247 101.76 196.48 132.993 196.48 171.52Z" fill="#0000FF"/>
+    <path d="M183.04 171.52C183.04 202.625 157.825 227.84 126.72 227.84C95.6152 227.84 70.3999 202.625 70.3999 171.52C70.3999 140.415 95.6152 115.2 126.72 115.2C157.825 115.2 183.04 140.415 183.04 171.52Z" fill="#FF0000"/>
+    <g transform="translate(127 171)">
+      <g transform="scale(0.9)">
         <g transform="translate(-50 -50)">
           <g transform="rotate(0 50 50)">
             <animateTransform attributeName="transform" type="rotate" repeatCount="4" values="0 50 50;360 50 50" keyTimes="0;1" dur="0.7575757575757576s"/>
@@ -31,23 +29,14 @@
     </g>
   </g>
   <defs>
-    <filter id="filter0_d" x="30" y="12" width="115" height="142" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <filter id="filter0_d_2653_9" x="51.84" y="101.76" width="149.76" height="149.76" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-      <feOffset dy="4"/>
-      <feGaussianBlur stdDeviation="2.5"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="5.12"/>
+      <feGaussianBlur stdDeviation="2.56"/>
       <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
-      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-    </filter>
-    <filter id="filter1_d" x="42" y="78" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-      <feOffset dy="4"/>
-      <feGaussianBlur stdDeviation="2"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
-      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2653_9"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2653_9" result="shape"/>
     </filter>
   </defs>
 </svg>

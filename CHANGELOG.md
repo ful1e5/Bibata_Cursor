@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### What's New?
 
+- The maximum size for building a cursor without losing quality is `256px`.
 - The XCursor package size is now approximately `20MB` in its original form and `~2MB` when compressed.
 - Animated cursors now have fewer frames, Fixes #134.
 - We are now using [cbmp v1.0.0](https://github.com/ful1e5/cbmp/tree/v1.0.0) for rendering cursor bitmaps.
