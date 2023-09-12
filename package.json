@@ -3,6 +3,7 @@
     "cbmp": "^1.0.0"
   },
   "scripts": {
+    "clean": "rm -rf bin bitmaps themes",
     "render": "npx cbmp render.json",
     "build": "yarn render && bash build.sh"
   }

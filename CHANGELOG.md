@@ -9,18 +9,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### :warning: Breaking Changes
 
-- `bitmaps` directory remove from git repository and render with `yarn render`
+- 3b54187660de06d8b117ecbf191c93826bcc1fc8
+  The `bitmaps` directory has been removed from the git repository.
+  You can now generate the PNG files using `yarn render` or download them from the release assets.
+  (This change applies only to developers and package distributors)
 
 ### What's New?
 
-- Using [cbmp v1.0.0](https://github.com/ful1e5/cbmp/tree/v1.0.0) for rendering cursor bitmaps.
-- ci: Added build support with `python 3.11`
+- The XCursor package size is now approximately `20MB` in its original form and `~2MB` when compressed.
+- Animated cursors now have fewer frames, Fixes #134.
+- We are now using [cbmp v1.0.0](https://github.com/ful1e5/cbmp/tree/v1.0.0) for rendering cursor bitmaps.
+- Added build support with `python 3.11` in the CI process.
 - docs: Added list of websites for testing cursor states in README (fixed #123)
 
 ### Changed
 
 - Use 'xz' for better compression in `release` script #140
-- correct AUR Package in `README.md` #142
+- Corrected the AUR Package information in `README.md`, addressing issue #142.
 
 ## [v2.0.3] - 06 December 2022
 
