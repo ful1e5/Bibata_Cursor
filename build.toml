@@ -19,7 +19,7 @@ win_delay = 1
 
 [cursors.bd_double_arrow]
 png = 'bd_double_arrow.png'
-win_name = 'Diagonal_1'
+win_name = 'Dng1'
 x11_name = 'bd_double_arrow'
 x11_symlinks = ["c7088f0f3e6c8088236ef8e1e3e70000", "nwse-resize", "size_fdiag"]
 
@@ -133,7 +133,7 @@ x11_symlinks = ["dot_box_mask", "draped_box", "icon", "target"]
 
 [cursors.fd_double_arrow]
 png = 'fd_double_arrow.png'
-win_name = 'Diagonal_2'
+win_name = 'Dng2'
 x11_name = 'fd_double_arrow'
 x11_symlinks = ["fcf1c3c7cd4491d801f1e1c78f100000", "nesw-resize", "size_bdiag"]
 
@@ -174,7 +174,7 @@ x11_symlinks = [
 png = 'left_ptr.png'
 x_hotspot = 42
 y_hotspot = 15
-win_name = 'Default'
+win_name = 'Pointer'
 x11_name = 'left_ptr'
 x11_symlinks = ["arrow", "default", "top_left_arrow"]
 
@@ -303,7 +303,7 @@ x11_symlinks = ['down-arrow']
 
 [cursors.sb_h_double_arrow]
 png = 'sb_h_double_arrow.png'
-win_name = 'Horizontal'
+win_name = 'Horz'
 x11_name = 'sb_h_double_arrow'
 x11_symlinks = [
   "028006030e0e7ebffc7f7070c0600140",
@@ -339,7 +339,7 @@ x11_symlinks = ['up-arrow']
 
 [cursors.sb_v_double_arrow]
 png = 'sb_v_double_arrow.png'
-win_name = 'Vertical'
+win_name = 'Vert'
 x11_name = 'sb_v_double_arrow'
 x11_symlinks = [
   "00008160000006810000408080010102",
@@ -424,7 +424,7 @@ x11_symlinks = ["pirate", "x-cursor"]
 png = 'xterm.png'
 x_hotspot = 84
 y_hotspot = 100
-win_name = 'IBeam'
+win_name = 'Text'
 x11_name = 'xterm'
 x11_symlinks = ["ibeam", "text"]
 
