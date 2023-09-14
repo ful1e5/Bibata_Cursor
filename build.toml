@@ -19,7 +19,7 @@ win_delay = 1
 
 [cursors.bd_double_arrow]
 png = 'bd_double_arrow.png'
-win_name = 'Dng1'
+win_name = 'Dgn1'
 x11_name = 'bd_double_arrow'
 x11_symlinks = ["c7088f0f3e6c8088236ef8e1e3e70000", "nwse-resize", "size_fdiag"]
 
@@ -60,7 +60,7 @@ x11_name = 'center_ptr'
 png = 'circle.png'
 x_hotspot = 42
 y_hotspot = 15
-win_name = 'Unavailiable'
+win_name = 'Unavailable'
 x11_name = 'circle'
 x11_symlinks = ['forbidden']
 
@@ -85,7 +85,6 @@ x11_symlinks = [
 png = 'cross.png'
 x_hotspot = 98
 y_hotspot = 96
-win_name = 'Cross'
 x11_name = 'cross'
 x11_symlinks = ["cross_reverse", "diamond_cross"]
 
@@ -96,6 +95,7 @@ x11_symlinks = ["03b6e0fcb3499374a867c041f52298f0", "not-allowed"]
 
 [cursors.crosshair]
 png = 'crosshair.png'
+win_name = 'Cross'
 x11_name = 'crosshair'
 
 [cursors.dnd_no_drop]
@@ -133,7 +133,7 @@ x11_symlinks = ["dot_box_mask", "draped_box", "icon", "target"]
 
 [cursors.fd_double_arrow]
 png = 'fd_double_arrow.png'
-win_name = 'Dng2'
+win_name = 'Dgn2'
 x11_name = 'fd_double_arrow'
 x11_symlinks = ["fcf1c3c7cd4491d801f1e1c78f100000", "nesw-resize", "size_bdiag"]
 
@@ -141,6 +141,7 @@ x11_symlinks = ["fcf1c3c7cd4491d801f1e1c78f100000", "nesw-resize", "size_bdiag"]
 png = 'grabbing.png'
 x_hotspot = 106
 y_hotspot = 59
+win_name = 'Grabbing'
 x11_name = 'grabbing'
 x11_symlinks = [
   "closedhand",
@@ -153,7 +154,7 @@ x11_symlinks = [
 png = 'hand1.png'
 x_hotspot = 117
 y_hotspot = 39
-win_name = 'Move'
+win_name = 'Pan'
 x11_name = 'hand1'
 x11_symlinks = ["grab", "openhand"]
 
@@ -231,6 +232,7 @@ x11_name = 'lr_angle'
 png = 'move.png'
 x_hotspot = 99
 y_hotspot = 99
+win_name = 'Move'
 x11_name = 'move'
 x11_symlinks = [
   "4498f0e0c1937ffe01fd06f973665830",
@@ -432,10 +434,24 @@ x11_symlinks = ["ibeam", "text"]
 png = 'zoom-in.png'
 x_hotspot = 91
 y_hotspot = 90
+win_name = 'Zoom-in'
 x11_name = 'zoom-in'
 
 [cursors.zoom_out]
 png = 'zoom-out.png'
 x_hotspot = 89
 y_hotspot = 90
+win_name = 'Zoom-out'
 x11_name = 'zoom-out'
+
+[cursors.person]
+png = 'person.png'
+x_hotspot = 42
+y_hotspot = 15
+win_name = 'Person'
+
+[cursors.pin]
+png = 'pin.png'
+x_hotspot = 42
+y_hotspot = 15
+win_name = 'Pin'

@@ -1,6 +1,16 @@
 #!/bin/bash
 # A script for preparing binaries of Bibata Cursors, by Abdulkaiz Khatri
 
+error() (
+  set -o pipefail
+  "$@" 2> >(sed $'s,.*,\e[31m&\e[m,' >&2)
+)
+
+if ! type -p ctgen >/dev/null; then
+  error ctgen
+  exit 127 # exit program with "command not found" error code
+fi
+
 declare -A names
 names["Bibata-Modern-Amber"]="Yellowish and rounded edge Bibata cursors."
 names["Bibata-Modern-Classic"]="Black and rounded edge Bibata cursors."

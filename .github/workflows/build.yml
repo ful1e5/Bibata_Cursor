@@ -19,8 +19,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: ["ubuntu-latest"]
-        # os: ["ubuntu-latest", "windows-latest", "macos-latest"]
+        os: ["ubuntu-latest", "windows-latest", "macos-latest"]
 
     steps:
       - uses: actions/checkout@v3
@@ -31,9 +30,7 @@ jobs:
           node-version: 16
 
       - name: Installing Node Dependencies
-        run: |
-          rm -rf node_modules yarn.lock
-          yarn install --frozen-lockfile
+        run: yarn install --frozen-lockfile
         continue-on-error: false
 
       - name: Print cbmp version
