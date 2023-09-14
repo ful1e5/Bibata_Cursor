@@ -17,17 +17,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### What's New?
 
 - Pointer Actions Cursor is Re-Designed
-- The maximum size for building a cursor without losing quality is `256px`.
 - The XCursor package size is now approximately `20MB` in its original form and `~2MB` when compressed.
+- Official Distributing `16` and `20` XCursors (Fixes #129)
+- The maximum size for building a cursor without losing quality is `256px`.
 - Animated cursors now have fewer frames, Fixes #134.
-- We are now using [cbmp v1.0.0](https://github.com/ful1e5/cbmp/tree/v1.0.0) for rendering cursor bitmaps.
-- Added build support with `python 3.11` in the CI process.
-- docs: Added list of websites for testing cursor states in README (fixed #123)
+- Resolved Missing Windows Cursors. (Fixes #133, #124)
+- Using [cbmp v1.0.0](https://github.com/ful1e5/cbmp/tree/v1.0.0) for rendering cursor bitmaps.
 
 ### Changed
 
 - Use 'xz' for better compression in `release` script #140
 - Corrected the AUR Package information in `README.md`, addressing issue #142.
+
+### Issues Fixes
+
+- docs: Added list of websites for testing cursor states in README (fixed #123)
 
 ## [v2.0.3] - 06 December 2022
 
