@@ -1,6 +1,7 @@
 # Custom
-themes
-bin
+themes/
+bin/
+bitmaps/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

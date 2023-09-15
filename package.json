@@ -1,25 +1,12 @@
 {
+  "type": "module",
   "dependencies": {
-    "cbmp": "ful1e5/cbmp"
+    "cbmp": "^1.0.0"
   },
   "scripts": {
-    "render:bibata-modern-amber": "npx cbmp -d 'svg/modern' -n 'Bibata-Modern-Amber' -bc '#FF8300' -oc '#FFFFFF' -wc '#001524'",
-    "render:bibata-modern-classic": "npx cbmp -d 'svg/modern' -n 'Bibata-Modern-Classic' -bc '#000000' -oc '#FFFFFF'",
-    "render:bibata-modern-ice": "npx cbmp -d 'svg/modern' -n 'Bibata-Modern-Ice' -bc '#FFFFFF' -oc '#000000'",
-    "render:bibata-modern": "yarn render:bibata-modern-amber && yarn render:bibata-modern-classic && yarn render:bibata-modern-ice",
-    "render:bibata-original-amber": "npx cbmp -d 'svg/original' -n 'Bibata-Original-Amber' -bc '#FF8300' -oc '#FFFFFF' -wc '#001524'",
-    "render:bibata-original-classic": "npx cbmp -d 'svg/original' -n 'Bibata-Original-Classic' -bc '#000000' -oc '#FFFFFF'",
-    "render:bibata-original-ice": "npx cbmp -d 'svg/original' -n 'Bibata-Original-Ice' -bc '#FFFFFF' -oc '#000000'",
-    "render:bibata-original": "yarn render:bibata-original-amber && yarn render:bibata-original-classic && yarn render:bibata-original-ice",
-    "render": "yarn render:bibata-modern && yarn render:bibata-original",
-    "build:bibata-modern-amber": "ctgen build.toml -d 'bitmaps/Bibata-Modern-Amber' -n 'Bibata-Modern-Amber' -c 'Yellowish and rounded edge Bibata cursors.'",
-    "build:bibata-modern-classic": "ctgen build.toml -d 'bitmaps/Bibata-Modern-Classic' -n 'Bibata-Modern-Classic' -c 'Black and rounded edge Bibata cursors.'",
-    "build:bibata-modern-ice": "ctgen build.toml -d 'bitmaps/Bibata-Modern-Ice' -n 'Bibata-Modern-Ice' -c 'White and rounded edge Bibata cursors.'",
-    "build:bibata-modern": "yarn build:bibata-modern-amber && yarn build:bibata-modern-classic && yarn build:bibata-modern-ice",
-    "build:bibata-original-amber": "ctgen build.toml -d 'bitmaps/Bibata-Original-Amber' -n 'Bibata-Original-Amber' -c 'Yellowish and sharp edge Bibata cursors.'",
-    "build:bibata-original-classic": "ctgen build.toml -d 'bitmaps/Bibata-Original-Classic' -n 'Bibata-Original-Classic' -c 'Black and sharp edge Bibata cursors.' ",
-    "build:bibata-original-ice": "ctgen build.toml -d 'bitmaps/Bibata-Original-Ice' -n 'Bibata-Original-Ice' -c 'White and sharp edge bibata cursors.'",
-    "build:bibata-original": "yarn build:bibata-original-amber && yarn build:bibata-original-classic && yarn build:bibata-original-ice",
-    "build": "yarn build:bibata-modern && yarn build:bibata-original"
+    "clean": "rm -rf bin bitmaps themes",
+    "render": "npx cbmp render.json",
+    "build": "bash build.sh",
+    "generate": "npx cbmp render.json && bash build.sh"
   }
 }
