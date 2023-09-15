@@ -7,16 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v2.0.4] - 15 September 2023
+
 ### :warning: Breaking Changes
 
-- 3b54187660de06d8b117ecbf191c93826bcc1fc8
-  The `bitmaps` directory has been removed from the git repository.
-  You can now generate the PNG files using `yarn render` or download them from the release assets.
-  (This change applies only to developers and package distributors)
+> **Note**
+> This change applies only to developers and package distributors
+
+- 3b54187660de06d8b117ecbf191c93826bcc1fc8 The 'bitmaps' directory has been removed from the git repository. You can now generate the PNG files using `yarn render` or download them from the release assets.
 
 ### What's New?
 
 - Pointer Actions Cursor is Re-Designed
+  ![Screenshot_20230915_101854](https://github.com/ful1e5/Bibata_Cursor/assets/24286590/2ea91fb0-7338-4886-872a-a871230325f1)
+
 - The XCursor package size is now approximately `20MB` in its original form and `~2MB` when compressed.
 - Official Distributing `16` and `20` XCursors (Fixes #129)
 - The maximum size for building a cursor without losing quality is `256px`.
@@ -24,7 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Resolved Missing Windows Cursors. (Fixes #133, #124)
 - Using [cbmp v1.0.0](https://github.com/ful1e5/cbmp/tree/v1.0.0) for rendering cursor bitmaps.
 
-### Changed
+### Changes
 
 - Use 'xz' for better compression in `release` script #140
 - Corrected the AUR Package information in `README.md`, addressing issue #142.
@@ -288,7 +292,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release 🎊
 
-[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.3...main
+[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.4...main
+[v2.0.4]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.3...v2.0.4
 [v2.0.3]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.2...v2.0.3
 [v2.0.2]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.1...v2.0.2
 [v2.0.1]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.0...v2.0.1
