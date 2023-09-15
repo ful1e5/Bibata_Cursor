@@ -1,18 +1,26 @@
-Bibata is one of the most popular cursors set in the Linux community so far and is now available for freely with multiple colors and size options for Windows as well. The aim of this project is to provide the personalized cursors to users.
+Bibata is one of the most popular cursors set in the Linux community so far and is now available for freely with multiple colors and size options for Windows as well. The aim of this project is to provide personalized cursors to users.
 
-Check [url=https://github.com/ful1e5/Bibata_Cursor]README.md[/url] for installation, uninstallation, personalize cursor sizes or colors.
+Check [url=https://github.com/ful1e5/Bibata_Cursor]README.md[/url] for installation, uninstallation, and personalize cursor sizes or colors.
 
-[b]Notice:[/b]
-Until 2021 my cursors projects were well funded by 'pling.com' but since the 'pling-factor' on the website has decreased and monthly payments are <500$, It is now dependent on community funding and sponsorships. If you want to help me to maintain Bibata and my other open source projects actively, consider sponsoring my work on [url=https://github.com/sponsors/ful1e5]GitHub Sponsors[/url] or DM me on [url=https://twitter.com/ful1e5]Twitter[/url] if your company would like to support this project, I will gladly look into it and post your avatar in the README.
+[b]Bibata: End of an Era (v2.x.x Marks the Final Major Version)[/b]
+I wanted to give you a quick update on what's happening with my open-source projects. You may have noticed that I haven't been very active on this particular repository lately. That's because I've been keeping myself busy with a bunch of other exciting open-source ventures.
 
-I appreciate all the wonderful people who patronize and sponsoring my work.
+One of those projects is [url=https://github.com/ful1e5/bibata.live]bibata.live[/url]. I'm super enthusiastic about turning this project into a user-friendly web application, [b]without archiving this repo[/b]. The idea is to allow you to download customized versions of Bibata with just a few clicks, eliminating the need for complex commands and headaches. It's all about simplicity and convenience.
+
+Now, here's where you come in! I'm currently facing a bit of a time crunch, and I'd love your support. By sponsoring this project with just [b]$1 or more[/b], you can help me speed up its development and make it a reality as soon as possible. Your contribution goes a long way in fueling the project's progress.
+
+But that's not all! If you encounter any issues with any of my other projects, you can also reach out to me live on [twitch.tv/ful1e5](https://www.twitch.com/ful1e5). Your feedback and bug reports are incredibly valuable, and they help me improve my work.
+
+To make this journey even more exciting, you can join me on the [url=https://www.github.com/sponsors/ful1e5]Github Sponsor[/url] program. Together, we can work towards achieving my sponsorship goal and keep these open-source projects thriving.
+
+Your support means a lot to me, and it brings us one step closer to making 'bibata.live' and other projects even better. Let's make open-source magic happen! Thank you for being a part of this adventure.
 
 [b]Bibata Styles:[/b]
 - Bibata Modern: Round Edges Bibata Cursors
 - Bibata Original: Sharp Edges Bibata Cursors
 
 [b]XCursor Sizes:[/b]
-22x22, 24x24, 28x28, 32x32, 40x40, 48x48, 56x56, 64x64, 72x72, 80x80, 88x88, 96x96
+16x16, 20x20, 22x22, 24x24, 28x28, 32x32, 40x40, 48x48, 56x56, 64x64, 72x72, 80x80, 88x88, 96x96
 
 [b]Windows Cursor Size:[/b]
 - 16x16 - Small

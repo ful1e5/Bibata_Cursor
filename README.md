@@ -59,6 +59,8 @@ Your support means a lot to me, and it brings us one step closer to making 'biba
 
 ### Xcursor Sizes:
 
+<kbd>16</kbd>
+<kbd>20</kbd>
 <kbd>22</kbd>
 <kbd>24</kbd>
 <kbd>28</kbd>
