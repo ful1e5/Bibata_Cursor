@@ -16,6 +16,20 @@ The sweetest word I ever spoke was "BI-Buh," which, coincidentally, is also the 
 To make it more pronounceable and not sound like a baby's words, I added the suffix "Ta."
 And with that, my journey in the world of open source began.
 
+#### Bibata: End of an Era (v2.x.x Marks the Final Major Version)
+
+I wanted to give you a quick update on what's happening with my open-source projects. You may have noticed that I haven't been very active on this particular repository lately. That's because I've been keeping myself busy with a bunch of other exciting open-source ventures.
+
+One of those projects is [bibata.live](https://github.com/ful1e5/bibata.live). I'm super enthusiastic about turning this project into a user-friendly web application, **without archiving this repo**. The idea is to allow you to download customized versions of Bibata with just a few clicks, eliminating the need for complex commands and headaches. It's all about simplicity and convenience.
+
+Now, here's where you come in! I'm currently facing a bit of a time crunch, and I'd love your support. By sponsoring this project with just **$1 or more**, you can help me speed up its development and make it a reality as soon as possible. Your contribution goes a long way in fueling the project's progress.
+
+But that's not all! If you encounter any issues with any of my other projects, you can also reach out to me live on [twitch.tv/ful1e5](https://www.twitch.com/ful1e5). Your feedback and bug reports are incredibly valuable, and they help me improve my work.
+
+To make this journey even more exciting, you can join me on the [Github Sponsor](https://www.github.com/sponsors/ful1e5) program. Together, we can work towards achieving my sponsorship goal and keep these open-source projects thriving.
+
+Your support means a lot to me, and it brings us one step closer to making 'bibata.live' and other projects even better. Let's make open-source magic happen! Thank you for being a part of this adventure.
+
 ## Notes
 
 - All cursor's SVG files are found in [svg](./svg) directory or you can also find them on

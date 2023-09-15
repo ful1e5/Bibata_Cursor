@@ -62,3 +62,5 @@ for key in "${!names[@]}"; do
 done
 
 cd ..
+
+zip -rv bin/bitmaps.zip bitmaps
