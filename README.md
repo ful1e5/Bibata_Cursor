@@ -20,20 +20,14 @@ And with that, my journey in the world of open source began.
 
 I wanted to give you a quick update on what's happening with my open-source projects. You may have noticed that I haven't been very active on this particular repository lately. That's because I've been keeping myself busy with a bunch of other exciting open-source ventures.
 
-One of those projects is [bibata.live](https://github.com/ful1e5/bibata.live). I'm super enthusiastic about turning this project into a user-friendly web application, **without archiving this repo**. The idea is to allow you to download customized versions of Bibata with just a few clicks, eliminating the need for complex commands and headaches. It's all about simplicity and convenience.
+One such project is [bibata.live](https://www.bibata.live). I am thrilled to introduce this project to you—a user-friendly web application designed for personalizing Bibata cursors. This initiative allows you to effortlessly download personalized versions of Bibata with just a few clicks, eliminating the need for intricate commands and potential headaches. It's all about simplicity and convenience.
 
-Now, here's where you come in! I'm currently facing a bit of a time crunch, and I'd love your support. By sponsoring this project with just **$1 or more**, you can help me speed up its development and make it a reality as soon as possible. Your contribution goes a long way in fueling the project's progress.
-
-But that's not all! If you encounter any issues with any of my other projects, you can also reach out to me live on [twitch.tv/ful1e5](https://www.twitch.com/ful1e5). Your feedback and bug reports are incredibly valuable, and they help me improve my work.
-
-To make this journey even more exciting, you can join me on the [Github Sponsor](https://www.github.com/sponsors/ful1e5) program. Together, we can work towards achieving my sponsorship goal and keep these open-source projects thriving.
-
-Your support means a lot to me, and it brings us one step closer to making 'bibata.live' and other projects even better. Let's make open-source magic happen! Thank you for being a part of this adventure.
+This repository is now synchronized with the [bibata](https://www.github.com/ful1e5/bibata) project, which has become the new mainstream for acquiring new features and updates. I recommend downloading from there. However, this repository is still periodically maintained to ensure its relevance and usability for [linux packages](#packages).
 
 ## Notes
 
-- All cursor's SVG files are found in [svg](./svg) directory or you can also find them on
-  [Figma](https://www.figma.com/file/Y9RKZLXhSvaxpUzsKGJkp6/Bibata-Cursor?node-id=0%3A1).
+-   All cursor's SVG files are found in [svg](./svg) directory or you can also find them on
+    [Figma](https://www.figma.com/file/Y9RKZLXhSvaxpUzsKGJkp6/Bibata-Cursor?node-id=0%3A1).
 
 <!-- If you're interested, you can learn more about "sponsor-spotlight" on
  https://dev.to/ful1e5/lets-give-recognition-to-those-supporting-our-work-on-github-sponsors-b00 -->
@@ -48,12 +42,12 @@ Your support means a lot to me, and it brings us one step closer to making 'biba
 
 ## Variants:
 
-- **Bibata Original Amber:** Yellowish and sharp edge bibata cursors.
-- **Bibata Modern Amber:** Yellowish and rounded edge bibata cursors.
-- **Bibata Original Classic:** Black and sharp edge bibata cursors.
-- **Bibata Modern Classic:** Black and rounded edge bibata cursors.
-- **Bibata Original Ice:** White and sharp edge bibata cursors.
-- **Bibata Modern Ice:** White and rounded edge bibata cursors
+-   **Bibata Original Amber:** Yellowish and sharp edge bibata cursors.
+-   **Bibata Modern Amber:** Yellowish and rounded edge bibata cursors.
+-   **Bibata Original Classic:** Black and sharp edge bibata cursors.
+-   **Bibata Modern Classic:** Black and rounded edge bibata cursors.
+-   **Bibata Original Ice:** White and sharp edge bibata cursors.
+-   **Bibata Modern Ice:** White and rounded edge bibata cursors
 
 ## Cursor Sizes
 
@@ -76,30 +70,30 @@ Your support means a lot to me, and it brings us one step closer to making 'biba
 
 ### Windows Cursor Size:
 
-- <kbd>16x16</kbd> - Small
-- <kbd>24x24</kbd> - Regular
-- <kbd>32x32</kbd> - Large
-- <kbd>48x48</kbd> - Extra Large
+-   <kbd>16x16</kbd> - Small
+-   <kbd>24x24</kbd> - Regular
+-   <kbd>32x32</kbd> - Large
+-   <kbd>48x48</kbd> - Extra Large
 
 ## Colors:
 
 ### Bibata Amber
 
-- Base Color - `#FF8300` (Amber)
-- Outline Color - `#FFFFFF` (White)
-- Watch Background Color - `#001524` (Rich Black)
+-   Base Color - `#FF8300` (Amber)
+-   Outline Color - `#FFFFFF` (White)
+-   Watch Background Color - `#001524` (Rich Black)
 
 ### Bibata Classic
 
-- Base Color - `#000000` (Black)
-- Outline Color - `#FFFFFF` (White)
-- Watch Background Color - `#000000` (Black)
+-   Base Color - `#000000` (Black)
+-   Outline Color - `#FFFFFF` (White)
+-   Watch Background Color - `#000000` (Black)
 
 ### Bibata Ice
 
-- Base Color - `#FFFFFF` (White)
-- Outline Color - `#000000` (Black)
-- Watch Background Color - `#FFFFFF` (White)
+-   Base Color - `#FFFFFF` (White)
+-   Outline Color - `#000000` (Black)
+-   Watch Background Color - `#FFFFFF` (White)
 
 ## How to get it
 
@@ -189,9 +183,9 @@ Run the `uninstall.bat` script packed with the `.zip` archive
 
 ### Prerequisites
 
-- Python version 3.7 or higher
-- [clickgen](https://github.com/ful1e5/clickgen)>=2.1.8 (`pip install clickgen`)
-- [yarn](https://github.com/yarnpkg/yarn)
+-   Python version 3.7 or higher
+-   [clickgen](https://github.com/ful1e5/clickgen)>=2.1.8 (`pip install clickgen`)
+-   [yarn](https://github.com/yarnpkg/yarn)
 
 ### Quick start
 
@@ -208,8 +202,8 @@ Once you have the [build prerequisites](#prerequisites) installed, You can perso
 customize sizes, change target platforms, and more. This process involves using external tools,
 as this repository only contains SVG files and configuration for these tools:
 
-- [cbmp](https://github.com/ful1e5/cbmp): Used for customizing colors and generating PNG files.
-- [ctgen](https://github.com/ful1e5/clickgen): Used for customizing sizes and building XCursor and Windows Cursors.
+-   [cbmp](https://github.com/ful1e5/cbmp): Used for customizing colors and generating PNG files.
+-   [ctgen](https://github.com/ful1e5/clickgen): Used for customizing sizes and building XCursor and Windows Cursors.
 
 You can refer to the README of each tool for more information on their command-line options.
 
@@ -314,15 +308,15 @@ ctgen build.toml -d 'bitmaps/Bibata-Dracula' -n 'Bibata-Dracula' -c 'Dracula Bib
 
 ## You may also like...
 
-- [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
-- [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
+-   [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
+-   [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
 
 ## Testing Cursor
 
 There are several websites that allow you to test your cursor states by hovering over buttons. This can be very useful when developing or verifying the behavior of a cursor. The following websites cover many of the most commonly used cursors, although they may not include all available options.
 
-- [Cursor-Test](https://vibhorjaiswal.github.io/Cursor-Test/)
-- [Mozilla CSS Cursor](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
+-   [Cursor-Test](https://vibhorjaiswal.github.io/Cursor-Test/)
+-   [Mozilla CSS Cursor](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
 
 For a blueprint for creating XCursors, you may also want to refer to [Cursor-demo](https://wiki.tcl-lang.org/page/Cursor+demo).
 
