@@ -1,12 +1,3 @@
-> **Warning**
-> This repository is now synchronized with the [bibata](https://www.bibata.live) project,
-> which has become the new mainstream for acquiring new features and updates. I recommend downloading from there.
-> However, this repository is still periodically maintained to ensure its relevance and usability for [linux packages](#packages).
-
-> **Warning**
-> Your support is crucial to maintaining the servers for https://www.bibata.live.
-> Please consider sponsoring my work through GitHub Sponsor to ensure the continued operation of this platform.
-
 # Bibata Cursor
 
 [![build](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml/badge.svg)](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml)
@@ -31,10 +22,17 @@ I wanted to give you a quick update on what's happening with my open-source proj
 
 One such project is [bibata](https://www.github.com/ful1e5/bibata). I am thrilled to introduce this project to you a user-friendly web application designed for personalizing Bibata cursors. This initiative allows you to effortlessly download personalized versions of Bibata with just a few clicks, eliminating the need for intricate commands and potential headaches. It's all about simplicity and convenience.
 
+**Your support is crucial to maintaining the servers for https://www.bibata.live. Please consider sponsoring my work through GitHub Sponsor to ensure the continued operation of this platform.**
+
 ## Notes
 
 -   All cursor's SVG files are found in [svg](./svg) directory or you can also find them on
     [Figma](https://www.figma.com/file/Y9RKZLXhSvaxpUzsKGJkp6/Bibata-Cursor?node-id=0%3A1).
+
+-   This repository is now synchronized with the [bibata](https://www.bibata.live) project,
+    which has become the new mainstream for acquiring new features and updates.
+    I recommend downloading from there. However, this repository is still periodically maintained
+    to ensure its relevance and usability for [linux packages](#packages).
 
 <!-- If you're interested, you can learn more about "sponsor-spotlight" on
  https://dev.to/ful1e5/lets-give-recognition-to-those-supporting-our-work-on-github-sponsors-b00 -->
