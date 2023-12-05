@@ -1,3 +1,12 @@
+> **Warning**
+> This repository is now synchronized with the [bibata](https://www.bibata.live) project,
+> which has become the new mainstream for acquiring new features and updates. I recommend downloading from there.
+> However, this repository is still periodically maintained to ensure its relevance and usability for [linux packages](#packages).
+
+> **Warning**
+> Your support is crucial to maintaining the servers for https://www.bibata.live.
+> Please consider sponsoring my work through GitHub Sponsor to ensure the continued operation of this platform.
+
 # Bibata Cursor
 
 [![build](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml/badge.svg)](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml)
@@ -20,9 +29,7 @@ And with that, my journey in the world of open source began.
 
 I wanted to give you a quick update on what's happening with my open-source projects. You may have noticed that I haven't been very active on this particular repository lately. That's because I've been keeping myself busy with a bunch of other exciting open-source ventures.
 
-One such project is [bibata.live](https://www.bibata.live). I am thrilled to introduce this project to you—a user-friendly web application designed for personalizing Bibata cursors. This initiative allows you to effortlessly download personalized versions of Bibata with just a few clicks, eliminating the need for intricate commands and potential headaches. It's all about simplicity and convenience.
-
-This repository is now synchronized with the [bibata](https://www.github.com/ful1e5/bibata) project, which has become the new mainstream for acquiring new features and updates. I recommend downloading from there. However, this repository is still periodically maintained to ensure its relevance and usability for [linux packages](#packages).
+One such project is [bibata](https://www.github.com/ful1e5/bibata). I am thrilled to introduce this project to you a user-friendly web application designed for personalizing Bibata cursors. This initiative allows you to effortlessly download personalized versions of Bibata with just a few clicks, eliminating the need for intricate commands and potential headaches. It's all about simplicity and convenience.
 
 ## Notes
 

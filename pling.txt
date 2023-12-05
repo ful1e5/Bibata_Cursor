@@ -2,14 +2,6 @@ Bibata is one of the most popular cursors set in the Linux community so far and 
 
 Check [url=https://github.com/ful1e5/Bibata_Cursor]README.md[/url] for installation, uninstallation, and personalize cursor sizes or colors.
 
-[b]Bibata: End of an Era (v2.x.x Marks the Final Major Version)[/b]A
-
-I wanted to give you a quick update on what's happening with my open-source projects. You may have noticed that I haven't been very active on this particular repository lately. That's because I've been keeping myself busy with a bunch of other exciting open-source ventures.
-
-One such project is [url=https://github.com/ful1e5/bibata]bibata[/url]. I am thrilled to introduce this project to you—a user-friendly web application designed for personalizing Bibata cursors. This initiative allows you to effortlessly download personalized versions of Bibata with just a few clicks, eliminating the need for intricate commands and potential headaches. It's all about simplicity and convenience.
-
-Bibata_Cursor is now synchronized with the [url=https://www.github.com/ful1e5/bibata]bibata[/url] project, which has become the new mainstream for acquiring new features and updates. I recommend downloading from there. However, this repository is still periodically maintained to ensure its relevance and usability for linux packages.
-
 [b]Bibata Styles:[/b]
 - Bibata Modern: Round Edges Bibata Cursors
 - Bibata Original: Sharp Edges Bibata Cursors
@@ -22,6 +14,9 @@ Bibata_Cursor is now synchronized with the [url=https://www.github.com/ful1e5/bi
 - 24x24 - Regular
 - 32x32 - Large
 - 48x48 - Extra Large
+
+[b]How to Personalize Bibata[/b]
+Visit [url=https://www.bibata.live]https://www.bibata.live[/url] to personalize and download your own Bibata Cursor.
 
 [b]License & Terms:[/b]
 'Bibata_Cursor' is available under the terms of the 'GPL-3.0' license.
