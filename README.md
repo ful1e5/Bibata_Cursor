@@ -1,3 +1,16 @@
+### :warning: Important Update: Bibata - Final Major Version (v2.x.x) :warning:
+
+I've launched the successor to this project at https://www.github.com/ful1e5/bibata, now the main source for new features. Recommend downloading from there. This repository is still maintained for [Linux packages](#packages).
+
+-   Available at: https://www.bibata.live
+-   Development Preview: https://dev.bibata.live
+
+**Support Bibata's Future**
+
+Your sponsorship is crucial for Bibata's ongoing success. A **$1** contribution helps maintain servers for **24/7 accessibility**. With your support, I can upgrade to high-performance AWS servers, improving user experience. Sponsors also enjoy exclusive premium features for a more rewarding engagement.
+
+Invest in Bibata's future — become a valued sponsor today.
+
 # Bibata Cursor
 
 [![build](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml/badge.svg)](https://github.com/ful1e5/Bibata_Cursor/actions/workflows/build.yml)
@@ -15,14 +28,6 @@ and size options. Its goal is to offer personalized cursors to users.
 The sweetest word I ever spoke was "BI-Buh," which, coincidentally, is also the word for peanuts.
 To make it more pronounceable and not sound like a baby's words, I added the suffix "Ta."
 And with that, my journey in the world of open source began.
-
-#### Bibata: End of an Era (v2.x.x Marks the Final Major Version)
-
-I wanted to give you a quick update on what's happening with my open-source projects. You may have noticed that I haven't been very active on this particular repository lately. That's because I've been keeping myself busy with a bunch of other exciting open-source ventures.
-
-One such project is [bibata](https://www.github.com/ful1e5/bibata). I am thrilled to introduce this project to you a user-friendly web application designed for personalizing Bibata cursors. This initiative allows you to effortlessly download personalized versions of Bibata with just a few clicks, eliminating the need for intricate commands and potential headaches. It's all about simplicity and convenience.
-
-**Your support is crucial to maintaining the servers for https://www.bibata.live. Please consider sponsoring my work through GitHub Sponsor to ensure the continued operation of this platform.**
 
 ## Notes
 
