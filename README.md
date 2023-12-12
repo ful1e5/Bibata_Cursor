@@ -1,11 +1,11 @@
-# ⚠️ Important Update: Bibata - Final Major Version (v2.x.x) ⚠️
+## ⚠️ Notice: Final Major Version v2.x.x
 
 I've launched the successor to this project at https://www.github.com/ful1e5/bibata, now the main source for new features. Recommend downloading from there. This repository is still maintained for [Linux packages](#packages).
 
 -   Available at: https://www.bibata.live
 -   Development Preview: https://dev.bibata.live
 
-## 💖 Support Bibata's Future 💖
+## 💖 Support Bibata's Future
 
 Your sponsorship is crucial for Bibata's ongoing success. A **$1** contribution helps maintain servers for **24/7 accessibility**. With your support, I can upgrade to high-performance AWS servers, improving user experience. Sponsors also enjoy exclusive premium features for a more rewarding engagement.
 
