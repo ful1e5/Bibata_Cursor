@@ -1,6 +1,6 @@
 ## ⚠️ Notice: Final Major Version v2.x.x
 
-I've launched the successor to this project at https://www.github.com/ful1e5/bibata, now the main source for new features. Recommend downloading from there. This repository is still maintained for [Linux packages](#packages).
+I've launched the successor to this project at https://www.github.com/ful1e5/bibata for **downloading and personalizing Bibata**, now the main source for new features. I recommend downloading from there. This repository is still maintained for [Linux packages](#packages).
 
 -   Available at: https://www.bibata.live
 -   Development Preview: https://dev.bibata.live
@@ -8,8 +8,6 @@ I've launched the successor to this project at https://www.github.com/ful1e5/bib
 ## 💖 Support Bibata's Future
 
 Your sponsorship is crucial for Bibata's ongoing success. A **$1** contribution helps maintain servers for **24/7 accessibility**. With your support, I can upgrade to high-performance AWS servers, improving user experience. Sponsors also enjoy exclusive premium features for a more rewarding engagement.
-
-Invest in Bibata's future — become a valued sponsor today.
 
 # Bibata Cursor
 
@@ -109,7 +107,7 @@ And with that, my journey in the world of open source began.
 
 ### Easiest Way
 
-You can download latest `stable` & `development` releases from
+You can download latest `stable` & `development` releases from [bibata.live](https://bibata.live) or on
 [Release Page](https://github.com/ful1e5/Bibata_Cursor/releases).
 
 ### Packages
@@ -219,6 +217,10 @@ You can refer to the README of each tool for more information on their command-l
 
 #### Crafting Your Bibata
 
+[https://bibata.live](https://bibata.live) simplifies the personalization of cursor themes, making it easy and accessible for users.
+With bibata, you can enhance your cursor experience effortlessly. Best of all, it's available for free, allowing you to
+enjoy a customized bibata cursor theme tailored to your preferences.
+
 The process of creating custom cursor themes involves two main steps:
 
 1. Rendering SVG files to PNG files.
@@ -318,6 +320,7 @@ ctgen build.toml -d 'bitmaps/Bibata-Dracula' -n 'Bibata-Dracula' -c 'Dracula Bib
 
 ## You may also like...
 
+-   [**Bibata**](https://bibata.live) - The place where Bibata's cursor gets personalized.
 -   [**Bibata Adapta**](https://gitlab.com/cscs/Bibata_AdaptaBreath_Cursors) - Bibata Based Cursor Made for AdaptaBreath and Manjaro.
 -   [**Bibata Translucent**](https://github.com/Silicasandwhich/Bibata_Cursor_Translucent) - Bibata translucent is a translucent flavor of the Bibata.
 

@@ -1,19 +1,4 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
-  <g filter="url(#filter0_d_2652_63)">
-    <path d="M232.96 128.64C232.96 186.961 185.681 234.24 127.36 234.24C69.0387 234.24 21.76 186.961 21.76 128.64C21.76 70.3188 69.0387 23.04 127.36 23.04C185.681 23.04 232.96 70.3188 232.96 128.64Z" fill="#0000FF"/>
-  </g>
-  <path d="M216.64 128.32C216.64 177.65 176.65 217.64 127.32 217.64C77.9899 217.64 38 177.65 38 128.32C38 78.9899 77.9899 39 127.32 39C176.65 39 216.64 78.9899 216.64 128.32Z" fill="#FE0000"/>
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M113.149 129.398L82.4062 98.6557L96.0697 84.9922L126.812 115.735L157.555 84.9922L171.219 98.6556L140.476 129.398L171.219 160.141L157.555 173.805L126.812 143.062L96.0697 173.805L82.4063 160.141L113.149 129.398Z" fill="white"/>
-  <defs>
-    <filter id="filter0_d_2652_63" x="15.36" y="21.76" width="224" height="224" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feOffset dy="5.12"/>
-      <feGaussianBlur stdDeviation="3.2"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
-      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2652_63"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2652_63" result="shape"/>
-    </filter>
-  </defs>
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.32 226.14C181.344 226.14 225.14 182.344 225.14 128.32C225.14 74.2955 181.344 30.5 127.32 30.5C73.2955 30.5 29.5 74.2955 29.5 128.32C29.5 182.344 73.2955 226.14 127.32 226.14Z" fill="#FE0000" stroke="#0000FF" stroke-width="17"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M113.149 129.398L82.4062 98.6557L96.0697 84.9922L126.812 115.735L157.555 84.9922L171.219 98.6556L140.476 129.398L171.219 160.141L157.555 173.805L126.812 143.062L96.0697 173.805L82.4063 160.141L113.149 129.398Z" fill="white"/>
 </svg>

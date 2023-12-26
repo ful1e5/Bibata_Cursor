@@ -16,25 +16,52 @@ def cwd(dir):
         os.chdir(curdir)
 
 
-ignore_files = [
-    # animated
-    "left_ptr_watch.svg",
-    # static
-    "center_ptr.svg",
-    "circle.svg",
-    "context-menu.svg",
-    "copy.svg",
-    "left_ptr.svg",
-    "link.svg",
-    "pointer-move.svg",
-    "right_ptr.svg",
+files = [
+    "X_cursor",
+    "bottom_left_corner",
+    "bottom_right_corner",
+    "bottom_side",
+    "bottom_tee",
+    "cross",
+    "crossed_circle",
+    "crosshair",
+    "dnd-ask",
+    "dnd-copy",
+    "dnd-link",
+    "dnd_no_drop",
+    "dotbox",
+    "grabbing",
+    "hand1",
+    "hand2",
+    "left_side",
+    "left_tee",
+    "ll_angle",
+    "lr_angle",
+    "pencil",
+    "plus",
+    "question_arrow",
+    "right_side",
+    "right_tee",
+    "tcross",
+    "top_left_corner",
+    "top_right_corner",
+    "top_side",
+    "top_tee",
+    "ul_angle",
+    "ur_angle",
+    "vertical-text",
+    "wait",
+    "wayland-cursor",
+    "xterm",
+    "zoom-in",
+    "zoom-out",
 ]
 
 
 def link_missing_svgs(src_dir, dst_dir) -> None:
     dst = Path(dst_dir)
     for file in Path(src_dir).glob("*"):
-        if file.name not in ignore_files:
+        if file.stem in files:
             link = dst / file.name
             if os.path.exists(link):
                 os.remove(link)
