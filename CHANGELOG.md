@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### What's New?
 
 -   Refresh cursor designs
+-   Static Cursor Animation frames to reduce package size
 
 ### Changes
 
@@ -19,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Issues Fixes
 
+-   Cursor Hotspot set according to `256x256px` image
 -   Fixed #157
 -   Fixed #151
 -   Fixed #146
