@@ -51,10 +51,13 @@ for key in "${!names[@]}"; do
   wait $PID
 done
 
+# Compressing Bibata.tar.xz
+cp ../LICENSE .
 tar -cJvf "../bin/Bibata.tar.xz" --exclude="*-Windows" . &
 PID=$!
 wait $PID
 
+# Compressing Bibata-*-Windows
 for key in "${!names[@]}"; do
   zip -rv "../bin/${key}-Windows.zip" "${key}-Small-Windows" "${key}-Regular-Windows" "${key}-Large-Windows" "${key}-Extra-Large-Windows" &
   PID=$!
@@ -63,4 +66,6 @@ done
 
 cd ..
 
+# Copying License File for 'bitmaps'
+cp LICENSE bitmaps/
 zip -rv bin/bitmaps.zip bitmaps
