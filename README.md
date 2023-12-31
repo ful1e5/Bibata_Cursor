@@ -44,9 +44,9 @@ And with that, my journey in the world of open source began.
 
 ---
 
-![Bibata Amber](https://github.com/ful1e5/Bibata_Cursor/assets/24286590/67c8afbf-2de8-4a0c-b13d-aec5dd3ba8fb)
-![Bibata Classic](https://github.com/ful1e5/Bibata_Cursor/assets/24286590/b96a5ba5-6de9-485b-a15b-6e35c16678d6)
-![Bibata Ice](https://github.com/ful1e5/Bibata_Cursor/assets/24286590/044d7881-a3d7-4ee2-a1c6-df0755624c36)
+![Bibata Amber](https://github.com/ful1e5/Bibata_Cursor/assets/24286590/d64d75e5-3ac9-45f3-8afe-e92719fd48d1)
+![Bibata Classic](https://github.com/ful1e5/Bibata_Cursor/assets/24286590/04df0fbe-36fc-47bd-ad0a-c70eaea871f3)
+![Bibata Ice](https://github.com/ful1e5/Bibata_Cursor/assets/24286590/56e7e67a-cf77-407c-871c-f663a93508f7)
 
 ## Variants:
 
