@@ -4,6 +4,7 @@
 import contextlib
 import os
 from pathlib import Path
+from typing import List
 
 
 @contextlib.contextmanager
@@ -57,11 +58,23 @@ files = [
     "zoom-out",
 ]
 
+right_files = files + [
+    "bd_double_arrow",
+    "fd_double_arrow",
+    "move",
+    "sb_down_arrow",
+    "sb_h_double_arrow",
+    "sb_left_arrow",
+    "sb_right_arrow",
+    "sb_up_arrow",
+    "sb_v_double_arrow",
+]
 
-def link_missing_svgs(src_dir, dst_dir) -> None:
+
+def gen_symlinks(fnames: List[str], src_dir: str, dst_dir: str) -> None:
     dst = Path(dst_dir)
     for file in Path(src_dir).glob("*"):
-        if file.stem in files:
+        if file.stem in fnames:
             link = dst / file.name
             if os.path.exists(link):
                 os.remove(link)
@@ -76,4 +89,6 @@ def link_missing_svgs(src_dir, dst_dir) -> None:
             print(f"Ignoring {file.name}")
 
 
-link_missing_svgs("original", "modern")
+gen_symlinks(files, "original", "modern")
+gen_symlinks(right_files, "modern", "modern-right")
+gen_symlinks(right_files, "original", "original-right")
