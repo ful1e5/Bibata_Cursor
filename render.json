@@ -8,10 +8,28 @@
       { "match": "#FF0000", "replace": "#001524" }
     ]
   },
+  "Bibata-Modern-Amber-Right": {
+    "dir": "svg/modern-right",
+    "out": "bitmaps/Bibata-Modern-Amber-Right",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FF8300" },
+      { "match": "#0000FF", "replace": "#FFFFFF" },
+      { "match": "#FF0000", "replace": "#001524" }
+    ]
+  },
 
   "Bibata-Modern-Classic": {
     "dir": "svg/modern",
     "out": "bitmaps/Bibata-Modern-Classic",
+    "colors": [
+      { "match": "#00FF00", "replace": "#000000" },
+      { "match": "#0000FF", "replace": "#FFFFFF" },
+      { "match": "#FF0000", "replace": "#000000" }
+    ]
+  },
+  "Bibata-Modern-Classic-Right": {
+    "dir": "svg/modern-right",
+    "out": "bitmaps/Bibata-Modern-Classic-Right",
     "colors": [
       { "match": "#00FF00", "replace": "#000000" },
       { "match": "#0000FF", "replace": "#FFFFFF" },
@@ -28,10 +46,28 @@
       { "match": "#FF0000", "replace": "#FFFFFF" }
     ]
   },
+  "Bibata-Modern-Ice-Right": {
+    "dir": "svg/modern-right",
+    "out": "bitmaps/Bibata-Modern-Ice-Right",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FFFFFF" },
+      { "match": "#0000FF", "replace": "#000000" },
+      { "match": "#FF0000", "replace": "#FFFFFF" }
+    ]
+  },
 
   "Bibata-Original-Amber": {
     "dir": "svg/original",
     "out": "bitmaps/Bibata-Original-Amber",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FF8300" },
+      { "match": "#0000FF", "replace": "#FFFFFF" },
+      { "match": "#FF0000", "replace": "#001524" }
+    ]
+  },
+  "Bibata-Original-Amber-Right": {
+    "dir": "svg/original-right",
+    "out": "bitmaps/Bibata-Original-Amber-Right",
     "colors": [
       { "match": "#00FF00", "replace": "#FF8300" },
       { "match": "#0000FF", "replace": "#FFFFFF" },
@@ -48,10 +84,28 @@
       { "match": "#FF0000", "replace": "#000000" }
     ]
   },
+  "Bibata-Original-Classic-Right": {
+    "dir": "svg/original-right",
+    "out": "bitmaps/Bibata-Original-Classic-Right",
+    "colors": [
+      { "match": "#00FF00", "replace": "#000000" },
+      { "match": "#0000FF", "replace": "#FFFFFF" },
+      { "match": "#FF0000", "replace": "#000000" }
+    ]
+  },
 
   "Bibata-Original-Ice": {
     "dir": "svg/original",
     "out": "bitmaps/Bibata-Original-Ice",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FFFFFF" },
+      { "match": "#0000FF", "replace": "#000000" },
+      { "match": "#FF0000", "replace": "#FFFFFF" }
+    ]
+  },
+  "Bibata-Original-Ice-Right": {
+    "dir": "svg/original-right",
+    "out": "bitmaps/Bibata-Original-Ice-Right",
     "colors": [
       { "match": "#00FF00", "replace": "#FFFFFF" },
       { "match": "#0000FF", "replace": "#000000" },

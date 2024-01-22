@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### What's New?
+
+-   Right-hand cursors themes added #112
+
 ### Issues Fixes
 
 -   Fixes #158

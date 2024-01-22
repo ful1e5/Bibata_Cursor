@@ -50,12 +50,20 @@ And with that, my journey in the world of open source began.
 
 ## Variants:
 
--   **Bibata Original Amber:** Yellowish and sharp edge bibata cursors.
--   **Bibata Modern Amber:** Yellowish and rounded edge bibata cursors.
--   **Bibata Original Classic:** Black and sharp edge bibata cursors.
--   **Bibata Modern Classic:** Black and rounded edge bibata cursors.
--   **Bibata Original Ice:** White and sharp edge bibata cursors.
--   **Bibata Modern Ice:** White and rounded edge bibata cursors
+-   Normal
+    -   **Bibata Original Amber:** Yellowish and sharp edge bibata cursors.
+    -   **Bibata Modern Amber:** Yellowish and rounded edge bibata cursors.
+    -   **Bibata Original Classic:** Black and sharp edge bibata cursors.
+    -   **Bibata Modern Classic:** Black and rounded edge bibata cursors.
+    -   **Bibata Original Ice:** White and sharp edge bibata cursors.
+    -   **Bibata Modern Ice:** White and rounded edge bibata cursors.
+-   Right Hand
+    -   **Bibata Original Amber Right:** Yellowish and sharp edge right-hand bibata cursors.
+    -   **Bibata Modern Amber Right:** Yellowish and rounded edge right-hand bibata cursors.
+    -   **Bibata Original Classic Right:** Black and sharp edge right-hand bibata cursors.
+    -   **Bibata Modern Classic Right:** Black and rounded edge right-hand bibata cursors.
+    -   **Bibata Original Ice Right:** White and sharp edge right-hand bibata cursors.
+    -   **Bibata Modern Ice Right:** White and rounded edge right-hand bibata cursors.
 
 ## Cursor Sizes
 
