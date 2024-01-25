@@ -48,6 +48,12 @@ And with that, my journey in the world of open source began.
 ![Bibata Classic](https://github.com/ful1e5/Bibata_Cursor/assets/24286590/04df0fbe-36fc-47bd-ad0a-c70eaea871f3)
 ![Bibata Ice](https://github.com/ful1e5/Bibata_Cursor/assets/24286590/56e7e67a-cf77-407c-871c-f663a93508f7)
 
+---
+
+![Bibata Amber Right](https://github.com/ful1e5/Bibata_Cursor/assets/24286590/204a036a-796d-4277-85d2-30b7fb2449f2)
+![Bibata Classic Right](https://github.com/ful1e5/Bibata_Cursor/assets/24286590/fb4cac21-e8a8-46e9-9ce2-688f35bbcbaa)
+![Bibata Ice Right](https://github.com/ful1e5/Bibata_Cursor/assets/24286590/c64f45d6-cd8d-46e6-8386-e2f3b7012db7)
+
 ## Variants:
 
 -   Normal
