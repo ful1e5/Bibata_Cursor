@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v2.0.6] - 25 January 2024
+
 ### What's New?
 
 -   Right-hand cursors themes added #112
@@ -320,7 +322,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Initial release 🎊
 
-[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.5...main
+[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.6...main
+[v2.0.6]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.5...v2.0.6
 [v2.0.5]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.4...v2.0.5
 [v2.0.4]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.3...v2.0.4
 [v2.0.3]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.2...v2.0.3
