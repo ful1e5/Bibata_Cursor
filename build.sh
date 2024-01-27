@@ -1,5 +1,7 @@
 #!/bin/bash
-# A script for preparing binaries of Bibata Cursors, by Abdulkaiz Khatri
+# A script for preparing binaries of Bibata Cursors, created by Abdulkaiz Khatri.
+
+version="v2.0.6"
 
 error() (
   set -o pipefail
@@ -17,24 +19,29 @@ get_config_file() {
   echo $cfg_file
 }
 
+with_version() {
+  local comment="${1}"
+  echo "$comment ($version)."
+}
+
 if ! type -p ctgen >/dev/null; then
   error ctgen
   exit 127 # exit program with "command not found" error code
 fi
 
 declare -A names
-names["Bibata-Modern-Amber"]="Yellowish and rounded edge Bibata cursors."
-names["Bibata-Modern-Amber-Right"]="Yellowish and rounded edge right-hand Bibata cursors."
-names["Bibata-Modern-Classic"]="Black and rounded edge Bibata cursors."
-names["Bibata-Modern-Classic-Right"]="Black and rounded edge right-hand Bibata cursors."
-names["Bibata-Modern-Ice"]="White and rounded edge Bibata cursors."
-names["Bibata-Modern-Ice-Right"]="White and rounded edge right-hand Bibata cursors."
-names["Bibata-Original-Amber"]="Yellowish and sharp edge Bibata cursors."
-names["Bibata-Original-Amber-Right"]="Yellowish and sharp edge right-hand Bibata cursors."
-names["Bibata-Original-Classic"]="Black and sharp edge Bibata cursors."
-names["Bibata-Original-Classic-Right"]="Black and sharp edge right-hand Bibata cursors."
-names["Bibata-Original-Ice"]="White and sharp edge Bibata cursors."
-names["Bibata-Original-Ice-Right"]="White and sharp edge right-hand Bibata cursors."
+names["Bibata-Modern-Amber"]=$(with_version "Yellowish and rounded edge Bibata cursors")
+names["Bibata-Modern-Amber-Right"]=$(with_version "Yellowish and rounded edge right-hand Bibata cursors")
+names["Bibata-Modern-Classic"]=$(with_version "Black and rounded edge Bibata cursors")
+names["Bibata-Modern-Classic-Right"]=$(with_version "Black and rounded edge right-hand Bibata cursors")
+names["Bibata-Modern-Ice"]=$(with_version "White and rounded edge Bibata cursors")
+names["Bibata-Modern-Ice-Right"]=$(with_version "White and rounded edge right-hand Bibata cursors")
+names["Bibata-Original-Amber"]=$(with_version "Yellowish and sharp edge Bibata cursors")
+names["Bibata-Original-Amber-Right"]=$(with_version "Yellowish and sharp edge right-hand Bibata cursors")
+names["Bibata-Original-Classic"]=$(with_version "Black and sharp edge Bibata cursors")
+names["Bibata-Original-Classic-Right"]=$(with_version "Black and sharp edge right-hand Bibata cursors")
+names["Bibata-Original-Ice"]=$(with_version "White and sharp edge Bibata cursors")
+names["Bibata-Original-Ice-Right"]=$(with_version "White and sharp edge right-hand Bibata cursors")
 
 # Cleanup old builds
 rm -rf themes bin
