@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Attach version meta-data inside cursor packages
 
+### Issues Fixes
+
+-   Fixes #159
+
 ## [v2.0.6] - 25 January 2024
 
 ### What's New?
