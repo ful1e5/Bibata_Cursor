@@ -1,7 +1,7 @@
 {
   "type": "module",
   "dependencies": {
-    "cbmp": "^1.1.0"
+    "cbmp": "^1.1.1"
   },
   "scripts": {
     "clean": "rm -rf bin bitmaps themes",

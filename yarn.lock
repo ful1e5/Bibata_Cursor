@@ -266,10 +266,10 @@ callsites@^3.0.0:
   resolved "https://registry.yarnpkg.com/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
   integrity sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
 
-cbmp@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/cbmp/-/cbmp-1.1.0.tgz#3f05b995c0658b89d4ae5134b788ac7ce5421842"
-  integrity sha512-g7nCOJ0+u8mpG4uPyzGbvRSFrmV+WaOGMfNZZU+1nxQ22qJTjMcwXALs9Db25yYWkYoCT0gIIzjAkbJKXM7tYA==
+cbmp@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/cbmp/-/cbmp-1.1.1.tgz#e36d216f18582b01f4b9de14fd6f14c873dd9840"
+  integrity sha512-G2CstvZ8bgX85hzA9nDhKRglGyjZWIp8V01SXtQ6f4NNFe7Xy+lL+z7MrtWCnpKPbBUtr2VJWwZRJaexJDm5kA==
   dependencies:
     "@resvg/resvg-js" "^2.6.0"
     chalk "^5.3.0"
