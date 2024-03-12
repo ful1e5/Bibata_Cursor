@@ -17,64 +17,10 @@ def cwd(dir):
         os.chdir(curdir)
 
 
-files = [
-    "X_cursor",
-    "bottom_left_corner",
-    "bottom_right_corner",
-    "bottom_side",
-    "bottom_tee",
-    "cross",
-    "crossed_circle",
-    "crosshair",
-    "dnd-ask",
-    "dnd-copy",
-    "dnd-link",
-    "dnd_no_drop",
-    "dotbox",
-    "grabbing",
-    "hand1",
-    "hand2",
-    "left_side",
-    "left_tee",
-    "ll_angle",
-    "lr_angle",
-    "pencil",
-    "plus",
-    "question_arrow",
-    "right_side",
-    "right_tee",
-    "tcross",
-    "top_left_corner",
-    "top_right_corner",
-    "top_side",
-    "top_tee",
-    "ul_angle",
-    "ur_angle",
-    "vertical-text",
-    "wait",
-    "wayland-cursor",
-    "xterm",
-    "zoom-in",
-    "zoom-out",
-]
-
-right_files = files + [
-    "bd_double_arrow",
-    "fd_double_arrow",
-    "move",
-    "sb_down_arrow",
-    "sb_h_double_arrow",
-    "sb_left_arrow",
-    "sb_right_arrow",
-    "sb_up_arrow",
-    "sb_v_double_arrow",
-]
-
-
-def gen_symlinks(fnames: List[str], src_dir: str, dst_dir: str) -> None:
+def gen_symlinks(src_dirs: List[str], dst_dir: str) -> None:
     dst = Path(dst_dir)
-    for file in Path(src_dir).glob("*"):
-        if file.stem in fnames:
+    for src_dir in src_dirs:
+        for file in Path(src_dir).glob("*"):
             link = dst / file.name
             if os.path.exists(link):
                 os.remove(link)
@@ -85,10 +31,48 @@ def gen_symlinks(fnames: List[str], src_dir: str, dst_dir: str) -> None:
                     os.path.relpath(file, dst),
                     link.name,
                 )
-        else:
-            print(f"Ignoring {file.name}")
 
 
-gen_symlinks(files, "original", "modern")
-gen_symlinks(right_files, "modern", "modern-right")
-gen_symlinks(right_files, "original", "original-right")
+# Linking Bibata Modern
+gen_symlinks(
+    [
+        "groups/modern",
+        "groups/modern-arrow",
+        "groups/shared",
+        "groups/hand",
+    ],
+    "modern",
+)
+
+# Linking Bibata Modern Right
+gen_symlinks(
+    [
+        "groups/modern-right",
+        "groups/modern-arrow",
+        "groups/shared",
+        "groups/hand-right",
+    ],
+    "modern-right",
+)
+
+# Linking Bibata Original
+gen_symlinks(
+    [
+        "groups/original",
+        "groups/original-arrow",
+        "groups/shared",
+        "groups/hand",
+    ],
+    "original",
+)
+
+# Linking Bibata Original Right
+gen_symlinks(
+    [
+        "groups/original-right",
+        "groups/original-arrow",
+        "groups/shared",
+        "groups/hand-right",
+    ],
+    "original-right",
+)

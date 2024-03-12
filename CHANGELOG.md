@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### What's New?
 
+-   Redesign hands cursor for `bibata-*-right` cursors (Related to #112)
 -   Attach version meta-data inside cursor packages
 
 ### Issues Fixes

@@ -98,27 +98,27 @@ x11_name = 'crosshair'
 
 [cursors.dnd_no_drop]
 png = 'dnd_no_drop.png'
-x_hotspot = 100
-y_hotspot = 65
+x_hotspot = 156
+y_hotspot = 68
 x11_name = 'dnd_no_drop'
 x11_symlinks = ["no-drop"]
 
 [cursors.dnd-ask]
 png = 'dnd-ask.png'
-x_hotspot = 100
-y_hotspot = 65
+x_hotspot = 156
+y_hotspot = 68
 x11_name = 'dnd-ask'
 
 [cursors.dnd-copy]
 png = 'dnd-copy.png'
-x_hotspot = 100
-y_hotspot = 65
+x_hotspot = 156
+y_hotspot = 68
 x11_name = 'dnd-copy'
 
 [cursors.dnd-link]
 png = 'dnd-link.png'
-x_hotspot = 100
-y_hotspot = 65
+x_hotspot = 156
+y_hotspot = 68
 x11_name = 'dnd-link'
 x11_symlinks = ['alias']
 
@@ -135,8 +135,8 @@ x11_symlinks = ["fcf1c3c7cd4491d801f1e1c78f100000", "nesw-resize", "size_bdiag"]
 
 [cursors.grabbing]
 png = 'grabbing.png'
-x_hotspot = 128
-y_hotspot = 66
+x_hotspot = 112
+y_hotspot = 64
 win_name = 'Grabbing'
 x11_name = 'grabbing'
 x11_symlinks = [
@@ -148,16 +148,16 @@ x11_symlinks = [
 
 [cursors.hand1]
 png = 'hand1.png'
-x_hotspot = 144
-y_hotspot = 79
+x_hotspot = 97
+y_hotspot = 80
 win_name = 'Pan'
 x11_name = 'hand1'
 x11_symlinks = ["grab", "openhand"]
 
 [cursors.hand2]
 png = 'hand2.png'
-x_hotspot = 114
-y_hotspot = 18
+x_hotspot = 138
+y_hotspot = 14
 win_name = 'Link'
 x11_name = 'hand2'
 x11_symlinks = [
