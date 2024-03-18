@@ -159,20 +159,20 @@ sudo dnf install bibata-cursor-theme
 
 ## Installing Bibata Cursor
 
-#### Linux/X11
+#### Linux X11/Wayland
 
 **Installation:**
 
 ```bash
 tar -xvf Bibata.tar.gz                # extract `Bibata.tar.gz`
-mv Bibata-* ~/.icons/                 # Install to local users
+mv Bibata-* ~/.local/share/icons/                 # Install to local users
 sudo mv Bibata-* /usr/share/icons/    # Install to all users
 ```
 
 **Uninstallation:**
 
 ```bash
-rm ~/.icons/Bibata-*                  # Remove from local users
+rm ~/.local/share/icons/Bibata-*                  # Remove from local users
 sudo rm /usr/share/icons/Bibata-*     # Remove from all users
 ```
 
