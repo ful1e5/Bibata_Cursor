@@ -1,0 +1,128 @@
+[theme]
+name = 'Bibata Right Large Windows Cursor'
+comment = 'Bibata is open source, compact, and material designed cursor set.'
+website = 'https://www.bibata.live'
+
+[config]
+bitmaps_dir = '' # This config will assigned with `ctgen -d <path>`
+out_dir = '../../themes'
+platforms =  'windows'
+
+[cursors]
+[cursors.fallback_settings]
+win_sizes = ["26:32", "39:48", "52:64", "77:96", "103:128"]
+x_hotspot = 128
+y_hotspot = 128
+win_delay = 1
+
+[cursors.bd_double_arrow]
+png = 'bd_double_arrow.png'
+win_name = 'Dgn1'
+
+[cursors.circle]
+png = 'circle.png'
+x_hotspot = 207
+y_hotspot = 24
+win_name = 'Unavailable'
+
+[cursors.crosshair]
+png = 'crosshair.png'
+win_name = 'Cross'
+
+[cursors.fd_double_arrow]
+png = 'fd_double_arrow.png'
+win_name = 'Dgn2'
+
+[cursors.grabbing]
+png = 'grabbing.png'
+x_hotspot = 112
+y_hotspot = 64
+win_name = 'Grabbing'
+
+[cursors.hand1]
+png = 'hand1.png'
+x_hotspot = 97
+y_hotspot = 80
+win_name = 'Pan'
+
+[cursors.hand2]
+png = 'hand2.png'
+x_hotspot = 138
+y_hotspot = 14
+win_name = 'Link'
+
+[cursors.left_ptr]
+png = 'left_ptr.png'
+x_hotspot = 207
+y_hotspot = 24
+win_name = 'Pointer'
+
+[cursors.left_ptr_watch]
+png = 'left_ptr_watch-*.png'
+x_hotspot = 197
+y_hotspot = 24
+win_name = 'Work'
+win_sizes = "77:96"
+
+[cursors.move]
+png = 'move.png'
+win_name = 'Move'
+
+[cursors.pencil]
+png = 'pencil.png'
+x_hotspot = 46
+y_hotspot = 211
+win_name = 'Handwriting'
+
+[cursors.question_arrow]
+png = 'question_arrow.png'
+x_hotspot = 42
+y_hotspot = 86
+win_name = 'Help'
+
+[cursors.right_ptr]
+png = 'right_ptr.png'
+x_hotspot = 55
+y_hotspot = 17
+win_name = 'Alternate'
+
+[cursors.sb_h_double_arrow]
+png = 'sb_h_double_arrow.png'
+win_name = 'Horz'
+
+[cursors.sb_v_double_arrow]
+png = 'sb_v_double_arrow.png'
+win_name = 'Vert'
+
+[cursors.wait]
+png = 'wait-*.png'
+win_name = 'Busy'
+win_sizes = "77:96"
+
+[cursors.xterm]
+png = 'xterm.png'
+win_name = 'Text'
+
+[cursors.zoom_in]
+png = 'zoom-in.png'
+x_hotspot = 116
+y_hotspot = 116
+win_name = 'Zoom-in'
+
+[cursors.zoom_out]
+png = 'zoom-out.png'
+x_hotspot = 116
+y_hotspot = 116
+win_name = 'Zoom-out'
+
+[cursors.person]
+png = 'person.png'
+x_hotspot = 207
+y_hotspot = 24
+win_name = 'Person'
+
+[cursors.pin]
+png = 'pin.png'
+x_hotspot = 207
+y_hotspot = 24
+win_name = 'Pin'

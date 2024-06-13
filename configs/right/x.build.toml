@@ -1,0 +1,412 @@
+[theme]
+name = 'Bibata Right XCursor'
+comment = 'Bibata is open source, compact, and material designed cursor set.'
+website = 'https://www.bibata.live'
+
+[config]
+bitmaps_dir = '' # This config will assigned with `ctgen -d <path>`
+out_dir = '../../themes'
+platforms = 'x11'
+
+[cursors]
+[cursors.fallback_settings]
+x11_sizes = [16, 20, 22, 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96]
+x_hotspot = 128
+y_hotspot = 128
+x11_delay = 40
+
+[cursors.bd_double_arrow]
+png = 'bd_double_arrow.png'
+x11_name = 'bd_double_arrow'
+x11_symlinks = ["c7088f0f3e6c8088236ef8e1e3e70000", "nwse-resize", "size_fdiag"]
+
+[cursors.bottom_left_corner]
+png = 'bottom_left_corner.png'
+x_hotspot = 26
+y_hotspot = 232
+x11_name = 'bottom_left_corner'
+x11_symlinks = ["sw-resize"]
+
+[cursors.bottom_right_corner]
+png = 'bottom_right_corner.png'
+x_hotspot = 229
+y_hotspot = 232
+x11_name = 'bottom_right_corner'
+x11_symlinks = ['se-resize']
+
+[cursors.bottom_side]
+png = 'bottom_side.png'
+x_hotspot = 129
+y_hotspot = 234
+x11_name = 'bottom_side'
+x11_symlinks = ['s-resize']
+
+[cursors.bottom_tee]
+png = 'bottom_tee.png'
+x_hotspot = 128
+y_hotspot = 230
+x11_name = 'bottom_tee'
+
+[cursors.center_ptr]
+png = 'center_ptr.png'
+x_hotspot = 127
+y_hotspot = 17
+x11_name = 'center_ptr'
+
+[cursors.circle]
+png = 'circle.png'
+x_hotspot = 207
+y_hotspot = 24
+x11_name = 'circle'
+x11_symlinks = ['forbidden']
+
+[cursors.context-menu]
+png = 'context-menu.png'
+x_hotspot = 207
+y_hotspot = 24
+x11_name = 'context-menu'
+
+[cursors.copy]
+png = 'copy.png'
+x_hotspot = 207
+y_hotspot = 24
+x11_name = 'copy'
+x11_symlinks = [
+  "1081e37283d90000800003c07f3ef6bf",
+  "6407b0e94181790501fd1e167b474872",
+  "b66166c04f8c3109214a4fbd64a50fc8"
+]
+
+[cursors.cross]
+png = 'cross.png'
+x11_name = 'cross'
+x11_symlinks = ["cross_reverse", "diamond_cross"]
+
+[cursors.crossed_circle]
+png = 'crossed_circle.png'
+x11_name = 'crossed_circle'
+x11_symlinks = ["03b6e0fcb3499374a867c041f52298f0", "not-allowed"]
+
+[cursors.crosshair]
+png = 'crosshair.png'
+x11_name = 'crosshair'
+
+[cursors.dnd_no_drop]
+png = 'dnd_no_drop.png'
+x_hotspot = 156
+y_hotspot = 68
+x11_name = 'dnd_no_drop'
+x11_symlinks = ["no-drop"]
+
+[cursors.dnd-ask]
+png = 'dnd-ask.png'
+x_hotspot = 156
+y_hotspot = 68
+x11_name = 'dnd-ask'
+
+[cursors.dnd-copy]
+png = 'dnd-copy.png'
+x_hotspot = 156
+y_hotspot = 68
+x11_name = 'dnd-copy'
+
+[cursors.dnd-link]
+png = 'dnd-link.png'
+x_hotspot = 156
+y_hotspot = 68
+x11_name = 'dnd-link'
+x11_symlinks = ['alias']
+
+[cursors.dotbox]
+png = 'dotbox.png'
+x11_name = 'dotbox'
+x11_symlinks = ["dot_box_mask", "draped_box", "icon", "target"]
+
+[cursors.fd_double_arrow]
+png = 'fd_double_arrow.png'
+x11_name = 'fd_double_arrow'
+x11_symlinks = ["fcf1c3c7cd4491d801f1e1c78f100000", "nesw-resize", "size_bdiag"]
+
+[cursors.grabbing]
+png = 'grabbing.png'
+x_hotspot = 112
+y_hotspot = 64
+x11_name = 'grabbing'
+x11_symlinks = [
+  "closedhand",
+  "dnd-move",
+  "dnd-none",
+  "fcf21c00b30f7e3f83fe0dfd12e71cff"
+]
+
+[cursors.hand1]
+png = 'hand1.png'
+x_hotspot = 97
+y_hotspot = 80
+x11_name = 'hand1'
+x11_symlinks = ["grab", "openhand"]
+
+[cursors.hand2]
+png = 'hand2.png'
+x_hotspot = 138
+y_hotspot = 14
+x11_name = 'hand2'
+x11_symlinks = [
+  "9d800788f1b08800ae810202380a0822",
+  "e29285e634086352946a0e7090d73106",
+  "pointer",
+  "pointing_hand"
+]
+
+[cursors.left_ptr]
+png = 'left_ptr.png'
+x_hotspot = 207
+y_hotspot = 24
+x11_name = 'left_ptr'
+x11_symlinks = ["arrow", "default", "top_left_arrow"]
+
+[cursors.left_ptr_watch]
+png = 'left_ptr_watch-*.png'
+x_hotspot = 197
+y_hotspot = 24
+x11_name = 'left_ptr_watch'
+x11_symlinks = [
+  "00000000000000020006000e7e9ffc3f",
+  "08e8e1c95fe2fc01f976f1e063a24ccd",
+  "3ecb610c1bf2410f44200f48c40d3599",
+  "progress"
+]
+
+[cursors.left_side]
+png = 'left_side.png'
+x_hotspot = 21
+y_hotspot = 128
+x11_name = 'left_side'
+x11_symlinks = ['w-resize']
+
+[cursors.left_tee]
+png = 'left_tee.png'
+x_hotspot = 230
+y_hotspot = 128
+x11_name = 'left_tee'
+
+[cursors.link]
+png = 'link.png'
+x_hotspot = 207
+y_hotspot = 24
+x11_name = 'link'
+x11_symlinks = [
+  "3085a0e285430894940527032f8b26df",
+  "640fb0e74195791501fd1ed57b41487f",
+  "a2a266d0498c3104214a47bd64ab0fc8",
+]
+
+[cursors.ll_angle]
+png = 'll_angle.png'
+x_hotspot = 30
+y_hotspot = 223
+x11_name = 'll_angle'
+
+[cursors.lr_angle]
+png = 'lr_angle.png'
+x_hotspot = 224
+y_hotspot = 230
+x11_name = 'lr_angle'
+
+[cursors.move]
+png = 'move.png'
+x11_name = 'move'
+x11_symlinks = [
+  "4498f0e0c1937ffe01fd06f973665830",
+  "9081237383d90e509aa00f00170e968f",
+  "all-scroll",
+  "fleur",
+  "size_all"
+]
+
+[cursors.pencil]
+png = 'pencil.png'
+x_hotspot = 46
+y_hotspot = 211
+x11_name = 'pencil'
+x11_symlinks = ['draft']
+
+[cursors.plus]
+png = 'plus.png'
+x11_name = 'plus'
+x11_symlinks = ['cell']
+
+[cursors.pointer-move]
+png = 'pointer-move.png'
+x_hotspot = 207
+y_hotspot = 24
+x11_name = 'pointer-move'
+
+[cursors.question_arrow]
+png = 'question_arrow.png'
+x_hotspot = 42
+y_hotspot = 86
+x11_name = 'question_arrow'
+x11_symlinks = [
+  "5c6cd98b3f3ebcb1f9c7f1c204630408",
+  "d9ce0ab605698f320427677b458ad60b",
+  "help",
+  "left_ptr_help",
+  "whats_this",
+]
+
+[cursors.right_ptr]
+png = 'right_ptr.png'
+x_hotspot = 55
+y_hotspot = 17
+x11_name = 'right_ptr'
+x11_symlinks = ["draft_large", "draft_small"]
+
+[cursors.right_side]
+png = 'right_side.png'
+x_hotspot = 233
+y_hotspot = 128
+x11_name = 'right_side'
+x11_symlinks = ['e-resize']
+
+[cursors.right_tee]
+png = 'right_tee.png'
+x_hotspot = 29
+y_hotspot = 128
+x11_name = 'right_tee'
+
+[cursors.sb_down_arrow]
+png = 'sb_down_arrow.png'
+x_hotspot = 128
+y_hotspot = 222
+x11_name = 'sb_down_arrow'
+x11_symlinks = ['down-arrow']
+
+[cursors.sb_h_double_arrow]
+png = 'sb_h_double_arrow.png'
+x11_name = 'sb_h_double_arrow'
+x11_symlinks = [
+  "028006030e0e7ebffc7f7070c0600140",
+  "14fef782d02440884392942c1120523",
+  "col-resize",
+  "ew-resize",
+  "h_double_arrow",
+  "size-hor",
+  "size_hor",
+  "split_h",
+]
+
+[cursors.sb_left_arrow]
+png = 'sb_left_arrow.png'
+x_hotspot = 33
+y_hotspot = 128
+x11_name = 'sb_left_arrow'
+x11_symlinks = ['left-arrow']
+
+[cursors.sb_right_arrow]
+png = 'sb_right_arrow.png'
+x_hotspot = 223
+y_hotspot = 128
+x11_name = 'sb_right_arrow'
+x11_symlinks = ['right-arrow']
+
+[cursors.sb_up_arrow]
+png = 'sb_up_arrow.png'
+x_hotspot = 128
+y_hotspot = 33
+x11_name = 'sb_up_arrow'
+x11_symlinks = ['up-arrow']
+
+[cursors.sb_v_double_arrow]
+png = 'sb_v_double_arrow.png'
+x11_name = 'sb_v_double_arrow'
+x11_symlinks = [
+  "00008160000006810000408080010102",
+  "2870a09082c103050810ffdffffe0204",
+  "double_arrow",
+  "ns-resize",
+  "row-resize",
+  "size-ver",
+  "size_ver",
+  "split_v",
+  "v_double_arrow",
+]
+
+[cursors.tcross]
+png = 'tcross.png'
+x11_name = 'tcross'
+x11_symlinks = ['color-picker']
+
+[cursors.top_left_corner]
+png = 'top_left_corner.png'
+x_hotspot = 29
+y_hotspot = 24
+x11_name = 'top_left_corner'
+x11_symlinks = ['nw-resize']
+
+[cursors.top_right_corner]
+png = 'top_right_corner.png'
+x_hotspot = 229
+y_hotspot = 24
+x11_name = 'top_right_corner'
+x11_symlinks = ['ne-resize']
+
+[cursors.top_side]
+png = 'top_side.png'
+x_hotspot = 128
+y_hotspot = 23
+x11_name = 'top_side'
+x11_symlinks = ['n-resize']
+
+[cursors.top_tee]
+png = 'top_tee.png'
+x_hotspot = 128
+y_hotspot = 27
+x11_name = 'top_tee'
+
+[cursors.ul_angle]
+png = 'ul_angle.png'
+x_hotspot = 33
+y_hotspot = 33
+x11_name = 'ul_angle'
+
+[cursors.ur_angle]
+png = 'ur_angle.png'
+x_hotspot = 225
+y_hotspot = 33
+x11_name = 'ur_angle'
+
+[cursors.vertical-text]
+png = 'vertical-text.png'
+x11_name = 'vertical-text'
+
+[cursors.wait]
+png = 'wait-*.png'
+x11_name = 'wait'
+x11_symlinks = ['watch']
+
+[cursors.wayland-cursor]
+png = 'wayland-cursor.png'
+x11_name = 'wayland-cursor'
+
+[cursors.X_cursor]
+png = 'X_cursor.png'
+x11_name = 'X_cursor'
+x11_symlinks = ["pirate", "x-cursor"]
+
+[cursors.xterm]
+png = 'xterm.png'
+x11_name = 'xterm'
+x11_symlinks = ["ibeam", "text"]
+
+[cursors.zoom_in]
+png = 'zoom-in.png'
+x_hotspot = 116
+y_hotspot = 116
+x11_name = 'zoom-in'
+
+[cursors.zoom_out]
+png = 'zoom-out.png'
+x_hotspot = 116
+y_hotspot = 116
+x11_name = 'zoom-out'
