@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### :warning: Changes for Developers/Package Distributors
+
+> **Note**
+> This change applies only to developers and package distributors
+
+-   The `build.toml` and `build.right.toml` files have been removed. Instead, the cursor build configurations are now distributed according to platforms within the `configs` directory:
+    -   `configs/normal/x.build.toml`: Used to build normal XCursor.
+    -   `configs/normal/win_rg.build.toml`: Used to build normal regular size Windows cursors.
+    -   `configs/normal/win_lg.build.toml`: Used to build normal large size Windows cursors.
+    -   `configs/normal/win_xxl.build.toml`: Used to build normal extra large size Windows cursors.
+    -   `configs/right/x.build.toml`: Used to build right XCursor.
+    -   `configs/right/win_rg.build.toml`: Used to build right regular size Windows cursors.
+    -   `configs/right/win_lg.build.toml`: Used to build right large size Windows cursors.
+    -   `configs/right/win_xxl.build.toml`: Used to build right extra large size Windows cursors.
+
 ### What's New?
 
 -   Redesign hands cursor for `bibata-*-right` cursors (Related to #112)

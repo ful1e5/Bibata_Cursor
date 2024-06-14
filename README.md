@@ -42,6 +42,18 @@ And with that, my journey in the world of open source began.
 
 ![shoutout-sponsors](https://sponsor-spotlight.vercel.app/sponsor?login=ful1e5)
 
+-   **2024-06-14**: [4460d91](https://github.com/ful1e5/Bibata_Cursor/commit/4460d9118dce220d606c38308b93181861b8a85a) Partitioned cursor build configuration into multiple files according to platform:
+    -   `build.toml`
+        -   `configs/normal/x.build.toml`
+        -   `configs/normal/win_xl.build.toml`
+        -   `configs/normal/win_rg.build.toml`
+        -   `configs/normal/win_lg.build.toml`
+    -   `build.right.toml`
+        -   `configs/right/x.build.toml`
+        -   `configs/right/win_xl.build.toml`
+        -   `configs/right/win_rg.build.toml`
+        -   `configs/right/win_lg.build.toml`
+
 ---
 
 ![Bibata Amber](https://github.com/ful1e5/Bibata_Cursor/assets/24286590/d64d75e5-3ac9-45f3-8afe-e92719fd48d1)
