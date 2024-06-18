@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v2.0.7] - 18 June 2024
+
 ### :warning: Changes for Developers/Package Distributors
 
 > **Note**
@@ -348,7 +350,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Initial release 🎊
 
-[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.6...main
+[unreleased]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.7...main
+[v2.0.7]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.6...v2.0.7
 [v2.0.6]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.5...v2.0.6
 [v2.0.5]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.4...v2.0.5
 [v2.0.4]: https://github.com/ful1e5/Bibata_Cursor/compare/v2.0.3...v2.0.4
