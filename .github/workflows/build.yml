@@ -53,38 +53,5 @@ jobs:
           clickgen --version
           ctgen --version
 
-      - name: Building `Bibata Modern Amber` Cursors
-        run: ctgen build.toml -n 'Bibata-Modern-Amber' -c 'Yellowish and rounded edge Bibata cursors.' -d 'bitmaps/Bibata-Modern-Amber'
-
-      - name: Building `Bibata Original Amber` Cursors
-        run: ctgen build.toml -n 'Bibata-Original-Amber' -c 'Yellowish and sharp edge Bibata cursors.' -d 'bitmaps/Bibata-Original-Amber'
-
-      - name: Building `Bibata Modern Classic` Cursors
-        run: ctgen build.toml -n 'Bibata-Modern-Classic' -c 'Black and rounded edge Bibata cursors.' -d 'bitmaps/Bibata-Modern-Classic'
-
-      - name: Building `Bibata Original Classic` Cursors
-        run: ctgen build.toml -n 'Bibata-Original-Classic' -c 'Black and sharp edge Bibata cursors.' -d 'bitmaps/Bibata-Original-Classic'
-
-      - name: Building `Bibata Modern Ice` Cursors
-        run: ctgen build.toml -n 'Bibata-Modern-Ice' -c 'White and rounded edge Bibata cursors.' -d 'bitmaps/Bibata-Modern-Ice'
-
-      - name: Building `Bibata Original Ice` Cursors
-        run: ctgen build.toml -n 'Bibata-Original-Ice' -c 'White and sharp edge Bibata cursors.' -d 'bitmaps/Bibata-Original-Ice'
-
-      - name: Building `Bibata Modern Amber Right` Cursors
-        run: ctgen build.right.toml -n 'Bibata-Modern-Amber-Right' -c 'Yellowish and rounded edge right-hand Bibata cursor.' -d 'bitmaps/Bibata-Modern-Amber-Right'
-
-      - name: Building `Bibata Original Amber Right` Cursors
-        run: ctgen build.right.toml -n 'Bibata-Original-Amber-Right' -c 'Yellowish and sharp edge right-hand Bibata cursor.' -d 'bitmaps/Bibata-Original-Amber-Right'
-
-      - name: Building `Bibata Modern Classic Right` Cursors
-        run: ctgen build.right.toml -n 'Bibata-Modern-Classic-Right' -c 'Black and rounded edge right-hand Bibata cursor.' -d 'bitmaps/Bibata-Modern-Classic-Right'
-
-      - name: Building `Bibata Original Classic Right` Cursors
-        run: ctgen build.right.toml -n 'Bibata-Original-Classic-Right' -c 'Black and sharp edge right-hand Bibata cursor.' -d 'bitmaps/Bibata-Original-Classic-Right'
-
-      - name: Building `Bibata Modern Ice Right` Cursors
-        run: ctgen build.right.toml -n 'Bibata-Modern-Ice-Right' -c 'White and rounded edge right-hand Bibata cursor.' -d 'bitmaps/Bibata-Modern-Ice-Right'
-
-      - name: Building `Bibata Original Ice Right` Cursors
-        run: ctgen build.right.toml -n 'Bibata-Original-Ice-Right' -c 'White and sharp edge right-hand Bibata cursor.' -d 'bitmaps/Bibata-Original-Ice-Right'
+      - name: Building Bibata Cursors
+        run: yarn build
