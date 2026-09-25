@@ -40,6 +40,7 @@ gen_symlinks(
         "groups/modern-arrow",
         "groups/shared",
         "groups/hand",
+        "groups/misc",
     ],
     "modern",
 )
@@ -51,6 +52,7 @@ gen_symlinks(
         "groups/modern-arrow",
         "groups/shared",
         "groups/hand-right",
+        "groups/misc-right",
     ],
     "modern-right",
 )
@@ -62,6 +64,7 @@ gen_symlinks(
         "groups/original-arrow",
         "groups/shared",
         "groups/hand",
+        "groups/misc",
     ],
     "original",
 )
@@ -73,6 +76,7 @@ gen_symlinks(
         "groups/original-arrow",
         "groups/shared",
         "groups/hand-right",
+        "groups/misc-right",
     ],
     "original-right",
 )
